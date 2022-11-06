@@ -42,7 +42,7 @@ class CfgVehicles
 	{
 		displayName="95th Trooper";
 		faction="95th_Legion";
-		editorSubcategory="Clones";
+		editorSubcategory="JLTS_clones_white"; //TODO: Change?
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_DC15AUGL.jpg";
 		icon="JLTS_iconManHeavy";
 		weapons[]=
