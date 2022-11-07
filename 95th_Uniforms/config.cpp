@@ -59,7 +59,6 @@ class CfgVehicles
 			"Throw",
 			"Put"
 		};
-		backpack="JLTS_Clone_belt_bag_ugl_predef";
 		magazines[]=
 		{
 			"JLTS_DC15A_mag",
@@ -107,7 +106,7 @@ class CfgVehicles
 			"HandGrenade"
 		};
 		uniformClass="95th_Uniform_Base";
-		model="\MRC\JLTS\characters\CloneArmor\CloneArmorGrenadier.p3d";
+		model="\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -117,12 +116,37 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\95th_Uniforms\Data\Clone_armorTEST1_co",
-			"\95th_Uniforms\Data\Clone_armorTEST1_co",
-			"\95th_Uniforms\Data\Clone_armorTEST1_co",
-			// "\MRC\JLTS\characters\CloneArmor\data\Clone_armor1_co.paa",
-			// "\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa",
-			// "\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor1_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
+		};
+	};
+
+	class 95th_Trooper_Sergeant: 95th_Trooper_Base
+	{
+		displayName="95th Sergeant";
+		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_DC15AUGL.jpg";
+		icon="JLTS_iconManHeavy";
+		uniformClass="95th_Uniform_Sergeant";
+		model="\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor1_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
 		};
 	};
 };
@@ -157,4 +181,13 @@ class cfgWeapons
 			mass=40;
 		};
 	};
+
+	class 95th_Uniform_Sergeant: 95th_Uniform_Base
+	{
+		displayName="95th Sergeant Uniform";
+		class ItemInfo: UniformItem
+		{
+			uniformClass="95th_Trooper_Sergeant";
+		};
+	}
 }; 
