@@ -1,13 +1,13 @@
 class CfgPatches 
 { 
-    class My_Mod_Config 
-    { 
-        units[] = {"Custom_Uniform_Mod";}; 
+    class 95th_Legion_Uniforms 
+    {
         author="95th Aux Team";
-        weapons[] = {}; 
-        requiredVersion = 0.1; 
-        requiredAddons[] = {"A3_Characters_F"}; 
-    }; 
+        name="95th Legion Uniforms";
+        requiredAddons[] = {"A3_Characters_F"};
+        weapons[] = {};
+		units[] = {};
+    };
 }; 
 
 //************************************************************************************************************************************************************************************************
@@ -22,6 +22,14 @@ class cfgFactionClasses
         side = 1; // Opfor = 0, Blufor = 1, Indep = 2. 
         icon = ""; //Custom Icon 
     };  
+};
+
+class CfgEditorSubcategories
+{
+	class 95th_Phase1_Clones
+	{
+		displayName="Troopers";
+	};
 };
 
 class UniformSlotInfo 
@@ -125,12 +133,66 @@ class CfgVehicles
 		};
 	};
 
+	class 95th_Trooper_Medic: 95th_Trooper_Base
+	{
+		displayName="95th Medic";
+		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_DC15AUGL.jpg";
+		icon="JLTS_iconManHeavy";
+		uniformClass="95th_Uniform_Medic";
+		model="\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor1_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
+		};
+	};
+
 	class 95th_Trooper_Sergeant: 95th_Trooper_Base
 	{
 		displayName="95th Sergeant";
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_DC15AUGL.jpg";
 		icon="JLTS_iconManHeavy";
 		uniformClass="95th_Uniform_Sergeant";
+		model="\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor1_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
+		};
+	};
+
+	class 95th_Trooper_Captain: 95th_Trooper_Base
+	{
+		displayName="95th Captain";
+		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_DC15AUGL.jpg";
+		icon="JLTS_iconManHeavy";
+		uniformClass="95th_Uniform_Captain";
+		model="\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor1_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
+		};
+	};
+
+	class 95th_Trooper_Lieutenant: 95th_Trooper_Base
+	{
+		displayName="95th Lieutenant";
+		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_DC15AUGL.jpg";
+		icon="JLTS_iconManHeavy";
+		uniformClass="95th_Uniform_Lieutenant";
 		model="\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelections[]=
 		{
@@ -182,12 +244,39 @@ class cfgWeapons
 		};
 	};
 
+	class 95th_Uniform_Medic: 95th_Uniform_Base
+	{
+		displayName="95th Medic Uniform";
+		class ItemInfo: UniformItem
+		{
+			uniformClass="95th_Trooper_Medic";
+		};
+	}
+
 	class 95th_Uniform_Sergeant: 95th_Uniform_Base
 	{
 		displayName="95th Sergeant Uniform";
 		class ItemInfo: UniformItem
 		{
 			uniformClass="95th_Trooper_Sergeant";
+		};
+	}
+
+	class 95th_Uniform_Captain: 95th_Uniform_Base
+	{
+		displayName="95th Captain Uniform";
+		class ItemInfo: UniformItem
+		{
+			uniformClass="95th_Trooper_Captain";
+		};
+	}
+
+	class 95th_Uniform_Lieutenant: 95th_Uniform_Base
+	{
+		displayName="95th Lieutenant Uniform";
+		class ItemInfo: UniformItem
+		{
+			uniformClass="95th_Trooper_Lieutenant";
 		};
 	}
 }; 
