@@ -71,7 +71,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_backpack_co.paa"
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_backpack_medic_co.paa"
 		};
 	};
 
@@ -89,7 +89,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_backpack_co.paa"
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_backpack_eod_co.paa"
 		};
 	};
 
