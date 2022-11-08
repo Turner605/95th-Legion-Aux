@@ -200,10 +200,10 @@ class cfgWeapons
 	{
 		author="95th Aux";
 		displayName="Clone Lieutenant Vest";
-		// hiddenSelectionsTextures[]=
-		// {
-		// 	""
-		// };
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_Vests\Data\95th_Vest_Lieutenant.paa"
+		};
 		class ItemInfo: VestItem
 		{
 			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
@@ -211,10 +211,6 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo1"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"\95th_Vests\Data\95th_Vest_Lieutenant.paa"
 			};
 			mass=80;
 			class HitpointsProtectionInfo
