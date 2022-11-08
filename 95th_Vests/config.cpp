@@ -113,7 +113,7 @@ class cfgWeapons
 	class 95th_Vest_Sergeant: JLTS_CloneVestReconOfficer
 	{
 		author="95th Aux";
-		displayName="Clone Sergeant Vest";
+		displayName="Clone NCO Vest";
 		hiddenSelectionsTextures[]=
 		{
 		 	"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa",
@@ -157,7 +157,7 @@ class cfgWeapons
 	class 95th_Vest_Captain: JLTS_CloneVestOfficer
 	{
 		author="95th Aux";
-		displayName="Clone Captain Vest";
+		displayName="Clone Platoon Vest";
 		hiddenSelectionsTextures[]=
 		{
 		 	"\95th_Vests\Data\95th_Vest_Captain.paa"
@@ -199,7 +199,7 @@ class cfgWeapons
 	class 95th_Vest_Lieutenant: JLTS_CloneVestCommander
 	{
 		author="95th Aux";
-		displayName="Clone Lieutenant Vest";
+		displayName="Clone Command Vest";
 		hiddenSelectionsTextures[]=
 		{
 			"\95th_Vests\Data\95th_Vest_Lieutenant.paa"

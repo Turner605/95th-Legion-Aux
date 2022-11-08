@@ -339,7 +339,7 @@ class cfgWeapons
 
 	class 95th_Uniform_Sergeant: 95th_Uniform_Base
 	{
-		displayName="95th Sergeant Uniform";
+		displayName="95th NCO Uniform";
 		class ItemInfo: UniformItem
 		{
 			uniformClass="95th_Trooper_Sergeant";
@@ -351,7 +351,7 @@ class cfgWeapons
 
 	class 95th_Uniform_Captain: 95th_Uniform_Base
 	{
-		displayName="95th Captain Uniform";
+		displayName="95th Platoon Uniform";
 		class ItemInfo: UniformItem
 		{
 			uniformClass="95th_Trooper_Captain";
@@ -363,7 +363,7 @@ class cfgWeapons
 
 	class 95th_Uniform_Lieutenant: 95th_Uniform_Base
 	{
-		displayName="95th Lieutenant Uniform";
+		displayName="95th Command Uniform";
 		class ItemInfo: UniformItem
 		{
 			uniformClass="95th_Trooper_Lieutenant";
