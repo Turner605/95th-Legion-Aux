@@ -143,7 +143,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"3AS\3AS_Characters\Clones\Headgear\Textures\Phase1\Phase1_Unmarked_CO.paa"
+			"\95th_Helmets\Data\Clone_helmet_1_ColorBrown.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{
@@ -204,86 +204,12 @@ class cfgWeapons
 		};
 	};
 
-	class 95th_Helmet_Phase1_Sergeant: 95th_Helmet_Phase1
+	class 95th_Helmet_Phase1_Test: 95th_Helmet_Phase1
 	{
 		author="95th Aux";
 		scope=2;
 		weaponPoolAvailable=1;
-		displayName="Clone Sergeant Helmet";
-		picture="3AS\3AS_Characters\Clones\Headgear\ui\phase1_ui_ca.paa";
-		model="\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Standard_P1.p3d";
-		hiddenSelections[]=
-		{
-			"camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"3AS\3AS_Characters\Clones\Headgear\Textures\Phase1\Phase1_Unmarked_CO.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformModel="\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Standard_P1.p3d";
-			hiddenSelections[]=
-			{
-				"camo"
-			};
-			modelSides[]={3,1};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=6;
-					passThrough=0.5;
-				};
-			};
-		};
-	};
-
-	class 95th_Helmet_Phase1_Captain: 95th_Helmet_Phase1
-	{
-		author="95th Aux";
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="Clone Captain Helmet";
-		picture="3AS\3AS_Characters\Clones\Headgear\ui\phase1_ui_ca.paa";
-		model="\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Standard_P1.p3d";
-		hiddenSelections[]=
-		{
-			"camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"3AS\3AS_Characters\Clones\Headgear\Textures\Phase1\Phase1_Unmarked_CO.paa"
-		};
-		class ItemInfo: HeadgearItem
-		{
-			mass=30;
-			uniformModel="\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Standard_P1.p3d";
-			hiddenSelections[]=
-			{
-				"camo"
-			};
-			modelSides[]={3,1};
-			class HitpointsProtectionInfo
-			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=6;
-					passThrough=0.5;
-				};
-			};
-		};
-	};
-
-	class 95th_Helmet_Phase1_Lieutenant: 95th_Helmet_Phase1
-	{
-		author="95th Aux";
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="Clone Lieutenant Helmet";
+		displayName="Clone Test Helmet";
 		picture="3AS\3AS_Characters\Clones\Headgear\ui\phase1_ui_ca.paa";
 		model="\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Standard_P1.p3d";
 		hiddenSelections[]=

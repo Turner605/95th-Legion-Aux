@@ -114,10 +114,11 @@ class cfgWeapons
 	{
 		author="95th Aux";
 		displayName="Clone Sergeant Vest";
-		// hiddenSelectionsTextures[]=
-		// {
-		// 	""
-		// };
+		hiddenSelectionsTextures[]=
+		{
+		 	"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa",
+            "\95th_Vests\Data\Clone_vest_reconNCO_Upper_co.paa"
+		};
 		class ItemInfo: VestItem
 		{
 			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
@@ -156,10 +157,10 @@ class cfgWeapons
 	{
 		author="95th Aux";
 		displayName="Clone Captain Vest";
-		// hiddenSelectionsTextures[]=
-		// {
-		// 	""
-		// };
+		hiddenSelectionsTextures[]=
+		{
+		 	"\95th_Vests\Data\Clone_OfficerVest_1_Test.paa"
+		};
 		class ItemInfo: VestItem
 		{
 			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer.p3d";
