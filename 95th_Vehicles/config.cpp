@@ -67,8 +67,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\95th_Vehicles\Data\LAAT_Hull.paa",
-			"\95th_Vehicles\Data\LAAT_Wings.paa",
+			"\95th_Vehicles\Data\Hull_CO.paa",
+			"\95th_Vehicles\Data\Wings_CO.paa",
 			"\95th_Vehicles\Data\Weapons_CO.paa",
 			"\95th_Vehicles\Data\Weapon_Details_CO.paa",
 			"\95th_Vehicles\Data\Interior_CO.paa"
