@@ -212,6 +212,10 @@ class cfgWeapons
 			{
 				"camo1"
 			};
+			hiddenSelectionsTextures[]=
+			{
+				"\95th_Vests\Data\95th_Vest_Lieutenant.paa"
+			};
 			mass=80;
 			class HitpointsProtectionInfo
 			{
