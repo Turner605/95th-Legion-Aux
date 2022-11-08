@@ -125,8 +125,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\95th_Uniforms\Data\Clone_upper_1_ColorDarkBlue.paa",
-			"\95th_Uniforms\Data\Clone_lower_1_ColorDarkBlue.paa",
+			"\95th_Uniforms\Data\95th_Uniform_Trooper_Upper.paa",
+			"\95th_Uniforms\Data\95th_Uniform_Trooper_Lower.paa",
 			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
 		};
 		class HitPoints: HitPoints
@@ -159,11 +159,8 @@ class CfgVehicles
 		model="\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
-			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
-			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor1_co.paa",
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa",
+			"\95th_Uniforms\Data\95th_Uniform_Medic_Upper.paa",
+			"\95th_Uniforms\Data\95th_Uniform_Medic_Lower.paa",
 			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
 		};
 		class HitPoints: HitPoints
@@ -196,9 +193,8 @@ class CfgVehicles
 		model="\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"\95th_Uniforms\Data\Clone_upper_1_ColorPurple.Blue.paa",
-			"\95th_Uniforms\Data\Clone_lower_1_ColorLighthissBlue.paa",
-			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			"\95th_Uniforms\Data\95th_Uniform_Sergeant_Upper.paa", 
+			"\95th_Uniforms\Data\95th_Uniform_Sergeant_Lower.paa",
 			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
 		};
 		class HitPoints: HitPoints
@@ -231,9 +227,8 @@ class CfgVehicles
 		model="\MRC\JLTS\characters\CloneArmor\CloneArmor.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"\95th_Uniforms\Data\Clone_upper_1_ColorPurple.paa",
-			"\95th_Uniforms\Data\Clone_lower_1_ColorPurple.paa",
-			// "\95th_Uniforms\Data\Clone_armorTEST1_co",
+			"\95th_Uniforms\Data\95th_Uniform_Captain_Upper.paa",
+			"\95th_Uniforms\Data\95th_Uniform_Captain_Lower.paa",
 			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
 		};
 		class HitPoints: HitPoints
@@ -273,8 +268,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\95th_Uniforms\Data\Clone_upper_1_ColorShit.paa",
-			"\95th_Uniforms\Data\Clone_lower_1_ColorShit.paa",
+			"\95th_Uniforms\Data\95th_Uniform_Lieutenant_Upper.paa",
+			"\95th_Uniforms\Data\95th_Uniform_Lieutenant_Lower.paa",
 			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
 		};
 		class HitPoints: HitPoints

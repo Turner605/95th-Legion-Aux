@@ -143,7 +143,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\95th_Helmets\Data\Clone_helmet_1_ColorBrown.paa"
+			"\95th_Helmets\Data\95th_Helmet_Trooper.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{
@@ -218,7 +218,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"3AS\3AS_Characters\Clones\Headgear\Textures\Phase1\Phase1_Unmarked_CO.paa"
+			"\95th_Helmets\Data\95th_Helmet_Trooper.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{

@@ -117,7 +117,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 		 	"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa",
-            "\95th_Vests\Data\Clone_vest_reconNCO_Upper_co.paa"
+            "\95th_Vests\Data\95th_Vest_Sergeant_Upper.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -125,7 +125,8 @@ class cfgWeapons
 			containerClass="Supply100";
 			hiddenSelections[]=
 			{
-				"camo1"
+				"camo1",
+				"camo2"
 			};
 			mass=80;
 			class HitpointsProtectionInfo
@@ -159,7 +160,7 @@ class cfgWeapons
 		displayName="Clone Captain Vest";
 		hiddenSelectionsTextures[]=
 		{
-		 	"\95th_Vests\Data\Clone_OfficerVest_1_Test.paa"
+		 	"\95th_Vests\Data\95th_Vest_Captain.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -224,6 +225,55 @@ class cfgWeapons
 				{
 					hitpointName="HitLegs";
 					armor=6;
+					passThrough=0.30000001;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=4;
+					passThrough=0.30000001;
+				};
+			};
+		};
+	};
+
+	class JLTS_CloneVestARC;
+	class 95th_Vest_ARC: JLTS_CloneVestARC
+	{
+		author="95th Aux";
+		scope=2;
+		displayName="Clone ARC Trooper Vest";
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestARC_ui_ca.paa";
+		model="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d"; 
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_Vests\Data\95th_Vest_ARC.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
+			containerClass="Supply100";
+			hiddenSelections[]=
+			{
+				"camo1"
+			};
+			mass=80;
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=9;
+					PassThrough=0.30000001;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=9;
 					passThrough=0.30000001;
 				};
 				class Arms
