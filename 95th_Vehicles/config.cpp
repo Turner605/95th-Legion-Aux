@@ -67,11 +67,29 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\95th_Vehicles\Data\Hull_CO.paa",
-			"\95th_Vehicles\Data\Wings_CO.paa",
-			"\95th_Vehicles\Data\Weapons_CO.paa",
-			"\95th_Vehicles\Data\Weapon_Details_CO.paa",
-			"\95th_Vehicles\Data\Interior_CO.paa"
+			"\95th_Vehicles\Data\LAAT\Hull_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Wings_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Weapons_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Weapon_Details_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Interior_CO.paa"
+		};
+	};
+
+	class 3as_saber_m1;
+	class 95th_TX_130 : 3as_saber_m1
+	{
+		author="95th Aux";
+		faction="95th_Legion";
+		displayname="95th TX-130";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_Vehicles\Data\Saber\Hull.paa",
+			"\95th_Vehicles\Data\Saber\Weapons.paa",
 		};
 	};
 }; 
