@@ -1,15 +1,17 @@
 class CfgPatches
 {
-	class 95th_Legion_Backpacks
+	class 95th_Legion_Vehicles
 	{
         author="95th Aux Team";
-        name="95th Legion Backpacks";
+        name="95th Legion Vehicles";
 		requiredAddons[]=
 		{
 			"JLTS_characters_CloneArmor"
 		};
-		weapons[] = {};
-		units[] = {};
+		units[] = {
+			"95th_LAAT_Mrk2",
+			"95th_TX_130"
+		};
 	};
 };
 
@@ -55,6 +57,7 @@ class CfgVehicles
 	class 95th_LAAT_Mrk2: 3as_LAAT_Mk2
 	{
 		author="95th Aux";
+        crew = "95th_Trooper_Pilot";
 		displayname="95th LAAT/I Mk.2";
 		faction="95th_Legion";
 		hiddenSelections[]=
@@ -79,6 +82,7 @@ class CfgVehicles
 	class 95th_TX_130 : 3as_saber_m1
 	{
 		author="95th Aux";
+        crew = "95th_Trooper_Base";
 		faction="95th_Legion";
 		displayname="95th TX-130";
 		hiddenSelections[]=
