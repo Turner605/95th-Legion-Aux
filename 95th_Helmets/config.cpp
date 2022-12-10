@@ -179,7 +179,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"3AS\3AS_Characters\Clones\Headgear\Textures\Phase1\Helmet_CO.paa"
+			"\95th_Helmets\Data\95th_Helmet_Pilot.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{
