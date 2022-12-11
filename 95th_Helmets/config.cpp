@@ -9,6 +9,7 @@ class CfgPatches
 			"JLTS_characters_CloneArmor"
 			//3as dependancy
 		};
+		units[] = {};
 	};
 };
 

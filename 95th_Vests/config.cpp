@@ -8,6 +8,7 @@ class CfgPatches
 		{
 			"JLTS_characters_CloneArmor"
 		};
+		units[] = {};
 	};
 };
 
