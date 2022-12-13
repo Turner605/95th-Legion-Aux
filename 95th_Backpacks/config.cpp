@@ -25,7 +25,7 @@ class CfgVehicles
 		scope=2;
 		maximumLoad = 250;
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_belt_bag_ui_ca.paa";
-		displayName="Trooper Bag";
+		displayName="[95th] Trooper Bag";
 		model="\MRC\JLTS\characters\CloneArmor\CloneBeltBag.p3d";
 		hiddenSelections[]=
 		{
@@ -44,7 +44,7 @@ class CfgVehicles
 		scope=2;
 		maximumLoad = 300;
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
-		displayName="Heavy Backpack";
+		displayName="[95th] Heavy Backpack";
 		model="\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 		hiddenSelections[]=
 		{
@@ -62,7 +62,7 @@ class CfgVehicles
 		scope=2;
 		maximumLoad = 350;
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
-		displayName="Medic Backpack";
+		displayName="[95th] Medic Backpack";
 		model="\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 		hiddenSelections[]=
 		{
@@ -80,7 +80,7 @@ class CfgVehicles
 		scope=2;
 		maximumLoad = 350;
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
-		displayName="EOD Backpack";
+		displayName="[95th] EOD Backpack";
 		model="\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 		hiddenSelections[]=
 		{
@@ -99,7 +99,7 @@ class CfgVehicles
 		scope=2;
 		maximumLoad = 250;
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
-		displayName="RTO Backpack";
+		displayName="[95th] RTO Backpack";
 		model="\MRC\JLTS\characters\CloneArmor\CloneBackpackRTO.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -120,7 +120,7 @@ class CfgVehicles
 		scope=2;
 		maximumLoad = 250;
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_RTO_pack_ui_ca.paa";
-		displayName="Mini RTO Backpack";
+		displayName="[95th] Mini RTO Backpack";
 		model="\MRC\JLTS\characters\CloneArmor\CloneRTOPack.p3d";
 		hiddenSelections[]=
 		{

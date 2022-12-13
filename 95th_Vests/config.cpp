@@ -28,7 +28,7 @@ class cfgWeapons
 	class 95th_Vest_Trooper: JLTS_CloneVestHolster
 	{
 		author="95th Aux";
-		displayName="Clone Trooper Vest";
+		displayName="[95th] Clone Trooper Vest";
 		// hiddenSelectionsTextures[]=
 		// {
 		// 	""
@@ -70,7 +70,7 @@ class cfgWeapons
 	class 95th_Vest_Veteran: JLTS_CloneVestKama
 	{
 		author="95th Aux";
-		displayName="Clone Veteran Vest";
+		displayName="[95th] Clone Veteran Vest";
 		// hiddenSelectionsTextures[]=
 		// {
 		// 	""
@@ -112,7 +112,7 @@ class cfgWeapons
 	class 95th_Vest_Sergeant: JLTS_CloneVestReconOfficer
 	{
 		author="95th Aux";
-		displayName="Clone NCO Vest";
+		displayName="[95th] Clone NCO Vest";
 		hiddenSelectionsTextures[]=
 		{
 		 	"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa",
@@ -156,7 +156,7 @@ class cfgWeapons
 	class 95th_Vest_Captain: JLTS_CloneVestOfficer
 	{
 		author="95th Aux";
-		displayName="Clone Platoon Vest";
+		displayName="[95th] Clone Platoon Vest";
 		hiddenSelectionsTextures[]=
 		{
 		 	"\95th_Vests\Data\95th_Vest_Captain.paa"
@@ -198,7 +198,7 @@ class cfgWeapons
 	class 95th_Vest_Lieutenant: JLTS_CloneVestCommander
 	{
 		author="95th Aux";
-		displayName="Clone Command Vest";
+		displayName="[95th] Clone Command Vest";
 		hiddenSelectionsTextures[]=
 		{
 			"\95th_Vests\Data\95th_Vest_Lieutenant.paa"
@@ -241,7 +241,7 @@ class cfgWeapons
 	{
 		author="95th Aux";
 		scope=2;
-		displayName="Clone ARC Trooper Vest";
+		displayName="[95th] Clone ARC Trooper Vest";
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestARC_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d"; 
 		hiddenSelections[]=

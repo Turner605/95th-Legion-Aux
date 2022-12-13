@@ -10,6 +10,7 @@ class CfgPatches
 		};
 		units[] = {
 			"95th_LAAT_Mrk2",
+			"95th_LAAT_Mrk1",
 			"95th_TX_130"
 		};
 	};
@@ -58,16 +59,8 @@ class CfgVehicles
 	{
 		author="95th Aux";
         crew = "95th_Trooper_Pilot";
-		displayname="95th LAAT/I Mk.2";
+		displayname="[95th] LAAT/I Mk.2";
 		faction="95th_Legion";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			"\95th_Vehicles\Data\LAAT\Hull_CO.paa",
@@ -78,6 +71,15 @@ class CfgVehicles
 		};
 	};
 
+	class 3as_LAAT_Mk1;
+	class 95th_LAAT_Mrk1: 3as_LAAT_Mk1
+	{
+		author="95th Aux";
+		faction="95th_Legion";
+        crew = "95th_Trooper_Pilot";
+		displayname="[95th] LAAT/I Mk.1";
+	};
+
 	class 3as_saber_m1;
 	class 95th_TX_130 : 3as_saber_m1
 	{
@@ -85,11 +87,6 @@ class CfgVehicles
         crew = "95th_Trooper_Base";
 		faction="95th_Legion";
 		displayname="95th TX-130";
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"Camo2"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			"\95th_Vehicles\Data\Saber\Hull.paa",
