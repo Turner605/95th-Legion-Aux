@@ -205,6 +205,6 @@ class cfgWeapons
 	{
 		displayName="[95th] Custom Helmet - Turner";
 		model="\3AS\3AS_Characters\Clones\Headgear\3AS_Clone_Standard_P1.p3d";
-		hiddenSelectionsTextures[]={"\95th_Helmets\Data\95th_Helmet_Trooper.paa"};
+		hiddenSelectionsTextures[]={"\95th_Helmets\Data\Customs\95th_Helmet_Custom_Turner.paa"};
 	};
 }; 
