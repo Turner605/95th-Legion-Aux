@@ -169,6 +169,19 @@ class cfgWeapons
 		};
 	};
 
+	class 95th_ARF_Trooper_Test: 3AS_ARF_Helmet
+	{
+		author="95th Aux";
+		scope=2;
+		displayName="[95th] ARF Helmet Test";
+		picture="3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_Helmets\Data\95th_Helmet_ARF_Test.paa",
+			"\95th_Helmets\Data\95th_Helmet_ARF_Test.paa"
+		};
+	};
+
 	class JLTS_CloneHelmetAB;
 	class 95th_Airborne_Trooper: JLTS_CloneHelmetAB
 	{

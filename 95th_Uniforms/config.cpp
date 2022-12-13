@@ -11,6 +11,7 @@ class CfgPatches
 			"95th_Trooper_Base", 
 			"95th_Trooper_Medic", 
 			"95th_Trooper_ARC",
+			"95th_Trooper_ARF",
 			"95th_Trooper_Airborne",
 			"95th_Trooper_Senior",
 			"95th_Trooper_Veteran",
@@ -152,6 +153,13 @@ class CfgVehicles
 		displayName="[95th] ARC";
 		linkedItems[] = {"95th_Helmet_Phase1","95th_Vest_ARC","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
         respawnLinkedItems[] = {"95th_Helmet_Phase1","95th_Vest_ARC","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
+	};
+
+	class 95th_Trooper_ARF: 95th_Trooper_Base
+	{
+		displayName="[95th] ARF";
+		linkedItems[] = {"95th_ARF_Trooper","95th_Vest_Trooper","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
+        respawnLinkedItems[] = {"95th_ARF_Trooper","95th_Vest_Trooper","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
 	};
 
 	class 95th_Trooper_Airborne: 95th_Trooper_Base
