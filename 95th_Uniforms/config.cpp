@@ -190,8 +190,8 @@ class CfgVehicles
 		uniformClass="95th_Uniform_Senior";
 		hiddenSelectionsTextures[]=
 		{
-			"\95th_Uniforms\Data\95th_Uniform_Trooper_Upper.paa", //todo change me
-			"\95th_Uniforms\Data\95th_Uniform_Trooper_Lower.paa", //todo change me
+			"\95th_Uniforms\Data\95th_Uniform_Senior_Upper.paa",
+			"\95th_Uniforms\Data\95th_Uniform_Senior_Lower.paa",
 			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
 		};
 	};
