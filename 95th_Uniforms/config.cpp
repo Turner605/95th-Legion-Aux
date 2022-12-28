@@ -13,12 +13,13 @@ class CfgPatches
 			"95th_Trooper_ARC",
 			"95th_Trooper_ARF",
 			"95th_Trooper_Airborne",
+			"95th_Trooper_Pilot",
 			"95th_Trooper_Senior",
 			"95th_Trooper_Veteran",
 			"95th_Trooper_Sergeant",
 			"95th_Trooper_Captain",
 			"95th_Trooper_Lieutenant",
-			"95th_Trooper_Pilot"
+			"95th_Uniform_Custom_Turner",
 		};
     };
 }; 
@@ -41,9 +42,19 @@ class cfgFactionClasses
 
 class CfgEditorSubcategories
 {
-	class 95th_Phase1_Clones
+	class 95th_RoleBased
 	{
 		displayName="Troopers";
+	};
+
+	class 95th_RankBased
+	{
+		displayName="Command";
+	};
+
+	class 95th_Customs
+	{
+		displayName="Individuals";
 	};
 };
 
@@ -68,7 +79,7 @@ class CfgVehicles
 		scope=2; 
 		scopecurator=2;
 		faction="95th_Legion";
-		editorSubcategory="95th_Phase1_Clones"; //TODO: Change?
+		editorSubcategory="95th_RoleBased";
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_DC15A.jpg";
 		icon="JLTS_iconManHeavy";
 		linkedItems[]=
@@ -143,6 +154,7 @@ class CfgVehicles
 	{
 		displayName="[95th] Senior";
 		uniformClass="95th_Uniform_Senior";
+		editorSubcategory="95th_RankBased";
 		hiddenSelectionsTextures[]=
 		{
 			"\95th_Uniforms\Data\95th_Uniform_Senior_Upper.paa",
@@ -154,6 +166,7 @@ class CfgVehicles
 	class 95th_Trooper_Veteran: 95th_Trooper_Base
 	{
 		displayName="[95th] Veteran";
+		editorSubcategory="95th_RankBased";
 		uniformClass="95th_Uniform_Veteran";
 		linkedItems[] = {"95th_Helmet_Phase1","95th_Vest_Veteran","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
         respawnLinkedItems[] = {"95th_Helmet_Phase1","95th_Vest_Trooper","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
@@ -176,6 +189,7 @@ class CfgVehicles
 	class 95th_Trooper_Captain: 95th_Trooper_Base
 	{
 		displayName="[95th] Captain";
+		editorSubcategory="95th_RankBased";
 		uniformClass="95th_Uniform_Captain";
 		hiddenSelectionsTextures[]=
 		{
@@ -190,6 +204,7 @@ class CfgVehicles
 	class 95th_Trooper_Lieutenant: 95th_Trooper_Base
 	{
 		displayName="[95th] Lieutenant";
+		editorSubcategory="95th_RankBased";
 		uniformClass="95th_Uniform_Lieutenant";
 		hiddenSelectionsTextures[]=
 		{
@@ -259,6 +274,25 @@ class CfgVehicles
 		displayName="[95th] Pilot";
         linkedItems[] = {"95th_Helmet_Phase1_Pilot","95th_Vest_Trooper","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
         respawnLinkedItems[] = {"95th_Helmet_Phase1_Pilot","95th_Vest_Trooper","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
+	};
+
+    //************************************************************************************************************************************************************************************************
+    //*****             Custom Units           *********************************************************************************************************************************************************
+    //************************************************************************************************************************************************************************************************
+    
+	class 95th_Uniform_Custom_Turner: 95th_Trooper_Base
+	{
+		displayName="[95th] Turner";
+		editorSubcategory="95th_Customs";
+		uniformClass="95th_Uniform_Custom_Turner";
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_Uniforms\Data\Customs\95th_Uniform_Custom_Turner_Upper.paa",
+			"\95th_Uniforms\Data\Customs\95th_Uniform_Custom_Turner_Lower.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
+		};
+		linkedItems[] = {"95th_Helmet_Phase1","95th_Vest_Lieutenant","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
+        respawnLinkedItems[] = {"95th_Helmet_Phase1","95th_Vest_Lieutenant","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
 	};
 };
 
@@ -373,6 +407,23 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformClass="95th_Trooper_Medic";
+			uniformModel="-";
+			containerClass="Supply150";
+			mass=40;
+		};
+	}
+
+    //********************************************************************************************************************************************************************************************
+    //*****            Custom Uniforms              *****************************************************************************************************************************************************
+    //********************************************************************************************************************************************************************************************
+    
+	class 95th_Uniform_Custom_Turner: 95th_Uniform_Base
+	{
+		displayName="[95th] Custom Uniform - Turner ";
+		scope=2;
+		class ItemInfo: UniformItem
+		{
+			uniformClass="95th_Uniform_Custom_Turner";
 			uniformModel="-";
 			containerClass="Supply150";
 			mass=40;
