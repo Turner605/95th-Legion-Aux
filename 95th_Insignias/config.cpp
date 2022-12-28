@@ -40,7 +40,7 @@ class cfgUnitInsignia
 
 	class 95th_squad_4
 	{
-		displayName = "Squad 41 Insiginia";
+		displayName = "Squad 4 Insiginia";
 		author="95th Aux Team";
 		texture="\95th_Insignias\Data\Squad_4.paa";
 		textureVehicle="";
