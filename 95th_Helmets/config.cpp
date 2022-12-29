@@ -156,7 +156,7 @@ class cfgWeapons
 	};
 
 	class 3AS_ARF_Helmet;
-	class 95th_ARF_Trooper: 3AS_ARF_Helmet
+	class 95th_ARF_Trooper_Helmet: 3AS_ARF_Helmet
 	{
 		author="95th Aux";
 		scope=2;
@@ -183,7 +183,7 @@ class cfgWeapons
 	};
 
 	class JLTS_CloneHelmetAB;
-	class 95th_Airborne_Trooper: JLTS_CloneHelmetAB
+	class 95th_Airborne_Trooper_Helmet: JLTS_CloneHelmetAB
 	{
 		author="95th Aux";
 		displayName="[95th] Airborne Helmet"; 
