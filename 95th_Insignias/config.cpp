@@ -66,4 +66,12 @@ class cfgUnitInsignia
 		texture="\95th_Insignias\PAAs\Squad_Air.paa";
 		textureVehicle="";
 	}
+
+	class 95th_Insignia_Mech
+	{
+		displayName = "5-0";
+		author="95th Aux Team";
+		texture="\95th_Insignias\PAAs\Squad_Mech.paa";
+		textureVehicle="";
+	}
 }
