@@ -42,19 +42,29 @@ class cfgFactionClasses
 
 class CfgEditorSubcategories
 {
-	class 95th_RoleBased
+	class 95th_Base
 	{
-		displayName="Troopers";
-	};
-
-	class 95th_RankBased
-	{
-		displayName="Command";
+		displayName="P1 Troopers";
 	};
 
 	class 95th_Customs
 	{
 		displayName="Individuals";
+	};
+
+	class 95th_Airborne
+	{
+		displayName="Airborne";
+	};
+
+	class 95th_ARF
+	{
+		displayName="ARF";
+	};
+
+	class 95th_RoleBased
+	{
+		displayName="Role Based";
 	};
 };
 
@@ -79,7 +89,7 @@ class CfgVehicles
 		scope=2; 
 		scopecurator=2;
 		faction="95th_Legion";
-		editorSubcategory="95th_RoleBased";
+		editorSubcategory="95th_Base";
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_DC15A.jpg";
 		icon="JLTS_iconManHeavy";
 		linkedItems[]=
@@ -153,8 +163,8 @@ class CfgVehicles
 	class 95th_Trooper_Senior: 95th_Trooper_Base
 	{
 		displayName="[95th] Senior";
+		editorSubcategory="95th_Base";
 		uniformClass="95th_Uniform_Senior";
-		editorSubcategory="95th_RankBased";
 		hiddenSelectionsTextures[]=
 		{
 			"\95th_Uniforms\Data\95th_Uniform_Senior_Upper.paa",
@@ -166,7 +176,7 @@ class CfgVehicles
 	class 95th_Trooper_Veteran: 95th_Trooper_Base
 	{
 		displayName="[95th] Veteran";
-		editorSubcategory="95th_RankBased";
+		editorSubcategory="95th_Base";
 		uniformClass="95th_Uniform_Veteran";
 		linkedItems[] = {"95th_Helmet_Phase1","95th_Vest_Veteran","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
         respawnLinkedItems[] = {"95th_Helmet_Phase1","95th_Vest_Trooper","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
@@ -175,6 +185,7 @@ class CfgVehicles
 	class 95th_Trooper_Sergeant: 95th_Trooper_Base
 	{
 		displayName="[95th] Sergeant";
+		editorSubcategory="95th_Base";
 		uniformClass="95th_Uniform_Sergeant";
 		hiddenSelectionsTextures[]=
 		{
@@ -189,7 +200,7 @@ class CfgVehicles
 	class 95th_Trooper_Captain: 95th_Trooper_Base
 	{
 		displayName="[95th] Captain";
-		editorSubcategory="95th_RankBased";
+		editorSubcategory="95th_Base";
 		uniformClass="95th_Uniform_Captain";
 		hiddenSelectionsTextures[]=
 		{
@@ -204,7 +215,7 @@ class CfgVehicles
 	class 95th_Trooper_Lieutenant: 95th_Trooper_Base
 	{
 		displayName="[95th] Lieutenant";
-		editorSubcategory="95th_RankBased";
+		editorSubcategory="95th_Base";
 		uniformClass="95th_Uniform_Lieutenant";
 		hiddenSelectionsTextures[]=
 		{
@@ -223,6 +234,7 @@ class CfgVehicles
 	class 95th_Trooper_Medic: 95th_Trooper_Base
 	{
 		displayName="[95th] Medic";
+		editorSubcategory="95th_RoleBased";
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_DC15AUGL.jpg";
 		uniformClass="95th_Uniform_Medic";
 		hiddenSelectionsTextures[]=
@@ -231,11 +243,13 @@ class CfgVehicles
 			"\95th_Uniforms\Data\95th_Uniform_Medic_Lower.paa",
 			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
 		};
+		attendant=1;
 	};
 
 	class 95th_Trooper_ARC: 95th_Trooper_Base
 	{
 		displayName="[95th] ARC";
+		editorSubcategory="95th_RoleBased";
 		linkedItems[] = {"95th_Helmet_Phase1","95th_Vest_ARC","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
         respawnLinkedItems[] = {"95th_Helmet_Phase1","95th_Vest_ARC","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
 	};
@@ -243,6 +257,7 @@ class CfgVehicles
 	class 95th_Trooper_ARF: 95th_Trooper_Base
 	{
 		displayName="[95th] ARF";
+		editorSubcategory="95th_ARF";
 		linkedItems[] = {"95th_ARF_Trooper","95th_Vest_Trooper","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
         respawnLinkedItems[] = {"95th_ARF_Trooper","95th_Vest_Trooper","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
 	};
@@ -250,6 +265,7 @@ class CfgVehicles
 	class 95th_Trooper_Airborne: 95th_Trooper_Base
 	{
 		displayName="[95th] Airborne";
+		editorSubcategory="95th_Airborne";
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_AB.jpg";
 		linkedItems[]={"95th_Airborne_Trooper","95th_Vest_Trooper","ItemMap","JLTS_clone_comlink","ItemCompass","ItemWatch"};
 		respawnLinkedItems[]={"95th_Airborne_Trooper","95th_Vest_Trooper","ItemMap","JLTS_clone_comlink","ItemCompass","ItemWatch"};
@@ -272,6 +288,7 @@ class CfgVehicles
 	class 95th_Trooper_Pilot: 95th_Trooper_Base
 	{
 		displayName="[95th] Pilot";
+		editorSubcategory="95th_RoleBased";
         linkedItems[] = {"95th_Helmet_Phase1_Pilot","95th_Vest_Trooper","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
         respawnLinkedItems[] = {"95th_Helmet_Phase1_Pilot","95th_Vest_Trooper","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
 	};
@@ -291,8 +308,8 @@ class CfgVehicles
 			"\95th_Uniforms\Data\Customs\95th_Uniform_Custom_Turner_Lower.paa",
 			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor_recon_co.paa"
 		};
-		linkedItems[] = {"95th_Helmet_Phase1","95th_Vest_Lieutenant","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
-        respawnLinkedItems[] = {"95th_Helmet_Phase1","95th_Vest_Lieutenant","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
+		linkedItems[] = {"95th_Helmet_Custom_Turner","95th_Vest_Lieutenant","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
+        respawnLinkedItems[] = {"95th_Helmet_Custom_Turner","95th_Vest_Lieutenant","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
 	};
 };
 

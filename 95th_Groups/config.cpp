@@ -31,28 +31,28 @@ class CfgGroups
 					name="Fire Team";
 					class Unit0
 					{
-						side = 0;
+						side = 1;
 						vehicle = "95th_Trooper_Sergeant";
 						rank = "SERGEANT";
 						position[] = {0,0,0};
 					};
 					class Unit1
 					{
-						side = 0;
+						side = 1;
 						vehicle = "95th_Trooper_Medic";
 						rank = "PRIVATE";
 						position[] = {5,-5,0};
 					};
 					class Unit2
 					{
-						side = 0;
+						side = 1;
 						vehicle = "95th_Trooper_Base";
 						rank = "PRIVATE";
 						position[] = {-5,-5,0};
 					};
 					class Unit3
 					{
-						side = 0;
+						side = 1;
 						vehicle = "95th_Trooper_Base";
 						rank = "PRIVATE";
 						position[] = {10,-10,0};

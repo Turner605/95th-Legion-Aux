@@ -14,6 +14,14 @@ class CfgPatches
 
 class cfgUnitInsignia
 {
+	class 95th_logo
+	{
+		displayName = "95th Logo";
+		author="95th Aux Team";
+		texture="\95th_Insignias\Data\95th_logo.paa";
+		textureVehicle="";
+	}
+
 	class 95th_squad_1
 	{
 		displayName = "Squad 1 Insiginia";
