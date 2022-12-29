@@ -436,7 +436,7 @@ class cfgWeapons
     
 	class 95th_Uniform_Custom_Turner: 95th_Uniform_Base
 	{
-		displayName="[95th] Custom Uniform - Turner ";
+		displayName="[95th] Custom Uniform - Turner";
 		scope=2;
 		class ItemInfo: UniformItem
 		{
