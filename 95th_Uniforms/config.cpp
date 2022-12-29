@@ -19,7 +19,7 @@ class CfgPatches
 			"95th_Trooper_Sergeant",
 			"95th_Trooper_Captain",
 			"95th_Trooper_Lieutenant",
-			"95th_Uniform_Custom_Turner",
+			"95th_Tooper_Custom_Turner",
 		};
     };
 }; 
@@ -297,7 +297,7 @@ class CfgVehicles
     //*****             Custom Units           *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
     
-	class 95th_Uniform_Custom_Turner: 95th_Trooper_Base
+	class 95th_Tooper_Custom_Turner: 95th_Trooper_Base
 	{
 		displayName="[95th] Turner";
 		editorSubcategory="95th_Customs";
@@ -440,7 +440,7 @@ class cfgWeapons
 		scope=2;
 		class ItemInfo: UniformItem
 		{
-			uniformClass="95th_Uniform_Custom_Turner";
+			uniformClass="95th_Tooper_Custom_Turner";
 			uniformModel="-";
 			containerClass="Supply150";
 			mass=40;
