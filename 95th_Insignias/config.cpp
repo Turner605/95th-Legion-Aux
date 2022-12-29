@@ -4,10 +4,7 @@ class CfgPatches
 	{
         author="95th Aux Team";
         name="95th Legion Insignias";
-		requiredAddons[]=
-		{
-			"JLTS_characters_CloneArmor"
-		};
+		requiredAddons[]={};
 		units[] = {};
 	};
 };
@@ -18,39 +15,55 @@ class cfgUnitInsignia
 	{
 		displayName = "95th Logo";
 		author="95th Aux Team";
-		texture="\95th_Insignias\Data\95th_logo.paa";
+		texture="\95th_Insignias\PAAs\95th_logo.paa";
 		textureVehicle="";
 	}
 
-	class 95th_squad_1
+	class 95th_Insignia_Platoon
 	{
-		displayName = "Squad 1 Insiginia";
+		displayName = "1-0 Anooba";
 		author="95th Aux Team";
-		texture="\95th_Insignias\Data\Squad_1.paa";
+		texture="\95th_Insignias\PAAs\Squad_0.paa";
 		textureVehicle="";
 	}
 
-	class 95th_squad_2
+	class 95th_Insignia_Squad_1
 	{
-		displayName = "Squad 2 Insiginia";
+		displayName = "1-1 Acklay";
 		author="95th Aux Team";
-		texture="\95th_Insignias\Data\Squad_2.paa";
+		texture="\95th_Insignias\PAAs\Squad_1.paa";
 		textureVehicle="";
 	}
 
-	class 95th_squad_3
+	class 95th_Insignia_Squad_2
 	{
-		displayName = "Squad 3 Insiginia";
+		displayName = "1-2 Reek";
 		author="95th Aux Team";
-		texture="\95th_Insignias\Data\Squad_3.paa";
+		texture="\95th_Insignias\PAAs\Squad_2.paa";
 		textureVehicle="";
 	}
 
-	class 95th_squad_4
+	class 95th_Insignia_Squad_3
 	{
-		displayName = "Squad 4 Insiginia";
+		displayName = "1-3 Sando";
 		author="95th Aux Team";
-		texture="\95th_Insignias\Data\Squad_4.paa";
+		texture="\95th_Insignias\PAAs\Squad_3.paa";
+		textureVehicle="";
+	}
+
+	class 95th_Insignia_Squad_4
+	{
+		displayName = "1-4 ?";
+		author="95th Aux Team";
+		texture="\95th_Insignias\PAAs\Squad_4.paa";
+		textureVehicle="";
+	}
+
+	class 95th_Insignia_Air
+	{
+		displayName = "5-0 Mynock";
+		author="95th Aux Team";
+		texture="\95th_Insignias\PAAs\Squad_Air.paa";
 		textureVehicle="";
 	}
 }
