@@ -6,8 +6,14 @@ class CfgPatches
 		scope=2; 
 		scopecurator=2;
         name="95th Legion Uniforms";
-        requiredAddons[] = {"A3_Characters_F"};
+        requiredAddons[] = {
+			"A3_Characters_F", 
+			"OPTRE_Jackal_F",
+			"JLTS_characters_CloneArmor",
+			"3AS_Characters_Clones_Headgear"
+		};
 		units[] = {
+			"95th_Jedi", 
 			"95th_Trooper_Base", 
 			"95th_Trooper_Medic", 
 			"95th_Trooper_ARC",
@@ -48,6 +54,11 @@ class cfgFactionClasses
 
 class CfgEditorSubcategories
 {
+	class 95th_Misc
+	{
+		displayName="Misc";
+	};
+
 	class 95th_Base
 	{
 		displayName="P1 Troopers";
@@ -160,6 +171,24 @@ class CfgVehicles
 			class HitLeftLeg {armor=6; material=-1; name="leg_l"; passThrough=1; radius=0.1; explosionShielding=3; visual="injury_legs"; minimalHit=0.0099999998;};
 			class HitRightLeg: HitLeftLeg {name="leg_r";};
 		};
+	};
+
+    //************************************************************************************************************************************************************************************************
+    //*****             Misc Units           *********************************************************************************************************************************************************
+    //************************************************************************************************************************************************************************************************
+    
+	class 95th_Jedi: 95th_Trooper_Base
+	{
+		displayName="[95th] Jedi";
+		editorSubcategory="95th_Misc";
+		uniformClass="lsd_gar_phase2Insulated_uniform"; 
+		linkedItems[] = {"JLTS_clone_comlink","SWLB_CEE_Clone_Scarf_White","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
+        respawnLinkedItems[] = {"JLTS_clone_comlink","SWLB_CEE_Clone_Scarf_White","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
+		weapons[]={"WBK_lightsaberOldRep_jedi","Throw","Put"};
+		respawnWeapons[]={"WBK_lightsaberOldRep_jedi","Throw","Put"};
+		identityTypes[]={"OPTRE_Jackal_02"};
+		magazines[]={"WBK_Cybercrystal","WBK_Cybercrystal","WBK_Cybercrystal"};
+		respawnMagazines[]={"WBK_Cybercrystal","WBK_Cybercrystal","WBK_Cybercrystal"};
 	};
 
     //************************************************************************************************************************************************************************************************

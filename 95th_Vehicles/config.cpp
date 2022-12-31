@@ -6,7 +6,9 @@ class CfgPatches
         name="95th Legion Vehicles";
 		requiredAddons[]=
 		{
-			"JLTS_characters_CloneArmor"
+			"95th_Legion_Uniforms",
+			"3AS_SaberTank",
+			"3AS_LAAT"
 		};
 		units[] = {
 			"95th_LAAT_Mrk2",

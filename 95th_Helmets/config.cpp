@@ -6,8 +6,8 @@ class CfgPatches
         name="95th Legion Helmets";
 		requiredAddons[]=
 		{
-			"JLTS_characters_CloneArmor"
-			//3as dependancy
+			"JLTS_characters_CloneArmor",
+			"3as_JLTS_Uniforms"
 		};
 		units[] = {};
 	};
