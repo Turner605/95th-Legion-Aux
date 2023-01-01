@@ -141,6 +141,19 @@ class cfgWeapons
 		};
 	};
 
+	class JLTS_CloneHelmetARC;
+	class 95th_Helmet_ARC: JLTS_CloneHelmetARC
+	{
+		author="95th Aux";
+		scope=2;
+		weaponPoolAvailable=1;
+		displayName="[95th] Clone ARC Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_Helmets\Data\95th_Helmet_ARC.paa"
+		};
+	};
+
 	class 3as_P1_Pilot_helmet;
 	class 95th_Helmet_Phase1_Pilot: 3as_P1_Pilot_helmet
 	{
