@@ -41,7 +41,7 @@ class CfgEditorSubcategories
 {
 	class 95th_Commandos
 	{
-		displayName="[95th] Commandos";
+		displayName="[95th] Commandos (NO AI)";
 	};
 };
 
