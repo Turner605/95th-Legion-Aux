@@ -16,6 +16,7 @@ class CfgPatches
 			"95th_CIS_Commando_Captain", 
 			"95th_CIS_Commando_Citadel", 
 			"95th_CIS_Commando_Diplomat", 
+			"95th_CIS_Commando_Test"
 		};
     };
 }; 
@@ -68,14 +69,16 @@ class CfgVehicles
 		identityTypes[] = {"BX_Droid"};
 	};
 
-	class 95th_CIS_Commando_Base: WBK_Combine_ASS_Sniper
+	class 95th_CIS_Commando_Base: 95th_Trooper_Base
 	{
-		displayName="[95th] BX Commando";
+		displayName="[95th] BX TEST";
 		faction="95th_CIS";
+		identityTypes[] = {"BX_Droid"};
+		WBK_CombineType=" assasin_";
+		WBK_BehaveLikeHuman="true";
 		editorSubcategory="95th_Commandos";
 		uniformClass="BX_BaseUniform";
         side = 0;
-		identityTypes[]={};
 		facewear="";
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_AB.jpg"; //todo: change me
 		items[]={"BX_SwordVest","SWLB_comlink_droid","JLTS_NVG_droid_chip_2","ItemGPS","ItemMap","ItemWatch","ItemCompass","WBK_Health_Battery","WBK_Health_Battery","WBK_Health_Syringe"};
@@ -111,5 +114,22 @@ class CfgVehicles
 	{
 		displayName="[95th] BX Diplomat";
 		uniformClass="BX_DiplomatUniform";
+	};
+
+};
+
+class Extended_InitPost_EventHandlers
+{
+	class 95th_CIS_Commando_Base
+	{
+		class  95th_CIS_Commando_Main_Init
+		{
+			onRespawn="true";
+			init="_unit = _this select 0; if (local _unit) then {_unit setVariable ['WBK_HL_CustomArmour',getNumber (configFile >> 'CfgVehicles' >> typeOf _unit >> 'WBK_CustomHPparam'),true]; _unit setVariable ['SFX_R_DisableDyingSounds',1,true]; _unit setSpeaker 'NoVoice';_unit disableAI 'RADIOPROTOCOL'; removeGoggles _unit; [_unit, 'WBK_CombineHead'] remoteExec ['setFace', 0, true]; {_unit removeMagazines _x;} forEach magazines _unit; removeUniform _unit; _unit forceAddUniform (getText (configFile >> 'CfgVehicles' >> typeOf _unit >> 'uniformClass')); _unit setVariable ['dam_ignore_hit0',true,true];_unit setVariable ['dam_ignore_effect0',true,true]; _value = (configFile >> 'CfgVehicles' >> typeOf _unit >> 'magazines') call BIS_fnc_getCfgData;{_unit addMagazine _x;} forEach _value;};";
+		};
+		class 95th_CIS_Commando_VoiceType_Init
+		{
+			init="_unit = _this select 0; if (local _unit) then {_unit setVariable ['WBK_HL_CustomArmour_MAX',getNumber (configFile >> 'CfgVehicles' >> typeOf _unit >> 'WBK_CustomHPparam'),true]; _unit setVariable ['WBK_CombineType',getText (configFile >> 'CfgVehicles' >> typeOf _unit >> 'WBK_CombineType'),true];};";
+		};
 	};
 };
