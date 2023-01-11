@@ -10,7 +10,12 @@ class CfgPatches
 			"A3_Characters_F", 
 			"WBK_Combinus",
 			"JLTS_core",
-			"JLTS_weapons_core"
+			"JLTS_weapons_core",
+			"95th_Legion_Uniforms",
+			"95th_Legion_Vehicles",
+			"95th_Legion_Insignias",
+			"95th_Legion_Helmets",
+			"95th_Legion_Backpacks"
 		};
 		units[] = {
 			"95th_CIS_Disguised_Trooper", 
