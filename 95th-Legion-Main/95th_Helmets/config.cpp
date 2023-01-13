@@ -1,3 +1,49 @@
+#define NEW_95TH_P1_HELMET(name) class 95th_P1_Helmet_##name## : 95th_Helmet_P1_Base {\
+    scope = 2;\
+    scopeArsenal = 2;\
+	displayName=[95th] Clone Helmet - ##name##;\
+	hiddenSelectionsTextures[]=\
+	{\
+		\95th_Helmets\Data\P1\95th_P1_Helmet_##name##.paa,\
+		\95th_Helmets\Data\P1\95th_P1_Helmet_##name##.paa\
+	};\
+
+#define NEW_95TH_ARC_HELMET(name) class 95th_P1_ARC_Helmet_##name## : 95th_Helmet_P1_ARC_Base {\
+    scope = 2;\
+    scopeArsenal = 2;\
+	displayName=[95th] Clone ARC Helmet - ##name##;\
+	hiddenSelectionsTextures[]=\
+	{\
+		\95th_Helmets\Data\ARC\95th_P1_ARC_Helmet_##name##.paa,\
+	};\
+
+#define NEW_95TH_PILOT_HELMET(name) class 95th_Helmet_P1_Pilot_##name## : 95th_Helmet_P1_Pilot_Base {\
+    scope = 2;\
+    scopeArsenal = 2;\
+	displayName=[95th] Clone Pilot Helmet - ##name##;\
+	hiddenSelectionsTextures[]=\
+	{\
+		\95th_Helmets\Data\Pilot\95th_P1_Pilot_Helmet_##name##.paa,\
+	};\
+
+#define NEW_95TH_ARF_HELMET(name) class 95th_Helmet_P1_ARF_##name## : 95th_Helmet_P1_ARF_Base {\
+    scope = 2;\
+    scopeArsenal = 2;\
+	displayName=[95th] Clone ARF Helmet - ##name##;\
+	hiddenSelectionsTextures[]=\
+	{\
+		\95th_Helmets\Data\ARF\95th_P1_ARF_Helmet_##name##.paa,\
+	};\
+
+#define NEW_95TH_AIRBORNE_HELMET(name) class 95th_Helmet_P1_Airborne_##name## : 95th_Helmet_P1_Airborne_Base {\
+    scope = 2;\
+    scopeArsenal = 2;\
+	displayName=[95th] Clone Airborne Helmet - ##name##;\
+	hiddenSelectionsTextures[]=\
+	{\
+		\95th_Helmets\Data\Airborne\95th_P1_Airborne_Helmet_##name##.paa,\
+	};\
+
 class CfgPatches
 {
 	class 95th_Legion_Helmets
@@ -7,7 +53,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"JLTS_characters_CloneArmor",
-			"3as_JLTS_Uniforms"
+			"3as_JLTS_Uniforms",
+			"GD_JLTS_AUX"
 		};
 		units[] = {};
 	};
@@ -110,10 +157,7 @@ class CfgGlasses
 
 class cfgWeapons 
 { 
-    //************************************************************************************************************************************************************************************************
-    //*****             Base Helmets                *********************************************************************************************************************************************************
-    //************************************************************************************************************************************************************************************************
-    class ItemCore;
+	class ItemCore;
 	class HeadgearItem;
 	class HitpointsProtectionInfo;
     class 95th_Helmet: ItemCore 
@@ -126,103 +170,71 @@ class cfgWeapons
 			}; 
 		}
     }; 
-	
-	class 3as_P1_Base;
-	class 95th_Helmet_Phase1: 3as_P1_Base
+
+	//************************************************************************************************************************************************************************************************
+    //*****             Base Helmets                *********************************************************************************************************************************************************
+    //************************************************************************************************************************************************************************************************
+    
+
+	class SEA_Helmet_P1_Base;
+	class 95th_Helmet_P1_Base: SEA_Helmet_P1_Base
 	{
+		displayName="[95th] Clone Helmet Base";
 		author="95th Aux";
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="[95th] Clone Trooper Helmet";
 		picture="3AS\3AS_Characters\Clones\Headgear\ui\phase1_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Helmets\Data\95th_Helmet_Trooper.paa"
-		};
+		scope = 0;
+    	scopeArsenal = 0;
+		hiddenSelections[]={"Camo1","Visor"};
 	};
 
 	class JLTS_CloneHelmetARC;
-	class 95th_Helmet_ARC: JLTS_CloneHelmetARC
+	class 95th_Helmet_P1_ARC_Base: JLTS_CloneHelmetARC
 	{
+		displayName="[95th] Clone ARC Helmet Base";
 		author="95th Aux";
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="[95th] Clone ARC Helmet";
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Helmets\Data\95th_Helmet_ARC.paa"
-		};
+		scope = 0;
+    	scopeArsenal = 0;
 	};
 
 	class 3as_P1_Pilot_helmet;
-	class 95th_Helmet_Phase1_Pilot: 3as_P1_Pilot_helmet
+	class 95th_Helmet_P1_Pilot_Base: 3as_P1_Pilot_helmet
 	{
+		displayName="[95th] Clone Pilot Helmet Base";
 		author="95th Aux";
-		scope=2;
-		weaponPoolAvailable=1;
-		displayName="[95th] Clone Pilot Helmet";
 		picture="3AS\3AS_Characters\Clones\Headgear\ui\p2pilot_ui_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Helmets\Data\95th_Helmet_Pilot.paa"
-		};
+		scope = 0;
+    	scopeArsenal = 0;
 	};
 
 	class 3AS_ARF_Helmet;
-	class 95th_ARF_Trooper_Helmet: 3AS_ARF_Helmet
+	class 95th_Helmet_P1_ARF_Base: 3AS_ARF_Helmet
 	{
+		displayName="[95th] ARF Helmet Base";
 		author="95th Aux";
-		scope=2;
-		displayName="[95th] ARF Helmet";
 		picture="3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Helmets\Data\95th_Helmet_ARF.paa",
-			"\95th_Helmets\Data\95th_Helmet_ARF.paa"
-		};
-	};
-
-	class 95th_ARF_Trooper_Test: 3AS_ARF_Helmet
-	{
-		author="95th Aux";
-		scope=2;
-		displayName="[95th] ARF Helmet Test";
-		picture="3AS\3AS_Characters\Clones\Headgear\ui\ARF_UI_CA.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Helmets\Data\95th_Helmet_ARF_Test.paa",
-			"\95th_Helmets\Data\95th_Helmet_ARF_Test.paa"
-		};
+		scope = 0;
+    	scopeArsenal = 0;
 	};
 
 	class JLTS_CloneHelmetAB;
-	class 95th_Airborne_Trooper_Helmet: JLTS_CloneHelmetAB
+	class 95th_Helmet_P1_Airborne_Base: JLTS_CloneHelmetAB
 	{
-		author="95th Aux";
 		displayName="[95th] Airborne Helmet"; 
-		hiddenSelectionsTextures[]={"\95th_Helmets\Data\95th_Helmet_Airborne.paa"};
+		scope = 0;
+    	scopeArsenal = 0;
 	};
 
 	//************************************************************************************************************************************************************************************************
-    //*****             Custom Helmets                *********************************************************************************************************************************************************
+    //*****             Usable Helmets                *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
     
-	class 95th_Helmet_Phase1_Test: 95th_Helmet_Phase1
-	{
-		displayName="[95th] Clone Test Helmet";
-		picture="3AS\3AS_Characters\Clones\Headgear\ui\phase1_ui_ca.paa";
-		hiddenSelectionsTextures[]={"\95th_Helmets\Data\HelmetRefGuide.paa"};
-	};
+	NEW_95TH_P1_HELMET(Trooper)};
+	NEW_95TH_P1_HELMET(Splash)};
+	NEW_95TH_P1_HELMET(Turner)};
+	NEW_95TH_P1_HELMET(Outcast)};
 
-	class 95th_Helmet_Custom_Turner: 95th_Helmet_Phase1
-	{
-		displayName="[95th] Custom Helmet - Turner";
-		hiddenSelectionsTextures[]={"\95th_Helmets\Data\Customs\95th_Helmet_Custom_Turner.paa"};
-	};
-
-	class 95th_Helmet_Custom_Splash: 95th_Helmet_Phase1
-	{
-		displayName="[95th] Custom Helmet - Splash";
-		hiddenSelectionsTextures[]={"\95th_Helmets\Data\Customs\SplashTest.paa"};
-	};
+	NEW_95TH_ARC_HELMET(Trooper)};
+	NEW_95TH_PILOT_HELMET(Trooper)};
+	NEW_95TH_ARF_HELMET(Trooper)};
+	NEW_95TH_AIRBORNE_HELMET(Trooper)};
 }; 
