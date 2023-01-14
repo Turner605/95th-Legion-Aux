@@ -328,6 +328,7 @@ class CfgVehicles
 
 	//Customs
 	NEW_95TH_P1(Turner)
+		editorSubcategory="95th_Customs";
 		linkedItems[] = {"95th_P1_Helmet_Turner","95th_Vest_Lieutenant","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
         respawnLinkedItems[] = {"95th_P1_Helmet_Turner","95th_Vest_Lieutenant","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
 	};
