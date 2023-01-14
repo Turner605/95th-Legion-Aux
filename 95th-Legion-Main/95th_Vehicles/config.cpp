@@ -78,7 +78,7 @@ class CfgVehicles
 	{
 		author="95th Aux";
 		faction="95th_Legion";
-        crew = "95th_Trooper_Pilot";
+        crew = "95TH_P1_Unit_Pilot";
 		displayname="[95th] LAAT/I Mk.1";
 	};
 
@@ -86,7 +86,7 @@ class CfgVehicles
 	class 95th_TX_130 : 3as_saber_m1
 	{
 		author="95th Aux";
-        crew = "95th_Trooper_Base";
+        crew = "95TH_P1_Unit_Trooper";
 		faction="95th_Legion";
 		displayname="95th TX-130";
 		hiddenSelectionsTextures[]=

@@ -157,7 +157,7 @@ class CfgVehicles
     //************************************************************************************************************************************************************************************************
     //*****             CIS                *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
-	class 95th_Trooper_Base;
+	class 95TH_P1_Unit_Trooper;
 	class WBK_Combine_ASS_Sniper;
 	class JLTS_UST_turret_CIS_backpack;
 	class JLTS_UST_turret_CIS;
@@ -171,7 +171,7 @@ class CfgVehicles
 	//*****        Commandos                  *********************************************************************************************************************************************************
 	//************************************************************************************************************************************************************************************************
 
-	class 95th_CIS_Disguised_Trooper: 95th_Trooper_Base
+	class 95th_CIS_Disguised_Trooper: 95TH_P1_Unit_Trooper
 	{
 		displayName="[95th] Disguised BX Trooper";
 		author="95th Aux Team";
@@ -182,13 +182,13 @@ class CfgVehicles
 		scope=2; 
 		scopecurator=2;
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_AB.jpg"; //todo: change me
-		linkedItems[]={"95th_Helmet_Phase1","lsd_cis_bx_head""95th_Vest_Trooper","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
-		respawnLinkedItems[]={"95th_Helmet_Phase1","lsd_cis_bx_head","95th_Vest_Trooper","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+		linkedItems[]={"95th_P1_Helmet_Trooper","lsd_cis_bx_head""95th_Vest_Trooper","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+		respawnLinkedItems[]={"95th_P1_Helmet_Trooper","lsd_cis_bx_head","95th_Vest_Trooper","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
 		nakedUniform = "lsd_cis_bxDroid_uniform";
 		identityTypes[] = {"BX_Droid"};
 	};
 
-	class 95th_CIS_Commando_Base: 95th_Trooper_Base
+	class 95th_CIS_Commando_Base: 95TH_P1_Unit_Trooper
 	{
 		displayName="[95th] BX Commando";
 		author="95th Aux Team";
