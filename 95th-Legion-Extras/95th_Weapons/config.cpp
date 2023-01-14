@@ -29,20 +29,15 @@ class CfgWeapons
 		WBK_BurnEm_RequiredBackpack = "95th_FlameThrower_Backpack";
 		WBK_BurnEm_FlamethrowerSoundArray = ['flamewerfer_start','flamewerfer_looping',4.8,'flamewerfer_end'];
 		WBK_BurnEm_FlamethrowerParticlePos=[[-0.73,0.35,-0.3],'leftHand'];
-		WBK_BurnEm_FlamethrowerDistance = 12.5;
+		WBK_BurnEm_FlamethrowerDistance = 18.5;
 		scope=2;
 		model="\3AS\3AS_Weapons\X42\BX42.p3d";
 		picture="\3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
 		UiPicture="\A3\Weapons_F\data\UI\icon_regular_CA.paa";
 		weaponInfoType="RscWeaponZeroing";
-		muzzles[]=
-		{
-			"this"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=40;
-		};
+		magazines[]={"95th_FlameThrower_Fuel"};
+		muzzles[]={"this"};
+		class WeaponSlotsInfo: WeaponSlotsInfo{mass=40;};
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",
@@ -66,6 +61,21 @@ class CfgVehicles
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
 		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[]={"\95th_Uniforms\Data\ARF\95th_Clone_Flame_Pack.paa"}; 
+		hiddenSelectionsTextures[]={"\95th_Weapons\Data\95th_Clone_Flame_Pack.paa"}; 
+	};
+};
+
+class CfgMagazines
+{
+	class M2_Fuel_Tank;
+	class 95th_FlameThrower_Fuel: M2_Fuel_Tank
+	{
+		scope=2;
+		mass=60;
+		displayName="[95th] BX-42 Fuel";
+		picture="\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		author="95th Aux Team";
+		ammo="Flamethrower_Fuel";
+		descriptionShort="Fuel for the 95th Flamethrower";
 	};
 };
