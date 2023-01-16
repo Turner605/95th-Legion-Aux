@@ -18,42 +18,42 @@ class CfgGroups
     {
 		name="$STR_A3_CfgGroups_West0";
         side=1;
-        class 95th_Legion 
+        class 95th_Legion_Faction_Clones 
         {
-            name = "95th Legion";
+            name = "95th Legion Phase 1";
             class 95th_Infantry
             {
             	name = "Infantry";
 				class 95th_FireTeam
 				{
 					side = 1;
-					faction = "95th_Legion";
+					faction = "95th_Legion_Faction_Clones";
 					name="Fire Team";
 					class Unit0
 					{
 						side = 1;
-						vehicle = "95TH_P1_Unit_Sergeant";
+						vehicle = "95th_P1_Unit_Sergeant";
 						rank = "SERGEANT";
 						position[] = {0,0,0};
 					};
 					class Unit1
 					{
 						side = 1;
-						vehicle = "95TH_P1_Unit_Medic";
+						vehicle = "95th_P1_Unit_Medic";
 						rank = "PRIVATE";
 						position[] = {5,-5,0};
 					};
 					class Unit2
 					{
 						side = 1;
-						vehicle = "95TH_P1_Unit_Trooper";
+						vehicle = "95th_P1_Unit_Trooper";
 						rank = "PRIVATE";
 						position[] = {-5,-5,0};
 					};
 					class Unit3
 					{
 						side = 1;
-						vehicle = "95TH_P1_Unit_Trooper";
+						vehicle = "95th_P1_Unit_Trooper";
 						rank = "PRIVATE";
 						position[] = {10,-10,0};
 					};

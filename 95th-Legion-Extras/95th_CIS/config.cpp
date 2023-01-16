@@ -11,7 +11,6 @@ class CfgPatches
 			"WBK_Combinus",
 			"JLTS_core",
 			"JLTS_weapons_core",
-			"95th_Legion_Uniforms",
 			"95th_Legion_Vehicles",
 			"95th_Legion_Insignias",
 			"95th_Legion_Helmets",
