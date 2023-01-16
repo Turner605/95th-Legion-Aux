@@ -1,6 +1,6 @@
 #define NEW_95TH_P1_Pilot_UNIT(name) class 95th_P1_Pilot_Unit_##name## : 95th_P1_Pilot_Unit_Base {\
     scope = 2;\
-    scopeArsenal = 2;\
+	scopecurator=2;\
 	displayName=[95th] Pilot - ##name##;\
 	linkedItems[]={95th_P1_Pilot_Helmet_##name##,95th_Vest_##name##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={95th_P1_Pilot_Helmet_##name##,95th_Vest_##name##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
@@ -44,10 +44,10 @@ class CfgPatches
 			"95th_P1_Base_Units"
 		};
 		units[] = {
-			"95TH_P1_Unit_Pilot_Trooper",
-			"95TH_P1_Unit_Pilot_Senior",
-			"95TH_P1_Unit_Pilot_Veteran",
-			"95TH_P1_Unit_Pilot_Sergeant",
+			"95th_P1_Pilot_Unit_Trooper",
+			"95th_P1_Pilot_Unit_Senior",
+			"95th_P1_Pilot_Unit_Veteran",
+			"95th_P1_Pilot_Unit_Sergeant",
 		};
     };
 }; 

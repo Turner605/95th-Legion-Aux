@@ -11,10 +11,8 @@ class CfgPatches
 			"WBK_Combinus",
 			"JLTS_core",
 			"JLTS_weapons_core",
-			"95th_Legion_Vehicles",
-			"95th_Legion_Insignias",
-			"95th_Legion_Helmets",
-			"95th_Legion_Backpacks"
+			"95th_P1_Base_Units",
+			"95th_P1_Units"
 		};
 		units[] = {
 			"95th_CIS_Disguised_Trooper", 
@@ -156,7 +154,9 @@ class CfgVehicles
     //************************************************************************************************************************************************************************************************
     //*****             CIS                *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
-	class 95TH_P1_Unit_Trooper;
+	class 95th_P1_Unit_Trooper;
+	class 95th_Unit_Base;
+	class lsd_cis_bxdroid_specops;
 	class WBK_Combine_ASS_Sniper;
 	class JLTS_UST_turret_CIS_backpack;
 	class JLTS_UST_turret_CIS;
@@ -170,13 +170,13 @@ class CfgVehicles
 	//*****        Commandos                  *********************************************************************************************************************************************************
 	//************************************************************************************************************************************************************************************************
 
-	class 95th_CIS_Disguised_Trooper: 95TH_P1_Unit_Trooper
+	class 95th_CIS_Disguised_Trooper: 95th_P1_Unit_Trooper
 	{
 		displayName="[95th] Disguised BX Trooper";
 		author="95th Aux Team";
 		faction="95th_CIS";
 		editorSubcategory="95th_Commandos";
-		uniformClass="95th_Uniform_Base";
+		uniformClass="95th_P1_Uniform_Trooper";
         side = 0;
 		scope=2; 
 		scopecurator=2;
@@ -187,9 +187,11 @@ class CfgVehicles
 		identityTypes[] = {"BX_Droid"};
 	};
 
-	class 95th_CIS_Commando_Base: 95TH_P1_Unit_Trooper
+	class 95th_CIS_Commando_Base: lsd_cis_bxdroid_specops
 	{
 		displayName="[95th] BX Commando";
+		scope=2; 
+		scopecurator=2;
 		author="95th Aux Team";
 		faction="95th_CIS";
 		identityTypes[] = {"BX_Droid"};

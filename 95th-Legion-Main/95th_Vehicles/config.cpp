@@ -3,6 +3,8 @@ class CfgPatches
 	class 95th_Legion_Vehicles
 	{
         author="95th Aux Team";
+		scope=2;
+		scopecurator=2;
         name="95th Legion Vehicles";
 		requiredAddons[]=
 		{
@@ -58,9 +60,11 @@ class CfgVehicles
 	class 3as_LAAT_Mk2;
 	class 95th_LAAT_Mrk2: 3as_LAAT_Mk2
 	{
-		author="95th Aux";
-        crew = "95th_Trooper_Pilot";
 		displayname="[95th] LAAT/I Mk.2";
+		author="95th Aux Team";
+        crew = "95th_P1_Pilot_Unit_Trooper";
+		scopecurator=2;
+		scope = 2;
 		faction="95th_Legion_Faction_Clones";
 		hiddenSelectionsTextures[]=
 		{
@@ -75,16 +79,20 @@ class CfgVehicles
 	class 3as_LAAT_Mk1;
 	class 95th_LAAT_Mrk1: 3as_LAAT_Mk1
 	{
-		author="95th Aux";
-		faction="95th_Legion_Faction_Clones";
-        crew = "95th_P1_Pilot_Unit_Trooper";
 		displayname="[95th] LAAT/I Mk.1";
+		author="95th Aux Team";
+		faction="95th_Legion_Faction_Clones";
+		scopecurator=2;
+		scope = 2;
+        crew = "95th_P1_Pilot_Unit_Trooper";
 	};
 
 	class 3as_saber_m1;
 	class 95th_TX_130 : 3as_saber_m1
 	{
 		author="95th Aux";
+		scopecurator=2;
+		scope = 2;
         crew = "95th_P1_Unit_Trooper";
 		faction="95th_Legion_Faction_Clones";
 		displayname="95th TX-130";

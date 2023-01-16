@@ -1,6 +1,6 @@
 #define NEW_95TH_P1_ARC_UNIT(name) class 95th_P1_ARC_Unit_##name## : 95th_P1_ARC_Unit_Base {\
     scope = 2;\
-    scopeArsenal = 2;\
+	scopecurator=2;\
 	displayName=[95th] ARC - ##name##;\
 	linkedItems[]={95th_P1_ARC_Helmet_##name##,95th_Vest_ARC,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={95th_P1_ARC_Helmet_##name##,95th_Vest_ARC,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\

@@ -1,6 +1,6 @@
 #define NEW_95TH_P1_AIRBORNE_UNIT(name) class 95th_P1_Airborne_Unit_##name## : 95th_P1_Airborne_Unit_Base {\
     scope = 2;\
-    scopeArsenal = 2;\
+	scopecurator=2;\
 	displayName=[95th] Airborne - ##name##;\
 	linkedItems[]={95th_P1_Airborne_Helmet_##name##,95th_Vest_##name##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={95th_P1_Airborne_Helmet_##name##,95th_Vest_##name##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\

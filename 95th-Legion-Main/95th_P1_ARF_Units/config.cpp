@@ -1,6 +1,6 @@
 #define NEW_95TH_P1_ARF_UNIT(name) class 95th_P1_ARF_Unit_##name## : 95th_P1_ARF_Unit_Base {\
     scope = 2;\
-    scopeArsenal = 2;\
+	scopecurator=2;\
 	displayName=[95th] ARF - ##name##;\
 	linkedItems[]={95th_P1_ARF_Helmet_##name##,95th_Vest_##name##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={95th_P1_ARF_Helmet_##name##,95th_Vest_##name##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
