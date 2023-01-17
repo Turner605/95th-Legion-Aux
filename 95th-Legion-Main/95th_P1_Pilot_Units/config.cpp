@@ -27,7 +27,12 @@
     scope = 2;\
     scopeArsenal = 2;\
 	displayName=[95th] Pilot Helmet - ##name##;\
-	hiddenSelectionsTextures[]={\95th_P1_Pilot_Units\Data\Helmets\95th_P1_Pilot_Helmet_##name##.paa};\
+	hiddenSelectionsTextures[]=\
+	{\
+		\95th_P1_Pilot_Units\Data\Helmets\95th_P1_Pilot_Helmet_##name##.paa,\
+		\95th_P1_Pilot_Units\Data\Helmets\95th_P1_Pilot_LifeSupport_##name##.paa,\
+		\95th_P1_Pilot_Units\Data\Helmets\95th_P1_Pilot_Helmet_##name##.paa\
+	};\
 
 
 class CfgPatches 

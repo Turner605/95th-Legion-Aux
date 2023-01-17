@@ -7,7 +7,8 @@ class CfgPatches
 		scopecurator=0;
         name="95th Legion Base";
         requiredAddons[] = {
-			"JLTS_characters_CloneArmor"
+			"JLTS_characters_CloneArmor",
+			"GD_JLTS_AUX"
 		};
 		units[] = {
 			"95th_Unit_Base",
@@ -244,8 +245,8 @@ class cfgWeapons
     	scopeArsenal = 0;
 	};
 
-	class 3as_P1_Pilot_helmet;
-	class 95th_P1_Pilot_Helmet_Base: 3as_P1_Pilot_helmet
+	class LSEA_Helmet_Pilot_P1_Base;
+	class 95th_P1_Pilot_Helmet_Base: LSEA_Helmet_Pilot_P1_Base
 	{
 		displayName="[95th] Pilot Helmet Base";
 		author="95th Aux Team";
@@ -260,6 +261,7 @@ class cfgWeapons
 		author="95th Aux Team";
 		scope = 0;
     	scopeArsenal = 0;
+		hiddenSelections[]={"Camo1","camo2","Visor"};
 	};
 	
 	class SEA_Helmet_P1_Base;
