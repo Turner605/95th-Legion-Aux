@@ -8,7 +8,7 @@ class CfgPatches
 		{
 			"JLTS_characters_CloneArmor",
 			"3as_JLTS_Uniforms",
-			"GD_JLTS_AUX"
+			"SEA_JLTS_ExtendedArsenal"
 		};
 		units[] = {};
 	};

@@ -8,7 +8,7 @@ class CfgPatches
         name="95th Legion Base";
         requiredAddons[] = {
 			"JLTS_characters_CloneArmor",
-			"GD_JLTS_AUX"
+			"SEA_JLTS_ExtendedArsenal"
 		};
 		units[] = {
 			"95th_Unit_Base",

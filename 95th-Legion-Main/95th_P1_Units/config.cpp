@@ -44,7 +44,7 @@ class CfgPatches
         requiredAddons[] = {
 			"A3_Characters_F", 
 			"JLTS_characters_CloneArmor",
-			"GD_JLTS_AUX",
+			"SEA_JLTS_ExtendedArsenal",
 			"95th_P1_Base_Units"
 		};
 		units[] = {
