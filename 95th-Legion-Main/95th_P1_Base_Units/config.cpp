@@ -273,4 +273,34 @@ class cfgWeapons
     	scopeArsenal = 0;
 		hiddenSelections[]={"Camo1","Visor"};
 	};
+
+	class SEA_Helmet_SpecOps_SR_Base;
+	class 95th_P1_SpecOps_Helmet_Base: SEA_Helmet_SpecOps_SR_Base
+	{
+		displayName="[95th] P1 SpecOps Helmet Base";
+		author="95th Aux Team";
+		scope = 0;
+    	scopeArsenal = 0;
+		hiddenSelections[]={"Camo1","Camo2","Visor"};
+	};
+
+	class SEA_Helmet_Engineer_Base;
+	class 95th_P1_Engineer_Helmet_Base: SEA_Helmet_Engineer_Base
+	{
+		displayName="[95th] P1 Engineer Helmet Base";
+		author="95th Aux Team";
+		scope = 0;
+    	scopeArsenal = 0;
+		hiddenSelections[]={"Camo1","Visor"};
+	};
+
+	class SEA_Helmet_Hazard_Base;
+	class 95th_P1_Hazard_Helmet_Base: SEA_Helmet_Hazard_Base
+	{
+		displayName="[95th] P1 Hazard Helmet Base";
+		author="95th Aux Team";
+		scope = 0;
+    	scopeArsenal = 0;
+		hiddenSelections[]={"Camo1","Camo2","Visor"};
+	};
 }; 
