@@ -1,10 +1,10 @@
-#define NEW_95TH_P1_AIRBORNE_UNIT(name) class 95th_P1_Airborne_Unit_##name## : 95th_P1_Airborne_Unit_Base {\
+#define NEW_95TH_P1_AIRBORNE_UNIT(name,helmet,vest) class 95th_P1_Airborne_Unit_##name## : 95th_P1_Airborne_Unit_Base {\
     scope = 2;\
 	scopecurator=2;\
 	displayName=[95th] Airborne - ##name##;\
-	linkedItems[]={95th_P1_Airborne_Helmet_##name##,95th_Vest_##name##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
-	respawnLinkedItems[]={95th_P1_Airborne_Helmet_##name##,95th_Vest_##name##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	uniformClass=95th_P1_Airborne_Uniform_##name##;\
+	linkedItems[]={95th_P1_Airborne_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
+	respawnLinkedItems[]={95th_P1_Airborne_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]=\
 	{\
 		\95th_P1_Airborne_Units\Data\Uniforms\95th_P1_Airborne_Uniform_##name##_Upper.paa,\
@@ -40,7 +40,8 @@ class CfgPatches
         requiredAddons[] = {
 			"A3_Characters_F", 
 			"JLTS_characters_CloneArmor",
-			"95th_P1_Base_Units"
+			"95th_P1_Base_Units",
+			"95th_Legion_Backpacks"
 		};
 		units[] = {
 			"95th_P1_Airborne_Unit_Trooper",
@@ -73,17 +74,15 @@ class cfgWeapons
 	NEW_95TH_P1_AIRBORNE_UNIFORM(Lieutenant)};
 
 	NEW_95TH_P1_AIRBORNE_HELMET(Trooper)};
-	NEW_95TH_P1_AIRBORNE_HELMET(Sergeant)};
-	NEW_95TH_P1_AIRBORNE_HELMET(Captain)};
-	NEW_95TH_P1_AIRBORNE_HELMET(Lieutenant)};
 }; 
 
 class CfgVehicles 
 {     
 	class 95th_P1_Airborne_Unit_Base;
 
-	NEW_95TH_P1_AIRBORNE_UNIT(Trooper)};
-	NEW_95TH_P1_AIRBORNE_UNIT(Sergeant)};
-	NEW_95TH_P1_AIRBORNE_UNIT(Captain)};
-	NEW_95TH_P1_AIRBORNE_UNIT(Lieutenant)};
+	// Uniform/Class Name, Helmet Name, Vest Name, Backpack Name
+	NEW_95TH_P1_AIRBORNE_UNIT(Trooper,Trooper,Trooper)};
+	NEW_95TH_P1_AIRBORNE_UNIT(Sergeant,Trooper,Sergeant)};
+	NEW_95TH_P1_AIRBORNE_UNIT(Captain,Trooper,Captain)};
+	NEW_95TH_P1_AIRBORNE_UNIT(Lieutenant,Trooper,Lieutenant)};
 };

@@ -8,7 +8,9 @@ class CfgPatches
 		{
 			"JLTS_characters_CloneArmor"
 		};
-		units[] = {};
+		units[] = {
+			"95th_Backpack_Trooper"
+		};
 	};
 };
 
