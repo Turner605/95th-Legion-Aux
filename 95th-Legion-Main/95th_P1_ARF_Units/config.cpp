@@ -1,10 +1,10 @@
-#define NEW_95TH_P1_ARF_UNIT(name) class 95th_P1_ARF_Unit_##name## : 95th_P1_ARF_Unit_Base {\
+#define NEW_95TH_P1_ARF_UNIT(name,helmet,vest) class 95th_P1_ARF_Unit_##name## : 95th_P1_ARF_Unit_Base {\
     scope = 2;\
 	scopecurator=2;\
 	displayName=[95th] ARF - ##name##;\
-	linkedItems[]={95th_P1_ARF_Helmet_##name##,95th_Vest_##name##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
-	respawnLinkedItems[]={95th_P1_ARF_Helmet_##name##,95th_Vest_##name##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	uniformClass=95th_P1_ARF_Uniform_##name##;\
+	linkedItems[]={95th_P1_ARF_Helmet_##helmet##,95th_Vest_##vest##,,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
+	respawnLinkedItems[]={95th_P1_ARF_Helmet_##helmet##,95th_Vest_##vest##,,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]=\
 	{\
 		\95th_P1_ARF_Units\Data\Uniforms\95th_P1_ARF_Uniform_##name##_Upper.paa,\
@@ -73,17 +73,15 @@ class cfgWeapons
 	NEW_95TH_P1_ARF_UNIFORM(Lieutenant)};
 
 	NEW_95TH_P1_ARF_HELMET(Trooper)};
-	NEW_95TH_P1_ARF_HELMET(Sergeant)};
-	NEW_95TH_P1_ARF_HELMET(Captain)};
-	NEW_95TH_P1_ARF_HELMET(Lieutenant)};
 }; 
 
 class CfgVehicles 
 {     
 	class 95th_P1_ARF_Unit_Base;
 
-	NEW_95TH_P1_ARF_UNIT(Trooper)};
-	NEW_95TH_P1_ARF_UNIT(Sergeant)};
-	NEW_95TH_P1_ARF_UNIT(Captain)};
-	NEW_95TH_P1_ARF_UNIT(Lieutenant)};
+	// Uniform/Class Name, Helmet Name, Vest Name, Backpack Name
+	NEW_95TH_P1_ARF_UNIT(Trooper,Trooper,Trooper)};
+	NEW_95TH_P1_ARF_UNIT(Sergeant,Trooper,Sergeant)};
+	NEW_95TH_P1_ARF_UNIT(Captain,Trooper,Captain)};
+	NEW_95TH_P1_ARF_UNIT(Lieutenant,Trooper,Lieutenant)};
 };
