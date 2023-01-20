@@ -29,7 +29,7 @@ class CfgVehicles
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
 		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[]={"\95th_Weapons\Data\95th_Clone_Flame_Pack.paa"}; 
+		hiddenSelectionsTextures[]={"\95th_Extra_Weapons\Data\95th_Clone_Flame_Pack.paa"}; 
 	};
 
 	class JLTS_Clone_jumppack_mc;
