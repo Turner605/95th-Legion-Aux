@@ -189,20 +189,19 @@ class CfgVehicles
 
 	class 95th_CIS_Commando_Base: lsd_cis_bxdroid_specops
 	{
-		displayName="[95th] BX Commando";
-		scope=2; 
+		scope=2;
 		scopecurator=2;
+        side = 0;
+		displayName="[95th] BX Commando";
 		author="95th Aux Team";
 		faction="95th_CIS";
-		identityTypes[] = {"BX_Droid"};
+		facewear="";
+		editorSubcategory="95th_Commandos";
+		identityTypes[]={"LanguageENG_F","Head_LSD_BX"};
 		WBK_CombineType=" assasin_";
 		WBK_BehaveLikeHuman="true";
 		WBK_CustomHPparam=5;
-		editorSubcategory="95th_Commandos";
-		uniformClass="BX_BaseUniform";
-        side = 0;
-		facewear="";
-		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_AB.jpg"; //todo: change me
+		nakedUniform="lsd_cis_bxDroid_uniform";
 		items[]={"BX_SwordVest","SWLB_comlink_droid","JLTS_NVG_droid_chip_2","ItemGPS","ItemMap","ItemWatch","ItemCompass","WBK_Health_Battery","WBK_Health_Battery","WBK_Health_Syringe"};
 		linkedItems[]={"BX_SwordVest","SWLB_comlink_droid","JLTS_NVG_droid_chip_2","ItemGPS","ItemMap","ItemWatch","ItemCompass","WBK_Health_Battery","WBK_Health_Battery","WBK_Health_Syringe"};
 		respawnLinkedItems[]={"BX_SwordVest","SWLB_comlink_droid","JLTS_NVG_droid_chip_2","ItemGPS","ItemMap","ItemWatch","ItemCompass","WBK_Health_Battery","WBK_Health_Battery","WBK_Health_Syringe"};
@@ -220,22 +219,35 @@ class CfgVehicles
 		};
 	};
 
-	class 95th_CIS_Commando_Captain: 95th_CIS_Commando_Base
-	{
-		displayName="[95th] BX Captain";
-		uniformClass="BX_CaptainUniform";
-	};
-
 	class 95th_CIS_Commando_Citadel: 95th_CIS_Commando_Base
 	{
 		displayName="[95th] BX Citadel Guard";
-		uniformClass="BX_CitadelUniform";
+		uniformClass="lsd_cis_bxSecurityDroid_uniform";
+		hiddenSelectionsTextures[]=
+		{
+			"lsd_units_redfor\cis\specops\textures\bx_security_co.paa"
+		};
 	};
 
 	class 95th_CIS_Commando_Diplomat: 95th_CIS_Commando_Base
 	{
 		displayName="[95th] BX Diplomat";
-		uniformClass="BX_DiplomatUniform";
+		uniformClass="lsd_cis_bxDiplomatDroid_uniform";
+		hiddenSelectionsTextures[]=
+		{
+			"lsd_units_redfor\cis\specops\textures\bx_diplomat_co.paa"
+		};
+	};
+
+	class 95th_CIS_Commando_Captain: 95th_CIS_Commando_Base
+	{
+		displayName="[95th] BX Captain";
+		icon="LSiconLeader";
+		uniformClass="lsd_cis_bxCaptainDroid_uniform";
+		hiddenSelectionsTextures[]=
+		{
+			"lsd_units_redfor\cis\specops\textures\bx_captain_co.paa"
+		};
 	};
 
 	//************************************************************************************************************************************************************************************************
