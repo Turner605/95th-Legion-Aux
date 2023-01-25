@@ -284,4 +284,44 @@ class cfgWeapons
 			};
 		};
 	};
+
+	class JLTS_CloneVestOfficer2;
+	class 95th_Vest_Zeus: JLTS_CloneVestOfficer2
+	{
+		author="95th Aux";
+		scope=2;
+		displayName="[95th] Clone Zeus Vest";
+		hiddenSelectionsTextures[]={"\95th_Vests\Data\95th_Vest_Zeus.paa"};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
+			containerClass="Supply100";
+			hiddenSelections[]={"camo1"};
+			mass=80;
+			class HitpointsProtectionInfo
+			{
+				class Chest{HitpointName="HitChest";armor=9;PassThrough=0.30000001;};
+				class Legs{hitpointName="HitLegs";armor=9;passThrough=0.30000001;};
+				class Arms{hitpointName="HitArms";armor=4;passThrough=0.30000001;};
+			};
+		};
+	};
+
+	class JLTS_CloneVestAirborneNCO;
+	class 95th_Vest_Testbed: JLTS_CloneVestAirborneNCO
+	{
+		author="95th Aux";
+		scope=2;
+		displayName="[95th] Clone Test Vest";
+		class ItemInfo: VestItem
+		{
+			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
+			containerClass="Supply70";
+			hiddenSelectionsTextures[]=
+			{
+				"\95th_Vests\Data\Airborne\95th_Vest_Test_Officer.paa",
+				"\95th_Vests\Data\Airborne\95th_Vest_Test_Heavy.paa"
+			};
+		};
+	};
 }; 

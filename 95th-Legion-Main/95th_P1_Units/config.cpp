@@ -23,6 +23,32 @@
 		mass=40;\
 	};
 
+#define NEW_95TH_P1_MC_UNIT(name,helmet,vest) class 95th_P1_MC_Unit_##name## : 95th_P1_MC_Unit_Base {\
+    scope = 2;\
+	scopecurator=2;\
+	displayName=[95th] P1 MC - ##name##;\
+	uniformClass=95th_P1_MC_Uniform_##name##;\
+	linkedItems[]={95th_P1_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
+	respawnLinkedItems[]={95th_P1_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
+	hiddenSelectionsTextures[]=\
+	{\
+		\95th_P1_Units\Data\Uniforms_MC\95th_P1_MC_Uniform_##name##_Upper.paa,\
+		\95th_P1_Units\Data\Uniforms_MC\95th_P1_MC_Uniform_##name##_Lower.paa,\
+		\95th_P1_Units\Data\Uniforms_MC\95th_P1_MC_Uniform_##name##_Rank.paa,\
+	};\
+
+#define NEW_95TH_P1_MC_UNIFORM(name) class 95th_P1_MC_Uniform_##name## : 95th_P1_MC_Uniform_Base {\
+    scope = 2;\
+    scopeArsenal = 2;\
+	displayName=[95th] P1 MC Uniform - ##name##;\
+	class ItemInfo: UniformItem\
+	{\
+		uniformClass=95th_P1_MC_Unit_##name##;\
+		uniformModel=-;\
+		containerClass=Supply150;\
+		mass=40;\
+	};
+
 #define NEW_95TH_P1_HELMET(name) class 95th_P1_Helmet_##name## : 95th_P1_Helmet_Base {\
     scope = 2;\
     scopeArsenal = 2;\
@@ -75,6 +101,7 @@ class cfgWeapons
     };
 
 	class 95th_P1_Uniform_Base;
+	class 95th_P1_MC_Uniform_Base;
 	class 95th_P1_Helmet_Base;
     
 	NEW_95TH_P1_UNIFORM(Trooper)};
@@ -85,7 +112,8 @@ class cfgWeapons
 	NEW_95TH_P1_UNIFORM(Captain)};
 	NEW_95TH_P1_UNIFORM(Lieutenant)};
 	NEW_95TH_P1_UNIFORM(Outcast)};
-	NEW_95TH_P1_UNIFORM(Turner)};
+
+	NEW_95TH_P1_MC_UNIFORM(Turner)};
 
 	NEW_95TH_P1_HELMET(Trooper)};
 	NEW_95TH_P1_HELMET(Medic)};
@@ -98,6 +126,7 @@ class cfgWeapons
 class CfgVehicles 
 {     
 	class 95th_P1_Unit_Base;
+	class 95th_P1_MC_Unit_Base;
 
 	// Uniform/Class Name, Helmet Name, Vest Name, Backpack Name
 	NEW_95TH_P1_UNIT(Trooper,Trooper,Trooper)};
@@ -108,5 +137,6 @@ class CfgVehicles
 	NEW_95TH_P1_UNIT(Captain,Trooper,Captain)};
 	NEW_95TH_P1_UNIT(Lieutenant,Trooper,Lieutenant)};
 	NEW_95TH_P1_UNIT(Outcast,Trooper,Captain)};
-	NEW_95TH_P1_UNIT(Turner,Trooper,Lieutenant)};
+
+	NEW_95TH_P1_MC_UNIT(Turner,Turner,Zeus)};
 };

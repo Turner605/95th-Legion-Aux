@@ -192,6 +192,23 @@ class CfgVehicles
 			"Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"
 		};
 	};
+
+	class 95th_P1_MC_Unit_Base: 95th_Unit_Base
+	{
+		displayName="[95th] Commanders";
+		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_marshalcommander.jpg";
+		icon="JLTS_iconManMarshalCMDR";
+		uniformClass="95th_P1_MC_Uniform_Base";
+		model="\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
+		hiddenSelections[]={"camo1","camo2","camo3"};
+		hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor1_mc_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa",
+			"\MRC\JLTS\characters\CloneArmor\data\Clone_rank_co.paa"
+		};
+	};
+
 };
 
 class cfgWeapons 
@@ -220,6 +237,23 @@ class cfgWeapons
 		{
 			uniformClass="95th_Unit_Base";
 			uniformModel="-";
+			containerClass="Supply150";
+			mass=40;
+		};
+	};
+
+	class 95th_P1_MC_Uniform_Base: U_I_CombatUniform
+	{
+        author="95th Aux Team";
+		scope=0; 
+		scopecurator=0;
+		displayName="[95th] Base MC Uniform";
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa";
+		model="\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="JLTS_Clone_P2_marshalcommander";
 			containerClass="Supply150";
 			mass=40;
 		};
