@@ -82,7 +82,7 @@ class CfgVehicles
 		scope=2;
 		maximumLoad = 350;
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_backpack_ui_ca.paa";
-		displayName="[95th] EOD Backpack";
+		displayName="[95th] Ordnance Backpack";
 		model="\MRC\JLTS\characters\CloneArmor\CloneBackpack.p3d";
 		hiddenSelections[]=
 		{

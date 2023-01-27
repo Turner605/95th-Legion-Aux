@@ -34,7 +34,7 @@
 	{\
 		\95th_P1_Units\Data\Uniforms_MC\95th_P1_MC_Uniform_##name##_Upper.paa,\
 		\95th_P1_Units\Data\Uniforms_MC\95th_P1_MC_Uniform_##name##_Lower.paa,\
-		\95th_P1_Units\Data\Uniforms_MC\95th_P1_MC_Uniform_##name##_Rank.paa,\
+		\
 	};\
 
 #define NEW_95TH_P1_MC_UNIFORM(name) class 95th_P1_MC_Uniform_##name## : 95th_P1_MC_Uniform_Base {\
