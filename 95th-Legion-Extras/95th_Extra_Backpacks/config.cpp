@@ -47,6 +47,11 @@ class CfgVehicles
 		RD501_jumppack_recharge=4;
 		NSM_jumppack_energy_capacity=10;
 		NSM_jumppack_recharge=4;
+		RD501_jumppack_jump_types[]=
+		{
+			{"Forward Jump",{12,20,50,0,0,0}},
+			{"Short Jump",{12,5,30,0,1,0}}
+		};
 	}
 
 	class 95th_JumpPack : JLTS_Clone_jumppack_JT12

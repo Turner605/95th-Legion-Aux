@@ -79,6 +79,7 @@ class cfgWeapons
 	NEW_95TH_P1_Pilot_UNIFORM(Sergeant)};
 
 	NEW_95TH_P1_Pilot_HELMET(Trooper)};
+	NEW_95TH_P1_Pilot_HELMET(Jinter)};
 }; 
 
 class CfgVehicles 

@@ -121,6 +121,9 @@ class cfgWeapons
 	NEW_95TH_P1_HELMET(Veteran)};
 	NEW_95TH_P1_HELMET(Outcast)};
 	NEW_95TH_P1_HELMET(Turner)};
+	NEW_95TH_P1_HELMET(Splash)};
+	NEW_95TH_P1_HELMET(Volt)};
+	NEW_95TH_P1_HELMET(Biedronka)};
 }; 
 
 class CfgVehicles 
