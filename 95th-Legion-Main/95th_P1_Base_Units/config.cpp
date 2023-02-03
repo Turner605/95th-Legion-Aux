@@ -197,6 +197,7 @@ class CfgVehicles
 	{
 		displayName="[95th] Commanders";
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_marshalcommander.jpg";
+		editorSubcategory="95th_P1";
 		icon="JLTS_iconManMarshalCMDR";
 		uniformClass="95th_P1_MC_Uniform_Base";
 		model="\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
