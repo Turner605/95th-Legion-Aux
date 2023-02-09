@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class 95th_P1_Facewear
+	class 95th_Ace
 	{
         author="95th Aux Team";
         name="95th Legion ACE";
