@@ -63,6 +63,7 @@ class CfgVehicles
 		displayname="[95th] LAAT/I Mk.2";
 		author="95th Aux Team";
         crew = "95th_P1_Pilot_Unit_Trooper";
+		ace_cargo_space = 26;
 		scopecurator=2;
 		scope = 2;
 		faction="95th_Legion_Faction_Clones";
@@ -82,6 +83,7 @@ class CfgVehicles
 		displayname="[95th] LAAT/I Mk.1";
 		author="95th Aux Team";
 		faction="95th_Legion_Faction_Clones";
+		ace_cargo_space = 26;
 		scopecurator=2;
 		scope = 2;
         crew = "95th_P1_Pilot_Unit_Trooper";
@@ -96,6 +98,7 @@ class CfgVehicles
         crew = "95th_P1_Unit_Trooper";
 		faction="95th_Legion_Faction_Clones";
 		displayname="95th TX-130";
+		ace_cargo_space = 26;
 		hiddenSelectionsTextures[]=
 		{
 			"\95th_Vehicles\Data\Saber\Hull.paa",
