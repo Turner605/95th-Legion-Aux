@@ -43,7 +43,6 @@ class cfgWeapons
 	class 95th_P1_SpecOps_Helmet_Base;
 	class 95th_P1_Engineer_Helmet_Base;
 	class 95th_P1_Hazard_Helmet_Base;
-	class 95th_P1_Kong_Helmet_Base;
 
 	NEW_95TH_P1_OTHER_HELMET(SpecOps,Trooper)
 		hiddenSelectionsTextures[]=
@@ -75,6 +74,13 @@ class cfgWeapons
 		{
 			"\95th_P1_Other_Units\Data\Helmets\95th_P1_Engineer_Helmet_Kong.paa",
 			"\95th_P1_Other_Units\Data\Helmets\95th_P1_Engineer_Helmet_Kong.paa"
+		};
+	};
+	NEW_95TH_P1_OTHER_HELMET(Engineer,Revan)
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_P1_Other_Units\Data\Helmets\95th_P1_Engineer_Helmet_Revan.paa",
+			"\95th_P1_Other_Units\Data\Helmets\95th_P1_Engineer_Helmet_Revan.paa"
 		};
 	};
 }; 
