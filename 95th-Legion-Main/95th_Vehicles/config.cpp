@@ -104,5 +104,13 @@ class CfgVehicles
 			"\95th_Vehicles\Data\Saber\Hull.paa",
 			"\95th_Vehicles\Data\Saber\Weapons.paa",
 		};
+		class ACE_Cargo {
+			class Cargo {
+				class track {
+					type = "ACE_Track";
+					amount = 2;
+				};
+			};
+		};
 	};
 }; 
