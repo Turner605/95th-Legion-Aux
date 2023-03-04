@@ -2,26 +2,14 @@
     scope = 2;\
 	scopecurator=2;\
 	displayName=[95th] Airborne - ##name##;\
-	uniformClass=95th_P1_Airborne_Uniform_##name##;\
+	uniformClass=95th_P1_Uniform_##name##;\
 	linkedItems[]={95th_P1_Airborne_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={95th_P1_Airborne_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]=\
 	{\
-		\95th_P1_Airborne_Units\Data\Uniforms\95th_P1_Airborne_Uniform_##name##_Upper.paa,\
-		\95th_P1_Airborne_Units\Data\Uniforms\95th_P1_Airborne_Uniform_##name##_Lower.paa\
+		\95th_P1_Units\Data\Uniforms\95th_P1_Uniform_##name##_Upper.paa,\
+		\95th_P1_Units\Data\Uniforms\95th_P1_Uniform_##name##_Lower.paa\
 	};\
-
-#define NEW_95TH_P1_AIRBORNE_UNIFORM(name) class 95th_P1_Airborne_Uniform_##name## : 95th_P1_Uniform_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	displayName=[95th] Airborne Uniform - ##name##;\
-	class ItemInfo: UniformItem\
-	{\
-		uniformClass=95th_P1_Airborne_Unit_##name##;\
-		uniformModel=-;\
-		containerClass=Supply150;\
-		mass=40;\
-	};
 
 #define NEW_95TH_P1_AIRBORNE_HELMET(name) class 95th_P1_Airborne_Helmet_##name## : 95th_P1_Airborne_Helmet_Base {\
     scope = 2;\
@@ -53,7 +41,7 @@ class CfgPatches
 }; 
 
 class CfgEditorSubcategories{
-	class 95th_Airborne{displayName="Airborne";};
+	class 95th_Airborne{displayName="Phase 1 - Airborne";};
 };
 
 class cfgWeapons 
@@ -65,13 +53,7 @@ class cfgWeapons
         class ItemInfo;
     };
 
-	class 95th_P1_Uniform_Base;
 	class 95th_P1_Airborne_Helmet_Base;
-    
-	NEW_95TH_P1_AIRBORNE_UNIFORM(Trooper)};
-	NEW_95TH_P1_AIRBORNE_UNIFORM(Sergeant)};
-	NEW_95TH_P1_AIRBORNE_UNIFORM(Captain)};
-	NEW_95TH_P1_AIRBORNE_UNIFORM(Lieutenant)};
 
 	NEW_95TH_P1_AIRBORNE_HELMET(Trooper)};
 }; 

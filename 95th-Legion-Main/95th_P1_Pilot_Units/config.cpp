@@ -2,26 +2,14 @@
     scope = 2;\
 	scopecurator=2;\
 	displayName=[95th] Pilot - ##name##;\
-	uniformClass=95th_P1_Pilot_Uniform_##name##;\
+	uniformClass=95th_P1_Uniform_##name##;\
 	linkedItems[]={95th_P1_Pilot_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={95th_P1_Pilot_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]=\
 	{\
-		\95th_P1_Pilot_Units\Data\Uniforms\95th_P1_Pilot_Uniform_##name##_Upper.paa,\
-		\95th_P1_Pilot_Units\Data\Uniforms\95th_P1_Pilot_Uniform_##name##_Lower.paa\
+		\95th_P1_Units\Data\Uniforms\95th_P1_Uniform_##name##_Upper.paa,\
+		\95th_P1_Units\Data\Uniforms\95th_P1_Uniform_##name##_Lower.paa\
 	};\
-
-#define NEW_95TH_P1_Pilot_UNIFORM(name) class 95th_P1_Pilot_Uniform_##name## : 95th_P1_Uniform_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	displayName=[95th] Pilot Uniform - ##name##;\
-	class ItemInfo: UniformItem\
-	{\
-		uniformClass=95th_P1_Pilot_Unit_##name##;\
-		uniformModel=-;\
-		containerClass=Supply150;\
-		mass=40;\
-	};
 
 #define NEW_95TH_P1_Pilot_HELMET(name) class 95th_P1_Pilot_Helmet_##name## : 95th_P1_Pilot_Helmet_Base {\
     scope = 2;\
@@ -58,7 +46,7 @@ class CfgPatches
 }; 
 
 class CfgEditorSubcategories{
-	class 95th_Pilots{displayName="Pilots";};
+	class 95th_Pilots{displayName="Phase 1 - Pilots";};
 };
 
 class cfgWeapons 
@@ -70,13 +58,7 @@ class cfgWeapons
         class ItemInfo;
     };
 
-	class 95th_P1_Uniform_Base;
 	class 95th_P1_Pilot_Helmet_Base;
-    
-	NEW_95TH_P1_Pilot_UNIFORM(Trooper)};
-	NEW_95TH_P1_Pilot_UNIFORM(Senior)};
-	NEW_95TH_P1_Pilot_UNIFORM(Veteran)};
-	NEW_95TH_P1_Pilot_UNIFORM(Sergeant)};
 
 	NEW_95TH_P1_Pilot_HELMET(Trooper)};
 	NEW_95TH_P1_Pilot_HELMET(Jinter)};

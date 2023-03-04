@@ -2,26 +2,14 @@
     scope = 2;\
 	scopecurator=2;\
 	displayName=[95th] ARF - ##name##;\
-	uniformClass=95th_P1_ARF_Uniform_##name##;\
+	uniformClass=95th_P1_Uniform_##name##;\
 	linkedItems[]={95th_P1_ARF_Helmet_##helmet##,95th_Vest_##vest##,,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={95th_P1_ARF_Helmet_##helmet##,95th_Vest_##vest##,,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]=\
 	{\
-		\95th_P1_ARF_Units\Data\Uniforms\95th_P1_ARF_Uniform_##name##_Upper.paa,\
-		\95th_P1_ARF_Units\Data\Uniforms\95th_P1_ARF_Uniform_##name##_Lower.paa\
+		\95th_P1_Units\Data\Uniforms\95th_P1_Uniform_##name##_Upper.paa,\
+		\95th_P1_Units\Data\Uniforms\95th_P1_Uniform_##name##_Lower.paa\
 	};\
-
-#define NEW_95TH_P1_ARF_UNIFORM(name) class 95th_P1_ARF_Uniform_##name## : 95th_P1_Uniform_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	displayName=[95th] ARF Uniform - ##name##;\
-	class ItemInfo: UniformItem\
-	{\
-		uniformClass=95th_P1_ARF_Unit_##name##;\
-		uniformModel=-;\
-		containerClass=Supply150;\
-		mass=40;\
-	};
 
 #define NEW_95TH_P1_ARF_HELMET(name) class 95th_P1_ARF_Helmet_##name## : 95th_P1_ARF_Helmet_Base {\
     scope = 2;\
@@ -52,7 +40,7 @@ class CfgPatches
 }; 
 
 class CfgEditorSubcategories{
-	class 95th_ARF{displayName="ARF";};
+	class 95th_ARF{displayName="Phase 1 - ARF";};
 };
 
 class cfgWeapons 
@@ -66,11 +54,6 @@ class cfgWeapons
 
 	class 95th_P1_Uniform_Base;
 	class 95th_P1_ARF_Helmet_Base;
-    
-	NEW_95TH_P1_ARF_UNIFORM(Trooper)};
-	NEW_95TH_P1_ARF_UNIFORM(Sergeant)};
-	NEW_95TH_P1_ARF_UNIFORM(Captain)};
-	NEW_95TH_P1_ARF_UNIFORM(Lieutenant)};
 
 	NEW_95TH_P1_ARF_HELMET(Trooper)};
 }; 

@@ -83,11 +83,4 @@ class cfgWeapons
 			"\95th_P1_Other_Units\Data\Helmets\95th_P1_Engineer_Helmet_Revan.paa"
 		};
 	};
-}; 
-
-class CfgVehicles 
-{     
-	class 95th_P1_ARC_Unit_Base;
-
-	// NEW_95TH_P1_ARC_UNIT(Trooper)};
 };

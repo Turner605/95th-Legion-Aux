@@ -26,6 +26,7 @@
 #define NEW_95TH_P1_MC_UNIT(name,helmet,vest) class 95th_P1_MC_Unit_##name## : 95th_P1_MC_Unit_Base {\
     scope = 2;\
 	scopecurator=2;\
+	editorSubcategory=95th_P1_MC;\
 	displayName=[95th] P1 MC - ##name##;\
 	uniformClass=95th_P1_MC_Uniform_##name##;\
 	linkedItems[]={95th_P1_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
@@ -89,6 +90,7 @@ class CfgPatches
 
 class CfgEditorSubcategories{
 	class 95th_P1{displayName="Phase 1";};
+	class 95th_P1_MC{displayName="Phase 1 - MC";};
 };
 
 class cfgWeapons 
@@ -113,6 +115,7 @@ class cfgWeapons
 	NEW_95TH_P1_UNIFORM(Lieutenant)};
 	NEW_95TH_P1_UNIFORM(Outcast)};
 
+	NEW_95TH_P1_MC_UNIFORM(Zeus)};
 	NEW_95TH_P1_MC_UNIFORM(Turner)};
 
 	NEW_95TH_P1_HELMET(Trooper)};
@@ -141,5 +144,6 @@ class CfgVehicles
 	NEW_95TH_P1_UNIT(Lieutenant,Trooper,Lieutenant)};
 	NEW_95TH_P1_UNIT(Outcast,Trooper,Captain)};
 
+	NEW_95TH_P1_MC_UNIT(Zeus,Trooper,Zeus)};
 	NEW_95TH_P1_MC_UNIT(Turner,Turner,Zeus)};
 };
