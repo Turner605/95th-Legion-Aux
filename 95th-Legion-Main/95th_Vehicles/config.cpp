@@ -14,7 +14,8 @@ class CfgPatches
 		units[] = {
 			"95th_LAAT_Mrk2",
 			"95th_LAAT_Mrk1",
-			"95th_TX_130"
+			"95th_TX_130",
+			"95th_RX200"
 		};
 	};
 };
@@ -104,6 +105,29 @@ class CfgVehicles
 			"\95th_Vehicles\Data\Saber\Hull.paa",
 			"\95th_Vehicles\Data\Saber\Weapons.paa",
 		};
+		class ACE_Cargo {
+			class Cargo {
+				class track {
+					type = "ACE_Track";
+					amount = 2;
+				};
+			};
+		};
+	};
+
+	class 3AS_RX200_Base;
+	class 95th_RX200 : 3AS_RX200_Base
+	{
+		author="95th Aux";
+		scopecurator=2;
+		scope = 2;
+        crew = "95th_P1_Unit_Trooper";
+		faction="95th_Legion_Faction_Clones";
+		displayname="95th RX200";
+		ace_cargo_space = 26;
+		tas_canBlift=1;
+		tas_liftVars="[[[[0, -4, -8]]], [0.1], [-0.5]]";
+		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\RX200\RX200.paa"};
 		class ACE_Cargo {
 			class Cargo {
 				class track {
