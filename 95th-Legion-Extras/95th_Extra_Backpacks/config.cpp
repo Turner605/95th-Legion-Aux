@@ -31,40 +31,4 @@ class CfgVehicles
 		hiddenSelections[]={"camo1"};
 		hiddenSelectionsTextures[]={"\95th_Extra_Weapons\Data\95th_Clone_Flame_Pack.paa"}; 
 	};
-
-	class JLTS_Clone_jumppack_mc;
-	class JLTS_Clone_jumppack_JT12;
-
-	class 95th_JumpPack_MC : JLTS_Clone_jumppack_mc
-	{
-		author="95th Aux Team";
-		displayName="[95th] Command JumpPack";
-		hiddenSelectionsTextures[]=
-		{
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_mc_co.paa"
-		};
-		RD501_jumppack_energy_capacity=10;
-		RD501_jumppack_recharge=4;
-		NSM_jumppack_energy_capacity=10;
-		NSM_jumppack_recharge=4;
-		RD501_jumppack_jump_types[]=
-		{
-			{"Forward Jump",{12,20,50,0,0,0}},
-			{"Short Jump",{12,5,30,0,1,0}}
-		};
-	}
-
-	class 95th_JumpPack : JLTS_Clone_jumppack_JT12
-	{
-		author="95th Aux Team";
-		displayName="[95th] JumpPack";
-		hiddenSelectionsTextures[]=
-		{
-			"\MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa"
-		};
-		RD501_jumppack_energy_capacity=10;
-		RD501_jumppack_recharge=4;
-		NSM_jumppack_energy_capacity=10;
-		NSM_jumppack_recharge=4;
-	}
 };
