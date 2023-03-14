@@ -29,6 +29,14 @@ class CfgAmmo
 	class 95th_Thermal_T1_Ammo: ls_ammo_classC_thermalDet {
 		model="3as\3AS_Equipment\model\3AS_Thermaldet.p3d";  
 	};
+
+	class 95th_Car_Ammo: 95th_Thermal_T1_Ammo {
+		model="a3\soft_f_gamma\hatchback_01\hatchback_01_f.p3d";  
+	};
+
+	class 95th_Warning_Ammo: 95th_Thermal_T1_Ammo {
+		model="ca\signs_e\signt\signt_warningrocks.p3d";  
+	};
 };
 
 class cfgMagazines {
@@ -64,6 +72,18 @@ class cfgMagazines {
 		picture="\95th_Equipment\Data\Grenades\ThermalDet.paa";
 		ammo="95th_Thermal_T1_Ammo";
 	};
+
+	class 95th_Car: 95th_Thermal_T1_Grenade{
+		model="a3\soft_f_gamma\hatchback_01\hatchback_01_f.p3d";
+		ammo="95th_Car_Ammo";
+		displayName="Car";
+	}
+
+	class 95th_Warning: 95th_Thermal_T1_Grenade{
+		model="ca\signs_e\signt\signt_warningrocks.p3d";
+		ammo="95th_Warning_Ammo";
+		displayName="Warning";
+	}
 }
 
 class CfgWeapons
@@ -72,7 +92,7 @@ class CfgWeapons
 	class Throw: GrenadeLauncher {
 		class ThrowMuzzle;
 
-		muzzles[]+={"95th_Pyro_Muzzle", "95th_Concussion_Muzzle", "95th_Thermal_T1_Muzzle"};
+		muzzles[]+={"95th_Pyro_Muzzle", "95th_Concussion_Muzzle", "95th_Thermal_T1_Muzzle", "95th_Car_Muzzle", "95th_Warning_Muzzle"};
 
 		class 95th_Pyro_Muzzle: ThrowMuzzle {
 			magazines[]= {"95th_Pyro_Grenade"};
@@ -84,6 +104,14 @@ class CfgWeapons
 
 		class 95th_Thermal_T1_Muzzle: ThrowMuzzle {
 			magazines[]={"95th_Thermal_T1_Grenade"};
+		};
+
+		class 95th_Car_Muzzle: ThrowMuzzle {
+			magazines[]={"95th_Car"};
+		};
+
+		class 95th_Warning_Muzzle: ThrowMuzzle {
+			magazines[]={"95th_Warning"};
 		};
 	};
 };
