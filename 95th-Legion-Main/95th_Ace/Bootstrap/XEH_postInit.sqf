@@ -26,12 +26,10 @@
     params ["_unit", "_enable"];
     if (_unit isNotEqualTo player) exitWith {};
     if ((_enable) && (enable_spectator_95th)) then {
-        hint('Test');
-
         _unit setVariable ["ace_medical_feedback_effectUnconsciousTimeout", 10e10];
         [{
             if (!(player getVariable ["ace_isunconscious", false]) || {!alive player}) exitWith {};
-            [[1,2], [0]] call ace_spectator_fnc_updateCameraModes;
+            [[2], [0,1]] call ace_spectator_fnc_updateCameraModes;
             [true, true, false] call ace_spectator_fnc_setSpectator;
             [{
                 hint "You are unconscious!";
