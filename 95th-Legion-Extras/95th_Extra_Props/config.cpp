@@ -7,14 +7,16 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"ace_main",
-            "3AS_Prop_Crates"
+            "3AS_Prop_Crates",
+			"3as_GNK_Prop"
 		};
 		units[] = {
             "95th_Platoon_Ammo_Crate",
             "95th_Platoon_Medical_Crate",
             "95th_Platoon_Explosives_Crate",
             "95th_Vehicle_Ammo_Crate",
-            "95th_Vehicle_Fuel_Crate"
+            "95th_Vehicle_Fuel_Crate",
+			"95th_Arsenal"
         };
 	};
 };
@@ -25,6 +27,7 @@ class CfgEditorCategories{
 
 class CfgEditorSubcategories{
 	class 95th_Crates{displayName="[95th] Supply Crates";};
+	class 95th_Misc{displayName="[95th] Misc";};
 };
 
 class CfgVehicles {
@@ -117,4 +120,12 @@ class CfgVehicles {
         ace_refuel_hooks[] = {{0,0,0},{0,0,0}};
         maximumLoad=0;
     };
+
+	class 3as_GNK;
+	class 95th_Arsenal: 3as_GNK
+	{
+		displayName="[95th] Arsenal Gonk";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Misc";
+	};
 };
