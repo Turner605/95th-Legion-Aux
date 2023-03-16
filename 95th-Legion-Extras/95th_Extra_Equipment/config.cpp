@@ -67,9 +67,28 @@ class CfgWeapons
 	};
 };
 
+class CfgFunctions {
+	class 95th {
+		class FlashBang {
+			class flashThrown {
+				file = "\95th_Extra_Equipment\Scripts\flashThrown.sqf";
+				// preInit = 1;
+			};
+		};
+	};
+};
+
+class Extended_PostInit_EventHandlers
+{
+	class 95th_Extra_Equip_PostInit
+	{
+		init="call compile preprocessFileLineNumbers '\95th_Extra_Equipment\Bootstrap\XEH_postInit.sqf'";
+	};
+};
+
 class Extended_PreInit_EventHandlers
 {
-	class 95th_Equip_PreInit
+	class 95th_Extra_Equip_PreInit
 	{
 		init="call compile preprocessFileLineNumbers '\95th_Extra_Equipment\Bootstrap\XEH_preInit.sqf'";
 	};
