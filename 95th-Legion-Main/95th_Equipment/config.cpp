@@ -58,6 +58,16 @@ class CfgWeapons
 	};
 };
 
+class CfgFunctions {
+	class ninefiveth {
+		class Dispenser {
+			class deployDispenser {
+				file = "\95th_Equipment\Scripts\deployDispenser.sqf";
+			};
+		};
+	};
+};
+
 class Extended_PostInit_EventHandlers
 {
 	class 95th_Equipment_PostInit

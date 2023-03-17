@@ -18,10 +18,12 @@
                         _pos = getPos _projectile;
                         _deployPos = [_pos select 0, _pos select 1, (_pos select 2) + 2];
 
-                        _dispensor =  createVehicle ["3as_droid_container", _deployPos, [], 0, "CAN_COLLIDE"];
+                        _dispenser =  createVehicle ["3as_droid_container", _deployPos, [], 0, "CAN_COLLIDE"];
                         _group = [[0,0,0], east, ["JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
 
-                        {_x moveInCargo _dispensor} forEach Units _group
+                        {_x moveInCargo _dispenser} forEach Units _group;
+
+						[_dispenser, _group] spawn ninefiveth_fnc_deployDispenser;
                     }, [_projectile], 0.5] call CBA_fnc_waitAndExecute;
 
                 }, [_projectile], 15] call CBA_fnc_waitAndExecute;
