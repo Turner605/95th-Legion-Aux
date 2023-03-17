@@ -1,6 +1,6 @@
 params ["_dispenser", "_group"];
 
-_waveTime = 5;
+_waveTime = 45;
 private _cargo = getVehicleCargo _dispenser;
 
 _dispenser setVariable ["ddOn",True];
