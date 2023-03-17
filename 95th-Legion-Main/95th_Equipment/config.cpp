@@ -38,6 +38,20 @@ class cfgMagazines {
 		displayNameShort="Pod Marker";
 		descriptionShort="Type: Droid Pod Marker<br />Rounds: 1<br />Used in: Hand";
 	};
+	class 3AS_SmokeBlue;
+	class 95th_Ammo_Resupply_Marker_Grenade: 3AS_SmokeBlue {
+		author="95th Aux Team";
+		displayName="Ammo Resupply Marker Grenade";
+		displayNameShort="AResupply Marker";
+		descriptionShort="Type: Ammo Resupply Marker<br />Rounds: 1<br />Used in: Hand";
+	};
+	class 3AS_SmokePurple;
+	class 95th_Medical_Resupply_Marker_Grenade: 3AS_SmokePurple {
+		author="95th Aux Team";
+		displayName="Medical Resupply Marker Grenade";
+		displayNameShort="MResupply Marker";
+		descriptionShort="Type: Medical Resupply Marker<br />Rounds: 1<br />Used in: Hand";
+	};
 }
 
 class CfgWeapons
@@ -46,7 +60,7 @@ class CfgWeapons
 	class Throw: GrenadeLauncher {
 		class ThrowMuzzle;
 
-		muzzles[]+={"95th_Thermal_T1_Muzzle", "95th_Droidpod_Signal_Muzzle"};
+		muzzles[]+={"95th_Thermal_T1_Muzzle", "95th_Droidpod_Signal_Muzzle", "95th_Ammo_Resupply_Marker_Muzzle", "95th_Medical_Resupply_Marker_Muzzle"};
 
 		class 95th_Thermal_T1_Muzzle: ThrowMuzzle {
 			magazines[]={"95th_Thermal_T1_Grenade"};
@@ -54,6 +68,14 @@ class CfgWeapons
 
 		class 95th_Droidpod_Signal_Muzzle: ThrowMuzzle {
 			magazines[]={"95th_Droidpod_Signal_Grenade"};
+		};
+
+		class 95th_Ammo_Resupply_Marker_Muzzle: ThrowMuzzle {
+			magazines[]={"95th_Ammo_Resupply_Marker_Grenade"};
+		};
+
+		class 95th_Medical_Resupply_Marker_Muzzle: ThrowMuzzle {
+			magazines[]={"95th_Medical_Resupply_Marker_Grenade"};
 		};
 	};
 };

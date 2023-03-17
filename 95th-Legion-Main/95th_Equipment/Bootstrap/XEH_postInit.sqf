@@ -18,7 +18,7 @@
                         _pos = getPos _projectile;
                         _deployPos = [_pos select 0, _pos select 1, (_pos select 2) + 2];
 
-                        _dispenser =  createVehicle ["3as_droid_container", _deployPos, [], 0, "CAN_COLLIDE"];
+                        _dispenser = createVehicle ["3as_droid_container", _deployPos, [], 0, "CAN_COLLIDE"];
                         _group = [[0,0,0], east, ["JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5"],[],[],[],[],[],180] call BIS_fnc_spawnGroup;
 
                         {_x moveInCargo _dispenser} forEach Units _group;
@@ -27,6 +27,34 @@
                     }, [_projectile], 0.5] call CBA_fnc_waitAndExecute;
 
                 }, [_projectile], 15] call CBA_fnc_waitAndExecute;
+            };
+            case "95th_Ammo_Resupply_Marker_Grenade": {
+                [{
+                    _this params ["_projectile"];
+
+                    _pos = getPos _projectile;
+                    _deployPos = [_pos select 0, _pos select 1, (_pos select 2) + 78];
+
+                    _para = createVehicle ["B_Parachute_02_F", [0,0,100], [], 0, "CAN_COLLIDE"];
+                    _para setPosATL (player modelToWorld[0,0,200]);
+
+                    _crate = createVehicle ["95th_Platoon_Ammo_Crate", _deployPos, [], 0, "CAN_COLLIDE"];
+                    _crate attachTo [_para,[0,0,0]];
+                }, [_projectile], 40] call CBA_fnc_waitAndExecute;
+            };
+            case "95th_Medical_Resupply_Marker_Grenade": {
+                [{
+                    _this params ["_projectile"];
+
+                    _pos = getPos _projectile;
+                    _deployPos = [_pos select 0, _pos select 1, (_pos select 2) + 78];
+
+                    _para = createVehicle ["B_Parachute_02_F", [0,0,100], [], 0, "CAN_COLLIDE"];
+                    _para setPosATL (player modelToWorld[0,0,200]);
+
+                    _crate = createVehicle ["95th_Platoon_Medical_Crate", _deployPos, [], 0, "CAN_COLLIDE"];
+                    _crate attachTo [_para,[0,0,0]];
+                }, [_projectile], 40] call CBA_fnc_waitAndExecute;
             };
         };
     };
