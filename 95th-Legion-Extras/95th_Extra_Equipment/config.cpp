@@ -33,7 +33,7 @@ class cfgMagazines {
 		displayName="Pyro Grenade";
 		displayNameShort="Pyro";
 		descriptionShort="Type: Offensive Flame Grenade<br />Rounds: 1<br />Used in: Hand";
-		picture="\95th_Equipment\Data\Grenades\PyroGrenade.paa";
+		picture="\95th_Extra_Equipment\Data\Grenades\PyroGrenade.paa";
 		ammo = "95th_Pyro_Ammo";
 	};
 
@@ -44,7 +44,7 @@ class cfgMagazines {
 		displayName="Concussion Grenade";
 		displayNameShort="Concussion";
 		descriptionShort="Type: Defensive Stun Grenade<br />Rounds: 1<br />Used in: Hand";
-		picture="\95th_Equipment\Data\Grenades\Concussion.paa";
+		picture="\95th_Extra_Equipment\Data\Grenades\Concussion.paa";
 		ammo = "95th_Concussion_Ammo";
 	};
 }
@@ -68,11 +68,10 @@ class CfgWeapons
 };
 
 class CfgFunctions {
-	class 95th {
+	class ninefiveth {
 		class FlashBang {
 			class flashThrown {
 				file = "\95th_Extra_Equipment\Scripts\flashThrown.sqf";
-				// preInit = 1;
 			};
 		};
 	};

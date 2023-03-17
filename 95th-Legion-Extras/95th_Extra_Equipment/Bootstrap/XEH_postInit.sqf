@@ -4,9 +4,8 @@
     // Flashbang event handler
     if (_weapon == "Throw") then {
         switch (_magazine) do {
-
             case "95th_Concussion_Grenade": { 
-                [_projectile] spawn 95th_fnc_flashThrown;
+                [_projectile] spawn ninefiveth_fnc_flashThrown;
             };
         };
     };
