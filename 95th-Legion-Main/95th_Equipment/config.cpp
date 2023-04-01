@@ -30,14 +30,6 @@ class cfgMagazines {
 		picture="\95th_Equipment\Data\Grenades\ThermalDet.paa";
 		ammo="95th_Thermal_T1_Ammo";
 	};
-
-	class 3AS_SmokeRed;
-	class 95th_Droidpod_Signal_Grenade: 3AS_SmokeRed {
-		author="95th Aux Team";
-		displayName="Droid Pod Signal Marker";
-		displayNameShort="Pod Marker";
-		descriptionShort="Type: Droid Pod Marker<br />Rounds: 1<br />Used in: Hand";
-	};
 }
 
 class CfgWeapons
@@ -46,32 +38,10 @@ class CfgWeapons
 	class Throw: GrenadeLauncher {
 		class ThrowMuzzle;
 
-		muzzles[]+={"95th_Thermal_T1_Muzzle", "95th_Droidpod_Signal_Muzzle"};
+		muzzles[]+={"95th_Thermal_T1_Muzzle"};
 
 		class 95th_Thermal_T1_Muzzle: ThrowMuzzle {
 			magazines[]={"95th_Thermal_T1_Grenade"};
 		};
-
-		class 95th_Droidpod_Signal_Muzzle: ThrowMuzzle {
-			magazines[]={"95th_Droidpod_Signal_Grenade"};
-		};
-	};
-};
-
-class CfgFunctions {
-	class ninefiveth {
-		class Dispenser {
-			class deployDispenser {
-				file = "\95th_Equipment\Scripts\deployDispenser.sqf";
-			};
-		};
-	};
-};
-
-class Extended_PostInit_EventHandlers
-{
-	class 95th_Equipment_PostInit
-	{
-		init="call compile preprocessFileLineNumbers '\95th_Equipment\Bootstrap\XEH_postInit.sqf'";
 	};
 };
