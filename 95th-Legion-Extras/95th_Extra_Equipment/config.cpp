@@ -34,8 +34,7 @@ class cfgMagazines {
 
 class CfgWeapons
 {
-	class GrenadeLauncher;
-	class Throw: GrenadeLauncher {
+	class Throw {
 		class ThrowMuzzle;
 
 		muzzles[]+={"95th_Pyro_Muzzle"};
