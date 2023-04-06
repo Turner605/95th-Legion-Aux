@@ -88,6 +88,14 @@ class CfgVehicles
 		scopecurator=2;
 		scope = 2;
         crew = "95th_P1_Pilot_Unit_Trooper";
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_Vehicles\Data\LAAT\Hull_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Wings_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Weapons_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Weapon_Details_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Interior_CO.paa"
+		};
 	};
 
 	class 3as_saber_m1;
