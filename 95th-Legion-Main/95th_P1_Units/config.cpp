@@ -128,6 +128,7 @@ class cfgWeapons
 	NEW_95TH_P1_HELMET(Volt)};
 	NEW_95TH_P1_HELMET(Biedronka)};
 	NEW_95TH_P1_HELMET(Manila)};
+	NEW_95TH_P1_HELMET(Sand)};
 }; 
 
 class CfgVehicles 
