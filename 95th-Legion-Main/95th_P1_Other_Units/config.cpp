@@ -26,8 +26,7 @@ class CfgEditorSubcategories{
 	class 95th_Other{displayName="Other";};
 };
 
-class cfgWeapons 
-{ 
+class cfgWeapons { 
     class ItemCore;
     class UniformItem;
     class Uniform_Base: ItemCore
@@ -43,6 +42,7 @@ class cfgWeapons
 	class 95th_P1_SpecOps_Helmet_Base;
 	class 95th_P1_Engineer_Helmet_Base;
 	class 95th_P1_Hazard_Helmet_Base;
+	class 95th_P1_ColdAssault_Helmet_Base;
 
 	NEW_95TH_P1_OTHER_HELMET(SpecOps,Trooper)
 		hiddenSelectionsTextures[]=
@@ -83,4 +83,55 @@ class cfgWeapons
 			"\95th_P1_Other_Units\Data\Helmets\95th_P1_Engineer_Helmet_Revan.paa"
 		};
 	};
+
+	NEW_95TH_P1_OTHER_HELMET(ColdAssault,Trooper)
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_P1_Other_Units\Data\Helmets\95th_P1_Cold_Assault.paa",
+			"\95th_P1_Other_Units\Data\Helmets\95th_P1_Cold_Assault.paa",
+			"\95th_P1_Other_Units\Data\Helmets\95th_P1_Cold_Assault.paa"
+		};
+	};
+
+	class 3AS_U_Rep_ColdAssault_Armor;
+	class 95th_P1_Cold_Assault_Uniform: 3AS_U_Rep_ColdAssault_Armor {
+		scope=2;
+		displayName="[95th] Cold Assault";
+		picture="\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+		class ItemInfo: UniformItem {
+			uniformClass="95th_P1_Cold_Assault_Unit";
+			uniformModel="-";
+			containerClass="Supply150";
+			mass=40;
+		};
+	};
 };
+
+
+class CfgVehicles {
+	class 3AS_Rep_ColdAssault_base_F;
+	class 95th_P1_Cold_Assault_Unit: 3AS_Rep_ColdAssault_base_F {
+		scope=2;
+		displayName="[95th] Cold Assault";
+		uniformClass="95th_P1_Cold_Assault_Uniform";
+		hiddenSelectionsTextures[]= {
+			"\95th_P1_Other_Units\Data\Uniforms\95th_P1_Cold_Assault.paa",
+			"\95th_P1_Other_Units\Data\Uniforms\95th_P1_Cold_Assault.paa"
+		};
+		linkedItems[]= {
+			"95th_P1_Cold_Assault_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]= {
+			"95th_P1_Cold_Assault_Helmet",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+	};
+}

@@ -338,4 +338,12 @@ class cfgWeapons
     	scopeArsenal = 0;
 		hiddenSelections[]={"Camo1","Camo2","Visor"};
 	};
+
+	class 3AS_H_ColdAssault_Helmet;
+	class 95th_P1_ColdAssault_Helmet_Base: 3AS_H_ColdAssault_Helmet {
+		displayName="[95th] P1 Cold Assault Base";
+		author="95th Aux Team";
+		scope = 0;
+    	scopeArsenal = 0;
+	};
 }; 
