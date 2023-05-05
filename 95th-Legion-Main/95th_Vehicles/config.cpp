@@ -11,11 +11,61 @@ class CfgPatches
 			"3AS_SaberTank",
 			"3AS_LAAT"
 		};
-		units[] = {
+
+		units[]={
 			"95th_LAAT_Mrk2",
 			"95th_LAAT_Mrk1",
 			"95th_TX_130",
-			"95th_RX200"
+			"95th_RX200",
+			"95th_Outpost_Crate"
+		};
+
+		magazines[]={
+			"95th_LAAT_Light_Cannon_Magazine"
+		};
+
+		ammo[]={
+			"95th_LAAT_Light_Cannon_Ammo"
+		};
+	};
+};
+
+class CfgAmmo {
+	class laserAmmo;
+	class 95th_LAAT_Light_Cannon_Ammo: laserAmmo {
+		explosive=0.10000001;
+		caliber=2.4000001;
+		indirecthit=10;
+		indirectHitRange=1;
+		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+	};
+};
+
+class CfgMagazines {
+	class Laser_Battery;
+	class 95th_LAAT_Light_Cannon_Magazine: Laser_Battery {
+		ammo="95th_LAAT_Light_Cannon_Ammo";
+		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+	};
+};
+
+class CfgWeapons {
+	class HE;
+	class ParticleBeamCannon_F;
+
+	class 95th_LAAT_Light_Cannon: ParticleBeamCannon_F {
+		class HE: HE {
+			displayName="Light Particle Cannon";
+			magazines[]= {"95th_LAAT_Light_Cannon_Magazine"};
+			magazineReloadTime=10;
+		};
+	};
+
+	class 95th_LAAT_Heavy_Cannon: ParticleBeamCannon_F {
+		class HE: HE {
+			displayName="Heavy Particle Cannon";
+			magazines[]= {"Laser_Battery"};
+			magazineReloadTime=10;
 		};
 	};
 };
@@ -27,37 +77,6 @@ class CfgVehicles
     //*****             Vehicles                *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
     
-	class Helicopter;
-	class Items_base_F;
-	class House_F;
-	class Helicopter_Base_F: Helicopter
-	{
-		class Turrets;
-		class HitPoints;
-	};
-	class Helicopter_Base_H: Helicopter_Base_F
-	{
-		class ACE_selfActions;
-		class Turrets: Turrets
-		{
-			class MainTurret;
-		};
-		class AnimationSources;
-		class Eventhandlers;
-		class Viewoptics;
-		class ViewPilot;
-		class RotorLibHelicopterProperties;
-		class HitPoints: HitPoints
-		{
-			class HitHull;
-			class HitFuel;
-			class HitEngine;
-			class HitHRotor;
-			class HitVRotor;
-			class HitAvionics;
-		};
-	};
-
 	class 3as_LAAT_Mk2;
 	class 95th_LAAT_Mrk2: 3as_LAAT_Mk2
 	{
@@ -75,6 +94,26 @@ class CfgVehicles
 			"\95th_Vehicles\Data\LAAT\Weapons_CO.paa",
 			"\95th_Vehicles\Data\LAAT\Weapon_Details_CO.paa",
 			"\95th_Vehicles\Data\LAAT\Interior_CO.paa"
+		};
+		weapons[]={
+			"95th_LAAT_Light_Cannon",
+			"95th_LAAT_Heavy_Cannon",
+			"3as_LAAT_Missile_AGM",
+			"3as_LAAT_Missile_AA",
+			"CMFlareLauncher"
+		};
+		magazines[]={
+			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
+			"3as_LAAT_8Rnd_Missile_AGM",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"Laser_Battery",
+			"Laser_Battery",
+			"95th_LAAT_Light_Cannon_Magazine",
+			"95th_LAAT_Light_Cannon_Magazine",
+			"95th_LAAT_Light_Cannon_Magazine"
 		};
 	};
 
@@ -95,6 +134,26 @@ class CfgVehicles
 			"\95th_Vehicles\Data\LAAT\Weapons_CO.paa",
 			"\95th_Vehicles\Data\LAAT\Weapon_Details_CO.paa",
 			"\95th_Vehicles\Data\LAAT\Interior_CO.paa"
+		};
+		weapons[]={
+			"95th_LAAT_Light_Cannon",
+			"95th_LAAT_Heavy_Cannon",
+			"3as_LAAT_Missile_AGM",
+			"3as_LAAT_Missile_AA",
+			"CMFlareLauncher"
+		};
+		magazines[]={
+			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
+			"3as_LAAT_8Rnd_Missile_AGM",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"Laser_Battery",
+			"Laser_Battery",
+			"95th_LAAT_Light_Cannon_Magazine",
+			"95th_LAAT_Light_Cannon_Magazine",
+			"95th_LAAT_Light_Cannon_Magazine"
 		};
 	};
 
@@ -144,5 +203,15 @@ class CfgVehicles
 				};
 			};
 		};
+	};
+
+	class 3AS_RTT;
+	class 95th_Outpost_Crate: 3AS_RTT
+	{
+		displayName="Outpost Box";
+		faction="95th_Legion_Faction_Clones";
+        crew = "";
+		tas_canBlift=1;
+		tas_liftVars="[[[[0, -4, -8]]], [0.1], [-0.5]]";
 	};
 }; 
