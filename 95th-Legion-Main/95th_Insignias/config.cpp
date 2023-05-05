@@ -45,7 +45,7 @@ class cfgUnitInsignia
 
 	class 95th_Insignia_Squad_3
 	{
-		displayName = "1-3 Sando";
+		displayName = "1-3 Krayt";
 		author="95th Aux Team";
 		texture="\95th_Insignias\PAAs\Squad_3.paa";
 		textureVehicle="";
