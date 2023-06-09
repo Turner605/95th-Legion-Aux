@@ -156,6 +156,82 @@ class CfgVehicles
 			"95th_LAAT_Light_Cannon_Magazine"
 		};
 	};
+	class 95th_LAAT_Jinter_Mrk1: 95th_LAAT_Mrk1
+	{
+		displayname="[95th] LAAT/I Mk.1 - Jinter";
+		author="95th Aux Team";
+		faction="95th_Legion_Faction_Clones";
+		ace_cargo_space = 26;
+		scopecurator=2;
+		scope = 2;
+        crew = "95th_P1_Pilot_Unit_Trooper";
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_Vehicles\Data\LAAT\Jinter_Hull_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Jinter_Wings_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Weapons_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Weapon_Details_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Jinter_Interior_CO.paa"
+		};
+		weapons[]={
+			"95th_LAAT_Light_Cannon",
+			"95th_LAAT_Heavy_Cannon",
+			"3as_LAAT_Missile_AGM",
+			"3as_LAAT_Missile_AA",
+			"CMFlareLauncher"
+		};
+		magazines[]={
+			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
+			"3as_LAAT_8Rnd_Missile_AGM",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"Laser_Battery",
+			"Laser_Battery",
+			"95th_LAAT_Light_Cannon_Magazine",
+			"95th_LAAT_Light_Cannon_Magazine",
+			"95th_LAAT_Light_Cannon_Magazine"
+		};
+	};
+	class 95th_LAAT_Jinter_Mrk2: 95th_LAAT_Mrk2
+	{
+		displayname="[95th] LAAT/I Mk.2 - Jinter";
+		author="95th Aux Team";
+        crew = "95th_P1_Pilot_Unit_Trooper";
+		ace_cargo_space = 26;
+		scopecurator=2;
+		scope = 2;
+		faction="95th_Legion_Faction_Clones";
+		hiddenSelectionsTextures[]=
+		{
+			"\95th_Vehicles\Data\LAAT\Jinter_Hull_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Jinter_Wings_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Weapons_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Weapon_Details_CO.paa",
+			"\95th_Vehicles\Data\LAAT\Jinter_Interior_CO.paa"
+		};
+		weapons[]={
+			"95th_LAAT_Light_Cannon",
+			"95th_LAAT_Heavy_Cannon",
+			"3as_LAAT_Missile_AGM",
+			"3as_LAAT_Missile_AA",
+			"CMFlareLauncher"
+		};
+		magazines[]={
+			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
+			"3as_LAAT_8Rnd_Missile_AGM",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"Laser_Battery",
+			"Laser_Battery",
+			"95th_LAAT_Light_Cannon_Magazine",
+			"95th_LAAT_Light_Cannon_Magazine",
+			"95th_LAAT_Light_Cannon_Magazine"
+		};
+	};
 
 	class 3as_saber_m1;
 	class 95th_TX_130 : 3as_saber_m1
