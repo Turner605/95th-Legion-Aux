@@ -1,123 +1,134 @@
-#define NEW_95TH_P1_UNIT(name,helmet,vest) class 95th_P1_Unit_##name## : 95th_P1_Unit_Base {\
-    scope = 2;\
-	scopecurator=2;\
-	displayName=[95th] P1 - ##name##;\
-	uniformClass=95th_P1_Uniform_##name##;\
-	linkedItems[]={95th_P1_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
-	respawnLinkedItems[]={95th_P1_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
-	hiddenSelectionsTextures[]=\
-	{\
-		\95th_P1_Units\Data\Uniforms\95th_P1_Uniform_##name##_Upper.paa,\
-		\95th_P1_Units\Data\Uniforms\95th_P1_Uniform_##name##_Lower.paa\
-	};\
+#include "Macros\Rifleman Units.hpp"
+#include "Macros\MC Units.hpp"
 
-#define NEW_95TH_P1_UNIFORM(name) class 95th_P1_Uniform_##name## : 95th_P1_Uniform_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	displayName=[95th] P1 Uniform - ##name##;\
-	class ItemInfo: UniformItem\
-	{\
-		uniformClass=95th_P1_Unit_##name##;\
-		uniformModel=-;\
-		containerClass=Supply150;\
-		mass=40;\
-	};
-
-#define NEW_95TH_P1_MC_UNIT(name,helmet,vest) class 95th_P1_MC_Unit_##name## : 95th_P1_MC_Unit_Base {\
-    scope = 2;\
-	scopecurator=2;\
-	editorSubcategory=95th_P1_MC;\
-	displayName=[95th] P1 MC - ##name##;\
-	uniformClass=95th_P1_MC_Uniform_##name##;\
-	linkedItems[]={95th_P1_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
-	respawnLinkedItems[]={95th_P1_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
-	hiddenSelectionsTextures[]=\
-	{\
-		\95th_P1_Units\Data\Uniforms_MC\95th_P1_MC_Uniform_##name##_Upper.paa,\
-		\95th_P1_Units\Data\Uniforms_MC\95th_P1_MC_Uniform_##name##_Lower.paa,\
-		\
-	};\
-
-#define NEW_95TH_P1_MC_UNIFORM(name) class 95th_P1_MC_Uniform_##name## : 95th_P1_MC_Uniform_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	displayName=[95th] P1 MC Uniform - ##name##;\
-	class ItemInfo: UniformItem\
-	{\
-		uniformClass=95th_P1_MC_Unit_##name##;\
-		uniformModel=-;\
-		containerClass=Supply150;\
-		mass=40;\
-	};
-
-#define NEW_95TH_P1_HELMET(name) class 95th_P1_Helmet_##name## : 95th_P1_Helmet_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	displayName=[95th] P1 Helmet - ##name##;\
-	hiddenSelections[]={"Camo1","Visor"};\
-	hiddenSelectionsTextures[]={\
-		\95th_P1_Units\Data\Helmets\95th_P1_Helmet_##name##.paa,\
-		\95th_P1_Units\Data\Helmets\95th_P1_Helmet_##name##.paa\
-	};\
-
-class CfgPatches 
-{
-    class 95th_P1_Units
-    {
+class CfgPatches {
+    class 95th_P1_Units {
         author="95th Aux Team";
-		scope=2;
-		scopecurator=2;
-        name="95th Legion P1";
+		scope=0;
+		scopecurator=0;
+        name="95th Legion Units";
         requiredAddons[] = {
-			"A3_Characters_F", 
 			"JLTS_characters_CloneArmor",
-			"SEA_JLTS_ExtendedArsenal",
-			"95th_P1_Base_Units"
+			"SEA_JLTS_ExtendedArsenal"
 		};
 		units[] = {
-			"95th_P1_Unit_Trooper",
-			"95th_P1_Unit_Medic",
-			"95th_P1_Unit_Senior",
-			"95th_P1_Unit_Veteran",
-			"95th_P1_Unit_Sergeant",
-			"95th_P1_Unit_Captain",
-			"95th_P1_Unit_Lieutenant",
-			"95th_P1_Unit_Outcast",
-			"95th_P1_Unit_Turner"
+			"95th_Rifleman_Unit_Trooper",
+			"95th_Rifleman_Unit_Medic",
+			"95th_Rifleman_Unit_Senior",
+			"95th_Rifleman_Unit_Veteran",
+			"95th_Rifleman_Unit_Sergeant",
+			"95th_Rifleman_Unit_Captain",
+			"95th_Rifleman_Unit_Lieutenant",
+
+			"95th_MC_Unit_Zeus",
+			"95th_MC_Unit_Turner"
 		};
     };
 }; 
 
-class CfgEditorSubcategories{
-	class 95th_P1{displayName="Phase 1";};
-	class 95th_P1_MC{displayName="Phase 1 - MC";};
+class cfgFactionClasses { 
+    class 95th_Legion_Faction_Clones { 
+        displayName = "[95th] Clones"; 
+		scope=2; 
+		scopecurator=2;
+        priority = 1;
+        side = 1;
+    };  
+
+    class 95th_Legion_Faction_Misc  {
+        displayName = "[95th] Misc"; 
+		scope=2;
+		scopecurator=2;
+        priority = 1;
+        side = 1;
+    };
 };
 
-class cfgWeapons 
-{ 
+class CfgEditorSubcategories {
+	class 95th_Rifleman{displayName="Rifleman";};
+	class 95th_MC{displayName="Commanders";};
+};
+
+class XtdGearModels {
+	class CfgWeapons {
+		class 95th_P1_Basic_Uniform {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper","Medic","Senior","Veteran","Sergeant","Captain","Lieutenant"};
+				class Trooper { label = "Trooper"; description = "Default Uniform"; };
+				class Medic { label = "Medic"; description = "Medic Uniform"; };
+				class Senior { label = "Senior"; description = "Senior Uniform"; };
+				class Veteran { label = "Veteran"; description = "Veteran Uniform"; };
+				class Sergeant { label = "Sergeant"; description = "Sergeant Uniform"; };
+				class Captain { label = "Captain"; description = "Captain Uniform"; };
+				class Lieutenant { label = "Lieutenant"; description = "Lieutenant Uniform"; };
+			};
+		};
+
+		class 95th_MC_Uniform {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Zeus", "Turner"};
+				class Zeus { label = "Zeus"; description = "Default Uniform"; };
+				class Turner { label = "Turner"; description = "Turners Uniform"; };
+			};
+		};
+
+		class 95th_P1_Helmet {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc"};
+				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+				class Medic { label = "Medic"; description = "Medic Helmet"; };
+				class Senior { label = "Senior"; description = "Senior Helmet"; };
+				class Veteran { label = "Veteran"; description = "Veteran Helmet"; };
+				class Outcast { label = "Outcast"; description = "Outcasts Helmet"; };
+				class Turner { label = "Turner"; description = "Turners Helmet"; };
+				class Splash { label = "Splash"; description = "Splashs Helmet"; };
+				class Volt { label = "Volt"; description = "Volts Helmet"; };
+				class Biedronka { label = "Biedronka"; description = "Biedronka Helmet"; };
+				class Manila { label = "Manila"; description = "Manila Helmet"; };
+				class Sand { label = "Sand"; description = "Sands Helmet"; };
+				class Havoc { label = "Havoc"; description = "Havocs Helmet"; };
+			};
+		};
+	};
+};
+
+class cfgWeapons {
+	class InventoryItem_Base_F;
     class ItemCore;
     class UniformItem;
-    class Uniform_Base: ItemCore
-    {
-        class ItemInfo;
-    };
+    class Uniform_Base: ItemCore { class ItemInfo; };
+    class U_I_CombatUniform;
 
-	class 95th_P1_Uniform_Base;
-	class 95th_P1_MC_Uniform_Base;
-	class 95th_P1_Helmet_Base;
-    
-	NEW_95TH_P1_UNIFORM(Trooper)};
-	NEW_95TH_P1_UNIFORM(Medic)};
-	NEW_95TH_P1_UNIFORM(Senior)};
-	NEW_95TH_P1_UNIFORM(Veteran)};
-	NEW_95TH_P1_UNIFORM(Sergeant)};
-	NEW_95TH_P1_UNIFORM(Captain)};
-	NEW_95TH_P1_UNIFORM(Lieutenant)};
-	NEW_95TH_P1_UNIFORM(Outcast)};
+	class SEA_Helmet_P1_Base;
 
-	NEW_95TH_P1_MC_UNIFORM(Zeus)};
-	NEW_95TH_P1_MC_UNIFORM(Turner)};
+//############################################################### Uniforms ###############################################################
+	NEW_95TH_P1_UNIFORM(Trooper,Trooper)};
+	NEW_95TH_P1_UNIFORM(Medic,Medic)};
+	NEW_95TH_P1_UNIFORM(Senior,Senior)};
+	NEW_95TH_P1_UNIFORM(Veteran,Veteran)};
+	NEW_95TH_P1_UNIFORM(Sergeant,Sergeant)};
+	NEW_95TH_P1_UNIFORM(Captain,Captain)};
+	NEW_95TH_P1_UNIFORM(Lieutenant,Lieutenant)};
 
+	NEW_95TH_MC_UNIFORM(Zeus,Zeus)};
+	NEW_95TH_MC_UNIFORM(Turner,Turner)};
+
+//############################################################### Helmets ###############################################################
 	NEW_95TH_P1_HELMET(Trooper)};
 	NEW_95TH_P1_HELMET(Medic)};
 	NEW_95TH_P1_HELMET(Senior)};
@@ -130,23 +141,22 @@ class cfgWeapons
 	NEW_95TH_P1_HELMET(Manila)};
 	NEW_95TH_P1_HELMET(Sand)};
 	NEW_95TH_P1_HELMET(Havoc)};
-}; 
+};  
 
-class CfgVehicles 
-{     
-	class 95th_P1_Unit_Base;
-	class 95th_P1_MC_Unit_Base;
+class CfgVehicles {
+	class JLTS_Clone_P2_DC15A;
 
-	// Uniform/Class Name, Helmet Name, Vest Name, Backpack Name
-	NEW_95TH_P1_UNIT(Trooper,Trooper,Trooper)};
-	NEW_95TH_P1_UNIT(Medic,Trooper,Trooper)};
-	NEW_95TH_P1_UNIT(Senior,Senior,Trooper)};
-	NEW_95TH_P1_UNIT(Veteran,Veteran,Veteran)};
-	NEW_95TH_P1_UNIT(Sergeant,Trooper,Sergeant)};
-	NEW_95TH_P1_UNIT(Captain,Trooper,Captain)};
-	NEW_95TH_P1_UNIT(Lieutenant,Trooper,Lieutenant)};
-	NEW_95TH_P1_UNIT(Outcast,Trooper,Captain)};
+//############################################################### Units ###############################################################
+	// Uniform Class Name, Helmet Name, Vest Name
+	NEW_95TH_RIFLEMAN_UNIT(Trooper,Trooper,Trooper)};
+	NEW_95TH_RIFLEMAN_UNIT(Medic,Trooper,Trooper)};
+	NEW_95TH_RIFLEMAN_UNIT(Senior,Senior,Trooper)};
+	NEW_95TH_RIFLEMAN_UNIT(Veteran,Veteran,Veteran)};
+	NEW_95TH_RIFLEMAN_UNIT(Sergeant,Veteran,Sergeant)};
+	NEW_95TH_RIFLEMAN_UNIT(Captain,Veteran,Captain)};
+	NEW_95TH_RIFLEMAN_UNIT(Lieutenant,Veteran,Lieutenant)};
 
-	NEW_95TH_P1_MC_UNIT(Zeus,Trooper,Zeus)};
-	NEW_95TH_P1_MC_UNIT(Turner,Turner,Zeus)};
+	// Uniform Class Name, Helmet Name, Vest Name
+	NEW_95TH_MC_UNIT(Zeus,Veteran,Zeus)};
+	NEW_95TH_MC_UNIT(Turner,Turner,Zeus)};
 };
