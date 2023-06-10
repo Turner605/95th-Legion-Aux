@@ -23,8 +23,8 @@
 	respawnLinkedItems[]={95th_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]=\
 	{\
-		\95th_P1_New\Data\Uniforms\P1\##name##\Uniform_Upper.paa,\
-		\95th_P1_New\Data\Uniforms\P1\##name##\Uniform_Lower.paa\
+		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Upper.paa,\
+		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Lower.paa\
 	};
 
 #define NEW_95TH_P1_UNIFORM(name,uniformClassName) class 95th_P1_Uniform_##name## : U_I_CombatUniform {\
@@ -51,8 +51,8 @@
 	displayName=[95th] P1 Helmet;\
 	hiddenSelections[]={"Camo1","Visor"};\
 	hiddenSelectionsTextures[]={\
-		\95th_P1_New\Data\Helmets\Rifleman\Helmet_##name##.paa,\
-		\95th_P1_New\Data\Helmets\Rifleman\Helmet_##name##.paa\
+		\95th_P1_Units\Data\Helmets\Rifleman\Helmet_##name##.paa,\
+		\95th_P1_Units\Data\Helmets\Rifleman\Helmet_##name##.paa\
 	};\
 		class XtdGearInfo {\
 		model = 95th_P1_Helmet;\

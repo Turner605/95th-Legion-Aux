@@ -26,8 +26,8 @@
 	hiddenSelections[]={camo1,camo2,camo3};\
 	hiddenSelectionsTextures[]=\
 	{\
-		\95th_P1_New\Data\Uniforms\MC\##name##\Uniform_Upper.paa,\
-		\95th_P1_New\Data\Uniforms\MC\##name##\Uniform_Lower.paa\
+		\95th_P1_Units\Data\Uniforms\MC\##name##\Uniform_Upper.paa,\
+		\95th_P1_Units\Data\Uniforms\MC\##name##\Uniform_Lower.paa\
 		\
 	};\
 
