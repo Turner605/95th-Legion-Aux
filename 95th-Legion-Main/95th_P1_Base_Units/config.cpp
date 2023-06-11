@@ -132,25 +132,6 @@ class CfgVehicles
 		};
 	};
 
-	class 95th_P1_Pilot_Unit_Base : 95th_Unit_Base
-	{
-		displayName="[95th] Pilot";
-		editorSubcategory="95th_Pilots";
-		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_AB.jpg"; //TODO: CHANGE
-		weapons[]={"JLTS_DC17SA","Throw","Put"};
-		respawnWeapons[]={"JLTS_DC17SA","Throw","Put"};
-		magazines[]=
-		{
-			"JLTS_DC17SA_mag","JLTS_DC17SA_mag","JLTS_DC17SA_mag","JLTS_DC17SA_mag",
-			"Chemlight_green","Chemlight_green"
-		};
-		respawnMagazines[]=
-		{
-			"JLTS_DC17SA_mag","JLTS_DC17SA_mag","JLTS_DC17SA_mag","JLTS_DC17SA_mag",
-			"Chemlight_green","Chemlight_green"
-		};
-	};
-
 	class 95th_P1_ARC_Unit_Base : 95th_Unit_Base
 	{
 		displayName="[95th] ARC";
@@ -172,43 +153,7 @@ class CfgVehicles
 		};
 	};
 
-	class 95th_P1_Unit_Base : 95th_Unit_Base
-	{
-		displayName="[95th] ARC";
-		editorSubcategory="95th_P1";
-		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_AB.jpg"; //TODO: CHANGE
-		weapons[]={"JLTS_DC15S","JLTS_DC17SA","Throw","Put"}; // TODO: CHANGE GUN
-		respawnWeapons[]={"JLTS_DC15S","JLTS_DC17SA","Throw","Put"};
-		magazines[]=
-		{
-			"JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag",
-			"JLTS_DC17SA_mag","JLTS_DC17SA_mag","JLTS_DC17SA_mag",
-			"Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"
-		};
-		respawnMagazines[]=
-		{
-			"JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag",
-			"JLTS_DC17SA_mag","JLTS_DC17SA_mag","JLTS_DC17SA_mag",
-			"Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"
-		};
-	};
 
-	class 95th_P1_MC_Unit_Base: 95th_Unit_Base
-	{
-		displayName="[95th] Commanders";
-		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_marshalcommander.jpg";
-		editorSubcategory="95th_P1";
-		icon="JLTS_iconManMarshalCMDR";
-		uniformClass="95th_P1_MC_Uniform_Base";
-		model="\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d";
-		hiddenSelections[]={"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[]=
-		{
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor1_mc_co.paa",
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_armor2_co.paa",
-			"\MRC\JLTS\characters\CloneArmor\data\Clone_rank_co.paa"
-		};
-	};
 
 };
 

@@ -1,5 +1,6 @@
 #include "Macros\Rifleman Units.hpp"
 #include "Macros\MC Units.hpp"
+#include "Macros\Pilot Units.hpp"
 
 class CfgPatches {
     class 95th_P1_Units {
@@ -21,7 +22,10 @@ class CfgPatches {
 			"95th_Rifleman_Unit_Lieutenant",
 
 			"95th_MC_Unit_Zeus",
-			"95th_MC_Unit_Turner"
+			"95th_MC_Unit_Turner",
+
+			"95th_Pilot_Unit_Trooper",
+			"95th_Pilot_Unit_Jinter"
 		};
     };
 }; 
@@ -47,6 +51,7 @@ class cfgFactionClasses {
 class CfgEditorSubcategories {
 	class 95th_Rifleman{displayName="Rifleman";};
 	class 95th_MC{displayName="Commanders";};
+	class 95th_Pilots{displayName="Pilots";};
 };
 
 class XtdGearModels {
@@ -104,6 +109,19 @@ class XtdGearModels {
 				class Havoc { label = "Havoc"; description = "Havocs Helmet"; };
 			};
 		};
+
+		class 95th_P1_Pilot_Helmet {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper","Jinter"};
+				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+				class Jinter { label = "Jinter"; description = "Jinters Helmet"; };
+			};
+		};
 	};
 };
 
@@ -115,6 +133,7 @@ class cfgWeapons {
     class U_I_CombatUniform;
 
 	class SEA_Helmet_P1_Base;
+	class LSEA_Helmet_Pilot_P1_Base;
 
 //############################################################### Uniforms ###############################################################
 	NEW_95TH_P1_UNIFORM(Trooper,Trooper)};
@@ -141,6 +160,9 @@ class cfgWeapons {
 	NEW_95TH_P1_HELMET(Manila)};
 	NEW_95TH_P1_HELMET(Sand)};
 	NEW_95TH_P1_HELMET(Havoc)};
+
+	NEW_95TH_P1_PILOT_HELMET(Trooper)};
+	NEW_95TH_P1_PILOT_HELMET(Jinter)};
 };  
 
 class CfgVehicles {
@@ -159,4 +181,10 @@ class CfgVehicles {
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_MC_UNIT(Zeus,Veteran,Zeus)};
 	NEW_95TH_MC_UNIT(Turner,Turner,Zeus)};
+
+	// Uniform Class Name, Helmet Name, Vest Name
+	NEW_95TH_PILOT_UNIT(Trooper,Trooper,Trooper)};
+	NEW_95TH_PILOT_UNIT(Senior,Trooper,Trooper)};
+	NEW_95TH_PILOT_UNIT(Veteran,Trooper,Veteran)};
+	NEW_95TH_PILOT_UNIT(Sergeant,Trooper,Sergeant)};
 };
