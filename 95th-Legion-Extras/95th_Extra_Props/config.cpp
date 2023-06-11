@@ -16,7 +16,12 @@ class CfgPatches
             "95th_Platoon_Explosives_Crate",
             "95th_Vehicle_Ammo_Crate",
             "95th_Vehicle_Fuel_Crate",
-			"95th_Arsenal"
+			"95th_Arsenal",
+			"95th_Landing_Pad",
+			"95th_Air_Vehicle_Spawner",
+			"95th_Air_Vehicle_Servicer",
+			"95th_Ground_Vehicle_Spawner",
+			"95th_Resupply_Pad"
         };
 	};
 };
@@ -26,8 +31,9 @@ class CfgEditorCategories{
 };
 
 class CfgEditorSubcategories{
-	class 95th_Crates{displayName="[95th] Supply Crates";};
-	class 95th_Misc{displayName="[95th] Misc";};
+	class 95th_Crates{displayName="Supply Crates";};
+	class 95th_Misc{displayName="Misc";};
+	class 95th_Utilities{displayName = "Utilities";};
 };
 
 class CfgVehicles {
@@ -143,11 +149,102 @@ class CfgVehicles {
         maximumLoad=0;
     };
 
+
+//#########################################################################################################
+//Utility Objects
+//#########################################################################################################
+
 	class 3as_GNK;
-	class 95th_Arsenal: 3as_GNK
-	{
+	class 95th_Arsenal: 3as_GNK {
 		displayName="[95th] Arsenal Gonk";
 		editorCategory="95th_Props";
-		editorSubcategory="95th_Misc";
+		editorSubcategory="95th_Utilities";
+	};
+
+	class 3as_Landingpad_prop;
+	class 95th_Landing_Pad : 3as_Landingpad_prop {
+		displayName="[95th] Landing Pad";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Utilities";
+	};
+
+	class 3AS_TERMINAL_2_PROP;
+	class 95th_Air_Vehicle_Spawner : 3AS_TERMINAL_2_PROP {
+		displayName="[95th] Air Vehicle Terminal";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Utilities";
+		class UserActions {
+			class SpawnMrk1LAAT {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [95th] LAAT Mrk1 (Turrets)";
+				statement = "[this, player, '95th_LAAT_Mrk1'] spawn NFA_fnc_handleAirSpawned;"; 
+			};
+			class SpawnMrk2LAAT {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [95th] LAAT Mrk2";
+				statement = "[this, player, '95th_LAAT_Mrk2'] spawn NFA_fnc_handleAirSpawned;"; 
+			};
+			class SpawnMrk2LAATLights {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [95th] LAAT Mrk2 (Lights)";
+				statement = "[this, player, '95th_LAAT_Mrk2Lights'] spawn NFA_fnc_handleAirSpawned;"; 
+			};
+			class SpawnLAATC {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [3AS] LAAT/C";
+				statement = "[this, player, '3as_LAATC'] spawn NFA_fnc_handleAirSpawned;"; 
+			};
+			class SpawnLAATLE {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [3AS] LAAT/LE";
+				statement = "[this, player, '3AS_Patrol_LAAT_Republic'] spawn NFA_fnc_handleAirSpawned;"; 
+			};
+		};
+	};
+
+	class 95th_Air_Vehicle_Servicer : 3AS_TERMINAL_2_PROP {
+		displayName="[95th] Air Service Terminal";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Utilities";
+		class UserActions {
+			class ServiceAirVehicle {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Service Air Vehicle";
+				statement = "[this, ['Helicopter', 'Plane']] spawn NFA_fnc_handleVehicleServiced;"; 
+			};
+			class EditPylons {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Edit Pylons";
+				statement = "[this, player, ['Helicopter', 'Plane']] spawn NFA_fnc_handlePylonEdit;"; 
+			};
+		};
+	};
+
+	class 95th_Ground_Vehicle_Spawner : 3AS_TERMINAL_2_PROP {
+		displayName="[95th] Ground Vehicle Terminal";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Utilities";
+	};
+
+	class 3as_FOB_turret_base_prop;
+	class 95th_Resupply_Pad : 3as_FOB_turret_base_prop {
+		displayName="[95th] Resupply Pad";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Utilities";
+	};
+};
+
+//#########################################################################################################
+//Functions
+//#########################################################################################################
+
+class CfgFunctions {
+	class NFA {
+		class Utilities {
+			class handleAirSpawned {file = "\95th_Extra_Props\Scripts\handleAirSpawned.sqf";};
+			class handleVehicleServiced {file = "\95th_Extra_Props\Scripts\handleVehicleServiced.sqf";};
+			class handlePylonEdit {file = "\95th_Extra_Props\Scripts\handlePylonEdit.sqf";};
+			class handleSkinSelection {file = "\95th_Extra_Props\Scripts\handleSkinSelection.sqf";};
+		};
 	};
 };
