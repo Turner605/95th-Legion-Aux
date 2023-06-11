@@ -49,7 +49,7 @@
     scopeArsenal = 2;\
 	author=95th Aux Team;\
 	displayName=[95th] P1 Helmet;\
-	hiddenSelections[]={"Camo1","Visor"};\
+	hiddenSelections[]={Camo1,Visor};\
 	hiddenSelectionsTextures[]={\
 		\95th_P1_Units\Data\Helmets\Rifleman\Helmet_##name##.paa,\
 		\95th_P1_Units\Data\Helmets\Rifleman\Helmet_##name##.paa\

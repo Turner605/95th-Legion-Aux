@@ -2,6 +2,7 @@
 #include "Macros\MC Units.hpp"
 #include "Macros\Pilot Units.hpp"
 #include "Macros\Airborne Units.hpp"
+#include "Macros\ARF Units.hpp"
 
 class CfgPatches {
     class 95th_P1_Units {
@@ -54,6 +55,7 @@ class CfgEditorSubcategories {
 	class 95th_MC{displayName="Commanders";};
 	class 95th_Pilots{displayName="Pilots";};
 	class 95th_Airborne{displayName="Airborne";};
+	class 95th_ARF{displayName="ARF";};
 };
 
 class XtdGearModels {
@@ -136,6 +138,18 @@ class XtdGearModels {
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 			};
 		};
+
+		class 95th_ARF_Helmet {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper"};
+				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+			};
+		};
 	};
 };
 
@@ -149,6 +163,7 @@ class cfgWeapons {
 	class SEA_Helmet_P1_Base;
 	class LSEA_Helmet_Pilot_P1_Base;
 	class JLTS_CloneHelmetAB;
+	class SEA_Helmet_ARF_base;
 
 //############################################################### Uniforms ###############################################################
 	NEW_95TH_P1_UNIFORM(Trooper,Trooper)};
@@ -180,6 +195,8 @@ class cfgWeapons {
 	NEW_95TH_P1_PILOT_HELMET(Jinter)};
 
 	NEW_95TH_AIRBORNE_HELMET(Trooper)};
+
+	NEW_95TH_ARF_HELMET(Trooper)};
 };  
 
 class CfgVehicles {
@@ -210,4 +227,10 @@ class CfgVehicles {
 	NEW_95TH_AIRBORNE_UNIT(Sergeant,Trooper,Sergeant)};
 	NEW_95TH_AIRBORNE_UNIT(Captain,Trooper,Captain)};
 	NEW_95TH_AIRBORNE_UNIT(Lieutenant,Trooper,Lieutenant)};
+
+	// Uniform Class Name, Helmet Name, Vest Name
+	NEW_95TH_ARF_UNIT(Trooper,Trooper,Trooper)};
+	NEW_95TH_ARF_UNIT(Sergeant,Trooper,Sergeant)};
+	NEW_95TH_ARF_UNIT(Captain,Trooper,Captain)};
+	NEW_95TH_ARF_UNIT(Lieutenant,Trooper,Lieutenant)};
 };
