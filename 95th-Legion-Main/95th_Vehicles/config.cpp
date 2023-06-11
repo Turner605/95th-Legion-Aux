@@ -178,7 +178,7 @@ class CfgVehicles {
 		author="95th Aux";
 		scopecurator=2;
 		scope = 2;
-        crew = "95th_P1_Unit_Trooper";
+        crew = "95th_Rifleman_Unit_Trooper";
 		faction="95th_Legion_Faction_Clones";
 		displayname="95th RX200";
 		ace_cargo_space = 26;
