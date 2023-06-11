@@ -11,7 +11,6 @@ class CfgPatches
 			"WBK_Combinus",
 			"JLTS_core",
 			"JLTS_weapons_core",
-			"95th_P1_Base_Units",
 			"95th_P1_Units"
 		};
 		units[] = {
@@ -155,7 +154,6 @@ class CfgVehicles
     //*****             CIS                *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
 	class 95th_P1_Unit_Trooper;
-	class 95th_Unit_Base;
 	class lsd_cis_bxdroid_specops;
 	class WBK_Combine_ASS_Sniper;
 	class JLTS_UST_turret_CIS_backpack;
