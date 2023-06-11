@@ -81,7 +81,7 @@ class CfgVehicles {
 		author="95th Aux Team";
 		faction="95th_Legion_Faction_Clones";
 		ace_cargo_space = 26;
-        crew = "95th_P1_Pilot_Unit_Trooper";
+        crew = "95th_Pilot_Unit_Trooper";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
 		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","3as_LAAT_Missile_AGM","3as_LAAT_Missile_AA","CMFlareLauncher"};
 		magazines[]={
@@ -129,7 +129,7 @@ class CfgVehicles {
 		author="95th Aux Team";
 		faction="95th_Legion_Faction_Clones";
 		ace_cargo_space = 26;
-        crew = "95th_P1_Pilot_Unit_Trooper";
+        crew = "95th_Pilot_Unit_Trooper";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
 		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","3as_LAAT_Missile_AGM","3as_LAAT_Missile_AA","CMFlareLauncher"};
 		magazines[]={
