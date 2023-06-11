@@ -89,30 +89,6 @@ class CfgVehicles
 	class 95th_Misc_Unit_Base : 95th_Unit_Base{
 		faction="95th_Legion_Faction_Misc";
 	};
-
-	class 95th_P1_ARC_Unit_Base : 95th_Unit_Base
-	{
-		displayName="[95th] ARC";
-		editorSubcategory="95th_ARC";
-		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_AB.jpg"; //TODO: CHANGE
-		weapons[]={"JLTS_DC15S","JLTS_DC17SA","Throw","Put"}; // TODO: CHANGE GUN
-		respawnWeapons[]={"JLTS_DC15S","JLTS_DC17SA","Throw","Put"};
-		magazines[]=
-		{
-			"JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag",
-			"JLTS_DC17SA_mag","JLTS_DC17SA_mag","JLTS_DC17SA_mag",
-			"Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"
-		};
-		respawnMagazines[]=
-		{
-			"JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag","JLTS_DC15A_mag",
-			"JLTS_DC17SA_mag","JLTS_DC17SA_mag","JLTS_DC17SA_mag",
-			"Chemlight_green","Chemlight_green","HandGrenade","HandGrenade"
-		};
-	};
-
-
-
 };
 
 class cfgWeapons 
@@ -128,16 +104,6 @@ class cfgWeapons
     class U_I_CombatUniform;
 
 	// ########################### HELMETS ###########################
-
-	class JLTS_CloneHelmetARC;
-	class 95th_P1_ARC_Helmet_Base: JLTS_CloneHelmetARC
-	{
-		displayName="[95th] ARC Helmet Base";
-		author="95th Aux Team";
-		scope = 0;
-    	scopeArsenal = 0;
-		hiddenSelections[]={"Camo1","camo2","Visor"};
-	};
 
 	class SEA_Helmet_SpecOps_SR_Base;
 	class 95th_P1_SpecOps_Helmet_Base: SEA_Helmet_SpecOps_SR_Base
