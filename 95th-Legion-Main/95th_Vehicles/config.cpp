@@ -1,3 +1,5 @@
+#include "Macros\LAAT Texture.hpp"
+
 class CfgPatches
 {
 	class 95th_Legion_Vehicles
@@ -13,8 +15,9 @@ class CfgPatches
 		};
 
 		units[]={
-			"95th_LAAT_Mrk2",
 			"95th_LAAT_Mrk1",
+			"95th_LAAT_Mrk2",
+			"95th_LAAT_Mrk2Lights",
 			"95th_TX_130",
 			"95th_RX200",
 			"95th_Outpost_Crate"
@@ -70,172 +73,83 @@ class CfgWeapons {
 	};
 };
 
-class CfgVehicles
-{
-
-    //************************************************************************************************************************************************************************************************
-    //*****             Vehicles                *********************************************************************************************************************************************************
-    //************************************************************************************************************************************************************************************************
-    
-	class 3as_LAAT_Mk2;
-	class 95th_LAAT_Mrk2: 3as_LAAT_Mk2
-	{
-		displayname="[95th] LAAT/I Mk.2";
-		author="95th Aux Team";
-        crew = "95th_P1_Pilot_Unit_Trooper";
-		ace_cargo_space = 26;
-		scopecurator=2;
-		scope = 2;
-		faction="95th_Legion_Faction_Clones";
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Vehicles\Data\LAAT\Hull_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Wings_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Weapons_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Weapon_Details_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Interior_CO.paa"
-		};
-		weapons[]={
-			"95th_LAAT_Light_Cannon",
-			"95th_LAAT_Heavy_Cannon",
-			"3as_LAAT_Missile_AGM",
-			"3as_LAAT_Missile_AA",
-			"CMFlareLauncher"
-		};
-		magazines[]={
-			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-			"3as_LAAT_8Rnd_Missile_AGM",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"Laser_Battery",
-			"Laser_Battery",
-			"95th_LAAT_Light_Cannon_Magazine",
-			"95th_LAAT_Light_Cannon_Magazine",
-			"95th_LAAT_Light_Cannon_Magazine"
-		};
-	};
-
+class CfgVehicles {
+//############################################################### LAATs ###############################################################
 	class 3as_LAAT_Mk1;
-	class 95th_LAAT_Mrk1: 3as_LAAT_Mk1
-	{
+	class 95th_LAAT_Mrk1: 3as_LAAT_Mk1 {
 		displayname="[95th] LAAT/I Mk.1";
 		author="95th Aux Team";
 		faction="95th_Legion_Faction_Clones";
 		ace_cargo_space = 26;
-		scopecurator=2;
-		scope = 2;
         crew = "95th_P1_Pilot_Unit_Trooper";
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Vehicles\Data\LAAT\Hull_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Wings_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Weapons_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Weapon_Details_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Interior_CO.paa"
-		};
-		weapons[]={
-			"95th_LAAT_Light_Cannon",
-			"95th_LAAT_Heavy_Cannon",
-			"3as_LAAT_Missile_AGM",
-			"3as_LAAT_Missile_AA",
-			"CMFlareLauncher"
-		};
+		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
+		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","3as_LAAT_Missile_AGM","3as_LAAT_Missile_AA","CMFlareLauncher"};
 		magazines[]={
 			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
 			"3as_LAAT_8Rnd_Missile_AGM",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"Laser_Battery",
-			"Laser_Battery",
-			"95th_LAAT_Light_Cannon_Magazine",
-			"95th_LAAT_Light_Cannon_Magazine",
-			"95th_LAAT_Light_Cannon_Magazine"
+			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
+			"Laser_Battery","Laser_Battery",
+			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
 		};
-	};
-	class 95th_LAAT_Jinter_Mrk1: 95th_LAAT_Mrk1
-	{
-		displayname="[95th] LAAT/I Mk.1 - Jinter";
-		author="95th Aux Team";
-		faction="95th_Legion_Faction_Clones";
-		ace_cargo_space = 26;
-		scopecurator=2;
-		scope = 2;
-        crew = "95th_P1_Pilot_Unit_Trooper";
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Vehicles\Data\LAAT\Jinter_Hull_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Jinter_Wings_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Weapons_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Weapon_Details_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Jinter_Interior_CO.paa"
-		};
-		weapons[]={
-			"95th_LAAT_Light_Cannon",
-			"95th_LAAT_Heavy_Cannon",
-			"3as_LAAT_Missile_AGM",
-			"3as_LAAT_Missile_AA",
-			"CMFlareLauncher"
-		};
-		magazines[]={
-			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-			"3as_LAAT_8Rnd_Missile_AGM",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"Laser_Battery",
-			"Laser_Battery",
-			"95th_LAAT_Light_Cannon_Magazine",
-			"95th_LAAT_Light_Cannon_Magazine",
-			"95th_LAAT_Light_Cannon_Magazine"
-		};
-	};
-	class 95th_LAAT_Jinter_Mrk2: 95th_LAAT_Mrk2
-	{
-		displayname="[95th] LAAT/I Mk.2 - Jinter";
-		author="95th Aux Team";
-        crew = "95th_P1_Pilot_Unit_Trooper";
-		ace_cargo_space = 26;
-		scopecurator=2;
-		scope = 2;
-		faction="95th_Legion_Faction_Clones";
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Vehicles\Data\LAAT\Jinter_Hull_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Jinter_Wings_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Weapons_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Weapon_Details_CO.paa",
-			"\95th_Vehicles\Data\LAAT\Jinter_Interior_CO.paa"
-		};
-		weapons[]={
-			"95th_LAAT_Light_Cannon",
-			"95th_LAAT_Heavy_Cannon",
-			"3as_LAAT_Missile_AGM",
-			"3as_LAAT_Missile_AA",
-			"CMFlareLauncher"
-		};
-		magazines[]={
-			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-			"3as_LAAT_8Rnd_Missile_AGM",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"240Rnd_CMFlare_Chaff_Magazine",
-			"Laser_Battery",
-			"Laser_Battery",
-			"95th_LAAT_Light_Cannon_Magazine",
-			"95th_LAAT_Light_Cannon_Magazine",
-			"95th_LAAT_Light_Cannon_Magazine"
+		class TextureSources {
+			textureList[] = {"Default",1,"Jinter",0};
+
+			NEW_95TH_LAAT_TEXTURE(Default)};
+			NEW_95TH_LAAT_TEXTURE(Jinter)};
 		};
 	};
 
+	class 3as_LAAT_Mk2;
+	class 95th_LAAT_Mrk2: 3as_LAAT_Mk2 {
+		displayname="[95th] LAAT/I Mk.2";
+		author="95th Aux Team";
+        crew = "95th_Pilot_Unit_Trooper";
+		ace_cargo_space = 26;
+		faction="95th_Legion_Faction_Clones";
+		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
+		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","3as_LAAT_Missile_AGM","3as_LAAT_Missile_AA","CMFlareLauncher"};
+		magazines[]={
+			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
+			"3as_LAAT_8Rnd_Missile_AGM",
+			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
+			"Laser_Battery","Laser_Battery",
+			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
+		};
+		class TextureSources {
+			textureList[] = {"Default",1,"Jinter",0};
+
+			NEW_95TH_LAAT_TEXTURE(Default)};
+			NEW_95TH_LAAT_TEXTURE(Jinter)};
+		};
+	};
+
+	class 3as_LAAT_Mk2Lights;
+	class 95th_LAAT_Mrk2Lights: 3as_LAAT_Mk2Lights {
+		displayname="[95th] LAAT/I Mk.2 (Lamps)";
+		author="95th Aux Team";
+		faction="95th_Legion_Faction_Clones";
+		ace_cargo_space = 26;
+        crew = "95th_P1_Pilot_Unit_Trooper";
+		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
+		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","3as_LAAT_Missile_AGM","3as_LAAT_Missile_AA","CMFlareLauncher"};
+		magazines[]={
+			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
+			"3as_LAAT_8Rnd_Missile_AGM",
+			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
+			"Laser_Battery","Laser_Battery",
+			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
+		};
+		class TextureSources {
+			textureList[] = {"Default",1,"Jinter",0};
+
+			NEW_95TH_LAAT_TEXTURE(Default)};
+			NEW_95TH_LAAT_TEXTURE(Jinter)};
+		};
+	};
+
+//############################################################### Sabers ###############################################################
 	class 3as_saber_m1;
-	class 95th_TX_130 : 3as_saber_m1
-	{
+	class 95th_TX_130 : 3as_saber_m1 {
 		author="95th Aux";
 		scopecurator=2;
 		scope = 2;
