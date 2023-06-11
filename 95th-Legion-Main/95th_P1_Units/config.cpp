@@ -4,6 +4,10 @@
 #include "Macros\Airborne Units.hpp"
 #include "Macros\ARF Units.hpp"
 #include "Macros\ARC Units.hpp"
+#include "Macros\SpecOps Units.hpp"
+#include "Macros\ColdAssault Units.hpp"
+#include "Macros\Engineer Units.hpp"
+#include "Macros\Hazard Units.hpp"
 
 class CfgPatches {
     class 95th_P1_Units {
@@ -38,7 +42,12 @@ class CfgPatches {
 			"95th_ARF_Unit_Trooper",
 			"95th_ARF_Unit_Sergeant",
 			"95th_ARF_Unit_Captain",
-			"95th_ARF_Unit_Lieutenant"
+			"95th_ARF_Unit_Lieutenant",
+
+			"95th_ColdAssault_Unit_Trooper",
+			"95th_Engineer_Unit_Trooper",
+			"95th_Hazard_Unit_Trooper",
+			"95th_SpecOps_Unit_Trooper"
 		};
     };
 }; 
@@ -68,6 +77,10 @@ class CfgEditorSubcategories {
 	class 95th_Airborne{displayName="Airborne";};
 	class 95th_ARF{displayName="ARF";};
 	class 95th_ARC{displayName="ARC";};
+	class 95th_ColdAssault{displayName="Cold Assault";};
+	class 95th_Engineer{displayName="Engineer";};
+	class 95th_Hazard{displayName="Hazard";};
+	class 95th_SpecOps{displayName="Spec Ops";};
 };
 
 class XtdGearModels {
@@ -100,6 +113,18 @@ class XtdGearModels {
 				values[] = {"Zeus", "Turner"};
 				class Zeus { label = "Zeus"; description = "Default Uniform"; };
 				class Turner { label = "Turner"; description = "Turners Uniform"; };
+			};
+		};
+
+		class 95th_ColdAssault_Uniform {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper"};
+				class Trooper { label = "Trooper"; description = "Default Uniform"; };
 			};
 		};
 
@@ -162,6 +187,68 @@ class XtdGearModels {
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 			};
 		};
+
+		class 95th_ARC_Helmet {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper"};
+				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+			};
+		};
+
+		class 95th_ColdAssault_Helmet {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper"};
+				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+			};
+		};
+
+		class 95th_Engineer_Helmet {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper","Revan","Kong"};
+				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+				class Revan { label = "Revan"; description = "Revans Helmet"; };
+				class Kong { label = "Kong"; description = "Kongs Helmet"; };
+			};
+		};
+
+		class 95th_Hazard_Helmet {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper"};
+				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+			};
+		};
+
+		class 95th_SpecOps_Helmet {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper"};
+				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+			};
+		};
 	};
 };
 
@@ -172,11 +259,17 @@ class cfgWeapons {
     class Uniform_Base: ItemCore { class ItemInfo; };
     class U_I_CombatUniform;
 
+	class 3AS_U_Rep_ColdAssault_Armor;
+
 	class SEA_Helmet_P1_Base;
 	class LSEA_Helmet_Pilot_P1_Base;
 	class JLTS_CloneHelmetAB;
 	class SEA_Helmet_ARF_base;
 	class SEA_Helmet_ARC;
+	class SEA_Helmet_SpecOps_SR_Base;
+	class SEA_Helmet_Engineer_Base;
+	class SEA_Helmet_Hazard_Base;
+	class 3AS_H_ColdAssault_Helmet;
 
 //############################################################### Uniforms ###############################################################
 	NEW_95TH_P1_UNIFORM(Trooper,Trooper)};
@@ -189,6 +282,8 @@ class cfgWeapons {
 
 	NEW_95TH_MC_UNIFORM(Zeus,Zeus)};
 	NEW_95TH_MC_UNIFORM(Turner,Turner)};
+
+	NEW_95TH_COLDASSAULT_UNIFORM(Trooper,Trooper)};
 
 //############################################################### Helmets ###############################################################
 	NEW_95TH_P1_HELMET(Trooper)};
@@ -212,10 +307,21 @@ class cfgWeapons {
 	NEW_95TH_ARF_HELMET(Trooper)};
 
 	NEW_95TH_ARC_HELMET(Trooper)};
+
+	NEW_95TH_SPECOPS_HELMET(Trooper)};
+
+	NEW_95TH_ENGINEER_HELMET(Trooper)};
+	NEW_95TH_ENGINEER_HELMET(Kong)};
+	NEW_95TH_ENGINEER_HELMET(Revan)};
+	
+	NEW_95TH_HAZARD_HELMET(Trooper)};
+
+	NEW_95TH_COLDASSAULT_HELMET(Trooper)};
 };  
 
 class CfgVehicles {
 	class JLTS_Clone_P2_DC15A;
+	class 3AS_Rep_ColdAssault_base_F;
 
 //############################################################### Units ###############################################################
 	// Uniform Class Name, Helmet Name, Vest Name
@@ -251,4 +357,16 @@ class CfgVehicles {
 
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_ARC_UNIT(Trooper,Trooper,ARC)};
+
+	// Uniform Class Name, Helmet Name, Vest Name
+	NEW_95TH_SPECOPS_UNIT(Trooper,Trooper,Trooper)};
+
+	// Uniform Class Name, Helmet Name, Vest Name
+	NEW_95TH_ENGINEER_UNIT(Trooper,Trooper,Trooper)};
+
+	// Uniform Class Name, Helmet Name, Vest Name
+	NEW_95TH_HAZARD_UNIT(Trooper,Trooper,Trooper)};
+
+	// Uniform Class Name, Helmet Name, Vest Name
+	NEW_95TH_COLDASSAULT_UNIT(Trooper,Trooper,Trooper)};
 };
