@@ -3,6 +3,7 @@
 #include "Macros\Pilot Units.hpp"
 #include "Macros\Airborne Units.hpp"
 #include "Macros\ARF Units.hpp"
+#include "Macros\ARC Units.hpp"
 
 class CfgPatches {
     class 95th_P1_Units {
@@ -27,7 +28,17 @@ class CfgPatches {
 			"95th_MC_Unit_Turner",
 
 			"95th_Pilot_Unit_Trooper",
-			"95th_Pilot_Unit_Jinter"
+			"95th_Pilot_Unit_Jinter",
+
+			"95th_Airborne_Unit_Trooper",
+			"95th_Airborne_Unit_Sergeant",
+			"95th_Airborne_Unit_Captain",
+			"95th_Airborne_Unit_Lieutenant",
+
+			"95th_ARF_Unit_Trooper",
+			"95th_ARF_Unit_Sergeant",
+			"95th_ARF_Unit_Captain",
+			"95th_ARF_Unit_Lieutenant"
 		};
     };
 }; 
@@ -56,6 +67,7 @@ class CfgEditorSubcategories {
 	class 95th_Pilots{displayName="Pilots";};
 	class 95th_Airborne{displayName="Airborne";};
 	class 95th_ARF{displayName="ARF";};
+	class 95th_ARC{displayName="ARC";};
 };
 
 class XtdGearModels {
@@ -164,6 +176,7 @@ class cfgWeapons {
 	class LSEA_Helmet_Pilot_P1_Base;
 	class JLTS_CloneHelmetAB;
 	class SEA_Helmet_ARF_base;
+	class SEA_Helmet_ARC;
 
 //############################################################### Uniforms ###############################################################
 	NEW_95TH_P1_UNIFORM(Trooper,Trooper)};
@@ -197,6 +210,8 @@ class cfgWeapons {
 	NEW_95TH_AIRBORNE_HELMET(Trooper)};
 
 	NEW_95TH_ARF_HELMET(Trooper)};
+
+	NEW_95TH_ARC_HELMET(Trooper)};
 };  
 
 class CfgVehicles {
@@ -233,4 +248,7 @@ class CfgVehicles {
 	NEW_95TH_ARF_UNIT(Sergeant,Trooper,Sergeant)};
 	NEW_95TH_ARF_UNIT(Captain,Trooper,Captain)};
 	NEW_95TH_ARF_UNIT(Lieutenant,Trooper,Lieutenant)};
+
+	// Uniform Class Name, Helmet Name, Vest Name
+	NEW_95TH_ARC_UNIT(Trooper,Trooper,ARC)};
 };
