@@ -34,13 +34,33 @@ class CfgPatches
 };
 
 class CfgAmmo {
-	class laserAmmo;
-	class 95th_LAAT_Light_Cannon_Ammo: laserAmmo {
-		explosive=0.10000001;
-		caliber=2.4000001;
-		indirecthit=10;
-		indirectHitRange=1;
+	class 3AS_PlasmaBase;
+	class 95th_LAAT_Light_Cannon_Ammo: 3AS_PlasmaBase {
+		hit = 100; indirectHit = 100; indirectHitRange = 0.3;
+		cartridge = "";
+		visibleFire = 3; audibleFire = 45;
+		dangerRadiusBulletClose = 8; dangerRadiusHit = 12;
+		suppressionRadiusBulletClose = 6; suppressionRadiusHit = 8;
+		cost = 1.2;
+		airLock = 1;
+		typicalSpeed = 472;
+		caliber = 1.95;
 		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+		tracerScale = 0.975;
+		airFriction = -0.00018;
+		effectFly = "3AS_PlasmaBolt_Blue_Fly";
+		class CamShakeExplode {
+			power = 2.82843;
+			duration = 0.6;
+			frequency = 20;
+			distance = 8.48528;
+		};
+		class CamShakeHit {
+			power = 5;
+			duration = 0.2;
+			frequency = 20;
+			distance = 1;
+		};
 	};
 };
 
@@ -77,6 +97,8 @@ class CfgVehicles {
 //############################################################### LAATs ###############################################################
 	class 3as_LAAT_Mk1;
 	class 95th_LAAT_Mrk1: 3as_LAAT_Mk1 {
+		scope=2;
+		scopecurator=2;
 		displayname="[95th] LAAT/I Mk.1";
 		author="95th Aux Team";
 		faction="95th_Legion_Faction_Clones";
