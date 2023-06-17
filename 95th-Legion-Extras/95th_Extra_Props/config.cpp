@@ -21,6 +21,7 @@ class CfgPatches
 			"95th_Air_Vehicle_Spawner",
 			"95th_Air_Vehicle_Servicer",
 			"95th_Ground_Vehicle_Spawner",
+			"95th_Ground_Vehicle_Servicer",
 			"95th_Resupply_Pad"
         };
 	};
@@ -33,6 +34,8 @@ class CfgEditorCategories{
 class CfgEditorSubcategories{
 	class 95th_Crates{displayName="Supply Crates";};
 	class 95th_Misc{displayName="Misc";};
+	class 95th_Air_Utilities{displayName = "Air Utilities";};
+	class 95th_Ground_Utilities{displayName = "Ground Utilities";};
 	class 95th_Utilities{displayName = "Utilities";};
 };
 
@@ -160,19 +163,19 @@ class CfgVehicles {
 		editorCategory="95th_Props";
 		editorSubcategory="95th_Utilities";
 	};
-
+	
 	class 3as_Landingpad_prop;
 	class 95th_Landing_Pad : 3as_Landingpad_prop {
 		displayName="[95th] Landing Pad";
 		editorCategory="95th_Props";
-		editorSubcategory="95th_Utilities";
+		editorSubcategory="95th_Air_Utilities";
 	};
 
 	class 3AS_TERMINAL_2_PROP;
 	class 95th_Air_Vehicle_Spawner : 3AS_TERMINAL_2_PROP {
 		displayName="[95th] Air Vehicle Terminal";
 		editorCategory="95th_Props";
-		editorSubcategory="95th_Utilities";
+		editorSubcategory="95th_Air_Utilities";
 		class UserActions {
 			class SpawnMrk1LAAT {
 				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
@@ -205,12 +208,12 @@ class CfgVehicles {
 	class 95th_Air_Vehicle_Servicer : 3AS_TERMINAL_2_PROP {
 		displayName="[95th] Air Service Terminal";
 		editorCategory="95th_Props";
-		editorSubcategory="95th_Utilities";
+		editorSubcategory="95th_Air_Utilities";
 		class UserActions {
 			class ServiceAirVehicle {
 				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
 				displayName = "Service Air Vehicle";
-				statement = "[this, ['Helicopter', 'Plane']] spawn NFA_fnc_handleVehicleServiced;"; 
+				statement = "[this, ['Helicopter', 'Plane']] spawn NFA_fnc_handleAirVehicleServiced;"; 
 			};
 			class EditPylons {
 				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
@@ -220,10 +223,62 @@ class CfgVehicles {
 		};
 	};
 
+	class Land_Main_road_platform;
+	class 95th_Ground_Pad : Land_Main_road_platform {
+		displayName="[95th] Ground Pad";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Ground_Utilities";
+	};
+
 	class 95th_Ground_Vehicle_Spawner : 3AS_TERMINAL_2_PROP {
 		displayName="[95th] Ground Vehicle Terminal";
 		editorCategory="95th_Props";
-		editorSubcategory="95th_Utilities";
+		editorSubcategory="95th_Ground_Utilities";
+		class UserActions {
+			class SpawnTX130 {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [95th] TX-130";
+				statement = "[this, player, '95th_TX_130'] spawn NFA_fnc_handleGroundSpawned;"; 
+			};
+			class SpawnTX130Strafing {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [3AS] TX-130 (Strafing)";
+				statement = "[this, player, '3as_saber_m1_strafe'] spawn NFA_fnc_handleGroundSpawned;"; 
+			};
+			class Spawn95thRX200 {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [95th] RX-200";
+				statement = "[this, player, '95th_RX200'] spawn NFA_fnc_handleGroundSpawned;"; 
+			};
+			class Spawn3ASATTE {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [3AS] AT-TE";
+				statement = "[this, player, '3as_ATTE_Base'] spawn NFA_fnc_handleGroundSpawned;"; 
+			};
+			class LoadATRT {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Load AT-RT Into LAAT";
+				statement = "[this] spawn NFA_fnc_handleLoadATRT;"; 
+			};
+		};
+	};
+	
+	class 95th_Ground_Vehicle_Servicer : 3AS_TERMINAL_2_PROP {
+		displayName="[95th] Ground Service Terminal";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Ground_Utilities";
+		class UserActions {
+			class ServiceGroundVehicle {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Service Ground Vehicle";
+				statement = "[this, ['Car', 'Tank']] spawn NFA_fnc_handleGroundVehicleServiced;"; 
+			};
+			class EditPylons {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Edit Pylons";
+				statement = "[this, player, ['Car', 'Tank']] spawn NFA_fnc_handlePylonEdit;"; 
+			};
+		};
 	};
 
 	class 3as_FOB_turret_base_prop;
@@ -242,7 +297,10 @@ class CfgFunctions {
 	class NFA {
 		class Utilities {
 			class handleAirSpawned {file = "\95th_Extra_Props\Scripts\handleAirSpawned.sqf";};
-			class handleVehicleServiced {file = "\95th_Extra_Props\Scripts\handleVehicleServiced.sqf";};
+			class handleLoadATRT {file = "\95th_Extra_Props\Scripts\handleLoadATRT.sqf";};
+			class handleGroundSpawned {file = "\95th_Extra_Props\Scripts\handleGroundSpawned.sqf";};
+			class handleAirVehicleServiced {file = "\95th_Extra_Props\Scripts\handleAirVehicleServiced.sqf";};
+			class handleGroundVehicleServiced {file = "\95th_Extra_Props\Scripts\handleGroundVehicleServiced.sqf";};
 			class handlePylonEdit {file = "\95th_Extra_Props\Scripts\handlePylonEdit.sqf";};
 			class handleSkinSelection {file = "\95th_Extra_Props\Scripts\handleSkinSelection.sqf";};
 		};
