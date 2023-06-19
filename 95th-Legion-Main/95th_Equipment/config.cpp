@@ -1,13 +1,9 @@
-class CfgPatches
-{
-	class 95th_Equipment
-	{
+class CfgPatches {
+	class 95th_Equipment {
         author="95th Aux Team";
         name="95th Legion Equipment";
-		requiredAddons[]={
-			"ls_weapons"
-		};
-		units[] = {};
+		requiredAddons[]={"ls_weapons"};
+		weapons[] = {"NFL_Disc_Shield"};
 	};
 };
 
@@ -30,10 +26,9 @@ class cfgMagazines {
 		picture="\95th_Equipment\Data\Grenades\ThermalDet.paa";
 		ammo="95th_Thermal_T1_Ammo";
 	};
-}
+};
 
-class CfgWeapons
-{
+class CfgWeapons{
 	class GrenadeLauncher;
 	class Throw: GrenadeLauncher {
 		class ThrowMuzzle;
@@ -44,4 +39,71 @@ class CfgWeapons
 			magazines[]={"95th_Thermal_T1_Grenade"};
 		};
 	};
+
+	class CBA_MiscItem;
+	class CBA_MiscItem_ItemInfo;
+
+    class NFL_Disc_Shield: CBA_MiscItem {
+		NFL_IsDiscShieldDevice = 1;
+        author="95th Aux";
+		displayName = "Disc Shield Generator";
+		descriptionShort = "Disc Shield Generator";
+		model = ""; //todo
+		picture = ""; //todo
+		scope = 2;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 44;
+        };
+    };
 };
+
+class CfgFunctions {
+	class NFA {
+		class Equipment {
+			class handleDiscPressed {file = "\95th_Equipment\Scripts\handleDiscPressed.sqf";};
+			class handleDiscTriggered {file = "\95th_Equipment\Scripts\handleDiscTriggered.sqf";};
+		};
+	};
+};
+
+class Extended_PreInit_EventHandlers {
+	class NFL_Equipment_PreInit {
+		init="call compile preprocessFileLineNumbers '\95th_Equipment\Init\XEH_preInit.sqf'";
+	};
+};
+
+class CfgUserActions {
+	class NFL_Disc_Shield {
+		displayName = "Personal Disc Shield";
+		tooltip = "Personal Disc Shield";
+		onActivate = "_this call NFA_fnc_handleDiscPressed";
+		modifierBlocking = 1;
+	};
+};
+
+class CfgDefaultKeysPresets {
+	class Arma2 {
+		class Mappings {
+			NFL_Disc_Shield[] = {0x25};
+		};
+	};
+};
+
+class UserActionGroups {
+	class NFL_Equipment {
+		name = "95th Legion";
+		isAddon = 1;
+		group[] = {"NFL_Disc_Shield"};
+	};
+};
+
+
+
+
+
+
+
+
+
+
+
