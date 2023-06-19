@@ -399,3 +399,12 @@ class Extended_PostInit_EventHandlers {
 		init="call compile preprocessFileLineNumbers '\95th_Extra_Props\Bootstrap\XEH_postInit.sqf'";
 	};
 };
+
+class Extended_InitPost_EventHandlers {
+	class 95th_Supply_Large_Ammo_Prop {
+		class  95th_Supply_Large_Ammo_Prop_Init {
+			onRespawn="true";
+			init="[_this select 0, true] call ace_arsenal_fnc_initBox;";
+		};
+	};
+};
