@@ -1,4 +1,4 @@
-params ["_vehicleClass", "_player"];
+params ["_spawnedVehicle", "_player"];
 
 private _playerID = getPlayerUID _player;
 

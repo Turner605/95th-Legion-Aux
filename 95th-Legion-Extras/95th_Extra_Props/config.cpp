@@ -287,6 +287,13 @@ class CfgVehicles {
 		editorCategory="95th_Props";
 		editorSubcategory="95th_Utilities";
 	};
+
+	class 3AS_Venator_Room_Medium_Prop;
+	class 95th_Briefing_Room : 3AS_Venator_Room_Medium_Prop {
+		displayName="[95th] Briefing Room";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Utilities";
+	};
 };
 
 //#########################################################################################################
@@ -303,6 +310,13 @@ class CfgFunctions {
 			class handleGroundVehicleServiced {file = "\95th_Extra_Props\Scripts\handleGroundVehicleServiced.sqf";};
 			class handlePylonEdit {file = "\95th_Extra_Props\Scripts\handlePylonEdit.sqf";};
 			class handleSkinSelection {file = "\95th_Extra_Props\Scripts\handleSkinSelection.sqf";};
+			class checkPlayerInBriefing {file = "\95th_Extra_Props\Scripts\checkPlayerInBriefing.sqf";};
 		};
+	};
+};
+
+class Extended_PostInit_EventHandlers {
+	class 95th_Extra_Props_PostInit {
+		init="call compile preprocessFileLineNumbers '\95th_Extra_Props\Bootstrap\XEH_postInit.sqf'";
 	};
 };
