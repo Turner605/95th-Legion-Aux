@@ -11,18 +11,25 @@ class CfgPatches
 			"3as_GNK_Prop"
 		};
 		units[] = {
-            "95th_Platoon_Ammo_Crate",
-            "95th_Platoon_Medical_Crate",
-            "95th_Platoon_Explosives_Crate",
-            "95th_Vehicle_Ammo_Crate",
-            "95th_Vehicle_Fuel_Crate",
-			"95th_Arsenal",
 			"95th_Landing_Pad",
 			"95th_Air_Vehicle_Spawner",
 			"95th_Air_Vehicle_Servicer",
+
+			"95th_Ground_Pad",
 			"95th_Ground_Vehicle_Spawner",
 			"95th_Ground_Vehicle_Servicer",
-			"95th_Resupply_Pad"
+
+			"95th_Arsenal",
+			"95th_Permissions_Terminal",
+			"95th_Health_Station",
+			"95th_Briefing_Room",
+
+			"95th_Resupply_Pad",
+			"95th_Supply_Large_Ammo_Prop",
+			"95th_Supply_Large_Medical_Prop",
+			"95th_Supply_Large_Black_Prop",
+			"95th_Supply_Large_Blue_Prop",
+			"95th_Supply_Large_Red_Prop"
         };
 	};
 };
@@ -40,59 +47,52 @@ class CfgEditorSubcategories{
 };
 
 class CfgVehicles {
-	class CargoNet_01_box_F;
+//#########################################################################################################
+//Supply Crates
+//#########################################################################################################
 
-	class 95th_Crate_Base: CargoNet_01_box_F
-	{
-		scope=1;
-		scopecurator=2;
+	class 3AS_Supply_Large_Ammo_Prop;
+    class 95th_Supply_Large_Ammo_Prop : 3AS_Supply_Large_Ammo_Prop {
+		displayName="[95th] Platoon Ammo Crate";
 		author="95th Aux Team";
         editorCategory="95th_Props";
 		editorSubcategory="95th_Crates";
         maximumLoad=2000;
 
         ace_dragging_canDrag = 1;
-        ace_dragging_dragPosition[] = {0, 1.2, 0};
-        ace_dragging_dragDirection = 90;
-
+		ace_dragging_canCarry = 1;
         ace_cargo_size = 4;
         ace_cargo_canLoad = 1;
         ace_cargo_noRename = 1;
         ace_cargo_blockUnloadCarry = 1;
 
-		displayName="Base Crate";
-	};
-
-    class 95th_Platoon_Ammo_Crate : 95th_Crate_Base {
-		scope=2;
-		displayName="[95th] Platoon Ammo Crate";
-        model="\3as\3as_props\crates\crate5-3.p3d";
-		editorPreview="\3as\3as_props\crates\data\3as_crate4_3_prop.jpg";
-
-		class TransportMagazines
-		{
-			class _xx_JLTS_DC15A_mag{magazine="JLTS_DC15A_mag"; count=1;};
+		class TransportMagazines {
+			class _xx_JLTS_DC15A_mag{magazine="JLTS_DC15A_mag"; count=1;};  //TODO
 		};
 
-		class TransportWeapons
-		{
-			class _xx_JLTS_DC15A_plastic{weapon="JLTS_DC15A_plastic"; count=1;};
+		class TransportWeapons {
+			class _xx_JLTS_DC15A_plastic{weapon="JLTS_DC15A_plastic"; count=1;};  //TODO
 		};
 
-		class TransportItems
-		{
-            //Squad Shield ect
-		};
+		//class TransportItems {}; //TODO
     };
 
-    class 95th_Platoon_Medical_Crate : 95th_Crate_Base {
-		scope=2;
+	class 3AS_Supply_Large_Medical_Prop;
+	class 95th_Supply_Large_Medical_Prop : 3AS_Supply_Large_Medical_Prop {
 		displayName="[95th] Platoon Medical Crate";
-        model="\3as\3as_props\crates\Small_Box_5.p3d";
-		editorPreview="3as\3as_props\crates\data\3as_Small_Box_5_prop.jpg";
+		author="95th Aux Team";
+        editorCategory="95th_Props";
+		editorSubcategory="95th_Crates";
+        maximumLoad=2000;
 
-		class TransportItems
-		{
+        ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+        ace_cargo_size = 4;
+        ace_cargo_canLoad = 1;
+        ace_cargo_noRename = 1;
+        ace_cargo_blockUnloadCarry = 1;
+
+		class TransportItems {
 			class _xx_ACE_packingBandage{name="ACE_packingBandage"; count=50;};
 			class _xx_ACE_elasticBandage{name="ACE_elasticBandage"; count=50;};
 			class _xx_ACE_fieldDressing{name="ACE_fieldDressing"; count=50;};
@@ -120,50 +120,59 @@ class CfgVehicles {
 		};
     };
 
-    class 95th_Platoon_Explosives_Crate : 95th_Crate_Base {
-		scope=2;
+	class 3AS_Supply_Large_Black_Prop;
+	class 95th_Supply_Large_Black_Prop : 3AS_Supply_Large_Black_Prop {
 		displayName="[95th] Platoon Explosives Crate";
-		model="3as\3as_props\crates\3as_ExplodeBarrel_1.p3d";
-		editorPreview="\3as\3as_props\crates\data\3as_crate3_1_prop.jpg";
+		author="95th Aux Team";
+        editorCategory="95th_Props";
+		editorSubcategory="95th_Crates";
+        maximumLoad=2000;
 
-		class TransportItems
-		{
-			//Explosives here
-            //detonators ect
-		}; 
+        ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+        ace_cargo_size = 4;
+        ace_cargo_canLoad = 1;
+        ace_cargo_noRename = 1;
+        ace_cargo_blockUnloadCarry = 1;
+
+		//class TransportItems {}; //TODO
     };
 
-    class 95th_Vehicle_Ammo_Crate : 95th_Crate_Base {
-		scope=2;
+	class 3AS_Supply_Large_Blue_Prop;
+	class 95th_Supply_Large_Blue_Prop : 3AS_Supply_Large_Blue_Prop {
 		displayName="[95th] Vehicle Ammo Crate";
-        model="\3as\3as_props\crates\crate3-1.p3d";
-		editorPreview="\3as\3as_props\crates\data\3as_crate3_1_prop.jpg";
-        ace_rearm_defaultSupply = 1200;
+		author="95th Aux Team";
+        editorCategory="95th_Props";
+		editorSubcategory="95th_Crates";
+		ace_rearm_defaultSupply = 1200;
         maximumLoad=0;
-    };
+        ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+        ace_cargo_canLoad = 1;
+        ace_cargo_noRename = 1;
+        ace_cargo_blockUnloadCarry = 1;
+	};
 
-    class 95th_Vehicle_Fuel_Crate : 95th_Crate_Base {
-		scope=2;
+	class 3AS_Supply_Large_Red_Prop;
+	class 95th_Supply_Large_Red_Prop : 3AS_Supply_Large_Red_Prop {
 		displayName="[95th] Vehicle Fuel Crate";
-		model="3as\3as_props\crates\3as_ExplodeBarrel_3.p3d";
-		editorPreview="\3as\3as_props\crates\data\3as_crate3_1_prop.jpg";
-        ace_refuel_fuelCargo = 3000;
+		author="95th Aux Team";
+        editorCategory="95th_Props";
+		editorSubcategory="95th_Crates";
+		ace_refuel_fuelCargo = 3000;
         ace_refuel_hooks[] = {{0,0,0},{0,0,0}};
         maximumLoad=0;
-    };
-
-
-//#########################################################################################################
-//Utility Objects
-//#########################################################################################################
-
-	class 3as_GNK;
-	class 95th_Arsenal: 3as_GNK {
-		displayName="[95th] Arsenal Gonk";
-		editorCategory="95th_Props";
-		editorSubcategory="95th_Utilities";
+        ace_dragging_canDrag = 1;
+		ace_dragging_canCarry = 1;
+        ace_cargo_canLoad = 1;
+        ace_cargo_noRename = 1;
+        ace_cargo_blockUnloadCarry = 1;
 	};
-	
+
+	//#########################################################################################################
+	//Air Utility Objects
+	//#########################################################################################################
+
 	class 3as_Landingpad_prop;
 	class 95th_Landing_Pad : 3as_Landingpad_prop {
 		displayName="[95th] Landing Pad";
@@ -223,6 +232,10 @@ class CfgVehicles {
 		};
 	};
 
+	//#########################################################################################################
+	//Ground Utility Objects
+	//#########################################################################################################
+
 	class Land_Main_road_platform;
 	class 95th_Ground_Pad : Land_Main_road_platform {
 		displayName="[95th] Ground Pad";
@@ -262,7 +275,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	
+
 	class 95th_Ground_Vehicle_Servicer : 3AS_TERMINAL_2_PROP {
 		displayName="[95th] Ground Service Terminal";
 		editorCategory="95th_Props";
@@ -281,9 +294,51 @@ class CfgVehicles {
 		};
 	};
 
+	//#########################################################################################################
+	//Resupply Utility Objects
+	//#########################################################################################################
+
 	class 3as_FOB_turret_base_prop;
 	class 95th_Resupply_Pad : 3as_FOB_turret_base_prop {
 		displayName="[95th] Resupply Pad";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Utilities";
+		class UserActions {
+			class SpawnAmmoCrate {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn Platoon Ammo Crate";
+				statement = "[this, '95th_Supply_Large_Ammo_Prop'] spawn NFA_fnc_handleCrateSpawned;"; 
+			};
+			class SpawnMedicalCrate {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn Platoon Medical Crate";
+				statement = "[this, '95th_Supply_Large_Medical_Prop'] spawn NFA_fnc_handleCrateSpawned;"; 
+			};
+			class SpawnExplosivesCrate {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn Platoon Explosives Crate";
+				statement = "[this, '95th_Supply_Large_Black_Prop'] spawn NFA_fnc_handleCrateSpawned;"; 
+			};
+			class SpawnVehicleAmmoCrate {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn Vehicle Ammo Crate";
+				statement = "[this, '95th_Supply_Large_Blue_Prop'] spawn NFA_fnc_handleCrateSpawned;"; 
+			};
+			class SpawnVehicleFuelCrate {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn Vehicle Fuel Crate";
+				statement = "[this, '95th_Supply_Large_Red_Prop'] spawn NFA_fnc_handleCrateSpawned;"; 
+			};
+		};
+	};
+
+	//#########################################################################################################
+	//Misc Utility Objects
+	//#########################################################################################################
+
+	class 3as_GNK;
+	class 95th_Arsenal: 3as_GNK {
+		displayName="[95th] Arsenal Gonk";
 		editorCategory="95th_Props";
 		editorSubcategory="95th_Utilities";
 	};
@@ -293,6 +348,29 @@ class CfgVehicles {
 		displayName="[95th] Briefing Room";
 		editorCategory="95th_Props";
 		editorSubcategory="95th_Utilities";
+	};
+
+	class DSS_CEP_Permissions_Droid;
+	class 95th_Permissions_Terminal : DSS_CEP_Permissions_Droid {
+		model="optre_bw_buildings\reserchbase\doorconsole\doorconsole.p3d";
+		hiddenSelectionsTextures[]= { "optre_bw_buildings\reserchbase\doorconsole\data\cor_terminal_grn.paa" };
+		displayName="[95th] Permissions Terminal";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Utilities";
+	};
+
+	class Box_C_IDAP_UAV_06_medical_F;
+	class 95th_Health_Station : Box_C_IDAP_UAV_06_medical_F {
+		displayName="[95th] Health Station";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Utilities";
+		class UserActions {
+			class HealPlayer {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Heal";
+				statement = "[player] call ace_medical_treatment_fnc_fullHealLocal"; 
+			};
+		};
 	};
 };
 
@@ -311,6 +389,7 @@ class CfgFunctions {
 			class handlePylonEdit {file = "\95th_Extra_Props\Scripts\handlePylonEdit.sqf";};
 			class handleSkinSelection {file = "\95th_Extra_Props\Scripts\handleSkinSelection.sqf";};
 			class checkPlayerInBriefing {file = "\95th_Extra_Props\Scripts\checkPlayerInBriefing.sqf";};
+			class handleCrateSpawned {file = "\95th_Extra_Props\Scripts\handleCrateSpawned.sqf";};
 		};
 	};
 };
