@@ -26,6 +26,6 @@ if ((_myX > (_min select 0)) and (_myX < (_max select 0))) then {
 
 if(!_inside) exitWith {};
 
-TF_speak_volume_level = "whispering"; 
-5 call TFAR_fnc_setVoiceVolume;
-2 cutText ["<t color='#ffffff' size='2'>Please whisper in the briefing rooms.</t><br/><t color='#ffffff' size='2'>You have been set to whisper.</t>", "PLAIN", 1, true, true];
+TF_speak_volume_level = "normal"; 
+20 call TFAR_fnc_setVoiceVolume;
+2 cutText ["<t color='#ffffff' size='2'>Please do not yell in the briefing rooms.</t><br/><t color='#ffffff' size='2'>You have been set to normal.</t>", "PLAIN", 1, true, true];

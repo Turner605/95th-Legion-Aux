@@ -4,6 +4,7 @@ class CfgPatches {
         name="95th Legion Equipment";
 		requiredAddons[]={"ls_weapons"};
 		weapons[] = {"NFL_Disc_Shield"};
+		units[]={};
 	};
 };
 
