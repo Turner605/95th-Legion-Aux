@@ -148,6 +148,7 @@ class CfgVehicles {
         maximumLoad=0;
         ace_dragging_canDrag = 1;
 		ace_dragging_canCarry = 1;
+        ace_cargo_size = 4;
         ace_cargo_canLoad = 1;
         ace_cargo_noRename = 1;
         ace_cargo_blockUnloadCarry = 1;
@@ -164,6 +165,7 @@ class CfgVehicles {
         maximumLoad=0;
         ace_dragging_canDrag = 1;
 		ace_dragging_canCarry = 1;
+        ace_cargo_size = 4;
         ace_cargo_canLoad = 1;
         ace_cargo_noRename = 1;
         ace_cargo_blockUnloadCarry = 1;
