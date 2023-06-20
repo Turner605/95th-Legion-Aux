@@ -100,6 +100,7 @@ class XtdGearModels {
 				class Sergeant { label = "Sergeant"; description = "Sergeant Uniform"; };
 				class Captain { label = "Captain"; description = "Captain Uniform"; };
 				class Lieutenant { label = "Lieutenant"; description = "Lieutenant Uniform"; };
+				class Volt { label = "Volt"; description = "Volts Uniform"; };
 			};
 		};
 
@@ -281,6 +282,7 @@ class cfgWeapons {
 	NEW_95TH_P1_UNIFORM(Sergeant,Sergeant)};
 	NEW_95TH_P1_UNIFORM(Captain,Captain)};
 	NEW_95TH_P1_UNIFORM(Lieutenant,Lieutenant)};
+	NEW_95TH_P1_UNIFORM(Volt,Volt)};
 
 	NEW_95TH_MC_UNIFORM(Zeus,Zeus)};
 	NEW_95TH_MC_UNIFORM(Turner,Turner)};
@@ -336,6 +338,7 @@ class CfgVehicles {
 	NEW_95TH_RIFLEMAN_UNIT(Sergeant,Veteran,Sergeant)};
 	NEW_95TH_RIFLEMAN_UNIT(Captain,Veteran,Captain)};
 	NEW_95TH_RIFLEMAN_UNIT(Lieutenant,Veteran,Lieutenant)};
+	NEW_95TH_RIFLEMAN_UNIT(Volt,Volt,Sergeant)};
 
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_MC_UNIT(Zeus,Veteran,Zeus)};

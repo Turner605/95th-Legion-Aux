@@ -118,6 +118,7 @@ class CfgVehicles {
 
 			NEW_95TH_LAAT_TEXTURE(Default)};
 			NEW_95TH_LAAT_TEXTURE(Jinter)};
+			NEW_95TH_LAAT_TEXTURE(Chip)};
 		};
 	};
 
@@ -142,6 +143,7 @@ class CfgVehicles {
 
 			NEW_95TH_LAAT_TEXTURE(Default)};
 			NEW_95TH_LAAT_TEXTURE(Jinter)};
+			NEW_95TH_LAAT_TEXTURE(Chip)};
 		};
 	};
 
@@ -166,6 +168,7 @@ class CfgVehicles {
 
 			NEW_95TH_LAAT_TEXTURE(Default)};
 			NEW_95TH_LAAT_TEXTURE(Jinter)};
+			NEW_95TH_LAAT_TEXTURE(Chip)};
 		};
 	};
 
