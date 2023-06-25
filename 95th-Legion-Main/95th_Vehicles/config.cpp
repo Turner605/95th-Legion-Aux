@@ -114,7 +114,7 @@ class CfgVehicles {
 			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
 		};
 		class TextureSources {
-			textureList[] = {"Default",1,"Jinter",0};
+			textureList[] = {"Default",1,"Jinter",0,"Chip",0};
 
 			NEW_95TH_LAAT_TEXTURE(Default)};
 			NEW_95TH_LAAT_TEXTURE(Jinter)};
@@ -139,7 +139,7 @@ class CfgVehicles {
 			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
 		};
 		class TextureSources {
-			textureList[] = {"Default",1,"Jinter",0};
+			textureList[] = {"Default",1,"Jinter",0,"Chip",0};
 
 			NEW_95TH_LAAT_TEXTURE(Default)};
 			NEW_95TH_LAAT_TEXTURE(Jinter)};
@@ -164,7 +164,7 @@ class CfgVehicles {
 			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
 		};
 		class TextureSources {
-			textureList[] = {"Default",1,"Jinter",0};
+			textureList[] = {"Default",1,"Jinter",0,"Chip",0};
 
 			NEW_95TH_LAAT_TEXTURE(Default)};
 			NEW_95TH_LAAT_TEXTURE(Jinter)};

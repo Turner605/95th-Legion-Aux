@@ -27,6 +27,7 @@ class CfgPatches {
 			"95th_Rifleman_Unit_Sergeant",
 			"95th_Rifleman_Unit_Captain",
 			"95th_Rifleman_Unit_Lieutenant",
+			"95th_Rifleman_Unit_Volt",
 
 			"95th_MC_Unit_Zeus",
 			"95th_MC_Unit_Turner",
@@ -100,6 +101,17 @@ class XtdGearModels {
 				class Sergeant { label = "Sergeant"; description = "Sergeant Uniform"; };
 				class Captain { label = "Captain"; description = "Captain Uniform"; };
 				class Lieutenant { label = "Lieutenant"; description = "Lieutenant Uniform"; };
+			};
+		};
+
+		class 95th_P1_Custom_Uniform {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Volt"};
 				class Volt { label = "Volt"; description = "Volts Uniform"; };
 			};
 		};
@@ -282,7 +294,8 @@ class cfgWeapons {
 	NEW_95TH_P1_UNIFORM(Sergeant,Sergeant)};
 	NEW_95TH_P1_UNIFORM(Captain,Captain)};
 	NEW_95TH_P1_UNIFORM(Lieutenant,Lieutenant)};
-	NEW_95TH_P1_UNIFORM(Volt,Volt)};
+
+	NEW_95TH_CUSTOM_P1_UNIFORM(Volt,Volt)};
 
 	NEW_95TH_MC_UNIFORM(Zeus,Zeus)};
 	NEW_95TH_MC_UNIFORM(Turner,Turner)};

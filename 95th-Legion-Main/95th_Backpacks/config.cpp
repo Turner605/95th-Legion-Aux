@@ -155,11 +155,14 @@ class CfgVehicles
 		tf_hasLRradio=1;
 		tf_range=16000;
 		tf_subtype="digital_lr";
+
+		DSS_CEP_IsInsertionDevice = 1;
 	}
 
 	class 95th_JumpPack : 95th_JumpPack_Base{
 		author="95th Aux Team";
 		displayName="[95th] JumpPack";
+		DSS_CEP_IsInsertionDevice = 1;
 		scope=2;
 		picture="\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";
@@ -170,6 +173,7 @@ class CfgVehicles
 	class 95th_JumpPack_MC : 95th_JumpPack_Base{
 		author="95th Aux Team";
 		displayName="[95th] MC JumpPack";
+		DSS_CEP_IsInsertionDevice = 1;
 		scope=2;
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";

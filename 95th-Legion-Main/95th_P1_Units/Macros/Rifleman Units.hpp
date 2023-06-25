@@ -44,6 +44,23 @@
 		Type = ##name##;\
 	};
 
+#define NEW_95TH_CUSTOM_P1_UNIFORM(name,uniformClassName) class 95th_P1_Uniform_##name## : U_I_CombatUniform {\
+    scope = 2;\
+    scopeArsenal = 2;\
+	author=95th Aux Team;\
+	displayName=[95th] Custom Uniforms;\
+	picture=\MRC\JLTS\characters\CloneArmor\data\ui\CloneArmor_ui_ca.paa;\
+	class ItemInfo: UniformItem {\
+		uniformClass=95th_Rifleman_Unit_##uniformClassName##;\
+		uniformModel=-;\
+		containerClass=Supply150;\
+		mass=40;\
+	};\
+	class XtdGearInfo {\
+		model = 95th_P1_Custom_Uniform;\
+		Type = ##name##;\
+	};
+
 #define NEW_95TH_P1_HELMET(name) class 95th_Helmet_##name## : SEA_Helmet_P1_Base {\
     scope = 2;\
     scopeArsenal = 2;\
