@@ -383,22 +383,22 @@ class CfgVehicles {
 class CfgFunctions {
 	class NFA {
 		class Utilities {
-			class handleAirSpawned {file = "\95th_Extra_Props\Scripts\handleAirSpawned.sqf";};
-			class handleLoadATRT {file = "\95th_Extra_Props\Scripts\handleLoadATRT.sqf";};
-			class handleGroundSpawned {file = "\95th_Extra_Props\Scripts\handleGroundSpawned.sqf";};
-			class handleAirVehicleServiced {file = "\95th_Extra_Props\Scripts\handleAirVehicleServiced.sqf";};
-			class handleGroundVehicleServiced {file = "\95th_Extra_Props\Scripts\handleGroundVehicleServiced.sqf";};
-			class handlePylonEdit {file = "\95th_Extra_Props\Scripts\handlePylonEdit.sqf";};
-			class handleSkinSelection {file = "\95th_Extra_Props\Scripts\handleSkinSelection.sqf";};
-			class checkPlayerInBriefing {file = "\95th_Extra_Props\Scripts\checkPlayerInBriefing.sqf";};
-			class handleCrateSpawned {file = "\95th_Extra_Props\Scripts\handleCrateSpawned.sqf";};
+			class handleAirSpawned {file = "\95th_Props\Scripts\handleAirSpawned.sqf";};
+			class handleLoadATRT {file = "\95th_Props\Scripts\handleLoadATRT.sqf";};
+			class handleGroundSpawned {file = "\95th_Props\Scripts\handleGroundSpawned.sqf";};
+			class handleAirVehicleServiced {file = "\95th_Props\Scripts\handleAirVehicleServiced.sqf";};
+			class handleGroundVehicleServiced {file = "\95th_Props\Scripts\handleGroundVehicleServiced.sqf";};
+			class handlePylonEdit {file = "\95th_Props\Scripts\handlePylonEdit.sqf";};
+			class handleSkinSelection {file = "\95th_Props\Scripts\handleSkinSelection.sqf";};
+			class checkPlayerInBriefing {file = "\95th_Props\Scripts\checkPlayerInBriefing.sqf";};
+			class handleCrateSpawned {file = "\95th_Props\Scripts\handleCrateSpawned.sqf";};
 		};
 	};
 };
 
 class Extended_PostInit_EventHandlers {
-	class 95th_Extra_Props_PostInit {
-		init="call compile preprocessFileLineNumbers '\95th_Extra_Props\Bootstrap\XEH_postInit.sqf'";
+	class 95th_Props_PostInit {
+		init="call compile preprocessFileLineNumbers '\95th_Props\Bootstrap\XEH_postInit.sqf'";
 	};
 };
 
