@@ -29,7 +29,9 @@ class CfgPatches
 			"95th_Supply_Large_Medical_Prop",
 			"95th_Supply_Large_Black_Prop",
 			"95th_Supply_Large_Blue_Prop",
-			"95th_Supply_Large_Red_Prop"
+			"95th_Supply_Large_Red_Prop",
+
+			"95th_Radio_Station"
         };
 	};
 };
@@ -44,6 +46,7 @@ class CfgEditorSubcategories{
 	class 95th_Air_Utilities{displayName = "Air Utilities";};
 	class 95th_Ground_Utilities{displayName = "Ground Utilities";};
 	class 95th_Utilities{displayName = "Utilities";};
+	class 95th_Fortify{displayName = "Fortifications";};
 };
 
 class CfgVehicles {
@@ -374,6 +377,52 @@ class CfgVehicles {
 			};
 		};
 	};
+
+	//#########################################################################################################
+	//Fortify Objects
+	//#########################################################################################################
+
+	class Land_PortableWeatherStation_01_white_F;
+	class 95th_Land_PortableWeatherStation_01_white_F : Land_PortableWeatherStation_01_white_F {
+		displayName="Radio Extender";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Fortify";
+	};
+
+	class Land_lsb_fob_hBarrier_ramp;
+	class 95th_Land_lsb_fob_hBarrier_ramp: Land_lsb_fob_hBarrier_ramp {
+		displayName="Ramp";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Fortify";
+	};
+
+	class 3AS_Barricade_2_C_prop;
+	class 95th_3AS_Barricade_2_C_prop : 3AS_Barricade_2_C_prop {
+		displayName="Barricade";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Fortify";
+	};
+
+	class Land_lsb_fob_hBarrier_wall;
+	class 95th_Land_lsb_fob_hBarrier_wall: Land_lsb_fob_hBarrier_wall {
+		displayName="Wall";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Fortify";
+	};
+
+	class 3AS_Short_Wall_Bunker;
+	class 95th_3AS_Short_Wall_Bunker: 3AS_Short_Wall_Bunker {
+		displayName="Bunker";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Fortify";
+	};
+
+	class 3AS_HeavyRepeater_Unarmoured;
+	class 95th_3AS_HeavyRepeater_Unarmoured: 3AS_HeavyRepeater_Unarmoured {
+		displayName="Heavy Repeater";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Fortify";
+	};
 };
 
 //#########################################################################################################
@@ -407,6 +456,13 @@ class Extended_InitPost_EventHandlers {
 		class  95th_Supply_Large_Ammo_Prop_Init {
 			onRespawn="true";
 			init="[_this select 0, true] call ace_arsenal_fnc_initBox;";
+		};
+	};
+
+	class 95th_Land_PortableWeatherStation_01_white_F {
+		class  95th_Land_PortableWeatherStation_01_white_F_Init {
+			onRespawn="true";
+			init="[_this select 0, 5000] call TFAR_antennas_fnc_initRadioTower;";
 		};
 	};
 };
