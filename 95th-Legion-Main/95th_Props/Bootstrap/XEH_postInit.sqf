@@ -14,4 +14,12 @@ player addEventHandler["Respawn", {
             [_unit] spawn NFA_fnc_checkPlayerInBriefing;
         }
     }, _unit] call TFAR_fnc_addEventHandler;
+
+    [_unit] spawn {
+        params ["_unit"];
+        _unit setVariable ["IsOnAirRespawnCooldown", true, true];
+        private _airRespawnCooldown = time + 60;
+        waitUntil {time >= _airRespawnCooldown};
+        _unit setVariable ["IsOnAirRespawnCooldown", false, true];
+    }
 }];

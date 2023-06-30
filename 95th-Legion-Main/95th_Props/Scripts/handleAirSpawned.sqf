@@ -1,5 +1,7 @@
 params ["_this", "_player", "_vehicleClass"];
 
+if(player getVariable "IsOnAirRespawnCooldown") exitWith {hint "You are on a vehicle cooldown.";};
+
 private _nearestObjects = nearestObjects[_this, [], 20];
 private _targetPad = 0;
 
