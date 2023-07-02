@@ -163,7 +163,7 @@ class CfgAmmo {
 	};
 
 	class NFL_Proton_Ammo: Missile_AGM_01_F {
-		model = "\JMSLLTE_weapons\Explosives\missile_MG7_torpedo_fly_f.p3d"; //"a3\weapons_f\Ammo\Rocket_01_F"
+		model = "\a3\weapons_f\Ammo\Rocket_01_F.p3d";
 		craterEffects = "AAMissileCrater";
 		effectsMissile = "NFL_Proton_Missile";
 		explosionEffects = "AAMissileExplosion";
