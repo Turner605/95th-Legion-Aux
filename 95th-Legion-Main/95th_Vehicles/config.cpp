@@ -1,19 +1,12 @@
 #include "Macros\LAAT Texture.hpp"
 
-class CfgPatches
-{
-	class 95th_Legion_Vehicles
-	{
+class CfgPatches {
+	class 95th_Legion_Vehicles {
         author="95th Aux Team";
 		scope=2;
 		scopecurator=2;
         name="95th Legion Vehicles";
-		requiredAddons[]=
-		{
-			"3AS_SaberTank",
-			"3AS_LAAT"
-		};
-
+		requiredAddons[]= { "3AS_SaberTank", "3AS_LAAT" };
 		units[]={
 			"95th_LAAT_Mrk1",
 			"95th_LAAT_Mrk2",
@@ -22,15 +15,115 @@ class CfgPatches
 			"95th_RX200",
 			"95th_Outpost_Crate"
 		};
-
 		magazines[]={
 			"95th_LAAT_Light_Cannon_Magazine"
 		};
-
 		ammo[]={
 			"95th_LAAT_Light_Cannon_Ammo"
 		};
 	};
+};
+
+class CfgLights {
+	class NFL_Proton_Rocket_Light {
+		diffuse[] = {1,0.25,0.75};
+		color[] = {1,0.6,0.3};
+		ambient[] = {0,0,0};
+		brightness = "2 * fireIntensity";
+		size = 1;
+		intensity = 1000;
+		drawLight = 0;
+		blinking = 0;
+		class Attenuation {
+			start = 0;
+			constant = 0;
+			linear = 0;
+			quadratic = 1;
+			hardLimitStart = 100;
+			hardLimitEnd = 200;
+		};
+	};
+};
+
+class CfgCloudlets {
+	class Default {
+		interval = "0.5 * interval + 0.5";
+		circleRadius = 0;
+		circleVelocity[] = {0,0,0};
+		particleShape = "";
+		particleFSNtieth = 1;
+		particleFSIndex = 0;
+		particleFSFrameCount = 1;
+		particleFSLoop = 1;
+		angle = 0;
+		angleVar = 0;
+		animationName = "";
+		particleType = "Billboard";
+		timerPeriod = 1;
+		lifeTime = 1;
+		moveVelocity[] = {0,0,0};
+		rotationVelocity = 1;
+		weight = 1;
+		volume = 1;
+		rubbing = 0.05;
+		size[] = {1,1};
+		color[] = {{1,1,1,1}};
+		animationSpeed[] = {1};
+		randomDirectionPeriod = 0;
+		randomDirectionIntensity = 0;
+		onTimerScript = "";
+		beforeDestroyScript = "";
+		lifeTimeVar = 0;
+		positionVar[] = {0,0,0};
+		MoveVelocityVar[] = {0,0,0};
+		rotationVelocityVar = 0;
+		sizeVar = 0;
+		colorVar[] = {0,0,0,0};
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+	};
+
+	class NFL_Proton_Rocket_Particles: Default {
+		interval = "0.0012";
+		circleRadius = 0;
+		circleVelocity[] = {0,0,0};
+		angleVar = 1;
+		particleFSLoop = 0;
+		particleShape = "\A3\data_f\ParticleEffects\Universal\Universal";
+		particleFSNtieth = 16;
+		particleFSIndex = 12;
+		particleFSFrameCount = 8;
+		animationName = "";
+		particleType = "Billboard";
+		timerPeriod = 1;
+		lifeTime = 1.1;
+		moveVelocity[] = {0,0,0};
+		rotationVelocity = 1;
+		weight = 1;
+		volume = 0.8;
+		rubbing = 0.5;
+		size[] = {1.5,3};
+		color[] = {{0.9,0.4,0.75,0.05},{1,1,1,0}};
+		animationSpeed[] = {1};
+		randomDirectionPeriod = 0.1;
+		randomDirectionIntensity = 0.1;
+		onTimerScript = "";
+		beforeDestroyScript = "";
+		blockAIVisibility = 0;
+		lifeTimeVar = 0.5;
+		positionVar[] = {0.3,0.3,0.3};
+		MoveVelocityVar[] = {0.4,0.4,0.4};
+		rotationVelocityVar = 20;
+		sizeVar = 0.2;
+		colorVar[] = {0,0,0,0};
+		randomDirectionPeriodVar = 0;
+		randomDirectionIntensityVar = 0;
+	};
+};
+
+class NFL_Proton_Missile {
+	class NFL_Proton_Rocket_Light { simulation = "light"; type = "NFL_Proton_Rocket_Light"; position[] = {0,0,0}; intensity = 0.01; interval = 1; lifeTime = 1; };
+	class NFL_Proton_Rocket_Particles { simulation = "particles"; type = "NFL_Proton_Rocket_Particles"; position[] = {0,0,0}; intensity = 1; interval = 1; lifeTime = 1; };
 };
 
 class CfgAmmo {
@@ -62,6 +155,52 @@ class CfgAmmo {
 			distance = 1;
 		};
 	};
+
+	class SensorTemplateIR;
+	class Missile_AGM_02_F;
+	class Missile_AGM_01_F: Missile_AGM_02_F {
+		class Components;
+	};
+
+	class NFL_Proton_Ammo: Missile_AGM_01_F {
+		model = "\JMSLLTE_weapons\Explosives\missile_MG7_torpedo_fly_f.p3d"; //"a3\weapons_f\Ammo\Rocket_01_F"
+		craterEffects = "AAMissileCrater";
+		effectsMissile = "NFL_Proton_Missile";
+		explosionEffects = "AAMissileExplosion";
+		hit = 700;
+		indirectHit = 85;
+		indirectHitRange = 5;
+		airLock = 1;
+		missileLockCone = 50;
+		missileKeepLockedCone = 360;
+		missileLockMaxDistance = 1000;
+		missileLockMinDistance = 100;
+		missileLockMaxSpeed = 745;
+		maneuvrability = 15;
+		soundFly[] = {"A3\Sounds_F\weapons\Rockets\rocket_fly_2",0.5011872,1,1700};
+		class Components: Components {
+			class SensorsManagerComponent {
+				class Components {
+					class IRSensorComponent: SensorTemplateIR {
+						class AirTarget {
+							minRange = 500;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget {
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						angleRangeHorizontal = 30;
+						angleRangeVertical = 30;
+					};
+				};
+			};
+		};
+	};
 };
 
 class CfgMagazines {
@@ -69,6 +208,20 @@ class CfgMagazines {
 	class 95th_LAAT_Light_Cannon_Magazine: Laser_Battery {
 		ammo="95th_LAAT_Light_Cannon_Ammo";
 		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+	};
+	
+	class VehicleMagazine;
+	class NFL_32Rnd_Proton_Missiles: VehicleMagazine {
+		author = "95th Aux";
+		scope = 2;
+		count = 32;
+		ammo = "NFL_Proton_Ammo";
+		displayName = "[95th] MG7-A proton torpedo";
+		displayNameShort = "MG7-A";
+		descriptionShort = "Proton torpedo";
+		initSpeed = 0;
+		maxLeadSpeed = 55.5556;
+		nameSound = "missiles";
 	};
 };
 
@@ -91,11 +244,19 @@ class CfgWeapons {
 			magazineReloadTime=10;
 		};
 	};
+
+	class rockets_Skyfire;
+	class 95th_LAAT_Hydras: rockets_Skyfire {
+		displayName="Hydra IR Rockets";
+		magazines[]= {"NFL_32Rnd_Proton_Missiles"};
+		magazineReloadTime=10;
+	};
 };
 
 class CfgVehicles {
 //############################################################### LAATs ###############################################################
 	class 3as_LAAT_Mk1;
+
 	class 95th_LAAT_Mrk1: 3as_LAAT_Mk1 {
 		scope=2;
 		scopecurator=2;
@@ -105,10 +266,10 @@ class CfgVehicles {
 		ace_cargo_space = 26;
         crew = "95th_Pilot_Unit_Trooper";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
-		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","3as_LAAT_Missile_AGM","3as_LAAT_Missile_AA","CMFlareLauncher"};
+		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","95th_LAAT_Hydras","3as_LAAT_Missile_AA","CMFlareLauncher"};
 		magazines[]={
 			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-			"3as_LAAT_8Rnd_Missile_AGM",
+			"NFL_32Rnd_Proton_Missiles",
 			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
 			"Laser_Battery","Laser_Battery",
 			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
@@ -130,10 +291,10 @@ class CfgVehicles {
 		ace_cargo_space = 26;
 		faction="95th_Legion_Faction_Clones";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
-		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","3as_LAAT_Missile_AGM","3as_LAAT_Missile_AA","CMFlareLauncher"};
+		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","95th_LAAT_Hydras","3as_LAAT_Missile_AA","CMFlareLauncher"};
 		magazines[]={
 			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-			"3as_LAAT_8Rnd_Missile_AGM",
+			"NFL_32Rnd_Proton_Missiles",
 			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
 			"Laser_Battery","Laser_Battery",
 			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
@@ -155,10 +316,10 @@ class CfgVehicles {
 		ace_cargo_space = 26;
         crew = "95th_Pilot_Unit_Trooper";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
-		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","3as_LAAT_Missile_AGM","3as_LAAT_Missile_AA","CMFlareLauncher"};
+		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","95th_LAAT_Hydras","3as_LAAT_Missile_AA","CMFlareLauncher"};
 		magazines[]={
 			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-			"3as_LAAT_8Rnd_Missile_AGM",
+			"NFL_32Rnd_Proton_Missiles",
 			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
 			"Laser_Battery","Laser_Battery",
 			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
