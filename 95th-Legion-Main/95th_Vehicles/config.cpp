@@ -313,6 +313,13 @@ class CfgVehicles {
 			NEW_95TH_LAAT_TEXTURE(Jinter)};
 			NEW_95TH_LAAT_TEXTURE(Chip)};
 		};
+		class UserActions {
+			class AddLAATRespawn {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Toggle Mobile Respawn";
+				statement = "[this, player] spawn NFA_fnc_handleLAATRespawnToggle;"; 
+			};
+		};
 	};
 
 	class 3as_LAAT_Mk2Lights;
@@ -337,6 +344,13 @@ class CfgVehicles {
 			NEW_95TH_LAAT_TEXTURE(Default)};
 			NEW_95TH_LAAT_TEXTURE(Jinter)};
 			NEW_95TH_LAAT_TEXTURE(Chip)};
+		};
+		class UserActions {
+			class AddLAATRespawn {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Toggle Mobile Respawn";
+				statement = "[this, player] spawn NFA_fnc_handleLAATRespawnToggle;"; 
+			};
 		};
 	};
 

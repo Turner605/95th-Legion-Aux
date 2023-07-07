@@ -31,7 +31,12 @@ class CfgPatches
 			"95th_Supply_Large_Blue_Prop",
 			"95th_Supply_Large_Red_Prop",
 
-			"95th_Radio_Station"
+			"95th_Land_PortableWeatherStation_01_white_F",
+			"95th_Land_lsb_fob_hBarrier_ramp",
+			"95th_3AS_Barricade_2_C_prop",
+			"95th_Land_lsb_fob_hBarrier_wall",
+			"95th_3AS_Short_Wall_Bunker",
+			"95th_3AS_HeavyRepeater_Unarmoured"
         };
 	};
 };
@@ -355,8 +360,8 @@ class CfgVehicles {
 		editorSubcategory="95th_Utilities";
 	};
 
-	class DSS_CEP_Permissions_Droid;
-	class 95th_Permissions_Terminal : DSS_CEP_Permissions_Droid {
+	class DSS_Permissions_Droid;
+	class 95th_Permissions_Terminal : DSS_Permissions_Droid {
 		model="optre_bw_buildings\reserchbase\doorconsole\doorconsole.p3d";
 		hiddenSelectionsTextures[]= { "optre_bw_buildings\reserchbase\doorconsole\data\cor_terminal_grn.paa" };
 		displayName="[95th] Permissions Terminal";
