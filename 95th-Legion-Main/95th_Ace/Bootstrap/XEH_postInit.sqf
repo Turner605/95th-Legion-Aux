@@ -25,3 +25,9 @@
         [false] call ace_spectator_fnc_setSpectator;
     };
 }] call CBA_fnc_addEventHandler;
+
+player addEventHandler["Respawn", {
+	params ["_unit", "_corpse"];
+
+    [false] call ace_spectator_fnc_setSpectator;
+}];
