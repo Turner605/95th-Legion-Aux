@@ -6,7 +6,7 @@ NFL_TX_Shield_Handle = [{
 	params ["_shield"];
 
 	private _shieldScale = (_shield getVariable "NFL_Shield_Scale") - 0.1;
-	[_Shield, _shieldScale] RemoteExec ["setObjectScale"];
+	[_shield, _shieldScale] RemoteExec ["setObjectScale"];
 	_shield setVariable ["NFL_Shield_Scale", _shieldScale];
 
 }, 0, _shield] call CBA_fnc_addPerFrameHandler;

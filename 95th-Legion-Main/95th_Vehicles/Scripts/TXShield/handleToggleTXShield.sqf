@@ -19,7 +19,7 @@ if(_shieldActive) then {
 		params ["_shield"];
 
 		private _shieldScale = (_shield getVariable "NFL_Shield_Scale") + 0.05;
-		[_Shield, _shieldScale] RemoteExec ["setObjectScale"];
+		[_shield, _shieldScale] RemoteExec ["setObjectScale"];
 		_shield setVariable ["NFL_Shield_Scale", _shieldScale];
 
 	}, 0, _shield] call CBA_fnc_addPerFrameHandler;
@@ -30,7 +30,7 @@ if(_shieldActive) then {
 		[NFL_TX_Shield_Handle] call CBA_fnc_removePerFrameHandler;
 		_shield setVariable ["NFL_TX_Shield_Health", NFL_TX_Shield_Health];
 		_shield setVariable ["NFL_Shield_Scale", 1];
-		[_Shield, 1] RemoteExec ["setObjectScale"];
+		[_shield, 1] RemoteExec ["setObjectScale"];
 		_shield setVariable ["NFL_TX_Shield_Animating", false];
 
 	}, [_shield]] call CBA_fnc_waitUntilAndExecute;
