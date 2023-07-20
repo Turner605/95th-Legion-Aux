@@ -17,12 +17,13 @@ NFL_TX_Shield_Handle = [{
 	[NFL_TX_Shield_Handle] call CBA_fnc_removePerFrameHandler;
 	[_shield, true] remoteExec ["hideObjectGlobal", 2];
 	_shield setVariable ["NFL_Shield_Recharging", true];
+	_shield setVariable ["NFL_TX_Shield_Active", false];
 	_shield setVariable ["NFL_TX_Shield_Animating", false];
 
 		[{
 			params ["_shield"];
 			_shield setVariable ["NFL_Shield_Recharging", false];
-			_shield setVariable ["NFL_Shield_Health", NFL_TX_Shield_Health];
+			_shield setVariable ["NFL_TX_Shield_Health", NFL_TX_Shield_Health];
 			_shield setVariable ["NFL_Shield_Scale", 0.1];
 
 		}, [_shield], NFL_TX_Shield_Cooldown_Duration] call CBA_fnc_waitAndExecute; // recharging call
