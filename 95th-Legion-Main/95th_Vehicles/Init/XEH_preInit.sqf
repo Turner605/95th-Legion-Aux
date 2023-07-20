@@ -3,7 +3,7 @@
     "SLIDER", // setting type
     ["TX Shield Health", "TX Shield Health"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
     ["95th Aux Mod", "TX Shield"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [10, 10000, 500, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+    [10, 10000, 2000, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
     1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;

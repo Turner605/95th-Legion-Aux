@@ -263,6 +263,11 @@ class CfgVehicles {
 				displayName = "Spawn [95th] TX-130";
 				statement = "[this, player, '95th_TX_130'] spawn NFA_fnc_handleGroundSpawned;"; 
 			};
+			class SpawnTX130Shield {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [95th] TX-130 (Shield)";
+				statement = "[this, player, '95th_TX_130_Shield'] spawn NFA_fnc_handleGroundSpawned;"; 
+			};
 			class SpawnTX130Strafing {
 				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
 				displayName = "Spawn [3AS] TX-130 (Strafing)";
