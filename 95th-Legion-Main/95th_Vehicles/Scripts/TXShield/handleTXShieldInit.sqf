@@ -29,9 +29,9 @@ _this addEventHandler ["Deleted", {
 	[_entity] call NFA_fnc_handleTXRemoved;
 }];
 
-_shield addEventHandler ["HitPart", {
+[_shield, ["HitPart", {
 	(_this select 0) params ["_target", "_shooter", "_projectile", "_position", "_velocity", "_selection", "_ammo", "_vector", "_radius", "_surfaceType", "_isDirect"];
 
 	private _damage = _ammo select 0;
 	[_target, _damage] call NFA_fnc_handleTXShieldDamage;
-}];
+}]] remoteExec ["addEventHandler", 2];

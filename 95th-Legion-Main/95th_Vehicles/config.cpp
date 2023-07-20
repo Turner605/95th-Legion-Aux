@@ -564,7 +564,7 @@ class Extended_InitPost_EventHandlers {
 	class 95th_TX_130_Shield {
 		class 95th_TX_130_Shield_Init {
 			onRespawn="true";
-			init="[_this select 0] call NFA_fnc_handleTXShieldInit;";
+			serverInit="[_this select 0] call NFA_fnc_handleTXShieldInit;";
 		};
 	};
 };
