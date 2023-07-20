@@ -428,6 +428,17 @@ class CfgVehicles {
 		editorCategory="95th_Props";
 		editorSubcategory="95th_Fortify";
 	};
+
+	//#########################################################################################################
+	//Shield Objects
+	//#########################################################################################################
+
+	class 3as_planetaryshield_50;
+	class 95th_planetaryshield_50 : 3as_planetaryshield_50 {
+		displayName="[95th] TX Shield";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Misc";
+	};
 };
 
 //#########################################################################################################
