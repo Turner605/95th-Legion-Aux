@@ -33,4 +33,4 @@ _this addEventHandler ["Deleted", {
 
 	private _damage = _ammo select 0;
 	[_target, _damage] call NFA_fnc_handleTXShieldDamage;
-}]] remoteExec ["addEventHandler", 2];
+}]] remoteExec ["addEventHandler", 0, true];
