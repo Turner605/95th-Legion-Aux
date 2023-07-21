@@ -234,10 +234,11 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper","Revan","Kong"};
+				values[] = {"Trooper","Revan","Kong","Som"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 				class Revan { label = "Revan"; description = "Revans Helmet"; };
 				class Kong { label = "Kong"; description = "Kongs Helmet"; };
+				class Som { label = "Som"; description = "Soms Helmet"; };
 			};
 		};
 
@@ -332,6 +333,7 @@ class cfgWeapons {
 	NEW_95TH_ENGINEER_HELMET(Trooper)};
 	NEW_95TH_ENGINEER_HELMET(Kong)};
 	NEW_95TH_ENGINEER_HELMET(Revan)};
+	NEW_95TH_ENGINEER_HELMET(Som)};
 	
 	NEW_95TH_HAZARD_HELMET(Trooper)};
 
