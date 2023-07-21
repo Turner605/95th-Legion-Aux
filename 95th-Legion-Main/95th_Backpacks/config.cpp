@@ -180,4 +180,18 @@ class CfgVehicles
 		hiddenSelections[]={"camo1"};
 		hiddenSelectionsTextures[]={"\95th_Backpacks\Data\MCJetpack.paa"}; 
 	}
+
+	class 3AS_B_Katarn_Backpack;
+	class 95th_Katarn_Backpack: 3AS_B_Katarn_Backpack {
+		displayName = "[95th] Commando Backpack";
+		hiddenSelectionsTextures[] = {"\95th_Backpacks\Data\Commando_Backpack.paa"};
+		maximumLoad = 250;
+
+		tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode="tf_west_radio_code";
+		tf_hasLRradio=1;
+		tf_range=16000;
+		tf_subtype="digital_lr";
+	};
 };

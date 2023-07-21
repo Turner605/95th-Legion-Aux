@@ -1,4 +1,5 @@
 #include "Macros\Rifleman Units.hpp"
+#include "Macros\Commando Units.hpp"
 #include "Macros\MC Units.hpp"
 #include "Macros\Pilot Units.hpp"
 #include "Macros\Airborne Units.hpp"
@@ -82,6 +83,7 @@ class CfgEditorSubcategories {
 	class 95th_Engineer{displayName="Engineer";};
 	class 95th_Hazard{displayName="Hazard";};
 	class 95th_SpecOps{displayName="Spec Ops";};
+	class 95th_Commando{displayName="Commandos";};
 };
 
 class XtdGearModels {
@@ -130,6 +132,18 @@ class XtdGearModels {
 		};
 
 		class 95th_ColdAssault_Uniform {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper"};
+				class Trooper { label = "Trooper"; description = "Default Uniform"; };
+			};
+		};
+
+		class 95th_Commando_Uniform {
 			label = "";
 			author = "95th Aux Team";
 			options[] = {"Type"};
@@ -265,6 +279,18 @@ class XtdGearModels {
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 			};
 		};
+
+		class 95th_Commando_Helmet {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper"};
+				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+			};
+		};
 	};
 };
 
@@ -276,6 +302,7 @@ class cfgWeapons {
     class U_I_CombatUniform;
 
 	class 3AS_U_Rep_ColdAssault_Armor;
+	class 3AS_U_Rep_Katarn_Armor;
 
 	class SEA_Helmet_P1_Base;
 	class LSEA_Helmet_Pilot_P1_Base;
@@ -286,6 +313,7 @@ class cfgWeapons {
 	class SEA_Helmet_Engineer_Base;
 	class SEA_Helmet_Hazard_Base;
 	class 3AS_H_ColdAssault_Helmet;
+	class 3AS_H_Katarn_Helmet;
 
 //############################################################### Uniforms ###############################################################
 	NEW_95TH_P1_UNIFORM(Trooper,Trooper)};
@@ -302,6 +330,8 @@ class cfgWeapons {
 	NEW_95TH_MC_UNIFORM(Turner,Turner)};
 
 	NEW_95TH_COLDASSAULT_UNIFORM(Trooper,Trooper)};
+
+	NEW_95TH_COMMANDO_UNIFORM(Trooper,Trooper)};
 
 //############################################################### Helmets ###############################################################
 	NEW_95TH_P1_HELMET(Trooper)};
@@ -338,13 +368,16 @@ class cfgWeapons {
 	NEW_95TH_HAZARD_HELMET(Trooper)};
 
 	NEW_95TH_COLDASSAULT_HELMET(Trooper)};
+
+	NEW_95TH_COMMANDO_HELMET(Trooper)};
 };  
 
 class CfgVehicles {
 	class JLTS_Clone_P2_DC15A;
 	class 3AS_Rep_ColdAssault_base_F;
+	class 3AS_Rep_Commando_F;
 
-//############################################################### Units ###############################################################
+	//############################################################### Units ###############################################################
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_RIFLEMAN_UNIT(Trooper,Trooper,Trooper)};
 	NEW_95TH_RIFLEMAN_UNIT(Medic,Trooper,Trooper)};
@@ -391,4 +424,7 @@ class CfgVehicles {
 
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_COLDASSAULT_UNIT(Trooper,Trooper,Trooper)};
+
+	// Uniform Class Name, Helmet Name, Vest Name
+	NEW_95TH_COMMANDO_UNIT(Trooper,Trooper,Trooper)};
 };

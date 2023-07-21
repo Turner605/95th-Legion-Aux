@@ -12,15 +12,30 @@ class CfgPatches
 	};
 };
 
-class cfgWeapons 
-{ 
+class XtdGearModels {
+	class CfgWeapons {
+		class 95th_Commando_Vests {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Medic","Demo"};
+				class Medic { label = "Medic"; description = "Medic Vest"; };
+				class Demo { label = "Demo"; description = "Demo Vest"; };
+			};
+		};
+	};
+};
+
+class cfgWeapons { 
     //************************************************************************************************************************************************************************************************
     //*****             Vests                *********************************************************************************************************************************************************
     //************************************************************************************************************************************************************************************************
     class VestItem; 
     class ItemCore;
-    class 95th_Vest: ItemCore 
-    { 
+    class 95th_Vest: ItemCore { 
         class ItemInfo; 
     }; 
 
@@ -304,6 +319,26 @@ class cfgWeapons
 				class Legs{hitpointName="HitLegs";armor=9;passThrough=0.30000001;};
 				class Arms{hitpointName="HitArms";armor=4;passThrough=0.30000001;};
 			};
+		};
+	};
+
+	class 3AS_V_Katarn_Vest_Demo;
+	class 95th_Katarn_Vest_Demo: 3AS_V_Katarn_Vest_Demo {
+		displayName = "[95th] Commando Vest";
+		hiddenSelectionsTextures[]={"\95th_Vests\Data\Commandos\Vest_Demo.paa"};
+		class XtdGearInfo {
+			model = "95th_Commando_Vests";
+			Type = "Demo";
+		};
+	};
+
+	class 3AS_V_Katarn_Vest_Tech;
+	class 95th_Katarn_Vest_Tech: 3AS_V_Katarn_Vest_Tech {
+		displayName = "[95th] Commando Vest";
+		hiddenSelectionsTextures[]={"\95th_Vests\Data\Commandos\Vest_Medic.paa"};
+		class XtdGearInfo {
+			model = "95th_Commando_Vests";
+			Type = "Medic";
 		};
 	};
 
