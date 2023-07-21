@@ -11,11 +11,11 @@ _shield setdir 0;
 _this setVariable ["NFL_Shield_Object", _shield];
 
 [_shield, true] remoteExec ["hideObjectGlobal", 2];
-_shield setVariable ["NFL_TX_Shield_Active", false];
-_shield setVariable ["NFL_Shield_Scale", 0.1];
-_shield setVariable ["NFL_TX_Shield_Health", NFL_TX_Shield_Health];
-_shield setVariable ["NFL_Shield_Recharging", false];
-_shield setVariable ["NFL_TX_Shield_Animating", false];
+_shield setVariable ["NFL_TX_Shield_Active", false, true];
+_shield setVariable ["NFL_Shield_Scale", 0.1, true];
+_shield setVariable ["NFL_TX_Shield_Health", NFL_TX_Shield_Health, true];
+_shield setVariable ["NFL_Shield_Recharging", false, true];
+_shield setVariable ["NFL_TX_Shield_Animating", false, true];
 
 _this addEventHandler ["Killed", {
 	params ["_unit", "_killer"];

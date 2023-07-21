@@ -208,14 +208,14 @@ class CfgAmmo {
 				class Components {
 					class IRSensorComponent: SensorTemplateIR {
 						class AirTarget {
-							minRange = 500;
+							minRange = 10;
 							maxRange = 5000;
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef = 1;
 						};
 						class GroundTarget {
-							minRange = 500;
-							maxRange = 4000;
+							minRange = 10;
+							maxRange = 3000;
 							objectDistanceLimitCoef = 1;
 							viewDistanceLimitCoef = 1;
 						};

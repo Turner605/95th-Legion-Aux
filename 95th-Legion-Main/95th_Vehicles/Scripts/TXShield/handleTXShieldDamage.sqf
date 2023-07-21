@@ -10,7 +10,7 @@ private _shieldHealth = _shield getVariable "NFL_TX_Shield_Health";
 
 private _newShieldHealth = _shieldHealth - _damage;
 
-_shield setVariable ["NFL_TX_Shield_Health", _newShieldHealth];
+_shield setVariable ["NFL_TX_Shield_Health", _newShieldHealth, true];
 
 if(_newShieldHealth < 0) then {
 	[_shield] call NFA_fnc_TXShieldOffAnimation;
