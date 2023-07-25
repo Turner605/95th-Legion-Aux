@@ -1,11 +1,10 @@
-class CfgPatches
-{
-	class 95th_Legion_Vests
-	{
+#include "Macros\Basic Vests.hpp"
+
+class CfgPatches {
+	class 95th_Legion_Vests {
         author="95th Aux Team";
         name="95th Legion Vests";
-		requiredAddons[]=
-		{
+		requiredAddons[]= {
 			"JLTS_characters_CloneArmor"
 		};
 		units[] = {};
@@ -14,6 +13,24 @@ class CfgPatches
 
 class XtdGearModels {
 	class CfgWeapons {
+		class 95th_Basic_Vests {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Rifleman" ,"Pilot", "Grenadier", "Jet", "Medic", "AT", "Heavy"};
+				class Rifleman { label = "Rifleman"; description = "Rifleman Vest"; };
+				class Pilot { label = "Pilot"; description = "Pilot Vest"; };
+				class Grenadier { label = "Grenadier"; description = "Grenadier Vest"; };
+				class Jet { label = "Jet"; description = "Jet Trooper Vest"; };
+
+				class AT { label = "Jet"; description = "AT Trooper Vest"; };
+				class Heavy { label = "Heavy"; description = "Heavy Trooper Vest"; };
+			};
+		};
+
 		class 95th_Commando_Vests {
 			label = "";
 			author = "95th Aux Team";
@@ -30,16 +47,69 @@ class XtdGearModels {
 };
 
 class cfgWeapons { 
-    //************************************************************************************************************************************************************************************************
-    //*****             Vests                *********************************************************************************************************************************************************
-    //************************************************************************************************************************************************************************************************
-    class VestItem; 
-    class ItemCore;
-    class 95th_Vest: ItemCore { 
-        class ItemInfo; 
-    }; 
-
 	class JLTS_CloneVestHolster;
+	class JLTS_CloneVestAirborne;
+	// class JLTS_CloneVestReconOfficer;
+	// class JLTS_CloneVestOfficer;
+	// class JLTS_CloneVestOfficer2;
+	// class JLTS_CloneVestSuspender;
+	// class JLTS_CloneVestRecon;
+
+	class VestItem;
+	class ItemInfo;
+
+	NEW_95TH_BASIC_VEST_ARMOUR_OVERRIDEN(Rifleman,JLTS_CloneVestHolster)};
+	NEW_95TH_BASIC_VEST_ARMOUR_OVERRIDEN(Pilot,JLTS_CloneVestHolster)};
+	NEW_95TH_BASIC_VEST_ARMOUR_OVERRIDEN(Grenadier,JLTS_CloneVestHolster)};
+	NEW_95TH_BASIC_VEST_ARMOUR_OVERRIDEN(Jet,JLTS_CloneVestHolster)};
+
+	NEW_95TH_BASIC_VEST_NO_BOTTOM(Medic,JLTS_CloneVestAirborne)};
+	NEW_95TH_BASIC_VEST_NO_BOTTOM(AT,JLTS_CloneVestAirborne)};
+	NEW_95TH_BASIC_VEST_NO_BOTTOM(Heavy,JLTS_CloneVestAirborne)};
+
+	// Make sure the units are backwards compat if possible
+
+	// JLTS_CloneVestHolster:
+	// Rifleman
+	// Pilot
+	// Grenadier?
+	// Jet
+
+
+	//JLTS_CloneVestAirborne:
+	// Medic
+	// AT/AA
+	// Heavy
+
+
+	// JLTS_CloneVestReconOfficer:
+	// NCO
+
+
+	// JLTS_CloneVestOfficer:
+	// Platoon
+
+
+	// JLTS_CloneVestOfficer2:
+	// Zeus
+
+
+	// JLTS_CloneVestSuspender:
+	// Engineer
+	// Crewman
+
+
+	// JLTS_CloneVestRecon:
+	// Marksman
+	// Riot
+	// Flame
+	// Stealth
+	// Tech
+
+
+    //************************************************************************************************************************************************************************************************
+    //*****             OLD Vests                *********************************************************************************************************************************************************
+    //************************************************************************************************************************************************************************************************
 	class 95th_Vest_Trooper: JLTS_CloneVestHolster
 	{
 		author="95th Aux";
@@ -339,24 +409,6 @@ class cfgWeapons {
 		class XtdGearInfo {
 			model = "95th_Commando_Vests";
 			Type = "Medic";
-		};
-	};
-
-	class JLTS_CloneVestAirborneNCO;
-	class 95th_Vest_Testbed: JLTS_CloneVestAirborneNCO
-	{
-		author="95th Aux";
-		scope=2;
-		displayName="[95th] Clone Test Vest";
-		class ItemInfo: VestItem
-		{
-			uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborneNCO.p3d";
-			containerClass="Supply70";
-			hiddenSelectionsTextures[]=
-			{
-				"\95th_Vests\Data\Airborne\95th_Vest_Test_Officer.paa",
-				"\95th_Vests\Data\Airborne\95th_Vest_Test_Heavy.paa"
-			};
 		};
 	};
 }; 
