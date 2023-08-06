@@ -68,6 +68,7 @@ class cfgWeapons {
 	NEW_95TH_BASIC_VEST_NO_BOTTOM(Heavy,JLTS_CloneVestAirborne)};
 
 	// Make sure the units are backwards compat if possible
+	// Split into Officer(?) vests?
 
 	// JLTS_CloneVestHolster:
 	// Rifleman
