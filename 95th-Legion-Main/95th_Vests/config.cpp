@@ -31,6 +31,18 @@ class XtdGearModels {
 			};
 		};
 
+		class 95th_Officer_Vests {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Rifleman"};
+				class Rifleman { label = "Rifleman"; description = "Rifleman Vest"; };
+			};
+		};
+
 		class 95th_Commando_Vests {
 			label = "";
 			author = "95th Aux Team";
@@ -67,21 +79,8 @@ class cfgWeapons {
 	NEW_95TH_BASIC_VEST_NO_BOTTOM(AT,JLTS_CloneVestAirborne)};
 	NEW_95TH_BASIC_VEST_NO_BOTTOM(Heavy,JLTS_CloneVestAirborne)};
 
-	// Make sure the units are backwards compat if possible
-	// Split into Officer(?) vests?
-
-	// JLTS_CloneVestHolster:
-	// Rifleman
-	// Pilot
-	// Grenadier?
-	// Jet
-
-
-	//JLTS_CloneVestAirborne:
-	// Medic
-	// AT/AA
-	// Heavy
-
+	// SWAP VESTS OVER IN SPAWN PRESET BEFORE YOU REMOVE THE OLD ONES YOU IDIOT
+	//TODO:
 
 	// JLTS_CloneVestReconOfficer:
 	// NCO
@@ -106,6 +105,21 @@ class cfgWeapons {
 	// Flame
 	// Stealth
 	// Tech
+
+
+
+	//DONE:
+
+	// JLTS_CloneVestHolster:
+	// Rifleman
+	// Pilot
+	// Grenadier?
+	// Jet
+
+	//JLTS_CloneVestAirborne:
+	// Medic
+	// AT/AA
+	// Heavy
 
 
     //************************************************************************************************************************************************************************************************
