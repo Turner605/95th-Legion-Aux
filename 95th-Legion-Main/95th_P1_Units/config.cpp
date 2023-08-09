@@ -113,8 +113,9 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Volt"};
+				values[] = {"Volt","Jinter"};
 				class Volt { label = "Volt"; description = "Volts Uniform"; };
+				class Jinter { label = "Jinter"; description = "Jinters Uniform"; };
 			};
 		};
 
@@ -162,7 +163,7 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug"};
+				values[] = {"Trooper","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 				class Medic { label = "Medic"; description = "Medic Helmet"; };
 				class Senior { label = "Senior"; description = "Senior Helmet"; };
@@ -178,6 +179,7 @@ class XtdGearModels {
 				class Bretek { label = "Bretek"; description = "Breteks Helmet"; };
 				class Neary { label = "Neary"; description = "Nearys Helmet"; };
 				class Smaug { label = "Smaug"; description = "Smaugs Helmet"; };
+				class Commie { label = "Commie"; description = "Commies Helmet"; };
 			};
 		};
 
@@ -327,6 +329,7 @@ class cfgWeapons {
 	NEW_95TH_P1_UNIFORM(Lieutenant,Lieutenant)};
 
 	NEW_95TH_CUSTOM_P1_UNIFORM(Volt,Volt)};
+	NEW_95TH_CUSTOM_P1_UNIFORM(Jinter,Jinter)};
 
 	NEW_95TH_MC_UNIFORM(Zeus,Zeus)};
 	NEW_95TH_MC_UNIFORM(Turner,Turner)};
@@ -351,6 +354,7 @@ class cfgWeapons {
 	NEW_95TH_P1_HELMET(Bretek)};
 	NEW_95TH_P1_HELMET(Neary)};
 	NEW_95TH_P1_HELMET(Smaug)};
+	NEW_95TH_P1_HELMET(Commie)};
 
 	NEW_95TH_P1_PILOT_HELMET(Trooper)};
 	NEW_95TH_P1_PILOT_HELMET(Jinter)};
@@ -391,6 +395,7 @@ class CfgVehicles {
 	NEW_95TH_RIFLEMAN_UNIT(Captain,Veteran,Captain)};
 	NEW_95TH_RIFLEMAN_UNIT(Lieutenant,Veteran,Lieutenant)};
 	NEW_95TH_RIFLEMAN_UNIT(Volt,Volt,Sergeant)};
+	NEW_95TH_RIFLEMAN_UNIT(Jinter,Trooper,Sergeant)};
 
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_MC_UNIT(Zeus,Veteran,Zeus)};
