@@ -44,3 +44,22 @@
 		model = 95th_Basic_Vests;\
 		Type = ##name##;\
 	};
+
+#define NEW_95TH_VEST_RECON_TYPE(name) class 95th_Basic_Vest_##name## : JLTS_CloneVestRecon {\
+	author=95th Aux Team;\
+	displayName=[95th] Basic Vest;\
+	hiddenSelectionsTextures[]={\95th_Vests\Data\Basic\##name##_Vest_Recon.paa};\
+	class XtdGearInfo {\
+		model = 95th_Basic_Vests;\
+		Type = ##name##;\
+	};
+
+#define NEW_95TH_VEST_SUSPENDER_TYPE(name) class 95th_Basic_Vest_##name## : JLTS_CloneVestSuspender {\
+	author=95th Aux Team;\
+	displayName=[95th] Basic Vest;\
+	hiddenSelectionsTextures[]={\95th_Vests\Data\Basic\##name##_Vest_Suspender.paa};\
+	class XtdGearInfo {\
+		model = 95th_Basic_Vests;\
+		Type = ##name##;\
+	};
+	

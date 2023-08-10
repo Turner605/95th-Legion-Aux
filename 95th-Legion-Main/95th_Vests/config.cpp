@@ -20,14 +20,23 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Rifleman" ,"Pilot", "Grenadier", "Jet", "Medic", "AT", "Heavy"};
+				values[] = {"Rifleman" ,"Pilot", "Grenadier", "Jet", "Medic", "AT", "Heavy", "Marksman", "Riot", "Flame", "Stealth", "Tech", "Engineer", "Crewman"};
 				class Rifleman { label = "Rifleman"; description = "Rifleman Vest"; };
 				class Pilot { label = "Pilot"; description = "Pilot Vest"; };
 				class Grenadier { label = "Grenadier"; description = "Grenadier Vest"; };
 				class Jet { label = "Jet"; description = "Jet Trooper Vest"; };
 
-				class AT { label = "Jet"; description = "AT Trooper Vest"; };
+				class AT { label = "AT"; description = "AT Trooper Vest"; };
 				class Heavy { label = "Heavy"; description = "Heavy Trooper Vest"; };
+
+				class Marksman { label = "Marksman"; description = "Marksman Trooper Vest"; };
+				class Riot { label = "Riot"; description = "Riot Trooper Vest"; };
+				class Flame { label = "Flame"; description = "Flame Trooper Vest"; };
+				class Stealth { label = "Stealth"; description = "Stealth Trooper Vest"; };
+				class Tech { label = "Tech"; description = "Tech Trooper Vest"; };
+
+				class Engineer { label = "Engineer"; description = "Engineer Trooper Vest"; };
+				class Crewman { label = "Crewman"; description = "Crewman Vest"; };
 			};
 		};
 
@@ -61,11 +70,12 @@ class XtdGearModels {
 class cfgWeapons { 
 	class JLTS_CloneVestHolster;
 	class JLTS_CloneVestAirborne;
+	class JLTS_CloneVestRecon;
+	class JLTS_CloneVestSuspender;
+
 	// class JLTS_CloneVestReconOfficer;
 	// class JLTS_CloneVestOfficer;
 	// class JLTS_CloneVestOfficer2;
-	// class JLTS_CloneVestSuspender;
-	// class JLTS_CloneVestRecon;
 
 	class VestItem;
 	class ItemInfo;
@@ -79,32 +89,26 @@ class cfgWeapons {
 	NEW_95TH_BASIC_VEST_NO_BOTTOM(AT,JLTS_CloneVestAirborne)};
 	NEW_95TH_BASIC_VEST_NO_BOTTOM(Heavy,JLTS_CloneVestAirborne)};
 
+	NEW_95TH_VEST_RECON_TYPE(Marksman)};
+	NEW_95TH_VEST_RECON_TYPE(Riot)};
+	NEW_95TH_VEST_RECON_TYPE(Flame)};
+	NEW_95TH_VEST_RECON_TYPE(Stealth)};
+	NEW_95TH_VEST_RECON_TYPE(Tech)};
+
+	NEW_95TH_VEST_SUSPENDER_TYPE(Engineer)};
+	NEW_95TH_VEST_SUSPENDER_TYPE(Crewman)};
+
 	// SWAP VESTS OVER IN SPAWN PRESET BEFORE YOU REMOVE THE OLD ONES YOU IDIOT
 	//TODO:
 
 	// JLTS_CloneVestReconOfficer:
 	// NCO
 
-
 	// JLTS_CloneVestOfficer:
 	// Platoon
 
-
 	// JLTS_CloneVestOfficer2:
 	// Zeus
-
-
-	// JLTS_CloneVestSuspender:
-	// Engineer
-	// Crewman
-
-
-	// JLTS_CloneVestRecon:
-	// Marksman
-	// Riot
-	// Flame
-	// Stealth
-	// Tech
 
 
 
@@ -121,6 +125,18 @@ class cfgWeapons {
 	// AT/AA
 	// Heavy
 
+	// JLTS_CloneVestRecon:
+	// Marksman
+	// Riot
+	// Flame
+	// Stealth
+	// Tech
+
+	// JLTS_CloneVestSuspender:
+	// Engineer
+	// Crewman
+
+
 
     //************************************************************************************************************************************************************************************************
     //*****             OLD Vests                *********************************************************************************************************************************************************
@@ -128,7 +144,7 @@ class cfgWeapons {
 	class 95th_Vest_Trooper: JLTS_CloneVestHolster
 	{
 		author="95th Aux";
-		displayName="[95th] Clone Trooper Vest";
+		displayName="OLD [95th] Clone Trooper Vest";
 		// hiddenSelectionsTextures[]=
 		// {
 		// 	""
@@ -170,7 +186,7 @@ class cfgWeapons {
 	class 95th_Vest_Veteran: JLTS_CloneVestKama
 	{
 		author="95th Aux";
-		displayName="[95th] Clone Veteran Vest";
+		displayName="OLD [95th] Clone Veteran Vest";
 		// hiddenSelectionsTextures[]=
 		// {
 		// 	""
@@ -212,7 +228,7 @@ class cfgWeapons {
 	class 95th_Vest_Sergeant: JLTS_CloneVestReconOfficer
 	{
 		author="95th Aux";
-		displayName="[95th] Clone NCO Vest";
+		displayName="OLD [95th] Clone NCO Vest";
 		hiddenSelectionsTextures[]=
 		{
 		 	"MRC\JLTS\characters\CloneArmor\data\Clone_vest_officer_co.paa",
@@ -256,7 +272,7 @@ class cfgWeapons {
 	class 95th_Vest_Captain: JLTS_CloneVestOfficer
 	{
 		author="95th Aux";
-		displayName="[95th] Clone Platoon Vest";
+		displayName="OLD [95th] Clone Platoon Vest";
 		hiddenSelectionsTextures[]=
 		{
 		 	"\95th_Vests\Data\95th_Vest_Captain.paa"
@@ -298,7 +314,7 @@ class cfgWeapons {
 	class 95th_Vest_Lieutenant: JLTS_CloneVestCommander
 	{
 		author="95th Aux";
-		displayName="[95th] Clone Command Vest";
+		displayName="OLD [95th] Clone Command Vest";
 		hiddenSelectionsTextures[]=
 		{
 			"\95th_Vests\Data\95th_Vest_Lieutenant.paa"
@@ -341,7 +357,7 @@ class cfgWeapons {
 	{
 		author="95th Aux";
 		scope=2;
-		displayName="[95th] Clone ARC Trooper Vest";
+		displayName="OLD [95th] Clone ARC Trooper Vest";
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\CloneVestARC_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d"; 
 		hiddenSelections[]=
@@ -390,7 +406,7 @@ class cfgWeapons {
 	{
 		author="95th Aux";
 		scope=2;
-		displayName="[95th] Clone Zeus Vest";
+		displayName="OLD [95th] Clone Zeus Vest";
 		hiddenSelectionsTextures[]={"\95th_Vests\Data\95th_Vest_Zeus.paa"};
 		class ItemInfo: VestItem
 		{
