@@ -1,5 +1,6 @@
 #include "Macros\Basic Vests.hpp"
 #include "Macros\Officer Vests.hpp"
+#include "Macros\Special Vests.hpp"
 
 class CfgPatches {
 	class 95th_Legion_Vests {
@@ -55,6 +56,18 @@ class XtdGearModels {
 			};
 		};
 
+		class 95th_ARC_Vests {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type"};
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"Trooper"};
+				class Trooper { label = "Trooper"; description = "ARC Trooper Vest"; };
+			};
+		};
+
 		class 95th_Commando_Vests {
 			label = "";
 			author = "95th Aux Team";
@@ -78,6 +91,7 @@ class cfgWeapons {
 	class JLTS_CloneVestReconOfficer;
 	class JLTS_CloneVestOfficer;
 	class JLTS_CloneVestOfficer2;
+	class JLTS_CloneVestARC;
 
 	class VestItem;
 	class ItemInfo;
@@ -103,6 +117,8 @@ class cfgWeapons {
 	NEW_95TH_VEST_RECON_NCO_TYPE(Sergeant)};
 	NEW_95TH_VEST_OFFICER_LIEUTENANT_TYPE(Lieutenant)};
 	NEW_95TH_VEST_OFFICER_ZEUS_TYPE(Zeus)};
+
+	NEW_95TH_VEST_ARC_TYPE(Trooper)};
 
 	// SWAP VESTS OVER IN SPAWN PRESET BEFORE YOU REMOVE THE OLD ONES YOU IDIOT
 	//TODO:
@@ -321,7 +337,6 @@ class cfgWeapons {
 		};
 	};
 
-	class JLTS_CloneVestARC;
 	class 95th_Vest_ARC: JLTS_CloneVestARC
 	{
 		author="95th Aux";
