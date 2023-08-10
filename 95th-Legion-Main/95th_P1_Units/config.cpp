@@ -215,9 +215,10 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper", "Osprey"};
+				values[] = {"Trooper", "Osprey", "Sythe"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 				class Osprey { label = "Osprey"; description = "Ospreys Helmet"; };
+				class Sythe { label = "Sythe"; description = "Sythes Helmet"; };
 			};
 		};
 
@@ -363,6 +364,7 @@ class cfgWeapons {
 
 	NEW_95TH_ARF_HELMET(Trooper)};
 	NEW_95TH_ARF_HELMET(Osprey)};
+	NEW_95TH_ARF_HELMET(Sythe)};
 
 	NEW_95TH_ARC_HELMET(Trooper)};
 
