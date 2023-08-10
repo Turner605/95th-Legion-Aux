@@ -1,4 +1,5 @@
 #include "Macros\Basic Vests.hpp"
+#include "Macros\Officer Vests.hpp"
 
 class CfgPatches {
 	class 95th_Legion_Vests {
@@ -47,8 +48,10 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Rifleman"};
-				class Rifleman { label = "Rifleman"; description = "Rifleman Vest"; };
+				values[] = {"Sergeant", "Lieutenant", "Zeus"};
+				class Sergeant { label = "Sergeant"; description = "Sergeant Vest"; };
+				class Lieutenant { label = "Lieutenant"; description = "Lieutenant Vest"; };
+				class Zeus { label = "Zeus"; description = "Zeus Vest"; };
 			};
 		};
 
@@ -72,10 +75,9 @@ class cfgWeapons {
 	class JLTS_CloneVestAirborne;
 	class JLTS_CloneVestRecon;
 	class JLTS_CloneVestSuspender;
-
-	// class JLTS_CloneVestReconOfficer;
-	// class JLTS_CloneVestOfficer;
-	// class JLTS_CloneVestOfficer2;
+	class JLTS_CloneVestReconOfficer;
+	class JLTS_CloneVestOfficer;
+	class JLTS_CloneVestOfficer2;
 
 	class VestItem;
 	class ItemInfo;
@@ -98,45 +100,14 @@ class cfgWeapons {
 	NEW_95TH_VEST_SUSPENDER_TYPE(Engineer)};
 	NEW_95TH_VEST_SUSPENDER_TYPE(Crewman)};
 
+	NEW_95TH_VEST_RECON_NCO_TYPE(Sergeant)};
+	NEW_95TH_VEST_OFFICER_LIEUTENANT_TYPE(Lieutenant)};
+	NEW_95TH_VEST_OFFICER_ZEUS_TYPE(Zeus)};
+
 	// SWAP VESTS OVER IN SPAWN PRESET BEFORE YOU REMOVE THE OLD ONES YOU IDIOT
 	//TODO:
 
-	// JLTS_CloneVestReconOfficer:
-	// NCO
-
-	// JLTS_CloneVestOfficer:
-	// Platoon
-
-	// JLTS_CloneVestOfficer2:
-	// Zeus
-
-
-
-	//DONE:
-
-	// JLTS_CloneVestHolster:
-	// Rifleman
-	// Pilot
-	// Grenadier?
-	// Jet
-
-	//JLTS_CloneVestAirborne:
-	// Medic
-	// AT/AA
-	// Heavy
-
-	// JLTS_CloneVestRecon:
-	// Marksman
-	// Riot
-	// Flame
-	// Stealth
-	// Tech
-
-	// JLTS_CloneVestSuspender:
-	// Engineer
-	// Crewman
-
-
+	// ARC
 
     //************************************************************************************************************************************************************************************************
     //*****             OLD Vests                *********************************************************************************************************************************************************
@@ -224,7 +195,6 @@ class cfgWeapons {
 		};
 	};
 
-	class JLTS_CloneVestReconOfficer;
 	class 95th_Vest_Sergeant: JLTS_CloneVestReconOfficer
 	{
 		author="95th Aux";
@@ -268,7 +238,6 @@ class cfgWeapons {
 		};
 	};
 
-	class JLTS_CloneVestOfficer;
 	class 95th_Vest_Captain: JLTS_CloneVestOfficer
 	{
 		author="95th Aux";
@@ -401,7 +370,6 @@ class cfgWeapons {
 		};
 	};
 
-	class JLTS_CloneVestOfficer2;
 	class 95th_Vest_Zeus: JLTS_CloneVestOfficer2
 	{
 		author="95th Aux";
