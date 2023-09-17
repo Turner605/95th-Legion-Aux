@@ -163,7 +163,7 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie"};
+				values[] = {"Trooper","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 				class Medic { label = "Medic"; description = "Medic Helmet"; };
 				class Senior { label = "Senior"; description = "Senior Helmet"; };
@@ -180,6 +180,10 @@ class XtdGearModels {
 				class Neary { label = "Neary"; description = "Nearys Helmet"; };
 				class Smaug { label = "Smaug"; description = "Smaugs Helmet"; };
 				class Commie { label = "Commie"; description = "Commies Helmet"; };
+				class Hypo { label = "Hypo"; description = "Hypo's Helmet"; };
+				class Ghost { label = "Ghost"; description = "Ghost's Helmet"; };
+				class Prophet { label = "Prophet"; description = "Prophet's Helmet"; };
+				class Smokery { label = "Smokery"; description = "Smokery's Helmet"; };
 			};
 		};
 
@@ -356,6 +360,10 @@ class cfgWeapons {
 	NEW_95TH_P1_HELMET(Neary)};
 	NEW_95TH_P1_HELMET(Smaug)};
 	NEW_95TH_P1_HELMET(Commie)};
+	NEW_95TH_P1_HELMET(Hypo)};
+	NEW_95TH_P1_HELMET(Ghost)};
+	NEW_95TH_P1_HELMET(Prophet)};
+	NEW_95TH_P1_HELMET(Smokery)};
 
 	NEW_95TH_P1_PILOT_HELMET(Trooper)};
 	NEW_95TH_P1_PILOT_HELMET(Jinter)};
