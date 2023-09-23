@@ -284,6 +284,10 @@ class CfgVehicles {
 
 	class 95th_LAAT_Mrk1: 3as_LAAT_Mk1 {
 		scope=2;
+		tas_can_impulse=0;
+		ls_hasImpulse = 1;
+		ls_impulsor_boostSpeed_1 = 400;
+		ls_impulsor_boostSpeed_2 = 800;
 		scopecurator=2;
 		displayname="[95th] LAAT/I Mk.1";
 		author="95th Aux Team";
@@ -319,6 +323,10 @@ class CfgVehicles {
 	class 3as_LAAT_Mk2;
 	class 95th_LAAT_Mrk2: 3as_LAAT_Mk2 {
 		displayname="[95th] LAAT/I Mk.2";
+		tas_can_impulse=0;
+		ls_hasImpulse = 1;
+		ls_impulsor_boostSpeed_1 = 400;
+		ls_impulsor_boostSpeed_2 = 800;
 		author="95th Aux Team";
         crew = "95th_Pilot_Unit_Trooper";
 		ace_cargo_space = 26;
@@ -352,6 +360,10 @@ class CfgVehicles {
 	class 3as_LAAT_Mk2Lights;
 	class 95th_LAAT_Mrk2Lights: 3as_LAAT_Mk2Lights {
 		displayname="[95th] LAAT/I Mk.2 (Lamps)";
+		tas_can_impulse=0;
+		ls_hasImpulse = 1;
+		ls_impulsor_boostSpeed_1 = 400;
+		ls_impulsor_boostSpeed_2 = 800;
 		author="95th Aux Team";
 		faction="95th_Legion_Faction_Clones";
 		ace_cargo_space = 26;
@@ -569,8 +581,16 @@ class Extended_InitPost_EventHandlers {
 	};
 };
 
-class Extended_PreInit_EventHandlers {
-	class 95th_Vehicles_PreInit {
-		init="call compile preprocessFileLineNumbers '\95th_Vehicles\Init\XEH_preInit.sqf'";
+class Extended_init_EventHandlers {
+	class 95th_LAAT_Mrk1 {
+    	class 95th_LAAT_Mrk1_Init {init = "(_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";};
+	};
+
+	class 95th_LAAT_Mrk2 {
+    	class 95th_LAAT_Mrk2_Init {init = "(_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";};
+	};
+
+	class 95th_LAAT_Mrk2Lights {
+    	class 95th_LAAT_Mrk2Lights_Init {init = "(_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";};
 	};
 };
