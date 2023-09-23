@@ -1,7 +1,5 @@
-class CfgPatches
-{
-	class 95th_Extra_Equipment
-	{
+class CfgPatches {
+	class 95th_Extra_Equipment {
         author="95th Aux Team";
         name="95th Legion Equipment";
 		requiredAddons[]={
@@ -11,10 +9,9 @@ class CfgPatches
 	};
 };
 
-class CfgAmmo
-{
-	class SUPER_flash_ammo;
-	class 95th_Concussion_Ammo: SUPER_flash_ammo {
+class CfgAmmo {
+	class ATLAS3_st_grenade_inc;
+	class 95th_Pyro_Ammo: ATLAS3_st_grenade_inc {
 		model="3as\3AS_Equipment\model\3AS_Thermaldet.p3d";  
 	};
 };
@@ -30,36 +27,27 @@ class cfgMagazines {
 		picture="\95th_Extra_Equipment\Data\Grenades\PyroGrenade.paa";
 		ammo = "95th_Pyro_Ammo";
 	};
-}
+};
 
-class CfgWeapons
-{
-	class Throw {
+class CfgWeapons {
+	class Default;
+	class GrenadeLauncher: Default{};
+
+	class Throw: GrenadeLauncher {
 		class ThrowMuzzle;
 
 		muzzles[]+={"95th_Pyro_Muzzle"};
 
-		class 95th_Pyro_Muzzle: ThrowMuzzle {
-			magazines[]= {"95th_Pyro_Grenade"};
-		};
+		//---------------------------------------------------------------------------------------------------------------------------
+		//---------------------------------------------------Pyro Muzzles-------------------------------------------------------
+		//---------------------------------------------------------------------------------------------------------------------------
+
+		class 95th_Pyro_Muzzle: ThrowMuzzle { magazines[]= {"95th_Pyro_Grenade"}; };
 	};
 };
 
-class Extended_PreInit_EventHandlers
-{
-	class 95th_Extra_Equip_PreInit
-	{
-		init="call compile preprocessFileLineNumbers '\95th_Extra_Equipment\Bootstrap\XEH_preInit.sqf'";
-	};
-};
-
-class Extended_Fired_Eventhandlers
-{
-	class CAManBase
-	{
-		class 95th_Fire_Class
-		{
-			fired="[_this select 0, _this select 1, _this select 2, _this select 3, _this select 4, _this select 5, _this select 6] spawn Fired_95th_EH";
-		};
+class Extended_PostInit_EventHandlers {
+	class 95th_Extra_Equipment_PostInit {
+		init="call compile preprocessFileLineNumbers '\95th_Extra_Equipment\Init\XEH_postInit.sqf'";
 	};
 };
