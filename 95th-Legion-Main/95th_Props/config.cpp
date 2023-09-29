@@ -1,11 +1,8 @@
-class CfgPatches
-{
-	class 95th_Props
-	{
+class CfgPatches {
+	class 95th_Props {
         author="95th Aux Team";
         name="95th Legion Props";
-		requiredAddons[]=
-		{
+		requiredAddons[]= {
 			"ace_main",
             "3AS_Prop_Crates",
 			"3as_GNK_Prop"
@@ -20,6 +17,7 @@ class CfgPatches
 			"95th_Ground_Vehicle_Servicer",
 
 			"95th_Arsenal",
+			"95th_Arsenal_Test",
 			"95th_Permissions_Terminal",
 			"95th_Health_Station",
 			"95th_Briefing_Room",
@@ -351,9 +349,19 @@ class CfgVehicles {
 	//Misc Utility Objects
 	//#########################################################################################################
 
-	class 3as_GNK;
-	class 95th_Arsenal: 3as_GNK {
-		displayName="[95th] Arsenal Gonk";
+	class 3AS_Supply_Large_Prop;
+	class 95th_Arsenal: 3AS_Supply_Large_Prop {
+		displayName="[95th] Arsenal";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Utilities";
+		maximumLoad=2000;
+        ace_dragging_canDrag = 0; ace_dragging_canCarry = 0;
+        ace_cargo_size = 0; ace_cargo_canLoad = 0; ace_cargo_noRename = 1;
+        ace_cargo_blockUnloadCarry = 1;
+	};
+
+	class 95th_Arsenal_Missing: 95th_Arsenal {
+		displayName="[95th] Dev Arsenal";
 		editorCategory="95th_Props";
 		editorSubcategory="95th_Utilities";
 	};
@@ -462,26 +470,48 @@ class CfgFunctions {
 			class handleSkinSelection {file = "\95th_Props\Scripts\handleSkinSelection.sqf";};
 			class checkPlayerInBriefing {file = "\95th_Props\Scripts\checkPlayerInBriefing.sqf";};
 			class handleCrateSpawned {file = "\95th_Props\Scripts\handleCrateSpawned.sqf";};
+
+			class handleCreateArsenal {file = "\95th_Props\Scripts\Arsenal\createArsenal.sqf";};
 		};
 	};
 };
 
 class Extended_PostInit_EventHandlers {
 	class 95th_Props_PostInit {
-		init="call compile preprocessFileLineNumbers '\95th_Props\Bootstrap\XEH_postInit.sqf'";
+		init="call compile preprocessFileLineNumbers '\95th_Props\Init\XEH_postInit.sqf'";
+	};
+};
+
+class Extended_PreInit_EventHandlers {
+	class 95th_Props_PreInit {
+		init="call compile preprocessFileLineNumbers '\95th_Props\Init\XEH_preInit.sqf'";
 	};
 };
 
 class Extended_InitPost_EventHandlers {
 	class 95th_Supply_Large_Ammo_Prop {
-		class  95th_Supply_Large_Ammo_Prop_Init {
+		class 95th_Supply_Large_Ammo_Prop_Init {
 			onRespawn="true";
 			init="[_this select 0, true] call ace_arsenal_fnc_initBox;";
 		};
 	};
 
+	class 95th_Arsenal {
+		class 95th_Arsenal_Init {
+			onRespawn="true";
+			init="[_this select 0, Arsenal_All_Items_95th] call ace_arsenal_fnc_initBox;";
+		};
+	};
+
+	class 95th_Arsenal_Missing {
+		class 95th_Arsenal_Missing_Init {
+			onRespawn="true";
+			init="[_this select 0] call NFA_fnc_handleCreateArsenal;";
+		};
+	};
+
 	class 95th_Land_PortableWeatherStation_01_white_F {
-		class  95th_Land_PortableWeatherStation_01_white_F_Init {
+		class 95th_Land_PortableWeatherStation_01_white_F_Init {
 			onRespawn="true";
 			init="[_this select 0, 5000] call TFAR_antennas_fnc_initRadioTower;";
 		};
