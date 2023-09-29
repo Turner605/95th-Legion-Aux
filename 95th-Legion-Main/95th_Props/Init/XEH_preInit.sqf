@@ -82,7 +82,9 @@ private _arsenalMedical = [
 	"kat_IV_16","kat_aatKit","kat_accuvac","ACE_adenosine","kat_X_AED","kat_amiodarone","kat_CarbonateItem","kat_atropine","Attachable_Helistretcher",
 	"kat_AED","ACE_fieldDressing","ACE_elasticBandage","ACE_packingBandage","ACE_quikclot","ACE_bodyBag","kat_plate","kat_chestSeal","kat_clamp",
 	"kat_vacuum","kat_EACA","ACE_epinephrine","kat_etomidate","kat_IO_FAST","kat_fentanyl","kat_flumazenil","kat_guedel","kat_ketamine",
-	"kat_larynx","kat_lidocaine","kat_lorazepam","ACE_morphine","kat_sealant","kat_PervitinItem","kat_ncdKit","kat_gasmaskFilter","kat_CaffeineItem"
+	"kat_larynx","kat_lidocaine","kat_lorazepam","ACE_morphine","kat_sealant","kat_PervitinItem","kat_ncdKit","kat_gasmaskFilter","kat_CaffeineItem",
+    "ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500","kat_Bubble_Wrap_Item","kat_BVM","kat_pocketBVM","kat_oxygenTank_150_Item","kat_oxygenTank_300_Item",
+    "ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500"
 ];
 
 //-----------------------------# Explosives #-----------------------------------
@@ -107,7 +109,7 @@ private _arsenalEquipment = [
 	"JLTS_riot_shield_item","WBK_HeadLampItem","ACE_IR_Strobe_Item","ACE_M26_Clacker","ACE_Clacker","ACE_Flashlight_XL50","ACE_MapTools",
 	"ace_marker_flags_black","ace_marker_flags_blue","ace_marker_flags_green","ace_marker_flags_orange","ace_marker_flags_purple","ace_marker_flags_red",
 	"ace_marker_flags_white","ace_marker_flags_yellow","ACE_microDAGR","MineDetector","ACE_HuntIR_monitor","ACE_RangeTable_82mm","DSS_Hacking_Device",
-	"DSS_Cloaking_Device","NFL_Disc_Shield","DSS_Support_Device"
+	"DSS_Cloaking_Device","NFL_Disc_Shield","DSS_Support_Device","rw_canistra","ACE_RangeCard"
 ];
 
 Arsenal_All_Items_95th = (_arsenalWeapons + _arsenalAmmo + _arsenalAttachments + _arsenalHelmets + _arsenalUniforms + _arsenalVests + _arsenalBackpacks + _arsenalGear + _arsenalMedical + _arsenalExplosives + _arsenalGrenades + _arsenalEquipment);
@@ -131,7 +133,7 @@ Arsenal_Class_Items_95th = [
 ];
 
 // Maybe change and have a seperate section for just placing class items into
-// What is: "rw_canistra","SCH_B_LTD_Packed","SCH_B_WD_LTD_Packed"
+// What is: "SCH_B_LTD_Packed","SCH_B_WD_LTD_Packed"
 
 // What to do with:
 // "3AS_DC17STest_F" - Dual pistols 
