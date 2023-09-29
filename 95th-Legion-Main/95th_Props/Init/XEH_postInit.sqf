@@ -23,3 +23,5 @@ player addEventHandler["Respawn", {
         _unit setVariable ["IsOnAirRespawnCooldown", false, true];
     }
 }];
+
+[""] call NFA_fnc_addDefaultClasses;

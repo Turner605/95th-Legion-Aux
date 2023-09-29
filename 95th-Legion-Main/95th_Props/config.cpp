@@ -471,7 +471,8 @@ class CfgFunctions {
 			class checkPlayerInBriefing {file = "\95th_Props\Scripts\checkPlayerInBriefing.sqf";};
 			class handleCrateSpawned {file = "\95th_Props\Scripts\handleCrateSpawned.sqf";};
 
-			class handleCreateArsenal {file = "\95th_Props\Scripts\Arsenal\createArsenal.sqf";};
+			class addDefaultClasses {file = "\95th_Props\Scripts\Arsenal\addDefaultClasses.sqf";};
+			class handleCreateDevArsenal {file = "\95th_Props\Scripts\Arsenal\createDevArsenal.sqf";};
 		};
 	};
 };
@@ -506,7 +507,7 @@ class Extended_InitPost_EventHandlers {
 	class 95th_Arsenal_Missing {
 		class 95th_Arsenal_Missing_Init {
 			onRespawn="true";
-			init="[_this select 0] call NFA_fnc_handleCreateArsenal;";
+			init="[_this select 0] call NFA_fnc_handleCreateDevArsenal;";
 		};
 	};
 
