@@ -125,7 +125,7 @@ Arsenal_Class_Items_95th = [
 	[], // 7 - Pilot
 	["3AS_DC15C_F","3AS_DC15C_GL"], // 8 - NCO
 	["95th_FlameThrower"], // 9 - Flame
-	[], // 10 - Jet
+	["95th_JumpPack"], // 10 - Jet
 	["DSS_Cloaking_Device"], // 11 - Stealth
 	["JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL"], // 12 - Grenadier
 	["DSS_Hacking_Device"], // 13 - Tech
