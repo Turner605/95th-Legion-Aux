@@ -118,8 +118,8 @@ Arsenal_Class_Items_95th = [
 	["JLTS_DC15X","JLTS_DW32S"], // 0 - Marksman
 	["JLTS_riot_shield_item"], // 1 - Riot
 	["NFL_Disc_Shield","3AS_DC15L_F","JLTS_Z6"], // 2 - Heavy
-	[], // 3 - Engineer
-	[], // 4 - Medic
+	["95th_Backpack_EOD"], // 3 - Engineer
+	["95th_Backpack_Medic"], // 4 - Medic
 	["3AS_PLX1_F","3AS_RPS6_HP"], // 5 - AT
 	[], // 6 - Crewman
 	[], // 7 - Pilot
