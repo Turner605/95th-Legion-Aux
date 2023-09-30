@@ -37,7 +37,7 @@ private _riflemanLoadout = [[
 private _marksmanLoadout = [[
 	_dc15x, [], _dc17s, 
 	_baseUniform, 
-	["95th_Vest_Trooper",[["JLTS_DC17SA_mag",2,20],["JLTS_stun_mag_long",2,5],["JLTS_DC15X_mag",7,15]]]
+	["95th_Vest_Trooper",[["JLTS_DC17SA_mag",2,20],["JLTS_stun_mag_long",2,5],["JLTS_DC15X_mag",7,15]]],
 	_basicBackpack, 
 	"95th_ARF_Helmet_Trooper", 
 	"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""],
