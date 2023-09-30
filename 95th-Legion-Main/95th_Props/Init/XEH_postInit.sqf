@@ -25,7 +25,7 @@ player addEventHandler["Respawn", {
 }];
 
 ["ace_arsenal_displayClosed", {
-    if(enable_kit_checker_95th){
+    if(enable_kit_checker_95th) then {
         private _allItems = items player;
         private _primary = primaryWeapon player;
         private _secondary = handgunWeapon player;
@@ -52,4 +52,7 @@ player addEventHandler["Respawn", {
     }
 }] call CBA_fnc_addEventHandler;
 
-[""] call NFA_fnc_addDefaultClasses;
+
+if(enable_default_kits_95th) then {
+    [""] call NFA_fnc_addDefaultClasses;
+}
