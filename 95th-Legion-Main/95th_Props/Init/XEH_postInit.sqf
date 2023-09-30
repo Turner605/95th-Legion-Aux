@@ -25,30 +25,31 @@ player addEventHandler["Respawn", {
 }];
 
 ["ace_arsenal_displayClosed", {
-    private _allItems = items player;
-    private _primary = primaryWeapon player;
-    private _secondary = handgunWeapon player;
-    private _launcher = secondaryWeapon player; 
+    if(enable_kit_checker_95th){
+        private _allItems = items player;
+        private _primary = primaryWeapon player;
+        private _secondary = handgunWeapon player;
+        private _launcher = secondaryWeapon player; 
 
-    if(!(_primary == "")) then {_allItems pushBack _primary};
-    if(!(_secondary == "")) then {_allItems pushBack _secondary};
-    if(!(_launcher == "")) then {_allItems pushBack _launcher};
+        if(!(_primary == "")) then {_allItems pushBack _primary};
+        if(!(_secondary == "")) then {_allItems pushBack _secondary};
+        if(!(_launcher == "")) then {_allItems pushBack _launcher};
 
-    private _classCount = 0;
-
-    {
-        private _classItems = _x;
+        private _classCount = 0;
 
         {
-            if(_x in _allItems) then { _classCount = _classCount+1 };
-        } forEach _classItems;
+            private _classItems = _x;
 
-    } forEach Arsenal_Class_Items_95th;
+            {
+                if(_x in _allItems) then { _classCount = _classCount+1 };
+            } forEach _classItems;
 
-	if (_classCount > 1) then {
-        2 cutText ["<t color='#ffffff' size='2'>You seem to be multi-certing.</t><br/><t color='#ffffff' size='2'>Please check your gear.</t>", "PLAIN", 1, true, true];
-    };
+        } forEach Arsenal_Class_Items_95th;
 
+        if (_classCount > 1) then {
+            2 cutText ["<t color='#ffffff' size='2'>You seem to be multi-certing.</t><br/><t color='#ffffff' size='2'>Please check your gear.</t>", "PLAIN", 1, true, true];
+        };
+    }
 }] call CBA_fnc_addEventHandler;
 
 [""] call NFA_fnc_addDefaultClasses;

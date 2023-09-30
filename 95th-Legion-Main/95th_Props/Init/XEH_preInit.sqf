@@ -1,3 +1,13 @@
+[
+    "enable_kit_checker_95th", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    "Enable The Arsenal Kit Checker", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "95th Aux Mod", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [false, true, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
+
 //-----------------------------# Weapons #-----------------------------------
 private _arsenalWeapons = [
 	"JLTS_DC15S","JLTS_DC15A_plastic","JLTS_DC15A","JLTS_DP23","3AS_WestarM5_F","JLTS_DC17SA","ACE_VMH3","ACE_VMM3","Weap_melee_knife","Knife_m3",
@@ -132,7 +142,6 @@ Arsenal_Class_Items_95th = [
 	["DSS_Support_Device"] // 14 - Support
 ];
 
-// Maybe change and have a seperate section for just placing class items into
 // What is: "SCH_B_LTD_Packed","SCH_B_WD_LTD_Packed"
 
 // What to do with:
