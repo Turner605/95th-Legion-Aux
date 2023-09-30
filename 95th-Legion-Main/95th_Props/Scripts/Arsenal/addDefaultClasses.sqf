@@ -3,7 +3,7 @@
 //-----------------------------# Weapon Options #-----------------------------------
 private _dc17s = ["JLTS_DC17SA","","JLTS_DC17SA_flashlight","",["JLTS_DC17SA_mag",20],["JLTS_stun_mag_long",5],""];
 private _dc15a = ["JLTS_DC15A_plastic","","","",["JLTS_DC15A_mag",60],["JLTS_stun_mag_long",5],""];
-private _dc15s = ["JLTS_DC15S","","","",["JLTS_DC15A_mag",60],["JLTS_stun_mag_long",5],""];
+private _dc15s = ["JLTS_DC15S","","","",["JLTS_DC15S_mag",80],["JLTS_stun_mag_long",5],""];
 private _dc15x = ["JLTS_DC15X","","","JLTS_DC15X_scope",["JLTS_DC15X_mag",15],[],""];
 
 //-----------------------------# Uniform Options #-----------------------------------
@@ -50,7 +50,7 @@ private _marksmanLoadout = [[
 private _riotLoadout = [[
 	_dc15s, [], _dc17s, 
 	_baseUniform, 
-	["95th_Vest_Trooper",[["JLTS_DC17SA_mag",2,20],["JLTS_stun_mag_long",2,5],["JLTS_DC15S_mag",7,60]]],
+	["95th_Vest_Trooper",[["JLTS_DC17SA_mag",2,20],["JLTS_stun_mag_long",2,5],["JLTS_DC15S_mag",7,80]]],
 	["95th_Backpack_Trooper",_baseBackpack + [["JLTS_riot_shield_item",1]]], 
 	"95th_Helmet_Trooper", 
 	"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""],
