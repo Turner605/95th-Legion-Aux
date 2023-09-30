@@ -27,7 +27,7 @@ private _FlamerBackpack = [""];
 private _riflemanLoadout = [[
 	_dc15a, [], _dc17s, 
 	_baseUniform, 
-	["95th_Vest_Trooper",[["JLTS_DC15A_mag",7,60],["JLTS_DC17SA_mag",2,20]]], 
+	["95th_Basic_Vest_Rifleman",[["JLTS_DC15A_mag",7,60],["JLTS_DC17SA_mag",2,20]]], 
 	["95th_Backpack_Trooper",_baseBackpack], 
 	"95th_Helmet_Trooper", 
 	"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""],
@@ -40,7 +40,7 @@ private _riflemanLoadout = [[
 private _marksmanLoadout = [[
 	_dc15x, [], _dc17s, 
 	_baseUniform, 
-	["95th_Vest_Trooper",[["JLTS_DC17SA_mag",2,20],["JLTS_stun_mag_long",2,5],["JLTS_DC15X_mag",7,15]]],
+	["95th_Basic_Vest_Marksman",[["JLTS_DC17SA_mag",2,20],["JLTS_stun_mag_long",2,5],["JLTS_DC15X_mag",7,15]]],
 	["95th_Backpack_Trooper",_baseBackpack], 
 	"95th_ARF_Helmet_Trooper", 
 	"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""],
@@ -53,7 +53,7 @@ private _marksmanLoadout = [[
 private _riotLoadout = [[
 	_dc15s, [], _dc17s, 
 	_baseUniform, 
-	["95th_Vest_Trooper",[["JLTS_DC17SA_mag",2,20],["JLTS_stun_mag_long",2,5],["JLTS_DC15S_mag",7,80]]],
+	["95th_Basic_Vest_Riot",[["JLTS_DC17SA_mag",2,20],["JLTS_stun_mag_long",2,5],["JLTS_DC15S_mag",7,80]]],
 	["95th_Backpack_Trooper",_baseBackpack + [["JLTS_riot_shield_item",1]]], 
 	"95th_Helmet_Trooper", 
 	"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""],
@@ -66,7 +66,7 @@ private _riotLoadout = [[
 private _heavyLoadout = [[
 	_z6, [], _dc17s, 
 	_baseUniform, 
-	["95th_Vest_Trooper",[["JLTS_DC17SA_mag",2,20],["JLTS_Z6_mag",7,300],["JLTS_stun_mag_long",2,5]]],
+	["95th_Basic_Vest_Heavy",[["JLTS_DC17SA_mag",2,20],["JLTS_Z6_mag",7,300],["JLTS_stun_mag_long",2,5]]],
 	["95th_Backpack_Trooper",_baseBackpack], 
 	"95th_Helmet_Trooper", 
 	"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""],
@@ -79,7 +79,7 @@ private _heavyLoadout = [[
 private _engineerLoadout = [[
 	_dc15a, [], _dc17s, 
 	_engineerUniform, 
-	["95th_Vest_Trooper",[["JLTS_DC15A_mag",7,60],["JLTS_DC17SA_mag",2,20]]],
+	["95th_Basic_Vest_Engineer",[["JLTS_DC15A_mag",7,60],["JLTS_DC17SA_mag",2,20]]],
 	["95th_Backpack_EOD",_engineerBackpack], 
 	"95th_Engineer_Helmet_Trooper", 
 	"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""],
