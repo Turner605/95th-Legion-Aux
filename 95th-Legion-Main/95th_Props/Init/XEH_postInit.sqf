@@ -24,4 +24,27 @@ player addEventHandler["Respawn", {
     }
 }];
 
+["ace_arsenal_displayClosed", {
+    private _allItems = items player;
+
+    private _classCount = 0;
+
+    {
+        private _classItems = _x;
+
+        {
+            if(_x in _allItems) then { _classCount = _classCount+1 };
+        } forEach _classItems;
+
+    } forEach Arsenal_Class_Items_95th;
+
+    systemChat str _classCount;
+
+	if (_classCount > 1) then {
+        2 cutText ["<t color='#ffffff' size='2'>You seem to be multi-certing.</t><br/><t color='#ffffff' size='2'>Please check your gear.</t>", "PLAIN", 1, true, true];
+    };
+
+    // ClassCount = nil;
+}] call CBA_fnc_addEventHandler;
+
 [""] call NFA_fnc_addDefaultClasses;

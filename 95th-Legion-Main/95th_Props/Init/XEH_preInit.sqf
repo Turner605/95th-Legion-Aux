@@ -118,14 +118,14 @@ Arsenal_Class_Items_95th = [
 	["JLTS_DC15X","JLTS_DW32S"], // 0 - Marksman
 	["JLTS_riot_shield_item"], // 1 - Riot
 	["NFL_Disc_Shield","3AS_DC15L_F","JLTS_Z6"], // 2 - Heavy
-	[""], // 3 - Engineer
-	[""], // 4 - Medic
+	[], // 3 - Engineer
+	[], // 4 - Medic
 	["3AS_PLX1_F","3AS_RPS6_HP"], // 5 - AT
-	[""], // 6 - Crewman
-	[""], // 7 - Pilot
+	[], // 6 - Crewman
+	[], // 7 - Pilot
 	["3AS_DC15C_F","3AS_DC15C_GL"], // 8 - NCO
 	["95th_FlameThrower"], // 9 - Flame
-	[""], // 10 - Jet
+	[], // 10 - Jet
 	["DSS_Cloaking_Device"], // 11 - Stealth
 	["JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL"], // 12 - Grenadier
 	["DSS_Hacking_Device"], // 13 - Tech
