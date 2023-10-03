@@ -273,6 +273,7 @@ class CfgWeapons {
 	class rockets_Skyfire;
 	class 95th_LAAT_Hydras: rockets_Skyfire {
 		displayName="Hydra IR Rockets";
+		canLock=2;
 		magazines[]= {"NFL_32Rnd_Proton_Missiles"};
 		magazineReloadTime=10;
 	};
