@@ -29,6 +29,7 @@ class CfgPatches {
 			"95th_Rifleman_Unit_Captain",
 			"95th_Rifleman_Unit_Lieutenant",
 			"95th_Rifleman_Unit_Volt",
+			"95th_Rifleman_Unit_Bretek",
 
 			"95th_MC_Unit_Zeus",
 			"95th_MC_Unit_Turner",
@@ -114,9 +115,10 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Volt","Jinter"};
-				class Volt { label = "Volt"; description = "Volts Uniform"; };
-				class Jinter { label = "Jinter"; description = "Jinters Uniform"; };
+				values[] = {"Volt","Jinter","Bretek"};
+				class Volt { label = "Volt"; description = "Volt's Uniform"; };
+				class Jinter { label = "Jinter"; description = "Jinter's Uniform"; };
+				class Bretek { label = "Bretek"; description = "Bretek's Uniform"; };
 			};
 		};
 
@@ -339,6 +341,7 @@ class cfgWeapons {
 
 	NEW_95TH_CUSTOM_P1_UNIFORM(Volt,Volt)};
 	NEW_95TH_CUSTOM_P1_UNIFORM(Jinter,Jinter)};
+	NEW_95TH_CUSTOM_P1_UNIFORM(Bretek,Bretek)};
 
 	NEW_95TH_MC_UNIFORM(Zeus,Zeus)};
 	NEW_95TH_MC_UNIFORM(Turner,Turner)};
@@ -413,6 +416,7 @@ class CfgVehicles {
 	NEW_95TH_RIFLEMAN_UNIT(Lieutenant,Veteran,Lieutenant)};
 	NEW_95TH_RIFLEMAN_UNIT(Volt,Volt,Sergeant)};
 	NEW_95TH_RIFLEMAN_UNIT(Jinter,Trooper,Sergeant)};
+	NEW_95TH_RIFLEMAN_UNIT(Bretek,Bretek,Sergeant)};
 
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_MC_UNIT(Zeus,Veteran,Zeus)};
