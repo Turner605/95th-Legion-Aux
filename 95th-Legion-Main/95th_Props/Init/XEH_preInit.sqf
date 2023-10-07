@@ -67,7 +67,7 @@ private _arsenalHelmets = [
 private _arsenalUniforms = [
 	"95th_P1_Uniform_Veteran","95th_P1_Uniform_Trooper","95th_P1_Uniform_Sergeant","95th_P1_Uniform_Senior","95th_P1_Uniform_Medic",
 	"95th_P1_Uniform_Lieutenant","95th_P1_Uniform_Captain","95th_P1_Uniform_Volt","95th_ColdAssault_Uniform_Trooper","95th_MC_Uniform_Zeus",
-	"95th_MC_Uniform_Turner","95th_Commando_Uniform_Trooper","95th_P1_Uniform_Jinter"
+	"95th_MC_Uniform_Turner","95th_Commando_Uniform_Trooper","95th_P1_Uniform_Jinter","95th_P1_Uniform_Bretek"
 ];
 
 //-----------------------------# Vests #-----------------------------------
