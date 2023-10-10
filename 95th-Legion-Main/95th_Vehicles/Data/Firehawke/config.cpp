@@ -888,8 +888,11 @@ class CfgVehicles {
 						minTurn = -360;
 						maxTurn = 360;
 						initTurn = 0;
-						weapons[] = {"JMSLLTE_vg_HMS3_S1_cannon"};
-						magazines[] = {"JMSLLTE_30Rnd_hms2_HE_shells","JMSLLTE_30Rnd_hms2_HE_shells","JMSLLTE_30Rnd_hms2_HE_shells","JMSLLTE_30Rnd_hms2_AT_shells","JMSLLTE_30Rnd_hms2_AT_shells"};
+						weapons[] = {"3AS_Sabre_Cannons", "3as_saber_autocannon_30mm"};
+						magazines[] = {
+							"3AS_50Rnd_Sabre_mag","3AS_50Rnd_Sabre_mag","3AS_50Rnd_Sabre_mag","3AS_50Rnd_Sabre_mag","3AS_50Rnd_Sabre_mag","3AS_50Rnd_Sabre_mag",
+							"3as_saber_80Rnd_autocannon_30mm_mag","3as_saber_80Rnd_autocannon_30mm_mag","3as_saber_80Rnd_autocannon_30mm_mag","3as_saber_80Rnd_autocannon_30mm_mag"
+						};
 						soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner",0.15848932,1,50};
 						soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner_vertical",0.15848932,1,50};
 						outGunnerMayFire = 0;
@@ -1161,8 +1164,8 @@ class CfgVehicles {
 				gunnerGetInAction = "GetInLow";
 				gunnerGetOutAction = "GetOutLow";
 				gunnerType = "95th_Rifleman_Unit_Trooper";
-				weapons[] = {"JMSLLTE_vg_mk4es_s1_gun"};
-				magazines[] = {"JMSLLTE_500Rnd_mk4escannon_mag","JMSLLTE_500Rnd_mk4escannon_mag","JMSLLTE_500Rnd_mk4escannon_mag","JMSLLTE_500Rnd_mk4escannon_mag","JMSLLTE_500Rnd_mk4escannon_mag","JMSLLTE_500Rnd_mk4escannon_mag"};
+				weapons[] = {"3AS_Sabre_MG"};
+				magazines[] = {"3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag"};
 				soundServo[] = {"",0.15848932,1,50};
 				soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\noises\servo_armor_gunner_vertical",0.15848932,1,50};
 				memoryPointGun = "usti hlavne1";
@@ -1239,9 +1242,9 @@ class CfgVehicles {
 			mat[] = {"95th_Vehicles\Data\Firehawke\firehawke.rvmat","95th_Vehicles\Data\Firehawke\firehawke_damage.rvmat","95th_Vehicles\Data\Firehawke\destruct.rvmat"};
 		};
 		class AnimationSources: AnimationSources {
-			class recoil_source { source = "reload"; weapon = "JMSLLTE_vg_mk4es_s1_gun"; };
-			class recoil_source_main { source = "reload"; weapon = "JMSLLTE_vg_HMS3_S1_cannon"; };
-			class muzzle_source { source = "reload"; weapon = "JMSLLTE_vg_mk4es_s1_gun"; };
+			class recoil_source { source = "reload"; weapon = "3AS_Sabre_MG"; };
+			class recoil_source_main { source = "reload"; weapon = "3AS_Sabre_Cannons"; };
+			class muzzle_source { source = "reload"; weapon = "3AS_Sabre_MG"; };
 			class HideBagsSide { displayName = "Hide side bags"; author = "JMax"; source = "user"; animPeriod = 1; initPhase = 1; mass = -15; };
 			class HideBagsTurret { displayName = "Hide turret bags"; author = "JMax"; source = "user"; animPeriod = 1; initPhase = 1; mass = -5; };
 			class HideCrates { displayName = "Hide crates"; author = "JMax"; source = "user"; animPeriod = 1; initPhase = 1; mass = -20; };
