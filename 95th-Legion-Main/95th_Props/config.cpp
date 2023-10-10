@@ -256,6 +256,11 @@ class CfgVehicles {
 		editorCategory="95th_Props";
 		editorSubcategory="95th_Ground_Utilities";
 		class UserActions {
+			class SpawnFirehawke {
+				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+				displayName = "Spawn [95th] Firehawke";
+				statement = "[this, player, '95th_Firehawke'] spawn NFA_fnc_handleGroundSpawned;"; 
+			};
 			class SpawnTX130 {
 				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
 				displayName = "Spawn [95th] TX-130";

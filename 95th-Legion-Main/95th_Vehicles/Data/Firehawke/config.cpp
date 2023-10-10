@@ -1,3 +1,7 @@
+//Known issues:
+// - Red muzzle flash
+// - Cannon doesnt recoil for HE shots
+
 #define _ARMA_
 
 //(5 Enums)
@@ -14,7 +18,7 @@ class CfgPatches {
 		units[] = {"95th_Firehawke"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Armor_F_Beta"};
+		requiredAddons[] = {"A3_Armor_F_Beta", "3AS_SaberTank"};
 		author = "JMax";
 	};
 };
@@ -1271,7 +1275,7 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;
 		_generalMacro = "95th_Firehawke";
-		displayName = "S-1 FireHawke Heavy Repulsortank";
+		displayName = "[95th] FireHawke";
 		picture = "\95th_Vehicles\Data\Firehawke\data\pic_s1.paa";
 		Icon = "\95th_Vehicles\Data\Firehawke\data\ico_s1.paa";
 		side = 1;
@@ -1280,5 +1284,16 @@ class CfgVehicles {
 		typicalCargo[] = {"95th_Rifleman_Unit_Trooper"};
 		textureList[] = {"Tex_S1_grey",1};
 		animationList[] = {"HideBagsSide",0.3,"HideBagsTurret",0.5,"HideCrates",0.15};
+		ace_cargo_space = 26;
+		tas_canBlift=1;
+		tas_liftVars="[[[[0, -4, -4]]], [0.1], [-0.5]]";
+		class ACE_Cargo {
+			class Cargo {
+				class track {
+					type = "ACE_Track";
+					amount = 2;
+				};
+			};
+		};
 	};
 };

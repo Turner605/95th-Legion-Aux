@@ -53,7 +53,7 @@ class cfgUnitInsignia
 
 	class 95th_Insignia_Squad_4
 	{
-		displayName = "1-4 Mythosaur";
+		displayName = "1-4 Sarlacc";
 		author="95th Aux Team";
 		texture="\95th_Insignias\PAAs\Squad_4.paa";
 		textureVehicle="";
