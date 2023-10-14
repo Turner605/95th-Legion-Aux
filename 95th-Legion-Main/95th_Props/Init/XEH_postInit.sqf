@@ -36,7 +36,7 @@ player addEventHandler["Respawn", {
         if(!(_launcher == "")) then {_allItems pushBack _launcher};
 
         private _classCount = 0;
-
+        // Bug where multiple items from a class will increase the count, need to exit when it finds something of a class
         {
             private _classItems = _x;
 
