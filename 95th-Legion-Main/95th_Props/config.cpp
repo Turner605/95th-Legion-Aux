@@ -35,7 +35,9 @@ class CfgPatches {
 			"95th_3AS_Barricade_2_C_prop",
 			"95th_Land_lsb_fob_hBarrier_wall",
 			"95th_3AS_Short_Wall_Bunker",
-			"95th_3AS_HeavyRepeater_Unarmoured"
+			"95th_3AS_HeavyRepeater_Unarmoured",
+
+			"Medical_Shield_95th"
         };
 	};
 };
@@ -488,6 +490,21 @@ class CfgVehicles {
 		displayName="[95th] TX Shield";
 		editorCategory="95th_Props";
 		editorSubcategory="95th_Misc";
+	};
+
+	class SquadShield;
+	class Medical_Shield_95th: SquadShield {
+		model="3AS\3AS_Shield\SquadShield.p3d";
+		vehicleClass="VRObjects";
+		armor=999999;
+		simulation="Fountain";
+		armorStructural=999;
+		scope=1;
+		scopecurator=1;
+		displayName="-";
+		editorCategory="EdCat_VRObjects";
+		editorSubcategory="EdSubcat_Helpers";
+		sound="Shield";
 	};
 };
 

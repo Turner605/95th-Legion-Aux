@@ -8,37 +8,37 @@ class CfgPatches {
 	};
 };
 
-class CfgAmmo
-{
-	class ls_ammo_classC_thermalDet;
-	class 95th_Thermal_T1_Ammo: ls_ammo_classC_thermalDet {
-		model="3as\3AS_Equipment\model\3AS_Thermaldet.p3d";  
+class CfgAmmo {
+	class DSS_Ammo_Grenade_Dummy;
+
+	class NFL_Ammo_Grenade_Medical_Shield: DSS_Ammo_Grenade_Dummy {
+		model="3AS\3AS_Shield\SquadShield_Throwable.p3d";
 	};
 };
 
 class cfgMagazines {
-	class ls_mag_classC_thermalDet;
-	class 95th_Thermal_T1_Grenade: ls_mag_classC_thermalDet {
-		author="95th Aux Team";
-		model="3as\3AS_Equipment\model\3AS_Thermaldet.p3d";
-		displayName="Thermal Detonator [T1]";
-		displayNameShort="T1 Thermal Det";
-		descriptionShort="Type: Offensive Explosive Grenade<br />Rounds: 1<br />Used in: Hand";
-		picture="\95th_Equipment\Data\Grenades\ThermalDet.paa";
-		ammo="95th_Thermal_T1_Ammo";
+	class DSS_Magazine_Grenade_Dummy;
+
+	class NFL_Magazine_Grenade_Medical_Shield: DSS_Magazine_Grenade_Dummy {
+		displayName = "[95th] Medical Shield"; descriptionShort="Medical Squad Shield"; displayNameShort="Medic Shield";
+		ammo = "NFL_Ammo_Grenade_Medical_Shield"; scope=2;
+		NFL_Is_Medical_Shield = 1;
+		mass=60; value=1; count=1;
+		initSpeed=18; maxLeadSpeed=7; type=256;
+		model="3as\3as_shield\SquadShield_Throwable.p3d";
 	};
 };
 
-class CfgWeapons{
+class CfgWeapons {
 	class GrenadeLauncher;
 	class Throw: GrenadeLauncher {
 		class ThrowMuzzle;
 
-		muzzles[]+={"95th_Thermal_T1_Muzzle"};
-
-		class 95th_Thermal_T1_Muzzle: ThrowMuzzle {
-			magazines[]={"95th_Thermal_T1_Grenade"};
+		muzzles[]+={
+			"NFL_Muzzle_Grenade_Medical_Shield"
 		};
+
+		class NFL_Muzzle_Grenade_Medical_Shield: ThrowMuzzle { magazines[] = {"NFL_Magazine_Grenade_Medical_Shield"}; };
 	};
 
 	class CBA_MiscItem;
@@ -63,6 +63,8 @@ class CfgFunctions {
 		class Equipment {
 			class handleDiscPressed {file = "\95th_Equipment\Scripts\handleDiscPressed.sqf";};
 			class handleDiscTriggered {file = "\95th_Equipment\Scripts\handleDiscTriggered.sqf";};
+
+			class handle {file = "\95th_Equipment\Scripts\handleDiscTriggered.sqf";};
 		};
 	};
 };
@@ -70,6 +72,12 @@ class CfgFunctions {
 class Extended_PreInit_EventHandlers {
 	class NFL_Equipment_PreInit {
 		init="call compile preprocessFileLineNumbers '\95th_Equipment\Init\XEH_preInit.sqf'";
+	};
+};
+
+class Extended_PostInit_EventHandlers {
+	class NFL_Equipment_PostInit {
+		init="call compile preprocessFileLineNumbers '\95th_Equipment\Init\XEH_postInit.sqf'";
 	};
 };
 
