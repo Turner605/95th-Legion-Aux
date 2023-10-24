@@ -65,7 +65,8 @@ class CfgFunctions {
 			class handleDiscPressed {file = "\95th_Equipment\Scripts\handleDiscPressed.sqf";};
 			class handleDiscTriggered {file = "\95th_Equipment\Scripts\handleDiscTriggered.sqf";};
 
-			class handleMedicalShield {file = "\95th_Equipment\Scripts\handleMedicalShield.sqf";};
+			class handleMedicalShield {file = "\95th_Equipment\Scripts\Medical Squad Shield\handleMedicalShield.sqf";};
+			class handleMedicalShieldBandages {file = "\95th_Equipment\Scripts\Medical Squad Shield\handleMedicalShieldBandages.sqf";};
 		};
 	};
 };
