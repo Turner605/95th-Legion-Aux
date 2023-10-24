@@ -13,6 +13,7 @@ class CfgAmmo {
 
 	class NFL_Ammo_Grenade_Medical_Shield: DSS_Ammo_Grenade_Dummy {
 		model="3AS\3AS_Shield\SquadShield_Throwable.p3d";
+		simulation="shotShell";
 	};
 };
 
