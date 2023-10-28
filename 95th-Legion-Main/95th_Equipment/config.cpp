@@ -3,7 +3,7 @@ class CfgPatches {
         author="95th Aux Team";
         name="95th Legion Equipment";
 		requiredAddons[]={"ls_weapons"};
-		weapons[] = {"NFL_Disc_Shield"};
+		weapons[] = {"NFL_Disc_Shield","NFL_Auto_Turret"};
 		units[]={};
 	};
 };
@@ -50,7 +50,20 @@ class CfgWeapons {
         author="95th Aux";
 		displayName = "Disc Shield Generator";
 		descriptionShort = "Disc Shield Generator";
-		model = ""; //todo
+		model = "\a3\structures_f_heli\items\electronics\tablet_01_f.p3d";
+		picture = ""; //todo
+		scope = 2;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 44;
+        };
+    };
+
+	class NFL_Auto_Turret: CBA_MiscItem {
+		NFL_IsAutoTurretDevice = 1;
+        author="95th Aux";
+		displayName = "Auto Turret Deployer";
+		descriptionShort = "Auto Turret Deployer";
+		model = "\a3\structures_f_heli\items\electronics\tablet_01_f.p3d";
 		picture = ""; //todo
 		scope = 2;
         class ItemInfo: CBA_MiscItem_ItemInfo {
@@ -67,6 +80,9 @@ class CfgFunctions {
 
 			class handleMedicalShield {file = "\95th_Equipment\Scripts\Medical Squad Shield\handleMedicalShield.sqf";};
 			class handleMedicalShieldBandages {file = "\95th_Equipment\Scripts\Medical Squad Shield\handleMedicalShieldBandages.sqf";};
+
+			class handleAutoTurretPressed {file = "\95th_Equipment\Scripts\Engineer Auto Turret\handleAutoTurretPressed.sqf";};
+			class handleAutoTurretTriggered {file = "\95th_Equipment\Scripts\Engineer Auto Turret\handleAutoTurretTriggered.sqf";};
 		};
 	};
 };
@@ -90,12 +106,20 @@ class CfgUserActions {
 		onActivate = "_this call NFA_fnc_handleDiscPressed";
 		modifierBlocking = 1;
 	};
+
+	class NFL_Auto_Turret {
+		displayName = "Deploy Auto Turret";
+		tooltip = "Bind to deploy the auto turret";
+		onActivate = "_this call NFA_fnc_handleAutoTurretPressed";
+		modifierBlocking = 1;
+	};
 };
 
 class CfgDefaultKeysPresets {
 	class Arma2 {
 		class Mappings {
 			NFL_Disc_Shield[] = {0x25};
+			NFL_Auto_Turret[] = {0x25};
 		};
 	};
 };
@@ -104,7 +128,7 @@ class UserActionGroups {
 	class NFL_Equipment {
 		name = "95th Legion";
 		isAddon = 1;
-		group[] = {"NFL_Disc_Shield"};
+		group[] = {"NFL_Disc_Shield","NFL_Auto_Turret"};
 	};
 };
 
