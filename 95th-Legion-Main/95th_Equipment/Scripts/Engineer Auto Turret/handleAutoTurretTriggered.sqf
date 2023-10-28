@@ -13,6 +13,8 @@ private _loopMid = createVehicle ["ls_tracer_stun_placeable", [0,0,0], [], 0, "C
 private _loopTop = createVehicle ["ls_tracer_stun_placeable", [0,0,0], [], 0, "CAN_COLLIDE"]; 
 private _turret = createVehicle ["JLTS_UST_turret_GAR", [0,0,0], [], 0, "CAN_COLLIDE"];
 
+private _toDeleteVics = [_logic, _loopBase, _loopMid, _loopTop, _turret];
+
 _logic setPos [0,0,0];
 _loopBase setPos [0,0,0];
 _loopMid setPos [0,0,0.3];
@@ -39,31 +41,12 @@ _logic setPos _placementPos;
 _turret setDamage 0;
 createVehicleCrew _turret; 
 
-// private _shield = "Shield_Deployed" createVehicle getPos _unit;
-playSound3D ["3AS\3AS_Shield\shield_grenade\enable.ogg", _turret, false, getPos _turret, 5, 0.7, 25];
-// _shield attachTo [_unit, [0.3, 1, -0.3], "Gun", true]; _shield setdir 0;
+[{
+	params["_turret", "_logic", "_unit", "_toDeleteVics", "_logicGroup"];
+	if(alive _turret) then {[_unit, _toDeleteVics, _logicGroup] call NFA_fnc_handleAutoTurretEnd}
+}, [_turret, _unit, _toDeleteVics, _logicGroup], NFL_Medical_Shield_Duration] call CBA_fnc_waitAndExecute;
 
-sleep NFL_Auto_Turret_Duration;
-
-NFL_Auto_Turret_On_Cooldown = 1;
-NFL_Auto_Turret_Active = 0;
-playSound3D ["3AS\3AS_Shield\shield_grenade\disable.ogg", _turret, false, getPos _turret, 5, 0.7, 25];
-sleep 0.5;
-// detach _shield;
-// deleteVehicle _shield;
-
-deleteVehicle _loopBase;
-deleteVehicle _loopMid;
-deleteVehicle _loopTop;
-deleteVehicle _turret;
-deleteVehicle _logic;
-deleteGroup _logicGroup;
-
-sleep NFL_Auto_Turret_Cooldown_Duration;
-NFL_Auto_Turret_On_Cooldown = 0;
-
-
-//TODO:
-// Allow press again to recall turret
-// Activate cooldown when turret destroyed
-
+[{alive (_this select 0)}, {
+	params["_turret", "_loopBase", "_unit", "_toDeleteVics", "_logicGroup"];
+	if(alive _loopBase) then {[_unit, _toDeleteVics, _logicGroup] call NFA_fnc_handleAutoTurretEnd}
+}, [_turret, _loopBase, _unit, _toDeleteVics, _logicGroup]] call CBA_fnc_waitUntilAndExecute;

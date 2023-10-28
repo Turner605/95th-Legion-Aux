@@ -83,6 +83,7 @@ class CfgFunctions {
 
 			class handleAutoTurretPressed {file = "\95th_Equipment\Scripts\Engineer Auto Turret\handleAutoTurretPressed.sqf";};
 			class handleAutoTurretTriggered {file = "\95th_Equipment\Scripts\Engineer Auto Turret\handleAutoTurretTriggered.sqf";};
+			class handleAutoTurretEnd {file = "\95th_Equipment\Scripts\Engineer Auto Turret\handleAutoTurretEnd.sqf";};
 		};
 	};
 };
