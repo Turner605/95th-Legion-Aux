@@ -60,7 +60,7 @@ private _arsenalHelmets = [
 	"95th_Helmet_Outcast","95th_Helmet_Veteran","95th_Helmet_Senior","95th_Helmet_Medic","95th_Hazard_Helmet_Trooper","95th_Engineer_Helmet_Revan",
 	"95th_Engineer_Helmet_Kong","95th_Engineer_Helmet_Trooper","95th_ColdAssault_Helmet_Trooper","95th_ARF_Helmet_Trooper","95th_ARC_Helmet_Trooper",
 	"95th_Airborne_Helmet_Trooper","95th_Engineer_Helmet_Som","95th_Commando_Helmet_Trooper","95th_ARF_Helmet_Osprey","95th_ARF_Helmet_Sythe",
-	"95th_Helmet_Smaug","95th_Helmet_Commie","95th_Helmet_Ratler","95th_ARF_Helmet_Cheezy","95th_Helmet_Som","95th_Helmet_Hypo"
+	"95th_Helmet_Smaug","95th_Helmet_Commie","95th_Helmet_Ratler","95th_ARF_Helmet_Cheezy","95th_Helmet_Som","95th_Helmet_Hypo", "95th_Helmet_MadHatter"
 ];
 
 //-----------------------------# Uniforms #-----------------------------------

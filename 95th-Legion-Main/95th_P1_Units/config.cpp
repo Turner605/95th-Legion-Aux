@@ -166,7 +166,7 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery","Som","Solvest","Ratler"};
+				values[] = {"Trooper","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery","Som","Solvest","Ratler","MadHatter"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 				class Medic { label = "Medic"; description = "Medic Helmet"; };
 				class Senior { label = "Senior"; description = "Senior Helmet"; };
@@ -190,6 +190,7 @@ class XtdGearModels {
 				class Som { label = "Som"; description = "Som's Helmet"; };
 				class Solvest { label = "Solvest"; description = "Solvest's Helmet"; };
 				class Ratler { label = "Ratler"; description = "Ratler's Helmet"; };
+				class MadHatter { label = "Mad Hatter"; description = "Mad Hatter's Helmet"; };
 			};
 		};
 
@@ -376,6 +377,7 @@ class cfgWeapons {
 	NEW_95TH_P1_HELMET(Som)};
 	NEW_95TH_P1_HELMET(Solvest)};
 	NEW_95TH_P1_HELMET(Ratler)};
+	NEW_95TH_P1_HELMET(MadHatter)};
 
 	NEW_95TH_P1_PILOT_HELMET(Trooper)};
 	NEW_95TH_P1_PILOT_HELMET(Jinter)};
