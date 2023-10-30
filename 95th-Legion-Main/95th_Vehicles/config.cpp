@@ -1,4 +1,5 @@
 #include "Macros\LAAT Texture.hpp"
+#include "Macros\LAAT Shared.hpp"
 
 class CfgPatches {
 	class 95th_Legion_Vehicles {
@@ -192,6 +193,8 @@ class CfgAmmo {
 		craterEffects = "AAMissileCrater";
 		effectsMissile = "NFL_Proton_Missile";
 		explosionEffects = "AAMissileExplosion";
+		lockingTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_1",0.562341,1};
+		lockedTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_1",0.562341,4};
 		hit = 700;
 		indirectHit = 85;
 		indirectHitRange = 5;
@@ -226,6 +229,25 @@ class CfgAmmo {
 			};
 		};
 	};
+
+	class Bomb_04_F;
+	class NFL_LAAT_Resupply_Launcher_Ammo: Bomb_04_F {
+		hit = 1;
+		indirectHit = 1;
+		indirectHitRange = 2000;
+		model = "3AS\3AS_AMMO\MODEL\EMP_BOMB.p3d";
+		craterEffects = "BombCrater";
+		explosionEffects = "EMPBomb_CE";
+		explosionSoundEffect = "DefaultExplosion";
+		explosionTime = 3;
+		fuseDistance = 35;
+		multiSoundHit[] = {"soundHit1",0.2,"soundHit2",0.2,"soundHit3",0.2,"soundHit4",0.2,"soundHit5",0.2};
+		soundHit1[] = {"\A3\Sounds_F\weapons\Explosion\expl_big_1",2.51189,1,2400};
+		soundHit2[] = {"\A3\Sounds_F\weapons\Explosion\expl_big_2",2.51189,1,2400};
+		soundHit3[] = {"\A3\Sounds_F\weapons\Explosion\expl_big_3",2.51189,1,2400};
+		soundHit4[] = {"\A3\Sounds_F\weapons\Explosion\expl_shell_1",2.51189,1,2400};
+		soundHit5[] = {"\A3\Sounds_F\weapons\Explosion\expl_shell_2",2.51189,1,2400};
+	};
 };
 
 class CfgMagazines {
@@ -247,6 +269,17 @@ class CfgMagazines {
 		initSpeed = 0;
 		maxLeadSpeed = 55.5556;
 		nameSound = "missiles";
+	};
+
+	class PylonMissile_Bomb_GBU12_x1;
+	class NFL_LAAT_Resupply_Launcher_Magazine: PylonMissile_Bomb_GBU12_x1 {
+		displayName = "Base Resupply Bomb";
+		count = 1;
+		model = "a3\weapons_f\empty.p3d";
+		// hardpoints[] = {"ARC_EMP_RAIL"};
+		// pylonWeapon = "3AS_ARC_EMP";
+		ammo = "NFL_LAAT_Resupply_Launcher_Ammo";
+		mass = 230;
 	};
 };
 
@@ -277,6 +310,13 @@ class CfgWeapons {
 		magazines[]= {"NFL_32Rnd_Proton_Missiles"};
 		magazineReloadTime=10;
 	};
+
+	class weapon_GBU12Launcher;
+	class NFL_LAAT_Resupply_Launcher: weapon_GBU12Launcher {
+		displayName = "Resupply Launcher";
+		magazines[] = {"NFL_LAAT_Resupply_Launcher_Magazine"};
+		model = "a3\weapons_f\empty.p3d";
+	};
 };
 
 class CfgVehicles {
@@ -284,39 +324,22 @@ class CfgVehicles {
 	class 3as_LAAT_Mk1;
 
 	class 95th_LAAT_Mrk1: 3as_LAAT_Mk1 {
-		scope=2;
-		tas_can_impulse=0;
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 400;
-		ls_impulsor_boostSpeed_2 = 800;
-		scopecurator=2;
 		displayname="[95th] LAAT/I Mk.1";
-		author="95th Aux Team";
-		faction="95th_Legion_Faction_Clones";
-		ace_cargo_space = 26;
-		ace_cargo_hasCargo = 1;
-        crew = "95th_Pilot_Unit_Trooper";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
-		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","95th_LAAT_Hydras","3as_LAAT_Missile_AA","CMFlareLauncher"};
-		magazines[]={
-			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-			"NFL_32Rnd_Proton_Missiles",
-			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
-			"Laser_Battery","Laser_Battery",
-			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
-		};
-		class TextureSources {
-			textureList[] = {"Default",1,"Jinter",0,"Chip",0};
+		NEW_SHARED_LAAT_CONFIG()
 
-			NEW_95TH_LAAT_TEXTURE(Default)};
-			NEW_95TH_LAAT_TEXTURE(Jinter)};
-			NEW_95TH_LAAT_TEXTURE(Chip)};
-		};
-		class UserActions {
-			class AddLAATRespawn {
-				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
-				displayName = "Toggle Mobile Respawn";
-				statement = "[this, player] spawn NFA_fnc_handleLAATRespawnToggle;"; 
+		class ACE_SelfActions {
+            class addResupplyBomb {
+				displayName = "Load Resupply Drop";
+				condition = "true"; exceptions[] = {}; statement = ""; icon = "";
+
+				class addAmmoBomb {
+					displayName = "Load Ammo Drop";
+					condition = "true"; // Check if is near landing pad
+					exceptions[] = {};
+					statement = "[_target, _player, 'Medical'] call NFA_fnc_handleLoadBomb;";
+					icon = "";
+				};
 			};
 		};
 	};
@@ -324,75 +347,15 @@ class CfgVehicles {
 	class 3as_LAAT_Mk2;
 	class 95th_LAAT_Mrk2: 3as_LAAT_Mk2 {
 		displayname="[95th] LAAT/I Mk.2";
-		tas_can_impulse=0;
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 400;
-		ls_impulsor_boostSpeed_2 = 800;
-		author="95th Aux Team";
-        crew = "95th_Pilot_Unit_Trooper";
-		ace_cargo_space = 26;
-		ace_cargo_hasCargo = 1;
-		faction="95th_Legion_Faction_Clones";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
-		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","95th_LAAT_Hydras","3as_LAAT_Missile_AA","CMFlareLauncher"};
-		magazines[]={
-			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-			"NFL_32Rnd_Proton_Missiles",
-			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
-			"Laser_Battery","Laser_Battery",
-			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
-		};
-		class TextureSources {
-			textureList[] = {"Default",1,"Jinter",0,"Chip",0};
-
-			NEW_95TH_LAAT_TEXTURE(Default)};
-			NEW_95TH_LAAT_TEXTURE(Jinter)};
-			NEW_95TH_LAAT_TEXTURE(Chip)};
-		};
-		class UserActions {
-			class AddLAATRespawn {
-				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
-				displayName = "Toggle Mobile Respawn";
-				statement = "[this, player] spawn NFA_fnc_handleLAATRespawnToggle;"; 
-			};
-		};
+		NEW_SHARED_LAAT_CONFIG()
 	};
 
 	class 3as_LAAT_Mk2Lights;
 	class 95th_LAAT_Mrk2Lights: 3as_LAAT_Mk2Lights {
 		displayname="[95th] LAAT/I Mk.2 (Lamps)";
-		tas_can_impulse=0;
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 400;
-		ls_impulsor_boostSpeed_2 = 800;
-		author="95th Aux Team";
-		faction="95th_Legion_Faction_Clones";
-		ace_cargo_space = 26;
-		ace_cargo_hasCargo = 1;
-        crew = "95th_Pilot_Unit_Trooper";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
-		weapons[]={"95th_LAAT_Light_Cannon","95th_LAAT_Heavy_Cannon","95th_LAAT_Hydras","3as_LAAT_Missile_AA","CMFlareLauncher"};
-		magazines[]={
-			"3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-			"NFL_32Rnd_Proton_Missiles",
-			"240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine","240Rnd_CMFlare_Chaff_Magazine",
-			"Laser_Battery","Laser_Battery",
-			"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine"
-		};
-		class TextureSources {
-			textureList[] = {"Default",1,"Jinter",0,"Chip",0};
-
-			NEW_95TH_LAAT_TEXTURE(Default)};
-			NEW_95TH_LAAT_TEXTURE(Jinter)};
-			NEW_95TH_LAAT_TEXTURE(Chip)};
-		};
-		class UserActions {
-			class AddLAATRespawn {
-				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
-				displayName = "Toggle Mobile Respawn";
-				statement = "[this, player] spawn NFA_fnc_handleLAATRespawnToggle;"; 
-			};
-		};
+		NEW_SHARED_LAAT_CONFIG()
 	};
 
 	//############################################################### Sabers ###############################################################
@@ -569,6 +532,9 @@ class CfgFunctions {
 			class handleTXRemoved {file = "\95th_Vehicles\Scripts\TXShield\handleTXRemoved.sqf";};
 			class handleTXShieldDamage {file = "\95th_Vehicles\Scripts\TXShield\handleTXShieldDamage.sqf";};
 			class TXShieldOffAnimation {file = "\95th_Vehicles\Scripts\TXShield\TXShieldOffAnimation.sqf";};
+
+			class handleLoadBomb {file = "\95th_Vehicles\Scripts\Resupply Bomb\handleLoadBomb.sqf";};
+			class handleBombDetonated {file = "\95th_Vehicles\Scripts\Resupply Bomb\handleBombDetonated.sqf";};
 		};
 	};
 };

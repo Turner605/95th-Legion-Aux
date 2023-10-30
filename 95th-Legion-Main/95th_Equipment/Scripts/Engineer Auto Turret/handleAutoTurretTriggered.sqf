@@ -25,14 +25,14 @@ _loopBase setVectorDirAndUp [[0,0,-1], [0,1,0]];
 _loopMid setVectorDirAndUp [[0,0,-1], [0,1,0]]; 
 _loopTop setVectorDirAndUp [[0,0,-1], [0,1,0]]; 
  
-[_loopBase, 0.5] remoteExec ["setObjectScale"]; 
-[_loopMid, 0.4] remoteExec ["setObjectScale"]; 
-[_loopTop, 0.3] remoteExec ["setObjectScale"];
-
 [_loopBase, _logic] call BIS_fnc_attachToRelative;
 [_loopMid, _logic] call BIS_fnc_attachToRelative;
 [_loopTop, _logic] call BIS_fnc_attachToRelative;
 [_turret, _logic] call BIS_fnc_attachToRelative;
+
+[_loopBase, 0.5] remoteExec ["setObjectScale"]; 
+[_loopMid, 0.4] remoteExec ["setObjectScale"]; 
+[_loopTop, 0.3] remoteExec ["setObjectScale"];
 
 private _placementPos = _unit modelToWorld [0,2,0];
 
@@ -44,9 +44,9 @@ createVehicleCrew _turret;
 [{
 	params["_turret", "_logic", "_unit", "_toDeleteVics", "_logicGroup"];
 	if(alive _turret) then {[_unit, _toDeleteVics, _logicGroup] call NFA_fnc_handleAutoTurretEnd}
-}, [_turret, _unit, _toDeleteVics, _logicGroup], NFL_Medical_Shield_Duration] call CBA_fnc_waitAndExecute;
+}, [_turret, _unit, _toDeleteVics, _logicGroup], NFL_Auto_Turret_Duration] call CBA_fnc_waitAndExecute;
 
-[{alive (_this select 0)}, {
+[{!alive (_this select 0)}, {
 	params["_turret", "_loopBase", "_unit", "_toDeleteVics", "_logicGroup"];
 	if(alive _loopBase) then {[_unit, _toDeleteVics, _logicGroup] call NFA_fnc_handleAutoTurretEnd}
 }, [_turret, _loopBase, _unit, _toDeleteVics, _logicGroup]] call CBA_fnc_waitUntilAndExecute;

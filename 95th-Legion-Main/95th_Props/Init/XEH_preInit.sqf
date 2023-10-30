@@ -60,7 +60,8 @@ private _arsenalHelmets = [
 	"95th_Helmet_Outcast","95th_Helmet_Veteran","95th_Helmet_Senior","95th_Helmet_Medic","95th_Hazard_Helmet_Trooper","95th_Engineer_Helmet_Revan",
 	"95th_Engineer_Helmet_Kong","95th_Engineer_Helmet_Trooper","95th_ColdAssault_Helmet_Trooper","95th_ARF_Helmet_Trooper","95th_ARC_Helmet_Trooper",
 	"95th_Airborne_Helmet_Trooper","95th_Engineer_Helmet_Som","95th_Commando_Helmet_Trooper","95th_ARF_Helmet_Osprey","95th_ARF_Helmet_Sythe",
-	"95th_Helmet_Smaug","95th_Helmet_Commie","95th_Helmet_Ratler","95th_ARF_Helmet_Cheezy","95th_Helmet_Som","95th_Helmet_Hypo", "95th_Helmet_MadHatter"
+	"95th_Helmet_Smaug","95th_Helmet_Commie","95th_Helmet_Ratler","95th_ARF_Helmet_Cheezy","95th_Helmet_Som","95th_Helmet_Hypo", "95th_Helmet_MadHatter",
+	"95th_P1_Pilot_Helmet_Outcast"
 ];
 
 //-----------------------------# Uniforms #-----------------------------------
@@ -92,7 +93,7 @@ private _arsenalGear = [
 	"lsd_gar_p1Interior_flashlight","lsd_gar_p1Interior_hud","95th_P1_Facewear_Lamps","SWLB_CEE_Clone_Scarf","SWLB_CEE_Clone_Scarf_Orange",
 	"SWLB_CEE_Clone_Scarf_White","95th_P1_Nightvision_Invisible","95th_P1_Nightvision_Macrobinoculars","95th_P1_Nightvision_Rangefinder",
 	"JLTS_CloneBinocular","JLTS_CloneBinocular_black","ItemMap","ItemCompass","JLTS_clone_comlink","TFAR_microdagr","ItemWatch","ACE_Altimeter",
-	"ItemGPS","B_UavTerminal"
+	"ItemGPS","B_UavTerminal","SWLB_clone_ARF_antenna_HUD"
 ]; 
 
 //-----------------------------# Medical #-----------------------------------
@@ -119,7 +120,7 @@ private _arsenalGrenades = [
     "OPTRE_M8_Flare","OPTRE_M8_Flare_White","OPTRE_M8_Flare_Yellow","B_IR_Grenade","ls_mag_glowrod_hiBlue","ls_mag_glowrod_hiGreen","ls_mag_glowrod_hiOrange",
     "ls_mag_glowrod_hiRed","ls_mag_glowrod_hiWhite","ls_mag_glowrod_hiYellow","JLTS_grenade_emp_mag","DSS_Grenade_Magazine_Thermal_C1","DSS_Magazine_Grenade_Sonar",
     "DSS_Magazine_Grenade_Hacker","DSS_Magazine_Grenade_Flashbang","SquadShieldMagazine","ShieldGrenade_Mag","3AS_SmokeYellow","3AS_SmokeWhite","3AS_SmokeRed",
-    "3AS_SmokePurple","3AS_SmokeOrange","3AS_SmokeGreen","3AS_SmokeBlue"
+    "3AS_SmokePurple","3AS_SmokeOrange","3AS_SmokeGreen","3AS_SmokeBlue", "NFL_Magazine_Grenade_Medical_Shield"
 ];
 
 //-----------------------------# Equipment #-----------------------------------
