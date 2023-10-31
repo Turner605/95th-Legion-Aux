@@ -49,6 +49,7 @@ class CfgEditorCategories{
 class CfgEditorSubcategories{
 	class 95th_Crates{displayName="Supply Crates";};
 	class 95th_Misc{displayName="Misc";};
+	class 95th_Ships{displayName="Ships";};
 	class 95th_Air_Utilities{displayName = "Air Utilities";};
 	class 95th_Ground_Utilities{displayName = "Ground Utilities";};
 	class 95th_Utilities{displayName = "Utilities";};
@@ -505,6 +506,27 @@ class CfgVehicles {
 		editorCategory="EdCat_VRObjects";
 		editorSubcategory="EdSubcat_Helpers";
 		sound="Shield";
+	};
+
+	//#########################################################################################################
+	//Ship Objects
+	//#########################################################################################################
+
+	class ls_acclamator_4;
+	class Acclimator_95th: ls_acclamator_4 {
+		displayname = "Acclamator (Hollow)";
+		editorCategory="95th_Props";
+		editorSubcategory="95th_Ships";
+		hiddenselectionstextures[] = {
+			"95th_Props\Data\Acclimator\body_co.paa",
+			"95th_Props\Data\Acclimator\body_2_co.paa",
+			"95th_Props\Data\Acclimator\body_3_co.paa",
+			"95th_Props\Data\Acclimator\body_4_co.paa",
+			"95th_Props\Data\Acclimator\body_5_co.paa",
+			"95th_Props\Data\Acclimator\body_6_co.paa",
+			"95th_Props\Data\Acclimator\engine_co.paa",
+			"","","","","","","",""
+		};
 	};
 };
 
