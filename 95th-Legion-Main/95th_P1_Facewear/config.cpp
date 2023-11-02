@@ -121,6 +121,39 @@ class XtdGearModels {
 				class Empty { label = "Empty"; description = "No HUD"; };
 			};
 		};
+
+		class 95th_Facewear_Scarfs {
+			label = "";
+			author = "95th Aux Team";
+			alwaysSelectable = 1;
+			options[] = {"Colour", "Interior"};
+			class Colour {
+				labels = "Colour";
+				values[] = {"Black", "White", "Brown"};
+				class Black { label = "Black"; description = "Black Scarf"; };
+				class White { label = "White"; description = "White Scarf"; };
+				class Brown { label = "Brown"; description = "Brown Scarf"; };
+			};
+
+			class Interior {
+				labels = "Helmet Interior";
+				values[] = {"HUD", "Empty"};
+				class HUD { label = "HUD"; description = "Internal HUD"; };
+				class Empty { label = "Empty"; description = "No HUD"; };
+			};
+		};
+
+		class 95th_Facewear_Ponchos {
+			label = "";
+			author = "95th Aux Team";
+			alwaysSelectable = 1;
+			options[] = {"Colour"};
+			class Colour {
+				labels = "Colour";
+				values[] = {"Green"};
+				class Green { label = "Green"; description = "Green Poncho"; };
+			};
+		};
 	};
 };
 
@@ -180,6 +213,8 @@ class CfgWeapons {
 };
 
 class CfgGlasses {
+	class SWLB_CEE_Clone_Scarf;
+	class PhoenixCore_Poncho;
 	class ls_combatGoggles_base;
 
 	class Facewear_HUD_Base_95th: ls_combatGoggles_base {
@@ -218,13 +253,26 @@ class CfgGlasses {
 		ACE_OverlayCracked = "\95th_P1_Facewear\Data\Facewear\ARF_HUD_Cracked.paa";
 	};
 
+	//############################################################### Misc Facewear ###############################################################
 	NEW_95th_FACEWEAR_HUD(ARFAntenna,Facewear_HUD_ARF_95th,"\lsd_equipment_bluefor\facewear\gar\arfAntenna\lsd_gar_arfAntenna.p3d")};
-	NEW_95th_FACEWEAR_EMPTY(ARFAntenna,Facewear_HUD_ARF_95th,"\lsd_equipment_bluefor\facewear\gar\arfAntenna\lsd_gar_arfAntenna.p3d")};
-
 	NEW_95th_FACEWEAR_HUD(Headlamps,Facewear_HUD_ARF_95th,"\3AS\3AS_Characters\Clones\Headgear\3as_P1_lamps.p3d")};
-	NEW_95th_FACEWEAR_EMPTY(Headlamps,Facewear_HUD_ARF_95th,"\3AS\3AS_Characters\Clones\Headgear\3as_P1_lamps.p3d")};
-
 	NEW_95th_FACEWEAR_HUD(Headlamp,Facewear_HUD_ARF_95th,"lsd_equipment_bluefor\facewear\gar\headlampSingle\lsd_gar_n3rf_this_Fleshlight_p1.p3d")};
+
+	NEW_95th_FACEWEAR_EMPTY(ARFAntenna,Facewear_HUD_ARF_95th,"\lsd_equipment_bluefor\facewear\gar\arfAntenna\lsd_gar_arfAntenna.p3d")};
+	NEW_95th_FACEWEAR_EMPTY(Headlamps,Facewear_HUD_ARF_95th,"\3AS\3AS_Characters\Clones\Headgear\3as_P1_lamps.p3d")};
 	NEW_95th_FACEWEAR_EMPTY(Headlamp,Facewear_HUD_ARF_95th,"lsd_equipment_bluefor\facewear\gar\headlampSingle\lsd_gar_n3rf_this_Fleshlight_p1.p3d")};
 
+	//############################################################### Scarf Facewear ###############################################################
+	NEW_95th_SCARF_HUD(Black)};
+	NEW_95th_SCARF_HUD(White)};
+	NEW_95th_SCARF_HUD(Brown)};
+
+	NEW_95th_SCARF_EMPTY(Black)};
+	NEW_95th_SCARF_EMPTY(White)};
+	NEW_95th_SCARF_EMPTY(Brown)};
+
+	//############################################################### Poncho Facewear ###############################################################
+	NEW_95th_PONCHO_HUD(Green)};
+
+	NEW_95th_PONCHO_EMPTY(Green)};
 };
