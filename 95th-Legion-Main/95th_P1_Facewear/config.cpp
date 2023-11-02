@@ -21,7 +21,7 @@ class XtdGearModels {
 		class 95th_NVG_Rangefinder {
 			label = "";
 			author = "95th Aux Team";
-			options[] = {"Colour"};
+			options[] = {"Colour", "Overlay"};
 			class Colour {
 				labels = "Colour";
 				values[] = {"Gray", "White", "Brown", "Biege"};
@@ -30,25 +30,39 @@ class XtdGearModels {
 				class Brown { label = "Brown"; description = "Brown Rangefinder"; };
 				class Biege { label = "Biege"; description = "Biege Rangefinder"; };
 			};
+
+			class Overlay {
+				labels = "Overlay";
+				values[] = {"Visible", "Empty"};
+				class Overlay { label = "Brown"; description = "Brown Rangefinder"; };
+				class Empty { label = "Empty"; description = "Empty"; };
+			};
 		};
 
 		class 95th_NVG_Visor {
 			label = "";
 			author = "95th Aux Team";
-			options[] = {"Colour"};
+			options[] = {"Colour", "Overlay"};
 			class Colour {
 				labels = "Colour";
 				values[] = {"Gray", "White", "Brown"};
 				class Gray { label = "Gray"; description = "Gray Visor"; };
 				class White { label = "White"; description = "White Visor"; };
 				class Brown { label = "Brown"; description = "Brown Visor"; };
+			};
+
+			class Overlay {
+				labels = "Overlay";
+				values[] = {"Visible", "Empty"};
+				class Overlay { label = "Brown"; description = "Brown Rangefinder"; };
+				class Empty { label = "Empty"; description = "Empty"; };
 			};
 		};
 
 		class 95th_NVG_Sergeant {
 			label = "";
 			author = "95th Aux Team";
-			options[] = {"Colour"};
+			options[] = {"Colour", "Overlay"};
 			class Colour {
 				labels = "Colour";
 				values[] = {"Gray", "White", "Brown"};
@@ -56,18 +70,32 @@ class XtdGearModels {
 				class White { label = "White"; description = "White Visor"; };
 				class Brown { label = "Brown"; description = "Brown Visor"; };
 			};
+
+			class Overlay {
+				labels = "Overlay";
+				values[] = {"Visible", "Empty"};
+				class Overlay { label = "Brown"; description = "Brown Rangefinder"; };
+				class Empty { label = "Empty"; description = "Empty"; };
+			};
 		};
 
 		class 95th_NVG_Lieutenant {
 			label = "";
 			author = "95th Aux Team";
-			options[] = {"Colour"};
+			options[] = {"Colour", "Overlay"};
 			class Colour {
 				labels = "Colour";
 				values[] = {"Gray", "White", "Brown"};
 				class Gray { label = "Gray"; description = "Gray Visor"; };
 				class White { label = "White"; description = "White Visor"; };
 				class Brown { label = "Brown"; description = "Brown Visor"; };
+			};
+
+			class Overlay {
+				labels = "Overlay";
+				values[] = {"Visible", "Empty"};
+				class Overlay { label = "Brown"; description = "Brown Rangefinder"; };
+				class Empty { label = "Empty"; description = "Empty"; };
 			};
 		};
 	};
@@ -117,19 +145,38 @@ class CfgWeapons {
 	NEW_95th_NIGHTVISION_RANGEFINDER(Brown)};
 	NEW_95th_NIGHTVISION_RANGEFINDER(Biege)};
 
+	NEW_95th_NIGHTVISION_RANGEFINDER_OVERLAY(Gray)};
+	NEW_95th_NIGHTVISION_RANGEFINDER_OVERLAY(White)};
+	NEW_95th_NIGHTVISION_RANGEFINDER_OVERLAY(Brown)};
+	NEW_95th_NIGHTVISION_RANGEFINDER_OVERLAY(Biege)};
+
 	NEW_95th_NIGHTVISION_VISOR(Gray)};
 	NEW_95th_NIGHTVISION_VISOR(White)};
 	NEW_95th_NIGHTVISION_VISOR(Brown)};
+
+	NEW_95th_NIGHTVISION_VISOR_OVERLAY(Gray)};
+	NEW_95th_NIGHTVISION_VISOR_OVERLAY(White)};
+	NEW_95th_NIGHTVISION_VISOR_OVERLAY(Brown)};
 
 	NEW_95th_NIGHTVISION_SERGEANT(Gray)};
 	NEW_95th_NIGHTVISION_SERGEANT(White)};
 	NEW_95th_NIGHTVISION_SERGEANT(Brown)};
 	NEW_95th_NIGHTVISION_SERGEANT(Biege)};
 
+	NEW_95th_NIGHTVISION_SERGEANT_OVERLAY(Gray)};
+	NEW_95th_NIGHTVISION_SERGEANT_OVERLAY(White)};
+	NEW_95th_NIGHTVISION_SERGEANT_OVERLAY(Brown)};
+	NEW_95th_NIGHTVISION_SERGEANT_OVERLAY(Biege)};
+
 	NEW_95th_NIGHTVISION_LIEUTENANT(Gray)};
 	NEW_95th_NIGHTVISION_LIEUTENANT(White)};
 	NEW_95th_NIGHTVISION_LIEUTENANT(Brown)};
 	NEW_95th_NIGHTVISION_LIEUTENANT(Biege)};
+
+	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(Gray)};
+	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(White)};
+	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(Brown)};
+	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(Biege)};
 };
 
 class CfgGlasses {
