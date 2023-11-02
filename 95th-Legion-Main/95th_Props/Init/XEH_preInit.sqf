@@ -91,10 +91,10 @@ private _arsenalBackpacks = [
 // Facewear, NVG's, Binocs, Map, Terminal, Radio, Compass, Watch Slot, 
 private _arsenalGear = [
 	"JLTS_CloneBinocular","JLTS_CloneBinocular_black","ItemMap","ItemCompass","JLTS_clone_comlink","TFAR_microdagr","ItemWatch","ACE_Altimeter",
-	"ItemGPS","B_UavTerminal","SWLB_clone_ARF_antenna_HUD",
+	"ItemGPS","B_UavTerminal",
 
 	"95th_P1_Nightvision_Invisible",
-	
+
 	"NVG_Rangefinder_Gray_95th", "NVG_Rangefinder_White_95th", "NVG_Rangefinder_Brown_95th", "NVG_Rangefinder_Biege_95th", 
 	"NVG_Rangefinder_Overlay_Gray_95th", "NVG_Rangefinder_Overlay_White_95th", "NVG_Rangefinder_Overlay_Brown_95th", "NVG_Rangefinder_Overlay_Biege_95th", 
 

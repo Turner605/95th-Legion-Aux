@@ -34,7 +34,7 @@
 	hiddenSelectionsTextures[]={95th_P1_Facewear\Data\Facewear\Ponchos\Poncho_##name##.paa};\
 	scope=2;\
 	class XtdGearInfo {\
-		model = 95th_Facewear_Scarfs;\
+		model = 95th_Facewear_Ponchos;\
 		Colour = ##name##;\
 		Interior = Empty;\
 	};
