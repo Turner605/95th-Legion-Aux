@@ -126,20 +126,13 @@ class XtdGearModels {
 			label = "";
 			author = "95th Aux Team";
 			alwaysSelectable = 1;
-			options[] = {"Colour", "Interior"};
+			options[] = {"Colour"};
 			class Colour {
 				labels = "Colour";
 				values[] = {"Black", "White", "Brown"};
 				class Black { label = "Black"; description = "Black Scarf"; };
 				class White { label = "White"; description = "White Scarf"; };
 				class Brown { label = "Brown"; description = "Brown Scarf"; };
-			};
-
-			class Interior {
-				labels = "Helmet Interior";
-				values[] = {"HUD", "Empty"};
-				class HUD { label = "HUD"; description = "Internal HUD"; };
-				class Empty { label = "Empty"; description = "No HUD"; };
 			};
 		};
 
@@ -262,17 +255,13 @@ class CfgGlasses {
 	NEW_95th_FACEWEAR_EMPTY(Headlamps,Facewear_HUD_ARF_95th,"\3AS\3AS_Characters\Clones\Headgear\3as_P1_lamps.p3d")};
 	NEW_95th_FACEWEAR_EMPTY(Headlamp,Facewear_HUD_ARF_95th,"lsd_equipment_bluefor\facewear\gar\headlampSingle\lsd_gar_n3rf_this_Fleshlight_p1.p3d")};
 
-	//############################################################### Scarf Facewear ###############################################################
-	NEW_95th_SCARF_HUD(Black)};
-	NEW_95th_SCARF_HUD(White)};
-	NEW_95th_SCARF_HUD(Brown)};
 
+	//############################################################### Scarf Facewear ###############################################################
 	NEW_95th_SCARF_EMPTY(Black)};
 	NEW_95th_SCARF_EMPTY(White)};
 	NEW_95th_SCARF_EMPTY(Brown)};
 
-	//############################################################### Poncho Facewear ###############################################################
-	NEW_95th_PONCHO_HUD(Green)};
 
+	//############################################################### Poncho Facewear ###############################################################
 	NEW_95th_PONCHO_EMPTY(Green)};
 };
