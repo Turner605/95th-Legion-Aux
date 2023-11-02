@@ -249,11 +249,11 @@ class CfgGlasses {
 	//############################################################### Misc Facewear ###############################################################
 	NEW_95th_FACEWEAR_HUD(ARFAntenna,Facewear_HUD_ARF_95th,"\lsd_equipment_bluefor\facewear\gar\arfAntenna\lsd_gar_arfAntenna.p3d")};
 	NEW_95th_FACEWEAR_HUD(Headlamps,Facewear_HUD_P1_95th,"\3AS\3AS_Characters\Clones\Headgear\3as_P1_lamps.p3d")};
-	NEW_95th_FACEWEAR_HUD(Headlamp,Facewear_HUD_P1_95th,"\lsd_equipment_bluefor\facewear\gar\headlampSingle\lsd_gar_n3rf_this_Fleshlight_p1.p3d")};
+	NEW_95th_FACEWEAR_HUD(Headlamp,Facewear_HUD_P1_95th,"\lsd_equipment_bluefor\facewear\gar\headlampSingle\lsd_gar_p1_lamp.p3d")};
 
 	NEW_95th_FACEWEAR_EMPTY(ARFAntenna,Facewear_HUD_ARF_95th,"\lsd_equipment_bluefor\facewear\gar\arfAntenna\lsd_gar_arfAntenna.p3d")};
 	NEW_95th_FACEWEAR_EMPTY(Headlamps,Facewear_HUD_P1_95th,"\3AS\3AS_Characters\Clones\Headgear\3as_P1_lamps.p3d")};
-	NEW_95th_FACEWEAR_EMPTY(Headlamp,Facewear_HUD_P1_95th,"\lsd_equipment_bluefor\facewear\gar\headlampSingle\lsd_gar_n3rf_this_Fleshlight_p1.p3d")};
+	NEW_95th_FACEWEAR_EMPTY(Headlamp,Facewear_HUD_P1_95th,"\lsd_equipment_bluefor\facewear\gar\headlampSingle\lsd_gar_p1_lamp.p3d")};
 
 
 	//############################################################### Scarf Facewear ###############################################################
