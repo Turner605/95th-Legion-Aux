@@ -1,4 +1,5 @@
 #include "Macros\Nightvision.hpp"
+#include "Macros\Facewear.hpp"
 
 class CfgPatches {
 	class 95th_P1_Facewear {
@@ -37,11 +38,10 @@ class XtdGearModels {
 			options[] = {"Colour"};
 			class Colour {
 				labels = "Colour";
-				values[] = {"Gray", "White", "Brown", "Biege"};
+				values[] = {"Gray", "White", "Brown"};
 				class Gray { label = "Gray"; description = "Gray Visor"; };
 				class White { label = "White"; description = "White Visor"; };
 				class Brown { label = "Brown"; description = "Brown Visor"; };
-				class Biege { label = "Biege"; description = "Biege Visor"; };
 			};
 		};
 
@@ -51,11 +51,10 @@ class XtdGearModels {
 			options[] = {"Colour"};
 			class Colour {
 				labels = "Colour";
-				values[] = {"Gray", "White", "Brown", "Biege"};
+				values[] = {"Gray", "White", "Brown"};
 				class Gray { label = "Gray"; description = "Gray Visor"; };
 				class White { label = "White"; description = "White Visor"; };
 				class Brown { label = "Brown"; description = "Brown Visor"; };
-				class Biege { label = "Biege"; description = "Biege Visor"; };
 			};
 		};
 
@@ -65,11 +64,33 @@ class XtdGearModels {
 			options[] = {"Colour"};
 			class Colour {
 				labels = "Colour";
-				values[] = {"Gray", "White", "Brown", "Biege"};
+				values[] = {"Gray", "White", "Brown"};
 				class Gray { label = "Gray"; description = "Gray Visor"; };
 				class White { label = "White"; description = "White Visor"; };
 				class Brown { label = "Brown"; description = "Brown Visor"; };
-				class Biege { label = "Biege"; description = "Biege Visor"; };
+			};
+		};
+	};
+
+	class CfgGlasses{
+		class 95th_Facewear_Misc {
+			label = "";
+			author = "95th Aux Team";
+			alwaysSelectable = 1;
+			options[] = {"Type", "Interior"};
+			class Type {
+				labels = "Type";
+				values[] = {"ARFAntenna", "Headlamps", "Headlamp"};
+				class ARFAntenna { label = "ARF Antenna"; description = "ARF Antenna"; };
+				class Headlamps { label = "Headlamps"; description = "Headlamps (Dual)"; };
+				class Headlamp { label = "Headlamp"; description = "Headlamp (Single)"; };
+			};
+
+			class Interior {
+				labels = "Interior";
+				values[] = {"HUD", "Empty"};
+				class HUD { label = "HUD"; description = "Internal HUD"; };
+				class Empty { label = "Empty"; description = "No HUD"; };
 			};
 		};
 	};
@@ -99,7 +120,6 @@ class CfgWeapons {
 	NEW_95th_NIGHTVISION_VISOR(Gray)};
 	NEW_95th_NIGHTVISION_VISOR(White)};
 	NEW_95th_NIGHTVISION_VISOR(Brown)};
-	NEW_95th_NIGHTVISION_VISOR(Biege)};
 
 	NEW_95th_NIGHTVISION_SERGEANT(Gray)};
 	NEW_95th_NIGHTVISION_SERGEANT(White)};
@@ -113,52 +133,51 @@ class CfgWeapons {
 };
 
 class CfgGlasses {
-	class None;
+	class ls_combatGoggles_base;
 
-	class 95th_Base_Facewear : None {
-		scope=0;
-		identityTypes[]={};
-		mass=4;
-		picture="\A3\Characters_F\data\ui\icon_g_combat_CA.paa";
-	};
-
-	class 95th_P1_Facewear_RangeFinder: None {
-		scope=2;
-		identityTypes[]={};
-		author="95th Aux";
-		displayname="[95th] Phase 1 Trooper RangeFinder";
-		model="\3AS\3AS_Characters\Clones\Headgear\3as_P1_RangeFinder.p3d";
-		picture="\A3\Characters_F\data\ui\icon_g_combat_CA.paa";
-	};
-
-	class 95th_P1_Facewear_Lamps: None {
-		scope=2;
-		identityTypes[]={};
-		author="95th Aux";
-		displayname="[95th] Phase 1 Trooper Headlamps";
-		model="\3AS\3AS_Characters\Clones\Headgear\3as_P1_lamps.p3d";
-		picture="\A3\Characters_F\data\ui\icon_g_combat_CA.paa";
-	};
-
-	class 95th_P1_Visor_Sergeant: None {
-		scope=2;
-		identityTypes[]={};
-		author="95th Aux";
-		displayname="[95th] Phase 1 Sergeant Visor";
-		model="\3AS\3AS_Characters\Clones\Headgear\3as_P1_visor.p3d";
-		hiddenSelections[]={"camo", "camo1", "camo2"};
-		hiddenSelectionsTextures[]={"3AS\3AS_Characters\Clones\Headgear\Attachments\data\visor_co.paa", "", ""};
-		picture="\A3\Characters_F\data\ui\icon_g_combat_CA.paa";
-	};
-
-	class 95th_P1_Visor_Command: 95th_P1_Visor_Sergeant {
+	class Facewear_HUD_Base_95th: ls_combatGoggles_base {
+		displayName = "HUD Baseclass";
 		author="95th Aux Team";
-		displayname="[95th] Phase 1 Command Visor";
-		hiddenSelectionsTextures[]={
-			"3AS\3AS_Characters\Clones\Headgear\Attachments\data\visor_co.paa",
-			"3AS\3AS_Characters\Clones\Headgear\Attachments\data\accesories_co.paa",
-			"3AS\3AS_Characters\Clones\Headgear\Attachments\data\accesories_co.paa"
-		};
-		picture="\A3\Characters_F\data\ui\icon_g_combat_CA.paa";
+		model = "\A3\Weapons_f\DummyNVG";
+		picture = "\SWLB_equipment\facewears\data\ui\icon_SWLB_clone_P1_HUD_ca.paa";
+		hiddenSelections[] = {}; hiddenSelectionsTextures[] = {};
+		ACE_Resistance = 1; ACE_Protection = 1; ACE_TintAmount = 0;
+		ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
+		ACE_DustPath = "\z\ace\addons\goggles\textures\fx\dust\%1.paa";
+		identityTypes[]={};
 	};
+
+	class Facewear_Empty_95th : Facewear_HUD_Base_95th {
+		displayName = "P1 HUD Baseclass";
+		ACE_Overlay = "";
+		ACE_OverlayCracked = "";
+	};
+
+	class Facewear_HUD_P1_95th : Facewear_HUD_Base_95th {
+		displayName = "P1 HUD Baseclass";
+		ACE_Overlay = "\95th_P1_Facewear\Data\Facewear\P1_HUD.paa";
+		ACE_OverlayCracked = "\95th_P1_Facewear\Data\Facewear\P1_HUD_Cracked.paa";
+	};
+
+	class Facewear_HUD_AB_95th : Facewear_HUD_Base_95th {
+		displayName = "AB HUD Baseclass";
+		ACE_Overlay = "\95th_P1_Facewear\Data\Facewear\AB_HUD.paa";
+		ACE_OverlayCracked = "\95th_P1_Facewear\Data\Facewear\AB_HUD_Cracked.paa";
+	};
+
+	class Facewear_HUD_ARF_95th : Facewear_HUD_Base_95th {
+		displayName = "ARF HUD Baseclass";
+		ACE_Overlay = "\95th_P1_Facewear\Data\Facewear\ARF_HUD.paa";
+		ACE_OverlayCracked = "\95th_P1_Facewear\Data\Facewear\ARF_HUD_Cracked.paa";
+	};
+
+	NEW_95th_FACEWEAR_HUD(ARFAntenna,Facewear_HUD_ARF_95th,"\lsd_equipment_bluefor\facewear\gar\arfAntenna\lsd_gar_arfAntenna.p3d")};
+	NEW_95th_FACEWEAR_EMPTY(ARFAntenna,Facewear_HUD_ARF_95th,"\lsd_equipment_bluefor\facewear\gar\arfAntenna\lsd_gar_arfAntenna.p3d")};
+
+	NEW_95th_FACEWEAR_HUD(Headlamps,Facewear_HUD_ARF_95th,"\3AS\3AS_Characters\Clones\Headgear\3as_P1_lamps.p3d")};
+	NEW_95th_FACEWEAR_EMPTY(Headlamps,Facewear_HUD_ARF_95th,"\3AS\3AS_Characters\Clones\Headgear\3as_P1_lamps.p3d")};
+
+	NEW_95th_FACEWEAR_HUD(Headlamp,Facewear_HUD_ARF_95th,"lsd_equipment_bluefor\facewear\gar\headlampSingle\lsd_gar_n3rf_this_Fleshlight_p1.p3d")};
+	NEW_95th_FACEWEAR_EMPTY(Headlamp,Facewear_HUD_ARF_95th,"lsd_equipment_bluefor\facewear\gar\headlampSingle\lsd_gar_n3rf_this_Fleshlight_p1.p3d")};
+
 };
