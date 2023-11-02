@@ -90,10 +90,27 @@ private _arsenalBackpacks = [
 //-----------------------------# Gear #-----------------------------------
 // Facewear, NVG's, Binocs, Map, Terminal, Radio, Compass, Watch Slot, 
 private _arsenalGear = [
-	"lsd_gar_p1Interior_flashlight","lsd_gar_p1Interior_hud","95th_P1_Facewear_Lamps","SWLB_CEE_Clone_Scarf","SWLB_CEE_Clone_Scarf_Orange",
-	"SWLB_CEE_Clone_Scarf_White","95th_P1_Nightvision_Invisible","95th_P1_Nightvision_Macrobinoculars","95th_P1_Nightvision_Rangefinder",
 	"JLTS_CloneBinocular","JLTS_CloneBinocular_black","ItemMap","ItemCompass","JLTS_clone_comlink","TFAR_microdagr","ItemWatch","ACE_Altimeter",
-	"ItemGPS","B_UavTerminal","SWLB_clone_ARF_antenna_HUD"
+	"ItemGPS","B_UavTerminal","SWLB_clone_ARF_antenna_HUD",
+
+	"95th_P1_Nightvision_Invisible",
+	
+	"NVG_Rangefinder_Gray_95th", "NVG_Rangefinder_White_95th", "NVG_Rangefinder_Brown_95th", "NVG_Rangefinder_Biege_95th", 
+	"NVG_Rangefinder_Overlay_Gray_95th", "NVG_Rangefinder_Overlay_White_95th", "NVG_Rangefinder_Overlay_Brown_95th", "NVG_Rangefinder_Overlay_Biege_95th", 
+
+	"NVG_Visor_Gray_95th", "NVG_Visor_White_95th", "NVG_Visor_Brown_95th", "NVG_Visor_Biege_95th", 
+	"NVG_Visor_Overlay_Gray_95th", "NVG_Visor_Overlay_White_95th", "NVG_Visor_Overlay_Brown_95th", "NVG_Visor_Overlay_Biege_95th", 
+
+	"NVG_Sergeant_Gray_95th", "NVG_Sergeant_White_95th", "NVG_Sergeant_Brown_95th", "NVG_Sergeant_Biege_95th", 
+	"NVG_Sergeant_Overlay_Gray_95th", "NVG_Sergeant_Overlay_White_95th", "NVG_Sergeant_Overlay_Brown_95th", "NVG_Sergeant_Overlay_Biege_95th", 
+
+	"NVG_Lieutenant_Gray_95th", "NVG_Lieutenant_White_95th", "NVG_Lieutenant_Brown_95th", "NVG_Lieutenant_Biege_95th", 
+	"NVG_Lieutenant_Overlay_Gray_95th", "NVG_Lieutenant_Overlay_White_95th", "NVG_Lieutenant_Overlay_Brown_95th", "NVG_Lieutenant_Overlay_Biege_95th", 
+
+	"Facewear_HUD_ARFAntenna_95th", "Facewear_HUD_Headlamps_95th", "Facewear_HUD_Headlamp_95th",
+	"Facewear_Empty_ARFAntenna_95th", "Facewear_Empty_Headlamps_95th", "Facewear_Empty_Headlamp_95th",
+	"Facewear_Scarf_Empty_Black_95th", "Facewear_Scarf_Empty_White_95th", "Facewear_Scarf_Empty_Brown_95th",
+	"Facewear_Poncho_Empty_Green_95th"
 ]; 
 
 //-----------------------------# Medical #-----------------------------------
