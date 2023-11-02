@@ -1,3 +1,5 @@
+#include "Macros\Nightvision.hpp"
+
 class CfgPatches {
 	class 95th_P1_Facewear {
         author="95th Aux Team";
@@ -5,10 +7,109 @@ class CfgPatches {
 		requiredAddons[]= {
 			"JLTS_characters_CloneArmor",
 			"3as_JLTS_Uniforms",
-			"SEA_JLTS_ExtendedArsenal"
+			"SEA_JLTS_ExtendedArsenal",
+			"PhoenixCore"
 		};
 		units[] = {};
 	};
+};
+
+class XtdGearModels {
+	class CfgWeapons {
+		//############################################################### Rangefinders ###############################################################
+		class 95th_NVG_Rangefinder {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Colour"};
+			class Colour {
+				labels = "Colour";
+				values[] = {"Gray", "White", "Brown", "Biege"};
+				class Gray { label = "Gray"; description = "Gray Rangefinder"; };
+				class White { label = "White"; description = "White Rangefinder"; };
+				class Brown { label = "Brown"; description = "Brown Rangefinder"; };
+				class Biege { label = "Biege"; description = "Biege Rangefinder"; };
+			};
+		};
+
+		class 95th_NVG_Visor {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Colour"};
+			class Colour {
+				labels = "Colour";
+				values[] = {"Gray", "White", "Brown", "Biege"};
+				class Gray { label = "Gray"; description = "Gray Visor"; };
+				class White { label = "White"; description = "White Visor"; };
+				class Brown { label = "Brown"; description = "Brown Visor"; };
+				class Biege { label = "Biege"; description = "Biege Visor"; };
+			};
+		};
+
+		class 95th_NVG_Sergeant {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Colour"};
+			class Colour {
+				labels = "Colour";
+				values[] = {"Gray", "White", "Brown", "Biege"};
+				class Gray { label = "Gray"; description = "Gray Visor"; };
+				class White { label = "White"; description = "White Visor"; };
+				class Brown { label = "Brown"; description = "Brown Visor"; };
+				class Biege { label = "Biege"; description = "Biege Visor"; };
+			};
+		};
+
+		class 95th_NVG_Lieutenant {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Colour"};
+			class Colour {
+				labels = "Colour";
+				values[] = {"Gray", "White", "Brown", "Biege"};
+				class Gray { label = "Gray"; description = "Gray Visor"; };
+				class White { label = "White"; description = "White Visor"; };
+				class Brown { label = "Brown"; description = "Brown Visor"; };
+				class Biege { label = "Biege"; description = "Biege Visor"; };
+			};
+		};
+	};
+};
+
+class CfgWeapons {
+	class SEA_CloneNVG_TI;
+	class SEA_P1_Rangefinder;
+	class PhoenixCore_NVG_CloneNVG;
+	class JLTS_PA_Core_P1_CloneCC;
+	class JLTS_PA_Core_P1_CloneMC;
+
+	class 95th_P1_Nightvision_Invisible: SEA_CloneNVG_TI {
+		displayName="[95th] Helmet Upgrade";
+		author="95th Aux Team";
+		model=""
+		hiddenSelectionsTextures[]={""};
+		visionMode[]={"Normal", "NVG", "TI"};
+		thermalMode[]={0,1};
+	};
+
+	NEW_95th_NIGHTVISION_RANGEFINDER(Gray)};
+	NEW_95th_NIGHTVISION_RANGEFINDER(White)};
+	NEW_95th_NIGHTVISION_RANGEFINDER(Brown)};
+	NEW_95th_NIGHTVISION_RANGEFINDER(Biege)};
+
+	NEW_95th_NIGHTVISION_VISOR(Gray)};
+	NEW_95th_NIGHTVISION_VISOR(White)};
+	NEW_95th_NIGHTVISION_VISOR(Brown)};
+	NEW_95th_NIGHTVISION_VISOR(Biege)};
+
+	NEW_95th_NIGHTVISION_SERGEANT(Gray)};
+	NEW_95th_NIGHTVISION_SERGEANT(White)};
+	NEW_95th_NIGHTVISION_SERGEANT(Brown)};
+	NEW_95th_NIGHTVISION_SERGEANT(Biege)};
+
+	NEW_95th_NIGHTVISION_LIEUTENANT(Gray)};
+	NEW_95th_NIGHTVISION_LIEUTENANT(White)};
+	NEW_95th_NIGHTVISION_LIEUTENANT(Brown)};
+	NEW_95th_NIGHTVISION_LIEUTENANT(Biege)};
 };
 
 class CfgGlasses {
@@ -59,34 +160,5 @@ class CfgGlasses {
 			"3AS\3AS_Characters\Clones\Headgear\Attachments\data\accesories_co.paa"
 		};
 		picture="\A3\Characters_F\data\ui\icon_g_combat_CA.paa";
-	};
-};
-
-class CfgWeapons {
-	class SEA_CloneNVG_TI;
-	class SEA_P1_Rangefinder;
-	class NVGoggles;
-
-	class 95th_P1_Nightvision_Macrobinoculars: SEA_CloneNVG_TI {
-		author="95th Aux Team";
-		displayName="[95th] Macrobinoculars";
-		visionMode[]= {"Normal", "NVG", "TI"};
-		thermalMode[]={0,1};
-	};
-
-	class 95th_P1_Nightvision_Rangefinder: SEA_P1_Rangefinder {
-		author="95th Aux Team";
-		displayName="[95th] Rangefinder";
-		visionMode[]={"Normal", "NVG", "TI"};
-		thermalMode[]={0,1};
-	};
-
-	class 95th_P1_Nightvision_Invisible: SEA_CloneNVG_TI {
-		author="95th Aux Team";
-		model=""
-		hiddenSelectionsTextures[]={""};
-		displayName="[95th] Helmet Upgrade";
-		visionMode[]={"Normal", "NVG", "TI"};
-		thermalMode[]={0,1};
 	};
 };
