@@ -156,6 +156,7 @@ class CfgWeapons {
 	class PhoenixCore_NVG_CloneNVG;
 	class JLTS_PA_Core_P1_CloneCC;
 	class JLTS_PA_Core_P1_CloneMC;
+	class lsd_gar_medicalScanner_nvg;
 
 	class 95th_P1_Nightvision_Invisible: SEA_CloneNVG_TI {
 		displayName="[95th] Helmet Upgrade";
@@ -203,6 +204,10 @@ class CfgWeapons {
 	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(White)};
 	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(Brown)};
 	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(Biege)};
+
+
+
+	
 };
 
 class CfgGlasses {
