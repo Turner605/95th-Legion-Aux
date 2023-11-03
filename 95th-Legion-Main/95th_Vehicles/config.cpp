@@ -281,6 +281,36 @@ class CfgMagazines {
 		ammo = "NFL_LAAT_Resupply_Launcher_Ammo";
 		mass = 230;
 	};
+
+	class NFL_LAAT_Resupply_Launcher_Magazine_Ammo: NFL_LAAT_Resupply_Launcher_Magazine {
+		displayName = "Ammo Resupply Bomb";
+		model = "a3\weapons_f\empty.p3d";
+		ammo = "NFL_LAAT_Resupply_Launcher_Ammo";
+	};
+
+	class NFL_LAAT_Resupply_Launcher_Magazine_Medical: NFL_LAAT_Resupply_Launcher_Magazine {
+		displayName = "Medical Resupply Bomb";
+		model = "a3\weapons_f\empty.p3d";
+		ammo = "NFL_LAAT_Resupply_Launcher_Ammo";
+	};
+
+	class NFL_LAAT_Resupply_Launcher_Magazine_Explosives: NFL_LAAT_Resupply_Launcher_Magazine {
+		displayName = "Explosives Resupply Bomb";
+		model = "a3\weapons_f\empty.p3d";
+		ammo = "NFL_LAAT_Resupply_Launcher_Ammo";
+	};
+
+	class NFL_LAAT_Resupply_Launcher_Magazine_VehicleAmmo: NFL_LAAT_Resupply_Launcher_Magazine {
+		displayName = "Vehicle Ammo Resupply Bomb";
+		model = "a3\weapons_f\empty.p3d";
+		ammo = "NFL_LAAT_Resupply_Launcher_Ammo";
+	};
+
+	class NFL_LAAT_Resupply_Launcher_Magazine_VehicleFuel: NFL_LAAT_Resupply_Launcher_Magazine {
+		displayName = "Vehicle Fuel Resupply Bomb";
+		model = "a3\weapons_f\empty.p3d";
+		ammo = "NFL_LAAT_Resupply_Launcher_Ammo";
+	};
 };
 
 class CfgWeapons {
@@ -314,7 +344,13 @@ class CfgWeapons {
 	class weapon_GBU12Launcher;
 	class NFL_LAAT_Resupply_Launcher: weapon_GBU12Launcher {
 		displayName = "Resupply Launcher";
-		magazines[] = {"NFL_LAAT_Resupply_Launcher_Magazine"};
+		magazines[] = {
+			"NFL_LAAT_Resupply_Launcher_Magazine_Ammo", 
+			"NFL_LAAT_Resupply_Launcher_Magazine_Medical", 
+			"NFL_LAAT_Resupply_Launcher_Magazine_Explosives",
+			"NFL_LAAT_Resupply_Launcher_Magazine_VehicleAmmo", 
+			"NFL_LAAT_Resupply_Launcher_Magazine_VehicleFuel", 
+		};
 		model = "a3\weapons_f\empty.p3d";
 	};
 };
@@ -337,7 +373,7 @@ class CfgVehicles {
 					displayName = "Load Ammo Drop";
 					condition = "true"; // Check if is near landing pad
 					exceptions[] = {};
-					statement = "[_target, _player, 'Medical'] call NFA_fnc_handleLoadBomb;";
+					statement = "[_target, _player, 'Ammo'] call NFA_fnc_handleLoadResupplyBomb;";
 					icon = "";
 				};
 			};
@@ -533,8 +569,10 @@ class CfgFunctions {
 			class handleTXShieldDamage {file = "\95th_Vehicles\Scripts\TXShield\handleTXShieldDamage.sqf";};
 			class TXShieldOffAnimation {file = "\95th_Vehicles\Scripts\TXShield\TXShieldOffAnimation.sqf";};
 
-			class handleLoadBomb {file = "\95th_Vehicles\Scripts\Resupply Bomb\handleLoadBomb.sqf";};
-			class handleBombDetonated {file = "\95th_Vehicles\Scripts\Resupply Bomb\handleBombDetonated.sqf";};
+			class handleLoadResupplyBomb {file = "\95th_Vehicles\Scripts\Resupply Bomb\handleLoadResupplyBomb.sqf";};
+			class handleResupplyBombDetonated {file = "\95th_Vehicles\Scripts\Resupply Bomb\handleResupplyBombDetonated.sqf";};
+
+			class handleLAATInit {file = "\95th_Vehicles\Init\LAAT\handleLAATInit.sqf";};
 		};
 	};
 };
@@ -550,14 +588,14 @@ class Extended_InitPost_EventHandlers {
 
 class Extended_init_EventHandlers {
 	class 95th_LAAT_Mrk1 {
-    	class 95th_LAAT_Mrk1_Init {init = "(_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";};
+    	class 95th_LAAT_Mrk1_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};
 	};
 
 	class 95th_LAAT_Mrk2 {
-    	class 95th_LAAT_Mrk2_Init {init = "(_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";};
+    	class 95th_LAAT_Mrk2_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};
 	};
 
 	class 95th_LAAT_Mrk2Lights {
-    	class 95th_LAAT_Mrk2Lights_Init {init = "(_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";};
+    	class 95th_LAAT_Mrk2Lights_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};
 	};
 };
