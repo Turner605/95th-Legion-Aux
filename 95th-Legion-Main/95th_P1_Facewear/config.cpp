@@ -98,6 +98,27 @@ class XtdGearModels {
 				class Empty { label = "Empty"; description = "Empty"; };
 			};
 		};
+
+		class 95th_NVG_Medical {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Colour", "Overlay"};
+			class Colour {
+				labels = "Colour";
+				values[] = {"Gray", "White", "Brown", "Biege"};
+				class Gray { label = "Gray"; description = "Gray Rangefinder"; };
+				class White { label = "White"; description = "White Rangefinder"; };
+				class Brown { label = "Brown"; description = "Brown Rangefinder"; };
+				class Biege { label = "Biege"; description = "Biege Rangefinder"; };
+			};
+
+			class Overlay {
+				labels = "Overlay";
+				values[] = {"Visible", "Empty"};
+				class Overlay { label = "Brown"; description = "Brown Rangefinder"; };
+				class Empty { label = "Empty"; description = "Empty"; };
+			};
+		};
 	};
 
 	class CfgGlasses{
@@ -157,6 +178,7 @@ class CfgWeapons {
 	class JLTS_PA_Core_P1_CloneCC;
 	class JLTS_PA_Core_P1_CloneMC;
 	class lsd_gar_medicalScanner_nvg;
+	class ItemInfo;
 
 	class 95th_P1_Nightvision_Invisible: SEA_CloneNVG_TI {
 		displayName="[95th] Helmet Upgrade";
@@ -205,9 +227,29 @@ class CfgWeapons {
 	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(Brown)};
 	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(Biege)};
 
+	NEW_95th_NIGHTVISION_MEDICAL(Gray)};
+	NEW_95th_NIGHTVISION_MEDICAL(White)};
+	NEW_95th_NIGHTVISION_MEDICAL(Brown)};
 
+	NEW_95th_NIGHTVISION_MEDICAL_OVERLAY(Gray)};
+	NEW_95th_NIGHTVISION_MEDICAL_OVERLAY(White)};
+	NEW_95th_NIGHTVISION_MEDICAL_OVERLAY(Brown)};
 
-	
+	class lsd_gar_medicalScanner_nvg_test_95th: lsd_gar_medicalScanner_nvg {
+		hiddenSelections[] = {"Camo1","glow"};
+		hiddenSelectionsTextures[] = {
+			"\95th_P1_Facewear\Data\NVGs\Medical\Medical_Gray.paa",
+			"#(argb,8,8,3)color(0.501961,1,1,1.0,co)"
+		};
+		class ItemInfo: ItemInfo {
+			type = 616;
+			hiddenSelections[] = {"Camo1"};
+			hiddenSelectionsTextures[] = {"\95th_P1_Facewear\Data\NVGs\Medical\Medical_Gray.paa"};
+			uniformModel = "\lsd_equipment_bluefor\nvg\gar\medicScanner\lsd_gar_medicalScanner_nvg_on";
+			modelOff = "\lsd_equipment_bluefor\nvg\gar\medicScanner\lsd_gar_medicalScanner_nvg_off";
+			mass = 1;
+		};
+	};
 };
 
 class CfgGlasses {
