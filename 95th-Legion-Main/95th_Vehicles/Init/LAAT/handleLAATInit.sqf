@@ -6,6 +6,7 @@ _vehicle addEventHandler["Fired", {
 	params ["_vehicle", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
 
     if (_weapon == "NFL_LAAT_Resupply_Launcher") then {
+        private _detPos = 0;
 
         [{
             params["_vehicle"];
@@ -16,14 +17,13 @@ _vehicle addEventHandler["Fired", {
             _vehicle removeMagazineTurret ["NFL_LAAT_Resupply_Launcher_Magazine_Explosives", [-1]];
             _vehicle removeMagazineTurret ["NFL_LAAT_Resupply_Launcher_Magazine_VehicleAmmo", [-1]];
             _vehicle removeMagazineTurret ["NFL_LAAT_Resupply_Launcher_Magazine_VehicleFuel", [-1]];
-            
+
         }, [_vehicle], 1] call CBA_fnc_waitAndExecute;
 
-        [{!(alive (_this select 6))}, {
-            params ["_vehicle", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
+        while {alive _projectile} do {
+            _detPos = getPosAtl _projectile;
+        };
 
-            [_projectile] spawn NFA_fnc_handleResupplyBombDetonated;
-
-        }, [_vehicle, _weapon, _muzzle, _mode, _ammo, _magazine, _projectile]] call CBA_fnc_waitUntilAndExecute;
+        [_detPos, _magazine] spawn NFA_fnc_handleResupplyBombDetonated;
     };
 }];

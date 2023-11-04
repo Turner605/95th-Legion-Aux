@@ -98,14 +98,6 @@
 		#(argb,8,8,3)color(0.501961,1,1,1.0,co)\
 	};\
 	modelOptics = \MRC\JLTS\Core_mod\nvg_optic_dummy.p3d;\
-	class ItemInfo: ItemInfo {\
-		type = 616;\
-		hiddenSelections[] = {"Camo1"};\
-		hiddenSelectionsTextures[] = {"\95th_P1_Facewear\Data\NVGs\Medical\Medical_##name##.paa"};\
-		uniformModel = "\lsd_equipment_bluefor\nvg\gar\medicScanner\lsd_gar_medicalScanner_nvg_on";\
-		modelOff = "\lsd_equipment_bluefor\nvg\gar\medicScanner\lsd_gar_medicalScanner_nvg_off";\
-		mass = 1;\
-	};\
 	class XtdGearInfo {\
 		model = 95th_NVG_Medical;\
 		Colour = ##name##;\
@@ -120,14 +112,6 @@
 		#(argb,8,8,3)color(0.501961,1,1,1.0,co)\
 	};\
 	modelOptics = \MRC\JLTS\characters\CloneArmor\CloneNVG_regular_optic.p3d;\
-	class ItemInfo: ItemInfo {\
-		type = 616;\
-		hiddenSelections[] = {"Camo1"};\
-		hiddenSelectionsTextures[] = {"\95th_P1_Facewear\Data\NVGs\Medical\Medical_##name##.paa"};\
-		uniformModel = "\lsd_equipment_bluefor\nvg\gar\medicScanner\lsd_gar_medicalScanner_nvg_on";\
-		modelOff = "\lsd_equipment_bluefor\nvg\gar\medicScanner\lsd_gar_medicalScanner_nvg_off";\
-		mass = 1;\
-	};\
 	class XtdGearInfo {\
 		model = 95th_NVG_Medical;\
 		Colour = ##name##;\

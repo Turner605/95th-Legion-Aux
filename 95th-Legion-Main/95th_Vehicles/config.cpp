@@ -232,17 +232,12 @@ class CfgAmmo {
 
 	class Bomb_04_F;
 	class NFL_LAAT_Resupply_Launcher_Ammo: Bomb_04_F {
-		hit = 0;
-		indirectHit = 0;
-		indirectHitRange = 0.01;
-		model = "3AS\3AS_AMMO\MODEL\EMP_BOMB.p3d";
-		craterEffects = "";
-		explosionEffects = "";
-		explosionSoundEffect = "";
-		explosionTime = 3;
-		fuseDistance = 10;
+		hit = 0; indirectHit = 0; indirectHitRange = 0.01;
+		craterEffects = ""; explosionEffects = ""; explosionSoundEffect = "";
+		explosionTime = 3; fuseDistance = 10;
 		SoundSetExplosion[] = {};
 		multiSoundHit[]={};
+		model = "3AS\3AS_AMMO\MODEL\EMP_BOMB.p3d";
 	};
 };
 
