@@ -3,8 +3,6 @@ params ["_target", "_player", "_bombType"];
 private _weaponToAdd = "NFL_LAAT_Resupply_Launcher";
 private _magazineToAdd = "";
 
-// Check if the LAAT is near a resupply pad
-
 switch (_bombType) do {
 	case "Ammo": {_magazineToAdd = "NFL_LAAT_Resupply_Launcher_Magazine_Ammo"};
 	case "Medical": {_magazineToAdd = "NFL_LAAT_Resupply_Launcher_Magazine_Medical"};

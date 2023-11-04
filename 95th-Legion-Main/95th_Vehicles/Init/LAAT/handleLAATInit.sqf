@@ -20,10 +20,6 @@ _vehicle addEventHandler["Fired", {
 
         }, [_vehicle], 1] call CBA_fnc_waitAndExecute;
 
-        while {alive _projectile} do {
-            _detPos = getPosAtl _projectile;
-        };
-
-        [_detPos, _magazine] spawn NFA_fnc_handleResupplyBombDetonated;
+        [_vehicle, _projectile, _magazine] spawn NFA_fnc_handleResupplyBombDetonated;
     };
 }];

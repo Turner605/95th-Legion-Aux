@@ -362,7 +362,7 @@ class CfgVehicles {
 
 				class addAmmoBomb {
 					displayName = "Load Ammo Drop";
-					condition = "true"; // Check if is near landing pad
+					condition = "this call NFA_fnc_checkIsNearResupplyPad";
 					exceptions[] = {};
 					statement = "[_target, _player, 'Ammo'] call NFA_fnc_handleLoadResupplyBomb;";
 					icon = "";
@@ -562,6 +562,7 @@ class CfgFunctions {
 
 			class handleLoadResupplyBomb {file = "\95th_Vehicles\Scripts\Resupply Bomb\handleLoadResupplyBomb.sqf";};
 			class handleResupplyBombDetonated {file = "\95th_Vehicles\Scripts\Resupply Bomb\handleResupplyBombDetonated.sqf";};
+			class checkIsNearResupplyPad {file = "\95th_Vehicles\Scripts\Resupply Bomb\checkIsNearResupplyPad.sqf";};
 
 			class handleLAATInit {file = "\95th_Vehicles\Init\LAAT\handleLAATInit.sqf";};
 		};
