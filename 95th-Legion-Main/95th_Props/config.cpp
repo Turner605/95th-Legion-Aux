@@ -353,6 +353,7 @@ class CfgVehicles {
 
 	class 3as_FOB_turret_base_prop;
 	class 95th_Resupply_Pad : 3as_FOB_turret_base_prop {
+		scope = 2;
 		displayName="[95th] Resupply Pad";
 		editorCategory="95th_Props";
 		editorSubcategory="95th_Utilities";
