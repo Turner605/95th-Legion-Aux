@@ -31,7 +31,8 @@ switch (_magazine) do {
 	case "NFL_LAAT_Resupply_Launcher_Magazine_VehicleFuel": {_supplyBox = "95th_Supply_Large_Red_Prop";};
 };
 
-private _position = (_detPos vectorAdd [0,0,_offset]);
+// private _position = (_detPos vectorAdd [0,0,_offset]);
+private _position = _detPos;
 
 if(_spawnCrater) then {
 	private _crater = createVehicle ["CraterLong_small", _position, [], 0, "CAN_COLLIDE"]; 
