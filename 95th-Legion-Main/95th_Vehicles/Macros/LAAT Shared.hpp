@@ -29,4 +29,40 @@
 				priority = 10; radius = 10; position = camera; showWindow = 0; onlyForPlayer = 0; shortcut = ''; condition = "alive this";\
 				statement = "[this, player] spawn NFA_fnc_handleLAATRespawnToggle;";\
 			};\
+		};\
+		class ACE_SelfActions {\
+            class addResupplyBomb {\
+				displayName = "Load Resupply Drop";\
+				condition = true; exceptions[] = {}; statement = ''; icon = '';\
+				class addAmmoBomb {\
+					displayName = "Load Ammo Drop";\
+					condition = "this call NFA_fnc_checkIsNearResupplyPad";\
+					exceptions[] = {};\
+					statement = "[_target, _player, 'Ammo'] call NFA_fnc_handleLoadResupplyBomb;";\
+				};\
+				class addMedicalBomb {\
+					displayName = "Load Medical Drop";\
+					condition = "this call NFA_fnc_checkIsNearResupplyPad";\
+					exceptions[] = {};\
+					statement = "[_target, _player, 'Medical'] call NFA_fnc_handleLoadResupplyBomb;";\
+				};\
+				class addExplosivesBomb {\
+					displayName = "Load Explosives Drop";\
+					condition = "this call NFA_fnc_checkIsNearResupplyPad";\
+					exceptions[] = {};\
+					statement = "[_target, _player, 'Explosives'] call NFA_fnc_handleLoadResupplyBomb;";\
+				};\
+				class addVehicleAmmoBomb {\
+					displayName = "Load Vehicle Ammo Drop";\
+					condition = "this call NFA_fnc_checkIsNearResupplyPad";\
+					exceptions[] = {};\
+					statement = "[_target, _player, 'VehicleAmmo'] call NFA_fnc_handleLoadResupplyBomb;";\
+				};\
+				class addVehicleFuelBomb {\
+					displayName = "Load Vehicle Fuel Drop";\
+					condition = "this call NFA_fnc_checkIsNearResupplyPad";\
+					exceptions[] = {};\
+					statement = "[_target, _player, 'VehicleFuel'] call NFA_fnc_handleLoadResupplyBomb;";\
+				};\
+			};\
 		};

@@ -354,21 +354,6 @@ class CfgVehicles {
 		displayname="[95th] LAAT/I Mk.1";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
 		NEW_SHARED_LAAT_CONFIG()
-
-		class ACE_SelfActions {
-            class addResupplyBomb {
-				displayName = "Load Resupply Drop";
-				condition = "true"; exceptions[] = {}; statement = ""; icon = "";
-
-				class addAmmoBomb {
-					displayName = "Load Ammo Drop";
-					condition = "this call NFA_fnc_checkIsNearResupplyPad";
-					exceptions[] = {};
-					statement = "[_target, _player, 'Ammo'] call NFA_fnc_handleLoadResupplyBomb;";
-					icon = "";
-				};
-			};
-		};
 	};
 
 	class 3as_LAAT_Mk2;
