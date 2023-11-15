@@ -18,7 +18,7 @@ class CfgPatches {
 		units[] = {"95th_Firehawke"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Armor_F_Beta", "3AS_SaberTank"};
+		requiredAddons[] = {"A3_Armor_F_Beta", "95th_Legion_Vehicles"};
 		author = "JMax";
 	};
 };
