@@ -3,7 +3,7 @@ class CfgPatches {
         author="95th Aux Team";
         name="95th Legion Equipment";
 		requiredAddons[]={"ls_weapons"};
-		weapons[] = {"NFL_Disc_Shield","NFL_Auto_Turret"};
+		weapons[] = {"NFL_Disc_Shield","NFL_Auto_Turret","NFL_MFD_Item"};
 		units[]={};
 	};
 };
@@ -63,6 +63,22 @@ class CfgWeapons {
         author="95th Aux";
 		displayName = "Auto Turret Deployer";
 		descriptionShort = "Auto Turret Deployer";
+		model = "\a3\structures_f_heli\items\electronics\tablet_01_f.p3d";
+		picture = ""; //todo
+		scope = 2;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 44;
+        };
+    };
+
+    class NFL_MFD_Item: CBA_MiscItem {
+		DSS_IsCloakingDevice = 1;
+		DSS_IsHackingDevice = 1;
+		DSS_IsSupportDevice = 1;
+		NFL_Disc_Shield = 1;
+        author="95th Aux";
+		displayName = "[95th] MFD";
+		descriptionShort = "Multi Functional Device";
 		model = "\a3\structures_f_heli\items\electronics\tablet_01_f.p3d";
 		picture = ""; //todo
 		scope = 2;

@@ -1,62 +1,31 @@
-class CfgPatches
-{
-	class 95th_Legion_Groups
-	{
+class CfgPatches {
+	class 95th_Legion_Groups {
         author="95th Aux Team";
         name="95th Legion Groups";
-		requiredAddons[]=
-		{
-			"JLTS_characters_CloneArmor"
+		requiredAddons[]= {
+			"JLTS_characters_CloneArmor",
+			"95th_P1_Units"
 		};
 		units[] = {};
 	};
 };
 
-class CfgGroups 
-{
-    class West 
-    {
+class CfgGroups {
+    class West {
 		name="$STR_A3_CfgGroups_West0";
         side=1;
-        class 95th_Legion_Faction_Clones 
-        {
+        class 95th_Legion_Faction_Clones  {
             name = "95th Legion Phase 1";
-            class 95th_Infantry
-            {
+            class 95th_Infantry {
             	name = "Infantry";
-				class 95th_FireTeam
-				{
+				class 95th_FireTeam {
 					side = 1;
 					faction = "95th_Legion_Faction_Clones";
 					name="Fire Team";
-					class Unit0
-					{
-						side = 1;
-						vehicle = "95th_P1_Unit_Sergeant";
-						rank = "SERGEANT";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 1;
-						vehicle = "95th_P1_Unit_Medic";
-						rank = "PRIVATE";
-						position[] = {5,-5,0};
-					};
-					class Unit2
-					{
-						side = 1;
-						vehicle = "95th_P1_Unit_Trooper";
-						rank = "PRIVATE";
-						position[] = {-5,-5,0};
-					};
-					class Unit3
-					{
-						side = 1;
-						vehicle = "95th_P1_Unit_Trooper";
-						rank = "PRIVATE";
-						position[] = {10,-10,0};
-					};
+					class Unit0 {side = 1; vehicle = "95th_Rifleman_Unit_Sergeant"; rank = "SERGEANT"; position[] = {0,0,0};};
+					class Unit1 {side = 1; vehicle = "95th_Rifleman_Unit_Medic"; rank = "PRIVATE"; position[] = {5,-5,0};};
+					class Unit2{side = 1; vehicle = "95th_Rifleman_Unit_Trooper"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit3{side = 1; vehicle = "95th_Rifleman_Unit_Trooper"; rank = "PRIVATE"; position[] = {10,-10,0};};
             	};
             };
         };
