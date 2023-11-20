@@ -75,7 +75,7 @@ class CfgWeapons {
 		DSS_IsCloakingDevice = 1;
 		DSS_IsHackingDevice = 1;
 		DSS_IsSupportDevice = 1;
-		NFL_Disc_Shield = 1;
+		NFL_IsDiscShieldDevice = 1;
         author="95th Aux";
 		displayName = "[95th] MFD";
 		descriptionShort = "Multi Functional Device";

@@ -88,7 +88,18 @@ private _engineerLoadout = [[
 
 ["[95th] 2 - Engineer (DC15A)", _engineerLoadout] call ace_arsenal_fnc_addDefaultLoadout;
 
+//-----------------------------# Medic Loadout #-----------------------------------
+private _medicLoadout = [[
+	_dc15s, [], _dc17s, 
+	_engineerUniform, 
+	["95th_Basic_Vest_Medic",[["JLTS_DC15S_mag",7,80],["JLTS_DC17SA_mag",2,20],["JLTS_stun_mag_long",2,5]]],
+	["95th_Backpack_Medic", _medicBackpack], 
+	"95th_Helmet_Medic", 
+	"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""],
+	["ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch","95th_P1_Nightvision_Invisible"]
+],[]];
 
+["[95th] 2 - Medic (DC15S)", _medicLoadout] call ace_arsenal_fnc_addDefaultLoadout;
 
 
 // 0 - Marksman - Done
