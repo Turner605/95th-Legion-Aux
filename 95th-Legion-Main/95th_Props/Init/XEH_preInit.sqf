@@ -61,7 +61,7 @@ private _arsenalHelmets = [
 	"95th_Engineer_Helmet_Kong","95th_Engineer_Helmet_Trooper","95th_ColdAssault_Helmet_Trooper","95th_ARF_Helmet_Trooper","95th_ARC_Helmet_Trooper",
 	"95th_Airborne_Helmet_Trooper","95th_Engineer_Helmet_Som","95th_Commando_Helmet_Trooper","95th_ARF_Helmet_Osprey","95th_ARF_Helmet_Sythe",
 	"95th_Helmet_Smaug","95th_Helmet_Commie","95th_Helmet_Ratler","95th_ARF_Helmet_Cheezy","95th_Helmet_Som","95th_Helmet_Hypo", "95th_Helmet_MadHatter",
-	"95th_P1_Pilot_Helmet_Outcast"
+	"95th_P1_Pilot_Helmet_Outcast", "95th_Helmet_Third", "95th_Helmet_Witch"
 ];
 
 //-----------------------------# Uniforms #-----------------------------------
@@ -82,9 +82,17 @@ private _arsenalVests = [
 
 //-----------------------------# Backpacks #-----------------------------------
 private _arsenalBackpacks = [
-	"95th_Backpack_Trooper","95th_Backpack_RTO","95th_Backpack_Mini_RTO","JLTS_portable_shield_gar_backpack","95th_Backpack_Medic","95th_Backpack_Heavy",
-	"95th_Backpack_EOD","3AS_Republic_HR_Bag","3AS_Republic_HR_Shield_Bag","JLTS_UST_turret_GAR_backpack","95th_FlameThrower_Backpack","95th_JumpPack",
-	"95th_JumpPack_MC","95th_Katarn_Backpack"
+	"AUX_95th_Bag_Backpack_Visible_Trooper", "AUX_95th_Bag_Backpack_Invisible_Trooper",
+ 	"AUX_95th_Backpack_Visible_Heavy", "AUX_95th_Backpack_Invisible_Heavy", 
+	"AUX_95th_Backpack_Visible_Medic", "AUX_95th_Backpack_Invisible_Medic", 
+	"AUX_95th_Backpack_Visible_Ordnance", "AUX_95th_Backpack_Invisible_Ordnance",
+	"AUX_95th_RTO_Backpack_Visible_Medic", "AUX_95th_RTO_Backpack_Invisible_Medic", 
+	"AUX_95th_RTO_Backpack_Visible_RTO", "AUX_95th_RTO_Backpack_Invisible_RTO", 
+	"AUX_95th_RTO_Backpack_Visible_Mini_RTO", "AUX_95th_RTO_Backpack_Visible_Mini_Turner",
+	"AUX_95th_JT12_Jetpack_Trooper",
+	"AUX_95th_MC_Jetpack_Trooper",
+	"95th_Katarn_Backpack","95th_FlameThrower_Backpack",
+	"3AS_Republic_HR_Bag","3AS_Republic_HR_Shield_Bag","JLTS_UST_turret_GAR_backpack","JLTS_portable_shield_gar_backpack"
 ];
 
 //-----------------------------# Gear #-----------------------------------
