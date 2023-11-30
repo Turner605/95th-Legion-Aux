@@ -55,7 +55,7 @@ private _arsenalAttachments = [
 
 //-----------------------------# Helmets #-----------------------------------
 private _arsenalHelmets = [
-	"95th_P1_Pilot_Helmet_Trooper","95th_P1_Pilot_Helmet_Jinter","95th_SpecOps_Helmet_Trooper","95th_Helmet_Trooper","95th_Helmet_Neary","95th_Helmet_Bretek",
+	"95th_P1_Pilot_Helmet_Trooper","95th_P1_Pilot_Helmet_Jinter","95th_SpecOps_Helmet_Trooper","95th_Helmet_Trooper","95th_Helmet_Shiny","95th_Helmet_Neary","95th_Helmet_Bretek",
 	"95th_Helmet_Havoc","95th_Helmet_Sand","95th_Helmet_Manila","95th_Helmet_Biedronka","95th_Helmet_Volt","95th_Helmet_Splash","95th_Helmet_Turner",
 	"95th_Helmet_Outcast","95th_Helmet_Veteran","95th_Helmet_Senior","95th_Helmet_Medic","95th_Hazard_Helmet_Trooper","95th_Engineer_Helmet_Revan",
 	"95th_Engineer_Helmet_Kong","95th_Engineer_Helmet_Trooper","95th_ColdAssault_Helmet_Trooper","95th_ARF_Helmet_Trooper","95th_ARC_Helmet_Trooper",
@@ -66,7 +66,7 @@ private _arsenalHelmets = [
 
 //-----------------------------# Uniforms #-----------------------------------
 private _arsenalUniforms = [
-	"95t1_P1_Uniform_Veteran","95th_P1_Uniform_Trooper","95th_P1_Uniform_Sergeant","95th_P1_Uniform_Senior","95th_P1_Uniform_Medic",
+	"95t1_P1_Uniform_Veteran","95th_P1_Uniform_Trooper","95th_P1_Uniform_Shiny","95th_P1_Uniform_Sergeant","95th_P1_Uniform_Senior","95th_P1_Uniform_Medic",
 	"95th_P1_Uniform_Lieutenant","95th_P1_Uniform_Captain","95th_P1_Uniform_Volt","95th_ColdAssault_Uniform_Trooper","95th_MC_Uniform_Zeus",
 	"95th_MC_Uniform_Turner","95th_Commando_Uniform_Trooper","95th_P1_Uniform_Jinter","95th_P1_Uniform_Bretek"
 ];

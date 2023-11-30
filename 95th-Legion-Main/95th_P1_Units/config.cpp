@@ -97,8 +97,9 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper","Medic","Senior","Veteran","Sergeant","Captain","Lieutenant"};
+				values[] = {"Trooper","Shiny","Medic","Senior","Veteran","Sergeant","Captain","Lieutenant"};
 				class Trooper { label = "Trooper"; description = "Default Uniform"; };
+				class Shiny { label = "Shiny"; description = "Shiny Uniform"; };
 				class Medic { label = "Medic"; description = "Medic Uniform"; };
 				class Senior { label = "Senior"; description = "Senior Uniform"; };
 				class Veteran { label = "Veteran"; description = "Veteran Uniform"; };
@@ -166,8 +167,9 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery","Som","Solvest","Ratler","MadHatter", "Third", "Witch"};
+				values[] = {"Trooper","Shiny","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery","Som","Solvest","Ratler","MadHatter", "Third", "Witch"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+				class Shiny { label = "Shiny"; description = "Shiny Helmet"; };
 				class Medic { label = "Medic"; description = "Medic Helmet"; };
 				class Senior { label = "Senior"; description = "Senior Helmet"; };
 				class Veteran { label = "Veteran"; description = "Veteran Helmet"; };
@@ -337,6 +339,7 @@ class cfgWeapons {
 
 //############################################################### Uniforms ###############################################################
 	NEW_95TH_P1_UNIFORM(Trooper,Trooper)};
+	NEW_95TH_P1_UNIFORM(Shiny,Shiny)};
 	NEW_95TH_P1_UNIFORM(Medic,Medic)};
 	NEW_95TH_P1_UNIFORM(Senior,Senior)};
 	NEW_95TH_P1_UNIFORM(Veteran,Veteran)};
@@ -357,6 +360,7 @@ class cfgWeapons {
 
 //############################################################### Helmets ###############################################################
 	NEW_95TH_P1_HELMET(Trooper)};
+	NEW_95TH_P1_HELMET(Shiny)};
 	NEW_95TH_P1_HELMET(Medic)};
 	NEW_95TH_P1_HELMET(Senior)};
 	NEW_95TH_P1_HELMET(Veteran)};
@@ -418,6 +422,7 @@ class CfgVehicles {
 	//############################################################### Units ###############################################################
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_RIFLEMAN_UNIT(Trooper,Trooper,Trooper)};
+	NEW_95TH_RIFLEMAN_UNIT(Shiny,Shiny,Trooper)};
 	NEW_95TH_RIFLEMAN_UNIT(Medic,Trooper,Trooper)};
 	NEW_95TH_RIFLEMAN_UNIT(Senior,Senior,Trooper)};
 	NEW_95TH_RIFLEMAN_UNIT(Veteran,Veteran,Veteran)};
