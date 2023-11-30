@@ -115,7 +115,8 @@
 	JLTS_isJumppack = 0;\
 	picture="\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";\
 	model="\MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";\
-	hiddenSelectionsTextures[]={"\95th_Backpacks\Data\Jetpacks\JT12_##name##.paa"};\
+	hiddenSelections[]={"camo1"};\
+	hiddenSelectionsTextures[]={\95th_Backpacks\Data\Jetpacks\JT12_##name##.paa};\
 	tf_dialog="JLTS_clone_lr_programmer_radio_dialog";\
 	tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";\
 	tf_encryptionCode="tf_west_radio_code";\
@@ -147,7 +148,7 @@
 	picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";\
 	model="\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";\
 	hiddenSelections[]={"camo1"};\
-	hiddenSelectionsTextures[]={"\95th_Backpacks\Data\Jetpacks\MC_##name##.paa"};\
+	hiddenSelectionsTextures[] = {\95th_Backpacks\Data\Jetpacks\MC_##name##.paa};\
 	tf_dialog="JLTS_clone_lr_programmer_radio_dialog";\
 	tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";\
 	tf_encryptionCode="tf_west_radio_code";\
