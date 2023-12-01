@@ -107,6 +107,26 @@ class XtdGearModels {
 				class Trooper { label = "Trooper"; description = "Trooper Jetpack"; };
 			};
 		};
+
+		class 95th_Custom_Jetpacks {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Variant", "Role"};
+
+			class Variant {
+				labels = "Variant";
+				alwaysSelectable = 1;
+				values[] = {"JT12", "MC"};
+				class JT12 { label = "JT12"; description = "JT12 Variant"; };
+				class MC { label = "MC"; description = "Marshal Commander Variant"; };
+			};
+
+			class Role {
+				labels = "Role";
+				values[] = {"Turner"};
+				class Turner { label = "Turner"; description = "Turner Jetpack"; };
+			};
+		};
 	};
 };
 
@@ -121,29 +141,31 @@ class CfgVehicles {
 
 	//###############################Backpacks###############################
 
-	NEW_95TH_BAG_BACKPACK_VISIBLE(Trooper,95th_Backpacks,"95th Backpack")};
-	NEW_95TH_BAG_BACKPACK_INVISIBLE(Trooper,95th_Backpacks,"95th Backpack")};
+	NEW_95TH_BAG_BACKPACK_VISIBLE(Trooper,95th_Backpacks,"95th Backpack",150)};
+	NEW_95TH_BAG_BACKPACK_INVISIBLE(Trooper,95th_Backpacks,"95th Backpack",150)};
 
-	NEW_95TH_BACKPACK_VISIBLE(Heavy,95th_Backpacks,"95th Backpack")};
-	NEW_95TH_BACKPACK_INVISIBLE(Heavy,95th_Backpacks,"95th Backpack")};
-	NEW_95TH_BACKPACK_VISIBLE(Medic,95th_Backpacks,"95th Backpack")};
-	NEW_95TH_BACKPACK_INVISIBLE(Medic,95th_Backpacks,"95th Backpack")};
-	NEW_95TH_BACKPACK_VISIBLE(Ordnance,95th_Backpacks,"95th Backpack")};
-	NEW_95TH_BACKPACK_INVISIBLE(Ordnance,95th_Backpacks,"95th Backpack")};
+	NEW_95TH_BACKPACK_VISIBLE(Heavy,95th_Backpacks,"95th Backpack",300)};
+	NEW_95TH_BACKPACK_INVISIBLE(Heavy,95th_Backpacks,"95th Backpack",300)};
+	NEW_95TH_BACKPACK_VISIBLE(Medic,95th_Backpacks,"95th Backpack",400)};
+	NEW_95TH_BACKPACK_INVISIBLE(Medic,95th_Backpacks,"95th Backpack",400)};
+	NEW_95TH_BACKPACK_VISIBLE(Ordnance,95th_Backpacks,"95th Backpack",400)};
+	NEW_95TH_BACKPACK_INVISIBLE(Ordnance,95th_Backpacks,"95th Backpack",400)};
 
-	NEW_95TH_RTO_BACKPACK_VISIBLE(Medic,95th_Backpacks,"95th Backpack")};
-	NEW_95TH_RTO_BACKPACK_INVISIBLE(Medic,95th_Backpacks,"95th Backpack")};
-	NEW_95TH_RTO_BACKPACK_VISIBLE(RTO,95th_Backpacks,"95th Backpack")};
-	NEW_95TH_RTO_BACKPACK_INVISIBLE(RTO,95th_Backpacks,"95th Backpack")};
-	NEW_95TH_RTO_BACKPACK_VISIBLE_MINI(RTO,95th_Backpacks,"95th Backpack")};
+	NEW_95TH_RTO_BACKPACK_VISIBLE(Medic,95th_Backpacks,"95th Backpack",400)};
+	NEW_95TH_RTO_BACKPACK_INVISIBLE(Medic,95th_Backpacks,"95th Backpack",400)};
+	NEW_95TH_RTO_BACKPACK_VISIBLE(RTO,95th_Backpacks,"95th Backpack",150)};
+	NEW_95TH_RTO_BACKPACK_INVISIBLE(RTO,95th_Backpacks,"95th Backpack",150)};
+	NEW_95TH_RTO_BACKPACK_VISIBLE_MINI(RTO,95th_Backpacks,"95th Backpack",150)};
 
-	NEW_95TH_RTO_BACKPACK_VISIBLE_MINI(Turner,95th_Custom_Backpacks,"95th Custom Backpack")};
+	NEW_95TH_RTO_BACKPACK_VISIBLE_MINI(Turner,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 	
 
 	//###############################Jetpacks###############################
 
-	NEW_95TH_JETPACK_JT12(Trooper,95th_Jetpacks,"95th Jetpacks")};
-	NEW_95TH_JETPACK_MC(Trooper,95th_Jetpacks,"95th Jetpacks")};
+	NEW_95TH_JETPACK_JT12(Trooper,95th_Jetpacks,"95th Jetpacks",150)};
+	NEW_95TH_JETPACK_MC(Trooper,95th_Jetpacks,"95th Jetpacks",150)};
+
+	NEW_95TH_JETPACK_MC(Turner,95th_Custom_Jetpacks,"95th Custom Jetpacks",400)};
 
 
 	//###############################Commando###############################

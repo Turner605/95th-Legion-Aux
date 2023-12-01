@@ -1,7 +1,7 @@
-#define NEW_95TH_BACKPACK_VISIBLE(name,modelName,modelDisplayName) class AUX_95th_Backpack_Visible_##name## : JLTS_Clone_backpack {\
+#define NEW_95TH_BACKPACK_VISIBLE(name,modelName,modelDisplayName,load) class AUX_95th_Backpack_Visible_##name## : JLTS_Clone_backpack {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
-	maximumLoad = 250;\
+	maximumLoad = ##load##;\
 	hiddenSelectionsTextures[]={\95th_Backpacks\Data\Backpacks\Backpack_##name##.paa};\
 	class XtdGearInfo {\
 		model = ##modelName##;\
@@ -11,10 +11,10 @@
 		Size = Normal;\
 	};
 
-#define NEW_95TH_BACKPACK_INVISIBLE(name,modelName,modelDisplayName) class AUX_95th_Backpack_Invisible_##name## : JLTS_Clone_backpack {\
+#define NEW_95TH_BACKPACK_INVISIBLE(name,modelName,modelDisplayName,load) class AUX_95th_Backpack_Invisible_##name## : JLTS_Clone_backpack {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
-	maximumLoad = 250;\
+	maximumLoad = ##load##;\
 	model=\a3\weapons_f\empty.p3d;\
 	class XtdGearInfo {\
 		model = ##modelName##;\
@@ -24,10 +24,10 @@
 		Size = Normal;\
 	};
 
-#define NEW_95TH_BAG_BACKPACK_VISIBLE(name,modelName,modelDisplayName) class AUX_95th_Bag_Backpack_Visible_##name## : JLTS_Clone_belt_bag {\
+#define NEW_95TH_BAG_BACKPACK_VISIBLE(name,modelName,modelDisplayName,load) class AUX_95th_Bag_Backpack_Visible_##name## : JLTS_Clone_belt_bag {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
-	maximumLoad = 250;\
+	maximumLoad = ##load##;\
 	hiddenSelectionsTextures[]={\95th_Backpacks\Data\Backpacks\Bag_##name##.paa};\
 	class XtdGearInfo {\
 		model = ##modelName##;\
@@ -37,10 +37,10 @@
 		Size = Normal;\
 	};
 
-#define NEW_95TH_BAG_BACKPACK_INVISIBLE(name,modelName,modelDisplayName) class AUX_95th_Bag_Backpack_Invisible_##name## : JLTS_Clone_belt_bag {\
+#define NEW_95TH_BAG_BACKPACK_INVISIBLE(name,modelName,modelDisplayName,load) class AUX_95th_Bag_Backpack_Invisible_##name## : JLTS_Clone_belt_bag {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
-	maximumLoad = 250;\
+	maximumLoad = ##load##;\
 	model=\a3\weapons_f\empty.p3d;\
 	class XtdGearInfo {\
 		model = ##modelName##;\
@@ -50,10 +50,10 @@
 		Size = Normal;\
 	};
 
-#define NEW_95TH_RTO_BACKPACK_VISIBLE(name,modelName,modelDisplayName) class AUX_95th_RTO_Backpack_Visible_##name## : JLTS_Clone_backpack_RTO {\
+#define NEW_95TH_RTO_BACKPACK_VISIBLE(name,modelName,modelDisplayName,load) class AUX_95th_RTO_Backpack_Visible_##name## : JLTS_Clone_backpack_RTO {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
-	maximumLoad = 250;\
+	maximumLoad = ##load##;\
 	hiddenSelectionsTextures[]={\95th_Backpacks\Data\Backpacks\Backpack_##name##.paa};\
 	tf_dialog="JLTS_clone_lr_programmer_radio_dialog";\
 	tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";\
@@ -69,10 +69,10 @@
 		Size = Normal;\
 	};
 
-#define NEW_95TH_RTO_BACKPACK_INVISIBLE(name,modelName,modelDisplayName) class AUX_95th_RTO_Backpack_Invisible_##name## : JLTS_Clone_backpack_RTO {\
+#define NEW_95TH_RTO_BACKPACK_INVISIBLE(name,modelName,modelDisplayName,load) class AUX_95th_RTO_Backpack_Invisible_##name## : JLTS_Clone_backpack_RTO {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
-	maximumLoad = 250;\
+	maximumLoad = ##load##;\
 	model=\a3\weapons_f\empty.p3d;\
 	tf_dialog="JLTS_clone_lr_programmer_radio_dialog";\
 	tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";\
@@ -88,10 +88,10 @@
 		Size = Normal;\
 	};
 
-#define NEW_95TH_RTO_BACKPACK_VISIBLE_MINI(name,modelName,modelDisplayName) class AUX_95th_RTO_Backpack_Visible_Mini_##name## : JLTS_Clone_RTO_pack {\
+#define NEW_95TH_RTO_BACKPACK_VISIBLE_MINI(name,modelName,modelDisplayName,load) class AUX_95th_RTO_Backpack_Visible_Mini_##name## : JLTS_Clone_RTO_pack {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
-	maximumLoad = 250;\
+	maximumLoad = ##load##;\
 	hiddenSelectionsTextures[]={\95th_Backpacks\Data\Backpacks\Backpack_Mini_##name##.paa};\
 	tf_dialog="JLTS_clone_lr_programmer_radio_dialog";\
 	tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";\
@@ -107,10 +107,10 @@
 		Size = Mini;\
 	};
 
-#define NEW_95TH_JETPACK_JT12(name,modelName,modelDisplayName) class AUX_95th_JT12_Jetpack_##name## : 3as_JT12 {\
+#define NEW_95TH_JETPACK_JT12(name,modelName,modelDisplayName,load) class AUX_95th_JT12_Jetpack_##name## : 3as_JT12 {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
-	maximumLoad = 250;\
+	maximumLoad = ##load##;\
 	DSS_IsInsertionDevice = 1;\
 	JLTS_isJumppack = 0;\
 	picture="\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";\
@@ -139,10 +139,10 @@
 		Variant = JT12;\
 	};
 
-#define NEW_95TH_JETPACK_MC(name,modelName,modelDisplayName) class AUX_95th_MC_Jetpack_##name## : 3as_JT12 {\
+#define NEW_95TH_JETPACK_MC(name,modelName,modelDisplayName,load) class AUX_95th_MC_Jetpack_##name## : 3as_JT12 {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
-	maximumLoad = 250;\
+	maximumLoad = ##load##;\
 	DSS_IsInsertionDevice = 1;\
 	JLTS_isJumppack = 0;\
 	picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";\

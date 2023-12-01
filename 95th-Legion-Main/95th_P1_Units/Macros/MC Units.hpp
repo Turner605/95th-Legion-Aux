@@ -19,8 +19,8 @@
 	};\
 	displayName=[95th] MC - ##name##;\
 	uniformClass=95th_MC_Uniform_##name##;\
-	linkedItems[]={95th_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
-	respawnLinkedItems[]={95th_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
+	linkedItems[]={95th_Helmet_##helmet##,95th_Basic_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
+	respawnLinkedItems[]={95th_Helmet_##helmet##,95th_Basic_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	icon=JLTS_iconManMarshalCMDR;\
 	model=\MRC\JLTS\characters\CloneArmor\CloneArmorMC.p3d;\
 	hiddenSelections[]={camo1,camo2,camo3};\

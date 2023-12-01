@@ -34,8 +34,8 @@ class CfgVehicles
 		editorSubcategory="95th_Jedi";
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_DC15A.jpg"; //TODO: CHANGE TO P1
 		icon="JLTS_iconManHeavy"; // TODO: CHANGE TO BASIC ICON
-		linkedItems[]={"95th_P1_Helmet_Trooper","95th_Vest_Trooper","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
-		respawnLinkedItems[]={"95th_P1_Helmet_Trooper","95th_Vest_Trooper","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+		linkedItems[]={"95th_P1_Helmet_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+		respawnLinkedItems[]={"95th_P1_Helmet_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
 		weapons[]={"JLTS_DC15A_plastic", "JLTS_DC17SA", "Throw", "Put"};
 		respawnWeapons[]={"JLTS_DC15A_plastic", "JLTS_DC17SA", "Throw", "Put"};
 		magazines[]=

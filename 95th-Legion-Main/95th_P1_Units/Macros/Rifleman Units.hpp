@@ -19,8 +19,8 @@
 	};\
 	displayName=[95th] Rifleman - ##name##;\
 	uniformClass=95th_P1_Uniform_##name##;\
-	linkedItems[]={95th_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
-	respawnLinkedItems[]={95th_Helmet_##helmet##,95th_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
+	linkedItems[]={95th_Helmet_##helmet##,95th_Basic_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
+	respawnLinkedItems[]={95th_Helmet_##helmet##,95th_Basic_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]=\
 	{\
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Upper.paa,\
