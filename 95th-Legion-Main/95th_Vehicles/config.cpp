@@ -17,7 +17,7 @@ class CfgPatches {
 			"95th_TX_130_Shield",
 
 			"95th_RX200",
-			"95th_Outpost_Crate"
+			"AUX_95th_Command_Outpost"
 		};
 		magazines[]={
 			"95th_LAAT_Light_Cannon_Magazine"
@@ -347,8 +347,10 @@ class CfgWeapons {
 };
 
 class CfgVehicles {
-//############################################################### LAATs ###############################################################
+	//############################################################### LAATs ###############################################################
 	class 3as_LAAT_Mk1;
+	class 3as_LAAT_Mk2;
+	class 3as_LAAT_Mk2Lights;
 
 	class 95th_LAAT_Mrk1: 3as_LAAT_Mk1 {
 		displayname="[95th] LAAT/I Mk.1";
@@ -356,14 +358,12 @@ class CfgVehicles {
 		NEW_SHARED_LAAT_CONFIG()
 	};
 
-	class 3as_LAAT_Mk2;
 	class 95th_LAAT_Mrk2: 3as_LAAT_Mk2 {
 		displayname="[95th] LAAT/I Mk.2";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
 		NEW_SHARED_LAAT_CONFIG()
 	};
 
-	class 3as_LAAT_Mk2Lights;
 	class 95th_LAAT_Mrk2Lights: 3as_LAAT_Mk2Lights {
 		displayname="[95th] LAAT/I Mk.2 (Lamps)";
 		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\LAAT\Default\Hull.paa","\95th_Vehicles\Data\LAAT\Default\Wings.paa","\95th_Vehicles\Data\LAAT\Default\Weapons.paa","\95th_Vehicles\Data\LAAT\Default\Weapon_Details.paa","\95th_Vehicles\Data\LAAT\Default\Interior.paa"};
@@ -372,51 +372,20 @@ class CfgVehicles {
 
 	//############################################################### Sabers ###############################################################
 	class 3as_saber_m1;
+	class 3as_saber_m1Recon;
+
 	class 95th_TX_130 : 3as_saber_m1 {
-		author="95th Aux";
-		scopecurator=2;
-		scope = 2;
-        crew = "95th_Rifleman_Unit_Trooper";
-		faction="95th_Legion_Faction_Clones";
-		displayname="95th TX-130";
-		ace_cargo_space = 26;
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Vehicles\Data\Saber\Hull.paa",
-			"\95th_Vehicles\Data\Saber\Weapons.paa",
-		};
-		class ACE_Cargo {
-			class Cargo {
-				class track {
-					type = "ACE_Track";
-					amount = 2;
-				};
-			};
-		};
+		author="95th Aux"; displayname="95th TX-130";
+        crew = "95th_Rifleman_Unit_Trooper"; faction="95th_Legion_Faction_Clones";
+		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\Saber\Hull.paa", "\95th_Vehicles\Data\Saber\Weapons.paa"};
+		class ACE_Cargo {class Cargo {class track {type = "ACE_Track"; amount = 2;};};}; ace_cargo_space = 26;
 	};
 
-	class 3as_saber_m1Recon;
 	class 95th_TX_130_Shield : 3as_saber_m1Recon {
-		author="95th Aux";
-		scopecurator=2;
-		scope = 2;
-        crew = "95th_Rifleman_Unit_Trooper";
-		faction="95th_Legion_Faction_Clones";
-		displayname="95th TX-130 (Shield)";
-		ace_cargo_space = 26;
-		hiddenSelectionsTextures[]=
-		{
-			"\95th_Vehicles\Data\Saber\Hull.paa",
-			"\95th_Vehicles\Data\Saber\Weapons.paa",
-		};
-		class ACE_Cargo {
-			class Cargo {
-				class track {
-					type = "ACE_Track";
-					amount = 2;
-				};
-			};
-		};
+		author="95th Aux"; displayname="95th TX-130 (Shield)";
+        crew = "95th_Rifleman_Unit_Trooper"; faction="95th_Legion_Faction_Clones";
+		hiddenSelectionsTextures[]={"\95th_Vehicles\Data\Saber\Hull.paa", "\95th_Vehicles\Data\Saber\Weapons.paa"};
+		class ACE_Cargo {class Cargo {class track {type = "ACE_Track"; amount = 2;};};}; ace_cargo_space = 26;
 		class UserActions {
 			class ToggleTXShield {
 				priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
@@ -441,24 +410,10 @@ class CfgVehicles {
 		class ViewOptics;
 		class ViewCargo;
 		class HeadLimits;
-		class HitPoints: HitPoints {
-			class HitHull;
-			class HitFuel;
-			class HitEngine;
-			class HitLTrack;
-			class HitRTrack;
-		};
-		class Sounds: Sounds {
-			class Engine;
-			class Movement;
-		};
+		class HitPoints: HitPoints {class HitHull; class HitFuel; class HitEngine; class HitLTrack; class HitRTrack;};
+		class Sounds: Sounds {class Engine; class Movement;};
 		class EventHandlers;
-		class Reflectors {
-			class Left;
-			class Right: Left {};
-			class Right2: Right {};
-			class Left2: Left {};
-		};
+		class Reflectors {class Left; class Right: Left {}; class Right2: Right {}; class Left2: Left {};};
 	};
 
 	class 95th_RX200 : 3AS_RX200_Base {
@@ -526,8 +481,8 @@ class CfgVehicles {
 	};
 
 	class 3AS_RTT;
-	class 95th_Outpost_Crate: 3AS_RTT {
-		displayName="Outpost Box";
+	class AUX_95th_Command_Outpost: 3AS_RTT {
+		displayName="[95th] Command Outpost";
 		faction="95th_Legion_Faction_Clones";
         crew = "";
 		tas_canBlift=1;
@@ -550,29 +505,18 @@ class CfgFunctions {
 			class checkIsNearResupplyPad {file = "\95th_Vehicles\Scripts\Resupply Bomb\checkIsNearResupplyPad.sqf";};
 
 			class handleLAATInit {file = "\95th_Vehicles\Init\LAAT\handleLAATInit.sqf";};
+			class handleCommandOutpostInit {file = "\95th_Vehicles\Init\Outpost\handleCommandOutpostInit.sqf";};
 		};
 	};
 };
 
 class Extended_InitPost_EventHandlers {
-	class 95th_TX_130_Shield {
-		class 95th_TX_130_Shield_Init {
-			onRespawn="true";
-			serverInit="[_this select 0] call NFA_fnc_handleTXShieldInit;";
-		};
-	};
+	class 95th_TX_130_Shield {class 95th_TX_130_Shield_Init {onRespawn="true";serverInit="[_this select 0] call NFA_fnc_handleTXShieldInit;";};};
+	class AUX_95th_Command_Outpost {class AUX_95th_Command_Outpost_Init {onRespawn="true";serverInit="[_this select 0] call NFA_fnc_handleCommandOutpostInit;";};};
 };
 
 class Extended_init_EventHandlers {
-	class 95th_LAAT_Mrk1 {
-    	class 95th_LAAT_Mrk1_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};
-	};
-
-	class 95th_LAAT_Mrk2 {
-    	class 95th_LAAT_Mrk2_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};
-	};
-
-	class 95th_LAAT_Mrk2Lights {
-    	class 95th_LAAT_Mrk2Lights_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};
-	};
+	class 95th_LAAT_Mrk1 {class 95th_LAAT_Mrk1_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};};
+	class 95th_LAAT_Mrk2 {class 95th_LAAT_Mrk2_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};};
+	class 95th_LAAT_Mrk2Lights {class 95th_LAAT_Mrk2Lights_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};};
 };
