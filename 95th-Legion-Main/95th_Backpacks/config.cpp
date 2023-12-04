@@ -6,6 +6,7 @@ class CfgPatches {
         name="95th Legion Backpacks";
 		requiredAddons[]= {
 			"JLTS_characters_CloneArmor",
+			"WBK_PhoenixTreal_FlamethrowerMOD", 
 			"3as_Backpacks"
 		};
 		units[] = {};
@@ -169,7 +170,6 @@ class CfgVehicles {
 
 
 	//###############################Commando###############################
-
 	class 95th_Katarn_Backpack: 3AS_B_Katarn_Backpack {
 		displayName = "[95th] Commando Backpack";
 		hiddenSelectionsTextures[] = {"\95th_Backpacks\Data\Commando_Backpack.paa"};
@@ -181,6 +181,20 @@ class CfgVehicles {
 		tf_hasLRradio=1;
 		tf_range=16000;
 		tf_subtype="digital_lr";
+	};
+
+	//############################### Flamethrower Backpack ###############################
+	class ReammoBox;
+	class Bag_Base: ReammoBox{};
+	class 95th_FlameThrower_Backpack: Bag_Base {
+		displayName="[95th] BX-42 Flamethrower Pack";
+		author="95th Aux Team";
+		WBK_BurnEm_FlamethrowerBaloons = "true";
+		scope=2; maximumLoad=250; mass=80;
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
+		model="\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
+		hiddenSelections[]={"camo1"};
+		hiddenSelectionsTextures[]={"\95th_Backpacks\Data\Backpacks\Backpack_Flame.paa"}; 
 	};
 
 	//TO REMOVE LATER

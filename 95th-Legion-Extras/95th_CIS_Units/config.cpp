@@ -9,7 +9,9 @@ class CfgPatches {
         name="95th Legion CIS Units";
         requiredAddons[] = {"A3_Characters_F", "WBK_Combinus", "JLTS_core", "95th_P1_Units"};
 		units[] = {
-			"AUX_95th_Independent_B1_Unit_Diplomat", "AUX_95th_Independent_B1_Unit_Firefighter", "AUX_95th_Independent_B1_Unit_Medic", "AUX_95th_Independent_B1_Unit_Police"
+			"95th_CIS_Disguised_Trooper",
+			"AUX_95th_Independent_B1_Unit_Diplomat", "AUX_95th_Independent_B1_Unit_Firefighter", "AUX_95th_Independent_B1_Unit_Medic", "AUX_95th_Independent_B1_Unit_Police",
+			"AUX_95th_Commando_Unit_Normal", "AUX_95th_Commando_Unit_Captain", "AUX_95th_Commando_Unit_Citadel", "AUX_95th_Commando_Unit_Diplomat"
 		};
     };
 }; 
@@ -94,15 +96,3 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Commando_Unit_Citadel {class AUX_95th_Commando_Unit_Citadel_Init {onRespawn="true"; serverInit="[_this select 0] call NFA_fnc_commandoInit;";};};
 	class AUX_95th_Commando_Unit_Diplomat {class AUX_95th_Commando_Unit_Diplomat_Init {onRespawn="true"; serverInit="[_this select 0] call NFA_fnc_commandoInit;";};};
 };
-
-// class Extended_InitPost_EventHandlers {
-// 	class 95th_CIS_Commando_Base {
-// 		class 95th_CIS_Commando_Main_Init {
-// 			onRespawn="true";
-// 			init="_unit = _this select 0; if (local _unit) then {_unit setVariable ['SFX_R_DisableDyingSounds',1,true]; _unit setSpeaker 'NoVoice'; _unit disableAI 'RADIOPROTOCOL'; removeGoggles _unit;};";
-// 		};
-// 		class 95th_CIS_Commando_VoiceType_Init {
-// 			init="_unit = _this select 0; if (local _unit) then {_unit setVariable ['WBK_CombineType',getText (configFile >> 'CfgVehicles' >> typeOf _unit >> 'WBK_CombineType'),true];};";
-// 		};
-// 	};
-// };
