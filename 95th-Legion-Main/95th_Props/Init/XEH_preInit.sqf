@@ -22,7 +22,7 @@
 private _arsenalWeapons = [
 	"JLTS_DC15S","JLTS_DC15A_plastic","JLTS_DC15A","JLTS_DP23","3AS_WestarM5_F","JLTS_DC17SA","ACE_VMH3","ACE_VMM3","Weap_melee_knife","Knife_m3",
 	"Police_Bat","Shovel_Russian","UNSC_Knife","UNSC_Knife_reversed","3AS_RPS6_F","JLTS_DC15X","JLTS_DW32S","3AS_DC15L_F","JLTS_Z6","3AS_PLX1_F",
-	"3AS_RPS6_HP","3AS_DC15C_F","3AS_DC15C_GL","95th_FlameThrower","JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL"
+	"3AS_RPS6_HP","3AS_DC15C_F","3AS_DC15C_GL","95th_FlameThrower","JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL","AUX_95th_JLTS_DP23"
 ];
 
 //-----------------------------# Ammo #-----------------------------------
@@ -61,7 +61,7 @@ private _arsenalHelmets = [
 	"95th_Engineer_Helmet_Kong","95th_Engineer_Helmet_Trooper","95th_ColdAssault_Helmet_Trooper","95th_ARF_Helmet_Trooper","95th_ARC_Helmet_Trooper",
 	"95th_Airborne_Helmet_Trooper","95th_Engineer_Helmet_Som","95th_Commando_Helmet_Trooper","95th_ARF_Helmet_Osprey","95th_ARF_Helmet_Sythe",
 	"95th_Helmet_Smaug","95th_Helmet_Commie","95th_Helmet_Ratler","95th_ARF_Helmet_Cheezy","95th_Helmet_Som","95th_Helmet_Hypo", "95th_Helmet_MadHatter",
-	"95th_P1_Pilot_Helmet_Outcast", "95th_Helmet_Third", "95th_Helmet_Witch"
+	"95th_P1_Pilot_Helmet_Outcast", "95th_Helmet_Third", "95th_Helmet_Stitch"
 ];
 
 //-----------------------------# Uniforms #-----------------------------------

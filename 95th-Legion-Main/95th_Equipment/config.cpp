@@ -164,7 +164,7 @@ class CfgWeapons {
 		JLTS_friedItem = "AUX_95th_JLTS_DP23_shield_fried";
 		model = "\MRC\JLTS\weapons\DP23\DP23_shielded.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\DP23\data\DP23_co.paa","\MRC\JLTS\weapons\Shield\data\shield_co.paa"};
+		hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\DP23\data\DP23_co.paa","\95th_Equipment\Data\Shield\Default.paa"};
 		handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\DP23\anims\DP23_shielded_handanim.rtm"};
 		inertia = 0.8;
 		recoil = "recoil_pdw";
