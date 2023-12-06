@@ -6,7 +6,10 @@ class CfgPatches {
 			"WBK_PhoenixTreal_FlamethrowerMOD", 
 			"ls_weapons"
 		};
-		weapons[] = {"NFL_Disc_Shield","NFL_Auto_Turret","NFL_MFD_Item","AUX_95th_JLTS_DP23"};
+		weapons[] = {"NFL_Disc_Shield","NFL_Auto_Turret","NFL_MFD_Item",
+			"AUX_95th_JLTS_DP23",
+			"AUX_95th_JLTS_DC15X", "AUX_95th_JLTS_DC15X_scope"
+		};
 		units[]={};
 	};
 };
@@ -56,9 +59,19 @@ class cfgMagazines {
 		descriptionShort = "$STR_JLTS_descs_DP23_mag";
 		ammo = "AUX_95th_JLTS_bullet_scatter_blue";
 	};
+
+	class JLTS_DC15X_mag;
+	class AUX_95th_JLTS_DC15X_mag: JLTS_DC15X_mag {
+		displayName = "[95th] DC15X Mag";
+		author = "95th Aux Team";
+		count = 15;
+	};
 };
 
+class CowsSlot;
 class UnderBarrelSlot;
+class MuzzleSlot;
+class PointerSlot;
 class Mode_SemiAuto;
 class Mode_FullAuto;
 
@@ -185,6 +198,47 @@ class CfgWeapons {
 		scope = 1;
 		picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_fried_ui_ca.paa";
 		magazines[] = {};
+		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
+	};
+
+	class JLTS_DC15X_scope;
+	class AUX_95th_JLTS_DC15X_scope: JLTS_DC15X_scope {
+		displayName = "[95th] DC15X Scope";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\DC15X\data\DC15X_scope_co.paa"};
+		thermalMode[] = {0};
+	};
+
+	class JLTS_DC15X: arifle_MX_Base_F {
+		class WeaponSlotsInfo;
+		class GunParticles;
+	};
+
+	class AUX_95th_JLTS_DC15X: JLTS_DC15X {
+		JLTS_friedItem = "AUX_95th_JLTS_DC15X_fried";
+		displayName = "[95th] DC15X";
+		author = "95th Aux mod";
+		baseWeapon = "AUX_95th_JLTS_DC15X";
+		magazines[] = {"JLTS_DC15X_mag"};
+
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+			mass = 92;
+			class CowsSlot: CowsSlot {compatibleItems[] = {"AUX_95th_JLTS_DC15X_scope"}; iconPicture = "";};
+			class MuzzleSlot: MuzzleSlot {compatibleItems[] = {};};
+			class PointerSlot: PointerSlot {compatibleItems[] = {};};
+			class UnderBarrelSlot: UnderBarrelSlot {compatibleItems[] = {};};
+		};
+	};
+
+	class AUX_95th_JLTS_DC15X_fried: AUX_95th_JLTS_DC15X {
+		baseWeapon = "AUX_95th_JLTS_DC15X_fried";
+		displayName = "$STR_JLTS_names_DC15XFried";
+		descriptionShort = "$STR_JLTS_descs_BlasterFried";
+		scope = 1;
+		picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_fried_ui_ca.paa";
+		muzzles[] = {"this"};
+		magazines[] = {};
+		JLTS_isFried = 1;
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
 	};
 

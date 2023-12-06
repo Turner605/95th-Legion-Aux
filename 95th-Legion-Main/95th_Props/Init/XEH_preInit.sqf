@@ -21,7 +21,7 @@
 //-----------------------------# Weapons #-----------------------------------
 private _arsenalWeapons = [
 	"JLTS_DC15S","JLTS_DC15A_plastic","JLTS_DC15A","JLTS_DP23","3AS_WestarM5_F","JLTS_DC17SA","ACE_VMH3","ACE_VMM3","Weap_melee_knife","Knife_m3",
-	"Police_Bat","Shovel_Russian","UNSC_Knife","UNSC_Knife_reversed","3AS_RPS6_F","JLTS_DC15X","JLTS_DW32S","3AS_DC15L_F","JLTS_Z6","3AS_PLX1_F",
+	"Police_Bat","Shovel_Russian","UNSC_Knife","UNSC_Knife_reversed","3AS_RPS6_F","AUX_95th_JLTS_DC15X","JLTS_DW32S","3AS_DC15L_F","JLTS_Z6","3AS_PLX1_F",
 	"3AS_RPS6_HP","3AS_DC15C_F","3AS_DC15C_GL","95th_FlameThrower","JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL","AUX_95th_JLTS_DP23"
 ];
 
@@ -34,7 +34,7 @@ private _arsenalAmmo = [
 	"OPTRE_1Rnd_SmokeRed_Grenade_shell","OPTRE_1Rnd_SmokeGreen_Grenade_shell","OPTRE_1Rnd_SmokeYellow_Grenade_shell","OPTRE_1Rnd_SmokePurple_Grenade_shell",
 	"OPTRE_1Rnd_SmokeBlue_Grenade_shell","OPTRE_1Rnd_SmokeOrange_Grenade_shell","ACE_40mm_Flare_white","ACE_40mm_Flare_red","ACE_40mm_Flare_green","ACE_40mm_Flare_ir",
 	"OPTRE_3Rnd_Smoke_Grenade_shell","OPTRE_3Rnd_SmokeRed_Grenade_shell","OPTRE_3Rnd_SmokeGreen_Grenade_shell","OPTRE_3Rnd_SmokeYellow_Grenade_shell",
-	"OPTRE_3Rnd_SmokePurple_Grenade_shell","OPTRE_3Rnd_SmokeBlue_Grenade_shell","OPTRE_3Rnd_SmokeOrange_Grenade_shell","JLTS_DC15S_mag","JLTS_DC15X_mag",
+	"OPTRE_3Rnd_SmokePurple_Grenade_shell","OPTRE_3Rnd_SmokeBlue_Grenade_shell","OPTRE_3Rnd_SmokeOrange_Grenade_shell","JLTS_DC15S_mag","AUX_95th_JLTS_DC15X_mag",
 	"JLTS_DP23_mag","JLTS_DW32S_mag","JLTS_Z6_mag","JLTS_RPS6_mag","JLTS_RPS6_HE_mag","ls_mag_at_plx","ls_mag_ap_plx","ls_mag_aa_plx","JLTS_DC17SA_mag",
 	"JLTS_EMP_mag","95th_FlameThrower_Fuel","3AS_JLTS_MK43_AT","3AS_JLTS_MK44_HE","3AS_JLTS_MK39_AA","CBA_FakeLauncherMagazine","3AS_MK41_AT","3AS_MK42_HE",
 	"Laserbatteries","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F",
@@ -47,7 +47,7 @@ private _arsenalAmmo = [
 
 //-----------------------------# Weapon Attachments #-----------------------------------
 private _arsenalAttachments = [
-	"3AS_optic_acog_DC15C","3AS_optic_reflex_DC15C","JLTS_DC15X_scope","3AS_Optic_Scope_WestarM5","3AS_Optic_DC15L",
+	"3AS_optic_acog_DC15C","3AS_optic_reflex_DC15C","AUX_95th_JLTS_DC15X_scope","3AS_Optic_Scope_WestarM5","3AS_Optic_DC15L",
 	"SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Yellow","SEA_Optic_Holo_Two_Green",
 	"SEA_Optic_Holo_One_Blue","SEA_Optic_Holo_One_Green","SEA_Optic_Holo_One_Red","SEA_Optic_Holo_One_Yellow",
 	"acc_flashlight","acc_pointer_IR","ACE_acc_pointer_green","JLTS_DC17SA_flashlight","acc_flashlight_pistol","3AS_Bipod_DC15L_f"
@@ -161,7 +161,7 @@ private _arsenalEquipment = [
 Arsenal_All_Items_95th = (_arsenalWeapons + _arsenalAmmo + _arsenalAttachments + _arsenalHelmets + _arsenalUniforms + _arsenalVests + _arsenalBackpacks + _arsenalGear + _arsenalMedical + _arsenalExplosives + _arsenalGrenades + _arsenalEquipment);
 
 Arsenal_Class_Items_95th = [
-	["JLTS_DC15X","JLTS_DW32S"], // 0 - Marksman
+	["AUX_95th_JLTS_DC15X","JLTS_DW32S"], // 0 - Marksman
 	["JLTS_riot_shield_item"], // 1 - Riot
 	["NFL_Disc_Shield","3AS_DC15L_F","JLTS_Z6"], // 2 - Heavy
 	["95th_Backpack_EOD"], // 3 - Engineer
