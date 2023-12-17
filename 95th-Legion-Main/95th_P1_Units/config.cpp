@@ -231,11 +231,12 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper", "Osprey", "Sythe", "Cheezy"};
+				values[] = {"Trooper", "Osprey", "Sythe", "Cheezy", "Mobius"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 				class Osprey { label = "Osprey"; description = "Osprey's Helmet"; };
 				class Sythe { label = "Sythe"; description = "Sythe's Helmet"; };
 				class Cheezy { label = "Cheezy"; description = "Cheezy's Helmet"; };
+				class Mobius { label = "Mobius"; description = "Mobius' Helmet"; };
 			};
 		};
 

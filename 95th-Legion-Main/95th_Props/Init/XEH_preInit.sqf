@@ -20,9 +20,9 @@
 
 //-----------------------------# Weapons #-----------------------------------
 private _arsenalWeapons = [
-	"JLTS_DC15S","JLTS_DC15A_plastic","JLTS_DC15A","JLTS_DP23","3AS_WestarM5_F","JLTS_DC17SA","ACE_VMH3","ACE_VMM3","Weap_melee_knife","Knife_m3",
+	"JLTS_DC15S","JLTS_DC15A_plastic","JLTS_DC15A","AUX_95th_JLTS_DP23","3AS_WestarM5_F","JLTS_DC17SA","ACE_VMH3","ACE_VMM3","Weap_melee_knife","Knife_m3",
 	"Police_Bat","Shovel_Russian","UNSC_Knife","UNSC_Knife_reversed","3AS_RPS6_F","AUX_95th_JLTS_DC15X","JLTS_DW32S","3AS_DC15L_F","JLTS_Z6","3AS_PLX1_F",
-	"3AS_RPS6_HP","3AS_DC15C_F","3AS_DC15C_GL","95th_FlameThrower","JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL","AUX_95th_JLTS_DP23"
+	"3AS_RPS6_HP","3AS_DC15C_F","3AS_DC15C_GL","95th_FlameThrower","JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL"
 ];
 
 //-----------------------------# Ammo #-----------------------------------
@@ -35,7 +35,7 @@ private _arsenalAmmo = [
 	"OPTRE_1Rnd_SmokeBlue_Grenade_shell","OPTRE_1Rnd_SmokeOrange_Grenade_shell","ACE_40mm_Flare_white","ACE_40mm_Flare_red","ACE_40mm_Flare_green","ACE_40mm_Flare_ir",
 	"OPTRE_3Rnd_Smoke_Grenade_shell","OPTRE_3Rnd_SmokeRed_Grenade_shell","OPTRE_3Rnd_SmokeGreen_Grenade_shell","OPTRE_3Rnd_SmokeYellow_Grenade_shell",
 	"OPTRE_3Rnd_SmokePurple_Grenade_shell","OPTRE_3Rnd_SmokeBlue_Grenade_shell","OPTRE_3Rnd_SmokeOrange_Grenade_shell","JLTS_DC15S_mag","AUX_95th_JLTS_DC15X_mag",
-	"JLTS_DP23_mag","JLTS_DW32S_mag","JLTS_Z6_mag","JLTS_RPS6_mag","JLTS_RPS6_HE_mag","ls_mag_at_plx","ls_mag_ap_plx","ls_mag_aa_plx","JLTS_DC17SA_mag",
+	"AUX_95th_JLTS_DP23_mag","JLTS_DW32S_mag","JLTS_Z6_mag","JLTS_RPS6_mag","JLTS_RPS6_HE_mag","ls_mag_at_plx","ls_mag_ap_plx","ls_mag_aa_plx","JLTS_DC17SA_mag",
 	"JLTS_EMP_mag","95th_FlameThrower_Fuel","3AS_JLTS_MK43_AT","3AS_JLTS_MK44_HE","3AS_JLTS_MK39_AA","CBA_FakeLauncherMagazine","3AS_MK41_AT","3AS_MK42_HE",
 	"Laserbatteries","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F",
 	"3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell",
@@ -61,7 +61,7 @@ private _arsenalHelmets = [
 	"95th_Engineer_Helmet_Kong","95th_Engineer_Helmet_Trooper","95th_ColdAssault_Helmet_Trooper","95th_ARF_Helmet_Trooper","95th_ARC_Helmet_Trooper",
 	"95th_Airborne_Helmet_Trooper","95th_Engineer_Helmet_Som","95th_Commando_Helmet_Trooper","95th_ARF_Helmet_Osprey","95th_ARF_Helmet_Sythe",
 	"95th_Helmet_Smaug","95th_Helmet_Commie","95th_Helmet_Ratler","95th_ARF_Helmet_Cheezy","95th_Helmet_Som","95th_Helmet_Hypo", "95th_Helmet_MadHatter",
-	"95th_P1_Pilot_Helmet_Outcast", "95th_Helmet_Third", "95th_Helmet_Stitch"
+	"95th_P1_Pilot_Helmet_Outcast", "95th_Helmet_Third", "95th_Helmet_Stitch", "95th_ARF_Helmet_Mobius"
 ];
 
 //-----------------------------# Uniforms #-----------------------------------
@@ -91,7 +91,7 @@ private _arsenalBackpacks = [
 	"AUX_95th_JT12_Jetpack_Trooper",
 	"AUX_95th_MC_Jetpack_Trooper",
 	"95th_Katarn_Backpack","95th_FlameThrower_Backpack",
-	"3AS_Republic_HR_Bag","3AS_Republic_HR_Shield_Bag","JLTS_UST_turret_GAR_backpack","JLTS_portable_shield_gar_backpack",
+	"3AS_Republic_HR_Bag","3AS_Republic_HR_Shield_Bag","JLTS_UST_turret_GAR_backpack","JLTS_portable_shield_gar_backpack", "ACE_TacticalLadder_Pack",
 	"AUX_95th_RTO_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Invisible_Stitch", "AUX_95th_RTO_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Invisible_Stitch"
 ];
 
