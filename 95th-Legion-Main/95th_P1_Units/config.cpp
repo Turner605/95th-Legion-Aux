@@ -398,6 +398,7 @@ class cfgWeapons {
 	NEW_95TH_ARF_HELMET(Osprey)};
 	NEW_95TH_ARF_HELMET(Sythe)};
 	NEW_95TH_ARF_HELMET(Cheezy)};
+	NEW_95TH_ARF_HELMET(Mobius)};
 
 	NEW_95TH_ARC_HELMET(Trooper)};
 
