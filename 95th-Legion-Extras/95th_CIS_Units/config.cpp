@@ -86,6 +86,8 @@ class CfgFunctions {
 	class NFA {
 		class CIS_Units {
 			class commandoInit {file = "\95th_CIS_Units\Init\commandoInit.sqf";};
+			class checkIsInHouse {file = "\95th_CIS_Units\Scripts\checkIsInHouse.sqf";};
+			class handleCommandoJump {file = "\95th_CIS_Units\Scripts\handleCommandoJump.sqf";};
 		};
 	};
 };
@@ -95,4 +97,29 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Commando_Unit_Captain {class AUX_95th_Commando_Unit_Captain_Init {onRespawn="true"; serverInit="[_this select 0] call NFA_fnc_commandoInit;";};};
 	class AUX_95th_Commando_Unit_Citadel {class AUX_95th_Commando_Unit_Citadel_Init {onRespawn="true"; serverInit="[_this select 0] call NFA_fnc_commandoInit;";};};
 	class AUX_95th_Commando_Unit_Diplomat {class AUX_95th_Commando_Unit_Diplomat_Init {onRespawn="true"; serverInit="[_this select 0] call NFA_fnc_commandoInit;";};};
+};
+
+class CfgUserActions {
+	class NFL_Commando_Jump {
+		displayName = "Commando Jump";
+		tooltip = "Jump with the BX Commandos";
+		onActivate = "[player] spawn NFA_fnc_handleCommandoJump";
+		modifierBlocking = 1;
+	};
+};
+
+class CfgDefaultKeysPresets {
+	class Arma2 {
+		class Mappings {
+			NFL_Commando_Jump[] = {0x25};
+		};
+	};
+};
+
+class UserActionGroups {
+	class NFL_CIS_Units {
+		name = "95th - CIS";
+		isAddon = 1;
+		group[] = {"NFL_Commando_Jump"};
+	};
 };

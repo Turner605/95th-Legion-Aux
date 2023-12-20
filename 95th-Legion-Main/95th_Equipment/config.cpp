@@ -187,7 +187,7 @@ class CfgDefaultKeysPresets {
 
 class UserActionGroups {
 	class NFL_Equipment {
-		name = "95th Legion";
+		name = "95th - Equipment";
 		isAddon = 1;
 		group[] = {"NFL_Disc_Shield","NFL_Turret_Deployer"};
 	};
