@@ -13,3 +13,17 @@
 
     }, [_unit, _weapon, _muzzle, _mode, _ammo, _magazine, _projectile]] call CBA_fnc_waitUntilAndExecute;
 }] call CBA_fnc_addEventHandler;
+
+player addEventHandler["Respawn", {
+	params ["_unit", "_corpse"];
+
+    // Delete the old deployed turret
+
+	// Reset misc
+    deleteVehicle (_unit getVariable "NFL_Turret");
+
+	_unit setVariable ["NFL_Turret_Selected", 'Normal'];
+    _unit setVariable ["NFL_Turret", objNull, true];
+	_unit setVariable ["NFL_Turret_Is_In_Progress", false, true];
+	_unit setVariable ["NFL_Turret_Is_On_Cooldown", false, true];
+}];
