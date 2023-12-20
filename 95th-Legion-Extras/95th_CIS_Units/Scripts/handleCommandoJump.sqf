@@ -8,6 +8,7 @@ if (isRemoteControlling _player) then {
 	_unit = _player;
 };
 
+if (!(_unit call NFA_fnc_checkCanJump)) exitWith {};
 if (_unit call NFA_fnc_checkIsInHouse) exitWith {systemChat "No free space to make a jump";};
 
 if (
@@ -23,7 +24,6 @@ if (
 	!(_unit == vehicle _unit) or
 	(lifeState _unit == "INCAPACITATED") or 
 	(stance _unit == "PRONE") or 
-	!(_unit getVariable "NFL_Has_Commando_Jump" == "True") or
 	!(isTouchingGround _unit) or
 	(isNull _unit) or
 	(animationState _unit == "MAINWEAPON_Vault_Fast") or 
@@ -81,7 +81,6 @@ _unit spawn {
 	_this setVariable ["actualSwordBlock",0, true]; 
 	_this setVariable ['IMS_IsUnitInvicibleScripted',1,true];
 	_this setVariable ["WBK_forceShieldS",1]; 
-	_this allowDamage false;
 
 	sleep 0.35;
 

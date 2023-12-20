@@ -87,7 +87,9 @@ class CfgFunctions {
 		class CIS_Units {
 			class commandoInit {file = "\95th_CIS_Units\Init\commandoInit.sqf";};
 			class checkIsInHouse {file = "\95th_CIS_Units\Scripts\checkIsInHouse.sqf";};
+			class checkCanJump {file = "\95th_CIS_Units\Scripts\checkCanJump.sqf";};
 			class handleCommandoJump {file = "\95th_CIS_Units\Scripts\handleCommandoJump.sqf";};
+			class handleCommandoFallDamage {file = "\95th_CIS_Units\Scripts\handleCommandoFallDamage.sqf";};
 		};
 	};
 };
@@ -111,7 +113,7 @@ class CfgUserActions {
 class CfgDefaultKeysPresets {
 	class Arma2 {
 		class Mappings {
-			NFL_Commando_Jump[] = {0x25};
+			NFL_Commando_Jump[] = {0x1D130004};
 		};
 	};
 };
@@ -121,5 +123,16 @@ class UserActionGroups {
 		name = "95th - CIS";
 		isAddon = 1;
 		group[] = {"NFL_Commando_Jump"};
+	};
+};
+
+class ACE_Medical_Injuries {
+	class damageTypes {
+		class woundHandlers;
+		class falling {
+			class woundHandlers: woundHandlers {
+				NFA_Commando_Medical_Handler = "{ call NFA_fnc_handleCommandoFallDamage }";
+			};
+		};
 	};
 };

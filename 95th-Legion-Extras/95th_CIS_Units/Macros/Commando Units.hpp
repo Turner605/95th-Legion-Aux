@@ -5,7 +5,7 @@
 	editorSubcategory=95th_CIS_Commandos;\
 	facewear="";\
 	identityTypes[]={LanguageENG_F,Head_LSD_BX};\
-	NFL_Has_Commando_Jump="true";\
+	NFL_Has_Commando_Jump=1;\
 	items[]={ls_cis_bxCommando_vest,SWLB_comlink_droid,JLTS_NVG_droid_chip_2,ItemGPS,ItemMap,ItemWatch,ItemCompass};\
 	linkedItems[]={ls_cis_bxCommando_vest,SWLB_comlink_droid,JLTS_NVG_droid_chip_2,ItemGPS,ItemMap,ItemWatch,ItemCompass};\
 	respawnLinkedItems[]={ls_cis_bxCommando_vest,SWLB_comlink_droid,JLTS_NVG_droid_chip_2,ItemGPS,ItemMap,ItemWatch,ItemCompass};\
