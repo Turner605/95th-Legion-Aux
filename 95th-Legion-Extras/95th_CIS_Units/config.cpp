@@ -11,7 +11,8 @@ class CfgPatches {
 		units[] = {
 			"95th_CIS_Disguised_Trooper",
 			"AUX_95th_Independent_B1_Unit_Diplomat", "AUX_95th_Independent_B1_Unit_Firefighter", "AUX_95th_Independent_B1_Unit_Medic", "AUX_95th_Independent_B1_Unit_Police",
-			"AUX_95th_Commando_Unit_Normal", "AUX_95th_Commando_Unit_Captain", "AUX_95th_Commando_Unit_Citadel", "AUX_95th_Commando_Unit_Diplomat"
+			"AUX_95th_Commando_Unit_Normal", "AUX_95th_Commando_Unit_Captain", "AUX_95th_Commando_Unit_Citadel", "AUX_95th_Commando_Unit_Diplomat",
+			"AUX_95th_3AS_U_CIS_Heavy"
 		};
     };
 }; 
@@ -23,6 +24,7 @@ class cfgFactionClasses {
 
 class CfgEditorSubcategories {
 	class 95th_CIS_Commandos { displayName="Commandos"; };
+	class 95th_CIS_Humans { displayName="Humans"; };
 	class 95th_CIS_Turrets { displayName="Turrets"; };
 	class 95th_CIS_Humanitarian_CivilServices { displayName="Civil Services"; };
 };
@@ -80,6 +82,19 @@ class CfgVehicles {
 		nakedUniform = "lsd_cis_bxDroid_uniform";
 		identityTypes[] = {"BX_Droid"};
 	};
+
+	class 3AS_U_CIS_Heavy;
+	class AUX_95th_3AS_U_CIS_Heavy: 3AS_U_CIS_Heavy {
+		author="95th Aux Team";
+		faction="95th_CIS";
+		editorSubcategory="95th_CIS_Humans";
+		NFL_Can_Use_Shield=1;
+	};
+
+	class WBK_Combine_WalhammerShield_actual;
+	class AUX_95th_WBK_Combine_WalhammerShield_actual: WBK_Combine_WalhammerShield_actual {
+		hiddenSelectionsTextures[]= {"\95th_CIS_Units\Data\Personal Shield\PersonalShieldRed.paa"};
+	};
 };
 
 class CfgFunctions {
@@ -90,6 +105,9 @@ class CfgFunctions {
 			class checkCanJump {file = "\95th_CIS_Units\Scripts\checkCanJump.sqf";};
 			class handleCommandoJump {file = "\95th_CIS_Units\Scripts\handleCommandoJump.sqf";};
 			class handleCommandoFallDamage {file = "\95th_CIS_Units\Scripts\handleCommandoFallDamage.sqf";};
+
+			class checkCanShield {file = "\95th_CIS_Units\Scripts\Personal Shield\checkCanShield.sqf";};
+			class handlePersonalShield {file = "\95th_CIS_Units\Scripts\Personal Shield\handlePersonalShield.sqf";};
 		};
 	};
 };
@@ -103,10 +121,13 @@ class Extended_InitPost_EventHandlers {
 
 class CfgUserActions {
 	class NFL_Commando_Jump {
-		displayName = "Commando Jump";
-		tooltip = "Jump with the BX Commandos";
-		onActivate = "[player] spawn NFA_fnc_handleCommandoJump";
-		modifierBlocking = 1;
+		displayName = "Commando Jump"; tooltip = "Jump with the BX Commandos";
+		onActivate = "[player] spawn NFA_fnc_handleCommandoJump"; modifierBlocking = 1;
+	};
+
+	class NFL_Personal_Shield {
+		displayName = "Personal Shield"; tooltip = "Activate the Personal Shield";
+		onActivate = "[player] spawn NFA_fnc_handlePersonalShield"; modifierBlocking = 1;
 	};
 };
 
@@ -114,6 +135,7 @@ class CfgDefaultKeysPresets {
 	class Arma2 {
 		class Mappings {
 			NFL_Commando_Jump[] = {0x1D130004};
+			NFL_Personal_Shield[] = {0x1D130004};
 		};
 	};
 };
@@ -122,7 +144,7 @@ class UserActionGroups {
 	class NFL_CIS_Units {
 		name = "95th - CIS";
 		isAddon = 1;
-		group[] = {"NFL_Commando_Jump"};
+		group[] = {"NFL_Commando_Jump", "NFL_Personal_Shield"};
 	};
 };
 
