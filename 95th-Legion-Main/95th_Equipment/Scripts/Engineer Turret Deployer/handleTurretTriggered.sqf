@@ -19,7 +19,7 @@ if(_unit getVariable "NFL_Turret_Is_In_Progress") exitWith {
 	[{
 		params["_unit"];
 		_unit setVariable ["NFL_Turret_Is_On_Cooldown", false, true];
-	}, [_unit], 5] call CBA_fnc_waitAndExecute;
+	}, [_unit], NFL_Turret_Cooldown] call CBA_fnc_waitAndExecute;
 };
 
 if(_unit getVariable "NFL_Turret_Is_On_Cooldown") exitWith {hint "Turret Deployment Is On Cooldown";};
