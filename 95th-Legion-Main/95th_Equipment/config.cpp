@@ -19,7 +19,7 @@ class CfgVehicles {
             class NFA_Turret_Actions {
                 displayName = "Engineer Turret Actions";
                 // icon = "";
-                condition = "[_player] call DSS_fnc_hasTurretItem";
+                condition = "[_player] call NFA_fnc_hasTurretItem";
                 exceptions[] = {};
                 statement = "";
 

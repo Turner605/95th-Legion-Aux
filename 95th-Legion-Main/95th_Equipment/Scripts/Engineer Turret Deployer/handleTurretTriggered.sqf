@@ -7,7 +7,7 @@ params ["_unit"];
 //TODO:
 // - Replace with cooldown timer variable
 
-if(!([_unit] call DSS_fnc_hasTurretItem)) exitWith {};
+if(!([_unit] call NFA_fnc_hasTurretItem)) exitWith {};
 
 if(_unit getVariable "NFL_Turret_Is_In_Progress") exitWith {
 	hint "Recalling Turret";
