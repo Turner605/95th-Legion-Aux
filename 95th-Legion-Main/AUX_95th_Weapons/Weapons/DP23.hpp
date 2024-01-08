@@ -12,7 +12,7 @@ class AUX_95th_DP23: JLTS_DP23 {
 		sounds[] = {"StandardSound"};
 		class BaseSoundModeType {weaponSoundEffect = ""; closure1[] = {}; closure2[] = {}; soundClosure[] = {};};
 		class StandardSound: BaseSoundModeType {weaponSoundEffect = ""; begin1[] = {"\MRC\JLTS\weapons\DP23\sounds\dp23_fire.wss",1,1,1800}; soundBegin[] = {"begin1",1};};
-		reloadTime = 0.1; dispersion = 0.00073;
+		reloadTime = 0.3; dispersion = 0.00073;
 		minRange = 1; minRangeProbab = 0.5;
 		midRange = 30; midRangeProbab = 0.7;
 		maxRange = 60; maxRangeProbab = 0.3;
