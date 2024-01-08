@@ -3,7 +3,9 @@ class AUX_95th_DC15X: JLTS_DC15X {
 	displayName = "[95th] DC15X";
 	author = "95th Aux mod";
 	baseWeapon = "AUX_95th_DC15X";
+	muzzles[] = {"this","Stun"};
 	magazines[] = {"AUX_95th_DC15X_Mag"};
+	class Stun: AUX_95th_Stun_Muzzle{};
 
 	class WeaponSlotsInfo: WeaponSlotsInfo {
 		mass = 92;

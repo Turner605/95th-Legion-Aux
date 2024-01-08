@@ -22,6 +22,7 @@ class CfgPatches {
 
 // Ammo Ideas:
 // - Scatter Stuns (DP23)
+// - Sonar Round (DC15X)
 
 //TODO:
 // DC15A

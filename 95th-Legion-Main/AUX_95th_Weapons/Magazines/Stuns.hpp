@@ -6,6 +6,9 @@ class AUX_95th_Stun_Short_Mag: JLTS_stun_mag_short {
 };
 
 class AUX_95th_Stun_Long_Mag: AUX_95th_Stun_Short_Mag {
+	displayName = "$STR_JLTS_names_StunLong_mag";
+	displayNameShort = "$STR_JLTS_snames_EnergyCellStunLong";
+	descriptionShort = "$STR_JLTS_descs_StunLong_mag";
 	count = 5;
 	JLTS_stunDuration = 15;
 };
