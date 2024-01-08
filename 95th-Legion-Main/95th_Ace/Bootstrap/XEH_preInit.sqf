@@ -8,3 +8,30 @@
     0, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
+
+["NF_player_connect", "onPlayerConnected", {
+    NFA_Player_Connected_At = time; 
+}] call BIS_fnc_addStackedEventHandler;
+
+["NF_player_disconnect", "onPlayerDisconnected", {
+    private _currentPlaytimeList = missionNamespace getVariable "NFA_Play_Time_List";
+    private _playerTimeListMap;
+    
+    private _playTime = time - NFA_Player_Connected_At;
+
+    if(isNil _currentPlaytimeList) then {
+        _playerTimeListMap = createHashMap;
+        _playerTimeListMap set [_uid, _playTime];
+	}else{
+        _playerTimeListMap set [_uid, _playTime];
+    };
+
+    missionNamespace setVariable ["NFA_Play_Time_List", _playerTimeListMap, true];
+}] call BIS_fnc_addStackedEventHandler;
+
+
+
+// addMissionEventHandler ["HandleDisconnect", {
+// 	params ["_unit", "_id", "_uid", "_name"];
+// 	["knd_Headlamp_Disconnect",[_unit]] call CBA_fnc_globalEvent;	   
+// }];

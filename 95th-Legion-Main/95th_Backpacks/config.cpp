@@ -191,7 +191,7 @@ class CfgVehicles {
 	//############################### Flamethrower Backpack ###############################
 	class ReammoBox;
 	class Bag_Base: ReammoBox{};
-	class 95th_FlameThrower_Backpack: Bag_Base {
+	class AUX_95th_BX42_Backpack: Bag_Base {
 		displayName="[95th] BX-42 Flamethrower Pack";
 		author="95th Aux Team";
 		WBK_BurnEm_FlamethrowerBaloons = "true";

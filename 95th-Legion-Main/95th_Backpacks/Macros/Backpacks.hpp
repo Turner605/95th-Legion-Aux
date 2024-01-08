@@ -107,11 +107,13 @@
 		Size = Mini;\
 	};
 
-#define NEW_95TH_JETPACK_JT12(name,modelName,modelDisplayName,load) class AUX_95th_JT12_Jetpack_##name## : 3as_JT12 {\
+#define NEW_95TH_JETPACK_JT12(name,modelName,modelDisplayName,load) class AUX_95th_JT12_Jetpack_##name## : JLTS_Clone_jumppack_JT12 {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
 	maximumLoad = ##load##;\
-	DSS_IsInsertionDevice = 1;\
+	DSS_Is_Jetpack = 1;\
+	DSS_Jetpack_Acceleration = 1;\
+	DSS_Jetpack_Resistance = 1.5;\
 	JLTS_isJumppack = 0;\
 	picture="\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";\
 	model="\MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";\
@@ -139,11 +141,13 @@
 		Variant = JT12;\
 	};
 
-#define NEW_95TH_JETPACK_MC(name,modelName,modelDisplayName,load) class AUX_95th_MC_Jetpack_##name## : 3as_JT12 {\
+#define NEW_95TH_JETPACK_MC(name,modelName,modelDisplayName,load) class AUX_95th_MC_Jetpack_##name## : JLTS_Clone_jumppack_mc {\
 	author=95th Aux Team;\
 	displayName=##modelDisplayName##;\
 	maximumLoad = ##load##;\
-	DSS_IsInsertionDevice = 1;\
+	DSS_Is_Jetpack = 1;\
+	DSS_Jetpack_Acceleration = 1;\
+	DSS_Jetpack_Resistance = 1.5;\
 	JLTS_isJumppack = 0;\
 	picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";\
 	model="\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";\
