@@ -3,16 +3,17 @@ class AUX_95th_DC15X: JLTS_DC15X {
 	displayName = "[95th] DC15X";
 	author = "95th Aux mod";
 	baseWeapon = "AUX_95th_DC15X";
-	muzzles[] = {"this","Stun"};
+	muzzles[] = {"this","Stun","Equipment"};
 	magazines[] = {"AUX_95th_DC15X_Mag"};
 	class Stun: AUX_95th_Stun_Muzzle{};
+	class Equipment: AUX_95th_DC15X_Muzzle{};
 
 	class WeaponSlotsInfo: WeaponSlotsInfo {
 		mass = 92;
 		class CowsSlot: CowsSlot {compatibleItems[] = {"AUX_95th_DC15X_Scope"}; iconPicture = "";};
 		class MuzzleSlot: MuzzleSlot {compatibleItems[] = {};};
 		class PointerSlot: PointerSlot {
-			compatibleItems[] = {"AUX_95th_Grappler_Attachment"};
+			compatibleItems[] = {};
 			linkProxy = "\A3\data_f_mark\proxies\weapon_slots\UNDERBARREL";
 			iconPosition[] = {0.24,0.35};
 			iconScale = 0.2;

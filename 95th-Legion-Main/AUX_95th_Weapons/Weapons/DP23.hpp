@@ -5,9 +5,10 @@ class AUX_95th_DP23: JLTS_DP23 {
 	JLTS_shieldedWeapon = "AUX_95th_DP23_shield";
 	author = "95th Aux mod";
 	fireSpreadAngle = 1;
-	muzzles[] = {"this","Stun"};
+	muzzles[] = {"this","Stun","Equipment"};
 	magazines[] = {"AUX_95th_DP23_Mag"};
 	class Stun: AUX_95th_Stun_Muzzle{};
+	class Equipment: AUX_95th_DP23_Muzzle{};
 	class Single: Mode_SemiAuto {
 		sounds[] = {"StandardSound"};
 		class BaseSoundModeType {weaponSoundEffect = ""; closure1[] = {}; closure2[] = {}; soundClosure[] = {};};

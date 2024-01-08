@@ -54,6 +54,8 @@ class CfgAmmo {
 class CfgWeapons {
 	#include "Muzzles\Definitions.hpp"
 	#include "Muzzles\Stuns.hpp"
+	#include "Muzzles\DC15X.hpp"
+	#include "Muzzles\DP23.hpp"
 
 	#include "Weapons\Definitions.hpp"
 	#include "Weapons\DC15X.hpp"
@@ -62,7 +64,6 @@ class CfgWeapons {
 
 	#include "Attachments\Definitions.hpp"
 	#include "Attachments\DC15X_Scope.hpp"
-	#include "Attachments\Grappler.hpp"
 };
 
 class CfgMagazines {
