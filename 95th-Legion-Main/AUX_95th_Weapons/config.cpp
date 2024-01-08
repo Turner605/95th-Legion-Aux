@@ -20,6 +20,9 @@ class CfgPatches {
 // - Grapple
 // - Scopes?
 
+// Ammo Ideas:
+// - Scatter Stuns (DP23)
+
 //TODO:
 // DC15A
 // DC15S
@@ -47,6 +50,9 @@ class CfgAmmo {
 };
 
 class CfgWeapons {
+	#include "Muzzles\Definitions.hpp"
+	#include "Muzzles\Stuns.hpp"
+
 	#include "Weapons\Definitions.hpp"
 	#include "Weapons\DC15X.hpp"
 	#include "Weapons\DP23.hpp"
@@ -62,5 +68,6 @@ class CfgMagazines {
 	#include "Magazines\DC15X.hpp"
 	#include "Magazines\DP23.hpp"
 	#include "Magazines\BX42.hpp"
+	#include "Magazines\Stuns.hpp"
 	#include "Magazines\Grappler.hpp"
 };

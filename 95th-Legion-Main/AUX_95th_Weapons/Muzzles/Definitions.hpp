@@ -1,0 +1,1 @@
+class JLTS_stun_muzzle;
