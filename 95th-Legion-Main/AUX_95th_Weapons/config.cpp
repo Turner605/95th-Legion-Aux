@@ -4,8 +4,8 @@ class CfgPatches {
         name="95th Legion Weapons";
 		requiredAddons[]={
 			"WBK_PhoenixTreal_FlamethrowerMOD", 
-			"ls_weapons",
-			"JLTS_weapons_DC15X", "JLTS_weapons_DC15S"
+			"JLTS_weapons_Core",
+			"JLTS_weapons_DC15X", "JLTS_weapons_DP23"
 		};
 		weapons[] = {
 			"AUX_95th_DC15X", "AUX_95th_DC15X_Scope",
@@ -21,8 +21,9 @@ class CfgPatches {
 // - Scopes?
 
 // Ammo Ideas:
-// - Scatter Stuns (DP23)
-// - Sonar Round (DC15X)
+// - Scatter Stuns (DP23) Probably Not
+// - Recon Dart - Sonar Round (DC15X)
+// - EMP Round - One shot to take down shields or something idk
 
 //TODO:
 // DC15A
