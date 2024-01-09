@@ -33,6 +33,21 @@ class AUX_95th_GroundUtil_Vehicles : 3AS_Terminal_1_Prop {
 			displayName = "Spawn [3AS] AT-TE";
 			statement = "[this, player, '3as_ATTE_Base'] spawn NFA_fnc_handleGroundSpawned;"; 
 		};
+		class SpawnSwampSpeeder {
+			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+			displayName = "Spawn [95th] Swamp Speeder";
+			statement = "[this, player, 'AUX_95th_Swamp_Speeder'] spawn NFA_fnc_handleGroundSpawned;"; 
+		};
+		class SpawnSwampSpeederTransport {
+			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+			displayName = "Spawn [95th] Swamp Speeder (Transport)";
+			statement = "[this, player, 'AUX_95th_Swamp_Speeder_Transport'] spawn NFA_fnc_handleGroundSpawned;"; 
+		};
+		class SpawnCommandOutpost {
+			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+			displayName = "Spawn [95th] Command Post";
+			statement = "[this, player, 'AUX_95th_Command_Outpost'] spawn NFA_fnc_handleGroundSpawned;"; 
+		};
 		class LoadATRT {
 			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
 			displayName = "Load AT-RT Into LAAT";
