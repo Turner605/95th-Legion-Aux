@@ -6,28 +6,24 @@ class CfgPatches {
 			// TODO
 		};
 		units[]={
-			"AUX_95th_AirUtil_Pad", "AUX_95th_AirUtil_Transport", "AUX_95th_AirUtil_Fighter", "AUX_95th_AirUtil_Service"
-			// "AUX_95th_AirUtil_Pad", "AUX_95th_AirUtil_Transport", "AUX_95th_AirUtil_Fighter", "AUX_95th_AirUtil_Service", "AUX_95th_AirUtil_Refit", 
+			"AUX_95th_AirUtil_Pad", "AUX_95th_AirUtil_Transport", "AUX_95th_AirUtil_Fighter", "AUX_95th_AirUtil_Service",
+			"AUX_95th_GroundUtil_Pad", "AUX_95th_GroundUtil_Vehicles", "AUX_95th_GroundUtil_Service", "AUX_95th_GroundUtil_Refit"
 		};
 	};
 };
 
-// Air - Pad - 3AS_Pad_Square_Prop
-// Air - Service - 3AS_workbench_r1
-
-// G - Pad - 3AS_Pad_GAR_Prop
-// G - Spawner - 3AS_Terminal_1_Prop
-// G - Service - 3AS_workbench_r1
-// G - Refit - 3AS_workbench_s
-
 class CfgVehicles {
+	#include "Definitions.hpp"
+
 	// Air Util
-	#include "AirUtil\Definitions.hpp"
 	#include "AirUtil\Pad.hpp"
 	#include "AirUtil\Transport.hpp"
 	#include "AirUtil\Fighter.hpp"
 	#include "AirUtil\Service.hpp"
 
 	// Ground Util
-	// #include "GroundUtil\Refit.hpp"
+	#include "GroundUtil\Pad.hpp"
+	#include "GroundUtil\Vehicles.hpp"
+	#include "GroundUtil\Service.hpp"
+	#include "GroundUtil\Refit.hpp"
 };
