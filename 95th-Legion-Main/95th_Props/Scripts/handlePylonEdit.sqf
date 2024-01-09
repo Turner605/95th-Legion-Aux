@@ -4,7 +4,7 @@ private _nearestObjects = nearestObjects[_this, [], 50];
 private _targetPad = 0;
 
 {
-	if((typeOf _x) == "95th_Landing_Pad") then {
+	if((typeOf _x) == "AUX_95th_AirUtil_Pad") then {
 		_targetPad = _x;
 	};
 } forEach _nearestObjects;

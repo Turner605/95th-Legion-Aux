@@ -6,7 +6,7 @@ private _nearestObjects = nearestObjects[_this, [], 20];
 private _targetPad = 0;
 
 {
-	if((typeOf _x) == "95th_Landing_Pad") then {
+	if((typeOf _x) == "AUX_95th_AirUtil_Pad") then {
 		_targetPad = _x;
 	};
 } forEach _nearestObjects;
@@ -37,6 +37,6 @@ if(!(isNil "_targetPad")) then {
 			case "95th_LAAT_Mrk2Lights": { [_spawnedVehicle, _player] spawn NFA_fnc_handleSkinSelection;  };
 		};
 
-		_spawnedVehicle setDir _direction -90;
+		_spawnedVehicle setDir _direction + 90;
 	};
 };
