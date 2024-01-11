@@ -1,7 +1,7 @@
 class CfgPatches {
 	class AUX_95th_Weapons {
         author="95th Aux Team";
-        name="95th Legion Weapons";
+        name="AUX 95th Weapons";
 		requiredAddons[]={
 			"WBK_PhoenixTreal_FlamethrowerMOD", 
 			"JLTS_weapons_Core",
@@ -24,6 +24,7 @@ class CfgPatches {
 // - Scatter Stuns (DP23) Probably Not
 // - Recon Dart - Sonar Round (DC15X)
 // - EMP Round - One shot to take down shields or something idk
+// - Hacking Dart - One shot to hack a target
 
 //TODO:
 // DC15A

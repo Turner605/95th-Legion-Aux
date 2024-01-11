@@ -18,7 +18,7 @@
 		Chemlight_green,Chemlight_green,HandGrenade,HandGrenade\
 	};\
 	displayName=[95th] ColdAssault - ##name##;\
-	uniformClass=95th__COLDASSAULT_Uniform_##name##;\
+	uniformClass=95th_ColdAssault_Uniform_##name##;\
 	linkedItems[]={95th_ColdAssault_Helmet_##helmet##,95th_Basic_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={95th_ColdAssault_Helmet_##helmet##,95th_Basic_Vest_##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]=\

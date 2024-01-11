@@ -9,6 +9,17 @@ drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",5,1,10};
 fireSpreadAngle = 0.95;
 magazines[] = {"AUX_95th_Grappler_Mag"};
 magazineWell[] = {};
+requiredOpticType = 2
+// useModelOptics = 0;
+// useExternalOptic = 0;
+// optics = 1;
+// modelOptics = "-";
+// cameraDir = "";
+// memoryPointCamera = "eye";
+// opticsZoomMin = 0.25;
+// opticsZoomMax = 1.25;
+// opticsZoomInit = 0.75;
+// weaponInfoType = "RscWeaponZeroing";
 maxZeroing = 50;
 reloadAction = "GestureReloadMX";
 reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10};
@@ -23,7 +34,7 @@ class Single: Mode_SemiAuto {
 	};
 	class StandardSound: BaseSoundModeType {
 		weaponSoundEffect = "";
-		begin1[] = {"MRC\JLTS\weapons\Core\sounds\stun",5,1.5,1800}; //TODO
+		begin1[] = {"MRC\JLTS\weapons\Core\sounds\stun",5,1.5,1800}; //TODO A3\Sounds_F\arsenal\weapons\UGL\UGL_01
 		soundBegin[] = {"begin1",1};
 	};
 	recoil = "recoil_pistol_light";
@@ -35,3 +46,4 @@ class Single: Mode_SemiAuto {
 	maxRange = 50; maxRangeProbab = 0.1;
 	aiRateOfFire = 2; aiRateOfFireDistance = 25;
 };
+

@@ -1,2 +1,3 @@
 class JLTS_DC15X_scope;
 class JLTS_DC17SA_flashlight;
+class InventoryOpticsItem_Base_F;
