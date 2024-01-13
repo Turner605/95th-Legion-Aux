@@ -54,5 +54,6 @@ player addEventHandler["Respawn", {
 
 
 if(enable_default_kits_95th) then {
+    waitUntil {!(isNull findDisplay 46)};
     [""] call NFA_fnc_addDefaultClasses;
 }

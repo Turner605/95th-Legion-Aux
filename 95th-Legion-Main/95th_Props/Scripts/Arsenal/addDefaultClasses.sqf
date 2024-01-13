@@ -175,24 +175,18 @@ private _roleArray = [
 	]
 ];
 
-[_roleArray] spawn {
-	params ["_roleArray"];
-
-	waitUntil {!(isNull findDisplay 46)};
-
-	{[
-		_x select 0, 
+{[
+	_x select 0, 
+	[
 		[
-			[
-				_x select 1,
-				_x select 2, 
-				_x select 3,
-				[_x select 4, _x select 5], 
-				[_x select 6, _x select 7], 
-				[_x select 8, _x select 9], 
-				_x select 10, 
-				"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""], ["ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch","95th_P1_Nightvision_Invisible"]
-			],[]
-		]
-	] call ace_arsenal_fnc_addDefaultLoadout; } forEach _roleArray;
-};
+			_x select 1,
+			_x select 2, 
+			_x select 3,
+			[_x select 4, _x select 5], 
+			[_x select 6, _x select 7], 
+			[_x select 8, _x select 9], 
+			_x select 10, 
+			"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""], ["ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch","95th_P1_Nightvision_Invisible"]
+		],[]
+	]
+] call ace_arsenal_fnc_addDefaultLoadout; } forEach _roleArray;
