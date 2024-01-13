@@ -83,18 +83,23 @@ private _outpostName = "Outpost: " + (str _outpostNumber);
 [west, _vehicle, _outpostName] call BIS_fnc_addRespawnPosition;
 
 //#################################### Pick Up ####################################
-_vehicle addAction ["<t color='#00fb21'>Request Pickup</t>", {
-    params ["_target","_caller","_id","_args"];
-	_args params ["_outpostName"];
 
-	private _allPilots = [];
-	_allPilots = allPlayers select {
-		(side _x == blufor) &&
-		((vehicle _x) isKindOf "Helicopter" || (vehicle _x) isKindOf "Plane")
-	};
+[[_outpostName, _vehicle], {
+	params ["_outpostName", "_vehicle"];
 
-	[[_outpostName], {
-		params ["_outpostName"];
-		1 cutText ["<t color='#ffffff' size='1'>Pickup Requested from " + _outpostName + ".</t>", "PLAIN", 2, true, true, true];
-	}] remoteExec ["call", _allPilots];
-},[_outpostName]];
+	_vehicle addAction ["<t color='#00fb21'>Request Pickup</t>", {
+		params ["_target","_caller","_id","_args"];
+		_args params ["_outpostName"];
+
+		private _allPilots = [];
+		_allPilots = allPlayers select {
+			(side _x == blufor) &&
+			((vehicle _x) isKindOf "Helicopter" || (vehicle _x) isKindOf "Plane")
+		};
+
+		[[_outpostName], {
+			params ["_outpostName"];
+			1 cutText ["<t color='#ffffff' size='1'>Pickup Requested from " + _outpostName + ".</t>", "PLAIN", 2, true, true, true];
+		}] remoteExec ["call", _allPilots];
+	},[_outpostName]];
+}] remoteExec ["call", 0];

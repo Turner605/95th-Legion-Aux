@@ -138,7 +138,8 @@ class CfgVehicles {
 	class JLTS_Clone_backpack;
 	class JLTS_Clone_backpack_RTO;
 	class JLTS_Clone_RTO_pack;
-	class 3as_JT12;
+	class JLTS_Clone_jumppack_JT12;
+	class JLTS_Clone_jumppack_mc;
 	class 3AS_B_Katarn_Backpack;
 
 	//###############################Backpacks###############################

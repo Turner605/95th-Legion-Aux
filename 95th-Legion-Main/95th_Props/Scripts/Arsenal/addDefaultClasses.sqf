@@ -82,7 +82,7 @@ private _roleArray = [
 		_dc15a, [], _dc17s,
 		"95th_P1_Uniform_Trooper", _baseUniformContent + [["ACE_Fortify",1],["ACE_DefusalKit",1],["ACE_wirecutter",1],["ACE_Clacker",1]],
 		"95th_Basic_Vest_Engineer", _dc15a_Ammo,
-		"AUX_95th_Backpack_Visible_Ordnance", _baseBackpackContent + [["SWLW_DetPack_remote_mag",6,1], ["NFL_Auto_Turret",1]],
+		"AUX_95th_Backpack_Visible_Ordnance", _baseBackpackContent + [["SWLW_DetPack_remote_mag",6,1], ["NFL_Turret_Deployer",1]],
 		"95th_Engineer_Helmet_Trooper"
 	],
 	[
@@ -175,18 +175,24 @@ private _roleArray = [
 	]
 ];
 
-{[
-	_x select 0, 
-	[
+[_roleArray] spawn {
+	params ["_roleArray"];
+
+	waitUntil {!(isNull findDisplay 46)};
+
+	{[
+		_x select 0, 
 		[
-			_x select 1,
-			_x select 2, 
-			_x select 3,
-			[_x select 4, _x select 5], 
-			[_x select 6, _x select 7], 
-			[_x select 8, _x select 9], 
-			_x select 10, 
-			"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""], ["ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch","95th_P1_Nightvision_Invisible"]
-		],[]
-	]
-] call ace_arsenal_fnc_addDefaultLoadout; } forEach _roleArray;
+			[
+				_x select 1,
+				_x select 2, 
+				_x select 3,
+				[_x select 4, _x select 5], 
+				[_x select 6, _x select 7], 
+				[_x select 8, _x select 9], 
+				_x select 10, 
+				"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""], ["ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch","95th_P1_Nightvision_Invisible"]
+			],[]
+		]
+	] call ace_arsenal_fnc_addDefaultLoadout; } forEach _roleArray;
+};
