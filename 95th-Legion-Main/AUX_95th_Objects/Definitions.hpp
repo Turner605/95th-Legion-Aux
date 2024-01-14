@@ -5,3 +5,6 @@ class 3AS_Terminal_1_Prop;
 class 3AS_workbench_s;
 class 3AS_TERMINAL_2_PROP;
 class 3AS_Small_Terminal_Black_Prop;
+class Land_3AS_Small_Sensor;
+class SatelliteAntenna_01_Sand_F;
+class Land_3AS_Generator_Cy_S;

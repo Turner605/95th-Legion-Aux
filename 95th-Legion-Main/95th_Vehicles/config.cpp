@@ -20,7 +20,7 @@ class CfgPatches {
 			"AUX_95th_Command_Outpost",
 
 			"AUX_95th_Swamp_Speeder",
-			"AUX_95th_Swamp_Speeder_Transport"
+			"AUX_95th_Swamp_Speeder_Transport",
 		};
 		magazines[]={
 			"95th_LAAT_Light_Cannon_Magazine"
@@ -504,6 +504,16 @@ class CfgVehicles {
 		faction="95th_Legion_Faction_Clones";
         crew = "";
 	};
+
+
+
+	class 3as_Big_Box_2_prop;
+	class AUX_95th_AV7_Box: 3as_Big_Box_2_prop {
+		author="95th Aux Team";
+		faction="95th_Legion_Faction_Clones";
+		tas_canBlift=1;
+		tas_liftVars="[[[[0, -4, -8]]], [0.1], [-0.5]]";
+	};
 }; 
 
 class CfgFunctions {
@@ -526,7 +536,7 @@ class CfgFunctions {
 	};
 };
 
-class Extended_InitPost_EventHandlers {
+class Extended_InitPost_EventHandlers {	
 	class 95th_TX_130_Shield {class 95th_TX_130_Shield_Init {onRespawn="true";serverInit="[_this select 0] call NFA_fnc_handleTXShieldInit;";};};
 	class AUX_95th_Command_Outpost {class AUX_95th_Command_Outpost_Init {serverInit="[_this select 0] call NFA_fnc_handleCommandOutpostInit;";};};
 };
