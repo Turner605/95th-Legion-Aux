@@ -1,15 +1,15 @@
 params ["_this", "_crateClass"];
 
-private _targetPad = nearestObject [player, "95th_Resupply_Pad"];
+private _targetPad = nearestObject [player, "AUX_95th_Misc_Crate_Pad"];
 
 if(isNull _targetPad) exitWith {};
 
 private _nearestVehicle = nearestObjects[_targetPad, [
-	"95th_Supply_Large_Ammo_Prop",
-	"95th_Supply_Large_Medical_Prop",
-	"95th_Supply_Large_Black_Prop",
-	"95th_Supply_Large_Blue_Prop",
-	"95th_Supply_Large_Red_Prop"
+	"AUX_95th_Crate_Platoon_Ammo",
+	"AUX_95th_Crate_Platoon_Medical",
+	"AUX_95th_Crate_Platoon_Explosives",
+	"AUX_95th_Crate_Vehicle_Ammo",
+	"AUX_95th_Crate_Vehicle_Fuel"
 ], 20] select 0; 
 
 if(!(isNil "_nearestVehicle")) then {

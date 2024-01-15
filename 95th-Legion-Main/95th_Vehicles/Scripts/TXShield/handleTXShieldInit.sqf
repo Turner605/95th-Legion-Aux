@@ -2,7 +2,7 @@ params ["_this"];
 
 if(!alive _this) exitWith {};
 
-private _shield = "95th_planetaryshield_50" createVehicle getPos _this;
+private _shield = "AUX_95th_Shield_Small" createVehicle getPos _this;
 _shield attachTo [_this, [0, 0, 1]];
 _shield setdir 0;
 

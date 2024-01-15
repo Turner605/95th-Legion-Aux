@@ -2,6 +2,8 @@ params ["_vehicle"];
 
 [_vehicle] spawn ls_vehicle_fnc_ImpulsorMonitor;
 
+if (!isServer) exitWith {};
+
 _vehicle addEventHandler["Fired", {
 	params ["_vehicle", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
 

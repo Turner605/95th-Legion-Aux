@@ -8,6 +8,8 @@ params ["_vehicle"];
 // "Deploy UAV" Function? - Maybe a new UAV that does the sonar scan when you fire?
 // Instead of scan maybe a HUD display of the groups it can currently see?
 
+if (!isServer) exitWith {};
+
 //#################################### Output Count ####################################
 private _outpostNumber = missionNamespace getVariable "OutpostNumber";
 
@@ -102,4 +104,4 @@ private _outpostName = "Outpost: " + (str _outpostNumber);
 			1 cutText ["<t color='#ffffff' size='1'>Pickup Requested from " + _outpostName + ".</t>", "PLAIN", 2, true, true, true];
 		}] remoteExec ["call", _allPilots];
 	},[_outpostName]];
-}] remoteExec ["call", 0];
+}] remoteExec ["call", 0, true];

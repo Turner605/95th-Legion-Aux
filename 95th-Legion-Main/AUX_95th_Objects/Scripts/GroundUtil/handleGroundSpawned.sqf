@@ -30,9 +30,9 @@ if(!(isNil "_targetPad")) then {
 		private _spawnedVehicle = createVehicle[_vehicleClass, _position, [], 0, "CAN_COLLIDE"];
 
 		// switch (_vehicleClass) do {
-		// 	case "95th_LAAT_Mrk1": { [_spawnedVehicle, player] spawn NFA_fnc_handleSkinSelection; };
-		// 	case "95th_LAAT_Mrk2": { [_spawnedVehicle, player] spawn NFA_fnc_handleSkinSelection;  };
-		// 	case "95th_LAAT_Mrk2Lights": { [_spawnedVehicle, player] spawn NFA_fnc_handleSkinSelection;  };
+		// 	case "95th_LAAT_Mrk1": { [_spawnedVehicle, player] spawn AUX_95th_fnc_handleSkinSelection; };
+		// 	case "95th_LAAT_Mrk2": { [_spawnedVehicle, player] spawn AUX_95th_fnc_handleSkinSelection;  };
+		// 	case "95th_LAAT_Mrk2Lights": { [_spawnedVehicle, player] spawn AUX_95th_fnc_handleSkinSelection;  };
 		// };
 
 		_spawnedVehicle setDir _direction + 90;

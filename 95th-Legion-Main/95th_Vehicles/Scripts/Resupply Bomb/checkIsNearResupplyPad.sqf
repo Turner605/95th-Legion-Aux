@@ -1,7 +1,7 @@
 params ["_vehicle"];
 
 private _isInRange = false;
-private _nearestSupplyPad = nearestObject [_vehicle, "95th_Resupply_Pad"];
+private _nearestSupplyPad = nearestObject [_vehicle, "AUX_95th_Misc_Crate_Pad"];
 
 if(isNull _nearestSupplyPad) exitWith {};
 

@@ -6,12 +6,12 @@ class AUX_95th_AirUtil_Service : 3AS_workbench_r1 {
 		class ServiceAirVehicle {
 			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
 			displayName = "Service Air Vehicle";
-			statement = "[this, ['Helicopter', 'Plane']] spawn NFA_fnc_handleAirVehicleServiced;"; 
+			statement = "[this, ['Helicopter', 'Plane']] spawn AUX_95th_fnc_handleAirVehicleServiced;"; 
 		};
 		class EditPylons {
 			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
 			displayName = "Edit Pylons";
-			statement = "[this, player, ['Helicopter', 'Plane']] spawn NFA_fnc_handlePylonEdit;"; 
+			statement = "[this, player, ['Helicopter', 'Plane']] spawn AUX_95th_fnc_handlePylonEdit;"; 
 		};
 	};
 };

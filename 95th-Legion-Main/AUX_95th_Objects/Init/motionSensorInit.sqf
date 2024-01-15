@@ -1,5 +1,7 @@
 params ["_sensor"];
 
+if (!isServer) exitWith {};
+
 //#################################### Sensor Count ####################################
 private _sensorNumber = missionNamespace getVariable "SensorNumber";
 

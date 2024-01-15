@@ -39,11 +39,11 @@ class ACEX_Fortify_Presets {
         objects[] = {
             {"AUX_95th_Misc_Radio_Extender", 10}, //Radio Station
             {"AUX_95th_Misc_Motion_Sensor", 10}, //Motion Sensor
-            {"95th_3AS_Barricade_2_C_prop", 10}, //Barricade
-            {"95th_Land_lsb_fob_hBarrier_ramp", 10}, //Ramp
-            {"95th_Land_lsb_fob_hBarrier_wall", 10}, //Wall
-            {"95th_3AS_Short_Wall_Bunker", 10}, //Bunker
-            {"95th_3AS_HeavyRepeater_Unarmoured", 10} //Turret
+            {"AUX_95th_Fortify_Barricade", 10}, //Barricade
+            {"AUX_95th_Fortify_Ramp", 10}, //Ramp
+            {"AUX_95th_Fortify_Wall", 10}, //Wall
+            {"AUX_95th_Fortify_Bunker", 10}, //Bunker
+            {"AUX_95th_Fortify_Turret", 10} //Turret
         };
     };
 };

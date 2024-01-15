@@ -3,12 +3,18 @@ class CfgPatches {
         author="95th Aux Team";
         name="AUX 95th Objects";
 		requiredAddons[]={
-			// TODO
+			"3AS_Prop_Crates"
 		};
 		units[]={
 			"AUX_95th_AirUtil_Pad", "AUX_95th_AirUtil_Transport", "AUX_95th_AirUtil_Fighter", "AUX_95th_AirUtil_Service",
 			"AUX_95th_GroundUtil_Pad", "AUX_95th_GroundUtil_Vehicles", "AUX_95th_GroundUtil_Service", "AUX_95th_GroundUtil_Refit",
-			"AUX_95th_Misc_Motion_Sensor", "AUX_95th_Misc_Radio_Extender", "AUX_95th_Misc_Shield_Generator"
+			"AUX_95th_Misc_Motion_Sensor", "AUX_95th_Misc_Radio_Extender", "AUX_95th_Misc_Shield_Generator", "AUX_95th_Misc_Reinsert_Requester",
+			"AUX_95th_Crate_Platoon_Ammo", "AUX_95th_Crate_Platoon_Medical", "AUX_95th_Crate_Platoon_Explosives", "AUX_95th_Crate_Vehicle_Ammo", "AUX_95th_Crate_Vehicle_Fuel",
+			"AUX_95th_Crate_Full_Arsenal", "AUX_95th_Crate_Restricted_Arsenal", "AUX_95th_Crate_Inverted_Arsenal",
+			"AUX_95th_Misc_Crate_Pad", "AUX_95th_Misc_Medical_Terminal", "AUX_95th_Misc_Permission_Terminal",
+			"AUX_95th_Venator_Briefing_Room", "AUX_95th_Medical_Shield", "AUX_95th_Shield_Small", "AUX_95th_Acclimator_Hollow",
+			"AUX_95th_Fortify_Ramp", "AUX_95th_Fortify_Barricade", "AUX_95th_Fortify_Wall", "AUX_95th_Fortify_Bunker", "AUX_95th_Fortify_Turret",
+			"AUX_95th_Misc_Arsenal_Full", "AUX_95th_Misc_Arsenal_Restricted", "AUX_95th_Venator_Briefing_Room"
 		};
 	};
 };
@@ -21,6 +27,12 @@ class CfgEditorSubcategories{
 	class AUX_95th_Air_Utilities{displayName="Air Utilities";};
 	class AUX_95th_Ground_Utilities{displayName="Ground Utilities";};
 	class AUX_95th_Misc{displayName="Misc Objects";};
+	class AUX_95th_Venator{displayName="Misc Objects";};
+	class AUX_95th_Misc_Terminals{displayName="Misc Terminals";};
+	class AUX_95th_Crates{displayName="Supply Crates";};
+	class AUX_95th_Shields{displayName="Shields";};
+	class AUX_95th_Ships{displayName="Ships";};
+	class AUX_95th_Fortify{displayName="Fortify";};
 };
 
 class CBA_Extended_EventHandlers_base;
@@ -29,32 +41,96 @@ class CfgVehicles {
 	#include "Definitions.hpp"
 
 	// Air Util
-	#include "AirUtil\Pad.hpp"
-	#include "AirUtil\Transport.hpp"
 	#include "AirUtil\Fighter.hpp"
+	#include "AirUtil\Pad.hpp"
 	#include "AirUtil\Service.hpp"
+	#include "AirUtil\Transport.hpp"
+
+	// Resupply Crates
+	#include "Crates\Full Arsenal.hpp"
+	#include "Crates\Inverted Arsenal.hpp"
+	#include "Crates\Platoon Ammo.hpp"
+	#include "Crates\Platoon Explosives.hpp"
+	#include "Crates\Platoon Medical.hpp"
+	#include "Crates\Restricted Arsenal.hpp"
+	#include "Crates\Vehicle Ammo.hpp"
+	#include "Crates\Vehicle Fuel.hpp"
+
+	// Fortify
+	#include "Fortify\Barricade.hpp"
+	#include "Fortify\Bunker.hpp"
+	#include "Fortify\Ramp.hpp"
+	#include "Fortify\Turret.hpp"
+	#include "Fortify\Wall.hpp"
 
 	// Ground Util
 	#include "GroundUtil\Pad.hpp"
-	#include "GroundUtil\Vehicles.hpp"
-	#include "GroundUtil\Service.hpp"
 	#include "GroundUtil\Refit.hpp"
+	#include "GroundUtil\Service.hpp"
+	#include "GroundUtil\Vehicles.hpp"
 
 	// Misc
+	#include "Misc\Arsenal Full.hpp"
+	#include "Misc\Arsenal Restricted.hpp"
+	#include "Misc\Crate Pad.hpp"
 	#include "Misc\Motion Sensor.hpp"
 	#include "Misc\Radio Extender.hpp"
+	#include "Misc\Reinsert Requester.hpp"
 	#include "Misc\Shield Generator.hpp"
+
+	// Misc Terminals
+	#include "Misc Terminals\Medical Terminal.hpp"
+	#include "Misc Terminals\Permission Terminal.hpp"
+
+	// Shield
+	#include "Shields\Medical Shield.hpp"
+	#include "Shields\Planetary Shield Small.hpp"
+
+	// Ships
+	#include "Ships\Acclimator Hollow.hpp"
+
+	// Venator
+	#include "Venator\Briefing Room.hpp"
 };
 
-class CfgFunctions { class NFA { class Objects {
+class CfgFunctions { class AUX_95th { class Objects {
 	class motionSensorInit {file = "\AUX_95th_Objects\Init\motionSensorInit.sqf";};
 	class ShieldGeneratorInit {file = "\AUX_95th_Objects\Init\shieldGeneratorInit.sqf";};
+	class reinsertRequesterInit {file = "\AUX_95th_Objects\Init\reinsertRequesterInit.sqf";};
+	class invertedArsenalInit {file = "\AUX_95th_Objects\Init\invertedArsenalInit.sqf";};
+	
+	class handleCrateSpawned {file = "\AUX_95th_Objects\Scripts\handleCrateSpawned.sqf";};
+	class checkPlayerInBriefing {file = "\AUX_95th_Objects\Scripts\checkPlayerInBriefing.sqf";};
+	class addDefaultClasses {file = "\AUX_95th_Objects\Scripts\addDefaultClasses.sqf";};
+
+	class handleGroundSpawned {file = "\AUX_95th_Objects\Scripts\GroundUtil\handleGroundSpawned.sqf";};
+	class handleGroundVehicleServiced {file = "\AUX_95th_Objects\Scripts\GroundUtil\handleGroundVehicleServiced.sqf";};
+	class handleLoadATRT {file = "\AUX_95th_Objects\Scripts\GroundUtil\handleLoadATRT.sqf";};
+
+	class handleAirSpawned {file = "\AUX_95th_Objects\Scripts\AirUtil\handleAirSpawned.sqf";};
+	class handleAirVehicleServiced {file = "\AUX_95th_Objects\Scripts\AirUtil\handleAirVehicleServiced.sqf";};
+	class handlePylonEdit {file = "\AUX_95th_Objects\Scripts\AirUtil\handlePylonEdit.sqf";};
+	class handleSkinSelection {file = "\AUX_95th_Objects\Scripts\AirUtil\handleSkinSelection.sqf";};
 };};};
 
+class Extended_PostInit_EventHandlers {
+	class AUX_95th_Objects_PostInit {init="call compile preprocessFileLineNumbers '\AUX_95th_Objects\Init\XEH_postInit.sqf'";};
+};
+
+class Extended_PreInit_EventHandlers {
+	class AUX_95th_Objects_PreInit {init="call compile preprocessFileLineNumbers '\AUX_95th_Objects\Init\XEH_preInit.sqf'";};
+};
+
 class Extended_InitPost_EventHandlers {
-	class AUX_95th_Misc_Motion_Sensor {class AUX_95th_Misc_Motion_Sensor_Init {clientInit = "[_this select 0] call NFA_fnc_motionSensorInit;";};};
-	class AUX_95th_Misc_Shield_Generator {class AUX_95th_Misc_Shield_Generator_Init {clientInit = "[_this select 0] call NFA_fnc_shieldGeneratorInit;";};};
-	class AUX_95th_Misc_Radio_Extender {class AUX_95th_Misc_Radio_Extender_Init {clientInit = "[_this select 0,50000] call tfar_antennas_fnc_initRadioTower";};};
+	class AUX_95th_Misc_Motion_Sensor {class AUX_95th_Misc_Motion_Sensor_Init {init = "[_this select 0] call AUX_95th_fnc_motionSensorInit;";};};
+	class AUX_95th_Misc_Shield_Generator {class AUX_95th_Misc_Shield_Generator_Init {init = "[_this select 0] call AUX_95th_fnc_shieldGeneratorInit;";};};
+	class AUX_95th_Misc_Reinsert_Requester {class AUX_95th_Misc_Reinsert_Requester_Init {init = "[_this select 0] call AUX_95th_fnc_reinsertRequesterInit;";};};
+	class AUX_95th_Misc_Radio_Extender {class AUX_95th_Misc_Radio_Extender_Init {init = "[_this select 0,50000] call tfar_antennas_fnc_initRadioTower";};};
+	class AUX_95th_Crate_Full_Arsenal {class AUX_95th_Crate_Full_Arsenal_Init {init = "[_this select 0, true] call ace_arsenal_fnc_initBox;";};};
+	class AUX_95th_Crate_Restricted_Arsenal {class AUX_95th_Crate_Restricted_Arsenal_Init {init = "[_this select 0, Arsenal_All_Items_95th] call ace_arsenal_fnc_initBox;";};};
+	class AUX_95th_Crate_Inverted_Arsenal {class AUX_95th_Crate_Inverted_Arsenal_Init {init = "[_this select 0] call AUX_95th_fnc_invertedArsenalInit;";};};
+	class AUX_95th_Misc_Arsenal_Full {class AUX_95th_Misc_Arsenal_Full_Init {init = "[_this select 0, true] call ace_arsenal_fnc_initBox;";};};
+	class AUX_95th_Misc_Arsenal_Restricted {class AUX_95th_Misc_Arsenal_Restricted_Init {init = "[_this select 0, Arsenal_All_Items_95th] call ace_arsenal_fnc_initBox;";};};
 };
 
 class Extended_Deleted_EventHandlers {

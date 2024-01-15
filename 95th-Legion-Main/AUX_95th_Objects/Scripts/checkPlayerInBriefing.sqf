@@ -1,6 +1,6 @@
 params ["_unit"];
 
-private _nearestBriefingRoom = nearestObject [_unit, "95th_Briefing_Room"];
+private _nearestBriefingRoom = nearestObject [_unit, "AUX_95th_Venator_Briefing_Room"];
 
 if(isNull _nearestBriefingRoom) exitWith {};
 

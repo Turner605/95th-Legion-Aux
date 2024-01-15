@@ -1,8 +1,10 @@
 params ["_generator"];
 
+if (!isServer) exitWith {};
+
 if(!alive _generator) exitWith {};
 
-private _shield = "95th_planetaryshield_50" createVehicle getPos _generator;
+private _shield = "AUX_95th_Shield_Small" createVehicle getPos _generator;
 _shield attachTo [_generator, [0, 0, 1]];
 _shield setdir 0;
 

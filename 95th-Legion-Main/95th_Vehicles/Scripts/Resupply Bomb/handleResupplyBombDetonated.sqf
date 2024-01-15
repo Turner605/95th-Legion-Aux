@@ -24,11 +24,11 @@ while {alive _projectile} do {
 private _supplyBox = "";
 
 switch (_magazine) do {
-	case "NFL_LAAT_Resupply_Launcher_Magazine_Ammo": {_supplyBox = "95th_Supply_Large_Ammo_Prop";};
-	case "NFL_LAAT_Resupply_Launcher_Magazine_Medical": {_supplyBox = "95th_Supply_Large_Medical_Prop";};
-	case "NFL_LAAT_Resupply_Launcher_Magazine_Explosives": {_supplyBox = "95th_Supply_Large_Black_Prop";};
-	case "NFL_LAAT_Resupply_Launcher_Magazine_VehicleAmmo": {_supplyBox = "95th_Supply_Large_Blue_Prop";};
-	case "NFL_LAAT_Resupply_Launcher_Magazine_VehicleFuel": {_supplyBox = "95th_Supply_Large_Red_Prop";};
+	case "NFL_LAAT_Resupply_Launcher_Magazine_Ammo": {_supplyBox = "AUX_95th_Crate_Platoon_Ammo";};
+	case "NFL_LAAT_Resupply_Launcher_Magazine_Medical": {_supplyBox = "AUX_95th_Crate_Platoon_Medical";};
+	case "NFL_LAAT_Resupply_Launcher_Magazine_Explosives": {_supplyBox = "AUX_95th_Crate_Platoon_Explosives";};
+	case "NFL_LAAT_Resupply_Launcher_Magazine_VehicleAmmo": {_supplyBox = "AUX_95th_Crate_Vehicle_Ammo";};
+	case "NFL_LAAT_Resupply_Launcher_Magazine_VehicleFuel": {_supplyBox = "AUX_95th_Crate_Vehicle_Fuel";};
 };
 
 // private _position = (_detPos vectorAdd [0,0,_offset]);
