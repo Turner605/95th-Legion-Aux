@@ -1,6 +1,7 @@
 params ["_sensor"];
 
 if (!isServer) exitWith {};
+if(_generator getVariable "zen_placement_object") exitWith {};
 
 //#################################### Sensor Count ####################################
 private _sensorNumber = missionNamespace getVariable "SensorNumber";

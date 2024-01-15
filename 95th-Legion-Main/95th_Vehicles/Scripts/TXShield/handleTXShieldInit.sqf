@@ -9,12 +9,12 @@ _shield setdir 0;
 // Land_3AS_ShieldGenerator, 0.05 scale,
 [_shield, true] remoteExec ["hideObjectGlobal", 2];
 
-_this setVariable ["NFL_Shield_Object", _shield, true];
-_this setVariable ["NFL_TX_Shield_Active", false, true];
+_this setVariable ["AUX_95th_Shield_Object", _shield, true];
+_this setVariable ["AUX_95th_Shield_Active", false, true];
 _this setVariable ["NFL_Shield_Scale", 0.1, true];
-_this setVariable ["NFL_TX_Shield_Health", NFL_TX_Shield_Health, true];
-_this setVariable ["NFL_Shield_Recharging", false, true];
-_this setVariable ["NFL_TX_Shield_Animating", false, true];
+_this setVariable ["AUX_95th_Shield_Small_Health", AUX_95th_Shield_Small_Health, true];
+_this setVariable ["AUX_95th_Shield_Recharging", false, true];
+_this setVariable ["AUX_95th_Shield_Animating", false, true];
 
 _this addEventHandler ["Killed", {
 	params ["_unit", "_killer"];
