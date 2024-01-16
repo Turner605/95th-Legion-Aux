@@ -25,6 +25,22 @@ if (isNil "_outpostNumber") then {
 private _objNetId = _vehicle call BIS_fnc_netId;
 private _outpostName = "Outpost: " + (str _outpostNumber);
 
+//#################################### Building ####################################
+
+[
+	_vehicle, 
+	3000, 
+	[
+		["3AS_Prop_FOB_modular_Wall_Corner","",100,15,{}],
+		["3AS_Prop_FOB_modular_Wall_straight_Long","",100,15,{}],
+		["3AS_Prop_FOB_modular_Wall_gate","",100,15,{}],
+		["3AS_Prop_FOB_modular_watchTower","",50,15,{}],
+		["3AS_Prop_FOB_modular_Bunker","",50,15,{}],
+		["3AS_Prop_FOB_modular_Wall_ramp","",1000,15,{}]
+	], 
+	{}
+] call stx_logistics_fnc_addConstructionVehicle;
+
 //#################################### Map Marker ####################################
 
 [{
