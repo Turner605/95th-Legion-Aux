@@ -36,7 +36,9 @@ private _outpostName = "Outpost: " + (str _outpostNumber);
 		["3AS_Prop_FOB_modular_Wall_gate","",100,15,{}],
 		["3AS_Prop_FOB_modular_watchTower","",50,15,{}],
 		["3AS_Prop_FOB_modular_Bunker","",50,15,{}],
-		["3AS_Prop_FOB_modular_Wall_ramp","",1000,15,{}]
+		["3AS_Prop_FOB_modular_Wall_ramp","",100,15,{}],
+		["AUX_95th_Misc_Motion_Sensor","",200,15,{}],
+		["AUX_95th_Misc_Shield_Generator","",200,15,{}]
 	], 
 	{}
 ] call stx_logistics_fnc_addConstructionVehicle;
