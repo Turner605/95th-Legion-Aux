@@ -51,8 +51,3 @@ player addEventHandler["Respawn", {
         };
     }
 }] call CBA_fnc_addEventHandler;
-
-if(enable_default_kits_95th) then {
-    waitUntil {!(isNull findDisplay 46)};
-    [""] call AUX_95th_fnc_addDefaultClasses;
-}

@@ -103,7 +103,7 @@ private _outpostName = "Outpost: " + (str _outpostNumber);
 [west, _vehicle, _outpostName] call BIS_fnc_addRespawnPosition;
 
 //#################################### Radio ####################################
-[_vehicle, 50000] call tfar_antennas_fnc_initRadioTower
+[_vehicle, 50000] call tfar_antennas_fnc_initRadioTower;
 
 //#################################### Pick Up ####################################
 

@@ -11,7 +11,7 @@
 ["ace_unconscious", {
     params ["_unit", "_enable"];
     if (_unit isNotEqualTo player) exitWith {};
-    if ((_enable) && (enable_spectator_95th)) then {
+    if ((_enable) && (AUX_95th_Spectator_Enabled)) then {
         _unit setVariable ["ace_medical_feedback_effectUnconsciousTimeout", 10e10];
         [{
             if (!(player getVariable ["ace_isunconscious", false]) || {!alive player}) exitWith {};
@@ -31,3 +31,14 @@ player addEventHandler["Respawn", {
 
     [false] call ace_spectator_fnc_setSpectator;
 }];
+
+if(AUX_95th_Fortify_Forceload_Enabled) then {
+    [] call AUX_95th_fnc_setupFortify;
+};
+
+if(enable_default_kits_95th) then {
+    [] spawn {
+        waitUntil {!(isNull findDisplay 46)};
+        [""] call AUX_95th_fnc_addDefaultClasses;
+    };
+};
