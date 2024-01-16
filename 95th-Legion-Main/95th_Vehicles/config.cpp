@@ -546,3 +546,7 @@ class Extended_init_EventHandlers {
 	class 95th_LAAT_Mrk2 {class 95th_LAAT_Mrk2_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};};
 	class 95th_LAAT_Mrk2Lights {class 95th_LAAT_Mrk2Lights_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};};
 };
+
+class Extended_Deleted_EventHandlers {
+	class AUX_95th_Command_Outpost {AUX_95th_Command_Outpost_Init = "(_this param [0,_this]) call tfar_antennas_fnc_deleteRadioTower";};
+};
