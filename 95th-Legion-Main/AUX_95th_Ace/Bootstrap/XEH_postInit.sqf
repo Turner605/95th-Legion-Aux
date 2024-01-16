@@ -36,7 +36,7 @@ if(AUX_95th_Fortify_Forceload_Enabled) then {
     [] call AUX_95th_fnc_setupFortify;
 };
 
-if(enable_default_kits_95th) then {
+if(AUX_95th_Default_Kits_Enabled) then {
     [] spawn {
         waitUntil {!(isNull findDisplay 46)};
         [""] call AUX_95th_fnc_addDefaultClasses;

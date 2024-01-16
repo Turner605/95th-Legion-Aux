@@ -19,24 +19,45 @@
     {} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
 
+[
+    "AUX_95th_Default_Kits_Enabled", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    "Enable The Arsenal Default Kits", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "95th Aux Mod", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [false, true, true], // data for this setting: [min, max, default, number of shown trailing decimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
+
 ["NF_player_connect", "onPlayerConnected", {
-    NFA_Player_Connected_At = time; 
+    params ["_id", "_uid", "_name"];
+
+    private _connectedTimeList = missionNamespace getVariable "AUX_95th_ConnectedTime_List";
+
+    if (isNil "_connectedTimeList") then {_connectedTimeList = createHashMap;};
+
+    _connectedTimeList set [_uid, time];
+
+    missionNamespace setVariable ["AUX_95th_ConnectedTime_List", _connectedTimeList, true];
 }] call BIS_fnc_addStackedEventHandler;
 
 ["NF_player_disconnect", "onPlayerDisconnected", {
-    private _currentPlaytimeList = missionNamespace getVariable "NFA_Play_Time_List";
-    private _playerTimeListMap;
-    
-    private _playTime = time - NFA_Player_Connected_At;
+    params ["_id", "_uid", "_name"];
 
-    if(isNil _currentPlaytimeList) then {
-        _playerTimeListMap = createHashMap;
-        _playerTimeListMap set [_uid, _playTime];
-	}else{
-        _playerTimeListMap set [_uid, _playTime];
-    };
+    private _playtimeList = missionNamespace getVariable "AUX_95th_PlayTime_List";
+    private _connectedTimeList = missionNamespace getVariable "AUX_95th_ConnectedTime_List";
 
-    missionNamespace setVariable ["NFA_Play_Time_List", _playerTimeListMap, true];
+    if (isNil "_playtimeList") then {_playtimeList = createHashMap;};
+
+    private _previousPlayTime = (_playtimeList getOrDefault [_uid, 0]);
+    private _connectedTime = (_connectedTimeList get _uid);
+    private _sessionTime = (time - _connectedTime);
+
+    private _totalTime = (_sessionTime + _previousPlayTime);
+
+    _playtimeList set [_uid, _totalTime];
+
+    missionNamespace setVariable ["AUX_95th_PlayTime_List", _playtimeList, true];
 }] call BIS_fnc_addStackedEventHandler;
 
 // addMissionEventHandler ["HandleDisconnect", {
