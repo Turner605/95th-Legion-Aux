@@ -70,6 +70,7 @@ class CfgVehicles {
 	class 95th_CIS_Disguised_Trooper: 95th_Rifleman_Unit_Trooper {
 		displayName="[95th] Disguised BX Trooper";
 		author="95th Aux Team";
+		DSS_Is_Disguised_As_Bluefor=1;\
 		faction="95th_CIS";
 		editorSubcategory="95th_CIS_Commandos";
 		uniformClass="95th_P1_Uniform_Trooper";
