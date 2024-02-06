@@ -101,7 +101,6 @@ class CfgFunctions { class AUX_95th { class Objects {
 	
 	class handleCrateSpawned {file = "\AUX_95th_Objects\Scripts\handleCrateSpawned.sqf";};
 	class checkPlayerInBriefing {file = "\AUX_95th_Objects\Scripts\checkPlayerInBriefing.sqf";};
-	class addDefaultClasses {file = "\AUX_95th_Objects\Scripts\addDefaultClasses.sqf";};
 
 	class handleGroundSpawned {file = "\AUX_95th_Objects\Scripts\GroundUtil\handleGroundSpawned.sqf";};
 	class handleGroundVehicleServiced {file = "\AUX_95th_Objects\Scripts\GroundUtil\handleGroundVehicleServiced.sqf";};

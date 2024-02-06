@@ -17,6 +17,7 @@ class ACEX_Fortify_Presets {
 
 class CfgFunctions { class AUX_95th { class Ace {
 	class setupFortify {file = "\AUX_95th_Ace\Scripts\setupFortify.sqf";};
+	class addDefaultClasses {file = "\AUX_95th_Ace\Scripts\addDefaultClasses.sqf";};
 };};};
 
 class Extended_PreInit_EventHandlers {
