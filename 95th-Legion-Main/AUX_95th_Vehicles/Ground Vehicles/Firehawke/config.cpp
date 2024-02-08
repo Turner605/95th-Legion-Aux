@@ -1296,6 +1296,7 @@ class CfgVehicles {
 				};
 			};
 		};
+		#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
 	};
 };
 

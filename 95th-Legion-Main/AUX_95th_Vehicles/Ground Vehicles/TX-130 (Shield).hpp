@@ -17,4 +17,5 @@ class AUX_95th_TX_130_Shield : 3as_saber_m1Recon {
 			statement = "[this, player] spawn AUX_95th_fnc_handleToggleTXShield;"; 
 		};
 	};
+	#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
 };

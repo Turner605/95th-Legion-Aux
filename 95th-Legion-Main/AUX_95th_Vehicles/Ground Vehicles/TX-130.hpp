@@ -10,4 +10,5 @@ class AUX_95th_TX_130 : 3as_saber_m1 {
 	};
 	class ACE_Cargo {class Cargo {class track {type = "ACE_Track"; amount = 2;};};}; 
 	ace_cargo_space = 26;
+	#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
 };

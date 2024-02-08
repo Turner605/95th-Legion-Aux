@@ -8,4 +8,5 @@ class AUX_95th_LAAT_Mrk2_Lights: 3as_LAAT_Mk2Lights {
 		"\AUX_95th_Vehicles\Data\LAAT\Default\Interior.paa"
 	};
 	NEW_SHARED_LAAT_CONFIG()
+	#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
 };

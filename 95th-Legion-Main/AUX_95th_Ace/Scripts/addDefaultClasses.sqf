@@ -17,6 +17,8 @@
 // 14 - Tech
 // 15 - Support
 
+if (!isServer) exitWith {};
+
 //-----------------------------# Weapon Options #-----------------------------------
 private _dc17s = ["JLTS_DC17SA","","JLTS_DC17SA_flashlight","",["JLTS_DC17SA_mag",20],["JLTS_stun_mag_long",5],""];
 private _dc15a = ["JLTS_DC15A_plastic","","","",["JLTS_DC15A_mag",60],["JLTS_stun_mag_long",5],""];
@@ -188,5 +190,6 @@ private _roleArray = [
 			_x select 10, 
 			"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""], ["ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch","95th_P1_Nightvision_Invisible"]
 		],[]
-	]
+	],
+	true
 ] call ace_arsenal_fnc_addDefaultLoadout; } forEach _roleArray;

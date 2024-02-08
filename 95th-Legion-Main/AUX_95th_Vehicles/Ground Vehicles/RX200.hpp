@@ -61,4 +61,5 @@ class AUX_95th_RX200 : 3AS_RX200_Base {
 			};
 		};
 	};
+	#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
 };

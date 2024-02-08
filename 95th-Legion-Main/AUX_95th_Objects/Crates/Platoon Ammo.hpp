@@ -12,13 +12,7 @@ class AUX_95th_Crate_Platoon_Ammo : 3AS_Supply_Large_Ammo_Prop {
 	ace_cargo_noRename = 1;
 	ace_cargo_blockUnloadCarry = 1;
 
-	class TransportMagazines {
-		class _xx_JLTS_DC15A_mag{magazine="JLTS_DC15A_mag"; count=1;};  //TODO
-	};
-
-	class TransportWeapons {
-		class _xx_JLTS_DC15A_plastic{weapon="JLTS_DC15A_plastic"; count=1;};  //TODO
-	};
+	#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
 
 	//class TransportItems {}; //TODO
 };
