@@ -7,5 +7,6 @@ units[] = {
 	"AUX_95th_LAAT_Mrk2_Lights",
 	"AUX_95th_TX_130",
 	"AUX_95th_TX_130_Shield",
-	"AUX_95th_RX200"
+	"AUX_95th_RX200",
+	"AUX_95th_UGV"
 };

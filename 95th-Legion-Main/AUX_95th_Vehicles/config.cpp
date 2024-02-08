@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Vehicles {
         author="95th Aux Team";
         name="AUX 95th Vehicles";
-		requiredAddons[]={"3AS_Prop_Crates", "3AS_SaberTank", "3AS_LAAT"};
+		requiredAddons[]={"3AS_Prop_Crates", "3AS_SaberTank", "3AS_LAAT", "CCS_Manta"};
 		#include "UnitExports.hpp"
 	};
 };

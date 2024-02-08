@@ -19,4 +19,9 @@ class VehicleSystemsTemplateRightCommander: DefaultVehicleSystemsDisplayManagerR
 class VehicleSystemsTemplateLeftGunner: DefaultVehicleSystemsDisplayManagerLeft { class components; };
 class VehicleSystemsTemplateRightGunner: DefaultVehicleSystemsDisplayManagerRight { class components; };
 class GunParticles;
-
+class DefaultEventHandlers;
+class WeaponFireGun;
+class WeaponCloudsGun;
+class WeaponFireMGun;
+class WeaponCloudsMGun;
+class RCWSOptics;
