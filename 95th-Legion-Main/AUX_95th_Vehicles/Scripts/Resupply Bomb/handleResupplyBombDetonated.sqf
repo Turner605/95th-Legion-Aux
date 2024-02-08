@@ -1,5 +1,7 @@
 params ["_vehicle", "_projectile", "_magazine"];
 
+if (!isServer) exitWith {};
+
 private _detPos = [0,0,0];
 private _offset = 0.1;
 private _dir = (getDir _projectile);
