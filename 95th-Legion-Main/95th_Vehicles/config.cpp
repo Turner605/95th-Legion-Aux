@@ -17,7 +17,6 @@ class CfgPatches {
 			"95th_TX_130_Shield",
 
 			"95th_RX200",
-			"AUX_95th_Command_Outpost",
 
 			"AUX_95th_Swamp_Speeder",
 			"AUX_95th_Swamp_Speeder_Transport",
@@ -481,14 +480,6 @@ class CfgVehicles {
 				};
 			};
 		};
-	};
-
-	class 3AS_Republic_FCP;
-	class AUX_95th_Command_Outpost: 3AS_Republic_FCP {
-		displayName="[95th] Command Outpost";
-		author="95th Aux Team";
-		faction="95th_Legion_Faction_Clones";
-        crew = "";
 	};
 
 	class 3AS_ISP;
