@@ -482,22 +482,6 @@ class CfgVehicles {
 		};
 	};
 
-	class 3AS_ISP;
-	class AUX_95th_Swamp_Speeder: 3AS_ISP {
-		author="95th Aux Team";
-		faction="95th_Legion_Faction_Clones";
-        crew = "";
-	};
-
-	class 3AS_ISP_Transport;
-	class AUX_95th_Swamp_Speeder_Transport: 3AS_ISP_Transport {
-		author="95th Aux Team";
-		faction="95th_Legion_Faction_Clones";
-        crew = "";
-	};
-
-
-
 	class 3as_Big_Box_2_prop;
 	class AUX_95th_AV7_Box: 3as_Big_Box_2_prop {
 		author="95th Aux Team";
@@ -522,22 +506,16 @@ class CfgFunctions {
 			class checkIsNearResupplyPad {file = "\95th_Vehicles\Scripts\Resupply Bomb\checkIsNearResupplyPad.sqf";};
 
 			class handleLAATInit {file = "\95th_Vehicles\Init\LAAT\handleLAATInit.sqf";};
-			class handleCommandOutpostInit {file = "\95th_Vehicles\Init\Outpost\handleCommandOutpostInit.sqf";};
 		};
 	};
 };
 
 class Extended_InitPost_EventHandlers {	
 	class 95th_TX_130_Shield {class 95th_TX_130_Shield_Init {onRespawn="true";serverInit="[_this select 0] call NFA_fnc_handleTXShieldInit;";};};
-	class AUX_95th_Command_Outpost {class AUX_95th_Command_Outpost_Init {serverInit="[_this select 0] call NFA_fnc_handleCommandOutpostInit;";};};
 };
 
 class Extended_init_EventHandlers {
 	class 95th_LAAT_Mrk1 {class 95th_LAAT_Mrk1_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};};
 	class 95th_LAAT_Mrk2 {class 95th_LAAT_Mrk2_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};};
 	class 95th_LAAT_Mrk2Lights {class 95th_LAAT_Mrk2Lights_Init {init = "(_this) spawn NFA_fnc_handleLAATInit;";};};
-};
-
-class Extended_Deleted_EventHandlers {
-	class AUX_95th_Command_Outpost {AUX_95th_Command_Outpost_Init = "(_this param [0,_this]) call tfar_antennas_fnc_deleteRadioTower";};
 };
