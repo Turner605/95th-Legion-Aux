@@ -22,6 +22,6 @@ _vehicle addEventHandler["Fired", {
 
         }, [_vehicle], 1] call CBA_fnc_waitAndExecute;
 
-        [_vehicle, _projectile, _magazine] spawn NFA_fnc_handleResupplyBombDetonated;
+        [_vehicle, _projectile, _magazine] spawn AUX_95th_fnc_handleResupplyBombDetonated;
     };
 }];

@@ -1,15 +1,15 @@
 ////////////////////////////////////////////////////////////////////
-//DeRap: Hovertanks\data\firehawke_damage.rvmat
+//DeRap: Hovertanks\data\firehawke.rvmat
 //Produced from mikero's Dos Tools Dll version 9.10
 //https://mikero.bytex.digital/Downloads
-//'now' is Tue Oct 10 12:39:05 2023 : 'file' last modified on Wed Feb 15 17:58:52 2023
+//'now' is Tue Oct 10 12:39:04 2023 : 'file' last modified on Wed Feb 15 17:58:52 2023
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
 
 class StageTI
 {
-	texture = "95th_Vehicles\Data\Firehawke\data\empty_ti_ca.paa";
+	texture = "AUX_95th_Vehicles\Data\Firehawke\data\empty_ti_ca.paa";
 };
 ambient[] = {0.7,0.7,0.7,1};
 diffuse[] = {0.7,0.7,0.7,1};
@@ -21,7 +21,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "95th_Vehicles\Data\Firehawke\data\firehawke_dam_nohq.paa";
+	texture = "AUX_95th_Vehicles\Data\Firehawke\data\firehawke_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -45,7 +45,7 @@ class Stage2
 };
 class Stage3
 {
-	texture = "95th_Vehicles\Data\Firehawke\data\firehawke_dam_mca.paa";
+	texture = "#(argb,8,8,3)color(0.0,0.0,0.0,0.0,MC)";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -69,7 +69,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "95th_Vehicles\Data\Firehawke\data\metal_smdi.paa";
+	texture = "AUX_95th_Vehicles\Data\Firehawke\data\metal_smdi.paa"; 
 	uvSource = "tex";
 	class uvTransform
 	{

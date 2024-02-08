@@ -15,5 +15,5 @@ private _newShieldHealth = _shieldHealth - _damage;
 _tank setVariable ["AUX_95th_Shield_Small_Health", _newShieldHealth, true];
 
 if(_newShieldHealth < 0) then {
-	[_shield, _tank] call NFA_fnc_TXShieldOffAnimation;
+	[_shield, _tank] call AUX_95th_fnc_TXShieldOffAnimation;
 };

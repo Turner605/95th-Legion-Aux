@@ -11,7 +11,7 @@ if(_shieldRecharging) exitWith {};
 if(_shieldAnimating) exitWith {};
 
 if(_shieldActive) then {
-	[_shield, _tank] call NFA_fnc_TXShieldOffAnimation;
+	[_shield, _tank] call AUX_95th_fnc_TXShieldOffAnimation;
 } else {
 	_tank setVariable ["AUX_95th_Shield_Animating", true, true];
 	_tank setVariable ["AUX_95th_Shield_Active", true, true];

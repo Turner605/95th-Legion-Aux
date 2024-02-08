@@ -30,33 +30,33 @@
 				condition = true; exceptions[] = {}; statement = ''; icon = '';\
 				class addAmmoBomb {\
 					displayName = "Load Ammo Drop";\
-					condition = "this call NFA_fnc_checkIsNearResupplyPad";\
+					condition = "this call AUX_95th_fnc_checkIsNearResupplyPad";\
 					exceptions[] = {};\
-					statement = "[_target, _player, 'Ammo'] call NFA_fnc_handleLoadResupplyBomb;";\
+					statement = "[_target, _player, 'Ammo'] call AUX_95th_fnc_handleLoadResupplyBomb;";\
 				};\
 				class addMedicalBomb {\
 					displayName = "Load Medical Drop";\
-					condition = "this call NFA_fnc_checkIsNearResupplyPad";\
+					condition = "this call AUX_95th_fnc_checkIsNearResupplyPad";\
 					exceptions[] = {};\
-					statement = "[_target, _player, 'Medical'] call NFA_fnc_handleLoadResupplyBomb;";\
+					statement = "[_target, _player, 'Medical'] call AUX_95th_fnc_handleLoadResupplyBomb;";\
 				};\
 				class addExplosivesBomb {\
 					displayName = "Load Explosives Drop";\
-					condition = "this call NFA_fnc_checkIsNearResupplyPad";\
+					condition = "this call AUX_95th_fnc_checkIsNearResupplyPad";\
 					exceptions[] = {};\
-					statement = "[_target, _player, 'Explosives'] call NFA_fnc_handleLoadResupplyBomb;";\
+					statement = "[_target, _player, 'Explosives'] call AUX_95th_fnc_handleLoadResupplyBomb;";\
 				};\
 				class addVehicleAmmoBomb {\
 					displayName = "Load Vehicle Ammo Drop";\
-					condition = "this call NFA_fnc_checkIsNearResupplyPad";\
+					condition = "this call AUX_95th_fnc_checkIsNearResupplyPad";\
 					exceptions[] = {};\
-					statement = "[_target, _player, 'VehicleAmmo'] call NFA_fnc_handleLoadResupplyBomb;";\
+					statement = "[_target, _player, 'VehicleAmmo'] call AUX_95th_fnc_handleLoadResupplyBomb;";\
 				};\
 				class addVehicleFuelBomb {\
 					displayName = "Load Vehicle Fuel Drop";\
-					condition = "this call NFA_fnc_checkIsNearResupplyPad";\
+					condition = "this call AUX_95th_fnc_checkIsNearResupplyPad";\
 					exceptions[] = {};\
-					statement = "[_target, _player, 'VehicleFuel'] call NFA_fnc_handleLoadResupplyBomb;";\
+					statement = "[_target, _player, 'VehicleFuel'] call AUX_95th_fnc_handleLoadResupplyBomb;";\
 				};\
 			};\
 		};

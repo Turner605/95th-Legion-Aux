@@ -20,6 +20,7 @@ class CfgFactionClasses {
 class CfgEditorSubcategories {
 	class AUX_95th_Legion_Vehicles_Category_Static{displayName="Static";};
 	class AUX_95th_Legion_Vehicles_Category_Ground_Light{displayName="Ground (Light)";};
+	class AUX_95th_Legion_Vehicles_Category_Ground_Heavy{displayName="Ground (Heavy)";};
 	class AUX_95th_Legion_Vehicles_Category_Air_Gunships{displayName="Air (Gunships)";};
 };
 
@@ -32,15 +33,23 @@ class CfgEditorSubcategories {
 #include "CfgMagazines.hpp"
 #include "CfgWeapons.hpp"
 
-
-
 class CfgFunctions { class AUX_95th { class Vehicles {
 	class handleCommandOutpostInit {file = "\AUX_95th_Vehicles\Init\handleCommandOutpostInit.sqf";};
 	class handleLAATInit {file = "\AUX_95th_Vehicles\Init\handleLAATInit.sqf";};
+	class handleTXShieldInit {file = "\AUX_95th_Vehicles\Init\handleTXShieldInit.sqf";};
+
+	class handleToggleTXShield {file = "\AUX_95th_Vehicles\Scripts\TXShield\handleToggleTXShield.sqf";};
+	class handleTXRemoved {file = "\AUX_95th_Vehicles\Scripts\TXShield\handleTXRemoved.sqf";};
+	class handleTXShieldDamage {file = "\AUX_95th_Vehicles\Scripts\TXShield\handleTXShieldDamage.sqf";};
+	class TXShieldOffAnimation {file = "\AUX_95th_Vehicles\Scripts\TXShield\TXShieldOffAnimation.sqf";};
+
+	class handleLoadResupplyBomb {file = "\AUX_95th_Vehicles\Scripts\Resupply Bomb\handleLoadResupplyBomb.sqf";};
+	class handleResupplyBombDetonated {file = "\AUX_95th_Vehicles\Scripts\Resupply Bomb\handleResupplyBombDetonated.sqf";};
+	class checkIsNearResupplyPad {file = "\AUX_95th_Vehicles\Scripts\Resupply Bomb\checkIsNearResupplyPad.sqf";};
 };};};
 
 class Extended_InitPost_EventHandlers {	
-	// class 95th_TX_130_Shield {class 95th_TX_130_Shield_Init {onRespawn="true";serverInit="[_this select 0] call NFA_fnc_handleTXShieldInit;";};};
+	class AUX_95th_TX_130_Shield {class AUX_95th_TX_130_Shield_Init {onRespawn="true";serverInit="[_this select 0] call AUX_95th_fnc_handleTXShieldInit;";};};
 	class AUX_95th_Command_Outpost {class AUX_95th_Command_Outpost_Init {serverInit="[_this select 0] call AUX_95th_fnc_handleCommandOutpostInit;";};};
 };
 
