@@ -1,3 +1,5 @@
+//Issue with weapon/ammo type that the 3rd person aim point doesnt work, its not anything wrong with the UGV config
+
 class AUX_95th_UGV: CCS_Manta_Base {
 	editorPreview = "\CCS_Manta\Data\UI\E_Manta_F.jpg";
 	displayName = "UGV TBD";
