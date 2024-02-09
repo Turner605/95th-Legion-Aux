@@ -37,8 +37,5 @@ if(AUX_95th_Fortify_Forceload_Enabled) then {
 };
 
 if(AUX_95th_Default_Kits_Enabled) then {
-    [] spawn {
-        waitUntil {!(isNull findDisplay 46)};
-        [""] call AUX_95th_fnc_addDefaultClasses;
-    };
+    [] call AUX_95th_fnc_addDefaultClasses;
 };

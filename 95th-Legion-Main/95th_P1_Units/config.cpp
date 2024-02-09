@@ -167,7 +167,7 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper","Shiny","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery","Som","Solvest","Ratler","MadHatter", "Third", "Stitch", "Taylor", "Hazard"};
+				values[] = {"Trooper","Shiny","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery","Som","Solvest","Ratler","MadHatter", "Third", "Stitch", "Taylor", "Hazard", "Foley"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 				class Shiny { label = "Shiny"; description = "Shiny Helmet"; };
 				class Medic { label = "Medic"; description = "Medic Helmet"; };
@@ -197,6 +197,7 @@ class XtdGearModels {
 				class Stitch { label = "Stitch"; description = "Stitch's Helmet"; };
 				class Taylor { label = "Taylor"; description = "Taylor's Helmet"; };
 				class Hazard { label = "Hazard"; description = "Hazard's Helmet"; };
+				class Foley { label = "Foley"; description = "Foley's Helmet"; };
 			};
 		};
 
@@ -331,7 +332,7 @@ class cfgWeapons {
 
 	class SEA_Helmet_P1_Base;
 	class LSEA_Helmet_Pilot_P1_Base;
-	class JLTS_CloneHelmetAB;
+	class lsd_gar_airborne_new;
 	class SEA_Helmet_ARF_base;
 	class SEA_Helmet_ARC;
 	class SEA_Helmet_SpecOps_SR_Base;
@@ -391,6 +392,7 @@ class cfgWeapons {
 	NEW_95TH_P1_HELMET(Stitch)};
 	NEW_95TH_P1_HELMET(Taylor)};
 	NEW_95TH_P1_HELMET(Hazard)};
+	NEW_95TH_P1_HELMET(Foley)};
 
 	NEW_95TH_P1_PILOT_HELMET(Trooper)};
 	NEW_95TH_P1_PILOT_HELMET(Jinter)};
