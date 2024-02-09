@@ -27,12 +27,12 @@
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Lower.paa\
 	};
 
-#define NEW_95TH_AIRBORNE_HELMET(name) class 95th_Airborne_Helmet_##name## : JLTS_CloneHelmetAB {\
+#define NEW_95TH_AIRBORNE_HELMET(name) class 95th_Airborne_Helmet_##name## : lsd_gar_airborne_new {\
     scope = 2;\
     scopeArsenal = 2;\
 	author=95th Aux Team;\
 	displayName=[95th] Airborne Helmet;\
-	hiddenSelectionsTextures[]={\95th_P1_Units\Data\Helmets\Airborne\##name##\Helmet.paa};\
+	hiddenSelectionsTextures[]={\95th_P1_Units\Data\Helmets\Airborne\##name##\Helmet.paa, \95th_P1_Units\Data\Helmets\Airborne\##name##\Helmet.paa};\
 	class XtdGearInfo {\
 		model = 95th_Airborne_Helmet;\
 		Type = ##name##;\
