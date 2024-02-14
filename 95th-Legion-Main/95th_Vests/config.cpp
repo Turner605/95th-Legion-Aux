@@ -50,12 +50,13 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Sergeant", "Lieutenant", "Zeus", "Turner", "Outcast"};
+				values[] = {"Sergeant", "Lieutenant", "Zeus", "Turner", "Outcast", "Havoc"};
 				class Sergeant { label = "Sergeant"; description = "Sergeant Vest"; };
 				class Lieutenant { label = "Lieutenant"; description = "Lieutenant Vest"; };
 				class Zeus { label = "Zeus"; description = "Zeus Vest"; };
 				class Turner { label = "Turner"; description = "Turner's Vest"; };
 				class Outcast { label = "Outcast"; description = "Outcast's Vest"; };
+				class Havoc { label = "Havoc"; description = "Havoc's Vest"; };
 			};
 		};
 
@@ -123,6 +124,7 @@ class cfgWeapons {
 	NEW_95TH_VEST_OFFICER_ZEUS_TYPE(Zeus)};
 	NEW_95TH_VEST_OFFICER_ZEUS_TYPE(Turner)};
 	NEW_95TH_VEST_OFFICER_ZEUS_TYPE(Outcast)};
+	NEW_95TH_VEST_OFFICER_ZEUS_TYPE(Havoc)};
 
 	NEW_95TH_VEST_ARC_TYPE(Trooper)};
 	
