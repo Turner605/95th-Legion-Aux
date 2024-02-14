@@ -34,7 +34,7 @@ if(!(isNil "_targetPad")) then {
 		switch (_vehicleClass) do {
 			case "AUX_95th_LAAT_Mrk1": { [_spawnedVehicle, _player] spawn AUX_95th_fnc_handleSkinSelection; };
 			case "AUX_95th_LAAT_Mrk2": { [_spawnedVehicle, _player] spawn AUX_95th_fnc_handleSkinSelection;  };
-			case "AUX_95th_LAAT_Mrk2Lights": { [_spawnedVehicle, _player] spawn AUX_95th_fnc_handleSkinSelection;  };
+			case "AUX_95th_LAAT_Mrk2_Lights": { [_spawnedVehicle, _player] spawn AUX_95th_fnc_handleSkinSelection;  };
 		};
 
 		_spawnedVehicle setDir _direction + 90;
