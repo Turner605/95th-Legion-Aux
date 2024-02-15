@@ -7,6 +7,7 @@ class CfgPatches {
 		};
 		units[]={
 			"AUX_95th_AirUtil_Pad", "AUX_95th_AirUtil_Transport", "AUX_95th_AirUtil_Fighter", "AUX_95th_AirUtil_Service",
+			"AUX_95th_Ground_Factory", "AUX_95th_Droid_Factory_Terminal",
 			"AUX_95th_GroundUtil_Pad", "AUX_95th_GroundUtil_Vehicles", "AUX_95th_GroundUtil_Service", "AUX_95th_GroundUtil_Refit",
 			"AUX_95th_Misc_Motion_Sensor", "AUX_95th_Misc_Radio_Extender", "AUX_95th_Misc_Shield_Generator", "AUX_95th_Misc_Reinsert_Requester",
 			"AUX_95th_Crate_Platoon_Ammo", "AUX_95th_Crate_Platoon_Medical", "AUX_95th_Crate_Platoon_Explosives", "AUX_95th_Crate_Vehicle_Ammo", "AUX_95th_Crate_Vehicle_Fuel",
@@ -21,24 +22,32 @@ class CfgPatches {
 
 class CfgEditorCategories{
 	class AUX_95th_Objects{displayName = "[95th] Objects";};
+	class AUX_95th_Factories{displayName = "[95th] Factories";};
 };
 
 class CfgEditorSubcategories{
 	class AUX_95th_Air_Utilities{displayName="Air Utilities";};
+	class AUX_95th_Crates{displayName="Supply Crates";};
 	class AUX_95th_Ground_Utilities{displayName="Ground Utilities";};
 	class AUX_95th_Misc{displayName="Misc Objects";};
 	class AUX_95th_Venator{displayName="Misc Objects";};
 	class AUX_95th_Misc_Terminals{displayName="Misc Terminals";};
-	class AUX_95th_Crates{displayName="Supply Crates";};
 	class AUX_95th_Shields{displayName="Shields";};
 	class AUX_95th_Ships{displayName="Ships";};
 	class AUX_95th_Fortify{displayName="Fortify";};
+
+	class AUX_95th_Ground_Factories{displayName="Ground Factories";};
+	class AUX_95th_Shared_Factories{displayName="Shared";};
 };
 
 class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 	#include "Definitions.hpp"
+
+	// Droid Factories
+	#include "Droid Factories\Ground Factory.hpp"
+	#include "Droid Factories\Factory Terminal.hpp"
 
 	// Air Util
 	#include "AirUtil\Fighter.hpp"
@@ -98,6 +107,8 @@ class CfgFunctions { class AUX_95th { class Objects {
 	class ShieldGeneratorInit {file = "\AUX_95th_Objects\Init\shieldGeneratorInit.sqf";};
 	class reinsertRequesterInit {file = "\AUX_95th_Objects\Init\reinsertRequesterInit.sqf";};
 	class invertedArsenalInit {file = "\AUX_95th_Objects\Init\invertedArsenalInit.sqf";};
+	class droidFactoryTerminalInit {file = "\AUX_95th_Objects\Init\droidFactoryTerminalInit.sqf";};
+	class droidFactoryInit {file = "\AUX_95th_Objects\Init\droidFactoryInit.sqf";};
 	
 	class handleCrateSpawned {file = "\AUX_95th_Objects\Scripts\handleCrateSpawned.sqf";};
 	class checkPlayerInBriefing {file = "\AUX_95th_Objects\Scripts\checkPlayerInBriefing.sqf";};
@@ -110,6 +121,9 @@ class CfgFunctions { class AUX_95th { class Objects {
 	class handleAirVehicleServiced {file = "\AUX_95th_Objects\Scripts\AirUtil\handleAirVehicleServiced.sqf";};
 	class handlePylonEdit {file = "\AUX_95th_Objects\Scripts\AirUtil\handlePylonEdit.sqf";};
 	class handleSkinSelection {file = "\AUX_95th_Objects\Scripts\AirUtil\handleSkinSelection.sqf";};
+
+	class handleFactoryActivated {file = "\AUX_95th_Objects\Scripts\Droid Factories\handleFactoryActivated.sqf";};
+	class handleFactoryDeactivated {file = "\AUX_95th_Objects\Scripts\Droid Factories\handleFactoryDeactivated.sqf";};
 };};};
 
 class Extended_PostInit_EventHandlers {
@@ -130,6 +144,8 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Crate_Inverted_Arsenal {class AUX_95th_Crate_Inverted_Arsenal_Init {init = "[_this select 0] call AUX_95th_fnc_invertedArsenalInit;";};};
 	class AUX_95th_Misc_Arsenal_Full {class AUX_95th_Misc_Arsenal_Full_Init {init = "[_this select 0, true] call ace_arsenal_fnc_initBox;";};};
 	class AUX_95th_Misc_Arsenal_Restricted {class AUX_95th_Misc_Arsenal_Restricted_Init {init = "[_this select 0, Arsenal_All_Items_95th] call ace_arsenal_fnc_initBox;";};};
+	class AUX_95th_Droid_Factory_Terminal {class AUX_95th_Droid_Factory_Terminal_Init {init = "[_this select 0] call AUX_95th_fnc_droidFactoryTerminalInit;";};};
+	class AUX_95th_Ground_Factory {class AUX_95th_Ground_Factory_Init {init = "[_this select 0] call AUX_95th_fnc_droidFactoryInit;";};};
 };
 
 class Extended_Deleted_EventHandlers {

@@ -28,3 +28,5 @@ class Land_lsb_fob_hBarrier_wall;
 class 3AS_Short_Wall_Bunker;
 class 3AS_HeavyRepeater_Unarmoured;
 class OPTRE_Furniture_Locker;
+class 3as_droid_container;
+class 3AS_CIS_Console_4_Prop;
