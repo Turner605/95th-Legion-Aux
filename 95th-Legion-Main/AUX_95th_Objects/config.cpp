@@ -122,8 +122,7 @@ class CfgFunctions { class AUX_95th { class Objects {
 	class handlePylonEdit {file = "\AUX_95th_Objects\Scripts\AirUtil\handlePylonEdit.sqf";};
 	class handleSkinSelection {file = "\AUX_95th_Objects\Scripts\AirUtil\handleSkinSelection.sqf";};
 
-	class handleFactoryActivated {file = "\AUX_95th_Objects\Scripts\Droid Factories\handleFactoryActivated.sqf";};
-	class handleFactoryDeactivated {file = "\AUX_95th_Objects\Scripts\Droid Factories\handleFactoryDeactivated.sqf";};
+	class handleFactoryTerminalOptions {file = "\AUX_95th_Objects\Scripts\Droid Factories\handleFactoryTerminalOptions.sqf";};
 };};};
 
 class Extended_PostInit_EventHandlers {
