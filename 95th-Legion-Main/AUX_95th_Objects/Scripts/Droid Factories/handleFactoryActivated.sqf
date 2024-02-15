@@ -1,20 +1,14 @@
-params ["_terminal"];
-
-private _factoryTypes = [
-	"AUX_95th_Ground_Factory"
-];
-
-private _nearestFactory = nearestObjects[_terminal, _factoryTypes, 20] select 0; 
-
-if(isNil "_nearestFactory") exitWith {systemChat "No Factory within range.";};
+params ["_terminal", "_nearestFactory", "_factoryTypes"];
 
 [{
-	(_this select 0) params ["_terminal", "_nearestFactory"];
+	(_this select 0) params ["_terminal", "_nearestFactory", "_factoryTypes"];
 	_terminal setVariable ["AUX_95th_Factory_Frame_Handler", (_this select 1), true];
 
 	if (!alive _nearestFactory) exitWith {
 		[_this select 1] call CBA_fnc_removePerFrameHandler;
 		_terminal setVariable ["AUX_95th_Terminal_Active", false, true];
+		createVehicle["Bo_GBU12_LGB", getPosATL _nearestFactory, [], 0, "CAN_COLLIDE"];
+		deleteVehicle _nearestFactory;
 	};
 
 	if((_nearestFactory getVariable "AUX_95th_Unit_Count") > 20) exitWith {};
@@ -52,8 +46,14 @@ if(isNil "_nearestFactory") exitWith {systemChat "No Factory within range.";};
 			systemChat (str _unitCount);
 			_nearestFactory setVariable ["AUX_95th_Unit_Count", (_unitCount-1), true];
 		}];
+
+		_this addEventHandler ["Deleted", {
+			params ["_unit"];
+			private _nearestFactory = (_unit getVariable "AUX_95th_Unit_Factory_Parent");
+			private _unitCount = (_nearestFactory getVariable "AUX_95th_Unit_Count");
+			systemChat (str _unitCount);
+			_nearestFactory setVariable ["AUX_95th_Unit_Count", (_unitCount-1), true];
+		}];
 	} forEach _spawnedUnits;
 
-}, 5, [_terminal, _nearestFactory]] call CBA_fnc_addPerFrameHandler;
-
-// Add a limit to the unit spawn count
+}, 5, [_terminal, _nearestFactory, _factoryTypes]] call CBA_fnc_addPerFrameHandler;

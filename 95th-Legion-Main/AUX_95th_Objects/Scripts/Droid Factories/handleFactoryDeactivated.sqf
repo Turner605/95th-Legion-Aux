@@ -1,8 +1,4 @@
-params ["_terminal"];
-
-private _factoryTypes = [
-	"AUX_95th_Ground_Factory"
-];
+params ["_terminal", "_nearestFactory", "_factoryTypes"];
 
 private _nearestFactory = nearestObjects[_terminal, _factoryTypes, 20] select 0; 
 
