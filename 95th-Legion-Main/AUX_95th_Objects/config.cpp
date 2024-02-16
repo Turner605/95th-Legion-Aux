@@ -7,7 +7,7 @@ class CfgPatches {
 		};
 		units[]={
 			"AUX_95th_AirUtil_Pad", "AUX_95th_AirUtil_Transport", "AUX_95th_AirUtil_Fighter", "AUX_95th_AirUtil_Service",
-			"AUX_95th_Ground_Factory", "AUX_95th_Droid_Factory_Terminal",
+			"AUX_95th_Ground_Factory", "AUX_95th_Droid_Factory_Terminal", "AUX_95th_Factory_Proxy",
 			"AUX_95th_GroundUtil_Pad", "AUX_95th_GroundUtil_Vehicles", "AUX_95th_GroundUtil_Service", "AUX_95th_GroundUtil_Refit",
 			"AUX_95th_Misc_Motion_Sensor", "AUX_95th_Misc_Radio_Extender", "AUX_95th_Misc_Shield_Generator", "AUX_95th_Misc_Reinsert_Requester",
 			"AUX_95th_Crate_Platoon_Ammo", "AUX_95th_Crate_Platoon_Medical", "AUX_95th_Crate_Platoon_Explosives", "AUX_95th_Crate_Vehicle_Ammo", "AUX_95th_Crate_Vehicle_Fuel",
@@ -48,6 +48,7 @@ class CfgVehicles {
 	// Droid Factories
 	#include "Droid Factories\Ground Factory.hpp"
 	#include "Droid Factories\Factory Terminal.hpp"
+	#include "Droid Factories\Factory Proxy.hpp"
 
 	// Air Util
 	#include "AirUtil\Fighter.hpp"

@@ -30,3 +30,4 @@ class 3AS_HeavyRepeater_Unarmoured;
 class OPTRE_Furniture_Locker;
 class 3as_droid_container;
 class 3AS_CIS_Console_4_Prop;
+class Land_HelipadEmpty_F;
