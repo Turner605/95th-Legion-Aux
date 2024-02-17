@@ -8,7 +8,8 @@ if(_terminal getVariable "zen_placement_object") exitWith {};
 _terminal setVariable ["AUX_95th_Terminal_Active", false, true];
 
 private _factoryTypes = [
-	"AUX_95th_Ground_Factory"
+	"AUX_95th_Ground_Factory",
+	"AUX_95th_Flak_Factory"
 ];
 
 //#################################### AddActions ####################################

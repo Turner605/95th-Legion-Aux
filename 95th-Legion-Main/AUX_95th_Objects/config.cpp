@@ -7,7 +7,7 @@ class CfgPatches {
 		};
 		units[]={
 			"AUX_95th_AirUtil_Pad", "AUX_95th_AirUtil_Transport", "AUX_95th_AirUtil_Fighter", "AUX_95th_AirUtil_Service",
-			"AUX_95th_Ground_Factory", "AUX_95th_Droid_Factory_Terminal", "AUX_95th_Factory_Proxy",
+			"AUX_95th_Ground_Factory", "AUX_95th_Droid_Factory_Terminal", "AUX_95th_Factory_Proxy", "AUX_95th_Flak_Factory",
 			"AUX_95th_GroundUtil_Pad", "AUX_95th_GroundUtil_Vehicles", "AUX_95th_GroundUtil_Service", "AUX_95th_GroundUtil_Refit",
 			"AUX_95th_Misc_Motion_Sensor", "AUX_95th_Misc_Radio_Extender", "AUX_95th_Misc_Shield_Generator", "AUX_95th_Misc_Reinsert_Requester",
 			"AUX_95th_Crate_Platoon_Ammo", "AUX_95th_Crate_Platoon_Medical", "AUX_95th_Crate_Platoon_Explosives", "AUX_95th_Crate_Vehicle_Ammo", "AUX_95th_Crate_Vehicle_Fuel",
@@ -49,6 +49,7 @@ class CfgVehicles {
 	#include "Droid Factories\Ground Factory.hpp"
 	#include "Droid Factories\Factory Terminal.hpp"
 	#include "Droid Factories\Factory Proxy.hpp"
+	#include "Droid Factories\Flak Factory.hpp"
 
 	// Air Util
 	#include "AirUtil\Fighter.hpp"
@@ -110,6 +111,7 @@ class CfgFunctions { class AUX_95th { class Objects {
 	class invertedArsenalInit {file = "\AUX_95th_Objects\Init\invertedArsenalInit.sqf";};
 	class droidFactoryTerminalInit {file = "\AUX_95th_Objects\Init\droidFactoryTerminalInit.sqf";};
 	class droidFactoryInit {file = "\AUX_95th_Objects\Init\droidFactoryInit.sqf";};
+	class droidFlakFactoryInit {file = "\AUX_95th_Objects\Init\droidFlakFactoryInit.sqf";};
 	
 	class handleCrateSpawned {file = "\AUX_95th_Objects\Scripts\handleCrateSpawned.sqf";};
 	class checkPlayerInBriefing {file = "\AUX_95th_Objects\Scripts\checkPlayerInBriefing.sqf";};
@@ -146,6 +148,7 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Misc_Arsenal_Restricted {class AUX_95th_Misc_Arsenal_Restricted_Init {init = "[_this select 0, Arsenal_All_Items_95th] call ace_arsenal_fnc_initBox;";};};
 	class AUX_95th_Droid_Factory_Terminal {class AUX_95th_Droid_Factory_Terminal_Init {init = "[_this select 0] call AUX_95th_fnc_droidFactoryTerminalInit;";};};
 	class AUX_95th_Ground_Factory {class AUX_95th_Ground_Factory_Init {init = "[_this select 0] call AUX_95th_fnc_droidFactoryInit;";};};
+	class AUX_95th_Flak_Factory {class AUX_95th_Flak_Factory_Init {init = "[_this select 0] call AUX_95th_fnc_droidFlakFactoryInit;";};};
 };
 
 class Extended_Deleted_EventHandlers {

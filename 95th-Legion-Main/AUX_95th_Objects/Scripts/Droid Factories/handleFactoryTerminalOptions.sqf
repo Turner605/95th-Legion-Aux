@@ -3,7 +3,8 @@ params ["_terminal"];
 private _isActive = false;
 
 private _factoryTypes = [
-	"AUX_95th_Ground_Factory"
+	"AUX_95th_Ground_Factory",
+	"AUX_95th_Flak_Factory"
 ];
 
 private _nearestFactory = nearestObjects[_terminal, _factoryTypes, 20] select 0; 
