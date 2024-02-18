@@ -301,8 +301,9 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper"};
+				values[] = {"Trooper", "Dilanza"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
+				class Dilanza { label = "Dilanza"; description = "Dilanza's Helmet"; };
 			};
 		};
 
@@ -409,6 +410,7 @@ class cfgWeapons {
 	NEW_95TH_ARC_HELMET(Trooper)};
 
 	NEW_95TH_SPECOPS_HELMET(Trooper)};
+	NEW_95TH_SPECOPS_HELMET(Dilanza)};
 
 	NEW_95TH_ENGINEER_HELMET(Trooper)};
 	NEW_95TH_ENGINEER_HELMET(Kong)};
