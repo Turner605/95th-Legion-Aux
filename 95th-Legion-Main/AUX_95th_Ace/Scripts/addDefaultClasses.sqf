@@ -141,7 +141,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent,
 		"95th_Basic_Vest_Jet", _dc15s_Ammo,
 		"AUX_95th_JT12_Jetpack_Trooper", _baseBackpackContent,
-		"95th_Helmet_Trooper"
+		"95th_Airborne_Helmet_Trooper"
 	],
 	[
 		"[95th] 12 - Grenadier (DC15A UGL)",

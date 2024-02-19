@@ -202,14 +202,4 @@ class CfgVehicles {
 		hiddenSelections[]={"camo1"};
 		hiddenSelectionsTextures[]={"\95th_Backpacks\Data\Backpacks\Backpack_Flame.paa"}; 
 	};
-
-	//TO REMOVE LATER
-	class 95th_Backpack_Trooper: AUX_95th_Bag_Backpack_Invisible_Trooper{displayName="DEPRICATED";};
-	class 95th_Backpack_Heavy: AUX_95th_Bag_Backpack_Invisible_Trooper{displayName="DEPRICATED";};
-	class 95th_Backpack_Medic: AUX_95th_Bag_Backpack_Invisible_Trooper{displayName="DEPRICATED";};
-	class 95th_Backpack_EOD: AUX_95th_Bag_Backpack_Invisible_Trooper{displayName="DEPRICATED";};
-	class 95th_Backpack_RTO: AUX_95th_Bag_Backpack_Invisible_Trooper{displayName="DEPRICATED";};
-	class 95th_Backpack_Mini_RTO: AUX_95th_Bag_Backpack_Invisible_Trooper{displayName="DEPRICATED";};
-	class 95th_JumpPack: AUX_95th_Bag_Backpack_Invisible_Trooper{displayName="DEPRICATED";};
-	class 95th_JumpPack_MC: AUX_95th_Bag_Backpack_Invisible_Trooper{displayName="DEPRICATED";};
 };

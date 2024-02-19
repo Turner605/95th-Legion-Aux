@@ -116,7 +116,7 @@ private _arsenalHelmets = [
 
 //-----------------------------# Uniforms #-----------------------------------
 private _arsenalUniforms = [
-	"95t1_P1_Uniform_Veteran","95th_P1_Uniform_Trooper","95th_P1_Uniform_Shiny","95th_P1_Uniform_Sergeant","95th_P1_Uniform_Senior","95th_P1_Uniform_Medic",
+	"95th_P1_Uniform_Veteran","95th_P1_Uniform_Trooper","95th_P1_Uniform_Shiny","95th_P1_Uniform_Sergeant","95th_P1_Uniform_Senior","95th_P1_Uniform_Medic",
 	"95th_P1_Uniform_Lieutenant","95th_P1_Uniform_Captain","95th_P1_Uniform_Volt","95th_ColdAssault_Uniform_Trooper","95th_MC_Uniform_Zeus",
 	"95th_MC_Uniform_Turner","95th_Commando_Uniform_Trooper","95th_P1_Uniform_Jinter","95th_P1_Uniform_Bretek"
 ];
@@ -126,7 +126,8 @@ private _arsenalVests = [
 	"95th_Katarn_Vest_Demo","95th_Katarn_Vest_Tech","95th_Officer_Vest_Zeus","95th_Officer_Vest_Lieutenant","95th_Officer_Vest_Sergeant",
 	"95th_Basic_Vest_Rifleman","95th_Basic_Vest_Crewman","95th_Basic_Vest_Engineer","95th_Basic_Vest_Tech","95th_Basic_Vest_Support","95th_Basic_Vest_Stealth",
 	"95th_Basic_Vest_Flame","95th_Basic_Vest_Riot","95th_Basic_Vest_Marksman","95th_Basic_Vest_Heavy","95th_Basic_Vest_AT",
-	"95th_Basic_Vest_Medic","95th_Basic_Vest_Jet","95th_Basic_Vest_Grenadier","95th_Basic_Vest_Pilot","95th_ARC_Vest_Trooper"
+	"95th_Basic_Vest_Medic","95th_Basic_Vest_Jet","95th_Basic_Vest_Grenadier","95th_Basic_Vest_Pilot","95th_ARC_Vest_Trooper",
+	"95th_Officer_Vest_Havoc", "95th_Officer_Vest_Outcast", "95th_Officer_Vest_Turner"
 ];
 
 //-----------------------------# Backpacks #-----------------------------------
@@ -139,10 +140,10 @@ private _arsenalBackpacks = [
 	"AUX_95th_RTO_Backpack_Visible_RTO", "AUX_95th_RTO_Backpack_Invisible_RTO", 
 	"AUX_95th_RTO_Backpack_Visible_Mini_RTO", "AUX_95th_RTO_Backpack_Visible_Mini_Turner",
 	"AUX_95th_JT12_Jetpack_Trooper",
-	"AUX_95th_MC_Jetpack_Trooper",
+	"AUX_95th_MC_Jetpack_Trooper", "AUX_95th_MC_Jetpack_Turner",
 	"95th_Katarn_Backpack","AUX_95th_BX42_Backpack",
 	"3AS_Republic_HR_Bag","3AS_Republic_HR_Shield_Bag","JLTS_UST_turret_GAR_backpack","JLTS_portable_shield_gar_backpack", "ACE_TacticalLadder_Pack",
-	"AUX_95th_RTO_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Invisible_Stitch", "AUX_95th_RTO_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Invisible_Stitch"
+	"AUX_95th_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Invisible_Stitch"
 ];
 
 //-----------------------------# Gear #-----------------------------------
@@ -183,7 +184,8 @@ private _arsenalMedical = [
 	"kat_vacuum","kat_EACA","ACE_epinephrine","kat_etomidate","kat_IO_FAST","kat_fentanyl","kat_flumazenil","kat_guedel","kat_ketamine",
 	"kat_larynx","kat_lidocaine","kat_lorazepam","ACE_morphine","kat_sealant","kat_PervitinItem","kat_ncdKit","kat_gasmaskFilter","kat_CaffeineItem",
     "ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500","kat_Bubble_Wrap_Item","kat_BVM","kat_pocketBVM","kat_oxygenTank_150_Item","kat_oxygenTank_300_Item",
-    "ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500"
+    "ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500", "kat_AFAK", "ACE_bodyBag_blue", "ACE_bodyBag_white", "kat_IFAK", "kat_MFAK", "kat_PenthroxItem",
+	"ACE_suture"
 ];
 
 //-----------------------------# Explosives #-----------------------------------
