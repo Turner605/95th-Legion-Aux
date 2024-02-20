@@ -167,7 +167,7 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper","Shiny","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery","Som","Solvest","Ratler","MadHatter", "Third", "Stitch", "Taylor", "Hazard", "Foley"};
+				values[] = {"Trooper","Shiny","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery","Som","Solvest","Ratler","MadHatter", "Third", "Stitch", "Taylor", "Hazard", "Foley", "Chimera"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 				class Shiny { label = "Shiny"; description = "Shiny Helmet"; };
 				class Medic { label = "Medic"; description = "Medic Helmet"; };
@@ -198,6 +198,7 @@ class XtdGearModels {
 				class Taylor { label = "Taylor"; description = "Taylor's Helmet"; };
 				class Hazard { label = "Hazard"; description = "Hazard's Helmet"; };
 				class Foley { label = "Foley"; description = "Foley's Helmet"; };
+				class Chimera { label = "Chimera"; description = "Chimera's Helmet"; };
 			};
 		};
 
@@ -394,6 +395,7 @@ class cfgWeapons {
 	NEW_95TH_P1_HELMET(Taylor)};
 	NEW_95TH_P1_HELMET(Hazard)};
 	NEW_95TH_P1_HELMET(Foley)};
+	NEW_95TH_P1_HELMET(Chimera)};
 
 	NEW_95TH_P1_PILOT_HELMET(Trooper)};
 	NEW_95TH_P1_PILOT_HELMET(Jinter)};
