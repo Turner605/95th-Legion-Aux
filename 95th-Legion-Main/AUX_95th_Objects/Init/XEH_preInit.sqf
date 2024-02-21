@@ -127,7 +127,14 @@ private _arsenalVests = [
 	"95th_Basic_Vest_Rifleman","95th_Basic_Vest_Crewman","95th_Basic_Vest_Engineer","95th_Basic_Vest_Tech","95th_Basic_Vest_Support","95th_Basic_Vest_Stealth",
 	"95th_Basic_Vest_Flame","95th_Basic_Vest_Riot","95th_Basic_Vest_Marksman","95th_Basic_Vest_Heavy","95th_Basic_Vest_AT",
 	"95th_Basic_Vest_Medic","95th_Basic_Vest_Jet","95th_Basic_Vest_Grenadier","95th_Basic_Vest_Pilot","95th_ARC_Vest_Trooper",
-	"95th_Officer_Vest_Havoc", "95th_Officer_Vest_Outcast", "95th_Officer_Vest_Turner"
+	"95th_Officer_Vest_Havoc", "95th_Officer_Vest_Outcast", "95th_Officer_Vest_Turner",
+
+
+
+	"AUX_95th_Vest_Sergeant_Trooper", "AUX_95th_Vest_Lieutenant_Trooper", "AUX_95th_Vest_CIO_Trooper", "AUX_95th_Kama_Trooper",
+	"AUX_95th_Vest_Sergeant_Havoc", "AUX_95th_Vest_Lieutenant_Havoc", "AUX_95th_Vest_CIO_Havoc", "AUX_95th_Kama_Havoc",
+	"AUX_95th_Vest_Sergeant_Outcast", "AUX_95th_Vest_Lieutenant_Outcast", "AUX_95th_Vest_CIO_Outcast", "AUX_95th_Kama_Outcast",
+	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Kama_Turner"
 ];
 
 //-----------------------------# Backpacks #-----------------------------------
