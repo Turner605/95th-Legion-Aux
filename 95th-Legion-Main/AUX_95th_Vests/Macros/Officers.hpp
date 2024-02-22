@@ -2,7 +2,7 @@
 	author=95th Aux Team;\
 	displayName=[95th] Sergeant Vest;\
 	hiddenSelectionsTextures[]={\
-		\AUX_95th_Vests\Data\Officers\##name##\Vest_Bottom_Sergeant.paa,\
+		\AUX_95th_Vests\Data\Officers\##name##\Vest_Officer.paa,\
 		\AUX_95th_Vests\Data\Officers\##name##\Vest_Top_Sergeant.paa\
 	};\
 	class ItemInfo: VestItem {\
