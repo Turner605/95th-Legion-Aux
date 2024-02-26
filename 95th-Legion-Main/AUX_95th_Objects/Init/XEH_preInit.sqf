@@ -111,7 +111,7 @@ private _arsenalHelmets = [
 	"95th_Engineer_Helmet_Kong","95th_Engineer_Helmet_Trooper","95th_ColdAssault_Helmet_Trooper","95th_ARF_Helmet_Trooper","95th_ARC_Helmet_Trooper",
 	"95th_Airborne_Helmet_Trooper","95th_Engineer_Helmet_Som","95th_Commando_Helmet_Trooper","95th_ARF_Helmet_Osprey","95th_ARF_Helmet_Sythe",
 	"95th_Helmet_Smaug","95th_Helmet_Commie","95th_Helmet_Ratler","95th_ARF_Helmet_Cheezy","95th_Helmet_Som","95th_Helmet_Hypo", "95th_Helmet_MadHatter",
-	"95th_P1_Pilot_Helmet_Outcast", "95th_Helmet_Third", "95th_Helmet_Stitch", "95th_ARF_Helmet_Mobius"
+	"95th_P1_Pilot_Helmet_Outcast", "95th_Helmet_Third", "95th_Helmet_Stitch", "95th_ARF_Helmet_Mobius", "95th_Helmet_Chimera"
 ];
 
 //-----------------------------# Uniforms #-----------------------------------
@@ -131,6 +131,7 @@ private _arsenalVests = [
 
 	"AUX_95th_Vest_Sergeant_Trooper", "AUX_95th_Vest_Lieutenant_Trooper", "AUX_95th_Vest_CIO_Trooper", "AUX_95th_Kama_Trooper",
 	"AUX_95th_Vest_Sergeant_Hypo", "AUX_95th_Vest_Lieutenant_Hypo", "AUX_95th_Vest_CIO_Hypo", "AUX_95th_Kama_Hypo",
+	"AUX_95th_Vest_Sergeant_Bretek", "AUX_95th_Vest_Lieutenant_Bretek", "AUX_95th_Vest_CIO_Bretek", "AUX_95th_Kama_Bretek",
 	"AUX_95th_Vest_Sergeant_Havoc", "AUX_95th_Vest_Lieutenant_Havoc", "AUX_95th_Vest_CIO_Havoc", "AUX_95th_Kama_Havoc",
 	"AUX_95th_Vest_Sergeant_Outcast", "AUX_95th_Vest_Lieutenant_Outcast", "AUX_95th_Vest_CIO_Outcast", "AUX_95th_Kama_Outcast",
 	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Kama_Turner"

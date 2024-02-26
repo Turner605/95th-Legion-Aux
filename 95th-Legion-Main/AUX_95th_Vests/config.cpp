@@ -31,10 +31,11 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper", "Turner", "Hypo"};
+				values[] = {"Trooper", "Turner", "Hypo", "Bretek"};
 				class Trooper { label = "Trooper"; description = "Default Sergeant Vest"; };
 				class Turner { label = "Turner"; description = "Turner's Vest"; };
 				class Hypo { label = "Hypo"; description = "Hypo's Vest"; };
+				class Bretek { label = "Bretek"; description = "Bretek's Vest"; };
 			};
 		};
 
