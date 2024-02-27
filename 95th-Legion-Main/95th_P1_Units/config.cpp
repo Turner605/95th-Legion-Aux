@@ -30,6 +30,7 @@ class CfgPatches {
 			"95th_Rifleman_Unit_Lieutenant",
 			"95th_Rifleman_Unit_Volt",
 			"95th_Rifleman_Unit_Bretek",
+			"95th_Rifleman_Unit_Commie",
 
 			"95th_MC_Unit_Zeus",
 			"95th_MC_Unit_Turner",
@@ -54,19 +55,19 @@ class CfgPatches {
 			"95th_SpecOps_Unit_Trooper"
 		};
     };
-}; 
+};
 
-class cfgFactionClasses { 
-    class 95th_Legion_Faction_Clones { 
-        displayName = "[95th] Clones"; 
-		scope=2; 
+class cfgFactionClasses {
+    class 95th_Legion_Faction_Clones {
+        displayName = "[95th] Clones";
+		scope=2;
 		scopecurator=2;
         priority = 1;
         side = 1;
-    };  
+    };
 
     class 95th_Legion_Faction_Misc  {
-        displayName = "[95th] Misc"; 
+        displayName = "[95th] Misc";
 		scope=2;
 		scopecurator=2;
         priority = 1;
@@ -116,10 +117,11 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Volt","Jinter","Bretek"};
+				values[] = {"Volt","Jinter","Bretek","Commie"};
 				class Volt { label = "Volt"; description = "Volt's Uniform"; };
 				class Jinter { label = "Jinter"; description = "Jinter's Uniform"; };
 				class Bretek { label = "Bretek"; description = "Bretek's Uniform"; };
+				class Commie { label = "Commie"; description = "Commie's Uniform"; };
 			};
 		};
 
@@ -356,6 +358,7 @@ class cfgWeapons {
 	NEW_95TH_CUSTOM_P1_UNIFORM(Volt,Volt)};
 	NEW_95TH_CUSTOM_P1_UNIFORM(Jinter,Jinter)};
 	NEW_95TH_CUSTOM_P1_UNIFORM(Bretek,Bretek)};
+	NEW_95TH_CUSTOM_P1_UNIFORM(Commie,Commie)};
 
 	NEW_95TH_MC_UNIFORM(Zeus,Zeus)};
 	NEW_95TH_MC_UNIFORM(Turner,Turner)};
@@ -418,13 +421,13 @@ class cfgWeapons {
 	NEW_95TH_ENGINEER_HELMET(Kong)};
 	NEW_95TH_ENGINEER_HELMET(Revan)};
 	NEW_95TH_ENGINEER_HELMET(Som)};
-	
+
 	NEW_95TH_HAZARD_HELMET(Trooper)};
 
 	NEW_95TH_COLDASSAULT_HELMET(Trooper)};
 
 	NEW_95TH_COMMANDO_HELMET(Trooper)};
-};  
+};
 
 class CfgVehicles {
 	class JLTS_Clone_P2_DC15A;
@@ -444,6 +447,7 @@ class CfgVehicles {
 	NEW_95TH_RIFLEMAN_UNIT(Volt,Volt,Sergeant)};
 	NEW_95TH_RIFLEMAN_UNIT(Jinter,Trooper,Sergeant)};
 	NEW_95TH_RIFLEMAN_UNIT(Bretek,Bretek,Sergeant)};
+	NEW_95TH_RIFLEMAN_UNIT(Commie,Commie,Zeus)};
 
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_MC_UNIT(Zeus,Veteran,Zeus)};
