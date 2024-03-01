@@ -109,7 +109,8 @@ private _playerCustomsList = [
 	"Medic", "Senior", "Veteran", "Havoc","Sythe", "Cheezy", "Volt", "Sand", "Smaug", "Manila", 
 	"Osprey", "Chimera", "Hypo", "Neary", "Smokery", "Foley", "Prophet", "Mobius", "Taylor", 
 	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard", 
-	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie"
+	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
+	"Sergeant"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
@@ -125,11 +126,8 @@ private _arsenalHelmets = [];
 {_arsenalHelmets pushBack "AUX_95th_Helmet_SpecOps_"+_x; } forEach _playerCustomsList;
 
 //-----------------------------# Uniforms #-----------------------------------
-private _arsenalUniforms = [
-	"95th_P1_Uniform_Veteran","95th_P1_Uniform_Trooper","95th_P1_Uniform_Shiny","95th_P1_Uniform_Sergeant","95th_P1_Uniform_Senior","95th_P1_Uniform_Medic",
-	"95th_P1_Uniform_Lieutenant","95th_P1_Uniform_Captain","95th_P1_Uniform_Volt","95th_ColdAssault_Uniform_Trooper","95th_MC_Uniform_Zeus",
-	"95th_MC_Uniform_Turner","95th_Commando_Uniform_Trooper","95th_P1_Uniform_Jinter","95th_P1_Uniform_Bretek"
-];
+private _arsenalUniforms = ["95th_ColdAssault_Uniform_Trooper","95th_MC_Uniform_Zeus","95th_Commando_Uniform_Trooper","95th_MC_Uniform_Turner"];
+{_arsenalHelmets pushBack "95th_P1_Uniform_"+_x; } forEach _playerCustomsList;
 
 //-----------------------------# Vests #-----------------------------------
 private _arsenalVests = [
