@@ -17,7 +17,7 @@ class XtdGearModels {
 		class AUX_95th_Helmet {
 			label = "";
 			author = "95th Aux Team";
-			options[] = {"Type", "Squad", "Player"};
+			options[] = {"Type", "Player"};
 
 			class Type {
 				alwaysSelectable = 1;
@@ -32,7 +32,7 @@ class XtdGearModels {
 			class Squad {
 				alwaysSelectable = 1;
 				labels = "Squad";
-				values[] = {"Basic", "One", "Two", "Three", "Four", "Five", "Six", "Unassigned", "Fallen"};
+				values[] = {"Basic", "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Unassigned", "Fallen"};
 				class Basic { label = "Basic"; description = "Default Helmets"; };
 				class Zeus { label = "Zeus"; description = "Zeus Helmets"; };
 				class Zero { label = "1-0"; description = "1-0 Anooba"; };
@@ -49,7 +49,10 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Trooper","Shiny","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery","Som","Solvest","Ratler","MadHatter", "Third", "Stitch", "Taylor", "Hazard", "Foley", "Chimera"};
+				values[] = {"Trooper","Shiny","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt",
+				"Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet",
+				"Smokery","Som","Solvest","Ratler","MadHatter", "Third", "Stitch", "Taylor", "Hazard", "Foley",
+				 "Chimera", "Dilanza", "Osprey", "Sythe", "Cheezy", "Mobius", "Revan", "Kong"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 				class Shiny { label = "Shiny"; description = "Shiny Helmet"; };
 				class Medic { label = "Medic"; description = "Medic Helmet"; };
@@ -81,6 +84,13 @@ class XtdGearModels {
 				class Hazard { label = "Hazard"; description = "Hazard's Helmet"; };
 				class Foley { label = "Foley"; description = "Foley's Helmet"; };
 				class Chimera { label = "Chimera"; description = "Chimera's Helmet"; };
+				class Dilanza { label = "Dilanza"; description = "Dilanza's Helmet"; };
+				class Osprey { label = "Osprey"; description = "Osprey's Helmet"; };
+				class Sythe { label = "Sythe"; description = "Sythe's Helmet"; };
+				class Cheezy { label = "Cheezy"; description = "Cheezy's Helmet"; };
+				class Mobius { label = "Mobius"; description = "Mobius' Helmet"; };
+				class Revan { label = "Revan"; description = "Revan's Helmet"; };
+				class Kong { label = "Kong"; description = "Kong's Helmet"; };
 			};
 		};
 	};

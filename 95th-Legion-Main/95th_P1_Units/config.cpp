@@ -166,48 +166,6 @@ class XtdGearModels {
 			};
 		};
 
-		class 95th_P1_Helmet {
-			label = "";
-			author = "95th Aux Team";
-			options[] = {"Type"};
-			class Type {
-				alwaysSelectable = 1;
-				labels = "Type";
-				values[] = {"Trooper","Shiny","Medic","Senior","Veteran","Outcast","Turner","Splash","Volt","Biedronka","Manila","Sand","Havoc","Bretek","Neary","Smaug","Commie","Hypo","Ghost","Prophet","Smokery","Som","Solvest","Ratler","MadHatter", "Third", "Stitch", "Taylor", "Hazard", "Foley", "Chimera"};
-				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
-				class Shiny { label = "Shiny"; description = "Shiny Helmet"; };
-				class Medic { label = "Medic"; description = "Medic Helmet"; };
-				class Senior { label = "Senior"; description = "Senior Helmet"; };
-				class Veteran { label = "Veteran"; description = "Veteran Helmet"; };
-				class Outcast { label = "Outcast"; description = "Outcast's Helmet"; };
-				class Turner { label = "Turner"; description = "Turner's Helmet"; };
-				class Splash { label = "Splash"; description = "Splash's Helmet"; };
-				class Volt { label = "Volt"; description = "Volt's Helmet"; };
-				class Biedronka { label = "Biedronka"; description = "Biedronka Helmet"; };
-				class Manila { label = "Manila"; description = "Manila's Helmet"; };
-				class Sand { label = "Sand"; description = "Sand's Helmet"; };
-				class Havoc { label = "Havoc"; description = "Havoc's Helmet"; };
-				class Bretek { label = "Bretek"; description = "Bretek's Helmet"; };
-				class Neary { label = "Neary"; description = "Neary's Helmet"; };
-				class Smaug { label = "Smaug"; description = "Smaug's Helmet"; };
-				class Commie { label = "Commie"; description = "Commie's Helmet"; };
-				class Hypo { label = "Hypo"; description = "Hypo's Helmet"; };
-				class Ghost { label = "Ghost"; description = "Ghost's Helmet"; };
-				class Prophet { label = "Prophet"; description = "Prophet's Helmet"; };
-				class Smokery { label = "Smokery"; description = "Smokery's Helmet"; };
-				class Som { label = "Som"; description = "Som's Helmet"; };
-				class Solvest { label = "Solvest"; description = "Solvest's Helmet"; };
-				class Ratler { label = "Ratler"; description = "Ratler's Helmet"; };
-				class MadHatter { label = "Mad Hatter"; description = "Mad Hatter's Helmet"; };
-				class Third { label = "Third"; description = "Third's Helmet"; };
-				class Stitch { label = "Stitch"; description = "Stitch's Helmet"; };
-				class Taylor { label = "Taylor"; description = "Taylor's Helmet"; };
-				class Hazard { label = "Hazard"; description = "Hazard's Helmet"; };
-				class Foley { label = "Foley"; description = "Foley's Helmet"; };
-				class Chimera { label = "Chimera"; description = "Chimera's Helmet"; };
-			};
-		};
-
 		class 95th_P1_Pilot_Helmet {
 			label = "";
 			author = "95th Aux Team";
@@ -219,34 +177,6 @@ class XtdGearModels {
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
 				class Jinter { label = "Jinter"; description = "Jinter's Helmet"; };
 				class Outcast { label = "Outcast"; description = "Outcast's Helmet"; };
-			};
-		};
-
-		class 95th_Airborne_Helmet {
-			label = "";
-			author = "95th Aux Team";
-			options[] = {"Type"};
-			class Type {
-				alwaysSelectable = 1;
-				labels = "Type";
-				values[] = {"Trooper"};
-				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
-			};
-		};
-
-		class 95th_ARF_Helmet {
-			label = "";
-			author = "95th Aux Team";
-			options[] = {"Type"};
-			class Type {
-				alwaysSelectable = 1;
-				labels = "Type";
-				values[] = {"Trooper", "Osprey", "Sythe", "Cheezy", "Mobius"};
-				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
-				class Osprey { label = "Osprey"; description = "Osprey's Helmet"; };
-				class Sythe { label = "Sythe"; description = "Sythe's Helmet"; };
-				class Cheezy { label = "Cheezy"; description = "Cheezy's Helmet"; };
-				class Mobius { label = "Mobius"; description = "Mobius' Helmet"; };
 			};
 		};
 
@@ -274,21 +204,6 @@ class XtdGearModels {
 			};
 		};
 
-		class 95th_Engineer_Helmet {
-			label = "";
-			author = "95th Aux Team";
-			options[] = {"Type"};
-			class Type {
-				alwaysSelectable = 1;
-				labels = "Type";
-				values[] = {"Trooper","Revan","Kong","Som"};
-				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
-				class Revan { label = "Revan"; description = "Revan's Helmet"; };
-				class Kong { label = "Kong"; description = "Kong's Helmet"; };
-				class Som { label = "Som"; description = "Som's Helmet"; };
-			};
-		};
-
 		class 95th_Hazard_Helmet {
 			label = "";
 			author = "95th Aux Team";
@@ -310,7 +225,6 @@ class XtdGearModels {
 				labels = "Type";
 				values[] = {"Trooper", "Dilanza"};
 				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
-				class Dilanza { label = "Dilanza"; description = "Dilanza's Helmet"; };
 			};
 		};
 
