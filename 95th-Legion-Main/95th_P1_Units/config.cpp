@@ -202,18 +202,6 @@ class XtdGearModels {
 			};
 		};
 
-		class 95th_SpecOps_Helmet {
-			label = "";
-			author = "95th Aux Team";
-			options[] = {"Type"};
-			class Type {
-				alwaysSelectable = 1;
-				labels = "Type";
-				values[] = {"Trooper", "Dilanza"};
-				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
-			};
-		};
-
 		class 95th_Commando_Helmet {
 			label = "";
 			author = "95th Aux Team";
@@ -277,13 +265,6 @@ class cfgWeapons {
 
 //############################################################### Helmets ###############################################################
 	NEW_95TH_ARC_HELMET(Trooper)};
-
-	NEW_95TH_SPECOPS_HELMET(Trooper)};
-	NEW_95TH_SPECOPS_HELMET(Dilanza)};
-
-	NEW_95TH_HAZARD_HELMET(Trooper)};
-
-	NEW_95TH_COLDASSAULT_HELMET(Trooper)};
 
 	NEW_95TH_COMMANDO_HELMET(Trooper)};
 };

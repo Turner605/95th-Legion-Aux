@@ -26,18 +26,3 @@
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Upper.paa,\
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Lower.paa\
 	};
-
-#define NEW_95TH_HAZARD_HELMET(name) class 95th_Hazard_Helmet_##name## : SEA_Helmet_Hazard_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	author=95th Aux Team;\
-	displayName=[95th] Hazard Helmet;\
-	hiddenSelectionsTextures[]={\
-		\95th_P1_Units\Data\Helmets\Hazard\##name##\Helmet.paa,\
-		\JLTS_AE\Data\BaseTextures\Hazard\Necc_CO.paa,\
-		\95th_P1_Units\Data\Helmets\Hazard\##name##\Helmet.paa\
-	};\
-	class XtdGearInfo {\
-		model = 95th_Hazard_Helmet;\
-		Type = ##name##;\
-	};

@@ -43,19 +43,3 @@
 		model = 95th_ColdAssault_Uniform;\
 		Type = ##name##;\
 	};
-
-
-#define NEW_95TH_COLDASSAULT_HELMET(name) class 95th_ColdAssault_Helmet_##name## : 3AS_H_ColdAssault_Helmet {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	author=95th Aux Team;\
-	displayName=[95th] ColdAssault Helmet;\
-	hiddenSelectionsTextures[]={\
-		\95th_P1_Units\Data\Helmets\ColdAssault\##name##\Helmet.paa,\
-		\95th_P1_Units\Data\Helmets\ColdAssault\##name##\Helmet.paa,\
-		\95th_P1_Units\Data\Helmets\ColdAssault\##name##\Helmet.paa\
-	};\
-	class XtdGearInfo {\
-		model = 95th_ColdAssault_Helmet;\
-		Type = ##name##;\
-	};

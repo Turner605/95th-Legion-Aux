@@ -3,6 +3,9 @@
 #include "Macros\ARF.hpp"
 #include "Macros\Engineer.hpp"
 #include "Macros\P1 Pilot.hpp"
+#include "Macros\SpecOps.hpp"
+#include "Macros\Hazard.hpp"
+#include "Macros\Cold Assault.hpp"
 
 class CfgPatches {
 	class AUX_95th_Helmets {
@@ -162,6 +165,18 @@ class XtdGearModels {
 				class Jinter { label = "Jinter"; description = "Jinter's Helmet"; };
 			};
 		};
+
+		class AUX_95th_Helmet_Squad_Unassigned {
+			label = "Unassigned";
+			#include "XtdGearModels\Shared.hpp"
+
+			class Player {
+				alwaysSelectable = 0;
+				labels = "Player";
+				values[] = {"Biedronka"};
+				class Biedronka { label = "Biedronka"; description = "Biedronka Helmet"; };
+			};
+		};
 	};
 };
 
@@ -173,4 +188,7 @@ class CfgWeapons {
 	#include "Config\ARF.hpp"
 	#include "Config\Engineer.hpp"
 	#include "Config\P1 Pilot.hpp"
+	#include "Config\SpecOps.hpp"
+	#include "Config\Hazard.hpp"
+	#include "Config\Cold Assault.hpp"
 }; 
