@@ -60,18 +60,3 @@
 		model = 95th_P1_Custom_Uniform;\
 		Type = ##name##;\
 	};
-
-#define NEW_95TH_P1_HELMET(name) class 95th_Helmet_##name## : SEA_Helmet_P1_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	author=95th Aux Team;\
-	displayName=[95th] P1 Helmet;\
-	hiddenSelections[]={Camo1,Visor};\
-	hiddenSelectionsTextures[]={\
-		\95th_P1_Units\Data\Helmets\Rifleman\Helmet_##name##.paa,\
-		\95th_P1_Units\Data\Helmets\Rifleman\Helmet_##name##.paa\
-	};\
-		class XtdGearInfo {\
-		model = 95th_P1_Helmet;\
-		Type = ##name##;\
-	};

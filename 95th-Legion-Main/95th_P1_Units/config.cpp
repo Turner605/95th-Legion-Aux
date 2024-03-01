@@ -226,18 +226,7 @@ class cfgWeapons {
 	class 3AS_U_Rep_ColdAssault_Armor;
 	class 3AS_U_Rep_Katarn_Armor;
 
-	class SEA_Helmet_P1_Base;
-	class LSEA_Helmet_Pilot_P1_Base;
-	class lsd_gar_airborne_new;
-	class SEA_Helmet_ARF_base;
-	class SEA_Helmet_ARC;
-	class SEA_Helmet_SpecOps_SR_Base;
-	class SEA_Helmet_Engineer_Base;
-	class SEA_Helmet_Hazard_Base;
-	class 3AS_H_ColdAssault_Helmet;
-	class 3AS_H_Katarn_Helmet;
-
-//############################################################### Uniforms ###############################################################
+	//############################################################### Uniforms ###############################################################
 	NEW_95TH_P1_UNIFORM(Trooper,Trooper)};
 	NEW_95TH_P1_UNIFORM(Shiny,Shiny)};
 	NEW_95TH_P1_UNIFORM(Medic,Medic)};
@@ -262,9 +251,6 @@ class cfgWeapons {
 	NEW_95TH_COLDASSAULT_UNIFORM(Trooper,Trooper)};
 
 	NEW_95TH_COMMANDO_UNIFORM(Trooper,Trooper)};
-
-//############################################################### Helmets ###############################################################
-	NEW_95TH_ARC_HELMET(Trooper)};
 };
 
 class CfgVehicles {
