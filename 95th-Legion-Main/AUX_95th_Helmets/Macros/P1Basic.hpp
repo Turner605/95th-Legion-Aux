@@ -8,10 +8,10 @@
 		\AUX_95th_Helmets\Data\P1Basic\Helmet_##player##.paa,\
 		\AUX_95th_Helmets\Data\P1Basic\Helmet_##player##.paa\
 	};\
-		class XtdGearInfo {\
+	class XtdGearInfo {\
 		model = AUX_95th_Helmet;\
 		Type = P1Basic;\
-		Player = ##player##;\
 		Squad = ##squad##;\
+		Player = ##player##;\
 	};\
 };

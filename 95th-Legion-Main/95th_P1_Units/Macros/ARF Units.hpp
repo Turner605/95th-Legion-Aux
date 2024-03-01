@@ -26,19 +26,3 @@
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Upper.paa,\
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Lower.paa\
 	};
-
-#define NEW_95TH_ARF_HELMET(name) class 95th_ARF_Helmet_##name## : SEA_Helmet_ARF_base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	author=95th Aux Team;\
-	displayName=[95th] ARF Helmet;\
-	hiddenSelections[]={Camo1,Camo2,Visor};\
-	hiddenSelectionsTextures[]={\
-		\95th_P1_Units\Data\Helmets\ARF\##name##\Helmet.paa,\
-		\95th_P1_Units\Data\Helmets\ARF\##name##\Plates.paa,\
-		\95th_P1_Units\Data\Helmets\ARF\##name##\Visor.paa\
-	};\
-	class XtdGearInfo {\
-		model = 95th_ARF_Helmet;\
-		Type = ##name##;\
-	};

@@ -376,49 +376,9 @@ class cfgWeapons {
 	NEW_95TH_COMMANDO_UNIFORM(Trooper,Trooper)};
 
 //############################################################### Helmets ###############################################################
-	NEW_95TH_P1_HELMET(Trooper)};
-	NEW_95TH_P1_HELMET(Shiny)};
-	NEW_95TH_P1_HELMET(Medic)};
-	NEW_95TH_P1_HELMET(Senior)};
-	NEW_95TH_P1_HELMET(Veteran)};
-	NEW_95TH_P1_HELMET(Turner)};
-	NEW_95TH_P1_HELMET(Outcast)};
-	NEW_95TH_P1_HELMET(Splash)};
-	NEW_95TH_P1_HELMET(Volt)};
-	NEW_95TH_P1_HELMET(Biedronka)};
-	NEW_95TH_P1_HELMET(Manila)};
-	NEW_95TH_P1_HELMET(Sand)};
-	NEW_95TH_P1_HELMET(Havoc)};
-	NEW_95TH_P1_HELMET(Bretek)};
-	NEW_95TH_P1_HELMET(Neary)};
-	NEW_95TH_P1_HELMET(Smaug)};
-	NEW_95TH_P1_HELMET(Commie)};
-	NEW_95TH_P1_HELMET(Hypo)};
-	NEW_95TH_P1_HELMET(Ghost)};
-	NEW_95TH_P1_HELMET(Prophet)};
-	NEW_95TH_P1_HELMET(Smokery)};
-	NEW_95TH_P1_HELMET(Som)};
-	NEW_95TH_P1_HELMET(Solvest)};
-	NEW_95TH_P1_HELMET(Ratler)};
-	NEW_95TH_P1_HELMET(MadHatter)};
-	NEW_95TH_P1_HELMET(Third)};
-	NEW_95TH_P1_HELMET(Stitch)};
-	NEW_95TH_P1_HELMET(Taylor)};
-	NEW_95TH_P1_HELMET(Hazard)};
-	NEW_95TH_P1_HELMET(Foley)};
-	NEW_95TH_P1_HELMET(Chimera)};
-
 	NEW_95TH_P1_PILOT_HELMET(Trooper)};
 	NEW_95TH_P1_PILOT_HELMET(Jinter)};
 	NEW_95TH_P1_PILOT_HELMET(Outcast)};
-
-	NEW_95TH_AIRBORNE_HELMET(Trooper)};
-
-	NEW_95TH_ARF_HELMET(Trooper)};
-	NEW_95TH_ARF_HELMET(Osprey)};
-	NEW_95TH_ARF_HELMET(Sythe)};
-	NEW_95TH_ARF_HELMET(Cheezy)};
-	NEW_95TH_ARF_HELMET(Mobius)};
 
 	NEW_95TH_ARC_HELMET(Trooper)};
 

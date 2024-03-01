@@ -1,0 +1,1 @@
+NEW_AUX_95TH_AIRBORNE_HELMET(Trooper,Basic)

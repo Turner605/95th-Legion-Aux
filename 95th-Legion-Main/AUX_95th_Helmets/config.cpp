@@ -1,4 +1,6 @@
 #include "Macros\P1Basic.hpp"
+#include "Macros\Airborne.hpp"
+#include "Macros\ARF.hpp"
 
 class CfgPatches {
 	class AUX_95th_Helmets {
@@ -14,19 +16,28 @@ class XtdGearModels {
 		class AUX_95th_Helmet {
 			label = "";
 			author = "95th Aux Team";
-			options[] = {"Squad", "Type", "Player"};
+			options[] = {"Type", "Squad", "Player"};
+
+			class Type {
+				alwaysSelectable = 1;
+				labels = "Type";
+				values[] = {"P1Basic","Airborne","ARF"};
+				class P1Basic { label = "P1 Basic"; description = "Basic P1 Helmet"; };
+				class Airborne { label = "Airborne"; description = "Airborne Helmet"; };
+				class ARF { label = "ARF"; description = "ARF Helmet"; };
+			};
 
 			class Squad {
-				alwaysSelectable = 1;
+				alwaysSelectable = 0;
 				labels = "Squad";
-				values[] = {"Basic", "1", "2", "3", "4", "5", "6", "Unassigned", "Fallen"};
+				values[] = {"Basic", "One", "Two", "Three", "Four", "Five", "Six", "Unassigned", "Fallen"};
 				class Basic { label = "Basic"; description = "Default Helmets"; };
 				class Zeus { label = "Zeus"; description = "Zeus Helmets"; };
 				class Zero { label = "1-0"; description = "1-0 Anooba"; };
 				class One { label = "1-1"; description = "1-1 Ackley"; };
-				class Two { label = "1-2"; description = "1-2 Ackley"; };
-				class Three { label = "1-3"; description = "1-3 Ackley"; };
-				class Four { label = "1-4"; description = "1-4 Ackley"; };
+				class Two { label = "1-2"; description = "1-2 Reek"; };
+				class Three { label = "1-3"; description = "1-3 Krayt"; };
+				class Four { label = "1-4"; description = "1-4 Sarlacc"; };
 				class Five { label = "5-0"; description = "5-0 Zillo"; };
 				class Six { label = "6-0"; description = "6-0 Mynock"; };
 				class Unassigned { label = "Unassigned"; description = "Unassigned"; };
@@ -69,13 +80,6 @@ class XtdGearModels {
 				class Foley { label = "Foley"; description = "Foley's Helmet"; };
 				class Chimera { label = "Chimera"; description = "Chimera's Helmet"; };
 			};
-
-			class Type {
-				alwaysSelectable = 0;
-				labels = "Type";
-				values[] = {"P1Basic"};
-				class P1Basic { label = "Trooper"; description = "Basic P1 Helmet"; };
-			};
 		};
 	};
 };
@@ -84,4 +88,6 @@ class CfgWeapons {
 	#include "Definitions.hpp"
 
 	#include "Config\P1Basic.hpp"
+	#include "Config\Airborne.hpp"
+	#include "Config\ARF.hpp"
 }; 
