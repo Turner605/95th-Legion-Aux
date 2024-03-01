@@ -11,7 +11,6 @@
 	class XtdGearInfo {\
 		model = AUX_95th_Helmet;\
 		Type = P1Basic;\
-		Squad = ##squad##;\
 		Player = ##player##;\
 	};\
 };

@@ -12,7 +12,6 @@
 	class XtdGearInfo {\
 		model = AUX_95th_Helmet;\
 		Type = ARF;\
-		Squad = ##squad##;\
 		Player = ##player##;\
 	};\
 };

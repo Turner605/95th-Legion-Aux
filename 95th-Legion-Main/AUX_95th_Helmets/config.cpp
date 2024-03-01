@@ -29,23 +29,6 @@ class XtdGearModels {
 				class Engineer { label = "Engineer"; description = "Engineer Helmet"; };
 			};
 
-			class Squad {
-				alwaysSelectable = 1;
-				labels = "Squad";
-				values[] = {"Basic", "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Unassigned", "Fallen"};
-				class Basic { label = "Basic"; description = "Default Helmets"; };
-				class Zeus { label = "Zeus"; description = "Zeus Helmets"; };
-				class Zero { label = "1-0"; description = "1-0 Anooba"; };
-				class One { label = "1-1"; description = "1-1 Ackley"; };
-				class Two { label = "1-2"; description = "1-2 Reek"; };
-				class Three { label = "1-3"; description = "1-3 Krayt"; };
-				class Four { label = "1-4"; description = "1-4 Sarlacc"; };
-				class Five { label = "5-0"; description = "5-0 Zillo"; };
-				class Six { label = "6-0"; description = "6-0 Mynock"; };
-				class Unassigned { label = "Unassigned"; description = "Unassigned"; };
-				class Fallen { label = "Fallen"; description = "The Fallen"; };
-			};
-
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
