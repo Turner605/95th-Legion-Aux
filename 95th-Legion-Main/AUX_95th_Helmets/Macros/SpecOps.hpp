@@ -3,7 +3,7 @@
     scopeArsenal = 2;\
 	author=95th Aux Team;\
 	picture=\AUX_95th_Helmets\Data\Insignias\##squad##;\
-	displayName=;\
+	displayName=[95th];\
 	hiddenSelectionsTextures[]={\
 		\AUX_95th_Helmets\Data\SpecOps\Helmet_##player##.paa,\
 		\JLTS_AE\Data\BaseTextures\SpecOps\Antennas\SR_Antenna_co.paa,\

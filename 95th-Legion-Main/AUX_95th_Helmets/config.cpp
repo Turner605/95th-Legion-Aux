@@ -6,6 +6,7 @@
 #include "Macros\SpecOps.hpp"
 #include "Macros\Hazard.hpp"
 #include "Macros\Cold Assault.hpp"
+#include "Macros\Commando.hpp"
 
 class CfgPatches {
 	class AUX_95th_Helmets {
@@ -191,4 +192,5 @@ class CfgWeapons {
 	#include "Config\SpecOps.hpp"
 	#include "Config\Hazard.hpp"
 	#include "Config\Cold Assault.hpp"
+	#include "Config\Commando.hpp"
 }; 

@@ -265,8 +265,6 @@ class cfgWeapons {
 
 //############################################################### Helmets ###############################################################
 	NEW_95TH_ARC_HELMET(Trooper)};
-
-	NEW_95TH_COMMANDO_HELMET(Trooper)};
 };
 
 class CfgVehicles {

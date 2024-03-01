@@ -28,18 +28,3 @@
 		model = 95th_Commando_Uniform;\
 		Type = ##name##;\
 	};
-
-#define NEW_95TH_COMMANDO_HELMET(name) class 95th_Commando_Helmet_##name## : 3AS_H_Katarn_Helmet {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	author=95th Aux Team;\
-	displayName=[95th] Commando Helmet;\
-	hiddenSelections[]={Camo1,Visor};\
-	hiddenSelectionsTextures[]={\
-		\95th_P1_Units\Data\Helmets\Commando\Helmet_##name##.paa,\
-		\95th_P1_Units\Data\Helmets\Commando\Helmet_##name##.paa\
-	};\
-		class XtdGearInfo {\
-		model = 95th_Commando_Helmet;\
-		Type = ##name##;\
-	};

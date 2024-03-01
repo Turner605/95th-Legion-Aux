@@ -2,7 +2,8 @@
     scope = 2;\
     scopeArsenal = 2;\
 	author=95th Aux Team;\
-	displayName=;\
+	picture=\AUX_95th_Helmets\Data\Insignias\##squad##;\
+	displayName=[95th];\
 	hiddenSelectionsTextures[]={\
 		\AUX_95th_Helmets\Data\Hazard\Helmet_##player##.paa,\
 		\JLTS_AE\Data\BaseTextures\Hazard\Necc_CO.paa,\
