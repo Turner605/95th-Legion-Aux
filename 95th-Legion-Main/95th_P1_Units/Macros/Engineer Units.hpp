@@ -26,17 +26,3 @@
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Upper.paa,\
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Lower.paa\
 	};
-
-#define NEW_95TH_ENGINEER_HELMET(name) class 95th_Engineer_Helmet_##name## : SEA_Helmet_Engineer_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	author=95th Aux Team;\
-	displayName=[95th] Engineer Helmet;\
-	hiddenSelectionsTextures[]={\
-		\95th_P1_Units\Data\Helmets\Engineer\##name##\Helmet.paa,\
-		\95th_P1_Units\Data\Helmets\Engineer\##name##\Helmet.paa\
-	};\
-	class XtdGearInfo {\
-		model = 95th_Engineer_Helmet;\
-		Type = ##name##;\
-	};
