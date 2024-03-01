@@ -26,18 +26,3 @@
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Upper.paa,\
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Lower.paa\
 	};
-
-#define NEW_95TH_SPECOPS_HELMET(name) class 95th_SpecOps_Helmet_##name## : SEA_Helmet_SpecOps_SR_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	author=95th Aux Team;\
-	displayName=[95th] SpecOps Helmet;\
-	hiddenSelectionsTextures[]={\
-		\95th_P1_Units\Data\Helmets\SpecOps\##name##\Helmet.paa,\
-		\JLTS_AE\Data\BaseTextures\SpecOps\Antennas\SR_Antenna_co.paa,\
-		\95th_P1_Units\Data\Helmets\SpecOps\##name##\Helmet.paa\
-	};\
-	class XtdGearInfo {\
-		model = 95th_SpecOps_Helmet;\
-		Type = ##name##;\
-	};

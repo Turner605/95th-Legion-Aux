@@ -1,16 +1,16 @@
-#define NEW_AUX_95TH_P1_PILOT_HELMET(player) class AUX_95th_Helmet_P1_Pilot_##player## : LSEA_Helmet_Pilot_P1_Base {\
+#define NEW_AUX_95TH_P1_PILOT_HELMET(player,squad) class AUX_95th_Helmet_P1_Pilot_##player## : LSEA_Helmet_Pilot_P1_Base {\
     scope = 2;\
     scopeArsenal = 2;\
 	author=95th Aux Team;\
-	displayName=[95th] Helmet;\
+	displayName=;\
 	hiddenSelections[]= { Camo1, camo2, Visor };\
 	hiddenSelectionsTextures[]={\
-		\AUX_95th_Helmets\Data\P1 Pilot\##name##\Helmet.paa,\
-		\AUX_95th_Helmets\Data\P1 Pilot\##name##\LifeSupport.paa,\
-		\AUX_95th_Helmets\Data\P1 Pilot\##name##\Helmet.paa\
+		\AUX_95th_Helmets\Data\P1 Pilot\##player##\Helmet.paa,\
+		\AUX_95th_Helmets\Data\P1 Pilot\##player##\LifeSupport.paa,\
+		\AUX_95th_Helmets\Data\P1 Pilot\##player##\Helmet.paa\
 	};\
 	class XtdGearInfo {\
-		model = AUX_95th_Helmet;\
+		model = AUX_95th_Helmet_Squad_##squad##;\
 		Type = P1Pilot;\
 		Player = ##player##;\
 	};\
