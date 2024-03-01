@@ -26,19 +26,3 @@
 		\95th_P1_Units\Data\Uniforms\P1\##name##\Uniform_Lower.paa\
 	};
 
-#define NEW_95TH_P1_PILOT_HELMET(name) class 95th_P1_Pilot_Helmet_##name## : LSEA_Helmet_Pilot_P1_Base {\
-    scope = 2;\
-    scopeArsenal = 2;\
-	author=95th Aux Team;\
-	displayName=[95th] Pilot Helmet;\
-	hiddenSelections[]= { Camo1, camo2, Visor };\
-	hiddenSelectionsTextures[]=\
-	{\
-		\95th_P1_Units\Data\Helmets\Pilot\##name##\Helmet.paa,\
-		\95th_P1_Units\Data\Helmets\Pilot\##name##\LifeSupport.paa,\
-		\95th_P1_Units\Data\Helmets\Pilot\##name##\Helmet.paa\
-	};\
-	class XtdGearInfo {\
-		model = 95th_P1_Pilot_Helmet;\
-		Type = ##name##;\
-	};

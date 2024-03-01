@@ -1,7 +1,8 @@
-#include "Macros\P1Basic.hpp"
+#include "Macros\P1 Basic.hpp"
 #include "Macros\Airborne.hpp"
 #include "Macros\ARF.hpp"
 #include "Macros\Engineer.hpp"
+#include "Macros\P1 Pilot.hpp"
 
 class CfgPatches {
 	class AUX_95th_Helmets {
@@ -22,11 +23,12 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"P1Basic","Airborne","ARF","Engineer"};
+				values[] = {"P1Basic","Airborne","ARF","Engineer","P1Pilot"};
 				class P1Basic { label = "P1 Basic"; description = "Basic P1 Helmet"; };
 				class Airborne { label = "Airborne"; description = "Airborne Helmet"; };
 				class ARF { label = "ARF"; description = "ARF Helmet"; };
 				class Engineer { label = "Engineer"; description = "Engineer Helmet"; };
+				class P1Pilot { label = "P1 Pilot"; description = "P1 Pilot Helmet"; };
 			};
 
 			class Player {
@@ -74,6 +76,7 @@ class XtdGearModels {
 				class Mobius { label = "Mobius"; description = "Mobius' Helmet"; };
 				class Revan { label = "Revan"; description = "Revan's Helmet"; };
 				class Kong { label = "Kong"; description = "Kong's Helmet"; };
+				class Jinter { label = "Jinter"; description = "Jinter's Helmet"; };
 			};
 		};
 	};
@@ -82,8 +85,9 @@ class XtdGearModels {
 class CfgWeapons { 
 	#include "Definitions.hpp"
 
-	#include "Config\P1Basic.hpp"
+	#include "Config\P1 Basic.hpp"
 	#include "Config\Airborne.hpp"
 	#include "Config\ARF.hpp"
 	#include "Config\Engineer.hpp"
+	#include "Config\P1 Pilot.hpp"
 }; 

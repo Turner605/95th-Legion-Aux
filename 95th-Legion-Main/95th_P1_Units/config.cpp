@@ -166,20 +166,6 @@ class XtdGearModels {
 			};
 		};
 
-		class 95th_P1_Pilot_Helmet {
-			label = "";
-			author = "95th Aux Team";
-			options[] = {"Type"};
-			class Type {
-				alwaysSelectable = 1;
-				labels = "Type";
-				values[] = {"Trooper","Jinter","Outcast"};
-				class Trooper { label = "Trooper"; description = "Trooper Helmet"; };
-				class Jinter { label = "Jinter"; description = "Jinter's Helmet"; };
-				class Outcast { label = "Outcast"; description = "Outcast's Helmet"; };
-			};
-		};
-
 		class 95th_ARC_Helmet {
 			label = "";
 			author = "95th Aux Team";
@@ -290,10 +276,6 @@ class cfgWeapons {
 	NEW_95TH_COMMANDO_UNIFORM(Trooper,Trooper)};
 
 //############################################################### Helmets ###############################################################
-	NEW_95TH_P1_PILOT_HELMET(Trooper)};
-	NEW_95TH_P1_PILOT_HELMET(Jinter)};
-	NEW_95TH_P1_PILOT_HELMET(Outcast)};
-
 	NEW_95TH_ARC_HELMET(Trooper)};
 
 	NEW_95TH_SPECOPS_HELMET(Trooper)};

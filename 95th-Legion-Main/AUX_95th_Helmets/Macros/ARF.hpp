@@ -1,4 +1,4 @@
-#define NEW_AUX_95TH_ARF_HELMET(player,squad) class AUX_95th_Helmet_ARF_##player## : SEA_Helmet_ARF_base {\
+#define NEW_AUX_95TH_ARF_HELMET(player) class AUX_95th_Helmet_ARF_##player## : SEA_Helmet_ARF_base {\
     scope = 2;\
     scopeArsenal = 2;\
 	author=95th Aux Team;\
