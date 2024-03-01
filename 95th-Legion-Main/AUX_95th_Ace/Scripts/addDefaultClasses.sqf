@@ -53,7 +53,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent,
 		"95th_Basic_Vest_Rifleman", _dc15a_Ammo,
 		"AUX_95th_Bag_Backpack_Visible_Trooper", _baseBackpackContent,
-		"95th_Helmet_Trooper"
+		"AUX_95th_Helmet_P1_Basic_Trooper"
 	],
 	[
 		"[95th] 01 - Marksman (DC15X)",
@@ -61,7 +61,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent,
 		"95th_Basic_Vest_Marksman", _dc15x_Ammo,
 		"AUX_95th_Bag_Backpack_Visible_Trooper", _baseBackpackContent,
-		"95th_ARF_Helmet_Trooper"
+		"AUX_95th_Helmet_ARF_Trooper" 
 	],
 	[
 		"[95th] 02 - Riot (DC15S)",
@@ -69,7 +69,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent,
 		"95th_Basic_Vest_Riot", _dc15s_Ammo,
 		"AUX_95th_Bag_Backpack_Visible_Trooper", _baseBackpackContent + [["JLTS_riot_shield_item",1]],
-		"95th_Helmet_Trooper"
+		"AUX_95th_Helmet_P1_Basic_Trooper"
 	],
 	[
 		"[95th] 03 - Heavy (Z6)",
@@ -77,7 +77,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent + [["NFL_Disc_Shield",1]],
 		"95th_Basic_Vest_Heavy", _z6_Ammo,
 		"AUX_95th_Backpack_Visible_Heavy", _baseBackpackContent + [["ACE_Tripod",1]],
-		"95th_Helmet_Trooper"
+		"AUX_95th_Helmet_P1_Basic_Trooper"
 	],
 	[
 		"[95th] 04 - Engineer (DC15A)",
@@ -85,7 +85,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent + [["ACE_Fortify",1],["ACE_DefusalKit",1],["ACE_wirecutter",1],["ACE_Clacker",1]],
 		"95th_Basic_Vest_Engineer", _dc15a_Ammo,
 		"AUX_95th_Backpack_Visible_Ordnance", _baseBackpackContent + [["SWLW_DetPack_remote_mag",6,1], ["NFL_Turret_Deployer",1]],
-		"95th_Engineer_Helmet_Trooper"
+		"AUX_95th_Helmet_Engineer_Trooper"
 	],
 	[
 		"[95th] 05 - Medic (DC15A)",
@@ -93,7 +93,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Medic", _baseUniformContent + [["NFL_Magazine_Grenade_Medical_Shield",1,1]],
 		"95th_Basic_Vest_Medic", _dc15a_Ammo,
 		"AUX_95th_Backpack_Visible_Medic", _medicBackpackContent,
-		"95th_Helmet_Medic"
+		"AUX_95th_Helmet_P1_Basic_Medic"
 	],
 	[
 		"[95th] 06 - AT (DC15A)",
@@ -101,7 +101,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent,
 		"95th_Basic_Vest_AT", _dc15a_Ammo,
 		"AUX_95th_Backpack_Visible_Ordnance", _baseBackpackContent + _rps6_Ammo,
-		"95th_Helmet_Trooper"
+		"AUX_95th_Helmet_P1_Basic_Trooper"
 	],
 	[
 		"[95th] 07 - Crewman (DC15S)",
@@ -109,7 +109,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent,
 		"95th_Basic_Vest_Crewman", _dc15s_Ammo,
 		"AUX_95th_Backpack_Visible_Ordnance", _baseBackpackContent,
-		"95th_Engineer_Helmet_Trooper"
+		"AUX_95th_Helmet_Engineer_Trooper"
 	],
 	[
 		"[95th] 08 - Pilot (DC15S)",
@@ -117,15 +117,15 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent,
 		"95th_Basic_Vest_Pilot", _dc15s_Ammo,
 		"AUX_95th_Bag_Backpack_Visible_Trooper", _baseBackpackContent,
-		"95th_P1_Pilot_Helmet_Trooper"
+		"AUX_95th_Helmet_P1_Pilot_Trooper"
 	],
 	[
 		"[95th] 09 - NCO (DC15S)",
 		_dc15s, [], _dc17s,
 		"95th_P1_Uniform_Sergeant", _baseUniformContent,
-		"95th_Officer_Vest_Sergeant", _dc15s_Ammo,
+		"AUX_95th_Vest_Sergeant_Trooper", _dc15s_Ammo,
 		"AUX_95th_RTO_Backpack_Visible_RTO", _baseBackpackContent,
-		"95th_Helmet_Trooper"
+		"AUX_95th_Helmet_P1_Basic_Trooper"
 	],
 	[
 		"[95th] 10 - Flame (DC15S)",
@@ -133,7 +133,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent + [["NFL_Disc_Shield",1]],
 		"95th_Basic_Vest_Flame", _bx42_Ammo,
 		"AUX_95th_BX42_Backpack", _baseBackpackContent,
-		"95th_Hazard_Helmet_Trooper"
+		"AUX_95th_Helmet_Hazard_Trooper"
 	],
 	[
 		"[95th] 11 - Jet (DC15S)",
@@ -141,7 +141,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent,
 		"95th_Basic_Vest_Jet", _dc15s_Ammo,
 		"AUX_95th_JT12_Jetpack_Trooper", _baseBackpackContent,
-		"95th_Airborne_Helmet_Trooper"
+		"AUX_95th_Helmet_Airborne_Trooper"
 	],
 	[
 		"[95th] 12 - Grenadier (DC15A UGL)",
@@ -149,7 +149,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent,
 		"95th_Basic_Vest_Grenadier", _dc15a_ugl_Ammo,
 		"AUX_95th_Backpack_Visible_Heavy", _baseBackpackContent,
-		"95th_Helmet_Trooper"
+		"AUX_95th_Helmet_P1_Basic_Trooper"
 	],
 	[
 		"[95th] 13 - Stealth (DC15A)",
@@ -157,7 +157,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent + [["DSS_Cloaking_Device",1]],
 		"95th_Basic_Vest_Stealth", _dc15a_Ammo,
 		"AUX_95th_Bag_Backpack_Visible_Trooper", _baseBackpackContent,
-		"95th_SpecOps_Helmet_Trooper"
+		"AUX_95th_Helmet_SpecOps_Trooper"
 	],
 	[
 		"[95th] 14 - Tech (DC15A)",
@@ -165,7 +165,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent + [["DSS_Hacking_Device",1]],
 		"95th_Basic_Vest_Tech", _dc15a_Ammo,
 		"AUX_95th_Bag_Backpack_Visible_Trooper", _baseBackpackContent,
-		"95th_SpecOps_Helmet_Trooper"
+		"AUX_95th_Helmet_SpecOps_Trooper"
 	],
 	[
 		"[95th] 15 - Support (DC15A)",
@@ -173,7 +173,7 @@ private _roleArray = [
 		"95th_P1_Uniform_Trooper", _baseUniformContent + [["DSS_Support_Device",1]],
 		"95th_Basic_Vest_Support", _dc15a_Ammo,
 		"AUX_95th_Bag_Backpack_Visible_Trooper", _baseBackpackContent,
-		"95th_SpecOps_Helmet_Trooper"
+		"AUX_95th_Helmet_SpecOps_Trooper"
 	]
 ];
 
