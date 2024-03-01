@@ -103,20 +103,26 @@ private _arsenalAttachments = [
 	"acc_flashlight","acc_pointer_IR","ACE_acc_pointer_green","JLTS_DC17SA_flashlight","acc_flashlight_pistol","3AS_Bipod_DC15L_f"
 ];
 
-//-----------------------------# Helmets #-----------------------------------
-private _arsenalHelmets = [
-	"95th_P1_Pilot_Helmet_Trooper","95th_P1_Pilot_Helmet_Jinter","95th_SpecOps_Helmet_Trooper","95th_Helmet_Trooper","95th_Helmet_Shiny","95th_Helmet_Neary","95th_Helmet_Bretek",
-	"95th_Helmet_Havoc","95th_Helmet_Sand","95th_Helmet_Manila","95th_Helmet_Biedronka","95th_Helmet_Volt","95th_Helmet_Splash","95th_Helmet_Turner",
-	"95th_Helmet_Outcast","95th_Helmet_Veteran","95th_Helmet_Senior","95th_Helmet_Medic","95th_Hazard_Helmet_Trooper","95th_Engineer_Helmet_Revan",
-	"95th_Engineer_Helmet_Kong","95th_Engineer_Helmet_Trooper","95th_ColdAssault_Helmet_Trooper","95th_ARF_Helmet_Trooper","95th_ARC_Helmet_Trooper",
-	"95th_Airborne_Helmet_Trooper","95th_Engineer_Helmet_Som","95th_Commando_Helmet_Trooper","95th_ARF_Helmet_Osprey","95th_ARF_Helmet_Sythe",
-	"95th_Helmet_Smaug","95th_Helmet_Commie","95th_Helmet_Ratler","95th_ARF_Helmet_Cheezy","95th_Helmet_Som","95th_Helmet_Hypo", "95th_Helmet_MadHatter",
-	"95th_P1_Pilot_Helmet_Outcast", "95th_Helmet_Third", "95th_Helmet_Stitch", "95th_ARF_Helmet_Mobius", "95th_Helmet_Chimera",
-
-
-
-	"AUX_95th_Helmet_P1_Basic_Trooper"
+//-----------------------------# Players #-----------------------------------
+private _playerCustomsList = [
+	"Trooper","Shiny", "Medic", "Senior", "Veteran", "Turner","Splash", 
+	"Medic", "Senior", "Veteran", "Havoc","Sythe", "Cheezy", "Volt", "Sand", "Smaug", "Manila", 
+	"Osprey", "Chimera", "Hypo", "Neary", "Smokery", "Foley", "Prophet", "Mobius", "Taylor", 
+	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard", 
+	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie"
 ];
+
+//-----------------------------# Helmets #-----------------------------------
+private _arsenalHelmets = []; 
+{_arsenalHelmets pushBack "AUX_95th_Helmet_Airborne_"+_x; } forEach _playerCustomsList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_ARF_"+_x; } forEach _playerCustomsList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_Cold_Assault_"+_x; } forEach _playerCustomsList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_Commando_"+_x; } forEach _playerCustomsList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_Engineer_"+_x; } forEach _playerCustomsList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_Hazard_"+_x; } forEach _playerCustomsList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Basic_"+_x; } forEach _playerCustomsList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Pilot_"+_x; } forEach _playerCustomsList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_SpecOps_"+_x; } forEach _playerCustomsList;
 
 //-----------------------------# Uniforms #-----------------------------------
 private _arsenalUniforms = [
