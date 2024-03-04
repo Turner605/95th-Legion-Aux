@@ -31,6 +31,7 @@ class CfgPatches {
 			"95th_Rifleman_Unit_Volt",
 			"95th_Rifleman_Unit_Bretek",
 			"95th_Rifleman_Unit_Commie",
+			"95th_Rifleman_Unit_Hatter",
 
 			"95th_MC_Unit_Zeus",
 			"95th_MC_Unit_Turner",
@@ -126,6 +127,7 @@ class XtdGearModels {
 				class Smokery { label = "Smokery"; description = "Smokery's Uniform"; };
 				class Manila { label = "Manila"; description = "Manila's Uniform"; };
 				class Havoc { label = "Havoc"; description = "Havoc's Uniform"; };
+				class Hatter { label = "Hatter"; description = "Hatter's Uniform"; };
 			};
 		};
 
