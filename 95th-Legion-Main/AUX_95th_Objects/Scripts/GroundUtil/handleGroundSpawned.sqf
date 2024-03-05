@@ -11,7 +11,7 @@ private _targetPad = 0;
 
 if(!(isNil "_targetPad")) then {
 	if(!(isNull _targetPad)) then {
-		private _nearestVehicle = nearestObjects[_targetPad, ["Car", "Tank"], 20] select 0; 
+		private _nearestVehicle = nearestObjects[_targetPad, ["LandVehicle"], 20] select 0; 
 	
 		if(!(isNil "_nearestVehicle")) then {
 			deleteVehicle _nearestVehicle;
@@ -29,11 +29,7 @@ if(!(isNil "_targetPad")) then {
 
 		private _spawnedVehicle = createVehicle[_vehicleClass, _position, [], 0, "CAN_COLLIDE"];
 
-		// switch (_vehicleClass) do {
-		// 	case "95th_LAAT_Mrk1": { [_spawnedVehicle, player] spawn AUX_95th_fnc_handleSkinSelection; };
-		// 	case "95th_LAAT_Mrk2": { [_spawnedVehicle, player] spawn AUX_95th_fnc_handleSkinSelection;  };
-		// 	case "95th_LAAT_Mrk2Lights": { [_spawnedVehicle, player] spawn AUX_95th_fnc_handleSkinSelection;  };
-		// };
+		[_spawnedVehicle, _vehicleClass, _player] spawn AUX_95th_fnc_handleSkinSelection;
 
 		_spawnedVehicle setDir _direction + 90;
 	};

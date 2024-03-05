@@ -123,7 +123,7 @@ class CfgFunctions { class AUX_95th { class Objects {
 	class handleAirSpawned {file = "\AUX_95th_Objects\Scripts\AirUtil\handleAirSpawned.sqf";};
 	class handleAirVehicleServiced {file = "\AUX_95th_Objects\Scripts\AirUtil\handleAirVehicleServiced.sqf";};
 	class handlePylonEdit {file = "\AUX_95th_Objects\Scripts\AirUtil\handlePylonEdit.sqf";};
-	class handleSkinSelection {file = "\AUX_95th_Objects\Scripts\AirUtil\handleSkinSelection.sqf";};
+	class handleSkinSelection {file = "\AUX_95th_Objects\Scripts\handleSkinSelection.sqf";};
 
 	class handleFactoryTerminalOptions {file = "\AUX_95th_Objects\Scripts\Droid Factories\handleFactoryTerminalOptions.sqf";};
 };};};
