@@ -30,8 +30,8 @@ class AUX_95th_GroundUtil_Vehicles : 3AS_Terminal_1_Prop {
 		};
 		class Spawn3ASATTE {
 			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
-			displayName = "Spawn [3AS] AT-TE";
-			statement = "[this, player, '3as_ATTE_Base'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
+			displayName = "Spawn [95th] AT-TE";
+			statement = "[this, player, 'AUX_95th_ATTE'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
 		};
 		class SpawnSwampSpeeder {
 			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";

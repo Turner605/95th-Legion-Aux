@@ -118,7 +118,7 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Volt","Jinter","Bretek","Commie","Smaug","Smokery","Manila","Havoc","MadHatter"};
+				values[] = {"Volt","Jinter","Bretek","Commie","Smaug","Smokery","Manila","Havoc","MadHatter","Cheezy"};
 				class Volt { label = "Volt"; description = "Volt's Uniform"; };
 				class Jinter { label = "Jinter"; description = "Jinter's Uniform"; };
 				class Bretek { label = "Bretek"; description = "Bretek's Uniform"; };
@@ -128,6 +128,7 @@ class XtdGearModels {
 				class Manila { label = "Manila"; description = "Manila's Uniform"; };
 				class Havoc { label = "Havoc"; description = "Havoc's Uniform"; };
 				class MadHatter { label = "Hatter"; description = "Hatter's Uniform"; };
+				class Cheezy { label = "Cheezy"; description = "Cheezy's Uniform"; };
 			};
 		};
 
@@ -247,6 +248,7 @@ class cfgWeapons {
 	NEW_95TH_CUSTOM_P1_UNIFORM(Manila,Manila)};
 	NEW_95TH_CUSTOM_P1_UNIFORM(Havoc,Havoc)};
 	NEW_95TH_CUSTOM_P1_UNIFORM(MadHatter,MadHatter)};
+	NEW_95TH_CUSTOM_P1_UNIFORM(Cheezy,Cheezy)};
 
 	NEW_95TH_MC_UNIFORM(Zeus,Zeus)};
 	NEW_95TH_MC_UNIFORM(Turner,Turner)};
@@ -275,11 +277,12 @@ class CfgVehicles {
 	NEW_95TH_RIFLEMAN_UNIT(Jinter,Trooper,Sergeant)};
 	NEW_95TH_RIFLEMAN_UNIT(Bretek,Bretek,Sergeant)};
 	NEW_95TH_RIFLEMAN_UNIT(Commie,Commie,Zeus)};
-	NEW_95TH_RIFLEMAN_UNIT(Smaug,Smaug,Zeus)};
-	NEW_95TH_RIFLEMAN_UNIT(Smokery,Smokery,Zeus)};
-	NEW_95TH_RIFLEMAN_UNIT(Manila,Manila,Zeus)};
+	NEW_95TH_RIFLEMAN_UNIT(Smaug,Smaug,Trooper)};
+	NEW_95TH_RIFLEMAN_UNIT(Smokery,Smokery,Trooper)};
+	NEW_95TH_RIFLEMAN_UNIT(Manila,Manila,Trooper)};
 	NEW_95TH_RIFLEMAN_UNIT(Havoc,Havoc,Zeus)};
 	NEW_95TH_RIFLEMAN_UNIT(MadHatter,MadHatter,Veteran)};
+	NEW_95TH_RIFLEMAN_UNIT(Cheezy,Cheezy,Trooper)};
 
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_MC_UNIT(Zeus,Veteran,Zeus)};

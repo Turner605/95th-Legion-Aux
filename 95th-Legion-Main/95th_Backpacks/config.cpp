@@ -126,8 +126,9 @@ class XtdGearModels {
 
 			class Role {
 				labels = "Role";
-				values[] = {"Turner"};
+				values[] = {"Turner", "Stitch"};
 				class Turner { label = "Turner"; description = "Turner Jetpack"; };
+				class Stitch { label = "Stitch"; description = "Stitch Jetpack"; };
 			};
 		};
 	};
@@ -173,8 +174,9 @@ class CfgVehicles {
 	//###############################Jetpacks###############################
 
 	NEW_95TH_JETPACK_JT12(Trooper,95th_Jetpacks,"95th Jetpacks",150)};
-	NEW_95TH_JETPACK_MC(Trooper,95th_Jetpacks,"95th Jetpacks",150)};
+	NEW_95TH_JETPACK_JT12(Stitch,95th_Custom_Jetpacks,"95th Custom Jetpacks",400)};
 
+	NEW_95TH_JETPACK_MC(Trooper,95th_Jetpacks,"95th Jetpacks",150)};
 	NEW_95TH_JETPACK_MC(Turner,95th_Custom_Jetpacks,"95th Custom Jetpacks",400)};
 
 
