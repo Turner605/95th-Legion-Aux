@@ -89,10 +89,11 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Hypo", "Neary", "Smokery"};
+				values[] = {"Hypo", "Neary", "Smokery","Kev"};
 				class Hypo { label = "Hypo"; description = "Hypo's Helmet"; };
 				class Neary { label = "Neary"; description = "Neary's Helmet"; };
 				class Smokery { label = "Smokery"; description = "Smokery's Helmet"; };
+				class Kev { label = "Kev"; description = "Kev's Helmet"; };
 			};
 		};
 
@@ -182,7 +183,7 @@ class XtdGearModels {
 	};
 };
 
-class CfgWeapons { 
+class CfgWeapons {
 	#include "Definitions.hpp"
 
 	#include "Config\P1 Basic.hpp"
@@ -194,4 +195,4 @@ class CfgWeapons {
 	#include "Config\Hazard.hpp"
 	#include "Config\Cold Assault.hpp"
 	#include "Config\Commando.hpp"
-}; 
+};
