@@ -18,9 +18,10 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper", "Turner"};
+				values[] = {"Trooper", "Turner", "Taun"};
 				class Trooper { label = "Trooper"; description = "Default Kama Vest"; };
 				class Turner { label = "Turner"; description = "Turner's Vest"; };
+				class Taun { label = "Taun"; description = "Taun's Vest"; };
 			};
 		};
 
@@ -69,8 +70,8 @@ class XtdGearModels {
 	};
 };
 
-class CfgWeapons { 
+class CfgWeapons {
 	#include "Definitions.hpp"
 
 	#include "Config\Officers.hpp"
-}; 
+};
