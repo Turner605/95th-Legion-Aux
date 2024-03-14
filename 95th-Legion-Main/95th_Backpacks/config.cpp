@@ -6,7 +6,7 @@ class CfgPatches {
         name="95th Legion Backpacks";
 		requiredAddons[]= {
 			"JLTS_characters_CloneArmor",
-			"WBK_PhoenixTreal_FlamethrowerMOD", 
+			"WBK_PhoenixTreal_FlamethrowerMOD",
 			"3as_Backpacks"
 		};
 		units[] = {};
@@ -61,10 +61,11 @@ class XtdGearModels {
 			class Role {
 				labels = "Role";
 				alwaysSelectable = 1;
-				values[] = {"Turner", "Stitch", "Pendragon"};
+				values[] = {"Turner", "Stitch", "Pendragon", "Gridlock"};
 				class Turner { label = "Turner"; description = "Turners Backpack"; };
 				class Stitch { label = "Stitch"; description = "Stitch's Backpack"; };
 				class Pendragon { label = "Pendragon"; description = "Pendragon's Backpack"; };
+				class Gridlock { label = "Gridlock"; description = "Gridlock's Backpack"; };
 			};
 
 			class Visibility {
@@ -163,13 +164,14 @@ class CfgVehicles {
 	NEW_95TH_RTO_BACKPACK_VISIBLE_MINI(RTO,95th_Backpacks,"95th Backpack",150)};
 
 	NEW_95TH_RTO_BACKPACK_VISIBLE_MINI(Turner,95th_Custom_Backpacks,"95th Custom Backpack",400)};
-	
+
 	NEW_95TH_BACKPACK_VISIBLE(Stitch,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 	NEW_95TH_BACKPACK_INVISIBLE(Stitch,95th_Backpacks,"95th Backpack",400)};
 	NEW_95TH_RTO_BACKPACK_VISIBLE(Stitch,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 	NEW_95TH_RTO_BACKPACK_INVISIBLE(Stitch,95th_Backpacks,"95th Backpack",400)};
 	NEW_95TH_RTO_BACKPACK_VISIBLE(Pendragon,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 	NEW_95TH_RTO_BACKPACK_INVISIBLE(Pendragon,95th_Backpacks,"95th Backpack",400)};
+	NEW_95TH_BACKPACK_VISIBLE(Gridlock,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 
 	//###############################Jetpacks###############################
 
@@ -205,6 +207,6 @@ class CfgVehicles {
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
 		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[]={"\95th_Backpacks\Data\Backpacks\Backpack_Flame.paa"}; 
+		hiddenSelectionsTextures[]={"\95th_Backpacks\Data\Backpacks\Backpack_Flame.paa"};
 	};
 };

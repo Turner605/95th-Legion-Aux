@@ -158,7 +158,7 @@ private _arsenalBackpacks = [
 	"AUX_95th_MC_Jetpack_Trooper", "AUX_95th_MC_Jetpack_Turner",
 	"95th_Katarn_Backpack","AUX_95th_BX42_Backpack",
 	"3AS_Republic_HR_Bag","3AS_Republic_HR_Shield_Bag","JLTS_UST_turret_GAR_backpack","JLTS_portable_shield_gar_backpack", "ACE_TacticalLadder_Pack",
-	"AUX_95th_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Invisible_Stitch"
+	"AUX_95th_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Invisible_Stitch", "AUX_95th_Backpack_Visible_Gridlock"
 ];
 
 //-----------------------------# Gear #-----------------------------------
