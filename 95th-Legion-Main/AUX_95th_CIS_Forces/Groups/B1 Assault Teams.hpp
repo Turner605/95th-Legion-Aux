@@ -9,7 +9,7 @@ class AUX_95th_Groups_Droid_B1_AssaultTeam_AT {
 	class Unit4 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AutoRifleman"; rank = "PRIVATE"; position[] = {10,-5,0};};
 	class Unit5 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,-10,0};};
 	class Unit6 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,-5,0};};
-	class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,-10,0};};
+	class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {10,10,0};};
 };
 
 class AUX_95th_Groups_Droid_B1_AssaultTeam_AA {
@@ -23,5 +23,5 @@ class AUX_95th_Groups_Droid_B1_AssaultTeam_AA {
 	class Unit4 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AutoRifleman"; rank = "PRIVATE"; position[] = {10,-5,0};};
 	class Unit5 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,-10,0};};
 	class Unit6 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,-5,0};};
-	class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,-10,0};};
+	class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,10,0};};
 };

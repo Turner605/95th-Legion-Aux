@@ -2,7 +2,7 @@
 // Shield Droid (Moving unit with an attached squad type shield)
 
 class CfgPatches {
-	class AUX_95th_Droid_Units {
+	class AUX_95th_CIS_Forces {
         author="95th Aux Team";
         name="AUX 95th Droid Units";
 		requiredAddons[]={"JLTS_characters_DroidUnits"};
@@ -20,14 +20,18 @@ class CfgPatches {
 
 class CfgFactionClasses {
     class AUX_95th_CIS {displayName = "[95th] CIS Forces"; priority = 1;};  
+    class AUX_95th_CIS_Humanitarian {displayName = "[95th] CIS Humanitarian"; priority = 1;};  
 };
 
-class CfgEditorCategories{
-	class AUX_95th_Droid_Units{displayName = "[95th] CIS Forces";};
+class CfgEditorCategories {
+	class AUX_95th_CIS_Forces{displayName = "[95th] CIS Forces";};
 };
 
-class CfgEditorSubcategories{
-	class AUX_95th_Droid_Units_B1{displayName="B1 Battledroids";};
+class CfgEditorSubcategories {
+	class AUX_95th_CIS_Forces_Droids_B1{displayName="B1 Battledroids";};
+	class AUX_95th_CIS_Forces_Droids_Commando { displayName="Commandos"; };
+	class AUX_95th_CIS_Forces_Humans { displayName="Humans"; };
+	class AUX_95th_CIS_Forces_CivilServices { displayName="Civil Services"; };
 };
 
 class CBA_Extended_EventHandlers_base;
@@ -47,9 +51,9 @@ class CfgVehicles {
 
 class CfgGroups {
 	class East {
-		class AUX_95th_Droid_Units  {
+		class AUX_95th_CIS_Forces  {
 			name = "[95th] CIS Forces";
-			class AUX_95th_Droid_Units_B1 {
+			class AUX_95th_CIS_Forces_Droids_B1 {
 				name = "B1 Battledroids";
 				#include "Groups\B1 Fire Team.hpp"
 				#include "Groups\B1 Assault Teams.hpp"
@@ -58,16 +62,16 @@ class CfgGroups {
 	};
 };
 
-class CfgFunctions { class AUX_95th { class Objects {
-	class handleB1Damage {file = "\AUX_95th_Droid_Units\Scripts\handleB1Damage.sqf";};
+class CfgFunctions { class AUX_95th { class CIS_Forces {
+	class handleB1Damage {file = "\AUX_95th_CIS_Forces\Scripts\handleB1Damage.sqf";};
 };};};
 
 class Extended_PostInit_EventHandlers {
-	class AUX_95th_Droid_Units_PostInit {init="call compile preprocessFileLineNumbers '\AUX_95th_Droid_Units\Init\XEH_postInit.sqf'";};
+	class AUX_95th_CIS_Forces_PostInit {init="call compile preprocessFileLineNumbers '\AUX_95th_CIS_Forces\Init\XEH_postInit.sqf'";};
 };
 
 class Extended_PreInit_EventHandlers {
-	class AUX_95th_Droid_Units_PreInit {init="call compile preprocessFileLineNumbers '\AUX_95th_Droid_Units\Init\XEH_preInit.sqf'";};
+	class AUX_95th_CIS_Forces_PreInit {init="call compile preprocessFileLineNumbers '\AUX_95th_CIS_Forces\Init\XEH_preInit.sqf'";};
 };
 
 class ACE_Medical_Injuries {
