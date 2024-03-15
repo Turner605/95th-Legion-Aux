@@ -1,4 +1,4 @@
-#define NEW_95TH_COMMANDO_UNIT(className,name,uniformClassName) class AUX_95th_Commando_Unit_##className## : lsd_cis_bxdroid_specops {\
+#define NEW_95TH_COMMANDO_UNIT(className,name,uniformClassName) class AUX_95th_Droid_Commando_Unit_##className## : lsd_cis_bxdroid_specops {\
 	displayName=##name##;\
 	author=95th Aux Team;\
 	faction=AUX_95th_CIS;\

@@ -41,10 +41,10 @@ class CfgPatches {
 			"AUX_95th_Independent_B1_Unit_Firefighter", 
 			"AUX_95th_Independent_B1_Unit_Medic", 
 			"AUX_95th_Independent_B1_Unit_Police",
-			"AUX_95th_Commando_Unit_Normal", 
-			"AUX_95th_Commando_Unit_Captain", 
-			"AUX_95th_Commando_Unit_Citadel", 
-			"AUX_95th_Commando_Unit_Diplomat"
+			"AUX_95th_Droid_Commando_Unit_Normal", 
+			"AUX_95th_Droid_Commando_Unit_Captain", 
+			"AUX_95th_Droid_Commando_Unit_Citadel", 
+			"AUX_95th_Droid_Commando_Unit_Diplomat" 
 		};
 	};
 };
@@ -169,7 +169,8 @@ class CfgGroups {
 };
 
 class CfgFunctions { class AUX_95th { class CIS_Forces {
-	class handleB1Damage {file = "\AUX_95th_CIS_Forces\Scripts\handleB1Damage.sqf";};
+	class handleB1Shot {file = "\AUX_95th_CIS_Forces\Scripts\handleB1Shot.sqf";};
+	class handleBXShot {file = "\AUX_95th_CIS_Forces\Scripts\handleBXShot.sqf";};
 
 	class commandoInit {file = "\AUX_95th_CIS_Forces\Init\commandoInit.sqf";};
 	class checkIsInHouse {file = "\AUX_95th_CIS_Forces\Scripts\Commando\checkIsInHouse.sqf";};
@@ -182,10 +183,10 @@ class CfgFunctions { class AUX_95th { class CIS_Forces {
 };};};
 
 class Extended_InitPost_EventHandlers {
-	class AUX_95th_Commando_Unit_Normal {class AUX_95th_Commando_Unit_Normal_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Commando_Unit_Captain {class AUX_95th_Commando_Unit_Captain_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Commando_Unit_Citadel {class AUX_95th_Commando_Unit_Citadel_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Commando_Unit_Diplomat {class AUX_95th_Commando_Unit_Diplomat_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_Commando_Unit_Normal {class AUX_95th_Droid_Commando_Unit_Normal_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_Commando_Unit_Captain {class AUX_95th_Droid_Commando_Unit_Captain_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_Commando_Unit_Citadel {class AUX_95th_Droid_Commando_Unit_Citadel_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_Commando_Unit_Diplomat {class AUX_95th_Droid_Commando_Unit_Diplomat_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
 };
 
 class Extended_PostInit_EventHandlers {
@@ -201,7 +202,8 @@ class ACE_Medical_Injuries {
 		class woundHandlers;
 		class bullet {
 			class woundHandlers: woundHandlers {
-				AUX_95th_Droid_Unit_B1_Handler = "{ call AUX_95th_fnc_handleB1Damage }";
+				AUX_95th_Droid_Unit_B1_Handler = "{ call AUX_95th_fnc_handleB1Shot }";
+				AUX_95th_Droid_Unit_BX_Handler = "{ call AUX_95th_fnc_handleBXShot }";
 			};
 		};
 		class falling {
