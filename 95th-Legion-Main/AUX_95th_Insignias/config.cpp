@@ -17,4 +17,5 @@ class CfgUnitInsignia {
 	#include "Insignias\Mynock.hpp"
 	#include "Insignias\Zillo.hpp"
 	#include "Insignias\MedicalChimken.hpp"
+	#include "Insignias\RevanBong.hpp"
 };
