@@ -68,7 +68,7 @@ class CfgVehicles {
 	#include "Units\B1\Sniper.hpp"
 	#include "Units\B1\Crew.hpp"
 
-	// B1 Units
+	// B1 Rocket Units
 	#include "Units\B1 Rocket\Rifleman.hpp"
 
 	// B2 Units
