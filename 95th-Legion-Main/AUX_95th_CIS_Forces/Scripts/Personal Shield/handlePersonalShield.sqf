@@ -8,7 +8,7 @@ if (isRemoteControlling _player) then {
 	_unit = _player;
 };
 
-if (!(_unit call NFA_fnc_checkCanShield)) exitWith {};
+if (!(_unit call AUX_95th_fnc_checkCanShield)) exitWith {};
 if (!(isNil {_unit getVariable "WalhammerShieldDestroyed"})) exitWith {systemChat "Shield is reloading";};
 
 if ((gestureState _unit == "chargerAnim_Start") or (gestureState _unit == "chargerAnim_Loop")) exitWith {_unit playActionNow "chargerAnim_Out";};

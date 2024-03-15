@@ -12,3 +12,7 @@ class WBK_B2_Mod_Shotgun;
 class ls_turret_pirate_autoturret;
 class ls_turret_pirate_autoturretCQC;
 class JLTS_UST_turret_CIS;
+class 3AS_U_CIS_Heavy;
+class 95th_Rifleman_Unit_Trooper;
+class lsd_cis_bxdroid_specops;
+class JLTS_B1_backpack;

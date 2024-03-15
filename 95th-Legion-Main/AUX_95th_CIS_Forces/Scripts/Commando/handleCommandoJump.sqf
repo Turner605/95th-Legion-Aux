@@ -8,8 +8,8 @@ if (isRemoteControlling _player) then {
 	_unit = _player;
 };
 
-if (!(_unit call NFA_fnc_checkCanJump)) exitWith {};
-if (_unit call NFA_fnc_checkIsInHouse) exitWith {systemChat "No free space to make a jump";};
+if (!(_unit call AUX_95th_fnc_checkCanJump)) exitWith {};
+if (_unit call AUX_95th_fnc_checkIsInHouse) exitWith {systemChat "No free space to make a jump";};
 
 if (
 	(gestureState _unit == "Exo_Gest_Jump_Back") or
