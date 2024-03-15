@@ -9,3 +9,6 @@ class JLTS_Droid_B1_Rocket;
 class WBK_B2_Mod_Standart;
 class WBK_B2_Mod_GL;
 class WBK_B2_Mod_Shotgun;
+class ls_turret_pirate_autoturret;
+class ls_turret_pirate_autoturretCQC;
+class JLTS_UST_turret_CIS;

@@ -3,9 +3,6 @@
 
 
 // TODO:
-// ls_turret_pirate_autoturret
-// ls_turret_pirate_autoturretCQC
-// JLTS_UST_turret_CIS
 // JLTS_UAV_prowler_cis
 
 // JLTS_Droid_B1_Prototype ???
@@ -30,7 +27,11 @@ class CfgPatches {
 
 			"AUX_95th_Droid_B2_Unit_Blaster",
 			"AUX_95th_Droid_B2_Unit_GL",
-			"AUX_95th_Droid_B2_Unit_Shotgun"
+			"AUX_95th_Droid_B2_Unit_Shotgun",
+
+			"AUX_95th_Droid_Turret_Roof_Turret",
+			"AUX_95th_Droid_Turret_Roof_Turret_Shotgun",
+			"AUX_95th_Droid_Turret_Ball"
 		};
 	};
 };
@@ -48,6 +49,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_CIS_Forces_Droids_B1{displayName="B1 Battledroids (Standard)";};
 	class AUX_95th_CIS_Forces_Droids_B1_Rocket{displayName="B1 Battledroids (Rocket)";};
 	class AUX_95th_CIS_Forces_Droids_B2{displayName="B2 Battledroids";};
+	class AUX_95th_CIS_Forces_Droids_Turrets{displayName="Turrets";};
 	class AUX_95th_CIS_Forces_Droids_Commando { displayName="Commandos"; };
 	class AUX_95th_CIS_Forces_Humans { displayName="Humans"; };
 	class AUX_95th_CIS_Forces_CivilServices { displayName="Civil Services"; };
@@ -75,6 +77,11 @@ class CfgVehicles {
 	#include "Units\B2\Blaster.hpp"
 	#include "Units\B2\GL.hpp"
 	#include "Units\B2\Shotgun.hpp"
+
+	// Turrets
+	#include "Units\Turrets\Roof Turret Blaster.hpp"
+	#include "Units\Turrets\Roof Turret Shotgun.hpp"
+	#include "Units\Turrets\Turret Ball.hpp"
 };
 
 class CfgGroups {
