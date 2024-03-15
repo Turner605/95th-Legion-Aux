@@ -15,7 +15,8 @@ class CfgPatches {
 			"AUX_95th_Misc_Crate_Pad", "AUX_95th_Misc_Medical_Terminal", "AUX_95th_Misc_Permission_Terminal",
 			"AUX_95th_Venator_Briefing_Room", "AUX_95th_Medical_Shield", "AUX_95th_Shield_Small", "AUX_95th_Acclimator_Hollow",
 			"AUX_95th_Fortify_Ramp", "AUX_95th_Fortify_Barricade", "AUX_95th_Fortify_Wall", "AUX_95th_Fortify_Bunker", "AUX_95th_Fortify_Turret",
-			"AUX_95th_Misc_Arsenal_Full", "AUX_95th_Misc_Arsenal_Restricted", "AUX_95th_Venator_Briefing_Room"
+			"AUX_95th_Misc_Arsenal_Full", "AUX_95th_Misc_Arsenal_Restricted", "AUX_95th_Venator_Briefing_Room",
+			"AUX_95th_WBK_Combine_WalhammerShield_actual"
 		};
 	};
 };
@@ -96,6 +97,7 @@ class CfgVehicles {
 	// Shield
 	#include "Shields\Medical Shield.hpp"
 	#include "Shields\Planetary Shield Small.hpp"
+	#include "Shields\Personal Shield.hpp"
 
 	// Ships
 	#include "Ships\Acclimator Hollow.hpp"
