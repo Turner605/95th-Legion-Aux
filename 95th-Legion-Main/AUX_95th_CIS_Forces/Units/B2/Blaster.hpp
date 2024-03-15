@@ -1,0 +1,6 @@
+class AUX_95th_Droid_B2_Unit_Blaster : WBK_B2_Mod_Standart {
+	displayName="B2 (Blaster)";
+	editorCategory="AUX_95th_CIS_Forces";
+	editorSubcategory="AUX_95th_CIS_Forces_Droids_B2";
+	faction="AUX_95th_CIS";
+};

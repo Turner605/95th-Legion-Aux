@@ -1,6 +1,16 @@
 // Potential Special Units:
 // Shield Droid (Moving unit with an attached squad type shield)
 
+
+// TODO:
+// ls_turret_pirate_autoturret
+// ls_turret_pirate_autoturretCQC
+// JLTS_UST_turret_CIS
+// JLTS_UAV_prowler_cis
+
+// JLTS_Droid_B1_Prototype ???
+
+
 class CfgPatches {
 	class AUX_95th_CIS_Forces {
         author="95th Aux Team";
@@ -13,7 +23,14 @@ class CfgPatches {
 			"AUX_95th_Droid_B1_Unit_Commander",
 			"AUX_95th_Droid_B1_Unit_Rifleman",
 			"AUX_95th_Droid_B1_Unit_Shotgun",
-			"AUX_95th_Droid_B1_Unit_Sniper"
+			"AUX_95th_Droid_B1_Unit_Sniper",
+			"AUX_95th_Droid_B1_Unit_Crew",
+
+			"AUX_95th_Droid_B1_Rocket_Unit_Rifleman",
+
+			"AUX_95th_Droid_B2_Unit_Blaster",
+			"AUX_95th_Droid_B2_Unit_GL",
+			"AUX_95th_Droid_B2_Unit_Shotgun"
 		};
 	};
 };
@@ -28,7 +45,9 @@ class CfgEditorCategories {
 };
 
 class CfgEditorSubcategories {
-	class AUX_95th_CIS_Forces_Droids_B1{displayName="B1 Battledroids";};
+	class AUX_95th_CIS_Forces_Droids_B1{displayName="B1 Battledroids (Standard)";};
+	class AUX_95th_CIS_Forces_Droids_B1_Rocket{displayName="B1 Battledroids (Rocket)";};
+	class AUX_95th_CIS_Forces_Droids_B2{displayName="B2 Battledroids";};
 	class AUX_95th_CIS_Forces_Droids_Commando { displayName="Commandos"; };
 	class AUX_95th_CIS_Forces_Humans { displayName="Humans"; };
 	class AUX_95th_CIS_Forces_CivilServices { displayName="Civil Services"; };
@@ -47,6 +66,15 @@ class CfgVehicles {
 	#include "Units\B1\Rifleman.hpp"
 	#include "Units\B1\Shotgun.hpp"
 	#include "Units\B1\Sniper.hpp"
+	#include "Units\B1\Crew.hpp"
+
+	// B1 Units
+	#include "Units\B1 Rocket\Rifleman.hpp"
+
+	// B2 Units
+	#include "Units\B2\Blaster.hpp"
+	#include "Units\B2\GL.hpp"
+	#include "Units\B2\Shotgun.hpp"
 };
 
 class CfgGroups {
@@ -54,9 +82,14 @@ class CfgGroups {
 		class AUX_95th_CIS_Forces  {
 			name = "[95th] CIS Forces";
 			class AUX_95th_CIS_Forces_Droids_B1 {
-				name = "B1 Battledroids";
+				name = "B1 Battledroids (Standard)";
 				#include "Groups\B1 Fire Team.hpp"
 				#include "Groups\B1 Assault Teams.hpp"
+			};
+
+			class AUX_95th_CIS_Forces_Droids_B1_Rocket {
+				name = "B1 Battledroids (Rocket)";
+				#include "Groups\B1 Rocket\Fire Team.hpp"
 			};
 		};
 	};
