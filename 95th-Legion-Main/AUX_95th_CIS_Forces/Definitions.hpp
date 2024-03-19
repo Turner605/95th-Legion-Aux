@@ -16,3 +16,26 @@ class 3AS_U_CIS_Heavy;
 class 95th_Rifleman_Unit_Trooper;
 class lsd_cis_bxdroid_specops;
 class JLTS_B1_backpack;
+class 3AS_AAT;
+class 3AS_AAT_Winter;
+class 3AS_AAT_Desert;
+class 3AS_AAT_Arid;
+class 3AS_AAT_Green;
+class 3AS_AAT_Red;
+class 3AS_Advanced_DSD;
+class 3AS_MTT;
+class 3AS_N99;
+class 3AS_Tri_Fighter_DynamicLoadout;
+class 3AS_CIS_Vulture_CAS_F;
+class 3AS_CIS_Vulture_AA_F;
+class 3AS_CIS_Vulture_F;
+class ls_cis_hmp;
+class ls_cis_hmp_transport;
+class lsd_largeVTOL_cisDropship;
+
+
+class 3AS_GAT;
+class 3AS_GAT_Light;
+class 3AS_Hailfire_AT;
+class 3AS_Hailfire_SAM;
+class 3AS_Hailfire_Rocket;

@@ -26,5 +26,6 @@ if ((_hitCount+1) != _maxHitCount) exitWith {
 
 // Hit count is at max
 _unit setDamage 1;
+// player addPlayerScores [0, 1, 0, 0, 1];
 
 [_unit, _allDamages, _typeOfDamage];

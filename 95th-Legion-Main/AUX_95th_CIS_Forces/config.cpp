@@ -15,6 +15,14 @@ class CfgPatches {
         name="AUX 95th Droid Units";
 		requiredAddons[]={"A3_Characters_F", "JLTS_characters_DroidUnits"};
 		units[]={
+			"AUX_95th_Air_Unit_Vulture",
+			"AUX_95th_Air_Unit_Vulture_AA",
+			"AUX_95th_Air_Unit_Vulture_CAS",
+			"AUX_95th_Air_Unit_Tri_Fighter",
+			"AUX_95th_Air_Unit_Dropship",
+			"AUX_95th_Air_Unit_Gunship",
+			"AUX_95th_Air_Unit_Gunship_Transport",
+
 			"AUX_95th_Droid_B1_Unit_AA",
 			"AUX_95th_Droid_B1_Unit_AT",
 			"AUX_95th_Droid_B1_Unit_AutoRifleman",
@@ -31,6 +39,20 @@ class CfgPatches {
 			"AUX_95th_Droid_B2_Unit_Shotgun",
 
 			"AUX_95th_Human_Unit_Riot",
+
+			"AUX_95th_Tank_Unit_AAT",
+			"AUX_95th_Tank_Unit_AAT_Winter",
+			"AUX_95th_Tank_Unit_AAT_Desert",
+			"AUX_95th_Tank_Unit_AAT_Arid",
+			"AUX_95th_Tank_Unit_AAT_Heavy",
+			"AUX_95th_Tank_Unit_N99",
+			"AUX_95th_Tank_Unit_DSD",
+			"AUX_95th_Tank_Unit_MTT",
+			"AUX_95th_Tank_Unit_Hailfire_AT",
+			"AUX_95th_Tank_Unit_Hailfire_SAM",
+			"AUX_95th_Tank_Unit_Artillery",
+			"AUX_95th_Tank_Unit_GAT",
+			"AUX_95th_Tank_Unit_GAT_Light",
 
 			"AUX_95th_Droid_Turret_Roof_Turret",
 			"AUX_95th_Droid_Turret_Roof_Turret_Shotgun",
@@ -59,12 +81,14 @@ class CfgEditorCategories {
 };
 
 class CfgEditorSubcategories {
+	class AUX_95th_CIS_Forces_Air_Units { displayName="Air Units"; };
 	class AUX_95th_CIS_Forces_Droids_B1{displayName="B1 Battledroids (Standard)";};
 	class AUX_95th_CIS_Forces_Droids_B1_Rocket{displayName="B1 Battledroids (Rocket)";};
 	class AUX_95th_CIS_Forces_Droids_B2{displayName="B2 Battledroids";};
 	class AUX_95th_CIS_Forces_Droids_Turrets{displayName="Turrets";};
 	class AUX_95th_CIS_Forces_Droids_Commando { displayName="Commandos"; };
 	class AUX_95th_CIS_Forces_Humans { displayName="Humans"; };
+	class AUX_95th_CIS_Forces_Tanks { displayName="Tanks"; };
 	class AUX_95th_CIS_Forces_CivilServices { displayName="Civil Services"; };
 };
 
@@ -87,6 +111,12 @@ class CfgWeapons {
 class CfgVehicles {
 	#include "Definitions.hpp"
 
+	// Air Units
+	#include "Units\Air Units\Gunships.hpp"
+	#include "Units\Air Units\Tri Fighter.hpp"
+	#include "Units\Air Units\Vultures.hpp"
+	#include "Units\Air Units\Dropship.hpp"
+
 	// B1 Units
 	#include "Units\B1\AA.hpp"
 	#include "Units\B1\AT.hpp"
@@ -107,6 +137,14 @@ class CfgVehicles {
 
 	// Humans
 	#include "Units\Humans\Riot.hpp"
+
+	// Tanks
+	#include "Units\Tanks\AATs.hpp"
+	#include "Units\Tanks\N99.hpp"
+	#include "Units\Tanks\MTT.hpp"
+	#include "Units\Tanks\DSD.hpp"
+	#include "Units\Tanks\Hailfire.hpp"
+	#include "Units\Tanks\GAT.hpp"
 
 	// Turrets
 	#include "Units\Turrets\Roof Turret Blaster.hpp"
