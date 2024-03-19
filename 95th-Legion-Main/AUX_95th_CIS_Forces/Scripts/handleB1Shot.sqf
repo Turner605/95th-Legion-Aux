@@ -1,15 +1,14 @@
 params ["_unit", "_allDamages", "_typeOfDamage"];
  
+if(!(alive _unit)) exitWith {[_unit, _allDamages, _typeOfDamage]};
 if(!(["AUX_95th_Droid_B1", (typeOf _unit)] call BIS_fnc_inString)) exitWith {[_unit, _allDamages, _typeOfDamage]};
 
 private _hitCount = _unit getVariable "AUX_95th_Hit_Count";
 private _maxHitCount = AUX_95th_Droid_Unit_B1_MaxHits;
+private _hitsToTake = 1;
 
 // Check if headshot
-if (((_allDamages select 0) select 1) == "Head") exitWith {
-	_unit setDamage 1;
-	[];
-};
+if (((_allDamages select 0) select 1) == "Head") then {_hitsToTake = AUX_95th_Droid_Unit_B1_MaxHits;};
 
 // Check if hits not defined
 if (isNil "_hitCount") exitWith {
@@ -18,8 +17,8 @@ if (isNil "_hitCount") exitWith {
 };
 
 // Check if hit count is not at max
-if ((_hitCount+1) != _maxHitCount) exitWith {
-	_hitCount = _hitCount + 1;
+if ((_hitCount+_hitsToTake) < _maxHitCount) exitWith {
+	_hitCount = _hitCount + _hitsToTake;
 	_unit setVariable ["AUX_95th_Hit_Count", _hitCount];
 	[];
 };

@@ -1,5 +1,6 @@
 params ["_unit", "_allDamages", "_typeOfDamage"];
 
+if(!(alive _unit)) exitWith {[_unit, _allDamages, _typeOfDamage]};
 if(!(["AUX_95th_Droid_Commando_Unit", (typeOf _unit)] call BIS_fnc_inString)) exitWith {[_unit, _allDamages, _typeOfDamage]};
 
 private _hitCount = _unit getVariable "AUX_95th_Hit_Count";
@@ -24,5 +25,11 @@ if ((_hitCount+_hitsToTake) < _maxHitCount) exitWith {
 
 // Hit count is at max
 _unit setDamage 1;
+
+[[_shooter], {
+	params ["_shooter"];
+
+	_shooter addPlayerScores [1, 0, 0, 0, 0];
+}] remoteExec ["call", 0, true];
 
 [_unit, _allDamages, _typeOfDamage];
