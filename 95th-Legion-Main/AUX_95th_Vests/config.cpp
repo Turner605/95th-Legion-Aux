@@ -18,12 +18,13 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper", "Turner", "Taun", "Hypo", "Bretek"};
+				values[] = {"Trooper", "Turner", "Taun", "Hypo", "Bretek", "Volt"};
 				class Trooper { label = "Trooper"; description = "Default Kama Vest"; };
 				class Turner { label = "Turner"; description = "Turner's Vest"; };
 				class Taun { label = "Taun"; description = "Taun's Vest"; };
 				class Hypo { label = "Hypo"; description = "Hypo's Vest"; };
 				class Bretek { label = "Bretek"; description = "Bretek's Vest"; };
+				class Volt { label = "Volt"; description = "Volt's Vest"; };
 			};
 		};
 
@@ -34,11 +35,12 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper", "Turner", "Hypo", "Bretek"};
+				values[] = {"Trooper", "Turner", "Hypo", "Bretek", "Volt"};
 				class Trooper { label = "Trooper"; description = "Default Sergeant Vest"; };
 				class Turner { label = "Turner"; description = "Turner's Vest"; };
 				class Hypo { label = "Hypo"; description = "Hypo's Vest"; };
 				class Bretek { label = "Bretek"; description = "Bretek's Vest"; };
+				class Volt { label = "Volt"; description = "Volt's Vest"; };
 			};
 		};
 
