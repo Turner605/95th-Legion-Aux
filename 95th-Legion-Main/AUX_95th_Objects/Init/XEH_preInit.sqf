@@ -110,7 +110,7 @@ private _playerCustomsList = [
 	"Osprey", "Chimera", "Hypo", "Neary", "Smokery", "Foley", "Prophet", "Mobius", "Taylor", 
 	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard", 
 	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
-	"Sergeant", "Kev", "Titan"
+	"Sergeant", "Kev", "Titan", "Taun"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
@@ -142,7 +142,7 @@ private _arsenalVests = [
 	"AUX_95th_Vest_Sergeant_Bretek", "AUX_95th_Vest_Lieutenant_Bretek", "AUX_95th_Vest_CIO_Bretek", "AUX_95th_Kama_Bretek",
 	"AUX_95th_Vest_Sergeant_Havoc", "AUX_95th_Vest_Lieutenant_Havoc", "AUX_95th_Vest_CIO_Havoc", "AUX_95th_Kama_Havoc",
 	"AUX_95th_Vest_Sergeant_Outcast", "AUX_95th_Vest_Lieutenant_Outcast", "AUX_95th_Vest_CIO_Outcast", "AUX_95th_Kama_Outcast",
-	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Kama_Turner"
+	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Kama_Turner", "AUX_95th_Kama_Taun", "AUX_95th_Kama_Stitch"
 ];
 
 //-----------------------------# Backpacks #-----------------------------------
