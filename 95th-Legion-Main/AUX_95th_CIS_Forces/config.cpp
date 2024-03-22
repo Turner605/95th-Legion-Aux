@@ -207,6 +207,8 @@ class CfgGroups {
 };
 
 class CfgFunctions { class AUX_95th { class CIS_Forces {
+	class B2Init {file = "\AUX_95th_CIS_Forces\Init\B2Init.sqf";};
+
 	class B1Init {file = "\AUX_95th_CIS_Forces\Init\B1Init.sqf";};
 	class handleB1Shot {file = "\AUX_95th_CIS_Forces\Scripts\handleB1Shot.sqf";};
 	class handleBXShot {file = "\AUX_95th_CIS_Forces\Scripts\handleBXShot.sqf";};
@@ -223,7 +225,11 @@ class CfgFunctions { class AUX_95th { class CIS_Forces {
 
 class Extended_InitPost_EventHandlers {
 	class AUX_95th_Droid_B1_Rocket_Unit_Rifleman {class AUX_95th_Droid_B1_Rocket_Unit_Rifleman_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_B1Init;";};};
-	
+		
+	class AUX_95th_Droid_B2_Unit_Blaster {class AUX_95th_Droid_B2_Unit_Blaster_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_B2Init;";};};
+	class AUX_95th_Droid_B2_Unit_GL {class AUX_95th_Droid_B2_Unit_GL_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_B2Init;";};};
+	class AUX_95th_Droid_B2_Unit_Shotgun {class AUX_95th_Droid_B2_Unit_Shotgun_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_B2Init;";};};
+
 	class AUX_95th_Droid_Commando_Unit_Normal {class AUX_95th_Droid_Commando_Unit_Normal_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
 	class AUX_95th_Droid_Commando_Unit_Captain {class AUX_95th_Droid_Commando_Unit_Captain_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
 	class AUX_95th_Droid_Commando_Unit_Citadel {class AUX_95th_Droid_Commando_Unit_Citadel_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};

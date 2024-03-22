@@ -71,10 +71,9 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Volt","Sand", "Smaug", "Manila", "Osprey", "Chimera", "King"};
+				values[] = {"Volt","Sand", "Manila", "Osprey", "Chimera", "King"};
 				class Volt { label = "Volt"; description = "Volt's Helmet"; };
 				class Sand { label = "Sand"; description = "Sand's Helmet"; };
-				class Smaug { label = "Smaug"; description = "Smaug's Helmet"; };
 				class Manila { label = "Manila"; description = "Manila's Helmet"; };
 				class Osprey { label = "Osprey"; description = "Osprey's Helmet"; };
 				class Chimera { label = "Chimera"; description = "Chimera's Helmet"; };
@@ -89,12 +88,13 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Hypo", "Neary", "Smokery","Kev","Titan"};
+				values[] = {"Hypo", "Neary", "Smokery","Kev", "Titan", "Smaug"};
 				class Hypo { label = "Hypo"; description = "Hypo's Helmet"; };
 				class Neary { label = "Neary"; description = "Neary's Helmet"; };
 				class Smokery { label = "Smokery"; description = "Smokery's Helmet"; };
 				class Kev { label = "Kev"; description = "Kev's Helmet"; };
 				class Titan { label = "Titan"; description = "Titan's Helmet"; };
+				class Smaug { label = "Smaug"; description = "Smaug's Helmet"; };
 			};
 		};
 
