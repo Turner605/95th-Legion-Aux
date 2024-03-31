@@ -137,12 +137,14 @@ private _arsenalVests = [
 	"95th_Basic_Vest_Flame","95th_Basic_Vest_Riot","95th_Basic_Vest_Marksman","95th_Basic_Vest_Heavy","95th_Basic_Vest_AT",
 	"95th_Basic_Vest_Medic","95th_Basic_Vest_Jet","95th_Basic_Vest_Grenadier","95th_Basic_Vest_Pilot","95th_ARC_Vest_Trooper",
 
-	"AUX_95th_Vest_Sergeant_Trooper", "AUX_95th_Vest_Lieutenant_Trooper", "AUX_95th_Vest_CIO_Trooper", "AUX_95th_Kama_Trooper",
-	"AUX_95th_Vest_Sergeant_Hypo", "AUX_95th_Vest_Lieutenant_Hypo", "AUX_95th_Vest_CIO_Hypo", "AUX_95th_Kama_Hypo",
-	"AUX_95th_Vest_Sergeant_Bretek", "AUX_95th_Vest_Lieutenant_Bretek", "AUX_95th_Vest_CIO_Bretek", "AUX_95th_Kama_Bretek",
-	"AUX_95th_Vest_Sergeant_Havoc", "AUX_95th_Vest_Lieutenant_Havoc", "AUX_95th_Vest_CIO_Havoc", "AUX_95th_Kama_Havoc",
-	"AUX_95th_Vest_Sergeant_Outcast", "AUX_95th_Vest_Lieutenant_Outcast", "AUX_95th_Vest_CIO_Outcast", "AUX_95th_Kama_Outcast",
-	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Kama_Turner", "AUX_95th_Kama_Taun", "AUX_95th_Kama_Stitch"
+	"AUX_95th_Vest_Sergeant_Trooper", "AUX_95th_Vest_Lieutenant_Trooper", "AUX_95th_Vest_CIO_Trooper", "AUX_95th_Vest_Kama_Trooper",
+	"AUX_95th_Vest_Sergeant_Hypo", "AUX_95th_Vest_Lieutenant_Hypo", "AUX_95th_Vest_CIO_Hypo", "AUX_95th_Vest_Kama_Hypo",
+	"AUX_95th_Vest_Sergeant_Bretek", "AUX_95th_Vest_Lieutenant_Bretek", "AUX_95th_Vest_CIO_Bretek", "AUX_95th_Vest_Kama_Bretek",
+	"AUX_95th_Vest_Sergeant_Havoc", "AUX_95th_Vest_Lieutenant_Havoc", "AUX_95th_Vest_CIO_Havoc", "AUX_95th_Vest_Kama_Havoc",
+	"AUX_95th_Vest_Sergeant_Outcast", "AUX_95th_Vest_Lieutenant_Outcast", "AUX_95th_Vest_CIO_Outcast", "AUX_95th_Vest_Kama_Outcast",
+	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Vest_Kama_Turner",
+	"AUX_95th_Vest_Kama_Taun", 
+	"AUX_95th_Vest_Kama_Stitch"
 ];
 
 //-----------------------------# Backpacks #-----------------------------------
@@ -158,7 +160,10 @@ private _arsenalBackpacks = [
 	"AUX_95th_MC_Jetpack_Trooper", "AUX_95th_MC_Jetpack_Turner",
 	"95th_Katarn_Backpack","AUX_95th_BX42_Backpack",
 	"3AS_Republic_HR_Bag","3AS_Republic_HR_Shield_Bag","JLTS_UST_turret_GAR_backpack","JLTS_portable_shield_gar_backpack", "ACE_TacticalLadder_Pack",
-	"AUX_95th_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Invisible_Stitch", "AUX_95th_Backpack_Visible_Gridlock"
+	"AUX_95th_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Visible_Stitch", "AUX_95th_JT12_Jetpack_Stitch",
+	"AUX_95th_Backpack_Visible_Gridlock", "AUX_95th_RTO_Backpack_Visible_Gridlock",
+	"AUX_95th_Backpack_Visible_Pendragon", "AUX_95th_RTO_Backpack_Visible_Pendragon",
+	"AUX_95th_Backpack_Visible_Titan", "AUX_95th_RTO_Backpack_Visible_Titan"
 ];
 
 //-----------------------------# Gear #-----------------------------------

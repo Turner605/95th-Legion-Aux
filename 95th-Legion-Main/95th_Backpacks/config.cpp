@@ -61,11 +61,12 @@ class XtdGearModels {
 			class Role {
 				labels = "Role";
 				alwaysSelectable = 1;
-				values[] = {"Turner", "Stitch", "Pendragon", "Gridlock"};
+				values[] = {"Turner", "Stitch", "Pendragon", "Gridlock", "Titan"};
 				class Turner { label = "Turner"; description = "Turners Backpack"; };
 				class Stitch { label = "Stitch"; description = "Stitch's Backpack"; };
 				class Pendragon { label = "Pendragon"; description = "Pendragon's Backpack"; };
 				class Gridlock { label = "Gridlock"; description = "Gridlock's Backpack"; };
+				class Titan { label = "Titan"; description = "Titan's Backpack"; };
 			};
 
 			class Visibility {
@@ -135,7 +136,6 @@ class XtdGearModels {
 	};
 };
 
-
 class CfgVehicles {
 	class JLTS_Clone_belt_bag;
 	class JLTS_Clone_backpack;
@@ -166,12 +166,16 @@ class CfgVehicles {
 	NEW_95TH_RTO_BACKPACK_VISIBLE_MINI(Turner,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 
 	NEW_95TH_BACKPACK_VISIBLE(Stitch,95th_Custom_Backpacks,"95th Custom Backpack",400)};
-	NEW_95TH_BACKPACK_INVISIBLE(Stitch,95th_Backpacks,"95th Backpack",400)};
 	NEW_95TH_RTO_BACKPACK_VISIBLE(Stitch,95th_Custom_Backpacks,"95th Custom Backpack",400)};
-	NEW_95TH_RTO_BACKPACK_INVISIBLE(Stitch,95th_Backpacks,"95th Backpack",400)};
+
+	NEW_95TH_BACKPACK_VISIBLE(Pendragon,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 	NEW_95TH_RTO_BACKPACK_VISIBLE(Pendragon,95th_Custom_Backpacks,"95th Custom Backpack",400)};
-	NEW_95TH_RTO_BACKPACK_INVISIBLE(Pendragon,95th_Backpacks,"95th Backpack",400)};
+
 	NEW_95TH_BACKPACK_VISIBLE(Gridlock,95th_Custom_Backpacks,"95th Custom Backpack",400)};
+	NEW_95TH_RTO_BACKPACK_VISIBLE(Gridlock,95th_Custom_Backpacks,"95th Custom Backpack",400)};
+
+	NEW_95TH_BACKPACK_VISIBLE(Titan,95th_Custom_Backpacks,"95th Custom Backpack",400)};
+	NEW_95TH_RTO_BACKPACK_VISIBLE(Titan,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 
 	//###############################Jetpacks###############################
 
