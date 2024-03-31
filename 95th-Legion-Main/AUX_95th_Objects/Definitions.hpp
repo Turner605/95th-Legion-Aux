@@ -19,7 +19,7 @@ class 3as_FOB_turret_base_prop;
 class 3AS_Terminal_Console_Med_Prop;
 class DSS_Permissions_Droid;
 class 3AS_Venator_Room_Medium_Prop;
-class 3as_planetaryshield_50;
+class 3as_planetaryshield_501w;
 class SquadShield;
 class ls_acclamator_4;
 class Land_lsb_fob_hBarrier_ramp;

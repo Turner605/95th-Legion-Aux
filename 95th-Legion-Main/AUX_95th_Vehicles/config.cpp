@@ -57,6 +57,7 @@ class Extended_init_EventHandlers {
 	class AUX_95th_LAAT_Mrk1 {class AUX_95th_LAAT_Mrk1_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
 	class AUX_95th_LAAT_Mrk2 {class AUX_95th_LAAT_Mrk2_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
 	class AUX_95th_LAAT_Mrk2Lights {class AUX_95th_LAAT_Mrk2_Lights_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
+	class AUX_95th_LAAT_C {class AUX_95th_LAAT_C_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
 };
 
 class Extended_Deleted_EventHandlers {

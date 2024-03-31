@@ -20,8 +20,8 @@ class AUX_95th_AirUtil_Transport : 3AS_TERMINAL_2_PROP {
 		};
 		class SpawnLAATC {
 			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
-			displayName = "Spawn [3AS] LAAT/C";
-			statement = "[this, player, '3as_LAATC'] spawn AUX_95th_fnc_handleAirSpawned;"; 
+			displayName = "Spawn [95th] LAAT/C";
+			statement = "[this, player, 'AUX_95th_LAAT_C'] spawn AUX_95th_fnc_handleAirSpawned;"; 
 		};
 		class SpawnLAATLE {
 			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
