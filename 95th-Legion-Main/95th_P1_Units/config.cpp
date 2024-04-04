@@ -123,7 +123,7 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Volt","Jinter","Bretek","Commie","Smaug","Smokery","Manila","Havoc","MadHatter","Cheezy","Revan","Sand","Kev","Sythe","Splash"};
+				values[] = {"Volt","Jinter","Bretek","Commie","Smaug","Smokery","Manila","Havoc","MadHatter","Cheezy","Revan","Sand","Kev","Sythe","Splash","Solvest"};
 				class Volt { label = "Volt"; description = "Volt's Uniform"; };
 				class Jinter { label = "Jinter"; description = "Jinter's Uniform"; };
 				class Bretek { label = "Bretek"; description = "Bretek's Uniform"; };
@@ -139,6 +139,7 @@ class XtdGearModels {
 				class Kev { label = "Kev"; description = "Kev's Uniform"; };
 				class Sythe { label = "Sythe"; description = "Sythe's Uniform"; };
 				class Splash { label = "Splash"; description = "Splash's Uniform"; };
+				class Solvest { label = "Solvest"; description = "Solvest's Uniform"; };
 			};
 		};
 
@@ -264,6 +265,7 @@ class cfgWeapons {
 	NEW_95TH_CUSTOM_P1_UNIFORM(Kev,Kev)};
 	NEW_95TH_CUSTOM_P1_UNIFORM(Sythe,Sythe)};
 	NEW_95TH_CUSTOM_P1_UNIFORM(Splash,Splash)};
+	NEW_95TH_CUSTOM_P1_UNIFORM(Solvest,Solvest)};
 
 	NEW_95TH_MC_UNIFORM(Zeus,Zeus)};
 	NEW_95TH_MC_UNIFORM(Turner,Turner)};
@@ -303,6 +305,7 @@ class CfgVehicles {
 	NEW_95TH_RIFLEMAN_UNIT(Kev,Kev,Trooper)};
 	NEW_95TH_RIFLEMAN_UNIT(Sythe,Sythe,Sergeant)};
 	NEW_95TH_RIFLEMAN_UNIT(Splash,Splash,Zeus)};
+	NEW_95TH_RIFLEMAN_UNIT(Solvest,Solvest,Zeus)};
 
 	// Uniform Class Name, Helmet Name, Vest Name
 	NEW_95TH_MC_UNIT(Zeus,Veteran,Zeus)};
