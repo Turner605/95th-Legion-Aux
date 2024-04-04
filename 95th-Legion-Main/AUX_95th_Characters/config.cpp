@@ -34,7 +34,15 @@ class CfgPatches {
 			"AUX_95th_Unit_P1_Basic_Solvest",
 
 			"AUX_95th_Unit_P1_Cold_Assault_Trooper",
-			"AUX_95th_Unit_Commando_Trooper"
+			"AUX_95th_Unit_Commando_Trooper",
+
+			"AUX_95th_Generic_Unit_P1_Basic_Rifleman",
+			"AUX_95th_Generic_Unit_P1_Basic_Pilot",
+			"AUX_95th_Generic_Unit_P1_Basic_ARF",
+			"AUX_95th_Generic_Unit_P1_Basic_Airborne",
+			"AUX_95th_Generic_Unit_P1_Basic_SpecOps",
+			"AUX_95th_Generic_Unit_P1_Basic_Engineer",
+			"AUX_95th_Generic_Unit_P1_Basic_Hazard"
 		};
 	};
 };
@@ -220,10 +228,11 @@ class CfgEditorSubcategories {
 	class AUX_95th_Legion_Characters_Category_Squad_Two{displayName="1-2 Units";};
 	class AUX_95th_Legion_Characters_Category_Squad_Three{displayName="1-3 Units";};
 	class AUX_95th_Legion_Characters_Category_Squad_Four{displayName="1-4 Units";};
-	class AUX_95th_Legion_Characters_Category_Squad_Five{displayName="1-5 Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Five{displayName="5-0 Units";};
 	class AUX_95th_Legion_Characters_Category_Squad_Six{displayName="6-0 Units";};
 	class AUX_95th_Legion_Characters_Category_Squad_Fallen{displayName="Fallen Units";};
 	class AUX_95th_Legion_Characters_Category_Squad_Unassigned{displayName="Unassigned Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Generic{displayName="Generic Units";};
 };
 
 class CfgWeapons {
@@ -245,35 +254,3 @@ class CfgVehicles {
 
 	#include "Config\CfgVehicles.hpp"
 };
-
-
-
-	// // Uniform Class Name, Helmet Name, Vest Name
-	// NEW_95TH_PILOT_UNIT(Trooper,Trooper,Trooper)};
-	// NEW_95TH_PILOT_UNIT(Senior,Trooper,Trooper)};
-	// NEW_95TH_PILOT_UNIT(Veteran,Trooper,Veteran)};
-	// NEW_95TH_PILOT_UNIT(Sergeant,Trooper,Sergeant)};
-
-	// // Uniform Class Name, Helmet Name, Vest Name
-	// NEW_95TH_AIRBORNE_UNIT(Trooper,Trooper,Trooper)};
-	// NEW_95TH_AIRBORNE_UNIT(Sergeant,Trooper,Sergeant)};
-	// NEW_95TH_AIRBORNE_UNIT(Captain,Trooper,Captain)};
-	// NEW_95TH_AIRBORNE_UNIT(Lieutenant,Trooper,Lieutenant)};
-
-	// // Uniform Class Name, Helmet Name, Vest Name
-	// NEW_95TH_ARF_UNIT(Trooper,Trooper,Trooper)};
-	// NEW_95TH_ARF_UNIT(Sergeant,Trooper,Sergeant)};
-	// NEW_95TH_ARF_UNIT(Captain,Trooper,Captain)};
-	// NEW_95TH_ARF_UNIT(Lieutenant,Trooper,Lieutenant)};
-
-	// // Uniform Class Name, Helmet Name, Vest Name
-	// NEW_95TH_ARC_UNIT(Trooper,Trooper,ARC)};
-
-	// // Uniform Class Name, Helmet Name, Vest Name
-	// NEW_95TH_SPECOPS_UNIT(Trooper,Trooper,Trooper)};
-
-	// // Uniform Class Name, Helmet Name, Vest Name
-	// NEW_95TH_ENGINEER_UNIT(Trooper,Trooper,Trooper)};
-
-	// // Uniform Class Name, Helmet Name, Vest Name
-	// NEW_95TH_HAZARD_UNIT(Trooper,Trooper,Trooper)};
