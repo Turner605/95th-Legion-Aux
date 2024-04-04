@@ -189,7 +189,7 @@ private _roleArray = [
 			[_x select 8, _x select 9], 
 			_x select 10, 
 			"", ["JLTS_CloneBinocular","","","",["Laserbatteries",1],[],""], ["ItemMap","ItemGPS","JLTS_clone_comlink","ItemCompass","ItemWatch","95th_P1_Nightvision_Invisible"]
-		],[]
+		], createHashMapFromArray []
 	],
 	true
 ] call ace_arsenal_fnc_addDefaultLoadout; } forEach _roleArray;
