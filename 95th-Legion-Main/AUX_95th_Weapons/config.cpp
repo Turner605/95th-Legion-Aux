@@ -27,15 +27,19 @@ class CfgPatches {
 // - Hacking Dart - One shot to hack a target
 
 //TODO:
-// DC15A
-// DC15S
 // DW32S
 // DC17A (Pistol)
-// DC15L
-// Westar
-// DC15C
-// DC15C_GL
-// Westar_GL
+
+// Westar - 3AS_WestarM5_F
+// Westar GL - 3AS_WestarM5_GL
+// DC15L - 3AS_DC15L_F
+// DC15C GL - 3AS_DC15C_GL
+// DC15C - 3AS_DC15C_F
+// Z6 - JLTS_Z6
+// EPL2 - JLTS_EPL2
+// DC15S - JLTS_DC15S
+// DC15A - JLTS_DC15A_plastic
+// DC15A GL - JLTS_DC15A_ugl_plastic
 
 class CowsSlot;
 class UnderBarrelSlot;
@@ -49,6 +53,7 @@ class CfgAmmo {
 	#include "Ammo\DC15X.hpp"
 	#include "Ammo\DP23.hpp"
 	// #include "Ammo\BX42.hpp" // Not Applicable
+	#include "Ammo\BX42_Rocket_HE.hpp"
 	#include "Ammo\Grappler.hpp"
 };
 
@@ -57,6 +62,7 @@ class CfgWeapons {
 	#include "Muzzles\Stuns.hpp"
 	#include "Muzzles\DC15X.hpp"
 	#include "Muzzles\DP23.hpp"
+	#include "Muzzles\BX42.hpp"
 
 	#include "Weapons\Definitions.hpp"
 	#include "Weapons\DC15X.hpp"
@@ -74,4 +80,5 @@ class CfgMagazines {
 	#include "Magazines\BX42.hpp"
 	#include "Magazines\Stuns.hpp"
 	#include "Magazines\Grappler.hpp"
+	#include "Magazines\BX42_Rocket_HE.hpp"
 };
