@@ -120,7 +120,7 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Hypo", "Neary", "Smokery","Kev", "Titan", "Smaug"};
+				values[] = {"Hypo", "Neary", "Smokery", "Kev", "Titan", "Smaug"};
 				class Hypo { label = "Hypo"; description = "Hypo's Uniform"; };
 				class Neary { label = "Neary"; description = "Neary's Uniform"; };
 				class Smokery { label = "Smokery"; description = "Smokery's Uniform"; };
