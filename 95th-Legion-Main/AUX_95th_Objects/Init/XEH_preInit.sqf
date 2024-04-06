@@ -110,7 +110,7 @@ private _playerCustomsList = [
 	"Osprey", "Chimera", "Hypo", "Neary", "Smokery", "Foley", "Prophet", "Mobius", "Taylor", 
 	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard", 
 	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
-	"Sergeant", "Kev", "Titan", "Taun"
+	"Sergeant", "Kev", "Titan", "Taun", "Test"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
