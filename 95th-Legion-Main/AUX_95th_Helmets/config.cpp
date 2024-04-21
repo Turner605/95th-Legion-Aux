@@ -151,7 +151,7 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Outcast", "Jinter", "Edge"};
+				values[] = {"Outcast", "Edge"};
 				class Outcast { label = "Outcast"; description = "Outcast's Helmet"; };
 				class Edge { label = "Edge"; description = "Edge's Helmet"; };
 			};
