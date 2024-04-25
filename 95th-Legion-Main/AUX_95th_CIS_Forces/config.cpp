@@ -176,7 +176,7 @@ class CfgVehicles {
 		faction="AUX_95th_CIS";
 		editorCategory="AUX_95th_CIS_Forces";
 		editorSubcategory="AUX_95th_CIS_Forces_Droids_Commando";
-		uniformClass="95th_P1_Uniform_Trooper";
+		uniformClass="AUX_95th_Uniform_P1_Basic_Trooper";
         side = 0;
 		scope=2; 
 		scopecurator=2;

@@ -1,116 +1,17 @@
-[
-    "enable_kit_checker_95th", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-    "CHECKBOX", // setting type
-    "Enable The Arsenal Kit Checker", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-    "95th Aux Mod", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [false, true, true], // data for this setting: [min, max, default, number of shown trailing decimals]
-    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
-    {} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;
-
-[
-    "AUX_95th_Shield_Small_Health", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-    "SLIDER", // setting type
-    ["Small Shield Health", "Small Shield Health"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-    ["95th Aux Mod", "Shields"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [10, 10000, 2000, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
-    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
-    {} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;
-
-[
-    "AUX_95th_Shield_Small_Cooldown_Duration", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-    "SLIDER", // setting type
-    ["Small Shield Cooldown", "Small Shield Cooldown"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-    ["95th Aux Mod", "Shields"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [1, 240, 60, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
-    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
-    {} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;
-
-[
-    "AUX_95th_Droid_Factory_Wave_Delay", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-    "SLIDER", // setting type
-    ["Spawner Wave Delay", "The delay between spawner waves."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-    ["95th Aux Mod", "Droid Factories"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [1, 240, 60, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
-    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
-    {} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;
-
-[
-    "AUX_95th_Droid_Factory_Flak_Build_Delay", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-    "SLIDER", // setting type
-    ["Spawner Wave Delay", "The delay before a flak cannon will rebuild itself."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-    ["95th Aux Mod", "Droid Factories"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [1, 920, 480, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
-    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
-    {} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;
-
-[
-    "AUX_95th_Droid_Factory_Ground_Range", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-    "SLIDER", // setting type
-    ["Spawner Ground Range", "The distance to search for valid ground targets"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-    ["95th Aux Mod", "Droid Factories"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [100, 20000, 1500, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
-    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
-    {} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;
-
-[
-    "AUX_95th_Droid_Factory_Air_Range", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-    "SLIDER", // setting type
-    ["Spawner Air Range", "The distance to search for valid air targets"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-    ["95th Aux Mod", "Droid Factories"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [100, 100000, 20000, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
-    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
-    {} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;
-
-//-----------------------------# Weapons #-----------------------------------
-private _arsenalWeapons = [
-	"JLTS_DC15S","JLTS_DC15A_plastic","JLTS_DC15A","AUX_95th_DP23","3AS_WestarM5_F","JLTS_DC17SA","ACE_VMH3","ACE_VMM3","Weap_melee_knife","Knife_m3",
-	"Police_Bat","Shovel_Russian","UNSC_Knife","UNSC_Knife_reversed","3AS_RPS6_F","AUX_95th_DC15X","JLTS_DW32S","3AS_DC15L_F","JLTS_Z6","3AS_PLX1_F",
-	"3AS_RPS6_HP","3AS_DC15C_F","3AS_DC15C_GL","AUX_95th_BX42","JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL"
-];
-
-//-----------------------------# Ammo #-----------------------------------
-private _arsenalAmmo = [
-	"3AS_40Rnd_EC40_Mag","3AS_200Rnd_EC40_Mag","JLTS_DC15A_mag","JLTS_stun_mag_short","JLTS_stun_mag_long",
-	"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F",
-	"UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell",
-	"1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","ACE_HuntIR_M203","OPTRE_1Rnd_Smoke_Grenade_shell",
-	"OPTRE_1Rnd_SmokeRed_Grenade_shell","OPTRE_1Rnd_SmokeGreen_Grenade_shell","OPTRE_1Rnd_SmokeYellow_Grenade_shell","OPTRE_1Rnd_SmokePurple_Grenade_shell",
-	"OPTRE_1Rnd_SmokeBlue_Grenade_shell","OPTRE_1Rnd_SmokeOrange_Grenade_shell","ACE_40mm_Flare_white","ACE_40mm_Flare_red","ACE_40mm_Flare_green","ACE_40mm_Flare_ir",
-	"OPTRE_3Rnd_Smoke_Grenade_shell","OPTRE_3Rnd_SmokeRed_Grenade_shell","OPTRE_3Rnd_SmokeGreen_Grenade_shell","OPTRE_3Rnd_SmokeYellow_Grenade_shell",
-	"OPTRE_3Rnd_SmokePurple_Grenade_shell","OPTRE_3Rnd_SmokeBlue_Grenade_shell","OPTRE_3Rnd_SmokeOrange_Grenade_shell","JLTS_DC15S_mag","AUX_95th_DC15X_Mag",
-	"AUX_95th_DP23_Mag","JLTS_DW32S_mag","JLTS_Z6_mag","JLTS_RPS6_mag","JLTS_RPS6_HE_mag","ls_mag_at_plx","ls_mag_ap_plx","ls_mag_aa_plx","JLTS_DC17SA_mag",
-	"JLTS_EMP_mag","AUX_95th_BX42_Fuel","3AS_JLTS_MK43_AT","3AS_JLTS_MK44_HE","3AS_JLTS_MK39_AA","CBA_FakeLauncherMagazine","3AS_MK41_AT","3AS_MK42_HE",
-	"Laserbatteries","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F",
-	"3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell",
-	"3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","3AS_100Rnd_EC40_mag","3AS_5Rnd_EC80_mag","3AS_AntiArmour_mag","3AS_60Rnd_EC50_Mag",
-	"3AS_6Rnd_HE_Grenade_shell","3AS_40Rnd_EM40_Mag","3AS_200Rnd_EM40_Mag","OPTRE_1Rnd_MasterKey_Pellets","OPTRE_1Rnd_MasterKey_Slugs","OPTRE_signalSmokeR",
-	"OPTRE_signalSmokeO","OPTRE_signalSmokeY","OPTRE_signalSmokeG","OPTRE_signalSmokeB","OPTRE_signalSmokeP","OPTRE_3Rnd_MasterKey_Pellets","OPTRE_3Rnd_MasterKey_Slugs",
-	"3AS_100Rnd_EM40_mag","3AS_5Rnd_EM80_mag","3AS_60Rnd_Test_mag","3AS_60Rnd_EM50_RedPlasma"
-];
-
-//-----------------------------# Weapon Attachments #-----------------------------------
-private _arsenalAttachments = [
-	"3AS_optic_acog_DC15C","3AS_optic_reflex_DC15C","AUX_95th_DC15X_Scope","3AS_Optic_Scope_WestarM5","3AS_Optic_DC15L",
-	"SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Yellow","SEA_Optic_Holo_Two_Green",
-	"SEA_Optic_Holo_One_Blue","SEA_Optic_Holo_One_Green","SEA_Optic_Holo_One_Red","SEA_Optic_Holo_One_Yellow",
-	"acc_flashlight","acc_pointer_IR","ACE_acc_pointer_green","JLTS_DC17SA_flashlight","acc_flashlight_pistol","3AS_Bipod_DC15L_f"
-];
-
-//-----------------------------# Players #-----------------------------------
-private _playerCustomsList = [
+//-----------------------------# Customs List #-----------------------------------
+private _customHelmetList = [
 	"Trooper","Shiny", "Medic", "Senior", "Veteran", "Turner","Splash", 
 	"Medic", "Senior", "Veteran", "Havoc","Sythe", "Cheezy", "Volt", "Sand", "Smaug", "Manila", 
 	"Osprey", "Chimera", "Hypo", "Neary", "Smokery", "Foley", "Prophet", "Mobius", "Taylor", 
 	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard", 
 	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
-	"Sergeant", "Kev", "Titan", "Taun", "Edge"
+	"Sergeant", "Kev", "Titan", "Taun", "Edge", "King"
+];
+
+private _customUniformList = [
+	"Trooper", "Shiny", "Medic", "Senior", "Veteran", "Senior", "Sergeant", "Lieutenant", 
+	"Turner", "Splash", "Commie", "Solvest", "Smokery", "Kev", "Smaug", "Revan", "Volt",
+	"Sand", "Manila", "Jinter", "Havoc", "Sythe", "Cheezy", "Bretek", "MadHatter"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
@@ -126,8 +27,11 @@ private _arsenalHelmets = [];
 {_arsenalHelmets pushBack "AUX_95th_Helmet_SpecOps_"+_x; } forEach _playerCustomsList;
 
 //-----------------------------# Uniforms #-----------------------------------
-private _arsenalUniforms = ["95th_ColdAssault_Uniform_Trooper","95th_MC_Uniform_Zeus","95th_Commando_Uniform_Trooper","95th_MC_Uniform_Turner"];
-{_arsenalHelmets pushBack "95th_P1_Uniform_"+_x; } forEach _playerCustomsList;
+private _arsenalUniforms = [];
+{_arsenalUniforms pushBack "AUX_95th_Uniform_P1_Basic_"+_x; } forEach _customUniformList;
+{_arsenalUniforms pushBack "AUX_95th_Uniform_P1_Cold_Assault_"+_x; } forEach _customUniformList;
+{_arsenalUniforms pushBack "AUX_95th_Uniform_P1_MC_"+_x; } forEach _customUniformList;
+{_arsenalUniforms pushBack "AUX_95th_Uniform_Commando_"+_x; } forEach _customUniformList;
 
 //-----------------------------# Vests #-----------------------------------
 private _arsenalVests = [
@@ -164,6 +68,41 @@ private _arsenalBackpacks = [
 	"AUX_95th_Backpack_Visible_Gridlock", "AUX_95th_RTO_Backpack_Visible_Gridlock",
 	"AUX_95th_Backpack_Visible_Pendragon", "AUX_95th_RTO_Backpack_Visible_Pendragon",
 	"AUX_95th_Backpack_Visible_Titan", "AUX_95th_RTO_Backpack_Visible_Titan"
+];
+
+//-----------------------------# Weapons #-----------------------------------
+private _arsenalWeapons = [
+	"JLTS_DC15S","JLTS_DC15A_plastic","JLTS_DC15A","AUX_95th_DP23","3AS_WestarM5_F","JLTS_DC17SA","ACE_VMH3","ACE_VMM3","Weap_melee_knife","Knife_m3",
+	"Police_Bat","Shovel_Russian","UNSC_Knife","UNSC_Knife_reversed","3AS_RPS6_F","AUX_95th_DC15X","JLTS_DW32S","3AS_DC15L_F","JLTS_Z6","3AS_PLX1_F",
+	"3AS_RPS6_HP","3AS_DC15C_F","3AS_DC15C_GL","AUX_95th_BX42","JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL"
+];
+
+//-----------------------------# Ammo #-----------------------------------
+private _arsenalAmmo = [
+	"3AS_40Rnd_EC40_Mag","3AS_200Rnd_EC40_Mag","JLTS_DC15A_mag","JLTS_stun_mag_short","JLTS_stun_mag_long",
+	"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F",
+	"UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell",
+	"1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","ACE_HuntIR_M203","OPTRE_1Rnd_Smoke_Grenade_shell",
+	"OPTRE_1Rnd_SmokeRed_Grenade_shell","OPTRE_1Rnd_SmokeGreen_Grenade_shell","OPTRE_1Rnd_SmokeYellow_Grenade_shell","OPTRE_1Rnd_SmokePurple_Grenade_shell",
+	"OPTRE_1Rnd_SmokeBlue_Grenade_shell","OPTRE_1Rnd_SmokeOrange_Grenade_shell","ACE_40mm_Flare_white","ACE_40mm_Flare_red","ACE_40mm_Flare_green","ACE_40mm_Flare_ir",
+	"OPTRE_3Rnd_Smoke_Grenade_shell","OPTRE_3Rnd_SmokeRed_Grenade_shell","OPTRE_3Rnd_SmokeGreen_Grenade_shell","OPTRE_3Rnd_SmokeYellow_Grenade_shell",
+	"OPTRE_3Rnd_SmokePurple_Grenade_shell","OPTRE_3Rnd_SmokeBlue_Grenade_shell","OPTRE_3Rnd_SmokeOrange_Grenade_shell","JLTS_DC15S_mag","AUX_95th_DC15X_Mag",
+	"AUX_95th_DP23_Mag","JLTS_DW32S_mag","JLTS_Z6_mag","JLTS_RPS6_mag","JLTS_RPS6_HE_mag","ls_mag_at_plx","ls_mag_ap_plx","ls_mag_aa_plx","JLTS_DC17SA_mag",
+	"JLTS_EMP_mag","AUX_95th_BX42_Fuel","3AS_JLTS_MK43_AT","3AS_JLTS_MK44_HE","3AS_JLTS_MK39_AA","CBA_FakeLauncherMagazine","3AS_MK41_AT","3AS_MK42_HE",
+	"Laserbatteries","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F",
+	"3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell",
+	"3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","3AS_100Rnd_EC40_mag","3AS_5Rnd_EC80_mag","3AS_AntiArmour_mag","3AS_60Rnd_EC50_Mag",
+	"3AS_6Rnd_HE_Grenade_shell","3AS_40Rnd_EM40_Mag","3AS_200Rnd_EM40_Mag","OPTRE_1Rnd_MasterKey_Pellets","OPTRE_1Rnd_MasterKey_Slugs","OPTRE_signalSmokeR",
+	"OPTRE_signalSmokeO","OPTRE_signalSmokeY","OPTRE_signalSmokeG","OPTRE_signalSmokeB","OPTRE_signalSmokeP","OPTRE_3Rnd_MasterKey_Pellets","OPTRE_3Rnd_MasterKey_Slugs",
+	"3AS_100Rnd_EM40_mag","3AS_5Rnd_EM80_mag","3AS_60Rnd_Test_mag","3AS_60Rnd_EM50_RedPlasma"
+];
+
+//-----------------------------# Weapon Attachments #-----------------------------------
+private _arsenalAttachments = [
+	"3AS_optic_acog_DC15C","3AS_optic_reflex_DC15C","AUX_95th_DC15X_Scope","3AS_Optic_Scope_WestarM5","3AS_Optic_DC15L",
+	"SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Yellow","SEA_Optic_Holo_Two_Green",
+	"SEA_Optic_Holo_One_Blue","SEA_Optic_Holo_One_Green","SEA_Optic_Holo_One_Red","SEA_Optic_Holo_One_Yellow",
+	"acc_flashlight","acc_pointer_IR","ACE_acc_pointer_green","JLTS_DC17SA_flashlight","acc_flashlight_pistol","3AS_Bipod_DC15L_f"
 ];
 
 //-----------------------------# Gear #-----------------------------------
@@ -259,3 +198,82 @@ Arsenal_Class_Items_95th = [
 // "3AS_DC17STest_F" - Dual pistols 
 // "3AS_Valken38X_F" - Valken,
 // "LFP_sonar_device" - Sonar
+
+
+
+
+
+
+
+
+
+
+[
+    "enable_kit_checker_95th", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "CHECKBOX", // setting type
+    "Enable The Arsenal Kit Checker", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    "95th Aux Mod", // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [false, true, true], // data for this setting: [min, max, default, number of shown trailing decimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
+
+[
+    "AUX_95th_Shield_Small_Health", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    ["Small Shield Health", "Small Shield Health"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    ["95th Aux Mod", "Shields"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [10, 10000, 2000, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
+
+[
+    "AUX_95th_Shield_Small_Cooldown_Duration", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    ["Small Shield Cooldown", "Small Shield Cooldown"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    ["95th Aux Mod", "Shields"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [1, 240, 60, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
+
+[
+    "AUX_95th_Droid_Factory_Wave_Delay", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    ["Spawner Wave Delay", "The delay between spawner waves."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    ["95th Aux Mod", "Droid Factories"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [1, 240, 60, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
+
+[
+    "AUX_95th_Droid_Factory_Flak_Build_Delay", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    ["Spawner Wave Delay", "The delay before a flak cannon will rebuild itself."], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    ["95th Aux Mod", "Droid Factories"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [1, 920, 480, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
+
+[
+    "AUX_95th_Droid_Factory_Ground_Range", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    ["Spawner Ground Range", "The distance to search for valid ground targets"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    ["95th Aux Mod", "Droid Factories"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [100, 20000, 1500, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;
+
+[
+    "AUX_95th_Droid_Factory_Air_Range", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
+    "SLIDER", // setting type
+    ["Spawner Air Range", "The distance to search for valid air targets"], // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
+    ["95th Aux Mod", "Droid Factories"], // Pretty name of the category where the setting can be found. Can be stringtable entry.
+    [100, 100000, 20000, 0, false], // data for this setting: [min, max, default, number of shown trailing decimals]
+    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
+    {} // function that will be executed once on mission start and every time the setting is changed.
+] call CBA_fnc_addSetting;

@@ -1,8 +1,8 @@
-#define NEW_AUX_95TH_UNIFORM_P1_COMMANDO(name,squad) class AUX_95th_Uniform_Commando_##name## : 3AS_U_Rep_Katarn_Armor {\
+#define NEW_AUX_95TH_UNIFORM_P1_COMMANDO(name,squad,displaySquad) class AUX_95th_Uniform_Commando_##name## : 3AS_U_Rep_Katarn_Armor {\
     scope = 2;\
     scopeArsenal = 2;\
 	author=95th Aux Team;\
-	displayName=[95th];\
+	displayName=[95th] ##displaySquad## Uniforms;\
 	picture=\AUX_95th_Helmets\Data\Insignias\##squad##;\
 	class ItemInfo: UniformItem {\
 		uniformClass=AUX_95th_Unit_Commando_##name##;\
