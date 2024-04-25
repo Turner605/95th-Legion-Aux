@@ -1,9 +1,9 @@
-#define NEW_AUX_95TH_ARF_HELMET(player,squad) class AUX_95th_Helmet_ARF_##player## : SEA_Helmet_ARF_base {\
+#define NEW_AUX_95TH_ARF_HELMET(player,squad,displaySquad) class AUX_95th_Helmet_ARF_##player## : SEA_Helmet_ARF_base {\
     scope = 2;\
     scopeArsenal = 2;\
 	author=95th Aux Team;\
 	picture=\AUX_95th_Helmets\Data\Insignias\##squad##;\
-	displayName=[95th];\
+	displayName=[95th] ##displaySquad## Helmets;\
 	hiddenSelections[]={Camo1,Camo2,Visor};\
 	hiddenSelectionsTextures[]={\
 		\AUX_95th_Helmets\Data\ARF\##player##\Helmet.paa,\
