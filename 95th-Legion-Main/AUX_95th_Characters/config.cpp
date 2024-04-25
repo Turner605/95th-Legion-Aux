@@ -216,6 +216,27 @@ class XtdGearModels {
 	};
 };
 
+class CfgGroups {
+    class West {
+		name="$STR_A3_CfgGroups_West0"; side=1;
+        class AUX_95th_Legion_Faction_Clones {
+            name = "95th Legion Phase 1";
+            class AUX_95th_Infantry {
+            	name = "Infantry";
+				class 95th_FireTeam {
+					side = 1;
+					faction = "AUX_95th_Legion_Faction_Clones";
+					name="Fire Team";
+					class Unit0 {side = 1; vehicle = "AUX_95th_Uniform_P1_Basic_Sergeant"; rank = "SERGEANT"; position[] = {0,0,0};};
+					class Unit1 {side = 1; vehicle = "AUX_95th_Uniform_P1_Basic_Medic"; rank = "PRIVATE"; position[] = {5,-5,0};};
+					class Unit2{side = 1; vehicle = "AUX_95th_Uniform_P1_Basic_Trooper"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit3{side = 1; vehicle = "AUX_95th_Uniform_P1_Basic_Trooper"; rank = "PRIVATE"; position[] = {10,-10,0};};
+				};
+            };
+        };
+    };
+};
+
 class CfgFactionClasses { 
     class AUX_95th_Legion_Faction_Clones {displayName = "[95th] Clones";  priority = 1; side = 1;};  
 };

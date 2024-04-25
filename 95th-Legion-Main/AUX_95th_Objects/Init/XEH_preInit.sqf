@@ -16,15 +16,15 @@ private _customUniformList = [
 
 //-----------------------------# Helmets #-----------------------------------
 private _arsenalHelmets = []; 
-{_arsenalHelmets pushBack "AUX_95th_Helmet_Airborne_"+_x; } forEach _playerCustomsList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_ARF_"+_x; } forEach _playerCustomsList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_Cold_Assault_"+_x; } forEach _playerCustomsList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_Commando_"+_x; } forEach _playerCustomsList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_Engineer_"+_x; } forEach _playerCustomsList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_Hazard_"+_x; } forEach _playerCustomsList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Basic_"+_x; } forEach _playerCustomsList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Pilot_"+_x; } forEach _playerCustomsList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_SpecOps_"+_x; } forEach _playerCustomsList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_Airborne_"+_x; } forEach _customHelmetList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_ARF_"+_x; } forEach _customHelmetList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_Cold_Assault_"+_x; } forEach _customHelmetList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_Commando_"+_x; } forEach _customHelmetList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_Engineer_"+_x; } forEach _customHelmetList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_Hazard_"+_x; } forEach _customHelmetList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Basic_"+_x; } forEach _customHelmetList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Pilot_"+_x; } forEach _customHelmetList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_SpecOps_"+_x; } forEach _customHelmetList;
 
 //-----------------------------# Uniforms #-----------------------------------
 private _arsenalUniforms = [];

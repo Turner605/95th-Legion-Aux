@@ -6,7 +6,7 @@
 	editorCategory=AUX_95th_CIS_Forces;\
 	editorSubcategory=AUX_95th_CIS_Forces_CivilServices;\
 	uniformClass=AUX_95th_Independent_B1_Uniform_##className##;\
-	hiddenSelectionsTextures[]={\95th_CIS_Units\Data\B1\Body_##name##.paa};\
+	hiddenSelectionsTextures[]={\AUX_95th_CIS_Units\Data\B1\Body_##name##.paa};\
 	backpack = AUX_95th_Independent_B1_Backpack_##className##;\
 };
 
@@ -26,5 +26,5 @@
 #define NEW_95TH_INDEPENDENT_B1_BACKPACK(className) class AUX_95th_Independent_B1_Backpack_##className## : JLTS_B1_backpack {\
 	displayName=##className##;\
 	author=95th Aux Team;\
-	hiddenSelectionsTextures[]={\95th_CIS_Units\Data\B1\Backpacks\Backpack_##className##.paa};\
+	hiddenSelectionsTextures[]={\AUX_95th_CIS_Units\Data\B1\Backpacks\Backpack_##className##.paa};\
 };
