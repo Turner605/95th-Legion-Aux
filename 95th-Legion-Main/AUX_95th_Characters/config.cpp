@@ -32,6 +32,7 @@ class CfgPatches {
 			"AUX_95th_Unit_P1_Basic_Sythe",
 			"AUX_95th_Unit_P1_Basic_Splash",
 			"AUX_95th_Unit_P1_Basic_Solvest",
+			"AUX_95th_Unit_P1_Basic_Dilanza",
 
 			"AUX_95th_Unit_P1_Cold_Assault_Trooper",
 			"AUX_95th_Unit_Commando_Trooper",
@@ -237,8 +238,8 @@ class CfgGroups {
     };
 };
 
-class CfgFactionClasses { 
-    class AUX_95th_Legion_Faction_Clones {displayName = "[95th] Clones";  priority = 1; side = 1;};  
+class CfgFactionClasses {
+    class AUX_95th_Legion_Faction_Clones {displayName = "[95th] Clones";  priority = 1; side = 1;};
 };
 
 class CfgEditorSubcategories {
