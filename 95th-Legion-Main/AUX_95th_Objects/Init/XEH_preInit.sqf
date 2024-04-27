@@ -1,21 +1,21 @@
 //-----------------------------# Customs List #-----------------------------------
 private _customHelmetList = [
-	"Trooper","Shiny", "Medic", "Senior", "Veteran", "Turner","Splash", 
-	"Medic", "Senior", "Veteran", "Havoc","Sythe", "Cheezy", "Volt", "Sand", "Smaug", "Manila", 
-	"Osprey", "Chimera", "Hypo", "Neary", "Smokery", "Foley", "Prophet", "Mobius", "Taylor", 
-	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard", 
+	"Trooper","Shiny", "Medic", "Senior", "Veteran", "Turner","Splash",
+	"Medic", "Senior", "Veteran", "Havoc","Sythe", "Cheezy", "Volt", "Sand", "Smaug", "Manila",
+	"Osprey", "Chimera", "Hypo", "Neary", "Smokery", "Foley", "Prophet", "Mobius", "Taylor",
+	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard",
 	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
 	"Sergeant", "Kev", "Titan", "Taun", "Edge", "King"
 ];
 
 private _customUniformList = [
-	"Trooper", "Shiny", "Medic", "Senior", "Veteran", "Senior", "Sergeant", "Lieutenant", 
+	"Trooper", "Shiny", "Medic", "Senior", "Veteran", "Senior", "Sergeant", "Lieutenant",
 	"Turner", "Splash", "Commie", "Solvest", "Smokery", "Kev", "Smaug", "Revan", "Volt",
 	"Sand", "Manila", "Jinter", "Havoc", "Sythe", "Cheezy", "Bretek", "MadHatter", "Dilanza"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
-private _arsenalHelmets = []; 
+private _arsenalHelmets = [];
 {_arsenalHelmets pushBack "AUX_95th_Helmet_Airborne_"+_x; } forEach _customHelmetList;
 {_arsenalHelmets pushBack "AUX_95th_Helmet_ARF_"+_x; } forEach _customHelmetList;
 {_arsenalHelmets pushBack "AUX_95th_Helmet_Cold_Assault_"+_x; } forEach _customHelmetList;
@@ -36,7 +36,7 @@ private _arsenalUniforms = [];
 //-----------------------------# Vests #-----------------------------------
 private _arsenalVests = [
 	"95th_Katarn_Vest_Demo","95th_Katarn_Vest_Tech",
-	
+
 	"95th_Basic_Vest_Rifleman","95th_Basic_Vest_Crewman","95th_Basic_Vest_Engineer","95th_Basic_Vest_Tech","95th_Basic_Vest_Support","95th_Basic_Vest_Stealth",
 	"95th_Basic_Vest_Flame","95th_Basic_Vest_Riot","95th_Basic_Vest_Marksman","95th_Basic_Vest_Heavy","95th_Basic_Vest_AT",
 	"95th_Basic_Vest_Medic","95th_Basic_Vest_Jet","95th_Basic_Vest_Grenadier","95th_Basic_Vest_Pilot","95th_ARC_Vest_Trooper",
@@ -48,19 +48,19 @@ private _arsenalVests = [
 	"AUX_95th_Vest_Sergeant_Havoc", "AUX_95th_Vest_Lieutenant_Havoc", "AUX_95th_Vest_CIO_Havoc", "AUX_95th_Vest_Kama_Havoc",
 	"AUX_95th_Vest_Sergeant_Outcast", "AUX_95th_Vest_Lieutenant_Outcast", "AUX_95th_Vest_CIO_Outcast", "AUX_95th_Vest_Kama_Outcast",
 	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Vest_Kama_Turner",
-	"AUX_95th_Vest_Kama_Taun", 
-	"AUX_95th_Vest_Kama_Lisek", 
+	"AUX_95th_Vest_Kama_Taun",
+	"AUX_95th_Vest_Kama_Lisek",
 	"AUX_95th_Vest_Kama_Stitch"
 ];
 
 //-----------------------------# Backpacks #-----------------------------------
 private _arsenalBackpacks = [
 	"AUX_95th_Bag_Backpack_Visible_Trooper", "AUX_95th_Bag_Backpack_Invisible_Trooper",
- 	"AUX_95th_Backpack_Visible_Heavy", "AUX_95th_Backpack_Invisible_Heavy", 
-	"AUX_95th_Backpack_Visible_Medic", "AUX_95th_Backpack_Invisible_Medic", 
+ 	"AUX_95th_Backpack_Visible_Heavy", "AUX_95th_Backpack_Invisible_Heavy",
+	"AUX_95th_Backpack_Visible_Medic", "AUX_95th_Backpack_Invisible_Medic",
 	"AUX_95th_Backpack_Visible_Ordnance", "AUX_95th_Backpack_Invisible_Ordnance",
-	"AUX_95th_RTO_Backpack_Visible_Medic", "AUX_95th_RTO_Backpack_Invisible_Medic", 
-	"AUX_95th_RTO_Backpack_Visible_RTO", "AUX_95th_RTO_Backpack_Invisible_RTO", 
+	"AUX_95th_RTO_Backpack_Visible_Medic", "AUX_95th_RTO_Backpack_Invisible_Medic",
+	"AUX_95th_RTO_Backpack_Visible_RTO", "AUX_95th_RTO_Backpack_Invisible_RTO",
 	"AUX_95th_RTO_Backpack_Visible_Mini_RTO", "AUX_95th_RTO_Backpack_Visible_Mini_Turner",
 	"AUX_95th_JT12_Jetpack_Trooper",
 	"AUX_95th_MC_Jetpack_Trooper", "AUX_95th_MC_Jetpack_Turner",
@@ -108,33 +108,33 @@ private _arsenalAttachments = [
 ];
 
 //-----------------------------# Gear #-----------------------------------
-// Facewear, NVG's, Binocs, Map, Terminal, Radio, Compass, Watch Slot, 
+// Facewear, NVG's, Binocs, Map, Terminal, Radio, Compass, Watch Slot,
 private _arsenalGear = [
 	"JLTS_CloneBinocular","JLTS_CloneBinocular_black","ItemMap","ItemCompass","JLTS_clone_comlink","TFAR_microdagr","ItemWatch","ACE_Altimeter",
 	"ItemGPS","B_UavTerminal",
 
 	"95th_P1_Nightvision_Invisible",
 
-	"NVG_Rangefinder_Gray_95th", "NVG_Rangefinder_White_95th", "NVG_Rangefinder_Brown_95th", "NVG_Rangefinder_Biege_95th", 
-	"NVG_Rangefinder_Overlay_Gray_95th", "NVG_Rangefinder_Overlay_White_95th", "NVG_Rangefinder_Overlay_Brown_95th", "NVG_Rangefinder_Overlay_Biege_95th", 
+	"NVG_Rangefinder_Gray_95th", "NVG_Rangefinder_White_95th", "NVG_Rangefinder_Brown_95th", "NVG_Rangefinder_Biege_95th",
+	"NVG_Rangefinder_Overlay_Gray_95th", "NVG_Rangefinder_Overlay_White_95th", "NVG_Rangefinder_Overlay_Brown_95th", "NVG_Rangefinder_Overlay_Biege_95th",
 
-	"NVG_Visor_Gray_95th", "NVG_Visor_White_95th", "NVG_Visor_Brown_95th", "NVG_Visor_Biege_95th", 
-	"NVG_Visor_Overlay_Gray_95th", "NVG_Visor_Overlay_White_95th", "NVG_Visor_Overlay_Brown_95th", "NVG_Visor_Overlay_Biege_95th", 
+	"NVG_Visor_Gray_95th", "NVG_Visor_White_95th", "NVG_Visor_Brown_95th", "NVG_Visor_Biege_95th",
+	"NVG_Visor_Overlay_Gray_95th", "NVG_Visor_Overlay_White_95th", "NVG_Visor_Overlay_Brown_95th", "NVG_Visor_Overlay_Biege_95th",
 
-	"NVG_Sergeant_Gray_95th", "NVG_Sergeant_White_95th", "NVG_Sergeant_Brown_95th", "NVG_Sergeant_Biege_95th", 
-	"NVG_Sergeant_Overlay_Gray_95th", "NVG_Sergeant_Overlay_White_95th", "NVG_Sergeant_Overlay_Brown_95th", "NVG_Sergeant_Overlay_Biege_95th", 
+	"NVG_Sergeant_Gray_95th", "NVG_Sergeant_White_95th", "NVG_Sergeant_Brown_95th", "NVG_Sergeant_Biege_95th",
+	"NVG_Sergeant_Overlay_Gray_95th", "NVG_Sergeant_Overlay_White_95th", "NVG_Sergeant_Overlay_Brown_95th", "NVG_Sergeant_Overlay_Biege_95th",
 
-	"NVG_Lieutenant_Gray_95th", "NVG_Lieutenant_White_95th", "NVG_Lieutenant_Brown_95th", "NVG_Lieutenant_Biege_95th", 
-	"NVG_Lieutenant_Overlay_Gray_95th", "NVG_Lieutenant_Overlay_White_95th", "NVG_Lieutenant_Overlay_Brown_95th", "NVG_Lieutenant_Overlay_Biege_95th", 
+	"NVG_Lieutenant_Gray_95th", "NVG_Lieutenant_White_95th", "NVG_Lieutenant_Brown_95th", "NVG_Lieutenant_Biege_95th",
+	"NVG_Lieutenant_Overlay_Gray_95th", "NVG_Lieutenant_Overlay_White_95th", "NVG_Lieutenant_Overlay_Brown_95th", "NVG_Lieutenant_Overlay_Biege_95th",
 
-	"NVG_Medical_Gray_95th", "NVG_Medical_White_95th", "NVG_Medical_Brown_95th", "NVG_Medical_Biege_95th", 
-	"NVG_Medical_Overlay_Gray_95th", "NVG_Medical_Overlay_White_95th", "NVG_Medical_Overlay_Brown_95th", "NVG_Medical_Overlay_Biege_95th", 
+	"NVG_Medical_Gray_95th", "NVG_Medical_White_95th", "NVG_Medical_Brown_95th", "NVG_Medical_Biege_95th",
+	"NVG_Medical_Overlay_Gray_95th", "NVG_Medical_Overlay_White_95th", "NVG_Medical_Overlay_Brown_95th", "NVG_Medical_Overlay_Biege_95th",
 
 	"Facewear_HUD_ARFAntenna_95th", "Facewear_HUD_Headlamps_95th", "Facewear_HUD_Headlamp_95th",
 	"Facewear_Empty_ARFAntenna_95th", "Facewear_Empty_Headlamps_95th", "Facewear_Empty_Headlamp_95th",
 	"Facewear_Scarf_Empty_Black_95th", "Facewear_Scarf_Empty_White_95th", "Facewear_Scarf_Empty_Brown_95th",
 	"Facewear_Poncho_Empty_Green_95th"
-]; 
+];
 
 //-----------------------------# Medical #-----------------------------------
 private _arsenalMedical = [
@@ -197,7 +197,7 @@ Arsenal_Class_Items_95th = [
 // What is: "SCH_B_LTD_Packed","SCH_B_WD_LTD_Packed"
 
 // What to do with:
-// "3AS_DC17STest_F" - Dual pistols 
+// "3AS_DC17STest_F" - Dual pistols
 // "3AS_Valken38X_F" - Valken,
 // "LFP_sonar_device" - Sonar
 
