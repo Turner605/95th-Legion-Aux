@@ -18,7 +18,7 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper", "Turner", "Taun", "Hypo", "Bretek", "Volt", "Stitch", "Lisek"};
+				values[] = {"Trooper", "Turner", "Taun", "Hypo", "Bretek", "Volt", "Stitch", "Lisek", "Styx"};
 				class Trooper { label = "Trooper"; description = "Default Kama Vest"; };
 				class Turner { label = "Turner"; description = "Turner's Vest"; };
 				class Taun { label = "Taun"; description = "Taun's Vest"; };
@@ -27,6 +27,7 @@ class XtdGearModels {
 				class Volt { label = "Volt"; description = "Volt's Vest"; };
 				class Stitch { label = "Stitch"; description = "Stitch's Vest"; };
 				class Lisek { label = "Lisek"; description = "Lisek's Vest"; };
+				class Styx { label = "Styx"; description = "Styx's Vest"; };
 			};
 		};
 

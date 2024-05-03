@@ -5,7 +5,7 @@ private _customHelmetList = [
 	"Osprey", "Chimera", "Hypo", "Neary", "Smokery", "Foley", "Prophet", "Mobius", "Taylor",
 	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard",
 	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
-	"Sergeant", "Kev", "Titan", "Taun", "Edge", "King", "York"
+	"Sergeant", "Kev", "Titan", "Taun", "Edge", "King", "York", "Styx"
 ];
 
 private _customUniformList = [
@@ -50,7 +50,8 @@ private _arsenalVests = [
 	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Vest_Kama_Turner",
 	"AUX_95th_Vest_Kama_Taun",
 	"AUX_95th_Vest_Kama_Lisek",
-	"AUX_95th_Vest_Kama_Stitch"
+	"AUX_95th_Vest_Kama_Stitch",
+	"AUX_95th_Vest_Kama_Styx"
 ];
 
 //-----------------------------# Backpacks #-----------------------------------

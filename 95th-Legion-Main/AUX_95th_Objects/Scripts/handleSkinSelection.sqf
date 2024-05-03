@@ -7,6 +7,7 @@ switch (_vehicleClass) do {
 		switch (_playerID) do {
 			case "76561198051916304": { [_spawnedVehicle, "Jinter", []] call BIS_fnc_initVehicle; };
 			case "76561198820607430": { [_spawnedVehicle, "Chip", []] call BIS_fnc_initVehicle; };
+			case "76561198060130630": { [_spawnedVehicle, "Styx", []] call BIS_fnc_initVehicle; };
 		};
 	};
 
