@@ -88,7 +88,7 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Hypo", "Neary", "Smokery","Kev", "Titan", "Smaug", "Boom"};
+				values[] = {"Hypo", "Neary", "Smokery","Kev", "Titan", "Smaug", "Boom", "Pendragon"};
 				class Hypo { label = "Hypo"; description = "Hypo's Helmet"; };
 				class Neary { label = "Neary"; description = "Neary's Helmet"; };
 				class Smokery { label = "Smokery"; description = "Smokery's Helmet"; };
@@ -96,6 +96,7 @@ class XtdGearModels {
 				class Titan { label = "Titan"; description = "Titan's Helmet"; };
 				class Smaug { label = "Smaug"; description = "Smaug's Helmet"; };
 				class Boom { label = "Boom"; description = "Boom's Helmet"; };
+				class Pendragon { label = "Pendragon"; description = "Pendragon's Helmet"; };
 			};
 		};
 
