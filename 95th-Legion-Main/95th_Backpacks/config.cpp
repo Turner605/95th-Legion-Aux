@@ -67,6 +67,7 @@ class XtdGearModels {
 				class Pendragon { label = "Pendragon"; description = "Pendragon's Backpack"; };
 				class Gridlock { label = "Gridlock"; description = "Gridlock's Backpack"; };
 				class Titan { label = "Titan"; description = "Titan's Backpack"; };
+				class Bretek { label = "Bretek"; description = "Bretek's Backpack"; };
 			};
 
 			class Visibility {
