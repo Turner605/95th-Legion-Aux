@@ -129,7 +129,6 @@ class XtdGearModels {
 				class Kev { label = "Kev"; description = "Kev's Uniform"; };
 				class Titan { label = "Titan"; description = "Titan's Uniform"; };
 				class Smaug { label = "Smaug"; description = "Smaug's Uniform"; };
-				class Hypo { label = "Hypo"; description = "Hypo's Uniform"; };
 			};
 		};
 
