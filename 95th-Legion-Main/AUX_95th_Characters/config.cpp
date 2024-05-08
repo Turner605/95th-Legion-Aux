@@ -33,6 +33,7 @@ class CfgPatches {
 			"AUX_95th_Unit_P1_Basic_Splash",
 			"AUX_95th_Unit_P1_Basic_Solvest",
 			"AUX_95th_Unit_P1_Basic_Dilanza",
+			"AUX_95th_Unit_P1_Basic_Hypo",
 
 			"AUX_95th_Unit_P1_Cold_Assault_Trooper",
 			"AUX_95th_Unit_Commando_Trooper",
@@ -128,6 +129,7 @@ class XtdGearModels {
 				class Kev { label = "Kev"; description = "Kev's Uniform"; };
 				class Titan { label = "Titan"; description = "Titan's Uniform"; };
 				class Smaug { label = "Smaug"; description = "Smaug's Uniform"; };
+				class Hypo { label = "Hypo"; description = "Hypo's Uniform"; };
 			};
 		};
 
