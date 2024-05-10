@@ -169,7 +169,7 @@ class CfgVehicles {
 	NEW_95TH_COMMANDO_UNIT(Citadel,Citadel Guard,lsd_cis_bxSecurityDroid_uniform);
 	NEW_95TH_COMMANDO_UNIT(Diplomat,Diplomat,lsd_cis_bxDiplomatDroid_uniform);
 
-	class AUX_95th_CIS_Disguised_Trooper: 95th_Rifleman_Unit_Trooper {
+	class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Generic_Unit_P1_Basic_Rifleman {
 		displayName="[95th] Disguised BX Trooper";
 		author="95th Aux Team";
 		DSS_Is_Disguised_As_Bluefor=1;\
@@ -184,7 +184,7 @@ class CfgVehicles {
 		linkedItems[]={"95th_Helmet_Trooper","lsd_cis_bx_head""95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
 		respawnLinkedItems[]={"95th_Helmet_Trooper","lsd_cis_bx_head","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
 		nakedUniform = "lsd_cis_bxDroid_uniform";
-		identityTypes[] = {"BX_Droid"};
+		identityTypes[] = {"lsd_cis_bx_head"};
 	};
 };
 
