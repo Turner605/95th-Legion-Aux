@@ -181,10 +181,10 @@ class CfgVehicles {
 		scope=2; 
 		scopecurator=2;
 		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_AB.jpg"; //todo: change me
-		linkedItems[]={"95th_Helmet_Trooper","lsd_cis_bx_head""95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
-		respawnLinkedItems[]={"95th_Helmet_Trooper","lsd_cis_bx_head","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+		linkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+		respawnLinkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
 		nakedUniform = "lsd_cis_bxDroid_uniform";
-		identityTypes[] = {"lsd_cis_bx_head"};
+		identityTypes[] = {"Head_LSD_BX"};
 	};
 };
 
