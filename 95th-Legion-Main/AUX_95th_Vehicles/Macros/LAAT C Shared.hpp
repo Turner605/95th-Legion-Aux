@@ -9,4 +9,4 @@
 		editorSubcategory=AUX_95th_Legion_Vehicles_Category_Air_Gunships;\
 		ace_cargo_space = 26;\
 		ace_cargo_hasCargo = 1;\
-        crew = 95th_Pilot_Unit_Trooper;
+        crew = AUX_95th_Generic_Unit_P1_Basic_Pilot;

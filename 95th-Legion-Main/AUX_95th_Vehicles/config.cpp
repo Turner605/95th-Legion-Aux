@@ -3,7 +3,20 @@ class CfgPatches {
         author="95th Aux Team";
         name="AUX 95th Vehicles";
 		requiredAddons[]={"3AS_Prop_Crates", "3AS_SaberTank", "3AS_LAAT", "CCS_Manta"};
-		#include "UnitExports.hpp"
+		units[] = {
+			"AUX_95th_Command_Outpost",
+			"AUX_95th_Swamp_Speeder",
+			"AUX_95th_Swamp_Speeder_Transport",
+			"AUX_95th_LAAT_Mrk1",
+			"AUX_95th_LAAT_Mrk2",
+			"AUX_95th_LAAT_Mrk2_Lights",
+			"AUX_95th_TX_130",
+			"AUX_95th_TX_130_Shield",
+			"AUX_95th_RX200",
+			"AUX_95th_UGV",
+			"AUX_95th_ATTE",
+			"AUX_95th_LAAT_C"
+		};
 	};
 };
 

@@ -1,7 +1,7 @@
 class AUX_95th_ATTE : 3AS_ATTE_Base {
 	displayname = "AT-TE";
 	author = "95th Aux Team";
-	crew = "95th_Rifleman_Unit_Trooper"; 
+	crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman"; 
 	faction="AUX_95th_Legion_Faction_Vehicles";
 	editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Heavy";
 	#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"

@@ -905,7 +905,7 @@ class CfgVehicles {
 						gunnerInAction = "Commander_MBT_01_cannon_F_in";
 						gunnerGetInAction = "GetInLow";
 						gunnerGetOutAction = "GetOutLow";
-						gunnerType = "95th_Rifleman_Unit_Trooper";
+						gunnerType = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
 						discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
 						discreteDistanceInitIndex = 1;
 						gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_03_m_F.p3d";
@@ -1167,7 +1167,7 @@ class CfgVehicles {
 				gunnerAction = "Gunner_MBT_03_cannon_F_out";
 				gunnerGetInAction = "GetInLow";
 				gunnerGetOutAction = "GetOutLow";
-				gunnerType = "95th_Rifleman_Unit_Trooper";
+				gunnerType = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
 				weapons[] = {"3AS_Sabre_MG"};
 				magazines[] = {"3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag","3AS_300Rnd_SabreMG_Mag"};
 				soundServo[] = {"",0.15848932,1,50};
@@ -1281,8 +1281,8 @@ class CfgVehicles {
 		side = 1;
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Heavy";
-		crew = "95th_Rifleman_Unit_Trooper";
-		typicalCargo[] = {"95th_Rifleman_Unit_Trooper"};
+		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
+		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
 		textureList[] = {"Tex_S1_grey",1};
 		animationList[] = {"HideBagsSide",0.3,"HideBagsTurret",0.5,"HideCrates",0.15};
 		ace_cargo_space = 26;
