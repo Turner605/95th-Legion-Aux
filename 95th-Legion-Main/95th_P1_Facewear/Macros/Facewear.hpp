@@ -10,6 +10,13 @@
 
 #define NEW_95th_FACEWEAR_EMPTY(name,baseClass,faceModel) class Facewear_Empty_##name##_95th : ##baseClass## {\
 	displayName=[95th] Misc Facewear;\
+	ACE_Overlay = "";\
+	ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";\
+	ACE_OverlayCracked = "";\
+	ACE_DustPath = "\z\ace\addons\goggles\textures\fx\dust\%1.paa";\
+	ACE_Resistance = 1;\
+	ACE_Protection = 0;\
+	ACE_TintAmount = 0;\
 	scope=2;\
 	model = ##faceModel##;\
 	class XtdGearInfo {\
