@@ -15,7 +15,8 @@ class CfgPatches {
 			"AUX_95th_RX200",
 			"AUX_95th_UGV",
 			"AUX_95th_ATTE",
-			"AUX_95th_LAAT_C"
+			"AUX_95th_LAAT_C",
+			"AUX_95th_Rho"
 		};
 	};
 };
@@ -35,6 +36,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_Legion_Vehicles_Category_Ground_Light{displayName="Ground (Light)";};
 	class AUX_95th_Legion_Vehicles_Category_Ground_Heavy{displayName="Ground (Heavy)";};
 	class AUX_95th_Legion_Vehicles_Category_Air_Gunships{displayName="Air (Gunships)";};
+	class AUX_95th_Legion_Vehicles_Category_Air_Logistics{displayName="Air (Logistics)";};
 };
 
 #include "Definitions.hpp"
@@ -71,6 +73,7 @@ class Extended_init_EventHandlers {
 	class AUX_95th_LAAT_Mrk2 {class AUX_95th_LAAT_Mrk2_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
 	class AUX_95th_LAAT_Mrk2_Lights {class AUX_95th_LAAT_Mrk2_Lights_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
 	class AUX_95th_LAAT_C {class AUX_95th_LAAT_C_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
+	class AUX_95th_Rho {class AUX_95th_Rho_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
 };
 
 class Extended_Deleted_EventHandlers {
