@@ -48,7 +48,7 @@ private _arsenalVests = [
 	"AUX_95th_Vest_Sergeant_Havoc", "AUX_95th_Vest_Lieutenant_Havoc", "AUX_95th_Vest_CIO_Havoc", "AUX_95th_Vest_Kama_Havoc",
 	"AUX_95th_Vest_Sergeant_Outcast", "AUX_95th_Vest_Lieutenant_Outcast", "AUX_95th_Vest_CIO_Outcast", "AUX_95th_Vest_Kama_Outcast",
 	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Vest_Kama_Turner",
-	"AUX_95th_Vest_Kama_Taun",
+	"AUX_95th_Vest_Kama_Taun", "AUX_95th_Vest_Kama_Sand", "AUX_95th_Vest_Sergeant_Sand",
 	"AUX_95th_Vest_Kama_Lisek",
 	"AUX_95th_Vest_Kama_Stitch",
 	"AUX_95th_Vest_Kama_Styx"
