@@ -173,7 +173,7 @@ private _arsenalEquipment = [
 	"JLTS_riot_shield_item","WBK_HeadLampItem","ACE_IR_Strobe_Item","ACE_M26_Clacker","ACE_Clacker","ACE_Flashlight_XL50","ACE_MapTools",
 	"ace_marker_flags_black","ace_marker_flags_blue","ace_marker_flags_green","ace_marker_flags_orange","ace_marker_flags_purple","ace_marker_flags_red",
 	"ace_marker_flags_white","ace_marker_flags_yellow","ACE_microDAGR","MineDetector","ACE_HuntIR_monitor","ACE_RangeTable_82mm","DSS_Hacking_Device",
-	"DSS_Cloaking_Device","NFL_Disc_Shield","DSS_Support_Device","rw_canistra","ACE_RangeCard"
+	"DSS_Cloaking_Device","NFL_Disc_Shield","DSS_Support_Device","rw_canistra","ACE_RangeCard","NFL_Turret_Deployer"
 ];
 
 Arsenal_All_Items_95th = (_arsenalWeapons + _arsenalAmmo + _arsenalAttachments + _arsenalHelmets + _arsenalUniforms + _arsenalVests + _arsenalBackpacks + _arsenalGear + _arsenalMedical + _arsenalExplosives + _arsenalGrenades + _arsenalEquipment);
