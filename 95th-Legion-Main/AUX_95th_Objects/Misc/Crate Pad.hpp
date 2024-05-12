@@ -1,5 +1,6 @@
 class AUX_95th_Misc_Crate_Pad : 3as_FOB_turret_base_prop {
 	scope = 2;
+	scopeCurator = 2;
 	displayName="Crate Pad";
 	editorCategory="AUX_95th_Objects";
 	editorSubcategory="AUX_95th_Misc";
