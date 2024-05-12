@@ -18,7 +18,7 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper", "Turner", "Taun", "Hypo", "Bretek", "Volt", "Stitch", "Lisek", "Styx"};
+				values[] = {"Trooper", "Turner", "Taun", "Hypo", "Bretek", "Volt", "Stitch", "Lisek", "Styx", "Sand"};
 				class Trooper { label = "Trooper"; description = "Default Kama Vest"; };
 				class Turner { label = "Turner"; description = "Turner's Vest"; };
 				class Taun { label = "Taun"; description = "Taun's Vest"; };
@@ -28,6 +28,7 @@ class XtdGearModels {
 				class Stitch { label = "Stitch"; description = "Stitch's Vest"; };
 				class Lisek { label = "Lisek"; description = "Lisek's Vest"; };
 				class Styx { label = "Styx"; description = "Styx's Vest"; };
+				class Sand { label = "Sand"; description = "Sand's Vest"; };
 			};
 		};
 
@@ -38,12 +39,13 @@ class XtdGearModels {
 			class Type {
 				alwaysSelectable = 1;
 				labels = "Type";
-				values[] = {"Trooper", "Turner", "Hypo", "Bretek", "Volt"};
+				values[] = {"Trooper", "Turner", "Hypo", "Bretek", "Volt", "Sand"};
 				class Trooper { label = "Trooper"; description = "Default Sergeant Vest"; };
 				class Turner { label = "Turner"; description = "Turner's Vest"; };
 				class Hypo { label = "Hypo"; description = "Hypo's Vest"; };
 				class Bretek { label = "Bretek"; description = "Bretek's Vest"; };
 				class Volt { label = "Volt"; description = "Volt's Vest"; };
+				class Sand { label = "Sand"; description = "Sand's Vest"; };
 			};
 		};
 
