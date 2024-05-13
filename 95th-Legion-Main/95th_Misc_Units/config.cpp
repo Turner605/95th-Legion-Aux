@@ -10,7 +10,8 @@ class CfgPatches  {
 			"AUX_95th_Characters"
 		};
 		units[] = {
-			"AUX_95th_Jedi_Dave"
+			"AUX_95th_Jedi_Dave",
+			"AUX_95th_Clone_Decoy_Hologram"
 		};
     };
 }; 
@@ -27,10 +28,12 @@ class CfgFactionClasses {
 
 class CfgEditorSubcategories{
 	class AUX_95th_Jedi{displayName="Jedi";};
+	class AUX_95th_Holograms{displayName="Holograms";};
 };
 
 class CfgVehicles {     
 	class JLTS_Clone_P2_DC15A;
+	class SWLB_clone_holo_P2;
 
 	class AUX_95th_Misc_Unit_Base : JLTS_Clone_P2_DC15A {
 		displayName="[95th] Misc Unit Base";
@@ -41,7 +44,7 @@ class CfgVehicles {
 	};
 
 	class AUX_95th_Jedi_Dave: AUX_95th_Misc_Unit_Base {
-		displayName="[95th] Jedi Dave";
+		displayName="Jedi Dave";
 		scope=2; 
 		scopecurator=2;
 		uniformClass="lsd_gar_phase2Insulated_uniform"; 
@@ -53,4 +56,15 @@ class CfgVehicles {
 		magazines[]={"WBK_Cybercrystal","WBK_Cybercrystal","WBK_Cybercrystal"};
 		respawnMagazines[]={"WBK_Cybercrystal","WBK_Cybercrystal","WBK_Cybercrystal"};
 	};
+
+	class AUX_95th_Clone_Decoy_Hologram: SWLB_clone_holo_P2 {
+		displayName="Decoy Hologram";
+		faction="AUX_95th_Legion_Faction_Misc";
+		editorSubcategory="AUX_95th_Holograms";
+		scope=2; 
+		scopecurator=2;
+		magazines[]={};
+		respawnMagazines[]={};
+	};
+
 };

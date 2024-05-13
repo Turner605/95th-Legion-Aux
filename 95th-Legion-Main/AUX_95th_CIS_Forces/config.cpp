@@ -218,6 +218,7 @@ class CfgFunctions { class AUX_95th { class CIS_Forces {
 	class checkCanJump {file = "\AUX_95th_CIS_Forces\Scripts\Commando\checkCanJump.sqf";};
 	class handleCommandoJump {file = "\AUX_95th_CIS_Forces\Scripts\Commando\handleCommandoJump.sqf";};
 	class handleCommandoFallDamage {file = "\AUX_95th_CIS_Forces\Scripts\Commando\handleCommandoFallDamage.sqf";};
+	class handleB1RocketFallDamage {file = "\AUX_95th_CIS_Forces\Scripts\B1\handleB1RocketFallDamage.sqf";};
 
 	class checkCanShield {file = "\AUX_95th_CIS_Forces\Scripts\Personal Shield\checkCanShield.sqf";};
 	class handlePersonalShield {file = "\AUX_95th_CIS_Forces\Scripts\Personal Shield\handlePersonalShield.sqf";};
@@ -256,6 +257,13 @@ class ACE_Medical_Injuries {
 		class falling {
 			class woundHandlers: woundHandlers {
 				AUX_95th_Droid_Unit_Commando_Handler = "{ call AUX_95th_fnc_handleCommandoFallDamage }";
+				AUX_95th_Droid_Unit_B1_Rocket_Handler = "{ call AUX_95th_fnc_handleB1RocketFallDamage }";
+			};
+		};
+
+		class collision {
+			class woundHandlers: woundHandlers {
+				AUX_95th_Droid_Unit_B1_Rocket_Handler = "{ call AUX_95th_fnc_handleB1RocketFallDamage }";
 			};
 		};
 	};
