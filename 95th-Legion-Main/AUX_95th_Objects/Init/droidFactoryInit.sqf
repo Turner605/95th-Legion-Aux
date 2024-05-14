@@ -25,7 +25,7 @@ private _frameHandler = [{
 	private _spawnArray = [];
 
 	switch (typeOf _factory) do {
-		case "AUX_95th_Ground_Factory": {_spawnArray = ["JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_AR", "JLTS_Droid_B1_AT"]};
+		case "AUX_95th_Ground_Factory": {_spawnArray = ["AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Rifleman"]};
 	};
 
 	// Decide if spawning on factory or proxy position

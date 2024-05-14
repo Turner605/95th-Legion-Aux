@@ -16,7 +16,7 @@ class CfgPatches {
 			"AUX_95th_Venator_Briefing_Room", "AUX_95th_Medical_Shield", "AUX_95th_Shield_Small", "AUX_95th_Acclimator_Hollow",
 			"AUX_95th_Fortify_Ramp", "AUX_95th_Fortify_Barricade", "AUX_95th_Fortify_Wall", "AUX_95th_Fortify_Bunker", "AUX_95th_Fortify_Turret",
 			"AUX_95th_Misc_Arsenal_Full", "AUX_95th_Misc_Arsenal_Restricted", "AUX_95th_Venator_Briefing_Room",
-			"AUX_95th_WBK_Combine_WalhammerShield_actual"
+			"AUX_95th_WBK_Combine_WalhammerShield_actual", "AUX_95th_Misc_Airborne_Terminal"
 		};
 	};
 };
@@ -93,6 +93,7 @@ class CfgVehicles {
 	// Misc Terminals
 	#include "Misc Terminals\Medical Terminal.hpp"
 	#include "Misc Terminals\Permission Terminal.hpp"
+	#include "Misc Terminals\Airborne Terminal.hpp"
 
 	// Shield
 	#include "Shields\Medical Shield.hpp"
@@ -128,6 +129,8 @@ class CfgFunctions { class AUX_95th { class Objects {
 	class handleSkinSelection {file = "\AUX_95th_Objects\Scripts\handleSkinSelection.sqf";};
 
 	class handleFactoryTerminalOptions {file = "\AUX_95th_Objects\Scripts\Droid Factories\handleFactoryTerminalOptions.sqf";};
+
+	class handleParadrop {file = "\AUX_95th_Objects\Scripts\Airborne Insert\paradrop.sqf";};
 };};};
 
 class Extended_PostInit_EventHandlers {
