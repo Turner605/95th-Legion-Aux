@@ -131,6 +131,7 @@ class CfgFunctions { class AUX_95th { class Objects {
 	class handleFactoryTerminalOptions {file = "\AUX_95th_Objects\Scripts\Droid Factories\handleFactoryTerminalOptions.sqf";};
 
 	class handleParadrop {file = "\AUX_95th_Objects\Scripts\Airborne Insert\paradrop.sqf";};
+	class becomeAirborne {file = "\AUX_95th_Objects\Scripts\Airborne Insert\becomeAirborne.sqf";};
 };};};
 
 class Extended_PostInit_EventHandlers {

@@ -15,9 +15,31 @@ class ACEX_Fortify_Presets {
 	#include "FortifyPresets\Testing.hpp"
 };
 
+class CfgVehicles {
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class AUX_95th_SOS_Beacon {
+				displayName = "SOS";
+				icon = "\AUX_95th_Ace\Data\SOS.paa";
+				condition = "(markerType (getPlayerUID _player) == '')";
+				statement = "[_player] call AUX_95th_fnc_sosBeacon";
+			};
+
+            class AUX_95th_Remove_SOS_Beacon {
+				displayName = "Cancel SOS";
+				icon = "\AUX_95th_Ace\Data\SOS.paa";
+				condition = "(markerType (getPlayerUID _player) != '')";
+				statement = "deleteMarker (getPlayerUID _player)";
+			};
+		};
+	};
+};
+
 class CfgFunctions { class AUX_95th { class Ace {
 	class setupFortify {file = "\AUX_95th_Ace\Scripts\setupFortify.sqf";};
 	class addDefaultClasses {file = "\AUX_95th_Ace\Scripts\addDefaultClasses.sqf";};
+	class sosBeacon {file = "\AUX_95th_Ace\Scripts\sosBeacon.sqf";};
 };};};
 
 class Extended_PreInit_EventHandlers {
