@@ -8,15 +8,62 @@ class CfgVehicles {
 	class 3AS_Republic_FCP;
 	class 3AS_ISP;
 	class 3AS_ISP_Transport;
-	class 3AS_LAATC;
-	class 3as_LAAT_Mk1;
-	class 3as_LAAT_Mk2;
-	class 3as_LAAT_Mk2Lights;
 	class 3as_saber_m1;
 	class 3as_saber_m1Recon;
 	class 3AS_Rho_REP_F;
 	class 3AS_Rho_Crate_REP_Transport;
 	class I_UGV_01_rcws_F;
+
+	// Air Stuff
+	class Air;
+	class Helicopter: Air {
+		class ACE_SelfActions;
+		class Turrets;
+		class HitPoints;
+	};
+	class Helicopter_Base_F: Helicopter {
+		class HitPoints: HitPoints {
+			class HitHull;
+			class HitFuel;
+			class HitAvionics;
+			class HitMissiles;
+			class HitEngine;
+			class HitHRotor;
+			class HitVRotor;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+			class HitGlass5;
+			class HitGlass6;
+			class HitWinch;
+		};
+		class Turrets: Turrets {
+			class MainTurret;
+		};
+		class AnimationSources;
+		class EventHandlers;
+		class ViewOptics;
+		class ViewPilot;
+		class Components;
+	};
+
+	class Helicopter_Base_H: Helicopter_Base_F {
+		class Turrets: Turrets {
+			class MainTurret: MainTurret{};
+			class CopilotTurret: MainTurret{};
+		};
+		class AnimationSources: AnimationSources{};
+	};
+
+	// LAATs
+	class 3AS_laat_Base: Helicopter_Base_H {};
+	class 3as_LAAT_Mk1: 3AS_laat_Base {};
+	class 3as_LAAT_Mk2: 3AS_laat_Base {};
+	class 3AS_LAAT_LampBase: 3AS_laat_Base{};
+	class 3AS_LAAT_Cargo_Base: 3AS_laat_Base{};
+	class 3AS_LAAT_Mk2Lights: 3AS_LAAT_LampBase{};
+	class 3AS_LAATC: 3AS_LAAT_Cargo_Base{};
 
 	class LandVehicle;
 	class Tank_F: LandVehicle { class NewTurret; class Sounds; class HitPoints; };

@@ -25,7 +25,7 @@
 			NEW_95TH_LAAT_TEXTURE(Chip)};\
 			NEW_95TH_LAAT_TEXTURE(Styx)};\
 		};\
-		class ACE_SelfActions {\
+		class ACE_SelfActions: ACE_SelfActions {\
             class addResupplyBomb {\
 				displayName = "Load Resupply Drop";\
 				condition = true; exceptions[] = {}; statement = ''; icon = '';\
