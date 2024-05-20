@@ -34,6 +34,7 @@ class CfgPatches {
 			"AUX_95th_Unit_P1_Basic_Solvest",
 			"AUX_95th_Unit_P1_Basic_Dilanza",
 			"AUX_95th_Unit_P1_Basic_Hypo",
+			"AUX_95th_Unit_P1_Basic_Foley",
 
 			"AUX_95th_Unit_P1_Cold_Assault_Trooper",
 			"AUX_95th_Unit_Commando_Trooper",
