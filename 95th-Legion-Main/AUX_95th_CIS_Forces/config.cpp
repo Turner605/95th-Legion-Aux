@@ -33,6 +33,7 @@ class CfgPatches {
 			"AUX_95th_Droid_B1_Unit_Crew",
 
 			"AUX_95th_Droid_B1_Rocket_Unit_Rifleman",
+			"AUX_95th_Droid_B1_Rocket_Unit_AT",
 
 			"AUX_95th_Droid_B2_Unit_Blaster",
 			"AUX_95th_Droid_B2_Unit_GL",
@@ -129,6 +130,7 @@ class CfgVehicles {
 
 	// B1 Rocket Units
 	#include "Units\B1 Rocket\Rifleman.hpp"
+	#include "Units\B1 Rocket\AT.hpp"
 
 	// B2 Units
 	#include "Units\B2\Blaster.hpp"
