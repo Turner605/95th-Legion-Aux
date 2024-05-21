@@ -132,6 +132,7 @@ class XtdGearModels {
 				class MadHatter { label = "Mad Hatter"; description = "Mad Hatter's Helmet"; };
 				class Ratler { label = "Ratler"; description = "Ratler's Helmet"; };
 				class York { label = "York"; description = "York's Helmet"; };
+				class Nyet { label = "Nyet"; description = "Nyet's Helmet"; };
 			};
 		};
 
