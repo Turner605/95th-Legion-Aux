@@ -7,10 +7,7 @@ class CfgPatches {
 			"JLTS_weapons_Core",
 			"JLTS_weapons_DC15X", "JLTS_weapons_DP23"
 		};
-		weapons[] = {
-			"AUX_95th_DC15X", "AUX_95th_DC15X_Scope",
-			"AUX_95th_DP23",
-		};
+		weapons[] = {};
 		units[]={};
 	};
 };
@@ -50,7 +47,6 @@ class Mode_FullAuto;
 
 class CfgAmmo {
 	#include "Ammo\Definitions.hpp"
-	#include "Ammo\DP23.hpp"
 	// #include "Ammo\BX42.hpp" // Not Applicable
 	#include "Ammo\BX42_Rocket_HE.hpp"
 	#include "Ammo\Grappler.hpp"
@@ -60,19 +56,14 @@ class CfgWeapons {
 	class AUX_95th_Stun_Muzzle;
 
 	#include "Muzzles\Definitions.hpp"
-	#include "Muzzles\DP23.hpp"
 	#include "Muzzles\BX42.hpp"
 
 	#include "Weapons\Definitions.hpp"
-	#include "Weapons\DP23.hpp"
 	#include "Weapons\BX42.hpp"
-
-	#include "Attachments\Definitions.hpp"
 };
 
 class CfgMagazines {
 	#include "Magazines\Definitions.hpp"
-	#include "Magazines\DP23.hpp"
 	#include "Magazines\BX42.hpp"
 	#include "Magazines\Grappler.hpp"
 	#include "Magazines\BX42_Rocket_HE.hpp"

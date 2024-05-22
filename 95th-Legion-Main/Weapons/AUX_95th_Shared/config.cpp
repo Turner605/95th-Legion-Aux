@@ -146,6 +146,10 @@ class CfgAmmo
 		};
 	};
 
+	class AUX_95th_Shotgun_Blue_Ammo: AUX_95th_Pistol_Blue_Ammo {
+		simulation = "shotSpread";
+	};
+
 	class AUX_95th_Stun_Ammo: AUX_95th_Pistol_Blue_Ammo {
 		model = "\MRC\JLTS\weapons\Core\effects\stun.p3d";
 		hit = 0.01;
