@@ -9,8 +9,7 @@ class CfgPatches {
 	};
 };
 
-class CfgAmmo
-{
+class CfgAmmo {
 	class BulletBase;
 	class B_9x21_Ball: BulletBase {
 		class HitEffects;

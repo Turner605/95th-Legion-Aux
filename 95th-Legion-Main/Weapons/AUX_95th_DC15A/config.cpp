@@ -78,7 +78,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15A\Anims\Sounds\dc15a_fire",1,1,1800};
+				begin1[] = {"AUX_95th_DC15A\Sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.096;
@@ -177,7 +177,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"\AUX_95th_DC15A\Sounds\dc15a_fire",1,1,1800};
+				begin1[] = {"AUX_95th_DC15A\Sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			dispersion = 0.00073;
