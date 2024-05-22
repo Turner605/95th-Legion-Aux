@@ -24,7 +24,7 @@ class CfgMagazines {
 		displayName = "$STR_JLTS_names_DC15A_mag";
 		displayNameShort = "$STR_JLTS_snames_EnergyCellStandard";
 		descriptionShort = "$STR_JLTS_descs_DC15A_mag";
-		ammo = "JLTS_bullet_rifle_blue";
+		ammo = "AUX_95th_Rifle_Blue_Ammo";
 		tracersEvery = 1;
 	};
 };
@@ -61,7 +61,7 @@ class CfgWeapons {
 		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DC15A\Anims\DC15A_handanim.rtm"};
 		reloadAction = "GestureReload_JLTS_DC15A";
-		magazines[] = {"JLTS_DC15A_mag"};
+		magazines[] = {"JLTS_DC15A_mag","AUX_95th_Universal_Rifle_Mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		fireLightDiffuse[] = {0,0,1};
