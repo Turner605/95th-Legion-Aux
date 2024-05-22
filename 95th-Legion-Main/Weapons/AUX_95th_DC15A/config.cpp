@@ -61,7 +61,7 @@ class CfgWeapons {
 		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DC15A\Anims\DC15A_handanim.rtm"};
 		reloadAction = "GestureReload_JLTS_DC15A";
-		magazines[] = {"JLTS_DC15A_mag","AUX_95th_Universal_Rifle_Mag"};
+		magazines[] = {"AUX_95th_DC15A_mag","AUX_95th_Universal_Rifle_Mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		fireLightDiffuse[] = {0,0,1};

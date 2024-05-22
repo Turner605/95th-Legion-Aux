@@ -332,9 +332,9 @@ class CfgMagazines {
 		picture = "AUX_95th_DC15A\Data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
 		count = 40;
-		displayName = "$STR_JLTS_names_DC15A_mag";
-		displayNameShort = "$STR_JLTS_snames_EnergyCellStandard";
-		descriptionShort = "$STR_JLTS_descs_DC15A_mag";
+		displayName = "Universal Rifle Energy Cell";
+		displayNameShort = "Universal Energy";
+		descriptionShort = "Universal Energy Cell";
 		ammo = "AUX_95th_Rifle_Blue_Ammo";
 		tracersEvery = 1;
 	};
