@@ -77,7 +77,7 @@ class CfgWeapons {
 		modes[] = {"Single"};
 		recoil = "JLTS_recoil_DP23";
 		fireLightDiffuse[] = {0,0,1};
-		drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",5,1,10};
+		drySound[] = {"AUX_95th_Shared\Sounds\weapon_dry.wss",5,1,10};
 		muzzles[] = {"this","Stun"};
 		class Stun: AUX_95th_Stun_Muzzle{};
 		class Single: Mode_SemiAuto {
@@ -234,6 +234,11 @@ class CfgWeapons {
 		muzzles[] = {"this"};
 		magazines[] = {};
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
+		class Stun: Stun {
+			displayName = "$STR_JLTS_names_StunModeFried";
+			magazines[] = {};
+			drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
+		};
 	};
 
 	class AUX_95th_DP23_shield: AUX_95th_DP23 {
@@ -266,5 +271,10 @@ class CfgWeapons {
 		picture = "AUX_95th_DP23\Data\ui\DP23_fried_ui_ca.paa";
 		magazines[] = {};
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
+		class Stun: Stun {
+			displayName = "$STR_JLTS_names_StunModeFried";
+			magazines[] = {};
+			drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
+		};
 	};
 };

@@ -281,5 +281,10 @@ class CfgWeapons {
 		magazines[] = {};
 		JLTS_isFried = 1;
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
+		class Stun: Stun {
+			displayName = "$STR_JLTS_names_StunModeFried";
+			magazines[] = {};
+			drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
+		};
 	};
 };
