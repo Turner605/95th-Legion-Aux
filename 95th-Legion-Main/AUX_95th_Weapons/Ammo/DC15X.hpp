@@ -1,1 +1,0 @@
-class AUX_95th_DC15X_Ammo: JLTS_bullet_sniper_blue {};
