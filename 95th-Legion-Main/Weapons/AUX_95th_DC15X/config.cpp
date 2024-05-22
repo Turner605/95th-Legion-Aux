@@ -3,7 +3,7 @@ class CfgPatches {
 		author = "95th Legion";
 		name = "AUX 95th Weapons DC15X";
 		requiredAddons[] = {"A3_data_F","A3_anims_F","A3_weapons_F","A3_characters_F","JLTS_weapons_Reloads"};
-		weapons[] = {"AUX_95th_DC15X","AUX_95th_DC15X_fried","AUX_95th_DC15X_scope","AUX_95th_DC15X_scoped"};
+		weapons[] = {"AUX_95th_DC15X","AUX_95th_DC15X_fried","AUX_95th_DC15X_scope","AUX_95th_DC15X_Scoped"};
 		units[] = {};
 		magazines[] = {};
 	};
@@ -83,6 +83,8 @@ class CfgWeapons {
 		class GunParticles;
 	};
 
+	class AUX_95th_Stun_Muzzle;
+
 	class UGL_F;
 	class AUX_95th_DC15X: arifle_MX_Base_F {
 		JLTS_hasElectronics = 1;
@@ -103,7 +105,9 @@ class CfgWeapons {
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		fireLightDiffuse[] = {0,0,1};
-		drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",5,1,10};
+		drySound[] = {"AUX_95th_Shared\Sounds\weapon_dry.wss",5,1,10};
+		muzzles[] = {"this","Stun"};
+		class Stun: AUX_95th_Stun_Muzzle{};
 		class Single: Mode_SemiAuto {
 			sounds[] = {"StandardSound"};
 			class BaseSoundModeType {
@@ -257,7 +261,7 @@ class CfgWeapons {
 		};
 	};
 
-	class AUX_95th_DC15X_scoped: AUX_95th_DC15X {
+	class AUX_95th_DC15X_Scoped: AUX_95th_DC15X {
 		scope = 1;
 		class LinkedItems {
 			class LinkedItemsOptic {

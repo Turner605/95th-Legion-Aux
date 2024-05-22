@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: effects\data\tracer_yellow.rvmat
+//Produced from mikero's Dos Tools Dll version 9.10
+//https://mikero.bytex.digital/Downloads
+//'now' is Mon Dec 04 10:49:12 2023 : 'file' last modified on Mon Nov 23 12:02:48 2020
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1,1,1,0.2};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {100,100,10,1};
+specular[] = {0,0,0,1};
+specularPower = 100;
+renderFlags[] = {"NoZWrite","AddBlend"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

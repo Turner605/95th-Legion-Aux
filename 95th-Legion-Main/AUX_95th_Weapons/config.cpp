@@ -57,8 +57,9 @@ class CfgAmmo {
 };
 
 class CfgWeapons {
+	class AUX_95th_Stun_Muzzle;
+
 	#include "Muzzles\Definitions.hpp"
-	#include "Muzzles\Stuns.hpp"
 	#include "Muzzles\DP23.hpp"
 	#include "Muzzles\BX42.hpp"
 
@@ -73,7 +74,6 @@ class CfgMagazines {
 	#include "Magazines\Definitions.hpp"
 	#include "Magazines\DP23.hpp"
 	#include "Magazines\BX42.hpp"
-	#include "Magazines\Stuns.hpp"
 	#include "Magazines\Grappler.hpp"
 	#include "Magazines\BX42_Rocket_HE.hpp"
 };
