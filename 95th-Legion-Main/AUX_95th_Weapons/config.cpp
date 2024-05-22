@@ -50,7 +50,6 @@ class Mode_FullAuto;
 
 class CfgAmmo {
 	#include "Ammo\Definitions.hpp"
-	#include "Ammo\DC15X.hpp"
 	#include "Ammo\DP23.hpp"
 	// #include "Ammo\BX42.hpp" // Not Applicable
 	#include "Ammo\BX42_Rocket_HE.hpp"
@@ -60,22 +59,18 @@ class CfgAmmo {
 class CfgWeapons {
 	#include "Muzzles\Definitions.hpp"
 	#include "Muzzles\Stuns.hpp"
-	#include "Muzzles\DC15X.hpp"
 	#include "Muzzles\DP23.hpp"
 	#include "Muzzles\BX42.hpp"
 
 	#include "Weapons\Definitions.hpp"
-	#include "Weapons\DC15X.hpp"
 	#include "Weapons\DP23.hpp"
 	#include "Weapons\BX42.hpp"
 
 	#include "Attachments\Definitions.hpp"
-	#include "Attachments\DC15X_Scope.hpp"
 };
 
 class CfgMagazines {
 	#include "Magazines\Definitions.hpp"
-	#include "Magazines\DC15X.hpp"
 	#include "Magazines\DP23.hpp"
 	#include "Magazines\BX42.hpp"
 	#include "Magazines\Stuns.hpp"
