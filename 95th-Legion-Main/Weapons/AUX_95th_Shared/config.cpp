@@ -331,7 +331,7 @@ class CfgMagazines {
 		modelSpecialIsProxy = 0;
 		picture = "AUX_95th_DC15A\Data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
-		count = 60;
+		count = 40;
 		displayName = "$STR_JLTS_names_DC15A_mag";
 		displayNameShort = "$STR_JLTS_snames_EnergyCellStandard";
 		descriptionShort = "$STR_JLTS_descs_DC15A_mag";
