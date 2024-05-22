@@ -76,9 +76,12 @@ private _arsenalBackpacks = [
 
 //-----------------------------# Weapons #-----------------------------------
 private _arsenalWeapons = [
-	"JLTS_DC15S","JLTS_DC15A_plastic","JLTS_DC15A","AUX_95th_DP23","3AS_WestarM5_F","JLTS_DC17SA","ACE_VMH3","ACE_VMM3","Weap_melee_knife","Knife_m3",
-	"Police_Bat","Shovel_Russian","UNSC_Knife","UNSC_Knife_reversed","3AS_RPS6_F","AUX_95th_DC15X","JLTS_DW32S","3AS_DC15L_F","JLTS_Z6","3AS_PLX1_F",
-	"3AS_RPS6_HP","3AS_DC15C_F","3AS_DC15C_GL","AUX_95th_BX42","JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL"
+	"JLTS_DC15S","3AS_WestarM5_F","JLTS_DC17SA","ACE_VMH3","ACE_VMM3","Weap_melee_knife","Knife_m3",
+	"Police_Bat","Shovel_Russian","UNSC_Knife","UNSC_Knife_reversed","3AS_RPS6_F","JLTS_DW32S","3AS_DC15L_F","JLTS_Z6","3AS_PLX1_F",
+	"3AS_RPS6_HP","3AS_DC15C_F","3AS_DC15C_GL","AUX_95th_BX42","3AS_WestarM5_GL",
+	"AUX_95th_DC15A", "AUX_95th_DC15A_ugl_plastic", "AUX_95th_DC15A_ugl", "AUX_95th_DC15A_plastic", 
+	"AUX_95th_DP23", 
+	"AUX_95th_DC15X"
 ];
 
 //-----------------------------# Ammo #-----------------------------------

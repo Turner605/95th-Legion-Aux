@@ -21,10 +21,10 @@ if (!isServer) exitWith {};
 
 //-----------------------------# Weapon Options #-----------------------------------
 private _dc17s = ["JLTS_DC17SA","","JLTS_DC17SA_flashlight","",["JLTS_DC17SA_mag",20],["JLTS_stun_mag_long",5],""];
-private _dc15a = ["JLTS_DC15A_plastic","","","",["JLTS_DC15A_mag",60],["JLTS_stun_mag_long",5],""];
-private _dc15a_ugl = ["JLTS_DC15A_ugl_plastic","","","",["JLTS_DC15A_mag",60],["JLTS_stun_mag_long",5],""];
+private _dc15a = ["AUX_95th_DC15A_plastic","","","",["AUX_95th_DC15A_mag",60],["AUX_95th_Stun_Long_Mag",5],""];
+private _dc15a_ugl = ["AUX_95th_DC15A_ugl_plastic","","","",["AUX_95th_DC15A_mag",60],["AUX_95th_Stun_Long_Mag",5],""];
 private _dc15s = ["JLTS_DC15S","","","",["JLTS_DC15S_mag",80],["JLTS_stun_mag_long",5],""];
-private _dc15x = ["AUX_95th_DC15X","","","AUX_95th_DC15X_Scope",["AUX_95th_DC15X_Mag",15],[],""];
+private _dc15x = ["AUX_95th_DC15X","","","AUX_95th_DC15X_Scope",["AUX_95th_DC15X_Mag",15],["AUX_95th_Stun_Long_Mag",5],""];
 private _z6 = ["JLTS_Z6","","","",["JLTS_Z6_mag",300],[],""];
 private _rps6 = ["3AS_RPS6_HP","","","",["3AS_MK41_AT",1],[],""];
 private _bx42 = ["AUX_95th_BX42","","","",["AUX_95th_BX42_Fuel",300],[],""];
