@@ -1,5 +1,13 @@
 params ["_unit", "_range"];
 
+_unit addEventHandler ["Killed", {
+	params ["_unit", "_killer"];
+
+    [_unit getVariable "AUX_95th_Radar_Frame_Handler"] call CBA_fnc_removePerFrameHandler;
+}];
+
+if (!isServer) exitWith {};
+
 private _frameHandler = [{
 	(_this select 0) params ["_unit", "_range"];
 
@@ -17,9 +25,3 @@ private _frameHandler = [{
 }, 5, [_unit, _range]] call CBA_fnc_addPerFrameHandler;
 
 _unit setVariable ["AUX_95th_Radar_Frame_Handler", _frameHandler, true];
-
-_droid addEventHandler ["Killed", {
-	params ["_unit", "_killer"];
-
-    [_unit getVariable "AUX_95th_Radar_Frame_Handler"] call CBA_fnc_removePerFrameHandler;
-}];
