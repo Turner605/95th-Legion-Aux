@@ -58,6 +58,8 @@ class CfgPatches {
 			"AUX_95th_Droid_Turret_Roof_Turret",
 			"AUX_95th_Droid_Turret_Roof_Turret_Shotgun",
 			"AUX_95th_Droid_Turret_Ball",
+			"AUX_95th_Droid_Radar_Jammer_Turret",
+			"AUX_95th_Droid_Microwave_Emitter_Turret",
 
 			"AUX_95th_CIS_Disguised_Trooper",
 			"AUX_95th_Independent_B1_Unit_Diplomat", 
@@ -152,6 +154,8 @@ class CfgVehicles {
 	#include "Units\Turrets\Roof Turret Blaster.hpp"
 	#include "Units\Turrets\Roof Turret Shotgun.hpp"
 	#include "Units\Turrets\Turret Ball.hpp"
+	#include "Units\Turrets\Radar Jammer.hpp"
+	#include "Units\Turrets\Microwave Emitter.hpp"
 
 	//############################################################### B1 Units ###############################################################
 	NEW_95TH_INDEPENDENT_B1_UNIT(Diplomat,Diplomat);
@@ -224,6 +228,8 @@ class CfgFunctions { class AUX_95th { class CIS_Forces {
 
 	class checkCanShield {file = "\AUX_95th_CIS_Forces\Scripts\Personal Shield\checkCanShield.sqf";};
 	class handlePersonalShield {file = "\AUX_95th_CIS_Forces\Scripts\Personal Shield\handlePersonalShield.sqf";};
+
+	class radarJammerInit {file = "\AUX_95th_CIS_Forces\Init\radarJammerInit.sqf";};
 };};};
 
 class Extended_InitPost_EventHandlers {
@@ -237,6 +243,8 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Droid_Commando_Unit_Captain {class AUX_95th_Droid_Commando_Unit_Captain_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
 	class AUX_95th_Droid_Commando_Unit_Citadel {class AUX_95th_Droid_Commando_Unit_Citadel_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
 	class AUX_95th_Droid_Commando_Unit_Diplomat {class AUX_95th_Droid_Commando_Unit_Diplomat_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	
+	class AUX_95th_Droid_Radar_Jammer_Turret {class AUX_95th_Droid_Radar_Jammer_Turret_Init {onRespawn="true"; serverInit="[_this select 0, 6000] call AUX_95th_fnc_radarJammerInit;";};};
 };
 
 class Extended_PostInit_EventHandlers {

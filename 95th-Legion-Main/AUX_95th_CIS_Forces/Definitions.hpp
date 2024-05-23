@@ -32,7 +32,8 @@ class 3AS_CIS_Vulture_F;
 class ls_cis_hmp;
 class ls_cis_hmp_transport;
 class lsd_largeVTOL_cisDropship;
-
+class 3AS_DF9_Radar_Grey;
+class lsd_cis_radarDish;
 
 class 3AS_GAT;
 class 3AS_GAT_Light;
