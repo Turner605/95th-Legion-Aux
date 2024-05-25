@@ -39,6 +39,7 @@ class CfgVehicles {
 class CfgFunctions { class AUX_95th { class Ace {
 	class setupFortify {file = "\AUX_95th_Ace\Scripts\setupFortify.sqf";};
 	class addDefaultClasses {file = "\AUX_95th_Ace\Scripts\addDefaultClasses.sqf";};
+	class checkKit {file = "\AUX_95th_Ace\Scripts\checkKit.sqf";};
 	class sosBeacon {file = "\AUX_95th_Ace\Scripts\sosBeacon.sqf";};
 };};};
 

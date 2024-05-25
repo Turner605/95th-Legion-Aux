@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: DC15L\Data\Textures\DC15L_Sights.rvmat
+//Produced from mikero's Dos Tools Dll version 9.45
+//https://mikero.bytex.digital/Downloads
+//'now' is Sat May 25 16:46:12 2024 : 'file' last modified on Tue May 07 00:41:07 2024
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1.0,1.0,1.0,1.0};
+diffuse[] = {1.0,1.0,1.0,1.0};
+forcedDiffuse[] = {0.0,0.0,0.0,1.0};
+emmisive[] = {0.0,0.0,0.0,0.0};
+specular[] = {0.05,0.05,0.05,1.0};
+specularPower = 110;
+PixelShaderID = "Collimator";
+VertexShaderID = "Basic";
+RenderFlags[] = {"NoReceiveShadow","AddBlend","NoZwrite"};
+class Stage0
+{
+	uvSource = "texCollimator";
+};

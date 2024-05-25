@@ -23,31 +23,3 @@ player addEventHandler["Respawn", {
         _unit setVariable ["IsOnAirRespawnCooldown", false, true];
     }
 }];
-
-["ace_arsenal_displayClosed", {
-    if(enable_kit_checker_95th) then {
-        private _allItems = items player;
-        private _primary = primaryWeapon player;
-        private _secondary = handgunWeapon player;
-        private _launcher = secondaryWeapon player; 
-
-        if(!(_primary == "")) then {_allItems pushBack _primary};
-        if(!(_secondary == "")) then {_allItems pushBack _secondary};
-        if(!(_launcher == "")) then {_allItems pushBack _launcher};
-
-        private _classCount = 0;
-        // Bug where multiple items from a class will increase the count, need to exit when it finds something of a class
-        {
-            private _classItems = _x;
-
-            {
-                if(_x in _allItems) then { _classCount = _classCount+1 };
-            } forEach _classItems;
-
-        } forEach Arsenal_Class_Items_95th;
-
-        if (_classCount > 1) then {
-            2 cutText ["<t color='#ffffff' size='2'>You seem to be multi-certing.</t><br/><t color='#ffffff' size='2'>Please check your gear.</t>", "PLAIN", 1, true, true];
-        };
-    }
-}] call CBA_fnc_addEventHandler;
