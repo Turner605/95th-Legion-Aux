@@ -32,7 +32,7 @@ class CfgMagazines {
 		displayName = "$STR_JLTS_names_Z6_mag";
 		displayNameShort = "$STR_JLTS_snames_EnergyCellStandard";
 		descriptionShort = "$STR_JLTS_descs_Z6_mag";
-		ammo = "AUX_95th_Rifle_Blue_Ammo";
+		ammo = "AUX_95th_Heavy_Blue_Ammo";
 		tracersEvery = 1;
 		initSpeed = 920;
 		mass = 9;
@@ -71,13 +71,13 @@ class CfgWeapons {
 		recoil = "AUX_95th_recoil_Z6";
 		maxZeroing = 1200;
 		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Z6\Anims\Z6_handanim.rtm"};
-		magazines[] = {"AUX_95th_Z6_mag"};
+		magazines[] = {"AUX_95th_Z6_mag", "AUX_95th_Universal_Heavy_Mag"};
 		magazineWell[] = {};
 		fireLightDiffuse[] = {0,0,1};
 		drySound[] = {"AUX_95th_Shared\Sounds\weapon_dry.wss",5,1,10};
 		modes[] = {"manual","close","short","medium","far_optic1","far_optic2"};
 		class manual: Mode_FullAuto {
-			sounds[] = {"StandardSound"};
+			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType {
 				weaponSoundEffect = "";
 				closure1[] = {};
@@ -85,9 +85,10 @@ class CfgWeapons {
 				soundClosure[] = {};
 			};
 			class StandardSound: BaseSoundModeType {
-				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_Z6\Sounds\z6_fire",1,1,1800};
-				soundBegin[] = {"begin1",1};
+				soundSetShot[] = {"AUX_95th_Heavy_Shot_SoundSet"};
+			};
+			class SilencedSound: BaseSoundModeType {
+				soundSetShot[] = {""};
 			};
 			reloadTime = 0.075;
 			dispersion = 0.00102;
