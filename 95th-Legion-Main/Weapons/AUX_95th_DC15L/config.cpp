@@ -3,7 +3,7 @@ class CfgPatches {
 		author = "95th Legion";
 		name = "AUX 95th Weapons DC15L";
 		requiredAddons[] = {"A3_data_F","A3_anims_F","A3_weapons_F","A3_characters_F"};
-		weapons[] = {"3AS_DC15L_F","3AS_Optic_DC15L","3AS_Bipod_DC15L_f"};
+		weapons[] = {"AUX_95th_DC15L","3AS_Bipod_DC15L_f"};
 		units[] = {};
 		magazines[] = {};
 	};
@@ -138,7 +138,7 @@ class CfgWeapons {
 		reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",1,1,30};
 	};
 
-	class AUX_95th_DC15L_F: AUX_95th_DC15L_Base_F {
+	class AUX_95th_DC15L: AUX_95th_DC15L_Base_F {
 		scope = 2;
 		displayName = "[3AS] DC-15L Rifle";
 		model = "3AS\3AS_Weapons\DC15L\3AS_DC15L_f.p3d";

@@ -93,7 +93,7 @@ AUX_95th_Arsenal_Class_Items = [
 ];
 
 AUX_95th_Arsenal_Whitelisted_Items = [
-    "AUX_95th_DC15L_F","AUX_95th_BX42","AUX_95th_DC15A_plastic","AUX_95th_DC15A","AUX_95th_DC15A_ugl_plastic", "AUX_95th_DC15A_ugl",
+    "AUX_95th_DC15L","AUX_95th_BX42","AUX_95th_DC15A_plastic","AUX_95th_DC15A","AUX_95th_DC15A_ugl_plastic", "AUX_95th_DC15A_ugl",
     "AUX_95th_DC15S","AUX_95th_DC15X","AUX_95th_DP23","AUX_95th_DW32S","AUX_95th_Z6","3AS_DC15C_F","3AS_DC15C_GL","3AS_DC17M_F",
     "3AS_MPL_F","3AS_RepublicDatapadRifle","3AS_Valken38X_F","3AS_WestarM5_GL","3AS_WestarM5_F",
 
