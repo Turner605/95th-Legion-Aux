@@ -18,7 +18,7 @@ class CfgMagazines {
 		author = "95th Legion";
 		modelSpecial = "";
 		modelSpecialIsProxy = 0;
-		picture = "AUX_95th_DP23\Data\ui\DP23_mag_ui_ca.paa";
+		picture = "\AUX_95th_DP23\Data\ui\DP23_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
 		count = 20;
 		displayName = "$STR_JLTS_names_DP23_mag";
