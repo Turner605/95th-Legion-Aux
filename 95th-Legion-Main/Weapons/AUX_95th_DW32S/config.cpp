@@ -23,7 +23,7 @@ class CfgMagazines {
 		displayName = "$STR_JLTS_names_DW32S_mag";
 		displayNameShort = "$STR_JLTS_snames_EnergyCellStandard";
 		descriptionShort = "$STR_JLTS_descs_DW32S_mag";
-		ammo = "AUX_95th_Rifle_Blue_Ammo";
+		ammo = "JLTS_bullet_carbine_blue";
 		tracersEvery = 1;
 	};
 };
@@ -55,8 +55,8 @@ class CfgWeapons {
 		picture = "\AUX_95th_DW32S\Data\ui\DW32S_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DW32S\DW32S.p3d";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"AUX_95th_DW32S\Data\DW32S_co.paa"};
-		handAnim[] = {"OFP2_ManSkeleton","AUX_95th_DW32S\Anims\DW32S_handanim.rtm"};
+		hiddenSelectionsTextures[] = {"\AUX_95th_DW32S\Data\DW32S_co.paa"};
+		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DW32S\Anims\DW32S_handanim.rtm"};
 		magazines[] = {"AUX_95th_DW32S_mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
@@ -82,7 +82,7 @@ class CfgWeapons {
 			reloadTime = 0.1;
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
-			dispersion = 0.5;
+			dispersion = 0.00087;
 			minRange = 2;
 			minRangeProbab = 0.5;
 			midRange = 200;
@@ -92,15 +92,13 @@ class CfgWeapons {
 		};
 		class FullAuto: Mode_FullAuto {
 			sounds[] = {"StandardSound"};
-			class BaseSoundModeType
-			{
+			class BaseSoundModeType {
 				weaponSoundEffect = "";
 				closure1[] = {};
 				closure2[] = {};
 				soundClosure[] = {};
 			};
-			class StandardSound: BaseSoundModeType
-			{
+			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
 				begin1[] = {"AUX_95th_DW32S\Sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
@@ -119,15 +117,13 @@ class CfgWeapons {
 		};
 		class fullauto_medium: FullAuto {
 			sounds[] = {"StandardSound"};
-			class BaseSoundModeType
-			{
+			class BaseSoundModeType {
 				weaponSoundEffect = "";
 				closure1[] = {};
 				closure2[] = {};
 				soundClosure[] = {};
 			};
-			class StandardSound: BaseSoundModeType
-			{
+			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
 				begin1[] = {"AUX_95th_DW32S\Sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
@@ -146,15 +142,13 @@ class CfgWeapons {
 		};
 		class single_medium_optics1: Single {
 			sounds[] = {"StandardSound"};
-			class BaseSoundModeType
-			{
+			class BaseSoundModeType {
 				weaponSoundEffect = "";
 				closure1[] = {};
 				closure2[] = {};
 				soundClosure[] = {};
 			};
-			class StandardSound: BaseSoundModeType
-			{
+			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
 				begin1[] = {"AUX_95th_DW32S\Sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
