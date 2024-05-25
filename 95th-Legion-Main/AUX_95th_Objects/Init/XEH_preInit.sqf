@@ -182,24 +182,6 @@ private _arsenalEquipment = [
 
 Arsenal_All_Items_95th = (_arsenalWeapons + _arsenalAmmo + _arsenalAttachments + _arsenalHelmets + _arsenalUniforms + _arsenalVests + _arsenalBackpacks + _arsenalGear + _arsenalMedical + _arsenalExplosives + _arsenalGrenades + _arsenalEquipment);
 
-Arsenal_Class_Items_95th = [
-	["AUX_95th_DC15X","JLTS_DW32S"], // 0 - Marksman
-	["JLTS_riot_shield_item"], // 1 - Riot
-	["NFL_Disc_Shield","3AS_DC15L_F","JLTS_Z6"], // 2 - Heavy
-	["95th_Backpack_EOD"], // 3 - Engineer
-	["95th_Backpack_Medic"], // 4 - Medic
-	["3AS_PLX1_F","3AS_RPS6_HP"], // 5 - AT
-	[], // 6 - Crewman
-	[], // 7 - Pilot
-	["3AS_DC15C_F","3AS_DC15C_GL"], // 8 - NCO
-	["AUX_95th_BX42"], // 9 - Flame
-	["95th_JumpPack"], // 10 - Jet
-	["DSS_Cloaking_Device"], // 11 - Stealth
-	["JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL"], // 12 - Grenadier
-	["DSS_Hacking_Device"], // 13 - Tech
-	["DSS_Support_Device"] // 14 - Support
-];
-
 // What is: "SCH_B_LTD_Packed","SCH_B_WD_LTD_Packed"
 
 // What to do with:
@@ -215,16 +197,6 @@ Arsenal_Class_Items_95th = [
 
 
 
-
-[
-    "enable_kit_checker_95th", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
-    "CHECKBOX", // setting type
-    "Enable The Arsenal Kit Checker", // Pretty name shown inside the ingame settings menu. Can be stringtable entry.
-    "95th Aux Mod", // Pretty name of the category where the setting can be found. Can be stringtable entry.
-    [false, true, true], // data for this setting: [min, max, default, number of shown trailing decimals]
-    1, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
-    {} // function that will be executed once on mission start and every time the setting is changed.
-] call CBA_fnc_addSetting;
 
 [
     "AUX_95th_Shield_Small_Health", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.

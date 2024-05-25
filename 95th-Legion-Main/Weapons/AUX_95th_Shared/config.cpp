@@ -284,8 +284,8 @@ class CfgAmmo {
 		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
 		cartridge = "";
 		lightcolor[] = {0.25,0.25,0.5};
-		flaresize = 5;
-		tracerscale = 1.8;
+		flaresize = 8;
+		tracerscale = 1.4;
 		effectflare = "FlareShell";
 		tracerstarttime = 0.05;
 		tracerendtime = 10;
