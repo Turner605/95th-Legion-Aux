@@ -23,7 +23,7 @@ class CfgMagazines {
 		displayName = "$STR_JLTS_names_DW32S_mag";
 		displayNameShort = "$STR_JLTS_snames_EnergyCellStandard";
 		descriptionShort = "$STR_JLTS_descs_DW32S_mag";
-		ammo = "JLTS_bullet_carbine_blue";
+		ammo = "AUX_95th_Rifle_Blue_Ammo";
 		tracersEvery = 1;
 	};
 };
