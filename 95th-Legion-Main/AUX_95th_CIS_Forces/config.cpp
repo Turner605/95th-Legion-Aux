@@ -60,6 +60,8 @@ class CfgPatches {
 			"AUX_95th_Droid_Turret_Ball",
 			"AUX_95th_Droid_Radar_Jammer_Turret",
 			"AUX_95th_Droid_Microwave_Emitter_Turret",
+			"AUX_95th_Droid_Droideka_Turret",
+			"AUX_95th_Droid_Droideka_Sniper_Turret",
 
 			"AUX_95th_CIS_Disguised_Trooper",
 			"AUX_95th_Independent_B1_Unit_Diplomat", 
@@ -156,6 +158,8 @@ class CfgVehicles {
 	#include "Units\Turrets\Turret Ball.hpp"
 	#include "Units\Turrets\Radar Jammer.hpp"
 	#include "Units\Turrets\Microwave Emitter.hpp"
+	#include "Units\Turrets\Droideka.hpp"
+	#include "Units\Turrets\Droideka Sniper.hpp"
 
 	//############################################################### B1 Units ###############################################################
 	NEW_95TH_INDEPENDENT_B1_UNIT(Diplomat,Diplomat);
