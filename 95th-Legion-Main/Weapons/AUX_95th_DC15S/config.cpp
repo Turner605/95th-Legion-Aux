@@ -194,7 +194,7 @@ class CfgWeapons {
 			mass = 66;
 			class CowsSlot: CowsSlot
 			{
-				compatibleItems[] = {};
+				compatibleItems[] = {"SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Yellow","SEA_Optic_Holo_Two_Green","SEA_Optic_Holo_One_Blue","SEA_Optic_Holo_One_Green","SEA_Optic_Holo_One_Red","SEA_Optic_Holo_One_Yellow"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{

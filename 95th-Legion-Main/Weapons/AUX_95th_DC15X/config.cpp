@@ -239,7 +239,7 @@ class CfgWeapons {
 		class WeaponSlotsInfo: WeaponSlotsInfo {
 			mass = 92;
 			class CowsSlot: CowsSlot {
-				compatibleItems[] = {"AUX_95th_DC15X_scope"};
+				compatibleItems[] = {"AUX_95th_DC15X_scope","SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Yellow","SEA_Optic_Holo_Two_Green","SEA_Optic_Holo_One_Blue","SEA_Optic_Holo_One_Green","SEA_Optic_Holo_One_Red","SEA_Optic_Holo_One_Yellow"};
 				iconPicture = "";
 			};
 			class MuzzleSlot: MuzzleSlot {
