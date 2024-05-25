@@ -1,8 +1,8 @@
 params ["_unit"];
 
-// if(_unit call BIS_fnc_isCurator)exitWith{};
-// if(missionnamespace getVariable "AUX_95th_Kit_Checker_Disabled")exitWith{};
-// if(_unit getVariable "AUX_95th_Kit_Checker_Disabled")exitWith{};
+if(!isNull (getAssignedCuratorLogic _unit))exitWith{}; //Disable if you're testing this you idiot
+if(missionnamespace getVariable "AUX_95th_Kit_Checker_Disabled")exitWith{};
+if(_unit getVariable "AUX_95th_Kit_Checker_Disabled")exitWith{};
 
 private _allItems = items _unit;
 
