@@ -72,10 +72,10 @@ class CfgWeapons {
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"AUX_95th_DP23\Data\DP23_co.paa"};
 		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DP23\Anims\DP23_handanim.rtm"};
-		magazines[] = {"AUX_95th_DP23_mag"};
+		magazines[] = {"AUX_95th_Universal_Shotgun_Mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
-		recoil = "JLTS_recoil_DP23";
+		recoil = "AUX_95th_recoil_DP23";
 		fireLightDiffuse[] = {0,0,1};
 		drySound[] = {"AUX_95th_Shared\Sounds\weapon_dry.wss",5,1,10};
 		muzzles[] = {"this","Stun"};

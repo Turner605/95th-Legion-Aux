@@ -637,6 +637,22 @@ class CfgMagazines {
 		ammo = "AUX_95th_Sniper_Blue_Ammo";
 		tracersEvery = 1;
 	};
+
+	class AUX_95th_Universal_Shotgun_Mag: 30Rnd_65x39_caseless_mag {
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		author = "95th Legion";
+		modelSpecial = "";
+		modelSpecialIsProxy = 0;
+		picture = "\AUX_95th_Shared\Data\ui\Shotgun_Mag.paa";
+		model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
+		count = 20;
+		displayName = "Universal Shotgun Energy Cell";
+		displayNameShort = "Universal Energy";
+		descriptionShort = "Universal Shotgun Cell";
+		ammo = "AUX_95th_Shotgun_Blue_Ammo";
+		tracersEvery = 1;
+	};
 };
 
 class Mode_SemiAuto;

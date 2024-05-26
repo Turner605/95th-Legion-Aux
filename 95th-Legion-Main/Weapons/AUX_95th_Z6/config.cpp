@@ -71,7 +71,7 @@ class CfgWeapons {
 		recoil = "AUX_95th_recoil_Z6";
 		maxZeroing = 1200;
 		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Z6\Anims\Z6_handanim.rtm"};
-		magazines[] = {"AUX_95th_Z6_mag", "AUX_95th_Universal_Heavy_Mag"};
+		magazines[] = {"AUX_95th_Universal_Heavy_Mag"};
 		magazineWell[] = {};
 		fireLightDiffuse[] = {0,0,1};
 		drySound[] = {"AUX_95th_Shared\Sounds\weapon_dry.wss",5,1,10};

@@ -120,7 +120,7 @@ class CfgWeapons {
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType {
-				soundSetShot[] = {"AUX_95th_DC15C_Shot_SoundSet"};
+				soundSetShot[] = {"AUX_95th_Rifle_Shot_SoundSet"};
 			};
 			class SilencedSound: BaseSoundModeType {
 				soundSetShot[] = {""};
@@ -140,10 +140,10 @@ class CfgWeapons {
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType {
-				soundSetShot[] = {"AUX_95th_DC15C_Shot_SoundSet"};
+				soundSetShot[] = {"AUX_95th_Rifle_Shot_SoundSet"};
 			};
 			class SilencedSound: BaseSoundModeType {
-				soundSetShot[] = {"AUX_95th_DC15C_Shot_SoundSet"};
+				soundSetShot[] = {"AUX_95th_Rifle_Shot_SoundSet"};
 			};
 		};
 		class AUX_95th_15CGL: UGL_F {

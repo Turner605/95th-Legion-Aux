@@ -62,7 +62,7 @@ class CfgWeapons {
 		hiddenSelectionsTextures[] = {"AUX_95th_DC15S\Data\DC15S_co.paa"};
 		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DC15S\Anims\DC15S_handanim.rtm"};
 		reloadAction = "GestureReload_JLTS_DC15S";
-		magazines[] = {"AUX_95th_DC15S_mag", "AUX_95th_Universal_Rifle_Mag"};
+		magazines[] = {"AUX_95th_Universal_Rifle_Mag"};
 		magazineWell[] = {};
 		fireLightDiffuse[] = {0,0,1};
 		drySound[] = {"AUX_95th_DC15S\Sounds\weapon_dry.wss",5,1,10};
