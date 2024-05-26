@@ -700,9 +700,33 @@ class CfgSoundShaders {
 		volume = 1;
 		range = 1000;
 	};
+
+	class AUX_95th_Rifle_Shot_SoundShader {
+		samples[] = {
+			{"AUX_95th_Shared\Sounds\Rifle Weapons\Shot_1.ogg",1},
+			{"AUX_95th_Shared\Sounds\Rifle Weapons\Shot_2.ogg",1},
+			{"AUX_95th_Shared\Sounds\Rifle Weapons\Shot_3.ogg",1},
+			{"AUX_95th_Shared\Sounds\Rifle Weapons\Shot_4.ogg",1}
+		};
+		volume = 1;
+		range = 800;
+	};
 };
 
 class CfgSoundSets {
+	class AUX_95th_Rifle_Shot_SoundSet {
+		soundShaders[] = {"AUX_95th_Rifle_Shot_SoundShader"};
+		volumeFactor = 1.0;
+		volumeCurve = "InverseSquare2Curve";
+		sound3DProcessingType = "WeaponMediumShot3DProcessingType";
+		distanceFilter = "weaponShotDistanceFreqAttenuationFilter";
+		occlusionFactor = 0.5;
+		obstructionFactor = 0.3;
+		spatial = 1;
+		doppler = 0;
+		loop = 0;
+	};
+
 	class AUX_95th_Heavy_Shot_SoundSet {
 		soundShaders[] = {"AUX_95th_Heavy_Shot_SoundShader"};
 		volumeFactor = 1.0;

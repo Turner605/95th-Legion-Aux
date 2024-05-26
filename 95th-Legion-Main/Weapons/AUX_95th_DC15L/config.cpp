@@ -63,7 +63,7 @@ class CfgWeapons {
 
 	class AUX_95th_DC15L_Base_F: Rifle_Base_F {
 		author = "$STR_3as_Studio";
-		magazines[] = {"AUX_95th_DC15L_mag", "AUX_95th_Universal_Heavy_Mag"};
+		magazines[] = {"AUX_95th_Universal_Heavy_Mag"};
 		reloadAction = "GestureReloadMX";
 		magazineReloadSwitchPhase = 0.4;
 		discreteDistanceInitIndex = 0;

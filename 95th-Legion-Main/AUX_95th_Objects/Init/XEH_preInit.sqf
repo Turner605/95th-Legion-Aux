@@ -77,7 +77,7 @@ private _arsenalBackpacks = [
 //-----------------------------# Weapons #-----------------------------------
 private _arsenalWeapons = [
     "AUX_95th_DC15L","AUX_95th_BX42","AUX_95th_DC15A_plastic","AUX_95th_DC15A","AUX_95th_DC15A_ugl_plastic", "AUX_95th_DC15A_ugl",
-    "AUX_95th_DC15S","AUX_95th_DC15X","AUX_95th_DP23","AUX_95th_DW32S","AUX_95th_Z6","3AS_DC15C_F","3AS_DC15C_GL","3AS_DC17M_F",
+    "AUX_95th_DC15S","AUX_95th_DC15X","AUX_95th_DP23","AUX_95th_DW32S","AUX_95th_Z6","AUX_95th_DC15C","3AS_DC15C_GL","3AS_DC17M_F",
     "3AS_MPL_F","3AS_RepublicDatapadRifle","3AS_Valken38X_F","3AS_WestarM5_GL","3AS_WestarM5_F",
 
     "AUX_95th_DC17SA","ACE_VMH3","ACE_VMM3","ACE_Flashlight_Maglite_ML300L","hgun_esd_01_F","Weap_melee_knife","Knife_m3","Police_Bat",
@@ -89,7 +89,9 @@ private _arsenalWeapons = [
 
 //-----------------------------# Ammo #-----------------------------------
 private _arsenalAmmo = [
-	"3AS_40Rnd_EC40_Mag","3AS_200Rnd_EC40_Mag","JLTS_DC15A_mag","JLTS_stun_mag_short","JLTS_stun_mag_long",
+	"AUX_95th_Universal_Rifle_Mag","AUX_95th_Universal_Heavy_Mag","AUX_95th_Universal_Sniper_Mag","AUX_95th_Stun_Long_Mag","AUX_95th_Stun_Short_Mag",
+	"3AS_40Rnd_EC40_Mag",
+	
 	"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F",
 	"UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell",
 	"1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","ACE_HuntIR_M203","OPTRE_1Rnd_Smoke_Grenade_shell",
@@ -109,10 +111,10 @@ private _arsenalAmmo = [
 
 //-----------------------------# Weapon Attachments #-----------------------------------
 private _arsenalAttachments = [
-	"3AS_optic_acog_DC15C","3AS_optic_reflex_DC15C","AUX_95th_DC15X_Scope","3AS_Optic_Scope_WestarM5","3AS_Optic_DC15L",
+	"AUX_95th_optic_acog_DC15C","AUX_95th_optic_reflex_DC15C","AUX_95th_DC15X_Scope","3AS_Optic_Scope_WestarM5",
 	"SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Yellow","SEA_Optic_Holo_Two_Green",
 	"SEA_Optic_Holo_One_Blue","SEA_Optic_Holo_One_Green","SEA_Optic_Holo_One_Red","SEA_Optic_Holo_One_Yellow",
-	"acc_flashlight","acc_pointer_IR","ACE_acc_pointer_green","JLTS_DC17SA_flashlight","acc_flashlight_pistol","3AS_Bipod_DC15L_f"
+	"acc_flashlight","acc_pointer_IR","ACE_acc_pointer_green","AUX_95th_DC17SA_flashlight","acc_flashlight_pistol","AUX_95th_Bipod_DC15L_f"
 ];
 
 //-----------------------------# Gear #-----------------------------------
