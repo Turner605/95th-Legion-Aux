@@ -21,21 +21,21 @@ if (!isServer) exitWith {};
 
 //-----------------------------# Weapon Options #-----------------------------------
 private _dc17s = ["AUX_95th_DC17SA","","AUX_95th_DC17SA_flashlight","",["AUX_95th_DC17SA_mag",20],["AUX_95th_Stun_Long_Mag",5],""];
-private _dc15a = ["AUX_95th_DC15A_plastic","","","",["AUX_95th_DC15A_mag",60],["AUX_95th_Stun_Long_Mag",5],""];
-private _dc15a_ugl = ["AUX_95th_DC15A_ugl_plastic","","","",["AUX_95th_DC15A_mag",60],["AUX_95th_Stun_Long_Mag",5],""];
-private _dc15s = ["AUX_95th_DC15S","","","",["AUX_95th_DC15S_mag",80],["AUX_95th_Stun_Long_Mag",5],""];
-private _dc15x = ["AUX_95th_DC15X","","","AUX_95th_DC15X_Scope",["AUX_95th_DC15X_Mag",15],["AUX_95th_Stun_Long_Mag",5],""];
-private _z6 = ["AUX_95th_Z6","","","",["AUX_95th_Z6_mag",300],[],""];
+private _dc15a = ["AUX_95th_DC15A_plastic","","","",["AUX_95th_Universal_Rifle_Mag",60],["AUX_95th_Stun_Long_Mag",5],""];
+private _dc15a_ugl = ["AUX_95th_DC15A_ugl_plastic","","","",["AUX_95th_Universal_Rifle_Mag",60],["AUX_95th_Stun_Long_Mag",5],""];
+private _dc15s = ["AUX_95th_DC15S","","","",["AUX_95th_Universal_Rifle_Mag",80],["AUX_95th_Stun_Long_Mag",5],""];
+private _dc15x = ["AUX_95th_DC15X","","","AUX_95th_DC15X_Scope",["AUX_95th_Sniper_Rifle_Mag",15],["AUX_95th_Stun_Long_Mag",5],""];
+private _z6 = ["AUX_95th_Z6","","","",["AUX_95th_Universal_Heavy_Mag",300],[],""];
 private _rps6 = ["3AS_RPS6_HP","","","",["3AS_MK41_AT",1],[],""];
 private _bx42 = ["AUX_95th_BX42","","","",["AUX_95th_BX42_Fuel",300],[],""];
 
 //-----------------------------# Ammo Options #-----------------------------------
-private _dc17s_Ammo = [["JLTS_DC17SA_mag",2,20],["AUX_95th_Stun_Long_Mag",2,5]];
-private _dc15a_Ammo = _dc17s_Ammo + [["AUX_95th_DC15A_mag",7,60]];
-private _dc15a_ugl_Ammo = _dc17s_Ammo + [["AUX_95th_DC15A_mag",7,60],["1Rnd_HE_Grenade_shell",7,1]];
-private _dc15s_Ammo = _dc17s_Ammo + [["AUX_95th_DC15S_mag",7,80]];
-private _dc15x_Ammo = _dc17s_Ammo + [["AUX_95th_DC15X_Mag",7,15]];
-private _z6_Ammo = _dc17s_Ammo + [["AUX_95th_Z6_mag",7,300]];
+private _dc17s_Ammo = [["AUX_95th_DC17SA_mag",2,20],["AUX_95th_Stun_Long_Mag",2,5]];
+private _dc15a_Ammo = _dc17s_Ammo + [["AUX_95th_Universal_Rifle_Mag",7,60]];
+private _dc15a_ugl_Ammo = _dc17s_Ammo + [["AUX_95th_Universal_Rifle_Mag",7,60],["1Rnd_HE_Grenade_shell",7,1]];
+private _dc15s_Ammo = _dc17s_Ammo + [["AUX_95th_Universal_Rifle_Mag",7,80]];
+private _dc15x_Ammo = _dc17s_Ammo + [["AUX_95th_Universal_Sniper_Mag",7,15]];
+private _z6_Ammo = _dc17s_Ammo + [["AUX_95th_Universal_Heavy_Mag",7,300]];
 private _rps6_Ammo = _dc17s_Ammo + [["3AS_MK41_AT",2,1]];
 private _bx42_Ammo = _dc17s_Ammo + [["AUX_95th_BX42_Fuel",2,300]];
 
