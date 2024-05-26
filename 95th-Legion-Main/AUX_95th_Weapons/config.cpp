@@ -24,19 +24,7 @@ class CfgPatches {
 // - Hacking Dart - One shot to hack a target
 
 //TODO:
-// DW32S
-// DC17A (Pistol)
-
-// Westar - 3AS_WestarM5_F
-// Westar GL - 3AS_WestarM5_GL
-// DC15L - 3AS_DC15L_F
-// DC15C GL - 3AS_DC15C_GL
-// DC15C - 3AS_DC15C_F
-// Z6 - JLTS_Z6
 // EPL2 - JLTS_EPL2
-// DC15S - JLTS_DC15S
-// DC15A - JLTS_DC15A_plastic
-// DC15A GL - JLTS_DC15A_ugl_plastic
 
 class CowsSlot;
 class UnderBarrelSlot;

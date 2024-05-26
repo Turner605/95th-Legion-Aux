@@ -44,7 +44,7 @@ class TransportWeapons {
 	class _xx_AUX_95th_Z6{weapon="AUX_95th_Z6"; count=2;};
 	class _xx_AUX_95th_DC15L{weapon="AUX_95th_DC15L"; count=2;};
 	class _xx_AUX_95th_DW32S{weapon="AUX_95th_DW32S"; count=2;};
-	class _xx_3AS_WestarM5_F{weapon="3AS_WestarM5_F"; count=2;};
+	class _xx_AUX_95th_WestarM5{weapon="AUX_95th_WestarM5"; count=2;};
 	class _xx_ACE_VMH3{weapon="ACE_VMH3"; count=2;};
 	class _xx_3AS_RPS6_HP{weapon="3AS_RPS6_HP"; count=2;};
 	class _xx_3AS_RPS6_F{weapon="3AS_RPS6_F"; count=2;};
