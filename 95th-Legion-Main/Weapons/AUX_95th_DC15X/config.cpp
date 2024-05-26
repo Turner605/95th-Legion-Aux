@@ -24,7 +24,7 @@ class CfgMagazines {
 		count = 15;
 		displayNameShort = "$STR_JLTS_snames_EnergyCellHigh";
 		descriptionShort = "$STR_JLTS_descs_DC15x_mag";
-		ammo = "JLTS_bullet_sniper_blue"; // replace ammo = "AUX_95th_DC15X_Ammo";
+		ammo = "AUX_95th_Sniper_Blue_Ammo";
 		tracersEvery = 1;
 	};
 };
@@ -101,7 +101,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"\AUX_95th_DC15X\Data\DC15X_co.paa"};
 		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DC15X\Anims\DC15X_handanim.rtm"};
-		magazines[] = {"AUX_95th_DC15X_mag"};
+		magazines[] = {"AUX_95th_DC15X_mag", "AUX_95th_Universal_Sniper_Mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		fireLightDiffuse[] = {0,0,1};

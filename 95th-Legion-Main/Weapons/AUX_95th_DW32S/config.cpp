@@ -57,7 +57,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"\AUX_95th_DW32S\Data\DW32S_co.paa"};
 		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DW32S\Anims\DW32S_handanim.rtm"};
-		magazines[] = {"AUX_95th_DW32S_mag", "AUX_95th_Universal_Rifle_Mag"};
+		magazines[] = {"AUX_95th_DW32S_mag", "AUX_95th_Universal_Sniper_Mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		fireLightDiffuse[] = {0,0,1};
