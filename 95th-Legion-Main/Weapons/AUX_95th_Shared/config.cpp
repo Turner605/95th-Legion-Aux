@@ -568,7 +568,7 @@ class CfgMagazines {
 		displayName = "$STR_JLTS_names_StunShort_mag";
 		displayNameShort = "$STR_JLTS_snames_EnergyCellStunShort";
 		model = "\MRC\JLTS\weapons\Core\stun_mag.p3d";
-		picture = "AUX_95th_Shared\Data\ui\stun_mag_ui_ca.paa";
+		picture = "\AUX_95th_Shared\Data\ui\Stun_Mag.paa";
 		count = 10;
 		ammo = "AUX_95th_Stun_Ammo";
 		descriptionShort = "$STR_JLTS_descs_StunShort_mag";
@@ -595,12 +595,13 @@ class CfgMagazines {
 		modelSpecialIsProxy = 0;
 		picture = "\AUX_95th_Shared\Data\ui\Rifle_Mag.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
-		count = 40;
+		count = 60;
 		displayName = "Universal Rifle Energy Cell";
 		displayNameShort = "Universal Energy";
 		descriptionShort = "Universal Rifle Cell";
 		ammo = "AUX_95th_Rifle_Blue_Ammo";
 		tracersEvery = 1;
+		mass = 18;
 	};
 
 	class 100Rnd_65x39_caseless_mag;
@@ -619,7 +620,7 @@ class CfgMagazines {
 		ammo = "AUX_95th_Heavy_Blue_Ammo";
 		tracersEvery = 1;
 		initSpeed = 920;
-		mass = 18;
+		mass = 22;
 	};
 
 	class AUX_95th_Universal_Sniper_Mag: 30Rnd_65x39_caseless_mag {
@@ -636,6 +637,7 @@ class CfgMagazines {
 		descriptionShort = "Universal Sniper Cell";
 		ammo = "AUX_95th_Sniper_Blue_Ammo";
 		tracersEvery = 1;
+		mass = 18;
 	};
 
 	class AUX_95th_Universal_Shotgun_Mag: 30Rnd_65x39_caseless_mag {
@@ -652,6 +654,7 @@ class CfgMagazines {
 		descriptionShort = "Universal Shotgun Cell";
 		ammo = "AUX_95th_Shotgun_Blue_Ammo";
 		tracersEvery = 1;
+		mass = 18;
 	};
 };
 
