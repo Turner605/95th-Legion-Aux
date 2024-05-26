@@ -30,6 +30,7 @@ class TransportMagazines {
 	class _xx_AUX_95th_Stun_Long_Mag{magazine="AUX_95th_Stun_Long_Mag"; count=64;};
 	class _xx_AUX_95th_Universal_Rifle_Magg{magazine="AUX_95th_Universal_Rifle_Mag"; count=240;};
 	class _xx_AUX_95th_Universal_Heavy_Mag{magazine="AUX_95th_Universal_Heavy_Mag"; count=20;};
+	class _xx_AUX_95th_Universal_Shotgun_Mag{magazine="AUX_95th_Universal_Shotgun_Mag"; count=20;};
 };
 
 class TransportWeapons {

@@ -77,14 +77,14 @@ private _arsenalBackpacks = [
 //-----------------------------# Weapons #-----------------------------------
 private _arsenalWeapons = [
     "AUX_95th_DC15L","AUX_95th_BX42","AUX_95th_DC15A_plastic","AUX_95th_DC15A","AUX_95th_DC15A_ugl_plastic", "AUX_95th_DC15A_ugl",
-    "AUX_95th_DC15S","AUX_95th_DC15X","AUX_95th_DP23","AUX_95th_DW32S","AUX_95th_Z6","AUX_95th_DC15C","3AS_DC15C_GL","3AS_DC17M_F",
+    "AUX_95th_DC15S","AUX_95th_DC15X","AUX_95th_DP23","AUX_95th_DW32S","AUX_95th_Z6","AUX_95th_DC15C","AUX_95th_DC15C_GL","3AS_DC17M_F",
     "3AS_MPL_F","3AS_RepublicDatapadRifle","3AS_Valken38X_F","3AS_WestarM5_GL","3AS_WestarM5_F",
 
     "AUX_95th_DC17SA","ACE_VMH3","ACE_VMM3","ACE_Flashlight_Maglite_ML300L","hgun_esd_01_F","Weap_melee_knife","Knife_m3","Police_Bat",
     "Shovel_Russian","Shovel_Russian_Rotated","UNSC_Knife","UNSC_Knife_reversed","SW_clone_knife","WBK_SciFi_Sword_1","IMS_HL_StunBaton",
     "3AS_DC17STest_F","3AS_RepublicDatapadPistol",
 
-    "3AS_PLX1_F","3AS_RPS6_F","3AS_RPS6_HP"
+    "3AS_PLX1_F","3AS_RPS6_F","3AS_RPS6_HP","3AS_RPS6_G"
 ];
 
 //-----------------------------# Ammo #-----------------------------------
