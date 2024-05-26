@@ -1,4 +1,5 @@
 #include "Macros\LAAT Texture.hpp"
+#include "Macros\LAAT C Texture.hpp"
 #include "Macros\ATTE Texture.hpp"
 #include "Macros\LAAT Shared.hpp"
 #include "Macros\LAAT C Shared.hpp"

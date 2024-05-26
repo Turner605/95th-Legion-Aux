@@ -9,4 +9,8 @@
 		editorSubcategory=AUX_95th_Legion_Vehicles_Category_Air_Gunships;\
 		ace_cargo_space = 26;\
 		ace_cargo_hasCargo = 1;\
-        crew = AUX_95th_Generic_Unit_P1_Basic_Pilot;
+        crew = AUX_95th_Generic_Unit_P1_Basic_Pilot;\
+		class TextureSources {\
+			textureList[] = {Default,1};\
+			NEW_95TH_LAATC_TEXTURE(Default)};\
+		};
