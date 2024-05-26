@@ -98,10 +98,10 @@ class CfgWeapons {
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType {
-				soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
+				soundSetShot[] = {"AUX_95th_Westar_Shot_SoundSet"};
 			};
 			class SilencedSound: BaseSoundModeType {
-				soundSetShot[] = {"3AS_Plasma_Shot_SoundSet"};
+				soundSetShot[] = {"AUX_95th_Westar_Shot_SoundSet"};
 			};
 		};
 		class Burst: Mode_Burst {
@@ -118,7 +118,7 @@ class CfgWeapons {
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType {
-				soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
+				soundSetShot[] = {"AUX_95th_Westar_Shot_SoundSet"};
 			};
 			class SilencedSound: BaseSoundModeType {
 				soundSetShot[] = {""};
@@ -137,10 +137,10 @@ class CfgWeapons {
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType;
 			class StandardSound: BaseSoundModeType {
-				soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
+				soundSetShot[] = {"AUX_95th_Westar_Shot_SoundSet"};
 			};
 			class SilencedSound: BaseSoundModeType {
-				soundSetShot[] = {"3AS_Plasma_Shot_SoundSet"};
+				soundSetShot[] = {"AUX_95th_Westar_Shot_SoundSet"};
 			};
 		};
 		class Burst_medium: Burst {
