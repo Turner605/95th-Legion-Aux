@@ -46,7 +46,7 @@ if(AUX_95th_Default_Kits_Enabled) then {
     };
 }] call CBA_fnc_addEventHandler;
 
-// Anti saluting Turner
+// ATSS (Anti Turner Salute System)
 player addEventHandler ["AnimChanged", {
 	params ["_unit", "_anim"];
 
