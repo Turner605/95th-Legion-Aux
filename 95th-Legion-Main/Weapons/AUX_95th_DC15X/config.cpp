@@ -93,7 +93,7 @@ class CfgWeapons {
 		JLTS_repairTime = 33;
 		author = "95th Aux Team";
 		scope = 2;
-		displayName = "$STR_JLTS_names_DC15X";
+		displayName = "[95th] DC15X";
 		descriptionShort = "$STR_JLTS_descs_BlasterRifle";
 		picture = "\AUX_95th_DC15X\Data\ui\DC15X_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15X\DC15X.p3d";

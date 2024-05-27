@@ -65,7 +65,7 @@ class CfgWeapons {
 		author = "95th Legion";
 		fireSpreadAngle = 1;
 		scope = 2;
-		displayName = "$STR_JLTS_names_DP23";
+		displayName = "[95th] DP23";
 		descriptionShort = "$STR_JLTS_descs_BlasterScatter";
 		picture = "AUX_95th_DP23\Data\ui\DP23_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DP23\DP23.p3d";

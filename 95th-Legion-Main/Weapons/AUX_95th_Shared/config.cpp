@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Weapons_Shared {
 		author = "95th Legion";
 		name = "AUX 95th Weapons Shared";
-		requiredAddons[] = {"A3_data_F","A3_anims_F","A3_weapons_F","A3_characters_F","JLTS_weapons_Reloads"};
+		requiredAddons[] = {"A3_data_F","A3_anims_F","A3_weapons_F","A3_characters_F","JLTS_weapons_Reloads","ace_arsenal"};
 		weapons[] = {"AUX_95th_DC15X","AUX_95th_DC15X_fried","AUX_95th_DC15X_scope","AUX_95th_DC15X_scoped"};
 		units[] = {};
 		magazines[] = {};
@@ -601,7 +601,7 @@ class CfgMagazines {
 		descriptionShort = "Universal Rifle Cell";
 		ammo = "AUX_95th_Rifle_Blue_Ammo";
 		tracersEvery = 1;
-		mass = 18;
+		mass = 12;
 	};
 
 	class 100Rnd_65x39_caseless_mag;
@@ -620,7 +620,7 @@ class CfgMagazines {
 		ammo = "AUX_95th_Heavy_Blue_Ammo";
 		tracersEvery = 1;
 		initSpeed = 920;
-		mass = 22;
+		mass = 18;
 	};
 
 	class AUX_95th_Universal_Sniper_Mag: 30Rnd_65x39_caseless_mag {
@@ -637,7 +637,7 @@ class CfgMagazines {
 		descriptionShort = "Universal Sniper Cell";
 		ammo = "AUX_95th_Sniper_Blue_Ammo";
 		tracersEvery = 1;
-		mass = 18;
+		mass = 12;
 	};
 
 	class AUX_95th_Universal_Shotgun_Mag: 30Rnd_65x39_caseless_mag {
@@ -654,7 +654,50 @@ class CfgMagazines {
 		descriptionShort = "Universal Shotgun Cell";
 		ammo = "AUX_95th_Shotgun_Blue_Ammo";
 		tracersEvery = 1;
-		mass = 18;
+		mass = 12;
+	};
+};
+
+class ace_arsenal_stats {
+	class statBase;
+
+	class ACE_magCount {
+		priority = 9;
+	}
+
+	class AUX_95th_Universal_Mag_Stat_Base: statBase {
+		scope = 1;
+		priority = 10;
+		displayName = "Fits Into:";
+		showBar = 0;
+		showText = 1;
+		textStatement = "false";
+		condition = "false";
+		tabs[] = { {}, {4} }; // Which arsenal tabs (Weapons, grenades etc)
+	}
+
+	class AUX_95th_Universal_Rifle_Mag_Stat: AUX_95th_Universal_Mag_Stat_Base {
+		scope = 2;
+		condition = "(configName (_this select 1)) == 'AUX_95th_Universal_Rifle_Mag'";
+		textStatement = "if(true)exitWith{'DC15S|DC15A|DC15C|Westar'}";
+	};
+
+	class AUX_95th_Universal_Sniper_Mag_Stat: AUX_95th_Universal_Mag_Stat_Base {
+		scope = 2;
+		condition = "(configName (_this select 1)) == 'AUX_95th_Universal_Sniper_Mag'";
+		textStatement = "if(true)exitWith{'DC15X|DW32S|Westar'}";
+	};
+
+	class AUX_95th_Universal_Shotgun_Mag_Stat: AUX_95th_Universal_Mag_Stat_Base {
+		scope = 2;
+		condition = "(configName (_this select 1)) == 'AUX_95th_Universal_Shotgun_Mag'";
+		textStatement = "if(true)exitWith{'DP23'}";
+	};
+
+	class AUX_95th_Universal_Heavy_Mag_Stat: AUX_95th_Universal_Mag_Stat_Base {
+		scope = 2;
+		condition = "(configName (_this select 1)) == 'AUX_95th_Universal_Heavy_Mag'";
+		textStatement = "if(true)exitWith{'Z6|DC15L'}";
 	};
 };
 

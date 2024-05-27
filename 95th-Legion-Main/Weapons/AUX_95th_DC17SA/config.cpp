@@ -56,7 +56,7 @@ class CfgWeapons {
 		JLTS_canHaveShield = 1;
 		JLTS_shieldedWeapon = "AUX_95th_DC17SA_shield";
 		author = "95th Legion";
-		displayName = "$STR_JLTS_names_DC17SA";
+		displayName = "[95th] DC17SA]";
 		descriptionShort = "$STR_JLTS_descs_BlasterPistol";
 		scope = 2;
 		baseWeapon = "AUX_95th_DC17SA";

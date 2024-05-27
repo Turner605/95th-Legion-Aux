@@ -50,7 +50,7 @@ class CfgWeapons {
 		JLTS_friedItem = "";
 		author = "95th Legion";
 		scope = 2;
-		displayName = "$STR_JLTS_names_DW32S";
+		displayName = "[95th] DW32S";
 		descriptionShort = "$STR_JLTS_descs_BlasterRifleScoped";
 		picture = "\AUX_95th_DW32S\Data\ui\DW32S_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DW32S\DW32S.p3d";

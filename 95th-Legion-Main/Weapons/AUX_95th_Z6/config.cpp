@@ -62,7 +62,7 @@ class CfgWeapons {
 		author = "95th Legion";
 		scope = 2;
 		baseWeapon = "AUX_95th_Z6";
-		displayName = "$STR_JLTS_names_Z6";
+		displayName = "[95th] Z6";
 		descriptionShort = "$STR_JLTS_descs_BlasterRotaryCannon";
 		picture = "\AUX_95th_Z6\Data\ui\Z6_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\Z6\Z6.p3d";

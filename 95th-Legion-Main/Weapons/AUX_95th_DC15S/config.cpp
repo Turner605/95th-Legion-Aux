@@ -54,7 +54,7 @@ class CfgWeapons {
 		JLTS_shieldedWeapon = "AUX_95th_DC15S_shield";
 		author = "95th Legion";
 		scope = 2;
-		displayName = "$STR_JLTS_names_DC15S";
+		displayName = "[95th] DC15S";
 		descriptionShort = "$STR_JLTS_descs_BlasterCarbine";
 		picture = "AUX_95th_DC15S\Data\ui\DC15S_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15S\DC15S.p3d";

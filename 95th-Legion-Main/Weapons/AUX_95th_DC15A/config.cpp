@@ -52,7 +52,7 @@ class CfgWeapons {
 		JLTS_repairTime = 33;
 		author = "95th Legion";
 		scope = 2;
-		displayName = "$STR_JLTS_names_DC15A";
+		displayName = "[95th] DC15A (Wooden)";
 		descriptionShort = "$STR_JLTS_descs_BlasterRifle";
 		picture = "AUX_95th_DC15A\Data\ui\DC15A_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A.p3d";
@@ -226,7 +226,7 @@ class CfgWeapons {
 	class AUX_95th_DC15A_ugl: AUX_95th_DC15A {
 		JLTS_friedItem = "AUX_95th_DC15A_UGL_fried";
 		JLTS_repairTime = 35;
-		displayName = "$STR_JLTS_names_DC15AUGL";
+		displayName = "[95th] DC15A UGL (Wooden)";
 		picture = "AUX_95th_DC15A\Data\ui\DC15A_ugl_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl.p3d";
 		hiddenSelections[] = {"camo1","camo2","illum"};
@@ -269,7 +269,7 @@ class CfgWeapons {
 
 	class AUX_95th_DC15A_plastic: AUX_95th_DC15A {
 		JLTS_friedItem = "AUX_95th_DC15A_plastic_fried";
-		displayName = "$STR_JLTS_names_DC15APlastic";
+		displayName = "[95th] DC15A (Plastic)";
 		picture = "AUX_95th_DC15A\Data\ui\DC15A_plastic_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_plastic.p3d";
 		hiddenSelectionsTextures[] = {"AUX_95th_DC15A\Data\DC15A_plastic_co.paa"};
@@ -277,7 +277,7 @@ class CfgWeapons {
 
 	class AUX_95th_DC15A_ugl_plastic: AUX_95th_DC15A_ugl {
 		JLTS_friedItem = "AUX_95th_DC15A_ugl_plastic_fried";
-		displayName = "$STR_JLTS_names_DC15AUGLPlastic";
+		displayName = "[95th] DC15A UGL (Plastic)";
 		picture = "AUX_95th_DC15A\Data\ui\DC15A_ugl_plastic_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl_plastic.p3d";
 		hiddenSelectionsTextures[] = {"AUX_95th_DC15A\Data\DC15A_plastic_co.paa","AUX_95th_DC15A\Data\DC15A_ugl_co.paa"};

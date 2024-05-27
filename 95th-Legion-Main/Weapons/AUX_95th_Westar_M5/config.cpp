@@ -179,7 +179,7 @@ class CfgWeapons {
 			aiRateOfFireDistance = 600;
 		};
 		class AUX_95th_WestarM5_GL_F: UGL_F {
-			displayName = "[3AS] WestarM5-GL";
+			displayName = "[95th] WestarM5-GL";
 			descriptionShort = "GL for the WestarM5 Platform";
 			useModelOptics = 0;
 			useExternalOptic = 0;
@@ -202,7 +202,7 @@ class CfgWeapons {
 
 	class AUX_95th_WestarM5: AUX_95th_WestarM5_Base_F {
 		scope = 2;
-		displayName = "[3AS] Westar-M5 Rifle";
+		displayName = "[95th] Westar-M5 Rifle";
 		model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_F.p3d";
 		picture = "\AUX_95th_Westar_M5\Data\ui\3as_westar.paa";
 		weaponInfoType = "RscWeaponZeroing";
@@ -249,7 +249,7 @@ class CfgWeapons {
 
 	class AUX_95th_WestarM5_GL: AUX_95th_WestarM5_Base_F {
 		scope = 2;
-		displayName = "[3AS] Westar-M5 GL Rifle";
+		displayName = "[95th] Westar-M5 GL Rifle";
 		model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";
 		picture = "\AUX_95th_Westar_M5\Data\ui\3as_westargl.paa";
 		weaponInfoType = "RscWeaponZeroing";
