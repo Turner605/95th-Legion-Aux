@@ -215,7 +215,7 @@ class CfgWeapons {
 
 	class AUX_95th_DC15C_GL: AUX_95th_DC15C_Base_F {
 		scope = 2;
-		displayName = "[3AS] DC-15C GL Rifle";
+		displayName = "[95th] DC-15C GL Rifle";
 		model = "3AS\3AS_Weapons\DC15C\3AS_DC15C_GL.p3d";
 		picture = "\AUX_95th_DC15C\Data\ui\dc15cgl.paa";
 		weaponInfoType = "RscWeaponZeroing";
