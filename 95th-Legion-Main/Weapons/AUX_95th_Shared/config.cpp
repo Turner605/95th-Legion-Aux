@@ -671,7 +671,7 @@ class ace_arsenal_stats {
 		displayName = "Fits Into:";
 		showBar = 0;
 		showText = 1;
-		textStatement = "false";
+		textStatement = "if(true)exitWith{'UNDEFINED'}";
 		condition = "false";
 		tabs[] = { {}, {4} }; // Which arsenal tabs (Weapons, grenades etc)
 	}

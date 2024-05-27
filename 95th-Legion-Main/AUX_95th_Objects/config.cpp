@@ -2,9 +2,7 @@ class CfgPatches {
 	class AUX_95th_Objects {
         author="95th Aux Team";
         name="AUX 95th Objects";
-		requiredAddons[]={
-			"3AS_Prop_Crates"
-		};
+		requiredAddons[]={"3AS_Prop_Crates","AUX_95th_Ace"};
 		units[]={
 			"AUX_95th_AirUtil_Pad", "AUX_95th_AirUtil_Transport", "AUX_95th_AirUtil_Fighter", "AUX_95th_AirUtil_Service",
 			"AUX_95th_Ground_Factory", "AUX_95th_Droid_Factory_Terminal", "AUX_95th_Factory_Proxy", "AUX_95th_Flak_Factory",

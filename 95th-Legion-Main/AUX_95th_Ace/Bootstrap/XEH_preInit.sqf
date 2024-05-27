@@ -92,7 +92,7 @@ AUX_95th_Arsenal_Class_Items = [
 	["DSS_Support_Device"] // 14 - Support
 ];
 
-AUX_95th_Arsenal_Whitelisted_Items = [
+AUX_95th_Arsenal_Whitelisted_Weapons = [
     "AUX_95th_DC15L","AUX_95th_BX42","AUX_95th_DC15A_plastic","AUX_95th_DC15A","AUX_95th_DC15A_ugl_plastic", "AUX_95th_DC15A_ugl",
     "AUX_95th_DC15S","AUX_95th_DC15X","AUX_95th_DP23","AUX_95th_DW32S","AUX_95th_Z6","AUX_95th_DC15C","AUX_95th_DC15C_GL","3AS_DC17M_F",
     "3AS_MPL_F","3AS_RepublicDatapadRifle","3AS_Valken38X_F","AUX_95th_WestarM5_GL","AUX_95th_WestarM5",
@@ -102,4 +102,12 @@ AUX_95th_Arsenal_Whitelisted_Items = [
     "3AS_DC17STest_F","3AS_RepublicDatapadPistol","Knife_kukri",
 
     "3AS_PLX1_F","3AS_RPS6_Base","3AS_RPS6_HP","3AS_RPS6_Guided"
+];
+
+AUX_95th_Arsenal_Whitelisted_Throwables = [
+    "95th_Pyro_Grenade","ACE_HandFlare_Yellow","ACE_HandFlare_White","ACE_HandFlare_Red","ACE_HandFlare_Green","OPTRE_M8_Flare_Blue","OPTRE_M8_Flare_Green",
+    "OPTRE_M8_Flare","OPTRE_M8_Flare_White","OPTRE_M8_Flare_Yellow","B_IR_Grenade","ls_mag_glowrod_hiBlue","ls_mag_glowrod_hiGreen","ls_mag_glowrod_hiOrange",
+    "ls_mag_glowrod_hiRed","ls_mag_glowrod_hiWhite","ls_mag_glowrod_hiYellow","JLTS_grenade_emp_mag","DSS_Grenade_Magazine_Thermal_C1","DSS_Magazine_Grenade_Sonar",
+    "DSS_Magazine_Grenade_Hacker","DSS_Magazine_Grenade_Flashbang","SquadShieldMagazine","ShieldGrenade_Mag","3AS_SmokeYellow","3AS_SmokeWhite","3AS_SmokeRed",
+    "3AS_SmokePurple","3AS_SmokeOrange","3AS_SmokeGreen","3AS_SmokeBlue", "NFL_Magazine_Grenade_Medical_Shield"
 ];
