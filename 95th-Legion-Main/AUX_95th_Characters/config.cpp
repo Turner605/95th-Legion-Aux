@@ -124,8 +124,7 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Hypo", "Neary", "Smokery", "Kev", "Titan", "Smaug"};
-				class Hypo { label = "Hypo"; description = "Hypo's Uniform"; };
+				values[] = {"Neary", "Smokery", "Kev", "Titan", "Smaug"};
 				class Neary { label = "Neary"; description = "Neary's Uniform"; };
 				class Smokery { label = "Smokery"; description = "Smokery's Uniform"; };
 				class Kev { label = "Kev"; description = "Kev's Uniform"; };
@@ -157,9 +156,8 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Bretek", "Dilanza", "Third", "MadHatter", "Ratler"};
+				values[] = {"Bretek", "Third", "MadHatter", "Ratler"};
 				class Bretek { label = "Bretek"; description = "Bretek's Uniform"; };
-				class Dilanza { label = "Dilanza"; description = "Dilanza's Uniform"; };
 				class Third { label = "Third"; description = "Third's Uniform"; };
 				class MadHatter { label = "Mad Hatter"; description = "Mad Hatter's Uniform"; };
 				class Ratler { label = "Ratler"; description = "Ratler's Uniform"; };
@@ -187,8 +185,21 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Outcast", "Jinter"};
+				values[] = {};
+			};
+		};
+
+		class AUX_95th_Uniform_Squad_Seven {
+			label = "7-0 Banshee";
+			#include "XtdGearModels\Shared.hpp"
+
+			class Player {
+				alwaysSelectable = 0;
+				labels = "Player";
+				values[] = {"Hypo", "Outcast", "Dilanza"};
+				class Hypo { label = "Hypo"; description = "Hypo's Uniform"; };
 				class Outcast { label = "Outcast"; description = "Outcast's Uniform"; };
+				class Dilanza { label = "Dilanza"; description = "Dilanza's Uniform"; };
 			};
 		};
 
@@ -255,6 +266,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_Legion_Characters_Category_Squad_Four{displayName="1-4 Units";};
 	class AUX_95th_Legion_Characters_Category_Squad_Five{displayName="5-0 Units";};
 	class AUX_95th_Legion_Characters_Category_Squad_Six{displayName="6-0 Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Seven{displayName="7-0 Units";};
 	class AUX_95th_Legion_Characters_Category_Squad_Fallen{displayName="Fallen Units";};
 	class AUX_95th_Legion_Characters_Category_Squad_Unassigned{displayName="Unassigned Units";};
 	class AUX_95th_Legion_Characters_Category_Squad_Generic{displayName="Generic Units";};
