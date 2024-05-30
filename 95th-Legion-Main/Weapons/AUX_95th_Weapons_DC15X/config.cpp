@@ -19,7 +19,7 @@ class CfgMagazines {
 		author = "95th Aux Team";
 		modelSpecial = "";
 		modelSpecialIsProxy = 0;
-		picture = "\AUX_95th_DC15X\Data\ui\DC15X_mag_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DC15X\Data\ui\DC15X_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
 		count = 15;
 		displayNameShort = "$STR_JLTS_snames_EnergyCellHigh";
@@ -40,11 +40,11 @@ class CfgWeapons {
 	class InventoryOpticsItem_Base_F;
 	class AUX_95th_DC15X_scope: optic_lrps {
 		displayName = "$STR_JLTS_names_DC15X_scope";
-		picture = "\AUX_95th_DC15X\Data\ui\DC15X_scope_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DC15X\Data\ui\DC15X_scope_ui_ca.paa";
 		descriptionShort = "$STR_JLTS_descs_DC15X_scope";
 		model = "\MRC\JLTS\weapons\DC15X\DC15X_scope.p3d";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"\AUX_95th_DC15X\Data\DC15X_scope_co.paa"};
+		hiddenSelectionsTextures[] = {"\AUX_95th_Weapons_DC15X\Data\DC15X_scope_co.paa"};
 		class ItemInfo: InventoryOpticsItem_Base_F {
 			mass = 16;
 			opticType = 2;
@@ -95,17 +95,17 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] DC15X";
 		descriptionShort = "$STR_JLTS_descs_BlasterRifle";
-		picture = "\AUX_95th_DC15X\Data\ui\DC15X_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DC15X\Data\ui\DC15X_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15X\DC15X.p3d";
 		baseWeapon = "AUX_95th_DC15X";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"\AUX_95th_DC15X\Data\DC15X_co.paa"};
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DC15X\Anims\DC15X_handanim.rtm"};
+		hiddenSelectionsTextures[] = {"\AUX_95th_Weapons_DC15X\Data\DC15X_co.paa"};
+		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_DC15X\Anims\DC15X_handanim.rtm"};
 		magazines[] = {"AUX_95th_Universal_Sniper_Mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		fireLightDiffuse[] = {0,0,1};
-		drySound[] = {"AUX_95th_Shared\Sounds\weapon_dry.wss",5,1,10};
+		drySound[] = {"AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",5,1,10};
 		muzzles[] = {"this","Stun"};
 		class Stun: AUX_95th_Stun_Muzzle{};
 		class Single: Mode_SemiAuto {
@@ -118,7 +118,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15X\Sounds\dc15x_fire",2.5,1,1800};
+				begin1[] = {"AUX_95th_Weapons_DC15X\Sounds\dc15x_fire",2.5,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.5;
@@ -142,7 +142,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15X\Sounds\dc15x_fire",2.5,1,1800};
+				begin1[] = {"AUX_95th_Weapons_DC15X\Sounds\dc15x_fire",2.5,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.096;
@@ -167,7 +167,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15X\Sounds\dc15x_fire",2.5,1,1800};
+				begin1[] = {"AUX_95th_Weapons_DC15X\Sounds\dc15x_fire",2.5,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			dispersion = 0.00073;
@@ -193,7 +193,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15X\Sounds\dc15x_fire",2.5,1,1800};
+				begin1[] = {"AUX_95th_Weapons_DC15X\Sounds\dc15x_fire",2.5,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			dispersion = 0.00073;
@@ -217,7 +217,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15X\Sounds\dc15x_fire",2.5,1,1800};
+				begin1[] = {"AUX_95th_Weapons_DC15X\Sounds\dc15x_fire",2.5,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			dispersion = 0.00073;
@@ -276,7 +276,7 @@ class CfgWeapons {
 		displayName = "$STR_JLTS_names_DC15XFried";
 		descriptionShort = "$STR_JLTS_descs_BlasterFried";
 		scope = 1;
-		picture = "\AUX_95th_DC15X\Data\ui\DC15X_fried_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DC15X\Data\ui\DC15X_fried_ui_ca.paa";
 		muzzles[] = {"this"};
 		magazines[] = {};
 		JLTS_isFried = 1;

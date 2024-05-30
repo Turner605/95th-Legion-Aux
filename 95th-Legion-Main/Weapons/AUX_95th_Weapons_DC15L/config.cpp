@@ -33,7 +33,7 @@ class CfgMagazines {
 		displayName = "DC15L Energy Cell";
 		displayNameShort = "$STR_JLTS_snames_EnergyCellStandard";
 		descriptionShort = "Standard charge cell used by the DC-15L platform.";
-		picture = "\AUX_95th_Z6\Data\ui\z6_mag_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_Z6\Data\ui\z6_mag_ui_ca.paa";
 		ammo = "AUX_95th_Heavy_Blue_Ammo";
 		// ammo = "3AS_EC40_BluePlasma";
 		count = 200;
@@ -101,7 +101,7 @@ class CfgWeapons {
 		distanceZoomMin = 400;
 		distanceZoomMax = 400;
 		descriptionShort = "DC-15L, 3rd Army Studios";
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DC15L\Anim\DC15L_handanim.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_DC15L\Anim\DC15L_handanim.rtm"};
 		selectionFireAnim = "zasleh";
 		fireLightDiffuse[] = {7,110,176};
 		fireLightIntensity = 0.02;
@@ -134,7 +134,7 @@ class CfgWeapons {
 		aiDispersionCoefX = 4;
 		caseless[] = {"",1,1,1};
 		soundBullet[] = {"caseless",1};
-		drySound[] = {"\AUX_95th_Shared\Sounds\weapon_dry.wss",2,1,20};
+		drySound[] = {"\AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",2,1,20};
 		reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",1,1,30};
 	};
 
@@ -142,7 +142,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] DC-15L Rifle";
 		model = "3AS\3AS_Weapons\DC15L\3AS_DC15L_f.p3d";
-		picture = "\AUX_95th_DC15L\Data\UI\3as_dc15l.paa";
+		picture = "\AUX_95th_Weapons_DC15L\Data\UI\3as_dc15l.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		class OpticsModes {
 			class Ironsights {

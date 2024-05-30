@@ -27,7 +27,7 @@ class CfgMagazines {
 		author = "95th Legion";
 		modelSpecial = "";
 		modelSpecialIsProxy = 0;
-		picture = "AUX_95th_DC15C\Data\ui\dc15c_mag.paa";
+		picture = "AUX_95th_Weapons_DC15C\Data\ui\dc15c_mag.paa";
 		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
 		count = 80;
 		displayName = "DC15S Mag";
@@ -96,7 +96,7 @@ class CfgWeapons {
 		distanceZoomMin = 400;
 		distanceZoomMax = 400;
 		descriptionShort = "DC-15C, 3rd Army Studios";
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DC15C\Anim\DC15C_handanim.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_DC15C\Anim\DC15C_handanim.rtm"};
 		selectionFireAnim = "zasleh";
 		fireLightDiffuse[] = {7,110,176};
 		fireLightIntensity = 0.02;
@@ -163,7 +163,7 @@ class CfgWeapons {
 		aiDispersionCoefX = 4;
 		caseless[] = {"",1,1,1};
 		soundBullet[] = {"caseless",1};
-		drySound[] = {"\AUX_95th_Shared\Sounds\weapon_dry.wss",2,1,20};
+		drySound[] = {"\AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",2,1,20};
 		reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",1,1,30};
 		ace_overheating_mrbs = 3000;
 		ace_overheating_slowdownFactor = 1;
@@ -175,7 +175,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] DC-15C";
 		model = "3AS\3AS_Weapons\DC15C\3AS_DC15C_f";
-		picture = "\AUX_95th_DC15C\Data\ui\dc15c.paa";
+		picture = "\AUX_95th_Weapons_DC15C\Data\ui\dc15c.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		class OpticsModes {
 			class Ironsights {
@@ -217,7 +217,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] DC-15C GL Rifle";
 		model = "3AS\3AS_Weapons\DC15C\3AS_DC15C_GL.p3d";
-		picture = "\AUX_95th_DC15C\Data\ui\dc15cgl.paa";
+		picture = "\AUX_95th_Weapons_DC15C\Data\ui\dc15cgl.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		modelOptics = "3AS\3AS_Weapons\Data\A3_2d_optic.p3d";
 		muzzles[] = {"this","AUX_95th_15CGL"};
@@ -263,7 +263,7 @@ class CfgWeapons {
 	class AUX_95th_optic_acog_DC15C: ItemCore {
 		scope = 2;
 		displayName = "3AS ACOG Optic";
-		picture = "\AUX_95th_DC15C\Data\ui\ACOG_Scope.paa";
+		picture = "\AUX_95th_Weapons_DC15C\Data\ui\ACOG_Scope.paa";
 		model = "\3AS\3AS_Weapons\DC15C\3AS_DC15C_ACOG_Sight_f.p3d";
 		weaponInfoType = "RscWeaponZeroing";
 		class ItemInfo: InventoryOpticsItem_Base_F {
@@ -310,7 +310,7 @@ class CfgWeapons {
 	class AUX_95th_optic_reflex_DC15C: ItemCore {
 		scope = 2;
 		displayName = "3AS Reflex Optic";
-		picture = "\AUX_95th_DC15C\Data\ui\Reflex_Scope.paa";
+		picture = "\AUX_95th_Weapons_DC15C\Data\ui\Reflex_Scope.paa";
 		model = "\3AS\3AS_Weapons\DC15C\3AS_DC15C_Reflex_f.p3d";
 		weaponInfoType = "RscWeaponZeroing";
 		class ItemInfo: InventoryOpticsItem_Base_F {

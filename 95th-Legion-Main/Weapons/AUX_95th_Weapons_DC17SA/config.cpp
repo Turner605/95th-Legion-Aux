@@ -20,7 +20,7 @@ class CfgMagazines {
 		displayName = "$STR_JLTS_names_DC17SA_mag";
 		displayNameShort = "$STR_JLTS_snames_EnergyCellLow";
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
-		picture = "\AUX_95th_DC17SA\Data\ui\DC17SA_mag_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DC17SA\Data\ui\DC17SA_mag_ui_ca.paa";
 		count = 20;
 		ammo = "AUX_95th_Pistol_Blue_Ammo";
 		descriptionShort = "$STR_JLTS_descs_DC17SA_mag";
@@ -38,7 +38,7 @@ class CfgWeapons {
 		author = "95th Legion";
 		scope = 2;
 		displayName = "$STR_JLTS_names_DC17SA_flash";
-		picture = "\AUX_95th_DC17SA\Data\ui\DC17SA_flash_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DC17SA\Data\ui\DC17SA_flash_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_flash.p3d";
 	};
 	class Pistol_Base_F;
@@ -60,15 +60,15 @@ class CfgWeapons {
 		descriptionShort = "$STR_JLTS_descs_BlasterPistol";
 		scope = 2;
 		baseWeapon = "AUX_95th_DC17SA";
-		picture = "\AUX_95th_DC17SA\Data\ui\DC17SA_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DC17SA\Data\ui\DC17SA_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA.p3d";
 		hiddenSelections[] = {"camo1","illum"};
-		hiddenSelectionsTextures[] = {"\AUX_95th_DC17SA\Data\DC17SA_co.paa"};
+		hiddenSelectionsTextures[] = {"\AUX_95th_Weapons_DC17SA\Data\DC17SA_co.paa"};
 		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		magazines[] = {"AUX_95th_DC17SA_mag"};
 		magazineWell[] = {};
 		fireLightDiffuse[] = {0,0,1};
-		drySound[] = {"AUX_95th_Shared\Sounds\weapon_dry.wss",5,1,10};
+		drySound[] = {"AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",5,1,10};
 		muzzles[] = {"this","Stun"};
 		class Stun: AUX_95th_Stun_Muzzle {
 			reloadAction = "GestureReloadPistol";
@@ -84,7 +84,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC17SA\Sounds\dc17sa_fire",3,0.9,1800};
+				begin1[] = {"AUX_95th_Weapons_DC17SA\Sounds\dc17sa_fire",3,0.9,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			recoil = "recoil_pistol_light";
@@ -135,7 +135,7 @@ class CfgWeapons {
 		displayName = "$STR_JLTS_names_DC17SAFried";
 		descriptionShort = "$STR_JLTS_descs_BlasterFried";
 		scope = 1;
-		picture = "\AUX_95th_DC17SA\Data\ui\DC17SA_fried_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DC17SA\Data\ui\DC17SA_fried_ui_ca.paa";
 		magazines[] = {};
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
 		class Stun: Stun {
@@ -153,7 +153,7 @@ class CfgWeapons {
 		JLTS_baseWeapon = "AUX_95th_DC17SA";
 		JLTS_friedItem = "AUX_95th_DC17SA_shield_fried";
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_shielded.p3d";
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DC17SA\Anims\DC17SA_shielded_handanim.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_DC17SA\Anims\DC17SA_shielded_handanim.rtm"};
 		inertia = 0.8;
 		recoil = "recoil_pdw";
 		class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -171,7 +171,7 @@ class CfgWeapons {
 		displayName = "$STR_JLTS_names_DC17SAShieldFried";
 		descriptionShort = "$STR_JLTS_descs_BlasterFried";
 		scope = 1;
-		picture = "\AUX_95th_DC17SA\Data\ui\DC17SA_fried_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DC17SA\Data\ui\DC17SA_fried_ui_ca.paa";
 		magazines[] = {};
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
 		class Stun: Stun {

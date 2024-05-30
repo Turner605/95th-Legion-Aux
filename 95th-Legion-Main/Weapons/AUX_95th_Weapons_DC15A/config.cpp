@@ -18,7 +18,7 @@ class CfgMagazines {
 		author = "95th Legion";
 		modelSpecial = "";
 		modelSpecialIsProxy = 0;
-		picture = "AUX_95th_DC15A\Data\ui\DC15A_mag_ui_ca.paa";
+		picture = "AUX_95th_Weapons_DC15A\Data\ui\DC15A_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
 		count = 60;
 		displayName = "$STR_JLTS_names_DC15A_mag";
@@ -54,18 +54,18 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] DC15A (Wooden)";
 		descriptionShort = "$STR_JLTS_descs_BlasterRifle";
-		picture = "AUX_95th_DC15A\Data\ui\DC15A_ui_ca.paa";
+		picture = "AUX_95th_Weapons_DC15A\Data\ui\DC15A_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A.p3d";
 		hiddenSelections[] = {"camo1","illum"};
-		hiddenSelectionsTextures[] = {"AUX_95th_DC15A\Data\DC15A_co.paa"};
+		hiddenSelectionsTextures[] = {"AUX_95th_Weapons_DC15A\Data\DC15A_co.paa"};
 		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DC15A\Anims\DC15A_handanim.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_DC15A\Anims\DC15A_handanim.rtm"};
 		reloadAction = "GestureReload_JLTS_DC15A";
 		magazines[] = {"AUX_95th_Universal_Rifle_Mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		fireLightDiffuse[] = {0,0,1};
-		drySound[] = {"AUX_95th_Shared\Sounds\weapon_dry.wss",5,1,10};
+		drySound[] = {"AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",5,1,10};
 		muzzles[] = {"this","Stun"};
 		class Stun: AUX_95th_Stun_Muzzle{};
 		class Single: Mode_SemiAuto {
@@ -78,7 +78,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15A\Sounds\dc15a_fire",1,1,1800};
+				begin1[] = {"AUX_95th_Weapons_DC15A\Sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.096;
@@ -102,7 +102,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15A\Sounds\dc15a_fire",1,1,1800};
+				begin1[] = {"AUX_95th_Weapons_DC15A\Sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.096;
@@ -127,7 +127,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15A\Sounds\dc15a_fire",1,1,1800};
+				begin1[] = {"AUX_95th_Weapons_DC15A\Sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			dispersion = 0.00073;
@@ -153,7 +153,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15A\Sounds\dc15a_fire",1,1,1800};
+				begin1[] = {"AUX_95th_Weapons_DC15A\Sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			dispersion = 0.00073;
@@ -177,7 +177,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DC15A\Sounds\dc15a_fire",1,1,1800};
+				begin1[] = {"AUX_95th_Weapons_DC15A\Sounds\dc15a_fire",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			dispersion = 0.00073;
@@ -227,10 +227,10 @@ class CfgWeapons {
 		JLTS_friedItem = "AUX_95th_DC15A_UGL_fried";
 		JLTS_repairTime = 35;
 		displayName = "[95th] DC15A UGL (Wooden)";
-		picture = "AUX_95th_DC15A\Data\ui\DC15A_ugl_ui_ca.paa";
+		picture = "AUX_95th_Weapons_DC15A\Data\ui\DC15A_ugl_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl.p3d";
 		hiddenSelections[] = {"camo1","camo2","illum"};
-		hiddenSelectionsTextures[] = {"AUX_95th_DC15A\Data\DC15A_co.paa","AUX_95th_DC15A\Data\DC15A_ugl_co.paa"};
+		hiddenSelectionsTextures[] = {"AUX_95th_Weapons_DC15A\Data\DC15A_co.paa","AUX_95th_Weapons_DC15A\Data\DC15A_ugl_co.paa"};
 		hiddenSelectionsMaterials[] = {"","","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
 		muzzles[] = {"this","EGLM"};
 		class EGLM: UGL_F {
@@ -270,17 +270,17 @@ class CfgWeapons {
 	class AUX_95th_DC15A_plastic: AUX_95th_DC15A {
 		JLTS_friedItem = "AUX_95th_DC15A_plastic_fried";
 		displayName = "[95th] DC15A (Plastic)";
-		picture = "AUX_95th_DC15A\Data\ui\DC15A_plastic_ui_ca.paa";
+		picture = "AUX_95th_Weapons_DC15A\Data\ui\DC15A_plastic_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_plastic.p3d";
-		hiddenSelectionsTextures[] = {"AUX_95th_DC15A\Data\DC15A_plastic_co.paa"};
+		hiddenSelectionsTextures[] = {"AUX_95th_Weapons_DC15A\Data\DC15A_plastic_co.paa"};
 	};
 
 	class AUX_95th_DC15A_ugl_plastic: AUX_95th_DC15A_ugl {
 		JLTS_friedItem = "AUX_95th_DC15A_ugl_plastic_fried";
 		displayName = "[95th] DC15A UGL (Plastic)";
-		picture = "AUX_95th_DC15A\Data\ui\DC15A_ugl_plastic_ui_ca.paa";
+		picture = "AUX_95th_Weapons_DC15A\Data\ui\DC15A_ugl_plastic_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl_plastic.p3d";
-		hiddenSelectionsTextures[] = {"AUX_95th_DC15A\Data\DC15A_plastic_co.paa","AUX_95th_DC15A\Data\DC15A_ugl_co.paa"};
+		hiddenSelectionsTextures[] = {"AUX_95th_Weapons_DC15A\Data\DC15A_plastic_co.paa","AUX_95th_Weapons_DC15A\Data\DC15A_ugl_co.paa"};
 	};
 
 	class AUX_95th_DC15A_fried: AUX_95th_DC15A {
@@ -288,7 +288,7 @@ class CfgWeapons {
 		displayName = "$STR_JLTS_names_DC15AFried";
 		descriptionShort = "$STR_JLTS_descs_BlasterFried";
 		scope = 1;
-		picture = "AUX_95th_DC15A\Data\ui\DC15A_fried_ui_ca.paa";
+		picture = "AUX_95th_Weapons_DC15A\Data\ui\DC15A_fried_ui_ca.paa";
 		magazines[] = {};
 		JLTS_isFried = 1;
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
@@ -304,7 +304,7 @@ class CfgWeapons {
 		displayName = "$STR_JLTS_names_DC15APlasticFried";
 		descriptionShort = "$STR_JLTS_descs_BlasterFried";
 		scope = 1;
-		picture = "AUX_95th_DC15A\Data\ui\DC15A_plastic_fried_ui_ca.paa";
+		picture = "AUX_95th_Weapons_DC15A\Data\ui\DC15A_plastic_fried_ui_ca.paa";
 		magazines[] = {};
 		JLTS_isFried = 1;
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
@@ -320,7 +320,7 @@ class CfgWeapons {
 		displayName = "$STR_JLTS_names_DC15AUGLFried";
 		descriptionShort = "$STR_JLTS_descs_BlasterFried";
 		scope = 1;
-		picture = "AUX_95th_DC15A\Data\ui\DC15A_UGL_fried_ui_ca.paa";
+		picture = "AUX_95th_Weapons_DC15A\Data\ui\DC15A_UGL_fried_ui_ca.paa";
 		muzzles[] = {"this"};
 		magazines[] = {};
 		JLTS_isFried = 1;
@@ -332,7 +332,7 @@ class CfgWeapons {
 		displayName = "$STR_JLTS_names_DC15AUGLPlasticFried";
 		descriptionShort = "$STR_JLTS_descs_BlasterFried";
 		scope = 1;
-		picture = "AUX_95th_DC15A\Data\ui\DC15A_UGL_plastic_fried_ui_ca.paa";
+		picture = "AUX_95th_Weapons_DC15A\Data\ui\DC15A_UGL_plastic_fried_ui_ca.paa";
 		muzzles[] = {"this"};
 		magazines[] = {};
 		JLTS_isFried = 1;

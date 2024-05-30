@@ -17,7 +17,7 @@ class CfgMagazines {
 		author = "95th Legion";
 		modelSpecial = "";
 		modelSpecialIsProxy = 0;
-		picture = "\AUX_95th_DW32S\Data\ui\DW32S_mag_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DW32S\Data\ui\DW32S_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DW32S\DW32S_mag.p3d";
 		count = 20;
 		displayName = "$STR_JLTS_names_DW32S_mag";
@@ -52,16 +52,16 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] DW32S";
 		descriptionShort = "$STR_JLTS_descs_BlasterRifleScoped";
-		picture = "\AUX_95th_DW32S\Data\ui\DW32S_ui_ca.paa";
+		picture = "\AUX_95th_Weapons_DW32S\Data\ui\DW32S_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DW32S\DW32S.p3d";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"\AUX_95th_DW32S\Data\DW32S_co.paa"};
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_DW32S\Anims\DW32S_handanim.rtm"};
+		hiddenSelectionsTextures[] = {"\AUX_95th_Weapons_DW32S\Data\DW32S_co.paa"};
+		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_DW32S\Anims\DW32S_handanim.rtm"};
 		magazines[] = {"AUX_95th_Universal_Sniper_Mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		fireLightDiffuse[] = {0,0,1};
-		drySound[] = {"AUX_95th_Shared\Sounds\weapon_dry.wss",5,1,10};
+		drySound[] = {"AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",5,1,10};
 		muzzles[] = {"this","Stun"};
 		class Stun: AUX_95th_Stun_Muzzle{};
 		distanceZoomMin = 400;
@@ -76,7 +76,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DW32S\Sounds\dw32s_fire",1,1.1,1800};
+				begin1[] = {"AUX_95th_Weapons_DW32S\Sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.1;
@@ -100,7 +100,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DW32S\Sounds\dw32s_fire",1,1.1,1800};
+				begin1[] = {"AUX_95th_Weapons_DW32S\Sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.096;
@@ -125,7 +125,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DW32S\Sounds\dw32s_fire",1,1.1,1800};
+				begin1[] = {"AUX_95th_Weapons_DW32S\Sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			showToPlayer = 0;
@@ -150,7 +150,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DW32S\Sounds\dw32s_fire",1,1.1,1800};
+				begin1[] = {"AUX_95th_Weapons_DW32S\Sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			requiredOpticType = 1;
@@ -174,7 +174,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_DW32S\Sounds\dw32s_fire",1,1.1,1800};
+				begin1[] = {"AUX_95th_Weapons_DW32S\Sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			requiredOpticType = 2;

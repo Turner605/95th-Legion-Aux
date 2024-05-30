@@ -169,8 +169,8 @@ class CfgWeapons {
 		UiPicture="\A3\Weapons_F\data\UI\icon_regular_CA.paa";
 		weaponInfoType="RscWeaponZeroing";
 		magazines[]={"AUX_95th_BX42_Fuel"};
-		muzzles[]={"this"}; // , "Launcher"
-		// class Launcher: AUX_95th_BX42_Muzzle{};
+		muzzles[]={"this","Launcher"};
+		class Launcher: AUX_95th_BX42_Muzzle{};
 		class WeaponSlotsInfo: WeaponSlotsInfo{mass=40;};
 		handAnim[]= {"OFP2_ManSkeleton", "3AS\3AS_Weapons\Data\Anim\BX42.rtm" };
 	};
