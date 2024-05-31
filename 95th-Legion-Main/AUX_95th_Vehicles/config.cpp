@@ -16,7 +16,8 @@ class CfgPatches {
 			"AUX_95th_UGV",
 			"AUX_95th_ATTE",
 			"AUX_95th_LAAT_C",
-			"AUX_95th_Rho"
+			"AUX_95th_Rho",
+			"AUX_95th_ATRT"
 		};
 	};
 };
@@ -52,6 +53,7 @@ class CfgFunctions { class AUX_95th { class Vehicles {
 	class handleCommandOutpostInit {file = "\AUX_95th_Vehicles\Init\handleCommandOutpostInit.sqf";};
 	class handleLAATInit {file = "\AUX_95th_Vehicles\Init\handleLAATInit.sqf";};
 	class handleTXShieldInit {file = "\AUX_95th_Vehicles\Init\handleTXShieldInit.sqf";};
+	class handleATRTInit {file = "\AUX_95th_Vehicles\Init\handleATRTInit.sqf";};
 
 	class handleToggleTXShield {file = "\AUX_95th_Vehicles\Scripts\TXShield\handleToggleTXShield.sqf";};
 	class handleTXRemoved {file = "\AUX_95th_Vehicles\Scripts\TXShield\handleTXRemoved.sqf";};
@@ -74,6 +76,7 @@ class Extended_init_EventHandlers {
 	class AUX_95th_LAAT_Mrk2_Lights {class AUX_95th_LAAT_Mrk2_Lights_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
 	class AUX_95th_LAAT_C {class AUX_95th_LAAT_C_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
 	class AUX_95th_Rho {class AUX_95th_Rho_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
+	class AUX_95th_ATRT {class AUX_95th_ATRT_Init {init = "(_this) spawn AUX_95th_fnc_handleATRTInit;";};};
 };
 
 class Extended_Deleted_EventHandlers {

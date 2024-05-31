@@ -197,6 +197,8 @@ class CfgVehicles {
 		};
 	};
 
+	class 3AS_ATRT;
+
 	// Static Vehicles
 	#include "Static Vehicles\Command Outpost.hpp"
 
@@ -208,6 +210,7 @@ class CfgVehicles {
 	#include "Ground Vehicles\TX-130.hpp"
 	#include "Ground Vehicles\TX-130 (Shield).hpp"
 	#include "Ground Vehicles\UGV.hpp"
+	#include "Ground Vehicles\ATRT.hpp"
 
 	// Air Vehicles
 	#include "Air Vehicles\LAAT (Mrk1).hpp"
