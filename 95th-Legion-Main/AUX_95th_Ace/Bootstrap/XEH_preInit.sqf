@@ -38,41 +38,34 @@
     {} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
 
-["NF_player_connect", "onPlayerConnected", {
-    params ["_id", "_uid", "_name"];
 
-    private _connectedTimeList = missionNamespace getVariable "AUX_95th_ConnectedTime_List";
+if (isServer) then {
+    private _timeJoinedMap = createHashMapFromArray [["BOOTTIME", serverTime]];
+    private _timePlayedMap = createHashMapFromArray [["BOOTTIME", serverTime]];
 
-    if (isNil "_connectedTimeList") then {_connectedTimeList = createHashMap;};
+    missionNamespace setVariable ["AUX_95th_Time_Joined", _timeJoinedMap, true];
+    missionNamespace setVariable ["AUX_95th_Time_Played", _timeJoinedMap, true];
 
-    _connectedTimeList set [_uid, time];
+    addMissionEventHandler ["PlayerConnected", {
+        params ["_id", "_uid", "_name", "_jip", "_owner", "_idstr"];
 
-    missionNamespace setVariable ["AUX_95th_ConnectedTime_List", _connectedTimeList, true];
-}] call BIS_fnc_addStackedEventHandler;
+        private _timeJoinedMap = missionNamespace getVariable "AUX_95th_Time_Joined";
+        _timeJoinedMap set [_uid, serverTime];
+    }];
 
-["NF_player_disconnect", "onPlayerDisconnected", {
-    params ["_id", "_uid", "_name"];
+    addMissionEventHandler ["PlayerDisconnected", {
+        params ["_id", "_uid", "_name", "_jip", "_owner", "_idstr"];
 
-    private _playtimeList = missionNamespace getVariable "AUX_95th_PlayTime_List";
-    private _connectedTimeList = missionNamespace getVariable "AUX_95th_ConnectedTime_List";
+        private _timeJoinedMap = missionNamespace getVariable "AUX_95th_Time_Joined";
+        private _timePlayedMap = missionNamespace getVariable "AUX_95th_Time_Played";
 
-    if (isNil "_playtimeList") then {_playtimeList = createHashMap;};
+        private _lastTimeJoined = (_timeJoinedMap get _uid);
+        private _timePlayed = (serverTime - _lastTimeJoined);
 
-    private _previousPlayTime = (_playtimeList getOrDefault [_uid, 0]);
-    private _connectedTime = (_connectedTimeList get _uid);
-    private _sessionTime = (time - _connectedTime);
-
-    private _totalTime = (_sessionTime + _previousPlayTime);
-
-    _playtimeList set [_uid, _totalTime];
-
-    missionNamespace setVariable ["AUX_95th_PlayTime_List", _playtimeList, true];
-}] call BIS_fnc_addStackedEventHandler;
-
-// addMissionEventHandler ["HandleDisconnect", {
-// 	params ["_unit", "_id", "_uid", "_name"];
-// 	["knd_Headlamp_Disconnect",[_unit]] call CBA_fnc_globalEvent;	   
-// }];
+        private _priorTimePlayed = (_timePlayedMap getOrDefault [_uid, 0]);
+        _timePlayedMap set [_uid, (_priorTimePlayed + _timePlayed)];
+    }]; 
+};
 
 AUX_95th_Arsenal_Class_Items = [
 	["AUX_95th_DC15X","JLTS_DW32S"], // 0 - Marksman
