@@ -65,6 +65,12 @@ if (isServer) then {
         private _priorTimePlayed = (_timePlayedMap getOrDefault [_uid, 0]);
         _timePlayedMap set [_uid, (_priorTimePlayed + _timePlayed)];
     }]; 
+
+    addMissionEventHandler ["MPEnded", {
+        private _timePlayedMap = missionNamespace getVariable "AUX_95th_Time_Played";
+
+        diag_log ["AUX_95th_Time_Played: ", _timePlayedMap];
+    }];
 };
 
 AUX_95th_Arsenal_Class_Items = [
