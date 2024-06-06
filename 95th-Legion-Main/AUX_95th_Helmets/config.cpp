@@ -155,10 +155,11 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Outcast", "Edge", "Styx"};
+				values[] = {"Outcast", "Edge", "Styx", "Neron"};
 				class Outcast { label = "Outcast"; description = "Outcast's Helmet"; };
 				class Edge { label = "Edge"; description = "Edge's Helmet"; };
 				class Styx { label = "Styx"; description = "Styx's Helmet"; };
+				class Neron { label = "Neron"; description = "Neron's Helmet"; };
 			};
 		};
 
