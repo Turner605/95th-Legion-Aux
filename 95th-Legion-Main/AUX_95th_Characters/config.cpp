@@ -36,6 +36,8 @@ class CfgPatches {
 			"AUX_95th_Unit_P1_Basic_Hypo",
 			"AUX_95th_Unit_P1_Basic_Foley",
 			"AUX_95th_Unit_P1_Basic_Stitch",
+			"AUX_95th_Unit_P1_Basic_Prophet",
+			"AUX_95th_Unit_P1_Basic_King",
 
 			"AUX_95th_Unit_P1_Cold_Assault_Trooper",
 			"AUX_95th_Unit_Commando_Trooper",
