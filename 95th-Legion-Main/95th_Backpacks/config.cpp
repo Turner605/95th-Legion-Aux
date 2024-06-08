@@ -61,13 +61,14 @@ class XtdGearModels {
 			class Role {
 				labels = "Role";
 				alwaysSelectable = 1;
-				values[] = {"Turner", "Stitch", "Pendragon", "Gridlock", "Titan", "Bretek"};
+				values[] = {"Turner", "Stitch", "Pendragon", "Gridlock", "Titan", "Bretek", "Smaug"};
 				class Turner { label = "Turner"; description = "Turners Backpack"; };
 				class Stitch { label = "Stitch"; description = "Stitch's Backpack"; };
 				class Pendragon { label = "Pendragon"; description = "Pendragon's Backpack"; };
 				class Gridlock { label = "Gridlock"; description = "Gridlock's Backpack"; };
 				class Titan { label = "Titan"; description = "Titan's Backpack"; };
 				class Bretek { label = "Bretek"; description = "Bretek's Backpack"; };
+				class Smaug { label = "Smaug"; description = "Smaug's Backpack"; };
 			};
 
 			class Visibility {
@@ -180,6 +181,9 @@ class CfgVehicles {
 
 	NEW_95TH_BACKPACK_VISIBLE(Bretek,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 	NEW_95TH_RTO_BACKPACK_VISIBLE(Bretek,95th_Custom_Backpacks,"95th Custom Backpack",400)};
+
+	NEW_95TH_BACKPACK_VISIBLE(Smaug,95th_Custom_Backpacks,"95th Custom Backpack",400)};
+	NEW_95TH_RTO_BACKPACK_VISIBLE(Smaug,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 
 	//###############################Jetpacks###############################
 

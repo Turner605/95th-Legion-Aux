@@ -72,7 +72,7 @@ private _arsenalBackpacks = [
 	"AUX_95th_Backpack_Visible_Gridlock", "AUX_95th_RTO_Backpack_Visible_Gridlock",
 	"AUX_95th_Backpack_Visible_Pendragon", "AUX_95th_RTO_Backpack_Visible_Pendragon",
 	"AUX_95th_Backpack_Visible_Titan", "AUX_95th_RTO_Backpack_Visible_Titan",
-	"AUX_95th_Backpack_Visible_Bretek", "AUX_95th_RTO_Backpack_Visible_Bretek"
+	"AUX_95th_Backpack_Visible_Bretek", "AUX_95th_RTO_Backpack_Visible_Bretek", "AUX_95th_Backpack_Visible_Smaug", "AUX_95th_RTO_Backpack_Visible_Smaug"
 ];
 
 //-----------------------------# Weapons #-----------------------------------
