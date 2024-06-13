@@ -174,6 +174,14 @@ private _roleArray = [
 		"95th_Basic_Vest_Support", _dc15a_Ammo,
 		"AUX_95th_Bag_Backpack_Visible_Trooper", _baseBackpackContent,
 		"AUX_95th_Helmet_SpecOps_Trooper"
+	],
+	[
+		"[95th] 16 - Airborne (DC15S)",
+		_dc15s, [], _dc17s,
+		"AUX_95th_Uniform_P1_Basic_Trooper", _baseUniformContent + [["NFL_Disc_Shield",1]],
+		"AUX_95th_Vest_Kama_Trooper", _dc15s_Ammo,
+		"AUX_95th_JT12_Jetpack_Trooper", _medicBackpackContent,
+		"AUX_95th_Helmet_Airborne_Trooper"
 	]
 ];
 
