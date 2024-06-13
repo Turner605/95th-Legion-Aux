@@ -124,10 +124,9 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Bretek", "Third", "MadHatter", "Ratler", "York", "Nyet"};
+				values[] = {"Bretek", "Third", "Ratler", "York", "Nyet"};
 				class Bretek { label = "Bretek"; description = "Bretek's Helmet"; };
 				class Third { label = "Third"; description = "Third's Helmet"; };
-				class MadHatter { label = "Mad Hatter"; description = "Mad Hatter's Helmet"; };
 				class Ratler { label = "Ratler"; description = "Ratler's Helmet"; };
 				class York { label = "York"; description = "York's Helmet"; };
 				class Nyet { label = "Nyet"; description = "Nyet's Helmet"; };
@@ -184,10 +183,11 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Ghost", "Som", "Jinter"};
+				values[] = {"Ghost", "Som", "Jinter", "MadHatter"};
 				class Ghost { label = "Ghost"; description = "Ghost's Helmet"; };
 				class Som { label = "Som"; description = "Som's Helmet"; };
 				class Jinter { label = "Jinter"; description = "Jinter's Helmet"; };
+				class MadHatter { label = "Mad Hatter"; description = "Mad Hatter's Helmet"; };
 			};
 		};
 
