@@ -286,6 +286,8 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Droid_B2_Unit_Shotgun {class AUX_95th_Droid_B2_Unit_Shotgun_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_B2Init;";};};
 
 	class AUX_95th_Droid_BX_Unit_Rifleman {class AUX_95th_Droid_BX_Unit_Rifleman_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_BX_Unit_Shotgun {class AUX_95th_Droid_BX_Unit_Shotgun_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_BX_Unit_Sniper {class AUX_95th_Droid_BX_Unit_Sniper_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
 	class AUX_95th_Droid_BX_Unit_Commander {class AUX_95th_Droid_BX_Unit_Commander_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
 	class AUX_95th_Droid_BX_Unit_Guard {class AUX_95th_Droid_BX_Unit_Guard_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
 	class AUX_95th_Droid_BX_Unit_Diplomat {class AUX_95th_Droid_BX_Unit_Diplomat_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
