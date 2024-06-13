@@ -30,6 +30,24 @@ player addEventHandler["Respawn", {
 	params ["_unit", "_corpse"];
 
     [false] call ace_spectator_fnc_setSpectator;
+
+    // ATSS (Anti Turner Salute System)
+    _unit addEventHandler ["AnimChanged", {
+        params ["_unit", "_anim"];
+
+        if (!(isNull cursorObject)) then {
+            if(isPlayer cursorObject) then {
+                private _playerId = getPlayerUID cursorObject;
+
+                if(_playerId == "76561198065789267") then {
+                    if((animationState _unit) == "amovpercmstpsraswrfldnon_salutein") then {
+                        systemChat "No Saluting";
+                        _unit setDamage 1;
+                    };
+                };
+            };
+        };
+    }];
 }];
 
 if(AUX_95th_Fortify_Forceload_Enabled) then {
@@ -45,21 +63,3 @@ if(AUX_95th_Default_Kits_Enabled) then {
         [player] call AUX_95th_fnc_checkKit;
     };
 }] call CBA_fnc_addEventHandler;
-
-// ATSS (Anti Turner Salute System)
-player addEventHandler ["AnimChanged", {
-	params ["_unit", "_anim"];
-
-    if (!(isNull cursorObject)) then {
-        if(isPlayer cursorObject) then {
-            private _playerId = getPlayerUID cursorObject;
-
-            if(_playerId == "76561198065789267") then {
-                if((animationState _unit) == "amovpercmstpsraswrfldnon_salutein") then {
-                    systemChat "No Saluting";
-                    _unit setDamage 1;
-                };
-            };
-        };
-    };
-}];
