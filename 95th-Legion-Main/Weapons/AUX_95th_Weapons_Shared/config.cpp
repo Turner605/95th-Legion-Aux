@@ -656,6 +656,22 @@ class CfgMagazines {
 		tracersEvery = 1;
 		mass = 12;
 	};
+
+	class AUX_95th_Universal_Pistol_Mag: 16Rnd_9x21_Mag {
+		JLTS_hasElectronics = 1;
+		JLTS_hasEMPProtection = 0;
+		author = "95th Legion";
+		modelSpecial = "";
+		modelSpecialIsProxy = 0;
+		picture = "\AUX_95th_Weapons_Shared\Data\ui\Pistol_Mag.paa";
+		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
+		count = 25;
+		displayName = "Universal Pistol Mag";
+		displayNameShort = "Universal Energy";
+		descriptionShort = "Universal Pistol Cell";
+		ammo = "AUX_95th_Pistol_Blue_Ammo";
+		tracersEvery = 1;
+	};
 };
 
 class ace_arsenal_stats {
@@ -784,6 +800,17 @@ class CfgSoundShaders {
 		volume = 1;
 		range = 800;
 	};
+
+	class AUX_95th_Pistol_Shot_SoundShader {
+		samples[] = {
+			{"AUX_95th_Weapons_Shared\Sounds\Pistol\Pistol.ogg",1},
+			{"AUX_95th_Weapons_Shared\Sounds\Pistol\Pistol2.ogg",1},
+			{"AUX_95th_Weapons_Shared\Sounds\Pistol\Pistol3.ogg",1},
+			{"AUX_95th_Weapons_Shared\Sounds\Pistol\Pistol4.ogg",1}
+		};
+		volume = 2;
+		range = 800;
+	};
 };
 
 class CfgSoundSets {
@@ -815,6 +842,19 @@ class CfgSoundSets {
 
 	class AUX_95th_Westar_Shot_SoundSet {
 		soundShaders[] = {"AUX_95th_Westar_Shot_SoundShader"};
+		volumeFactor = 1.0;
+		volumeCurve = "InverseSquare2Curve";
+		sound3DProcessingType = "WeaponMediumShot3DProcessingType";
+		distanceFilter = "weaponShotDistanceFreqAttenuationFilter";
+		occlusionFactor = 0.5;
+		obstructionFactor = 0.3;
+		spatial = 1;
+		doppler = 0;
+		loop = 0;
+	};
+
+	class AUX_95th_Pistol_Shot_SoundSet {
+		soundShaders[] = {"AUX_95th_Pistol_Shot_SoundShader"};
 		volumeFactor = 1.0;
 		volumeCurve = "InverseSquare2Curve";
 		sound3DProcessingType = "WeaponMediumShot3DProcessingType";

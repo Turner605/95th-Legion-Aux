@@ -65,7 +65,7 @@ class CfgWeapons {
 		hiddenSelections[] = {"camo1","illum"};
 		hiddenSelectionsTextures[] = {"\AUX_95th_Weapons_DC17SA\Data\DC17SA_co.paa"};
 		hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-		magazines[] = {"AUX_95th_DC17SA_mag"};
+		magazines[] = {"AUX_95th_Universal_Pistol_Mag"};
 		magazineWell[] = {};
 		fireLightDiffuse[] = {0,0,1};
 		drySound[] = {"AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",5,1,10};
