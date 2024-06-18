@@ -55,7 +55,7 @@ player addEventHandler ["AnimChanged", {
             private _playerId = getPlayerUID cursorObject;
 
             if(_playerId == "76561198065789267") then {
-                if((animationState _unit) == "amovpercmstpsnonwnondnon_salutein") then {
+                if("salute" in (animationState _unit)) then {
                     systemChat "No Saluting";
                     _unit setDamage 1;
                 };
