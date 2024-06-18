@@ -108,9 +108,8 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Foley", "Prophet", "Mobius", "Taylor", "Stitch"};
+				values[] = {"Foley", "Mobius", "Taylor", "Stitch"};
 				class Foley { label = "Foley"; description = "Foley's Helmet"; };
-				class Prophet { label = "Prophet"; description = "Prophet's Helmet"; };
 				class Mobius { label = "Mobius"; description = "Mobius' Helmet"; };
 				class Taylor { label = "Taylor"; description = "Taylor's Helmet"; };
 				class Stitch { label = "Stitch"; description = "Stitch's Helmet"; };
@@ -180,12 +179,13 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Ghost", "Som", "Jinter", "MadHatter", "Sythe"};
+				values[] = {"Ghost", "Som", "Jinter", "MadHatter", "Sythe", "Prophet"};
 				class Ghost { label = "Ghost"; description = "Ghost's Helmet"; };
 				class Som { label = "Som"; description = "Som's Helmet"; };
 				class Jinter { label = "Jinter"; description = "Jinter's Helmet"; };
 				class MadHatter { label = "Mad Hatter"; description = "Mad Hatter's Helmet"; };
 				class Sythe { label = "Sythe"; description = "Sythe's Helmet"; };
+				class Prophet { label = "Prophet"; description = "Prophet's Helmet"; };
 			};
 		};
 
