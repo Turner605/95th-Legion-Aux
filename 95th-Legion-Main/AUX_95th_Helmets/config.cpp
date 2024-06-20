@@ -57,10 +57,11 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Havoc","Sythe", "Cheezy"};
+				values[] = {"Havoc","Sythe", "Cheezy", "Styx"};
 				class Havoc { label = "Havoc"; description = "Havoc's Helmet"; };
 				class Sythe { label = "Sythe"; description = "Sythe's Helmet"; };
 				class Cheezy { label = "Cheezy"; description = "Cheezy's Helmet"; };
+				class Styx { label = "Styx"; description = "Styx's Helmet"; };
 			};
 		};
 
