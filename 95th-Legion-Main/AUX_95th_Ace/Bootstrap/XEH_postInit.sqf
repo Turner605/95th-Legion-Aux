@@ -48,14 +48,14 @@ if(AUX_95th_Default_Kits_Enabled) then {
 
 // ATSS (Anti Turner Salute System)
 player addEventHandler ["AnimChanged", {
-	params ["_unit", "_anim"];
+    params ["_unit", "_anim"];
 
     if (!(isNull cursorObject)) then {
         if(isPlayer cursorObject) then {
             private _playerId = getPlayerUID cursorObject;
 
             if(_playerId == "76561198065789267") then {
-                if((animationState _unit) == "amovpercmstpsraswrfldnon_salutein") then {
+                if("salute" in (animationState _unit)) then {
                     systemChat "No Saluting";
                     _unit setDamage 1;
                 };

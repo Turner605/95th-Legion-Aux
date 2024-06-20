@@ -39,6 +39,13 @@ class CfgPatches {
 			"AUX_95th_Droid_B2_Unit_GL",
 			"AUX_95th_Droid_B2_Unit_Shotgun",
 
+			"AUX_95th_Droid_BX_Unit_Rifleman",
+			"AUX_95th_Droid_BX_Unit_Commander",
+			"AUX_95th_Droid_BX_Unit_Guard",
+			"AUX_95th_Droid_BX_Unit_Diplomat",
+			"AUX_95th_Droid_BX_Unit_Shotgun",
+			"AUX_95th_Droid_BX_Unit_Sniper",
+
 			"AUX_95th_Human_Unit_Riot",
 
 			"AUX_95th_Tank_Unit_AAT",
@@ -87,6 +94,7 @@ class CfgEditorCategories {
 
 class CfgEditorSubcategories {
 	class AUX_95th_CIS_Forces_Air_Units { displayName="Air Units"; };
+	class AUX_95th_CIS_Forces_Droids_BX{displayName="BX Commandos";};
 	class AUX_95th_CIS_Forces_Droids_B1{displayName="B1 Battledroids (Standard)";};
 	class AUX_95th_CIS_Forces_Droids_B1_Rocket{displayName="B1 Battledroids (Rocket)";};
 	class AUX_95th_CIS_Forces_Droids_B2{displayName="B2 Battledroids";};
@@ -105,6 +113,17 @@ class CfgWeapons {
     class Uniform_Base: ItemCore { class ItemInfo; };
 
 	class JLTS_DroidB1;
+
+	class JLTS_E5_shield;
+	class JLTS_E5_shield_attached : JLTS_E5_shield {
+		scope = 1;
+		class LinkedItems {
+			class LinkedItemsUnder {
+				slot = "UnderBarrelSlot";
+				item = "JLTS_riot_shield_droid_attachment";
+			};
+		};
+	};
 
 	//############################################################### B1 Uniforms ###############################################################
 	NEW_95TH_INDEPENDENT_B1_UNIFORM(Diplomat);
@@ -141,6 +160,14 @@ class CfgVehicles {
 	#include "Units\B2\GL.hpp"
 	#include "Units\B2\Shotgun.hpp"
 
+	// BX Units 
+	#include "Units\BX\Rifleman.hpp"
+	#include "Units\BX\Shotgun.hpp"
+	#include "Units\BX\Sniper.hpp"
+	#include "Units\BX\Commander.hpp"
+	#include "Units\BX\Guard.hpp"
+	#include "Units\BX\Diplomat.hpp"
+
 	// Humans
 	#include "Units\Humans\Riot.hpp"
 
@@ -174,18 +201,13 @@ class CfgVehicles {
 	NEW_95TH_INDEPENDENT_B1_BACKPACK(Police);
 
 	//############################################################### Commando Units ###############################################################
-	NEW_95TH_COMMANDO_UNIT(Normal,Normal,lsd_cis_bxDroid_uniform);
-	NEW_95TH_COMMANDO_UNIT(Captain,Captain,lsd_cis_bxCaptainDroid_uniform);
-	NEW_95TH_COMMANDO_UNIT(Citadel,Citadel Guard,lsd_cis_bxSecurityDroid_uniform);
-	NEW_95TH_COMMANDO_UNIT(Diplomat,Diplomat,lsd_cis_bxDiplomatDroid_uniform);
-
 	class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Generic_Unit_P1_Basic_Rifleman {
 		displayName="[95th] Disguised BX Trooper";
 		author="95th Aux Team";
 		DSS_Is_Disguised_As_Bluefor=1;\
 		faction="AUX_95th_CIS";
 		editorCategory="AUX_95th_CIS_Forces";
-		editorSubcategory="AUX_95th_CIS_Forces_Droids_Commando";
+		editorSubcategory="AUX_95th_CIS_Forces_Droids_BX";
 		uniformClass="AUX_95th_Uniform_P1_Basic_Trooper";
         side = 0;
 		scope=2; 
@@ -195,6 +217,26 @@ class CfgVehicles {
 		respawnLinkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
 		nakedUniform = "lsd_cis_bxDroid_uniform";
 		identityTypes[] = {"Head_LSD_BX"};
+		allowedFacewear[] = {
+			"Facewear_Empty_HUD_ARFAntenna_95th", 0.2,
+			"Facewear_Empty_HUD_Headlamps_95th", 1,
+			"Facewear_Empty_Headlamp_95th", 1,
+			"Facewear_Poncho_Empty_Green_95th", 0.1,
+			"Facewear_Scarf_Empty_Brown_95th", 0.1,
+			"Facewear_Scarf_Empty_Black_95th", 0.1,
+			"", 1
+		};
+		headgearList[] = {
+			"AUX_95th_Helmet_P1_Basic_Trooper", 0.9,
+			"AUX_95th_Helmet_Airborne_Trooper", 0,
+			"AUX_95th_Helmet_ARF_Trooper", 0.6,
+			"AUX_95th_Helmet_Engineer_Trooper", 0.6,
+			"AUX_95th_Helmet_SpecOps_Trooper", 0.6
+		};
+		class EventHandlers {
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+			init = "if (local (_this select 0)) then { [(_this select 0), [], []] call BIS_fnc_unitHeadgear; };";
+		};
 	};
 };
 
@@ -243,10 +285,12 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Droid_B2_Unit_GL {class AUX_95th_Droid_B2_Unit_GL_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_B2Init;";};};
 	class AUX_95th_Droid_B2_Unit_Shotgun {class AUX_95th_Droid_B2_Unit_Shotgun_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_B2Init;";};};
 
-	class AUX_95th_Droid_Commando_Unit_Normal {class AUX_95th_Droid_Commando_Unit_Normal_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Droid_Commando_Unit_Captain {class AUX_95th_Droid_Commando_Unit_Captain_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Droid_Commando_Unit_Citadel {class AUX_95th_Droid_Commando_Unit_Citadel_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Droid_Commando_Unit_Diplomat {class AUX_95th_Droid_Commando_Unit_Diplomat_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_BX_Unit_Rifleman {class AUX_95th_Droid_BX_Unit_Rifleman_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_BX_Unit_Shotgun {class AUX_95th_Droid_BX_Unit_Shotgun_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_BX_Unit_Sniper {class AUX_95th_Droid_BX_Unit_Sniper_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_BX_Unit_Commander {class AUX_95th_Droid_BX_Unit_Commander_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_BX_Unit_Guard {class AUX_95th_Droid_BX_Unit_Guard_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
+	class AUX_95th_Droid_BX_Unit_Diplomat {class AUX_95th_Droid_BX_Unit_Diplomat_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
 	
 	class AUX_95th_Droid_Radar_Jammer_Turret {class AUX_95th_Droid_Radar_Jammer_Turret_Init {onRespawn="true"; serverInit="[_this select 0, 6000] call AUX_95th_fnc_radarJammerInit;";};};
 };

@@ -95,9 +95,7 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Havoc","Sythe", "Cheezy"};
-				class Havoc { label = "Havoc"; description = "Havoc's Uniform"; };
-				class Sythe { label = "Sythe"; description = "Sythe's Uniform"; };
+				values[] = {"Cheezy"};
 				class Cheezy { label = "Cheezy"; description = "Cheezy's Uniform"; };
 			};
 		};
@@ -142,9 +140,8 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Foley", "Prophet", "Mobius", "Taylor", "Stitch"};
+				values[] = {"Foley", "Mobius", "Taylor", "Stitch"};
 				class Foley { label = "Foley"; description = "Foley's Uniform"; };
-				class Prophet { label = "Prophet"; description = "Prophet's Uniform"; };
 				class Mobius { label = "Mobius"; description = "Mobius' Uniform"; };
 				class Taylor { label = "Taylor"; description = "Taylor's Uniform"; };
 				class Stitch { label = "Stitch"; description = "Stitch's Uniform"; };
@@ -158,10 +155,9 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Bretek", "Third", "MadHatter", "Ratler"};
+				values[] = {"Bretek", "Third", "Ratler"};
 				class Bretek { label = "Bretek"; description = "Bretek's Uniform"; };
 				class Third { label = "Third"; description = "Third's Uniform"; };
-				class MadHatter { label = "Mad Hatter"; description = "Mad Hatter's Uniform"; };
 				class Ratler { label = "Ratler"; description = "Ratler's Uniform"; };
 			};
 		};
@@ -212,10 +208,13 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Ghost", "Som", "Jinter"};
+				values[] = {"Ghost", "Som", "Jinter", "MadHatter", "Sythe", "Prophet"};
 				class Ghost { label = "Ghost"; description = "Ghost's Uniform"; };
 				class Som { label = "Som"; description = "Som's Uniform"; };
 				class Jinter { label = "Jinter"; description = "Jinter's Uniform"; };
+				class MadHatter { label = "Mad Hatter"; description = "Mad Hatter's Uniform"; };
+				class Sythe { label = "Sythe"; description = "Sythe's Uniform"; };
+				class Prophet { label = "Prophet"; description = "Prophet's Uniform"; };
 			};
 		};
 
@@ -226,8 +225,9 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Biedronka"};
+				values[] = {"Biedronka", "Havoc"};
 				class Biedronka { label = "Biedronka"; description = "Biedronka Uniform"; };
+				class Havoc { label = "Havoc"; description = "Havoc's Uniform"; };
 			};
 		};
 	};

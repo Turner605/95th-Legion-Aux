@@ -6,13 +6,13 @@ private _customHelmetList = [
 	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard",
 	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
 	"Sergeant", "Kev", "Titan", "Taun", "Edge", "King", "York", "Styx", "Pendragon", "Lisek", "Mermaid",
-	"Nyet", "Neron"
+	"Night", "Neron"
 ];
 
 private _customUniformList = [
 	"Trooper", "Shiny", "Medic", "Senior", "Veteran", "Senior", "Sergeant", "Lieutenant",
 	"Turner", "Splash", "Commie", "Solvest", "Smokery", "Kev", "Smaug", "Revan", "Volt",
-	"Sand", "Manila", "Jinter", "Havoc", "Sythe", "Cheezy", "Bretek", "MadHatter", "Dilanza", "Hypo", "Foley", "Stitch", "Prophet", "King"
+	"Sand", "Manila", "Jinter", "Havoc", "Sythe", "Cheezy", "Bretek", "MadHatter", "Dilanza", "Hypo", "Foley", "Stitch", "Prophet", "King", "Titan"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
@@ -83,7 +83,7 @@ private _arsenalWeapons = [
 
     "AUX_95th_DC17SA","ACE_VMH3","ACE_VMM3","ACE_Flashlight_Maglite_ML300L","hgun_esd_01_F","Weap_melee_knife","Knife_m3","Police_Bat",
     "Shovel_Russian","Shovel_Russian_Rotated","UNSC_Knife","UNSC_Knife_reversed","SW_clone_knife","WBK_SciFi_Sword_1","IMS_HL_StunBaton",
-    "3AS_DC17STest_F","3AS_RepublicDatapadPistol","Knife_kukri",
+    "AUX_95th_Weapons_DC17SA_Dual","3AS_RepublicDatapadPistol","Knife_kukri",
 
     "3AS_PLX1_F","3AS_RPS6_F","3AS_RPS6_HP","3AS_RPS6_G"
 ];
@@ -101,7 +101,8 @@ private _arsenalAmmo = [
 	"OPTRE_1Rnd_SmokeBlue_Grenade_shell","OPTRE_1Rnd_SmokeOrange_Grenade_shell","ACE_40mm_Flare_white","ACE_40mm_Flare_red","ACE_40mm_Flare_green","ACE_40mm_Flare_ir",
 	"OPTRE_3Rnd_Smoke_Grenade_shell","OPTRE_3Rnd_SmokeRed_Grenade_shell","OPTRE_3Rnd_SmokeGreen_Grenade_shell","OPTRE_3Rnd_SmokeYellow_Grenade_shell",
 	"OPTRE_3Rnd_SmokePurple_Grenade_shell","OPTRE_3Rnd_SmokeBlue_Grenade_shell","OPTRE_3Rnd_SmokeOrange_Grenade_shell","JLTS_DC15S_mag","AUX_95th_DC15X_Mag",
-	"AUX_95th_DP23_Mag","JLTS_DW32S_mag","JLTS_Z6_mag","JLTS_RPS6_mag","JLTS_RPS6_HE_mag","ls_mag_at_plx","ls_mag_ap_plx","ls_mag_aa_plx","AUX_95th_DC17SA_mag",
+	"AUX_95th_DP23_Mag","JLTS_DW32S_mag","JLTS_Z6_mag","JLTS_RPS6_mag","JLTS_RPS6_HE_mag","ls_mag_at_plx","ls_mag_ap_plx","ls_mag_aa_plx","AUX_95th_DC17SA_Dual_Mag",
+	"AUX_95th_Universal_Pistol_Mag",
 	"JLTS_EMP_mag","AUX_95th_BX42_Fuel","3AS_JLTS_MK43_AT","3AS_JLTS_MK44_HE","3AS_JLTS_MK39_AA","CBA_FakeLauncherMagazine","3AS_MK41_AT","3AS_MK42_HE",
 	"Laserbatteries","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F",
 	"3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell",
