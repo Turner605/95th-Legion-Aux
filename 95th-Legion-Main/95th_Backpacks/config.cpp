@@ -220,5 +220,11 @@ class CfgVehicles {
 		model="\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
 		hiddenSelections[]={"camo1"};
 		hiddenSelectionsTextures[]={"\95th_Backpacks\Data\Backpacks\Backpack_Flame.paa"};
+		tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_encryptionCode="tf_west_radio_code";
+		tf_hasLRradio=1;
+		tf_range=16000;
+		tf_subtype="digital_lr";
 	};
 };
