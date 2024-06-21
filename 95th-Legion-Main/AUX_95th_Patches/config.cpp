@@ -13,6 +13,12 @@ class CfgPatches {
 
 class Extended_PreInit_EventHandlers {
 	class AUX_95th_Patches_PreInit {
-		init="call compile preprocessFileLineNumbers '\AUX_95th_Patches\Bootstrap\XEH_preInit.sqf'";
+		init="call compile preprocessFileLineNumbers '\AUX_95th_Patches\Init\XEH_preInit.sqf'";
+	};
+};
+
+class Extended_PostInit_EventHandlers {
+	class AUX_95th_Patches_PostInit {
+		init="call compile preprocessFileLineNumbers '\AUX_95th_Patches\Init\XEH_postInit.sqf'";
 	};
 };
