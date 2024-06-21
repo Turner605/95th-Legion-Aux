@@ -115,6 +115,7 @@ class CfgWeapons {
 	class WeaponSlotsInfo;
 
 	class AUX_95th_BX42_Muzzle: Rifle_Base_F {
+		WBK_BurnEm_IsNotFlamethrower = 1;
 		aiDispersionCoefX = 2;
 		aiDispersionCoefY = 2;
 		autoFire = 0;

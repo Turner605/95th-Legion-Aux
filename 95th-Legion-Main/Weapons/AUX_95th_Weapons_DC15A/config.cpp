@@ -43,7 +43,7 @@ class CfgWeapons {
 	};
 	class UGL_F;
 
-	class AUX_95th_Stun_Muzzle;
+	class AUX_95th_Stun_Muzzle_Rifle;
 
 	class AUX_95th_DC15A: arifle_MX_Base_F {
 		JLTS_hasElectronics = 1;
@@ -67,7 +67,7 @@ class CfgWeapons {
 		fireLightDiffuse[] = {0,0,1};
 		drySound[] = {"AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",5,1,10};
 		muzzles[] = {"this","Stun"};
-		class Stun: AUX_95th_Stun_Muzzle{};
+		class Stun: AUX_95th_Stun_Muzzle_Rifle{};
 		class Single: Mode_SemiAuto {
 			sounds[] = {"StandardSound"};
 			class BaseSoundModeType {

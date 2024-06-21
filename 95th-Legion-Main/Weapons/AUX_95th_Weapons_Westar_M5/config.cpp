@@ -34,7 +34,7 @@ class CfgWeapons {
 		class GunParticles;
 	};
 
-	class AUX_95th_Stun_Muzzle;
+	class AUX_95th_Stun_Muzzle_Rifle;
 
 	class UGL_F;
 	class AUX_95th_WestarM5_Base_F: Rifle_Base_F {
@@ -85,7 +85,7 @@ class CfgWeapons {
 		flashSize = 0.1;
 		muzzles[] = {"this","Stun"};
 		modes[] = {"Single","FullAuto"};
-		class Stun: AUX_95th_Stun_Muzzle{};
+		class Stun: AUX_95th_Stun_Muzzle_Rifle{};
 		class Single: Mode_SemiAuto {
 			reloadTime = 0.1;
 			dispersion = 0.00052;

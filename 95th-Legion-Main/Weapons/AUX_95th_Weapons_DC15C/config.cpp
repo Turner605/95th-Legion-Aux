@@ -53,7 +53,7 @@ class CfgWeapons {
 		class GunParticles;
 	};
 
-	class AUX_95th_Stun_Muzzle;
+	class AUX_95th_Stun_Muzzle_Rifle;
 	
 	class UGL_F;
 	class AUX_95th_DC15C_Base_F: Rifle_Base_F {
@@ -104,7 +104,7 @@ class CfgWeapons {
 		flashSize = 0.1;
 		modes[] = {"FullAuto","Single"};
 		muzzles[] = {"this","Stun"};
-		class Stun: AUX_95th_Stun_Muzzle{};
+		class Stun: AUX_95th_Stun_Muzzle_Rifle{};
 		class FullAuto: Mode_FullAuto {
 			reloadTime = 0.12;
 			dispersion = 0.00106;

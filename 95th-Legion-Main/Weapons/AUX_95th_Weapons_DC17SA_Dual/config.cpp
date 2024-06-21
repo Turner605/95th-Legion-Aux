@@ -52,7 +52,7 @@ class CfgWeapons {
 		class GunParticles;
 	};
 
-	class AUX_95th_Stun_Muzzle;
+	class AUX_95th_Stun_Muzzle_Rifle;
 
 	class AUX_95th_DC17SA_Base_F: Pistol_Base_F {
 		author = "95th Legion";
@@ -133,7 +133,7 @@ class CfgWeapons {
 			mass = 60;
 		};
 		muzzles[] = {"this","Stun"};
-		class Stun: AUX_95th_Stun_Muzzle {
+		class Stun: AUX_95th_Stun_Muzzle_Rifle {
 			reloadAction = "AUX_95th_GestureReloadDualDC17S";
 			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
 		};
