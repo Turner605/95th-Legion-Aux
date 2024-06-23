@@ -911,9 +911,3 @@ class CfgSoundSets {
 		loop = 0;
 	};
 };
-
-class Extended_PostInit_EventHandlers {
-	class AUX_95th_Weapons_Shared_PostInit {
-		init="call compile preprocessFileLineNumbers '\AUX_95th_Weapons_Shared\Init\XEH_postInit.sqf'";
-	};
-};

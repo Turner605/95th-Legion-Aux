@@ -20,46 +20,19 @@ class CfgAmmo {
 	class AUX_95th_BX42_Rocket_HE_Ammo:	3AS_R_Mk40_AT {
 
 	};
-
-	class AUX_95th_Grappler_Ammo: B_65x39_Caseless {
-		author = "95th Aux Team";
-		simulation = "shotShell";
-		model = "\A3\weapons_f\ammo\UGL_slug";
-		suppressionRadiusHit = 0;
-		timeToLive = 10;
-		typicalSpeed = 22;
-		aiAmmoUsageFlags = "0";
-		dangerRadiusHit = 0;
-		deflecting = 0;
-		explosionTime = -1;
-		explosive = 0;
-		cost = 40;
-		hit = 0;
-		indirectHit = 0;
-		maxSpeed = 100;
-		// flaresize = 5;
-		// tracerscale = 0.8;
-		// effectflare = "FlareShell";
-		tracerstarttime = 0.05;
-		tracerendtime = 10;
-		nvgonly = 0;
-		airlock = 1;
-		irtarget = 1;
-		brightness = 1000;
-		initTime = 0;
-		airfriction = 0;
-		coefgravity = 0;
-
-		// soundFly[] = {"x\advanced_grappling\addons\main\sounds\launch.ogg", 3, 1, 100};
-		// soundHit1[] = {"x\advanced_grappling\addons\main\sounds\impact.ogg", 3, 1, 100};
-		// multiSoundHit[] = {"soundHit1", 1};
-	};
 };
 
 class CfgMagazines {
 	class M2_Fuel_Tank;
 	class 16Rnd_9x21_Mag;
 	class 3AS_6Rnd_RocketGrenades_HE;
+	class 3AS_6Rnd_HE_Grenade_shell;
+
+	class AUX_95th_BX42_Pyro: 3AS_6Rnd_HE_Grenade_shell {
+		displayName="[95th] BX-42 Pyro Rounds";
+		displayNameShort = "Pyro Rounds";
+		deleteIfEmpty = 1;
+	};
 
 	class AUX_95th_BX42_Rocket_HE: 3AS_6Rnd_RocketGrenades_HE {
 		author="95th Aux Team";
@@ -84,23 +57,6 @@ class CfgMagazines {
 		picture="\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
 		ammo="Flamethrower_Fuel";
 	};
-
-	class AUX_95th_Grappler_Mag: 16Rnd_9x21_Mag {
-		author = "95th Aux Team";
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		modelSpecial = "";
-		modelSpecialIsProxy = 0;
-		displayName = "Grappler Mag";
-		displayNameShort = "Grappler";
-		model = "\MRC\JLTS\weapons\Core\stun_mag.p3d";
-		picture = "\MRC\JLTS\weapons\Core\data\ui\stun_mag_ui_ca.paa";
-		count = 1;
-		ammo = "AUX_95th_Grappler_Ammo";
-		descriptionShort = "Grappler Ammo";
-		tracersEvery = 1;
-		initSpeed = 50;
-	};
 };
 
 class Mode_SemiAuto;
@@ -113,9 +69,32 @@ class CfgWeapons {
 
 	class 41_Flammenwerfer_02_F;
 	class WeaponSlotsInfo;
+	class UGL_F;
 
-	class AUX_95th_BX42_Muzzle: Rifle_Base_F {
+	class AUX_95th_BX42_GL_Muzzle: UGL_F {
 		WBK_BurnEm_IsNotFlamethrower = 1;
+		muzzlePos = "Usti hlavne";
+		muzzleEnd = "Konec hlavne";
+		displayName = "Pyro Test";
+		descriptionShort = "Pyro Launcher";
+		useModelOptics = 0;
+		useExternalOptic = 0;
+		magazines[] = {"AUX_95th_BX42_Pyro"};
+		magazineWell[] = {};
+		cameraDir = "OP_look";
+		discreteDistance[] = {50,75,100,150,200,250,300,350,400};
+		discreteDistanceCameraPoint[] = {"OP_eye_50","OP_eye_75","OP_eye_100","OP_eye_150","OP_eye_200","OP_eye_250","OP_eye_300","OP_eye_350","OP_eye_400"};
+		discreteDistanceInitIndex = 1;
+		reloadAction = "GestureReloadMXUGL";
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
+	};
+
+	// Fires in a straight line
+	class AUX_95th_BX42_Muzzle: Rifle_Base_F {
+		cursor = "";
+		cursorAim = "gl";
+		WBK_BurnEm_IsNotFlamethrower = 1;
+		// canLock=2
 		aiDispersionCoefX = 2;
 		aiDispersionCoefY = 2;
 		autoFire = 0;
@@ -171,8 +150,20 @@ class CfgWeapons {
 		weaponInfoType="RscWeaponZeroing";
 		magazines[]={"AUX_95th_BX42_Fuel"};
 		muzzles[]={"this","Launcher"};
-		class Launcher: AUX_95th_BX42_Muzzle{};
+		class Launcher: AUX_95th_BX42_GL_Muzzle{};
 		class WeaponSlotsInfo: WeaponSlotsInfo{mass=40;};
 		handAnim[]= {"OFP2_ManSkeleton", "3AS\3AS_Weapons\Data\Anim\BX42.rtm" };
+	};
+};
+
+class Extended_PreInit_EventHandlers {
+	class AUX_95th_Weapons_BTX42_PreInit {
+		init="call compile preprocessFileLineNumbers '\AUX_95th_Weapons_BTX42\Init\XEH_preInit.sqf'";
+	};
+};
+
+class Extended_PostInit_EventHandlers {
+	class AUX_95th_Weapons_BTX42_PostInit {
+		init="call compile preprocessFileLineNumbers '\AUX_95th_Weapons_BTX42\Init\XEH_postInit.sqf'";
 	};
 };
