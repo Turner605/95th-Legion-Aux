@@ -38,6 +38,7 @@ class CfgPatches {
 			"AUX_95th_Unit_P1_Basic_Stitch",
 			"AUX_95th_Unit_P1_Basic_Prophet",
 			"AUX_95th_Unit_P1_Basic_King",
+			"AUX_95th_Unit_P1_Basic_Dracus",
 
 			"AUX_95th_Unit_P1_Cold_Assault_Trooper",
 			"AUX_95th_Unit_Commando_Trooper",
@@ -114,6 +115,7 @@ class XtdGearModels {
 				class Osprey { label = "Osprey"; description = "Osprey's Uniform"; };
 				class Chimera { label = "Chimera"; description = "Chimera's Uniform"; };
 				class King { label = "King"; description = "King's Uniform"; };
+				class Dracus { label = "Dracus"; description = "Dracus's Uniform"; };
 			};
 		};
 
