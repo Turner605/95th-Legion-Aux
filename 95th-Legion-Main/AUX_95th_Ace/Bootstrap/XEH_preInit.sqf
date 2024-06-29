@@ -38,41 +38,6 @@
     {} // function that will be executed once on mission start and every time the setting is changed.
 ] call CBA_fnc_addSetting;
 
-
-if (isServer) then {
-    private _timeJoinedMap = createHashMapFromArray [["BOOTTIME", serverTime]];
-    private _timePlayedMap = createHashMapFromArray [["BOOTTIME", serverTime]];
-
-    missionNamespace setVariable ["AUX_95th_Time_Joined", _timeJoinedMap, true];
-    missionNamespace setVariable ["AUX_95th_Time_Played", _timeJoinedMap, true];
-
-    addMissionEventHandler ["PlayerConnected", {
-        params ["_id", "_uid", "_name", "_jip", "_owner", "_idstr"];
-
-        private _timeJoinedMap = missionNamespace getVariable "AUX_95th_Time_Joined";
-        _timeJoinedMap set [_uid, serverTime];
-    }];
-
-    addMissionEventHandler ["PlayerDisconnected", {
-        params ["_id", "_uid", "_name", "_jip", "_owner", "_idstr"];
-
-        private _timeJoinedMap = missionNamespace getVariable "AUX_95th_Time_Joined";
-        private _timePlayedMap = missionNamespace getVariable "AUX_95th_Time_Played";
-
-        private _lastTimeJoined = (_timeJoinedMap get _uid);
-        private _timePlayed = (serverTime - _lastTimeJoined);
-
-        private _priorTimePlayed = (_timePlayedMap getOrDefault [_uid, 0]);
-        _timePlayedMap set [_uid, (_priorTimePlayed + _timePlayed)];
-    }]; 
-
-    addMissionEventHandler ["MPEnded", {
-        private _timePlayedMap = missionNamespace getVariable "AUX_95th_Time_Played";
-
-        diag_log ["AUX_95th_Time_Played: ", _timePlayedMap];
-    }];
-};
-
 AUX_95th_Arsenal_Class_Items = [
 	["AUX_95th_DC15X","JLTS_DW32S"], // 0 - Marksman
 	["JLTS_riot_shield_item"], // 1 - Riot

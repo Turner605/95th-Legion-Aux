@@ -26,3 +26,5 @@ To add new vests you need to do the following:
 - 95th-Legion-Aux\95th-Legion-Main\AUX_95th_Vests\Data\Officers\
     - Add the texture files in the correct path with the correct names, have a look at existing if unsure
 
+## Credit Links:
+- https://github.com/dedmen/DAA_Mod
