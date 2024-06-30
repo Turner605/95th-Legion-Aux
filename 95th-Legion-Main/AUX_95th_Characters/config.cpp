@@ -108,7 +108,7 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Volt","Sand", "Manila", "Osprey", "Chimera", "King"};
+				values[] = {"Volt","Sand", "Manila", "Osprey", "Chimera", "King", "Dracus"};
 				class Volt { label = "Volt"; description = "Volt's Uniform"; };
 				class Sand { label = "Sand"; description = "Sand's Uniform"; };
 				class Manila { label = "Manila"; description = "Manila's Uniform"; };
