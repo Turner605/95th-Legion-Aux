@@ -10,6 +10,7 @@ class CfgPatches {
 class CfgUnitInsignia {
 	#include "Insignias\Logo.hpp"
 	#include "Insignias\Anooba.hpp"
+	#include "Insignias\Banshee.hpp"
 	#include "Insignias\Acklay.hpp"
 	#include "Insignias\Reek.hpp"
 	#include "Insignias\Krayt.hpp"
