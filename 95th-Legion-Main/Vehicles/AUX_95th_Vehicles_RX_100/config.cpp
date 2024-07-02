@@ -1,5 +1,5 @@
 class CfgPatches {
-	class AUX_95th_Vehicles_TX_190 {
+	class AUX_95th_Vehicles_RX_100 {
 		author = "95th Legion";
 		name = "AUX 95th Vehicles TX-190";
 		requiredAddons[] = {
@@ -9,7 +9,7 @@ class CfgPatches {
             "CCS_HV_Tank"
         };
 		weapons[] = {};
-		units[] = {"AUX_95th_TX_190"};
+		units[] = {"AUX_95th_RX_100"};
 		magazines[] = {};
 	};
 };
@@ -70,8 +70,8 @@ class CfgVehicles {
 	class B_APC_Tracked_01_rcws_F: B_APC_Tracked_01_base_F {};
 	class CCS_HV_Tank_01: B_APC_Tracked_01_rcws_F {};
 	
-    class AUX_95th_TX_190: CCS_HV_Tank_01 {
-        displayname = "TX-190";
+    class AUX_95th_RX_100: CCS_HV_Tank_01 {
+        displayname = "RX-100";
         author="95th Aux Team";
         faction="AUX_95th_Legion_Faction_Vehicles";
         editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Heavy";
@@ -81,13 +81,13 @@ class CfgVehicles {
 			"Default", 1
 		};
 
-		hiddenSelectionsTextures[]= {"\AUX_95th_Vehicles_TX_190\Data\Default.paa"};
+		hiddenSelectionsTextures[]= {"\AUX_95th_Vehicles_RX_100\Data\Default.paa"};
 
         class TextureSources {
 			class Default {
 				displayName="Default";
 				author="95th Aux Team";
-				textures[]= {"\AUX_95th_Vehicles_TX_190\Data\Default.paa"};
+				textures[]= {"\AUX_95th_Vehicles_RX_100\Data\Default.paa"};
 				factions[]={"AUX_95th_Legion_Faction_Vehicles"};
 			};
 		};
