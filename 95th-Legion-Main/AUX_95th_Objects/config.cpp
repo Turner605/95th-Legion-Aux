@@ -87,6 +87,7 @@ class CfgVehicles {
 	#include "Misc\Radio Extender.hpp"
 	#include "Misc\Reinsert Requester.hpp"
 	#include "Misc\Shield Generator.hpp"
+	#include "Misc\2D Field Commander Kit.hpp"
 
 	// Misc Terminals
 	#include "Misc Terminals\Medical Terminal.hpp"
