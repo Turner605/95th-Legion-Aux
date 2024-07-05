@@ -1,6 +1,5 @@
 #include "Macros\LAAT Texture.hpp"
 #include "Macros\LAAT C Texture.hpp"
-#include "Macros\ATTE Texture.hpp"
 #include "Macros\LAAT Shared.hpp"
 #include "Macros\LAAT C Shared.hpp"
 #include "Macros\Shuttle Shared.hpp"
@@ -107,103 +106,12 @@ class CfgVehicles {
 		class AnimationSources;
 	};
 
-	class Car;
-	class Car_F: Car {
-		class Sounds;
-		class Eventhandlers;
-		class HitPoints {
-			class HitBody;
-			class HitEngine;
-			class HitFuel;
-			class HitHull;
-			class HitLFWheel;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-			class HitRF2Wheel;
-		};
-	};
-
-	class Wheeled_APC_F: Car_F {
-		class ViewPilot;
-		class ViewOptics;
-		class ViewCargo;
-		class Sounds: Sounds {
-			class Engine;
-			class Movement;
-		};
-		class NewTurret;
-		class Turrets {
-			class MainTurret: NewTurret {
-				class ViewOptics;
-				class ViewGunner;
-				class Turrets {
-					class CommanderOptics;
-				};
-			};
-		};
-		class AnimationSources;
-	};
-
-	class APC_Wheeled_01_base_F: Wheeled_APC_F{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class Turrets: Turrets
-				{
-					class CommanderOptics: CommanderOptics{};
-				};
-			};
-		};	
-	};
-
-	class 3AS_ATTE_Base: APC_Wheeled_01_base_F {
-		class Turrets : Turrets {
-			class MainTurretTop: Mainturret {
-				class OpticsIn {
-					class Wide;
-					class Narrow : Wide{};
-				};
-				class HitPoints {
-					class HitTurrettop;
-					class HitGuntop;
-				};
-				class ViewGunner: ViewGunner{};	
-				class Turrets{};
-			};
-			class MainTurretFront: MainTurretTop {
-				class OpticsIn {
-					class Wide;
-					class Narrow : Wide{};
-				};
-				class HitPoints {
-					class HitTurretFront;
-					class HitGunFront;
-				};
-				class ViewGunner: ViewGunner{};	
-				class Turrets{};
-			};
-			class MainTurretBack : MainTurretFront {
-				class ViewGunner: ViewGunner{};
-				class HitPoints {
-					class HitTurretRear;
-					class HitGunRear;
-				};
-			};
-		};
-	};
-
 	class 3AS_ATRT;
 
 	// Static Vehicles
 	#include "Static Vehicles\Command Outpost.hpp"
 
 	// Ground Vehicles
-	#include "Ground Vehicles\ATTE.hpp"
 	#include "Ground Vehicles\RX200.hpp"
 	#include "Ground Vehicles\Swamp Speeder.hpp"
 	#include "Ground Vehicles\Swamp Speeder (Transport).hpp"
