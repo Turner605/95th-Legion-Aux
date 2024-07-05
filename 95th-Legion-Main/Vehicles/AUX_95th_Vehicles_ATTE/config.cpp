@@ -201,6 +201,10 @@ class CfgVehicles {
 				explosionShielding = 3;
 			};
 		};
+		crewExplosionProtection = 0.9995;
+		crewCrashProtection = 0.0001;
+		damageResistance = 0.00719;
+		crewVulnerable = true
 	};
 };
 
