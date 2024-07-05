@@ -128,7 +128,7 @@ class CfgVehicles {
 		};
 		class HitPoints: HitPoints {
 			class HitHull: HitHull {
-				armor = 3.0;
+				armor = 2.0;
 				material = -1;
 				armorComponent = "hit_hull";
 				name = "hit_hull_point";
@@ -139,7 +139,7 @@ class CfgVehicles {
 				radius = 0.75;
 			};
 			class HitEngine: HitEngine {
-				armor = 2.25;
+				armor = 1.5;
 				material = -1;
 				armorComponent = "hit_engine";
 				name = "hit_engine_point";
@@ -149,7 +149,7 @@ class CfgVehicles {
 				radius = 0.5;
 			};
 			class HitFuel: HitFuel {
-				armor = 2.25;
+				armor = 1.5;
 				material = -1;
 				armorComponent = "hit_fuel";
 				name = "hit_fuel_point";
