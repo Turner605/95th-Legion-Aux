@@ -126,6 +126,81 @@ class CfgVehicles {
 			NEW_95TH_ATTE_TEXTURE(Default)};
 			NEW_95TH_ATTE_TEXTURE(Kong)};
 		};
+		class HitPoints: HitPoints {
+			class HitHull: HitHull {
+				armor = 3.0;
+				material = -1;
+				armorComponent = "hit_hull";
+				name = "hit_hull_point";
+				visual = "zbytek";
+				passThrough = 1;
+				minimalHit = 0.2;
+				explosionShielding = 2;
+				radius = 0.75;
+			};
+			class HitEngine: HitEngine {
+				armor = 2.25;
+				material = -1;
+				armorComponent = "hit_engine";
+				name = "hit_engine_point";
+				passThrough = 0.2;
+				minimalHit = 0.1;
+				explosionShielding = 0.7;
+				radius = 0.5;
+			};
+			class HitFuel: HitFuel {
+				armor = 2.25;
+				material = -1;
+				armorComponent = "hit_fuel";
+				name = "hit_fuel_point";
+				passThrough = 0.1;
+				minimalHit = 0.1;
+				explosionShielding = 0.75;
+				radius = 0.5;
+			};
+			class HitLFWheel: HitLFWheel {
+				visual = "wheel_1_1_hide";
+				armorComponent = "wheel_1_1_hide";
+				radius = 0.25;
+				armor = 2;
+				minimalHit = 1.0;
+				explosionShielding = 0.75;
+				passThrough = 0;
+			};
+			class HitRFWheel: HitRFWheel {
+				visual = "wheel_2_1_hide";
+				armorComponent = "wheel_2_1_hide";
+				radius = 0.25;
+				armor = 2;
+				minimalHit = 1.0;
+				explosionShielding = 0.75;
+				passThrough = 0;
+			};
+			class HitGlass1 {
+				armor = 3;
+				name = "Hit_Glass1_point";
+				radius = 0.4;
+				visual = "";
+				passThrough = 0.1;
+				explosionShielding = 3;
+			};
+			class HitGlass2 {
+				armor = 3;
+				name = "Hit_Glass2_point";
+				radius = 0.4;
+				visual = "";
+				passThrough = 0.1;
+				explosionShielding = 3;
+			};
+			class HitGlass3 {
+				armor = 3;
+				name = "Hit_Glass3_point";
+				radius = 0.4;
+				visual = "";
+				passThrough = 0.1;
+				explosionShielding = 3;
+			};
+		};
 	};
 };
 
