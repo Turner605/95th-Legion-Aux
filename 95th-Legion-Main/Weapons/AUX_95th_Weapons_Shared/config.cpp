@@ -25,11 +25,12 @@ class CfgAmmo {
 
 	class AUX_95th_Pistol_Blue_Ammo: B_9x21_Ball {
 		author = "95th Aux Team";
-		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+		effectFly = "3AS_PlasmaBolt_Blue_Fly";
+		tracerScale = 0.5;
 		cartridge = "";
 		lightcolor[] = {0.25,0.25,0.5};
 		flaresize = 2;
-		tracerscale = 0.5;
 		effectflare = "FlareShell";
 		tracerstarttime = 0.05;
 		tracerendtime = 10;
@@ -37,7 +38,6 @@ class CfgAmmo {
 		nvgonly = 0;
 		airlock = 1;
 		irtarget = 1;
-		effectfly = "JLTS_plasma_blue";
 		brightness = 1000;
 		timetolive = 3;
 		airfriction = 0;
@@ -155,11 +155,12 @@ class CfgAmmo {
 
 	class AUX_95th_Rifle_Blue_Ammo: B_338_Ball {
 		author = "95th Aux Team";
-		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+		effectFly = "3AS_PlasmaBolt_Blue_Fly";
+		tracerScale = 0.7;
 		cartridge = "";
 		lightcolor[] = {0.25,0.25,0.5};
 		flaresize = 5;
-		tracerscale = 1.1;
 		effectflare = "FlareShell";
 		tracerstarttime = 0.05;
 		tracerendtime = 10;
@@ -167,7 +168,6 @@ class CfgAmmo {
 		nvgonly = 0;
 		airlock = 1;
 		irtarget = 1;
-		effectfly = "JLTS_plasma_blue";
 		brightness = 1000;
 		timetolive = 5;
 		airfriction = 0;
@@ -285,11 +285,12 @@ class CfgAmmo {
 
 	class AUX_95th_Heavy_Blue_Ammo: B_338_Ball {
 		author = "95th Aux Team";
-		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+		effectFly = "3AS_PlasmaBolt_Blue_Fly";
+		tracerScale = 1.2;
 		cartridge = "";
 		lightcolor[] = {0.25,0.25,0.5};
 		flaresize = 8;
-		tracerscale = 1.4;
 		effectflare = "FlareShell";
 		tracerstarttime = 0.05;
 		tracerendtime = 10;
@@ -297,7 +298,6 @@ class CfgAmmo {
 		nvgonly = 0;
 		airlock = 1;
 		irtarget = 1;
-		effectfly = "JLTS_plasma_blue";
 		brightness = 1000;
 		timetolive = 5;
 		airfriction = 0;
@@ -415,18 +415,18 @@ class CfgAmmo {
 
 	class AUX_95th_Sniper_Blue_Ammo: B_408_Ball {
 		author = "95th Legion";
-		model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";
+		effectFly = "3AS_PlasmaBolt_Blue_Fly";
+		tracerScale = 0.9;
 		cartridge = "";
 		lightcolor[] = {0.25,0.25,0.5};
 		flaresize = 5;
-		tracerscale = 0.8;
 		effectflare = "FlareShell";
 		tracerstarttime = 0.05;
 		tracerendtime = 10;
 		nvgonly = 0;
 		airlock = 1;
 		irtarget = 1;
-		effectfly = "JLTS_plasma_blue";
 		brightness = 1000;
 		timetolive = 7;
 		initTime = 0;
