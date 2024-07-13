@@ -69,6 +69,7 @@ class XtdGearModels {
 				class Titan { label = "Titan"; description = "Titan's Backpack"; };
 				class Bretek { label = "Bretek"; description = "Bretek's Backpack"; };
 				class Smaug { label = "Smaug"; description = "Smaug's Backpack"; };
+				class Gear { label = "Gear"; description = "Gear's Backpack"; };
 			};
 
 			class Visibility {
@@ -184,6 +185,9 @@ class CfgVehicles {
 
 	NEW_95TH_BACKPACK_VISIBLE(Smaug,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 	NEW_95TH_RTO_BACKPACK_VISIBLE(Smaug,95th_Custom_Backpacks,"95th Custom Backpack",400)};
+
+	NEW_95TH_BACKPACK_VISIBLE(Gear,95th_Custom_Backpacks,"95th Custom Backpack",400)};
+	NEW_95TH_RTO_BACKPACK_VISIBLE(Gear,95th_Custom_Backpacks,"95th Custom Backpack",400)};
 
 	//###############################Jetpacks###############################
 
