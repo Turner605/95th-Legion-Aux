@@ -61,7 +61,7 @@ class XtdGearModels {
 			class Role {
 				labels = "Role";
 				alwaysSelectable = 1;
-				values[] = {"Turner", "Stitch", "Pendragon", "Gridlock", "Titan", "Bretek", "Smaug"};
+				values[] = {"Turner", "Stitch", "Pendragon", "Gridlock", "Titan", "Bretek", "Smaug", "Gear"};
 				class Turner { label = "Turner"; description = "Turners Backpack"; };
 				class Stitch { label = "Stitch"; description = "Stitch's Backpack"; };
 				class Pendragon { label = "Pendragon"; description = "Pendragon's Backpack"; };
@@ -111,8 +111,9 @@ class XtdGearModels {
 
 			class Role {
 				labels = "Role";
-				values[] = {"Trooper"};
+				values[] = {"Trooper", "Medic"};
 				class Trooper { label = "Trooper"; description = "Trooper Jetpack"; };
+				class Medic { label = "Medic"; description = "Medic Jetpack"; };
 			};
 		};
 
@@ -192,6 +193,7 @@ class CfgVehicles {
 	//###############################Jetpacks###############################
 
 	NEW_95TH_JETPACK_JT12(Trooper,95th_Jetpacks,"95th Jetpacks",150)};
+	NEW_95TH_JETPACK_JT12(Medic,95th_Jetpacks,"95th Jetpacks",150)};
 	NEW_95TH_JETPACK_JT12(Stitch,95th_Custom_Jetpacks,"95th Custom Jetpacks",400)};
 
 	NEW_95TH_JETPACK_MC(Trooper,95th_Jetpacks,"95th Jetpacks",150)};

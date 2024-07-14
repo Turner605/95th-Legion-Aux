@@ -6,7 +6,7 @@ private _customHelmetList = [
 	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard",
 	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
 	"Sergeant", "Kev", "Titan", "Taun", "Edge", "King", "York", "Styx", "Pendragon", "Lisek", "Mermaid",
-	"Night", "Neron", "Dracus", "Axe"
+	"Night", "Neron", "Dracus", "Axe", "Boom"
 ];
 
 private _customUniformList = [
@@ -50,10 +50,12 @@ private _arsenalVests = [
 	"AUX_95th_Vest_Sergeant_Havoc", "AUX_95th_Vest_Lieutenant_Havoc", "AUX_95th_Vest_CIO_Havoc", "AUX_95th_Vest_Kama_Havoc",
 	"AUX_95th_Vest_Sergeant_Outcast", "AUX_95th_Vest_Lieutenant_Outcast", "AUX_95th_Vest_CIO_Outcast", "AUX_95th_Vest_Kama_Outcast",
 	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Vest_Kama_Turner",
-	"AUX_95th_Vest_Kama_Taun", "AUX_95th_Vest_Kama_Sand", "AUX_95th_Vest_Sergeant_Sand",
+	"AUX_95th_Vest_Kama_Taun", 
+	"AUX_95th_Vest_Kama_Sand", "AUX_95th_Vest_Sergeant_Sand",
 	"AUX_95th_Vest_Kama_Lisek",
 	"AUX_95th_Vest_Kama_Stitch",
-	"AUX_95th_Vest_Kama_Styx"
+	"AUX_95th_Vest_Kama_Styx",
+	"AUX_95th_Vest_Kama_Smokery", "AUX_95th_Vest_Sergeant_Smokery"
 ];
 
 //-----------------------------# Backpacks #-----------------------------------
@@ -65,7 +67,7 @@ private _arsenalBackpacks = [
 	"AUX_95th_RTO_Backpack_Visible_Medic", "AUX_95th_RTO_Backpack_Invisible_Medic",
 	"AUX_95th_RTO_Backpack_Visible_RTO", "AUX_95th_RTO_Backpack_Invisible_RTO",
 	"AUX_95th_RTO_Backpack_Visible_Mini_RTO", "AUX_95th_RTO_Backpack_Visible_Mini_Turner",
-	"AUX_95th_JT12_Jetpack_Trooper",
+	"AUX_95th_JT12_Jetpack_Trooper", "AUX_95th_JT12_Jetpack_Medic",
 	"AUX_95th_MC_Jetpack_Trooper", "AUX_95th_MC_Jetpack_Turner",
 	"95th_Katarn_Backpack","AUX_95th_BX42_Backpack",
 	"3AS_Republic_HR_Bag","3AS_Republic_HR_Shield_Bag","JLTS_UST_turret_GAR_backpack","JLTS_portable_shield_gar_backpack", "ACE_TacticalLadder_Pack",
@@ -73,7 +75,9 @@ private _arsenalBackpacks = [
 	"AUX_95th_Backpack_Visible_Gridlock", "AUX_95th_RTO_Backpack_Visible_Gridlock",
 	"AUX_95th_Backpack_Visible_Pendragon", "AUX_95th_RTO_Backpack_Visible_Pendragon",
 	"AUX_95th_Backpack_Visible_Titan", "AUX_95th_RTO_Backpack_Visible_Titan",
-	"AUX_95th_Backpack_Visible_Bretek", "AUX_95th_RTO_Backpack_Visible_Bretek", "AUX_95th_Backpack_Visible_Smaug", "AUX_95th_RTO_Backpack_Visible_Smaug"
+	"AUX_95th_Backpack_Visible_Bretek", "AUX_95th_RTO_Backpack_Visible_Bretek", 
+	"AUX_95th_Backpack_Visible_Smaug", "AUX_95th_RTO_Backpack_Visible_Smaug"
+	"AUX_95th_Backpack_Visible_Gear", "AUX_95th_RTO_Backpack_Visible_Gear"
 ];
 
 //-----------------------------# Weapons #-----------------------------------
@@ -84,7 +88,7 @@ private _arsenalWeapons = [
 
     "AUX_95th_DC17SA","ACE_VMH3","ACE_VMM3","ACE_Flashlight_Maglite_ML300L","hgun_esd_01_F","Weap_melee_knife","Knife_m3","Police_Bat",
     "Shovel_Russian","Shovel_Russian_Rotated","UNSC_Knife","UNSC_Knife_reversed","SW_clone_knife","WBK_SciFi_Sword_1","IMS_HL_StunBaton",
-    "AUX_95th_Weapons_DC17SA_Dual","3AS_RepublicDatapadPistol","Knife_kukri",
+    "AUX_95th_DC17SA_Dual","3AS_RepublicDatapadPistol","Knife_kukri",
 
     "3AS_PLX1_F","3AS_RPS6_F","3AS_RPS6_HP","3AS_RPS6_G"
 ];
@@ -160,7 +164,8 @@ private _arsenalMedical = [
 	"kat_larynx","kat_lidocaine","kat_lorazepam","ACE_morphine","kat_sealant","kat_PervitinItem","kat_ncdKit","kat_gasmaskFilter","kat_CaffeineItem",
     "ACE_bloodIV","ACE_bloodIV_250","ACE_bloodIV_500","kat_Bubble_Wrap_Item","kat_BVM","kat_pocketBVM","kat_oxygenTank_150_Item","kat_oxygenTank_300_Item",
     "ACE_salineIV","ACE_salineIV_250","ACE_salineIV_500", "kat_AFAK", "ACE_bodyBag_blue", "ACE_bodyBag_white", "kat_IFAK", "kat_MFAK", "kat_PenthroxItem",
-	"ACE_suture"
+	"ACE_suture", "ACE_personalAidKit", "kat_suction", "ACE_painkillers", "kat_Painkiller", "kat_Carbonate", "kat_Caffeine", "kat_Penthrox", "kat_Bubble_Wrap",
+	"kat_oxygenTank_150", "kat_oxygenTank_300", "DSS_Magazine_Grenade_Droid_Detector", "DSS_Magazine_Grenade_Droid_Popper"
 ];
 
 //-----------------------------# Explosives #-----------------------------------

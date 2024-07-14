@@ -63,7 +63,7 @@ AUX_95th_Arsenal_Whitelisted_Weapons = [
 
     "AUX_95th_DC17SA","ACE_VMH3","ACE_VMM3","ACE_Flashlight_Maglite_ML300L","hgun_esd_01_F","Weap_melee_knife","Knife_m3","Police_Bat",
     "Shovel_Russian","Shovel_Russian_Rotated","UNSC_Knife","UNSC_Knife_reversed","SW_clone_knife","WBK_SciFi_Sword_1","IMS_HL_StunBaton",
-    "AUX_95th_Weapons_DC17SA_Dual","3AS_RepublicDatapadPistol","Knife_kukri",
+    "AUX_95th_DC17SA_Dual","3AS_RepublicDatapadPistol","Knife_kukri",
 
     "3AS_PLX1_F","3AS_RPS6_Base","3AS_RPS6_HP","3AS_RPS6_Guided"
 ];

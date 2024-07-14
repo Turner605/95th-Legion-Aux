@@ -196,9 +196,8 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Hypo", "Outcast", "Dilanza"};
+				values[] = {"Hypo", "Dilanza"};
 				class Hypo { label = "Hypo"; description = "Hypo's Uniform"; };
-				class Outcast { label = "Outcast"; description = "Outcast's Uniform"; };
 				class Dilanza { label = "Dilanza"; description = "Dilanza's Uniform"; };
 			};
 		};
