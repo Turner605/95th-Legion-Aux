@@ -53,7 +53,7 @@ private _arsenalVests = [
 	"AUX_95th_Vest_Kama_Taun", 
 	"AUX_95th_Vest_Kama_Sand", "AUX_95th_Vest_Sergeant_Sand",
 	"AUX_95th_Vest_Kama_Lisek",
-	"AUX_95th_Vest_Kama_Stitch",
+	"AUX_95th_Vest_Kama_Stitch", "AUX_95th_Vest_Sergeant_Stitch",
 	"AUX_95th_Vest_Kama_Styx",
 	"AUX_95th_Vest_Kama_Smokery", "AUX_95th_Vest_Sergeant_Smokery"
 ];
