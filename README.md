@@ -8,7 +8,7 @@ To add new helmets you need to do the following:
 - 95th-Legion-Main\AUX_95th_Helmets\config.cpp
     - Add to XtdGearModels with the helmets you want to display
 - 95th-Legion-Main\AUX_95th_Objects\Init\XEH_preInit.sqf
-    - Add name to the "_playerCustomsList" if not already in there
+    - Add name to the "_customHelmetList" if not already in there
 
 ## Adding new vests:
 
