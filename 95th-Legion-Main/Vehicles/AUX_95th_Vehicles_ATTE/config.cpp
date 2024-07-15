@@ -122,9 +122,9 @@ class CfgVehicles {
 			"\AUX_95th_Vehicles_ATTE\Data\Default\Armor.paa"
 		};
 		class TextureSources {
-			textureList[] = {"Default",1,"Kong",0};
+			textureList[] = {"Default",1,"AUX_95th_76561198065789267",0};
 			NEW_95TH_ATTE_TEXTURE(Default)};
-			NEW_95TH_ATTE_TEXTURE(Kong)};
+			NEW_95TH_ATTE_TEXTURE(AUX_95th_76561198065789267)};
 		};
 		class HitPoints: HitPoints {
 			class HitHull: HitHull {
