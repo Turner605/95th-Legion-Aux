@@ -1,8 +1,0 @@
-2024-07-15T11:57:39.946632Z  INFO ThreadId(01) HEMTT 1.12.4 is available, please update
-2024-07-15T11:57:39.946711Z TRACE ThreadId(01) version: 1.12.3
-2024-07-15T11:57:39.946720Z TRACE ThreadId(01) platform: windows
-2024-07-15T11:57:39.946737Z TRACE ThreadId(01) args: [
-    "C:\\Users\\rhys_\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrettMayson.HEMTT_Microsoft.Winget.Source_8wekyb3d8bbwe\\hemtt.exe",
-    "new",
-    "95th-Legion-Main-Rework",
-]
