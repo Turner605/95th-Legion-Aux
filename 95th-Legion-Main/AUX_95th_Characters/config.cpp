@@ -96,8 +96,8 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Cheezy"};
-				class Cheezy { label = "Cheezy"; description = "Cheezy's Uniform"; };
+				values[] = {"Stitch"};
+				class Stitch { label = "Stitch"; description = "Stitch's Uniform"; };
 			};
 		};
 
@@ -146,7 +146,6 @@ class XtdGearModels {
 				class Foley { label = "Foley"; description = "Foley's Uniform"; };
 				class Mobius { label = "Mobius"; description = "Mobius' Uniform"; };
 				class Taylor { label = "Taylor"; description = "Taylor's Uniform"; };
-				class Stitch { label = "Stitch"; description = "Stitch's Uniform"; };
 			};
 		};
 
@@ -226,9 +225,10 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Biedronka", "Havoc"};
+				values[] = {"Biedronka", "Havoc", "Cheezy"};
 				class Biedronka { label = "Biedronka"; description = "Biedronka Uniform"; };
 				class Havoc { label = "Havoc"; description = "Havoc's Uniform"; };
+				class Cheezy { label = "Cheezy"; description = "Cheezy's Uniform"; };
 			};
 		};
 	};
