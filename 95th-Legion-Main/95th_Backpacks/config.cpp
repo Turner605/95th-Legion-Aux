@@ -70,7 +70,7 @@ class XtdGearModels {
 				class Bretek { label = "Bretek"; description = "Bretek's Backpack"; };
 				class Smaug { label = "Smaug"; description = "Smaug's Backpack"; };
 				class Gear { label = "Gear"; description = "Gear's Backpack"; };
-				class Gear { label = "Galvin"; description = "Galvin's Backpack"; };
+				class Galvin { label = "Galvin"; description = "Galvin's Backpack"; };
 			};
 
 			class Visibility {
