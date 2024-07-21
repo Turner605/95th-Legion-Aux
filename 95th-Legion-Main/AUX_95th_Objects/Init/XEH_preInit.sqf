@@ -6,7 +6,7 @@ private _customHelmetList = [
 	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard",
 	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
 	"Sergeant", "Kev", "Titan", "Taun", "Edge", "King", "York", "Styx", "Pendragon", "Lisek", "Mermaid",
-	"Night", "Neron", "Dracus", "Axe", "Boom"
+	"Night", "Neron", "Dracus", "Axe", "Boom", "Galvin"
 ];
 
 private _customUniformList = [
@@ -77,7 +77,7 @@ private _arsenalBackpacks = [
 	"AUX_95th_Backpack_Visible_Titan", "AUX_95th_RTO_Backpack_Visible_Titan",
 	"AUX_95th_Backpack_Visible_Bretek", "AUX_95th_RTO_Backpack_Visible_Bretek", 
 	"AUX_95th_Backpack_Visible_Smaug", "AUX_95th_RTO_Backpack_Visible_Smaug",
-	"AUX_95th_Backpack_Visible_Gear", "AUX_95th_RTO_Backpack_Visible_Gear"
+	"AUX_95th_Backpack_Visible_Gear", "AUX_95th_RTO_Backpack_Visible_Gear", "AUX_95th_Backpack_Visible_Galvin", "AUX_95th_RTO_Backpack_Visible_Galvin"
 ];
 
 //-----------------------------# Weapons #-----------------------------------
