@@ -13,7 +13,7 @@ private _customUniformList = [
 	"Trooper", "Shiny", "Medic", "Senior", "Veteran", "Senior", "Sergeant", "Lieutenant",
 	"Turner", "Splash", "Commie", "Solvest", "Smokery", "Kev", "Smaug", "Revan", "Volt",
 	"Sand", "Manila", "Jinter", "Havoc", "Sythe", "Cheezy", "Bretek", "MadHatter", "Dilanza", 
-	"Hypo", "Foley", "Stitch", "Prophet", "King", "Titan", "Dracus"
+	"Hypo", "Foley", "Stitch", "Prophet", "King", "Titan", "Dracus", "Pendragon"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
@@ -79,6 +79,7 @@ private _arsenalBackpacks = [
 	"AUX_95th_Backpack_Visible_Smaug", "AUX_95th_RTO_Backpack_Visible_Smaug",
 	"AUX_95th_Backpack_Visible_Gear", "AUX_95th_RTO_Backpack_Visible_Gear", 
 	"AUX_95th_Backpack_Visible_Galvin", "AUX_95th_RTO_Backpack_Visible_Galvin"
+	"AUX_95th_Backpack_Visible_Kev", "AUX_95th_RTO_Backpack_Visible_Kev"
 ];
 
 //-----------------------------# Weapons #-----------------------------------

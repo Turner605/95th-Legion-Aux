@@ -126,12 +126,13 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Neary", "Smokery", "Kev", "Titan", "Smaug"};
+				values[] = {"Neary", "Smokery", "Kev", "Titan", "Smaug", "Pendragon"};
 				class Neary { label = "Neary"; description = "Neary's Uniform"; };
 				class Smokery { label = "Smokery"; description = "Smokery's Uniform"; };
 				class Kev { label = "Kev"; description = "Kev's Uniform"; };
 				class Titan { label = "Titan"; description = "Titan's Uniform"; };
 				class Smaug { label = "Smaug"; description = "Smaug's Uniform"; };
+				class Pendragon { label = "Pendragon"; description = "Pendragon's Uniform"; };
 			};
 		};
 
