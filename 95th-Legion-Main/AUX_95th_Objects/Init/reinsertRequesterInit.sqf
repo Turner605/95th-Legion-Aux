@@ -21,5 +21,7 @@ private _name = "HQ";
 			params ["_name"];
 			1 cutText ["<t color='#ffffff' size='1'>Pickup Requested from " + _name + ".</t>", "PLAIN", 2, true, true, true];
 		}] remoteExec ["call", _allPilots];
+
+		systemChat "Pickup requested";
 	},[_name]];
 }] remoteExec ["call", 0, true];

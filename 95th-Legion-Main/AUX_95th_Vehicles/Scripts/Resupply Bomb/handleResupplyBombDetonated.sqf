@@ -37,9 +37,9 @@ switch (_magazine) do {
 private _position = _detPos;
 
 if(_spawnCrater) then {
-	private _crater = createVehicle ["CraterLong_small", _position, [], 0, "CAN_COLLIDE"]; 
+	private _crater = createVehicle ["CraterLong_small", _position, [], 0, "NONE"]; 
 	_crater setDir _dir;
 };
 
-private _resupply = createVehicle [_supplyBox, _position, [], 0, "CAN_COLLIDE"]; 
-private _smoke = createVehicle ["SmokeShellBlue", _position, [], 0, "CAN_COLLIDE"]; 
+private _resupply = createVehicle [_supplyBox, _position, [], 0, "NONE"]; 
+private _smoke = createVehicle ["SmokeShellBlue", _position, [], 0, "NONE"]; 

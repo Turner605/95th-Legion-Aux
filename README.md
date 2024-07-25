@@ -28,3 +28,4 @@ To add new vests you need to do the following:
 
 ## Credit Links:
 - https://github.com/dedmen/DAA_Mod
+- https://github.com/Vindicta-Team/FileXT/wiki
