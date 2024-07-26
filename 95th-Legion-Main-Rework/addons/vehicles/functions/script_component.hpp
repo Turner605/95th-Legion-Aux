@@ -1,1 +1,1 @@
-#include "\z\AUX_95th\addons\AddonName\script_component.hpp"
+#include "\z\AUX_95th\addons\vehicles\script_component.hpp"
