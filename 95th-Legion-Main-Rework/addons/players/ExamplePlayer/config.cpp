@@ -91,7 +91,7 @@ class XtdGearModels {
 class CfgWeapons {
     class SEA_Helmet_P1_Base;
 
-    #if HELMET_RIFLEMAN == 1
+    #if HELMET_P1_BASIC == 1
         class AUX_95th_Helmet_P1_Basic_##PLAYER_NAME## : SEA_Helmet_P1_Base {
             scope = 2;
             scopeArsenal = 2;
@@ -100,18 +100,63 @@ class CfgWeapons {
             displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
             hiddenSelections[]={"Camo1","Visor"};
             hiddenSelectionsTextures[]={
-                QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1Basic\Helmet_##PLAYER_NAME##.paa), 
-                QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1Basic\Helmet_##PLAYER_NAME##.paa)
+                QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1_basic\Helmet.paa), 
+                QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1_basic\Helmet.paa)
             };
             class XtdGearInfo {
                 model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
-                Type = QUOTE(P1Basic);
+                Type = QUOTE(P1_Basic);
                 Player = QUOTE(##PLAYER_NAME##);
             };
         };
     #endif
-};
 
+    class SEA_Helmet_Engineer_Base;
+
+    #if HELMET_P1_ENGINEER == 1
+        class AUX_95th_Helmet_P1_Engineer_##PLAYER_NAME## : SEA_Helmet_Engineer_Base {
+            scope = 2;
+            scopeArsenal = 2;
+            author="95th Aux Team";
+            picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+            displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
+            hiddenSelections[]={"Camo1","Visor"};
+            hiddenSelectionsTextures[]={
+                QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1_engineer\Helmet.paa), 
+                QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1_engineer\Helmet.paa)
+            };
+            class XtdGearInfo {
+                model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
+                Type = QUOTE(P1_Engineer);
+                Player = QUOTE(##PLAYER_NAME##);
+            };
+        };
+    #endif
+
+    class SEA_Helmet_ARF_base;
+
+    #if HELMET_P1_ARF == 1
+        class AUX_95th_Helmet_P1_ARF_##PLAYER_NAME## : SEA_Helmet_ARF_base {
+            scope = 2;
+            scopeArsenal = 2;
+            author="95th Aux Team";
+            picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+            displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
+			hiddenSelections[]={"Camo1","Camo2","Visor"};
+            hiddenSelectionsTextures[]={
+                QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1_arf\Helmet.paa), 
+                QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1_arf\Plates.paa), 
+                QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1_arf\Visor.paa)
+            };
+            class XtdGearInfo {
+                model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
+                Type = QUOTE(P1_ARF);
+                Player = QUOTE(##PLAYER_NAME##);
+            };
+        };
+    #endif
+
+};
 
 
 
