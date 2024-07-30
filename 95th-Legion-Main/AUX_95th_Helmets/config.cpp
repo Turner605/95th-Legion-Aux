@@ -109,11 +109,11 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Foley", "Mobius", "Taylor", "Taun"};
+				values[] = {"Foley", "Mobius", "Taylor"};
 				class Foley { label = "Foley"; description = "Foley's Helmet"; };
 				class Mobius { label = "Mobius"; description = "Mobius' Helmet"; };
 				class Taylor { label = "Taylor"; description = "Taylor's Helmet"; };
-				class Taun { label = "Taun"; description = "Taun's Helmet"; };
+
 			};
 		};
 
@@ -140,10 +140,11 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Kong", "Revan", "Hazard"};
+				values[] = {"Kong", "Revan", "Hazard", "Taun"};
 				class Kong { label = "Kong"; description = "Kong's Helmet"; };
 				class Revan { label = "Revan"; description = "Revan's Helmet"; };
 				class Hazard { label = "Hazard"; description = "Hazard's Helmet"; };
+				class Taun { label = "Taun"; description = "Taun's Helmet"; };
 			};
 		};
 
