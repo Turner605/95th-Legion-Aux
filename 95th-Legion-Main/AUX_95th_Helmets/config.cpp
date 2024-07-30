@@ -109,11 +109,9 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Foley", "Mobius", "Taylor"};
+				values[] = {"Foley", "Mobius"};
 				class Foley { label = "Foley"; description = "Foley's Helmet"; };
 				class Mobius { label = "Mobius"; description = "Mobius' Helmet"; };
-				class Taylor { label = "Taylor"; description = "Taylor's Helmet"; };
-
 			};
 		};
 
@@ -124,10 +122,9 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Bretek", "Third", "Ratler", "York", "Night"};
+				values[] = {"Bretek", "Third", "York", "Night"};
 				class Bretek { label = "Bretek"; description = "Bretek's Helmet"; };
 				class Third { label = "Third"; description = "Third's Helmet"; };
-				class Ratler { label = "Ratler"; description = "Ratler's Helmet"; };
 				class York { label = "York"; description = "York's Helmet"; };
 				class Night { label = "Night"; description = "Night's Helmet"; };
 			};
@@ -140,11 +137,11 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Kong", "Revan", "Hazard", "Taun"};
+				values[] = {"Kong", "Revan", "Hazard", "Taun", "Ratler"};
 				class Kong { label = "Kong"; description = "Kong's Helmet"; };
 				class Revan { label = "Revan"; description = "Revan's Helmet"; };
-				class Hazard { label = "Hazard"; description = "Hazard's Helmet"; };
 				class Taun { label = "Taun"; description = "Taun's Helmet"; };
+				class Ratler { label = "Ratler"; description = "Ratler's Helmet"; };
 			};
 		};
 
@@ -200,9 +197,11 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Biedronka", "Havoc"};
+				values[] = {"Biedronka", "Havoc", "Taylor", "Hazard"};
 				class Biedronka { label = "Biedronka"; description = "Biedronka Helmet"; };
 				class Havoc { label = "Havoc"; description = "Havoc's Helmet"; };
+				class Taylor { label = "Taylor"; description = "Taylor's Helmet"; };
+				class Hazard { label = "Hazard"; description = "Hazard's Helmet"; };
 			};
 		};
 	};

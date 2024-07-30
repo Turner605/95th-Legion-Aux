@@ -70,7 +70,7 @@ class XtdGearModels {
 	};
 };
 
-class cfgWeapons { 
+class cfgWeapons {
 	class JLTS_CloneVestHolster;
 	class JLTS_CloneVestAirborne;
 	class JLTS_CloneVestRecon;
@@ -103,7 +103,7 @@ class cfgWeapons {
 	NEW_95TH_VEST_SUSPENDER_TYPE(Crewman)};
 
 	NEW_95TH_VEST_ARC_TYPE(Trooper)};
-	
+
 	class 3AS_V_Katarn_Vest_Demo;
 	class 95th_Katarn_Vest_Demo: 3AS_V_Katarn_Vest_Demo {
 		displayName = "[95th] Commando Vest";
@@ -123,4 +123,4 @@ class cfgWeapons {
 			Type = "Medic";
 		};
 	};
-}; 
+};
