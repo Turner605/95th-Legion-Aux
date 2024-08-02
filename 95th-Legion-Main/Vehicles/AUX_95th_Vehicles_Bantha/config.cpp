@@ -1,5 +1,5 @@
 class CfgPatches {
-	class AUX_95th_Vehicles_Z95 {
+	class AUX_95th_Vehicles_Bantha {
 		author = "95th Legion";
 		name = "AUX 95th Vehicles Bantha";
 		requiredAddons[] = {"QS_Bantha_F"};
@@ -68,7 +68,10 @@ class CfgVehicles {
 		author = "95th Aux Team";
 		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
 		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
+		tas_canBlift=1;
+		tas_liftVars="[[[[0, -4, -8]]], [0.1], [-0.5]]";
 		faction="AUX_95th_Legion_Faction_Vehicles";
+		editorCategory="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Light";
 		displayName = "Bantha";
 		hiddenSelections[] = {"main","side","turret","transmission","wheels","inter"};
@@ -78,7 +81,7 @@ class CfgVehicles {
 			"\AUX_95th_Vehicles_Bantha\Data\Default\Turret.paa",
 			"\AUX_95th_Vehicles_Bantha\Data\Default\Transmission.paa",
 			"\AUX_95th_Vehicles_Bantha\Data\Default\Wheels.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Internal.paa",
+			"\AUX_95th_Vehicles_Bantha\Data\Default\Internal.paa"
 		};
 
 		class TextureSources {
@@ -91,7 +94,7 @@ class CfgVehicles {
 					"\AUX_95th_Vehicles_Bantha\Data\Default\Turret.paa",
 					"\AUX_95th_Vehicles_Bantha\Data\Default\Transmission.paa",
 					"\AUX_95th_Vehicles_Bantha\Data\Default\Wheels.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Internal.paa",
+					"\AUX_95th_Vehicles_Bantha\Data\Default\Internal.paa"
 				};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};

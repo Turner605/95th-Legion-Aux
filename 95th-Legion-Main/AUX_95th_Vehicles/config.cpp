@@ -32,6 +32,10 @@ class CfgFactionClasses {
     };  
 };
 
+class CfgEditorCategories{
+	class AUX_95th_Legion_Faction_Vehicles{displayName = "[95th] Vehicles";};
+};
+
 class CfgEditorSubcategories {
 	class AUX_95th_Legion_Vehicles_Category_Static{displayName="Static";};
 	class AUX_95th_Legion_Vehicles_Category_Ground_Light{displayName="Ground (Light)";};
