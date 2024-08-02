@@ -2,7 +2,6 @@
 #include "Macros\LAAT C Texture.hpp"
 #include "Macros\LAAT Shared.hpp"
 #include "Macros\LAAT C Shared.hpp"
-#include "Macros\Shuttle Shared.hpp"
 
 class CfgVehicles {
 	class 3AS_Republic_FCP;
@@ -10,8 +9,6 @@ class CfgVehicles {
 	class 3AS_ISP_Transport;
 	class 3as_saber_m1;
 	class 3as_saber_m1Recon;
-	class 3AS_Rho_REP_F;
-	class 3AS_Rho_Crate_REP_Transport;
 	class I_UGV_01_rcws_F;
 
 	// Air Stuff
@@ -125,5 +122,4 @@ class CfgVehicles {
 	#include "Air Vehicles\LAAT (Mrk2).hpp"
 	#include "Air Vehicles\LAAT (Mrk2-Lights).hpp"
 	#include "Air Vehicles\LAAT (C).hpp"
-	#include "Air Vehicles\Rho Shuttle.hpp"
 };
