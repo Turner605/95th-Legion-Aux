@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Vehicles_ARC170 {
 		author = "95th Legion";
 		name = "AUX 95th Vehicles ARC-170";
-		requiredAddons[] = {"3AS_Z95_base"};
+		requiredAddons[] = {"3AS_ARC_170"};
 		weapons[] = {};
 		units[] = {"AUX_95th_ARC170"};
 		magazines[] = {};
@@ -27,31 +27,6 @@ class DefaultVehicleSystemsDisplayManagerRight {
 	class components;
 };
 
-class Optics_Armored;
-class Optics_Commander_01: Optics_Armored {
-	class Wide;
-	class Medium;
-	class Narrow;
-};
-
-class Optics_Gunner_MBT_01: Optics_Armored {
-	class Wide;
-	class Medium;
-	class Narrow;
-};
-
-class Optics_Commander_02: Optics_Armored {
-	class Wide;
-	class Medium;
-	class Narrow;
-};
-
-class Optics_Gunner_MBT_03: Optics_Armored {
-	class Wide;
-	class Medium;
-	class Narrow;
-};
-
 class CfgVehicles {
 	class Air;
 	class Plane: Air {
@@ -68,7 +43,7 @@ class CfgVehicles {
 		class Eventhandlers;
 		class ViewPilot;
 	};
-	
+
 	class Plane_Fighter_03_base_F: Plane_Base_F {
 		class Turrets{};
 		class HitPoints: HitPoints {
@@ -86,7 +61,7 @@ class CfgVehicles {
 		class Components: Components{};
 		class UserActions;
 	};
-
+	
 	class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F {
 		class Components: Components {
 			class TransportPylonsComponent;
@@ -94,7 +69,6 @@ class CfgVehicles {
 	};
 
 	class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F {
-
 		class Components: Components {
 			class TransportPylonsComponent {
 				UIPicture = "3as\3AS_ARC170\data\plane_ARC_pylon_ca.paa";
@@ -150,19 +124,13 @@ class CfgVehicles {
 				};
 			};
 		};
-
-		class TextureSources {
-			class Default {
-				displayName = "Default";
-				author = "95th Aux Team";
-				textures[] = {"3as\3AS_ARC170\Data\units\501st_Main_Frame_CO.paa","3as\3AS_ARC170\Data\units\501st_Wings_Engines_CO.paa","3as\3AS_ARC170\Data\units\501st_Guns_CO.paa"};
-				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
-			};
-		};
 	};
 
-	class AUX_95th_ARC170: 3AS_ARC_170_Base {
+	class AUX_95th_ARC170: 3AS_ARC_170_base {
 		displayName = "ARC-170";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
 		author = "95th Aux Team";
 		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
 		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
@@ -170,9 +138,21 @@ class CfgVehicles {
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Air_Fighters";
 		editorPreview = "";
 		hiddenselectionstextures[] = {
-			"\AUX_95th_Vehicles_YWing\Data\Default\Main_Frame.paa",
-			"\AUX_95th_Vehicles_YWing\Data\Default\Wings_Engines.paa",
-			"\AUX_95th_Vehicles_YWing\Data\Default\Guns.paa"
+			"\AUX_95th_Vehicles_ARC170\Data\Default\Main_Frame.paa",
+			"\AUX_95th_Vehicles_ARC170\Data\Default\Wings_Engines.paa",
+			"\AUX_95th_Vehicles_ARC170\Data\Default\Guns.paa"
+		};
+		class TextureSources {
+			class Default {
+				displayName = "Default";
+				author = "95th Aux Team";
+				textures[] = {
+					"\AUX_95th_Vehicles_ARC170\Data\Default\Main_Frame.paa",
+					"\AUX_95th_Vehicles_ARC170\Data\Default\Wings_Engines.paa",
+					"\AUX_95th_Vehicles_ARC170\Data\Default\Guns.paa"
+				};
+				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
+			};
 		};
 	};
 };

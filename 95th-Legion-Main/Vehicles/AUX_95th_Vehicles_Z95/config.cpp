@@ -49,15 +49,6 @@ class CfgVehicles {
 
 		class Damage {};
 
-		class TextureSources {
-			class Default {
-				displayName = "Default";
-				author = "95th Aux Team";
-				textures[] = {"\AUX_95th_Vehicles_Z95\Data\Default\Body.paa","\AUX_95th_Vehicles_Z95\Data\Default\Cockpit.paa"};
-				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
-			};
-		};
-
 		class HitPoints: HitPoints {
 			class HitHull: HitHull {};
 			class HitEngine: HitHull {};
@@ -159,5 +150,13 @@ class CfgVehicles {
 			"3AS\3AS_Z95\data\glass\glass_ca"
 		};
 		availableForSupportTypes[] = {"CAS_Bombing"};
+		class TextureSources {
+			class Default {
+				displayName = "Default";
+				author = "95th Aux Team";
+				textures[] = {"\AUX_95th_Vehicles_Z95\Data\Default\Body.paa","\AUX_95th_Vehicles_Z95\Data\Default\Cockpit.paa"};
+				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
+			};
+		};
 	};
 };

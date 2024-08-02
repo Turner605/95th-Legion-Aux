@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Vehicles_YWing {
 		author = "95th Legion";
 		name = "AUX 95th Vehicles Y-Wing";
-		requiredAddons[] = {"3AS_Z95_base"};
+		requiredAddons[] = {"3AS_BTLB_Bomber"};
 		weapons[] = {};
 		units[] = {"AUX_95th_YWing"};
 		magazines[] = {};
@@ -68,16 +68,7 @@ class CfgVehicles {
 		};
 	};
 
-	class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F {
-		class TextureSources {
-			class Default {
-				displayName = "Default";
-				author = "95th Aux Team";
-				textures[] = {"\AUX_95th_Vehicles_YWing\Data\Default\Chasis.paa","\AUX_95th_Vehicles_YWing\Data\Default\Detail.paa","3as\3AS_btlb\data\interior_co.paa"};
-				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
-			};
-		};
-	};
+	class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F {};
 
 	class 3AS_BTLB_Bomber: BTL_Base {};
 
@@ -94,5 +85,13 @@ class CfgVehicles {
 			"3as\3AS_btlb\data\interior_co.paa"
 		};
 		availableForSupportTypes[] = {"CAS_Bombing"};
+		class TextureSources {
+			class Default {
+				displayName = "Default";
+				author = "95th Aux Team";
+				textures[] = {"\AUX_95th_Vehicles_YWing\Data\Default\Chasis.paa","\AUX_95th_Vehicles_YWing\Data\Default\Detail.paa","3as\3AS_btlb\data\interior_co.paa"};
+				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
+			};
+		};
 	};
 };
