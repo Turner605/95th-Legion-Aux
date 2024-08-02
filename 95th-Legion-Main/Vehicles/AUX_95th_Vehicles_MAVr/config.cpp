@@ -119,7 +119,7 @@ class CfgVehicles
 		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
 		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
 		tas_canBlift=1;
-		tas_liftVars="[[[[0, -4, -8]]], [0.1], [-0.5]]";
+		tas_liftVars = "[[[[0,-4,-4]]], [0.1], [-0.5]]";
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorCategory="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Heavy";
