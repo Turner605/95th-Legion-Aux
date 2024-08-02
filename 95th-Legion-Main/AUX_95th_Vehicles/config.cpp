@@ -37,6 +37,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_Legion_Vehicles_Category_Ground_Light{displayName="Ground (Light)";};
 	class AUX_95th_Legion_Vehicles_Category_Ground_Heavy{displayName="Ground (Heavy)";};
 	class AUX_95th_Legion_Vehicles_Category_Air_Gunships{displayName="Air (Gunships)";};
+	class AUX_95th_Legion_Vehicles_Category_Air_Fighters{displayName="Air (Fighters)";};
 	class AUX_95th_Legion_Vehicles_Category_Air_Logistics{displayName="Air (Logistics)";};
 };
 
