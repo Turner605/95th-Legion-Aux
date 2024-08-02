@@ -4,7 +4,7 @@ class CfgPatches {
 		name = "AUX 95th Vehicles Y-Wing";
 		requiredAddons[] = {"3AS_Z95_base"};
 		weapons[] = {};
-		units[] = {"AUX_95th_Z95"};
+		units[] = {"AUX_95th_YWing"};
 		magazines[] = {};
 	};
 };
@@ -71,10 +71,10 @@ class CfgVehicles {
 	class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F {
 		class TextureSources {
 			class Default {
-				displayName = "Red Leader";
-				author = "$STR_3AS_Studio";
+				displayName = "Default";
+				author = "95th Aux Team";
 				textures[] = {"\AUX_95th_Vehicles_YWing\Data\Default\Chasis.paa","\AUX_95th_Vehicles_YWing\Data\Default\Detail.paa","3as\3AS_btlb\data\interior_co.paa"};
-				factions[] = {"3AS_REP"};
+				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
 		};
 	};
