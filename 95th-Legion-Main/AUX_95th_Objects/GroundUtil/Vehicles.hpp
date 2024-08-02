@@ -1,5 +1,5 @@
 class AUX_95th_GroundUtil_Vehicles : 3AS_Terminal_1_Prop {
-	displayName="Ground Vehicle Terminal";
+	displayName="DEPRECATED";
 	editorCategory="AUX_95th_Objects";
 	editorSubcategory="AUX_95th_Ground_Utilities";
 	class UserActions {
@@ -52,6 +52,11 @@ class AUX_95th_GroundUtil_Vehicles : 3AS_Terminal_1_Prop {
 			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
 			displayName = "Load AT-RT Into LAAT";
 			statement = "[this] spawn AUX_95th_fnc_handleLoadATRT;"; 
+		};
+		class SpawnBantha {
+			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+			displayName = "Spawn [95th] Bantha";
+			statement = "[this, player, 'AUX_95th_Bantha'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
 		};
 	};
 };

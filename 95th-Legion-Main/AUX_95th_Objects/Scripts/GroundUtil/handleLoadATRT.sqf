@@ -23,7 +23,7 @@ if(!(isNil "_targetPad")) then {
 			
 			_dir = getDir _laat;
 			
-			_deployable = (createGroup WEST) createUnit ["3AS_ATRT",[0,0,0],[],0,"CAN_COLLIDE"];    
+			_deployable = (createGroup WEST) createUnit ["AUX_95th_ATRT",[0,0,0],[],0,"CAN_COLLIDE"];    
 
 			_deployable setDir _dir;
 			_deployable setPosASL _deployPos;
