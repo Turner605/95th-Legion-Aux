@@ -53,7 +53,7 @@ class CfgVehicles {
 			class Default {
 				displayName = "Orange";
 				author = "$STR_3AS_Studio";
-				textures[] = {"3AS\3AS_Z95\Data\orange_co.paa","3AS\3AS_Z95\Data\cockpit_co.paa"};
+				textures[] = {"\AUX_95th_Vehicles_Z95\Data\Default\Body.paa","\AUX_95th_Vehicles_Z95\Data\Default\Cockpit.paa"};
 				factions[] = {"3AS_REP"};
 			};
 		};
