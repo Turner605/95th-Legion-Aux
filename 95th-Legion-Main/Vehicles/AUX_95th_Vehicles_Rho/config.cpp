@@ -166,6 +166,5 @@ class CfgVehicles {
 };
 
 class Extended_init_EventHandlers {
-	class AUX_95th_Rho {class AUX_95th_Rho_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
+	class AUX_95th_Rho {class AUX_95th_Rho_Init {init = "(_this) spawn AUX_95th_fnc_handleAirVehicleInit;";};};
 };
-

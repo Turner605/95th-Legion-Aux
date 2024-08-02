@@ -74,6 +74,10 @@ class CfgVehicles {
 
 	class AUX_95th_YWing: 3AS_BTLB_Bomber {
 		author = "95th Aux Team";
+		tas_can_impulse=0;
+		ls_hasImpulse = 1;
+		ls_impulsor_boostSpeed_1 = 400;
+		ls_impulsor_boostSpeed_2 = 800;
 		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
 		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
 		faction="AUX_95th_Legion_Faction_Vehicles";
@@ -94,4 +98,8 @@ class CfgVehicles {
 			};
 		};
 	};
+};
+
+class Extended_init_EventHandlers {
+	class AUX_95th_YWing {class AUX_95th_YWing_Init {init = "(_this) spawn AUX_95th_fnc_handleAirVehicleInit;";};};
 };

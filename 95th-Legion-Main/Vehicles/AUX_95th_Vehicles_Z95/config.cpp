@@ -137,8 +137,13 @@ class CfgVehicles {
 	};
 
 	class 3AS_Z95_Republic: 3AS_Z95_VTOL_Dynamic_Base_F {};
+	
 	class AUX_95th_Z95: 3AS_Z95_Republic {
 		author = "95th Aux Team";
+		tas_can_impulse=0;
+		ls_hasImpulse = 1;
+		ls_impulsor_boostSpeed_1 = 400;
+		ls_impulsor_boostSpeed_2 = 800;
 		displayName = "Z-95 HeadHunter";
 		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
 		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
@@ -159,4 +164,8 @@ class CfgVehicles {
 			};
 		};
 	};
+};
+
+class Extended_init_EventHandlers {
+	class AUX_95th_Z95 {class AUX_95th_Z95_Init {init = "(_this) spawn AUX_95th_fnc_handleAirVehicleInit;";};};
 };

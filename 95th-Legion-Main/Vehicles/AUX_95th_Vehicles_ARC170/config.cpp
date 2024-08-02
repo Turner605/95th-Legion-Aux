@@ -128,6 +128,10 @@ class CfgVehicles {
 
 	class AUX_95th_ARC170: 3AS_ARC_170_base {
 		displayName = "ARC-170";
+		tas_can_impulse=0;
+		ls_hasImpulse = 1;
+		ls_impulsor_boostSpeed_1 = 400;
+		ls_impulsor_boostSpeed_2 = 800;
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
@@ -155,4 +159,8 @@ class CfgVehicles {
 			};
 		};
 	};
+};
+
+class Extended_init_EventHandlers {
+	class AUX_95th_ARC170 {class AUX_95th_ARC170_Init {init = "(_this) spawn AUX_95th_fnc_handleAirVehicleInit;";};};
 };
