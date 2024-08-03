@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Vehicles_Z95 {
 		author = "95th Legion";
 		name = "AUX 95th Vehicles Z-95";
-		requiredAddons[] = {"3AS_Z95_base"};
+		requiredAddons[] = {"3AS_Z95_base", "AUX_95th_Vehicles_Shared"};
 		weapons[] = {};
 		units[] = {"AUX_95th_Z95"};
 		magazines[] = {};

@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Vehicles_ARC170 {
 		author = "95th Legion";
 		name = "AUX 95th Vehicles ARC-170";
-		requiredAddons[] = {"3AS_ARC_170"};
+		requiredAddons[] = {"3AS_ARC_170", "AUX_95th_Vehicles_Shared"};
 		weapons[] = {};
 		units[] = {"AUX_95th_ARC170"};
 		magazines[] = {};

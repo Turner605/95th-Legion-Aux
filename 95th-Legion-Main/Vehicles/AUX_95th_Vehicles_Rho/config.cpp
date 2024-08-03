@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Vehicles_Rho {
 		author = "95th Legion";
 		name = "AUX 95th Vehicles Rho";
-		requiredAddons[] = {"3AS_Republic_Heli_Rho"};
+		requiredAddons[] = {"3AS_Republic_Heli_Rho", "AUX_95th_Vehicles_Shared"};
 		weapons[] = {};
 		units[] = {
 			"AUX_95th_Rho", 

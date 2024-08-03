@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Vehicles_YWing {
 		author = "95th Legion";
 		name = "AUX 95th Vehicles Y-Wing";
-		requiredAddons[] = {"3AS_BTLB_Bomber"};
+		requiredAddons[] = {"3AS_BTLB_Bomber", "AUX_95th_Vehicles_Shared"};
 		weapons[] = {};
 		units[] = {"AUX_95th_YWing"};
 		magazines[] = {};

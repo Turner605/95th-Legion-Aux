@@ -6,7 +6,8 @@ class CfgPatches {
             "A3_Armor_F_Beta",
 			"A3_Data_F",
 			"A3_Weapons_F_Gamma",
-            "CCS_HV_Tank"
+            "CCS_HV_Tank", 
+			"AUX_95th_Vehicles_Shared"
         };
 		weapons[] = {};
 		units[] = {"AUX_95th_RX_100"};
