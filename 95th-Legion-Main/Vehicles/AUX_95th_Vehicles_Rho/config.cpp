@@ -4,7 +4,11 @@ class CfgPatches {
 		name = "AUX 95th Vehicles Rho";
 		requiredAddons[] = {"3AS_Republic_Heli_Rho"};
 		weapons[] = {};
-		units[] = {"AUX_95th_Rho", "AUX_95th_Rho_Crate_Transport"};
+		units[] = {
+			"AUX_95th_Rho", 
+			"AUX_95th_Rho_Crate_Transport", 
+			"AUX_95th_Rho_Crate_Ground_Deployment"
+		};
 		magazines[] = {};
 	};
 };
@@ -163,8 +167,31 @@ class CfgVehicles {
 			};
 		};
 	};
+
+	class AUX_95th_Rho_Crate_Ground_Deployment: AUX_95th_Rho_Crate_Transport {
+		displayname="Ground Deployment Crate";
+	};
+
+	class AUX_95th_Rho_Crate_Air_Deployment: AUX_95th_Rho_Crate_Transport {
+		displayname="Air Deployment Crate";
+	};
+
+	class AUX_95th_Rho_Crate_Defence_Deployment: AUX_95th_Rho_Crate_Transport {
+		displayname="Defence Deployment Crate";
+	};
+
+	class AUX_95th_Rho_Crate_Utility_Deployment: AUX_95th_Rho_Crate_Transport {
+		displayname="Utility Deployment Crate";
+	};
 };
 
 class Extended_init_EventHandlers {
 	class AUX_95th_Rho {class AUX_95th_Rho_Init {init = "(_this) spawn AUX_95th_fnc_handleAirVehicleInit;";};};
+};
+
+class Extended_InitPost_EventHandlers {	
+	class AUX_95th_Rho_Crate_Ground_Deployment {class AUX_95th_Rho_Crate_Ground_Deployment_Init {serverInit="[_this select 0, 'GroundDeployment'] call AUX_95th_fnc_handleRhoCrateInit;";};};
+	class AUX_95th_Rho_Crate_Air_Deployment {class AUX_95th_Rho_Crate_Air_Deployment_Init {serverInit="[_this select 0, 'AirDeployment'] call AUX_95th_fnc_handleRhoCrateInit;";};};
+	class AUX_95th_Rho_Crate_Defence_Deployment {class AUX_95th_Rho_Crate_Defence_Deployment_Init {serverInit="[_this select 0, 'DefenceDeployment'] call AUX_95th_fnc_handleRhoCrateInit;";};};
+	class AUX_95th_Rho_Crate_Utility_Deployment {class AUX_95th_Rho_Crate_Utility_Deployment_Init {serverInit="[_this select 0, 'UtilityDeployment'] call AUX_95th_fnc_handleRhoCrateInit;";};};
 };

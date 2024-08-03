@@ -28,5 +28,10 @@ class AUX_95th_AirUtil_Transport : 3AS_TERMINAL_2_PROP {
 			displayName = "Spawn [3AS] LAAT/LE";
 			statement = "[this, player, '3AS_Patrol_LAAT_Republic'] spawn AUX_95th_fnc_handleAirSpawned;"; 
 		};
+		class SpawnRho {
+			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+			displayName = "Spawn [95th] Rho Shuttle";
+			statement = "[this, player, 'AUX_95th_Rho'] spawn AUX_95th_fnc_handleAirSpawned;"; 
+		};
 	};
 };
