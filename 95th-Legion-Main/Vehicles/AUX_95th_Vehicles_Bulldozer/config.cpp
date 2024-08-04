@@ -4,7 +4,7 @@ class CfgPatches {
 		name = "AUX 95th Vehicles Bulldozer";
 		requiredAddons[] = {"A3_Soft_F"};
 		weapons[] = {};
-		units[] = {};
+		units[] = {"AUX_95th_Vehicles_Bulldozer"};
 		magazines[] = {};
 	};
 };
@@ -22,7 +22,6 @@ class CfgVehicles {
 
 	class AUX_95th_Vehicles_Bulldozer: C_IDAP_UGV_01_F {
 		displayName = "Bulldozer";
-		scope=2;
 		author = "95th Aux Team";
 		editorCategory="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Civi_Vehicles_Category_Industrial";
