@@ -1,0 +1,38 @@
+class CfgPatches {
+	class AUX_95th_Vehicles_Bulldozer {
+		author = "95th Legion";
+		name = "AUX 95th Vehicles Bulldozer";
+		requiredAddons[] = {"A3_Soft_F"};
+		weapons[] = {};
+		units[] = {};
+		magazines[] = {};
+	};
+};
+
+class CfgEditorCategories{
+	class AUX_95th_Civi_Faction_Vehicles{displayName = "[95th] Vehicles";};
+};
+
+class CfgEditorSubcategories {
+	class AUX_95th_Civi_Vehicles_Category_Industrial{displayName="Industrial";};
+};
+
+class CfgVehicles {
+	class C_IDAP_UGV_01_F;
+
+	class AUX_95th_Vehicles_Bulldozer: C_IDAP_UGV_01_F {
+		displayName = "Bulldozer";
+		scope=2;
+		author = "95th Aux Team";
+		editorCategory="AUX_95th_Legion_Faction_Vehicles";
+		editorSubcategory="AUX_95th_Civi_Vehicles_Category_Industrial";
+	};
+};
+
+class CfgFunctions { class AUX_95th { class Vehicles {
+	class handleBulldozerInit {file = "\AUX_95th_Vehicles_Bulldozer\Functions\handleBulldozerInit.sqf";};
+};};};
+
+class Extended_InitPost_EventHandlers {	
+	class AUX_95th_Vehicles_Bulldozer {class AUX_95th_Vehicles_Bulldozer_Init {onRespawn="true";serverInit="[_this select 0] call AUX_95th_fnc_handleBulldozerInit;";};};
+};
