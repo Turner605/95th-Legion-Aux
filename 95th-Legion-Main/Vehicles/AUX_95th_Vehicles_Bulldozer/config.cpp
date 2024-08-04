@@ -9,14 +9,6 @@ class CfgPatches {
 	};
 };
 
-class CfgEditorCategories{
-	class AUX_95th_Civi_Faction_Vehicles{displayName = "[95th] Vehicles";};
-};
-
-class CfgEditorSubcategories {
-	class AUX_95th_Civi_Vehicles_Category_Industrial{displayName="Industrial";};
-};
-
 class CfgVehicles {
 	class C_IDAP_UGV_01_F;
 
