@@ -128,6 +128,7 @@ class XtdGearModels {
 				class Third { label = "Third"; description = "Third's Helmet"; };
 				class York { label = "York"; description = "York's Helmet"; };
 				class Night { label = "Night"; description = "Night's Helmet"; };
+				class Kaz { label = "Kaz"; description = "Kaz's Helmet"; };
 			};
 		};
 
