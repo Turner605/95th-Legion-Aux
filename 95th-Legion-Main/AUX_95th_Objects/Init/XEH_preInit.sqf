@@ -6,7 +6,7 @@ private _customHelmetList = [
 	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard",
 	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
 	"Sergeant", "Kev", "Titan", "Taun", "Edge", "King", "York", "Styx", "Pendragon", "Lisek", "Mermaid",
-	"Night", "Neron", "Dracus", "Axe", "Boom", "Galvin"
+	"Night", "Neron", "Dracus", "Axe", "Boom", "Galvin", "Gear"
 ];
 
 private _customUniformList = [
