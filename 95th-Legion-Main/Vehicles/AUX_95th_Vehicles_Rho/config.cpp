@@ -7,7 +7,10 @@ class CfgPatches {
 		units[] = {
 			"AUX_95th_Rho", 
 			"AUX_95th_Rho_Crate_Transport", 
-			"AUX_95th_Rho_Crate_Ground_Deployment"
+			"AUX_95th_Rho_Crate_Ground_Deployment",
+			"AUX_95th_Rho_Crate_Air_Deployment",
+			"AUX_95th_Rho_Crate_Defence_Deployment",
+			"AUX_95th_Rho_Crate_Utility_Deployment"
 		};
 		magazines[] = {};
 	};
