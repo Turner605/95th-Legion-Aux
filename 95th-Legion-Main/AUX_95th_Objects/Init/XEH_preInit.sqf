@@ -13,7 +13,7 @@ private _customUniformList = [
 	"Trooper", "Shiny", "Medic", "Senior", "Veteran", "Senior", "Sergeant", "Lieutenant",
 	"Turner", "Splash", "Commie", "Solvest", "Smokery", "Kev", "Smaug", "Revan", "Volt",
 	"Sand", "Manila", "Jinter", "Havoc", "Sythe", "Cheezy", "Bretek", "MadHatter", "Dilanza", 
-	"Hypo", "Foley", "Stitch", "Prophet", "King", "Titan", "Dracus", "Pendragon"
+	"Hypo", "Foley", "Stitch", "Prophet", "King", "Titan", "Dracus", "Pendragon", "Edge"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
