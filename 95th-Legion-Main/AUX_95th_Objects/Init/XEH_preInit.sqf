@@ -6,14 +6,14 @@ private _customHelmetList = [
 	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard",
 	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
 	"Sergeant", "Kev", "Titan", "Taun", "Edge", "King", "York", "Styx", "Pendragon", "Lisek", "Mermaid",
-	"Night", "Neron", "Dracus", "Axe", "Boom", "Galvin"
+	"Night", "Neron", "Dracus", "Axe", "Boom", "Galvin", "Gear", "Kaz"
 ];
 
 private _customUniformList = [
 	"Trooper", "Shiny", "Medic", "Senior", "Veteran", "Senior", "Sergeant", "Lieutenant",
 	"Turner", "Splash", "Commie", "Solvest", "Smokery", "Kev", "Smaug", "Revan", "Volt",
 	"Sand", "Manila", "Jinter", "Havoc", "Sythe", "Cheezy", "Bretek", "MadHatter", "Dilanza", 
-	"Hypo", "Foley", "Stitch", "Prophet", "King", "Titan", "Dracus", "Pendragon"
+	"Hypo", "Foley", "Stitch", "Prophet", "King", "Titan", "Dracus", "Pendragon", "Edge"
 ];
 
 //-----------------------------# Helmets #-----------------------------------

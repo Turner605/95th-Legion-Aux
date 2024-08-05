@@ -185,7 +185,8 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {};
+				values[] = {"Edge"};
+				class Edge { label = "Edge"; description = "Edge's Uniform"; };
 			};
 		};
 

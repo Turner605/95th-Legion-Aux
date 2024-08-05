@@ -109,9 +109,10 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Foley", "Mobius"};
+				values[] = {"Foley", "Mobius", "Gear"};
 				class Foley { label = "Foley"; description = "Foley's Helmet"; };
 				class Mobius { label = "Mobius"; description = "Mobius' Helmet"; };
+				class Gear { label = "Gear"; description = "Gear's Helmet"; };
 			};
 		};
 
@@ -127,6 +128,7 @@ class XtdGearModels {
 				class Third { label = "Third"; description = "Third's Helmet"; };
 				class York { label = "York"; description = "York's Helmet"; };
 				class Night { label = "Night"; description = "Night's Helmet"; };
+				class Kaz { label = "Kaz"; description = "Kaz's Helmet"; };
 			};
 		};
 
