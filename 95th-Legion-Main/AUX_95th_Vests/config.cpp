@@ -30,6 +30,7 @@ class XtdGearModels {
 				class Sand { label = "Sand"; description = "Sand's Vest"; };
 				class Smokery { label = "Smokery"; description = "Smokery's Vest"; };
 				class Stitch { label = "Stitch"; description = "Stitch's Vest"; };
+				class Splash { label = "Splash"; description = "Splash's Vest"; };
 			};
 		};
 

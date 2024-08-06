@@ -56,6 +56,7 @@ private _arsenalVests = [
 	"AUX_95th_Vest_Kama_Stitch", "AUX_95th_Vest_Sergeant_Stitch",
 	"AUX_95th_Vest_Kama_Styx",
 	"AUX_95th_Vest_Kama_Smokery", "AUX_95th_Vest_Sergeant_Smokery"
+	"AUX_95th_Vest_Kama_Splash",
 ];
 
 //-----------------------------# Backpacks #-----------------------------------
