@@ -1,5 +1,5 @@
-#define COMPONENT examplePlayer
-#define COMPONENT_BEAUTIFIED ExamplePlayer
+#define COMPONENT players_examplePlayer
+#define COMPONENT_BEAUTIFIED Players_ExamplePlayer
 #define PLAYER_NAME ExamplePlayer
 
 //OPTIONS: Unassigned, Fallen, Zeus, PLATOON_SQUAD (EG One_Seven)
@@ -22,6 +22,6 @@
 
 
 // DO NOT EDIT
-#define PARENTCOMPONENT players
+#define PARENTCOMPONENT shared
 #include "\z\AUX_95th\addons\main\script_mod.hpp"
 #include "\z\AUX_95th\addons\main\script_macros.hpp"

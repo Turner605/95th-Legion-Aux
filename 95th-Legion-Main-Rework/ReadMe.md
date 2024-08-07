@@ -12,7 +12,7 @@ Follow the following to allow building with HEMTT
 # Creating new player gear TODO
 Follow the following to create new player gear.
 
-Step 1: Copy the player template from... 
-Step 2: Modify the following values:
-    - VALUE1
-Step 3: Add the player to the correct squad XTDGearInfo
+Step 1: Copy the player template from "95th-Legion-Main-Rework\addons\players\ExamplePlayer" to "95th-Legion-Main-Rework\addons\players\players"
+Step 2: Modify the marked values in "ExamplePlayer\script_component.hpp" to enable (1) or disable (0) them.
+Step 3: Modify the relevant squad in "95th-Legion-Main-Rework\addons\main\xtdGearSquads".
+Step 4: Tidy up by deleting any .paa files that you are not using.

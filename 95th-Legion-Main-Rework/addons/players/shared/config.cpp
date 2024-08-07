@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON {
+    class AUX_95th_players_shared {
         name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};
