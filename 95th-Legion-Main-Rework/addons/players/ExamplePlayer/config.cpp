@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class AUX_95th_players_examplePlayer {
+    class DOUBLES(PREFIX,COMPONENT) {
         name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {};

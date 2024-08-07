@@ -12,6 +12,15 @@ class CfgPatches {
     };
 };
 
+class CfgFunctions {
+    class AUX_95th {
+        class players_shared {
+			file = "\z\AUX_95th\addons\players\shared\functions";
+            class addPlayerGearToArsenal {};
+        };
+    };
+};
+
 class XtdGearModels {
 	class CfgWeapons {
 		class AUX_95th_Helmet_Squad_Basic {

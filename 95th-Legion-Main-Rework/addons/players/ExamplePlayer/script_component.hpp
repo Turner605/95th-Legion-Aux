@@ -1,6 +1,7 @@
 #define COMPONENT players_examplePlayer
 #define COMPONENT_BEAUTIFIED Players_ExamplePlayer
-#define PLAYER_NAME ExamplePlayer
+#define PLAYER_NAME examplePlayer
+#define PLAYER_NAME_BEAUTIFIED ExamplePlayer
 
 //OPTIONS: Unassigned, Fallen, Zeus, PLATOON_SQUAD (EG One_Seven)
 #define SQUAD_KEY Unassigned
