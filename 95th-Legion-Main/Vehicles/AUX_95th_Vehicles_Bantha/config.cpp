@@ -5,7 +5,31 @@ class CfgPatches {
 		requiredAddons[] = {"QS_Bantha_F", "AUX_95th_Vehicles_Shared"};
 		weapons[] = {};
 		units[] = {"AUX_95th_Bantha", "AUX_95th_Bantha_UAV_Test"};
-		magazines[] = {};
+		magazines[] = {"AUX_95th_Bantha_Rocket_Magazine"};
+		ammo[] = {"AUX_95th_Bantha_Rocket_Ammo"};
+	};
+};
+
+class CfgAmmo {
+	class QS_PG_AT_Blue;
+
+	class AUX_95th_Bantha_Rocket_Ammo: QS_PG_AT_Blue {};
+};
+
+class CfgMagazines {
+	class QS_24Rnd_PG_Blue_M;
+	class AUX_95th_Bantha_Rocket_Magazine: QS_24Rnd_PG_Blue_M {
+		count = 4;
+		ammo = "AUX_95th_Bantha_Rocket_Ammo";
+		displayName = "PG Plasma (4rnd Blue)";
+	};
+};
+
+class CfgWeapons {
+	class QS_Rocket_SDR_F;
+	class AUX_95th_Bantha_Rocket: QS_Rocket_SDR_F {
+		displayName = "Missiles SDR";
+		magazines[] = {"AUX_95th_Bantha_Rocket_Magazine"};
 	};
 };
 
@@ -85,6 +109,16 @@ class CfgVehicles {
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorCategory="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Light";
+
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				weapons[] = {"QS_APC_40mm_G","AUX_95th_Bantha_Rocket"};
+				magazines[] = {"QS_50_200rnd_HE_blue_M","QS_50_200rnd_HE_blue_M","QS_50_200rnd_HE_blue_M","AUX_95th_Bantha_Rocket_Magazine","AUX_95th_Bantha_Rocket_Magazine"};
+				memoryPointGun[] = {"z_gunL_muzzle","z_gunR_muzzle"};
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner",0.56234133,1,30};
+				soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner_vertical",0.56234133,1,30};
+			};
+		};
 
 		class HitPoints: HitPoints {
 			class HitHull: HitHull {
