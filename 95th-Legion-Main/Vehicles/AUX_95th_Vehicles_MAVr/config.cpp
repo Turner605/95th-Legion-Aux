@@ -149,3 +149,8 @@ class CfgVehicles
 		};
 	};
 };
+
+// Init for a shield on the gun
+// private _nearest = nearestObject [_this#1, "AUX_95th_MAVr"]; 
+// _this#1 attachTo [_nearest, [0, 8, 0], "usti hlavne", true];
+// _this#1 setVectorDirAndUp [[1,0,0],[0,0,1]]; 
