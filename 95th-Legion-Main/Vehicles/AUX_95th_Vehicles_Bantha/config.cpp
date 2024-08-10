@@ -241,27 +241,38 @@ class CfgVehicles {
 
 		hiddenSelections[] = {"main","side","turret","transmission","wheels","inter"};
 		hiddenSelectionsTextures[] = {
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Main.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Side.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Turret.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Transmission.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Wheels.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Internal.paa"
+			"\AUX_95th_Vehicles_Bantha\Data\Default\Main_CO.paa",
+			"\AUX_95th_Vehicles_Bantha\Data\Default\Side_CO.paa",
+			"\AUX_95th_Vehicles_Bantha\Data\Default\Turret_CO.paa",
+			"\AUX_95th_Vehicles_Bantha\Data\Default\Transmission_CO.paa",
+			"\AUX_95th_Vehicles_Bantha\Data\Default\Wheels_CO.paa",
+			"\AUX_95th_Vehicles_Bantha\Data\Default\Internal_CO.paa"
 		};
+		hiddenSelectionsMaterials[] = {
+			"\AUX_95th_Vehicles_Bantha\Main.rvmat",
+			"\AUX_95th_Vehicles_Bantha\Side.rvmat",
+			"\AUX_95th_Vehicles_Bantha\Turret.rvmat"
+		};
+
 
 		class TextureSources {
 			class Default {
 				displayName = "Default";
 				author = "95th Aux Team";
 				textures[] = {
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Main.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Side.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Turret.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Transmission.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Wheels.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Internal.paa"
+					"\AUX_95th_Vehicles_Bantha\Data\Default\Main_CO.paa",
+					"\AUX_95th_Vehicles_Bantha\Data\Default\Side_CO.paa",
+					"\AUX_95th_Vehicles_Bantha\Data\Default\Turret_CO.paa",
+					"\AUX_95th_Vehicles_Bantha\Data\Default\Transmission_CO.paa",
+					"\AUX_95th_Vehicles_Bantha\Data\Default\Wheels_CO.paa",
+					"\AUX_95th_Vehicles_Bantha\Data\Default\Internal_CO.paa"
 				};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
+				material[] = {
+					"\AUX_95th_Vehicles_Bantha\Main.rvmat",
+					"\AUX_95th_Vehicles_Bantha\Side.rvmat",
+					"\AUX_95th_Vehicles_Bantha\Turret.rvmat"
+				};
 			};
 		};
 	};
