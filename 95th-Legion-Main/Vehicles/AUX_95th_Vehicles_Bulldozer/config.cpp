@@ -25,5 +25,5 @@ class CfgFunctions { class AUX_95th { class Vehicles {
 };};};
 
 class Extended_InitPost_EventHandlers {	
-	class AUX_95th_Vehicles_Bulldozer {class AUX_95th_Vehicles_Bulldozer_Init {onRespawn="true";serverInit="[_this select 0] call AUX_95th_fnc_handleBulldozerInit;";};};
+	class AUX_95th_Vehicles_Bulldozer {class AUX_95th_Vehicles_Bulldozer_Init {init="[_this select 0] call AUX_95th_fnc_handleBulldozerInit;";};};
 };

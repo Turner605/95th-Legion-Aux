@@ -24,6 +24,6 @@ class CfgFunctions { class AUX_95th { class Vehicles {
 	class handleExcavatorInit {file = "\AUX_95th_Vehicles_Excavator\Functions\handleExcavatorInit.sqf";};
 };};};
 
-class Extended_InitPost_EventHandlers {	
-	class AUX_95th_Vehicles_Excavator {class AUX_95th_Vehicles_Excavator_Init {onRespawn="true";serverInit="[_this select 0] call AUX_95th_fnc_handleExcavatorInit;";};};
+class Extended_InitPost_EventHandlers {
+	class AUX_95th_Vehicles_Excavator {class AUX_95th_Vehicles_Excavator_Init {init = "[_this select 0] call AUX_95th_fnc_handleExcavatorInit;";};};
 };
