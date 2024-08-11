@@ -12,8 +12,8 @@ private _customHelmetList = [
 private _customUniformList = [
 	"Trooper", "Shiny", "Medic", "Senior", "Veteran", "Senior", "Sergeant", "Lieutenant",
 	"Turner", "Splash", "Commie", "Solvest", "Smokery", "Kev", "Smaug", "Revan", "Volt",
-	"Sand", "Manila", "Jinter", "Havoc", "Sythe", "Cheezy", "Bretek", "MadHatter", "Dilanza", 
-	"Hypo", "Foley", "Stitch", "Prophet", "King", "Titan", "Dracus", "Pendragon", "Edge"
+	"Sand", "Manila", "Jinter", "Havoc", "Sythe", "Cheezy", "Bretek", "MadHatter", "Dilanza",
+	"Hypo", "Foley", "Stitch", "Prophet", "King", "Titan", "Dracus", "Pendragon", "Edge", "Styx"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
@@ -50,7 +50,7 @@ private _arsenalVests = [
 	"AUX_95th_Vest_Sergeant_Havoc", "AUX_95th_Vest_Lieutenant_Havoc", "AUX_95th_Vest_CIO_Havoc", "AUX_95th_Vest_Kama_Havoc",
 	"AUX_95th_Vest_Sergeant_Outcast", "AUX_95th_Vest_Lieutenant_Outcast", "AUX_95th_Vest_CIO_Outcast", "AUX_95th_Vest_Kama_Outcast",
 	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Vest_Kama_Turner",
-	"AUX_95th_Vest_Kama_Taun", 
+	"AUX_95th_Vest_Kama_Taun",
 	"AUX_95th_Vest_Kama_Sand", "AUX_95th_Vest_Sergeant_Sand",
 	"AUX_95th_Vest_Kama_Lisek",
 	"AUX_95th_Vest_Kama_Stitch", "AUX_95th_Vest_Sergeant_Stitch",
@@ -76,9 +76,9 @@ private _arsenalBackpacks = [
 	"AUX_95th_Backpack_Visible_Gridlock", "AUX_95th_RTO_Backpack_Visible_Gridlock",
 	"AUX_95th_Backpack_Visible_Pendragon", "AUX_95th_RTO_Backpack_Visible_Pendragon",
 	"AUX_95th_Backpack_Visible_Titan", "AUX_95th_RTO_Backpack_Visible_Titan",
-	"AUX_95th_Backpack_Visible_Bretek", "AUX_95th_RTO_Backpack_Visible_Bretek", 
+	"AUX_95th_Backpack_Visible_Bretek", "AUX_95th_RTO_Backpack_Visible_Bretek",
 	"AUX_95th_Backpack_Visible_Smaug", "AUX_95th_RTO_Backpack_Visible_Smaug",
-	"AUX_95th_Backpack_Visible_Gear", "AUX_95th_RTO_Backpack_Visible_Gear", 
+	"AUX_95th_Backpack_Visible_Gear", "AUX_95th_RTO_Backpack_Visible_Gear",
 	"AUX_95th_Backpack_Visible_Galvin", "AUX_95th_RTO_Backpack_Visible_Galvin",
 	"AUX_95th_Backpack_Visible_Kev", "AUX_95th_RTO_Backpack_Visible_Kev"
 ];
