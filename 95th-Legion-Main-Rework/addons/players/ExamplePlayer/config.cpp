@@ -13,7 +13,22 @@ class CfgPatches {
 };
 
 class CfgWeapons {
+	class InventoryItem_Base_F;
+    class ItemCore;
+    class UniformItem;
+    class Uniform_Base: ItemCore { class ItemInfo; };
+    // class U_I_CombatUniform;
+	// class 3AS_U_Rep_ColdAssault_Armor;
+	// class 3AS_U_Rep_Katarn_Armor;
+
     #include "\z\AUX_95th\addons\players\shared\helmets.hpp"
+    #include "\z\AUX_95th\addons\players\shared\uniforms.hpp"
+    // #include "\z\AUX_95th\addons\players\shared\backpacks.hpp"
+    // #include "\z\AUX_95th\addons\players\shared\vests.hpp"
+};
+
+class CfgVehicles {
+    #include "\z\AUX_95th\addons\players\shared\units.hpp"
 };
 
 #include "CfgEventHandlers.hpp"

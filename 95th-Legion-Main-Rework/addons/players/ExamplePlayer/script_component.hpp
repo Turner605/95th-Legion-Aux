@@ -9,7 +9,7 @@
 //OPTIONS: Unassigned, Fallen, Zeus, Ackley, Reek, .....
 #define SQUAD_NAME Unassigned
 
-//OPTIONS 0 (False), 1 (True)
+// HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
 #define HELMET_P1_ENGINEER 1
 #define HELMET_P1_ARF 1
@@ -20,7 +20,8 @@
 #define HELMET_P1_COMMANDO 1
 #define HELMET_P2_AIRBORNE 1
 
-
+// UNIFORM OPTIONS 0 (False), 1 (True)
+#define UNIFORM_P1_BASIC 1
 
 // DO NOT EDIT
 #define PARENTCOMPONENT shared
