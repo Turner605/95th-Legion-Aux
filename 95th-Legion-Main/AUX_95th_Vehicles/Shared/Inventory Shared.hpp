@@ -16,11 +16,22 @@ class TransportMagazines {
 	class _xx_3AS_MK42_HE{magazine="3AS_MK42_HE"; count=5;};
 
 	class _xx_AUX_95th_Stun_Long_Mag{magazine="AUX_95th_Stun_Long_Mag"; count=64;};
-	class _xx_AUX_95th_Universal_Rifle_Magg{magazine="AUX_95th_Universal_Rifle_Mag"; count=240;};
+	class _xx_AUX_95th_Universal_Rifle_Mag{magazine="AUX_95th_Universal_Rifle_Mag"; count=240;};
 	class _xx_AUX_95th_Universal_Heavy_Mag{magazine="AUX_95th_Universal_Heavy_Mag"; count=50;};
+	class _xx_AUX_95th_Universal_Sniper_Mag{magazine="AUX_95th_Universal_Sniper_Mag"; count=50;};
 	class _xx_AUX_95th_Universal_Shotgun_Mag{magazine="AUX_95th_Universal_Shotgun_Mag"; count=50;};
 	class _xx_AUX_95th_DC17SA_mag{magazine="AUX_95th_DC17SA_mag"; count=20;};
 	class _xx_AUX_95th_BX42_Fuel{magazine="AUX_95th_BX42_Fuel"; count=10;};
+
+	class _xx_DSS_Magazine_Grenade_Droid_Detector{magazine="DSS_Magazine_Grenade_Droid_Detector"; count=10;};
+	class _xx_DSS_Magazine_Grenade_Droid_Popper{magazine="DSS_Magazine_Grenade_Droid_Popper"; count=10;};
+	class _xx_DSS_Magazine_Grenade_Flashbang{magazine="DSS_Magazine_Grenade_Flashbang"; count=10;};
+	class _xx_DSS_Magazine_Grenade_Hacker{magazine="DSS_Magazine_Grenade_Hacker"; count=10;};
+	class _xx_DSS_Magazine_Grenade_Sonar{magazine="DSS_Magazine_Grenade_Sonar"; count=10;};
+	class _xx_DSS_Grenade_Magazine_Thermal_C1{magazine="DSS_Grenade_Magazine_Thermal_C1"; count=10;};
+
+	class _xx_DSS_1Rnd_HE_Grenade_shell{magazine="1Rnd_HE_Grenade_shell"; count=10;};
+	class _xx_DSS_1Rnd_Smoke_Grenade_shell{magazine="1Rnd_Smoke_Grenade_shell"; count=10;};
 };
 
 class TransportWeapons {
@@ -40,4 +51,19 @@ class TransportWeapons {
 	class _xx_3AS_RPS6_F{weapon="3AS_RPS6_F"; count=10;};
 	class _xx_3AS_RPS6_HP{weapon="3AS_RPS6_HP"; count=4;};
 	class _xx_ACE_VMH3{weapon="ACE_VMH3"; count=2;};
+};
+
+class TransportItems {
+	class _xx_ACE_packingBandage{name="ACE_packingBandage"; count=60;};
+	class _xx_ACE_elasticBandage{name="ACE_elasticBandage"; count=60;};
+	class _xx_ACE_morphine{name="ACE_morphine"; count=5;};
+	class _xx_ACE_adenosine{name="ACE_adenosine"; count=5;};
+	class _xx_ACE_epinephrine{name="ACE_epinephrine"; count=5;};
+	class _xx_kat_Painkiller{name="kat_Painkiller"; count=5;};
+	class _xx_kat_guedel{name="kat_guedel"; count=5;};
+	class _xx_kat_larynx{name="kat_larynx"; count=5;};
+	class _xx_ACE_salineIV{name="ACE_salineIV"; count=10;};
+	class _xx_ACE_tourniquet{name="ACE_tourniquet"; count=10;};
+	class _xx_ACE_splint{name="ACE_splint"; count=5;};
+	class _xx_kat_chestSeal{name="kat_chestSeal"; count=5;};
 };
