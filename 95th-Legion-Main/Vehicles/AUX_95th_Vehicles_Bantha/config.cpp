@@ -109,6 +109,7 @@ class CfgVehicles {
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorCategory="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Light";
+		#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
 
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {
@@ -135,7 +136,7 @@ class CfgVehicles {
 			class HitEngine: HitEngine {
 				armorComponent = "hit_engine";
 				name = "hit_engine_point";
-				armor = 2;
+				armor = 1.5;
 				material = -1;
 				passThrough = 0.2;
 				minimalHit = 0.1;
@@ -144,7 +145,7 @@ class CfgVehicles {
 			};
 
 			class HitFuel: HitFuel {
-				armor = 2;
+				armor = 1.5;
 				material = -1;
 				name = "hit_fuel_point";
 				passThrough = 0.2;
