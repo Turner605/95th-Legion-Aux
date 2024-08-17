@@ -296,7 +296,9 @@ class CfgVehicles {
 		hiddenSelectionsMaterials[] = {
 			"\AUX_95th_Vehicles_Bantha\Main.rvmat",
 			"\AUX_95th_Vehicles_Bantha\Side.rvmat",
-			"\AUX_95th_Vehicles_Bantha\Turret.rvmat"
+			"\AUX_95th_Vehicles_Bantha\Turret.rvmat",
+			"",
+			"\AUX_95th_Vehicles_Bantha\Wheels.rvmat"
 		};
 
 
@@ -316,7 +318,9 @@ class CfgVehicles {
 				material[] = {
 					"\AUX_95th_Vehicles_Bantha\Main.rvmat",
 					"\AUX_95th_Vehicles_Bantha\Side.rvmat",
-					"\AUX_95th_Vehicles_Bantha\Turret.rvmat"
+					"\AUX_95th_Vehicles_Bantha\Turret.rvmat",
+					"",
+					"\AUX_95th_Vehicles_Bantha\Wheels.rvmat"
 				};
 			};
 		};
