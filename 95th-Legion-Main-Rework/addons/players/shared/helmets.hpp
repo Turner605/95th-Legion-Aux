@@ -16,7 +16,7 @@ class SEA_Helmet_P1_Base;
             Phase = "P1";
             model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
             Type = QUOTE(P1_Basic);
-            Player = QUOTE(##PLAYER_NAME##);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
         };
     };
 #endif
@@ -39,7 +39,7 @@ class SEA_Helmet_Engineer_Base;
             Phase = "P1";
             model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
             Type = QUOTE(P1_Engineer);
-            Player = QUOTE(##PLAYER_NAME##);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
         };
     };
 #endif
@@ -63,7 +63,7 @@ class SEA_Helmet_ARF_base;
             Phase = "P1";
             model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
             Type = QUOTE(P1_ARF);
-            Player = QUOTE(##PLAYER_NAME##);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
         };
     };
 #endif
@@ -87,7 +87,7 @@ class LSEA_Helmet_Pilot_P1_Base;
             Phase = "P1";
             model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
             Type = QUOTE(P1_Pilot);
-            Player = QUOTE(##PLAYER_NAME##);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
         };
     };
 #endif
@@ -110,7 +110,7 @@ class SEA_Helmet_SpecOps_SR_Base;
             Phase = "P1";
             model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
             Type = QUOTE(P1_SpecOps);
-            Player = QUOTE(##PLAYER_NAME##);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
         };
     };
 #endif
@@ -133,7 +133,7 @@ class SEA_Helmet_Hazard_Base;
             Phase = "P1";
             model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
             Type = QUOTE(P1_Hazard);
-            Player = QUOTE(##PLAYER_NAME##);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
         };
     };
 #endif
@@ -156,7 +156,7 @@ class 3AS_H_ColdAssault_Helmet;
             Phase = "P1";
             model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
             Type = QUOTE(P1_Cold_Assault);
-            Player = QUOTE(##PLAYER_NAME##);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
         };
     };
 #endif
@@ -179,7 +179,7 @@ class 3AS_H_Katarn_Helmet;
             Phase = "P1";
             model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
             Type = QUOTE(P1_Commando);
-            Player = QUOTE(##PLAYER_NAME##);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
         };
     };
 #endif
@@ -201,7 +201,7 @@ class lsd_gar_airborne_new;
             Phase = "P2";
             model = QUOTE(AUX_95th_Helmet_Squad_##SQUAD_KEY##);
             Type = QUOTE(P2_Airborne);
-            Player = QUOTE(##PLAYER_NAME##);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
         };
     };
 #endif

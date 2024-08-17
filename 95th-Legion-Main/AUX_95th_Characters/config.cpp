@@ -39,7 +39,9 @@ class CfgPatches {
 			"AUX_95th_Unit_P1_Basic_Prophet",
 			"AUX_95th_Unit_P1_Basic_King",
 			"AUX_95th_Unit_P1_Basic_Dracus",
+			"AUX_95th_Unit_P1_Basic_Edge",
 			"AUX_95th_Unit_P1_Basic_Chimera",
+			"AUX_95th_Unit_P1_Basic_Styx",
 
 			"AUX_95th_Unit_P1_Cold_Assault_Trooper",
 			"AUX_95th_Unit_Commando_Trooper",
@@ -97,8 +99,9 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Stitch"};
+				values[] = {"Stitch", "Styx"};
 				class Stitch { label = "Stitch"; description = "Stitch's Uniform"; };
+				class Styx { label = "Styx"; description = "Styx's Uniform"; };
 			};
 		};
 

@@ -118,11 +118,12 @@ class CfgVehicles
 		author = "95th Aux Team";
 		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
 		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
+		#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
 		tas_canBlift=1;
 		tas_liftVars = "[[[[0,-4,-4]]], [0.1], [-0.5]]";
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorCategory="AUX_95th_Legion_Faction_Vehicles";
-		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Heavy";
+		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Light";
 		displayName = "MAVr";
 		hiddenSelections[] = {"base","turret","elements","inter","wires"};
 		hiddenSelectionsTextures[] = {
@@ -132,6 +133,65 @@ class CfgVehicles
 			"\AUX_95th_Vehicles_MAVr\Data\Default\Internal.paa",
 			"\AUX_95th_Vehicles_MAVr\Data\Default\Wires.paa"
 		};
+
+		class HitPoints: HitPoints {
+			class HitHull: HitHull {
+				armor = 1.5;
+				material = -1;
+				armorComponent = "hit_hull";
+				name = "hit_hull_point";
+				visual = "zbytek";
+				passThrough = 1;
+				minimalHit = 0.2;
+				explosionShielding = 0.4;
+				radius = 0.15;
+			};
+			class HitEngine: HitEngine {
+				armor = 1.5;
+				material = -1;
+				passThrough = 0.2;
+				explosionShielding = 0.4;
+				armorComponent = "hit_engine";
+				name = "hit_engine_point";
+				visual = "-";
+				minimalHit = 0.2;
+				radius = 0.15;
+			};
+			class HitFuel: HitFuel {
+				armor = 1.5;
+				material = -1;
+				armorComponent = "hit_fuel";
+				name = "hit_fuel_point";
+				visual = "-";
+				passThrough = 0.2;
+				minimalHit = 0.2;
+				explosionShielding = 0.5;
+				radius = 0.15;
+			};
+			class HitLTrack: HitLTrack {
+				armor = 2;
+				material = -1;
+				armorComponent = "hit_trackL";
+				name = "track_l_hit";
+				visual = "-";
+				radius = 0.2;
+				minimalHit = 0.0738462;
+				explosionShielding = 0.8;
+				passThrough = 0;
+			};
+			class HitRTrack: HitRTrack {
+				armor = 2;
+				material = -1;
+				armorComponent = "hit_trackR";
+				name = "track_r_hit";
+				visual = "-";
+				passThrough = 0;
+				minimalHit = 0.1;
+				explosionShielding = 0.2;
+				radius = 0.15;
+			};
+		};
+
 		textureList[] = {"Default",0};
 		class TextureSources {
 			class Default {
