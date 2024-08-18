@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Vehicles_Excavator {
 		author = "95th Legion";
 		name = "AUX 95th Vehicles Excavator";
-		requiredAddons[] = {"A3_Soft_F"};
+		requiredAddons[] = {"A3_Soft_F", "AUX_95th_Vehicles_Shared"};
 		weapons[] = {};
 		units[] = {"AUX_95th_Vehicles_Excavator"};
 		magazines[] = {};

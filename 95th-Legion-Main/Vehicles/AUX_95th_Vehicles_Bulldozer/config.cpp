@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Vehicles_Bulldozer {
 		author = "95th Legion";
 		name = "AUX 95th Vehicles Bulldozer";
-		requiredAddons[] = {"A3_Soft_F"};
+		requiredAddons[] = {"A3_Soft_F", "AUX_95th_Vehicles_Shared"};
 		weapons[] = {};
 		units[] = {"AUX_95th_Vehicles_Bulldozer"};
 		magazines[] = {};

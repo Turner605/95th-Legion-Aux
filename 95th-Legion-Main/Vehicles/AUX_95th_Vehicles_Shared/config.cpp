@@ -15,6 +15,7 @@ class CfgEditorCategories{
 
 class CfgEditorSubcategories {
 	class AUX_95th_Civi_Vehicles_Category_Industrial{displayName="Industrial";};
+	class AUX_95th_CIS_Air_Category_Transport { displayName="Air (Transport)"; };
 };
 
 class CfgFunctions { class AUX_95th { class Vehicles_Shared {

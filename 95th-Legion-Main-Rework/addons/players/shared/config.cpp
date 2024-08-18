@@ -171,4 +171,24 @@ class XtdGearModels {
 	};
 };
 
+class CfgFactionClasses {
+    class AUX_95th_Legion_Faction_Clones {displayName = "[95th] Clones";  priority = 1; side = 1;};
+};
+
+class CfgEditorSubcategories {
+	class AUX_95th_Legion_Characters_Category_Squad_Zeus{displayName="Zeus Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Basic{displayName="Basic Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Zero{displayName="1-0 Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_One{displayName="1-1 Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Two{displayName="1-2 Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Three{displayName="1-3 Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Four{displayName="1-4 Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Five{displayName="5-0 Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Six{displayName="6-0 Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Seven{displayName="7-0 Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Fallen{displayName="Fallen Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Unassigned{displayName="Unassigned Units";};
+	class AUX_95th_Legion_Characters_Category_Squad_Generic{displayName="Generic Units";};
+};
+
 #include "CfgEventHandlers.hpp"
