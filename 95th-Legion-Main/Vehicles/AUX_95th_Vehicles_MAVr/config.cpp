@@ -127,11 +127,17 @@ class CfgVehicles
 		displayName = "MAVr";
 		hiddenSelections[] = {"base","turret","elements","inter","wires"};
 		hiddenSelectionsTextures[] = {
-			"\AUX_95th_Vehicles_MAVr\Data\Default\Base.paa",
-			"\AUX_95th_Vehicles_MAVr\Data\Default\Turret.paa",
-			"\AUX_95th_Vehicles_MAVr\Data\Default\Elements.paa",
-			"\AUX_95th_Vehicles_MAVr\Data\Default\Internal.paa",
-			"\AUX_95th_Vehicles_MAVr\Data\Default\Wires.paa"
+			"\AUX_95th_Vehicles_MAVr\Data\Default\Base_CO.paa",
+			"\AUX_95th_Vehicles_MAVr\Data\Default\Turret_CO.paa",
+			"\AUX_95th_Vehicles_MAVr\Data\Default\Elements_CO.paa",
+			"\AUX_95th_Vehicles_MAVr\Data\Default\Internal_CO.paa",
+			"\AUX_95th_Vehicles_MAVr\Data\Default\Wires_CO.paa"
+		};
+
+		hiddenSelectionsMaterials[] = {
+			"\AUX_95th_Vehicles_MAVr\Base.rvmat",
+			"\AUX_95th_Vehicles_MAVr\Turret.rvmat",
+			"\AUX_95th_Vehicles_MAVr\Elements.rvmat"
 		};
 
 		class HitPoints: HitPoints {
@@ -198,11 +204,11 @@ class CfgVehicles
 				displayName = "Default";
 				author = "95th Aux Team";
 				textures[] = {
-					"\AUX_95th_Vehicles_MAVr\Data\Default\Base.paa",
-					"\AUX_95th_Vehicles_MAVr\Data\Default\Turret.paa",
-					"\AUX_95th_Vehicles_MAVr\Data\Default\Elements.paa",
-					"\AUX_95th_Vehicles_MAVr\Data\Default\Internal.paa",
-					"\AUX_95th_Vehicles_MAVr\Data\Default\Wires.paa"
+					"\AUX_95th_Vehicles_MAVr\Data\Default\Base_CO.paa",
+					"\AUX_95th_Vehicles_MAVr\Data\Default\Turret_CO.paa",
+					"\AUX_95th_Vehicles_MAVr\Data\Default\Elements_CO.paa",
+					"\AUX_95th_Vehicles_MAVr\Data\Default\Internal_CO.paa",
+					"\AUX_95th_Vehicles_MAVr\Data\Default\Wires_CO.paa"
 				};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
