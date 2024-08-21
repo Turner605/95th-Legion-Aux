@@ -123,12 +123,13 @@ class XtdGearModels {
 			class Player {
 				alwaysSelectable = 0;
 				labels = "Player";
-				values[] = {"Bretek", "Third", "York", "Night", "Kaz"};
+				values[] = {"Bretek", "Third", "York", "Night", "Kaz", "Gum"};
 				class Bretek { label = "Bretek"; description = "Bretek's Helmet"; };
 				class Third { label = "Third"; description = "Third's Helmet"; };
 				class York { label = "York"; description = "York's Helmet"; };
 				class Night { label = "Night"; description = "Night's Helmet"; };
 				class Kaz { label = "Kaz"; description = "Kaz's Helmet"; };
+				class Gum { label = "Gum"; description = "Gum's Helmet"; };
 			};
 		};
 
