@@ -77,6 +77,8 @@ class CfgWeapons {
 		muzzleEnd = "Konec hlavne";
 		displayName = "Pyro Test";
 		descriptionShort = "Pyro Launcher";
+		reloadTime = 2;
+		magazineReloadTime = 2;
 		useModelOptics = 0;
 		useExternalOptic = 0;
 		magazines[] = {"AUX_95th_BX42_Pyro"};

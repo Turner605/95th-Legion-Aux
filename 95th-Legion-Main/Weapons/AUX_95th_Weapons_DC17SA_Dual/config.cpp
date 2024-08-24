@@ -115,6 +115,7 @@ class CfgWeapons {
 	};
 
 	class AUX_95th_DC17SA_Dual: AUX_95th_DC17SA_Base_F {
+		DSS_DamageSystem_Power=8;
 		scope = 2;
 		displayName = "[95th] Dual DC-17S Sidearm";
 		model = "3AS\3AS_Weapons\DC17S\3AS_DC17S_Dual_F.p3d";

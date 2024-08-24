@@ -87,6 +87,7 @@ class CfgWeapons {
 
 	class UGL_F;
 	class AUX_95th_DC15X: arifle_MX_Base_F {
+		DSS_DamageSystem_Power=20;
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "AUX_95th_DC15X_fried";

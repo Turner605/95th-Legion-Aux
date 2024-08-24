@@ -1,4 +1,7 @@
 class AUX_95th_Droid_BX_Unit_Sniper : lsd_cis_bxdroid_specops {
+	DSS_DamageSystem_Active=1;
+	DSS_DamageSystem_Resistance=0.5;
+	DSS_DamageSystem_Headshot_Multiplier=2;
 	displayName="BX Sniper (E-5S)";
 	editorCategory="AUX_95th_CIS_Forces";
 	editorSubcategory="AUX_95th_CIS_Forces_Droids_BX";

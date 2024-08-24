@@ -172,6 +172,7 @@ class CfgWeapons {
 	};
 
 	class AUX_95th_DC15C: AUX_95th_DC15C_Base_F {
+		DSS_DamageSystem_Power=10;
 		scope = 2;
 		displayName = "[95th] DC-15C";
 		model = "3AS\3AS_Weapons\DC15C\3AS_DC15C_f";
@@ -214,6 +215,7 @@ class CfgWeapons {
 	};
 
 	class AUX_95th_DC15C_GL: AUX_95th_DC15C_Base_F {
+		DSS_DamageSystem_Power=10;
 		scope = 2;
 		displayName = "[95th] DC-15C GL Rifle";
 		model = "3AS\3AS_Weapons\DC15C\3AS_DC15C_GL.p3d";

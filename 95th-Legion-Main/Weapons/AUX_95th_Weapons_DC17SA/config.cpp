@@ -49,6 +49,7 @@ class CfgWeapons {
 	class AUX_95th_Stun_Muzzle_Pistol;
 
 	class AUX_95th_DC17SA: hgun_P07_F {
+		DSS_DamageSystem_Power=8;
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "AUX_95th_DC17SA_fried";

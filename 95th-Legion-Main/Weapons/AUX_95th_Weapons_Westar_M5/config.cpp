@@ -201,6 +201,7 @@ class CfgWeapons {
 	};
 
 	class AUX_95th_WestarM5: AUX_95th_WestarM5_Base_F {
+		DSS_DamageSystem_Power=12;
 		scope = 2;
 		displayName = "[95th] Westar-M5 Rifle";
 		model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_F.p3d";
@@ -248,6 +249,7 @@ class CfgWeapons {
 	};
 
 	class AUX_95th_WestarM5_GL: AUX_95th_WestarM5_Base_F {
+		DSS_DamageSystem_Power=12;
 		scope = 2;
 		displayName = "[95th] Westar-M5 GL Rifle";
 		model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";

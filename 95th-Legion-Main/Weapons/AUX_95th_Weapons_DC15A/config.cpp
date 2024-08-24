@@ -46,6 +46,7 @@ class CfgWeapons {
 	class AUX_95th_Stun_Muzzle_Rifle;
 
 	class AUX_95th_DC15A: arifle_MX_Base_F {
+		DSS_DamageSystem_Power=10;
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "AUX_95th_DC15A_fried";
@@ -224,6 +225,7 @@ class CfgWeapons {
 	};
 
 	class AUX_95th_DC15A_ugl: AUX_95th_DC15A {
+		DSS_DamageSystem_Power=10;
 		JLTS_friedItem = "AUX_95th_DC15A_UGL_fried";
 		JLTS_repairTime = 35;
 		displayName = "[95th] DC15A UGL (Wooden)";

@@ -262,8 +262,6 @@ class CfgFunctions { class AUX_95th { class CIS_Forces {
 	class B2Init {file = "\AUX_95th_CIS_Forces\Init\B2Init.sqf";};
 
 	class B1Init {file = "\AUX_95th_CIS_Forces\Init\B1Init.sqf";};
-	class handleB1Shot {file = "\AUX_95th_CIS_Forces\Scripts\handleB1Shot.sqf";};
-	class handleBXShot {file = "\AUX_95th_CIS_Forces\Scripts\handleBXShot.sqf";};
 
 	class commandoInit {file = "\AUX_95th_CIS_Forces\Init\commandoInit.sqf";};
 	class checkIsInHouse {file = "\AUX_95th_CIS_Forces\Scripts\Commando\checkIsInHouse.sqf";};
@@ -306,12 +304,6 @@ class Extended_PreInit_EventHandlers {
 class ACE_Medical_Injuries {
 	class damageTypes {
 		class woundHandlers;
-		class bullet {
-			class woundHandlers: woundHandlers {
-				AUX_95th_Droid_Unit_B1_Handler = "{ call AUX_95th_fnc_handleB1Shot }";
-				AUX_95th_Droid_Unit_BX_Handler = "{ call AUX_95th_fnc_handleBXShot }";
-			};
-		};
 		class falling {
 			class woundHandlers: woundHandlers {
 				AUX_95th_Droid_Unit_Commando_Handler = "{ call AUX_95th_fnc_handleCommandoFallDamage }";

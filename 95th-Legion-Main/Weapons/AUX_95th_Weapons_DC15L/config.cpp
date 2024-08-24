@@ -139,6 +139,7 @@ class CfgWeapons {
 	};
 
 	class AUX_95th_DC15L: AUX_95th_DC15L_Base_F {
+		DSS_DamageSystem_Power=15;
 		scope = 2;
 		displayName = "[95th] DC-15L Rifle";
 		model = "3AS\3AS_Weapons\DC15L\3AS_DC15L_f.p3d";

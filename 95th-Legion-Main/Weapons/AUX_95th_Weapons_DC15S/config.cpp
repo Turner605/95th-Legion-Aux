@@ -46,6 +46,7 @@ class CfgWeapons {
 	class AUX_95th_Stun_Muzzle_Rifle;
 
 	class AUX_95th_DC15S: arifle_MX_Base_F {
+		DSS_DamageSystem_Power=10;
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "AUX_95th_DC15S_fried";
