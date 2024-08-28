@@ -367,7 +367,7 @@ class CfgVehicles {
             Role = "Light";
             Visibility = "Shown";
             Radio = "Enabled";
-            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
+            Player = "Trooper";
         };
 	};
 };
