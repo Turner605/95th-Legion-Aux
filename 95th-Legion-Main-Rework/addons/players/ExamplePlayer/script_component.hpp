@@ -22,8 +22,14 @@
 
 // UNIFORM OPTIONS 0 (False), 1 (True)
 #define UNIFORM_P1_BASIC 1
+#define UNIFORM_P1_MC 1
+#define UNIFORM_P1_COLDASSAULT 1
+#define UNIFORM_P1_COMMANDO 1
 
 // DO NOT EDIT
 #define PARENTCOMPONENT shared
 #include "\z\AUX_95th\addons\main\script_mod.hpp"
 #include "\z\AUX_95th\addons\main\script_macros.hpp"
+
+//TODO:
+// Vests need replacing really 

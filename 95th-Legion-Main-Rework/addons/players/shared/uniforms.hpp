@@ -1,4 +1,6 @@
 class U_I_CombatUniform;
+class 3AS_U_Rep_ColdAssault_Armor;
+class 3AS_U_Rep_Katarn_Armor;
 
 #if UNIFORM_P1_BASIC == 1
     class AUX_95th_Uniform_P1_Basic_##PLAYER_NAME## : U_I_CombatUniform {
@@ -16,7 +18,73 @@ class U_I_CombatUniform;
         class XtdGearInfo {
             model = QUOTE(AUX_95th_Uniform_Squad_##SQUAD_KEY##);
             Phase = "P1";
-            Type = QUOTE(P1_Basic);
+            Type = QUOTE(Basic);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
+        };
+    };
+#endif
+
+#if UNIFORM_P1_MC == 1
+    class AUX_95th_Uniform_P1_MC_##PLAYER_NAME## : U_I_CombatUniform {
+        scope = 2;
+        scopeArsenal = 2;
+        author="95th Aux Team";
+        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
+        class ItemInfo: UniformItem {
+            uniformClass=QUOTE(AUX_95th_Unit_P1_MC_##PLAYER_NAME##);
+            uniformModel="-";
+            containerClass="Supply150";
+            mass=40;
+        };
+        class XtdGearInfo {
+            model = QUOTE(AUX_95th_Uniform_Squad_##SQUAD_KEY##);
+            Phase = "P1";
+            Type = QUOTE(MC);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
+        };
+    };
+#endif
+
+#if UNIFORM_P1_COLDASSAULT == 1
+    class AUX_95th_Uniform_P1_Cold_Assault_##PLAYER_NAME## : 3AS_U_Rep_ColdAssault_Armor {
+        scope = 2;
+        scopeArsenal = 2;
+        author="95th Aux Team";
+        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
+        class ItemInfo: UniformItem {
+            uniformClass=QUOTE(AUX_95th_Unit_P1_Cold_Assault_##PLAYER_NAME##);
+            uniformModel="-";
+            containerClass="Supply150";
+            mass=40;
+        };
+        class XtdGearInfo {
+            model = QUOTE(AUX_95th_Uniform_Squad_##SQUAD_KEY##);
+            Phase = "P1";
+            Type = QUOTE(ColdAssault);
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
+        };
+    };
+#endif
+
+#if UNIFORM_P1_COMMANDO == 1
+    class AUX_95th_Uniform_Commando_##PLAYER_NAME## : 3AS_U_Rep_Katarn_Armor {
+        scope = 2;
+        scopeArsenal = 2;
+        author="95th Aux Team";
+        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
+        class ItemInfo: UniformItem {
+            uniformClass=QUOTE(AUX_95th_Unit_Commando_##PLAYER_NAME##);
+            uniformModel="-";
+            containerClass="Supply150";
+            mass=40;
+        };
+        class XtdGearInfo {
+            model = QUOTE(AUX_95th_Uniform_Squad_##SQUAD_KEY##);
+            Phase = "P1";
+            Type = QUOTE(Commando);
             Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
         };
     };
