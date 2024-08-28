@@ -1,3 +1,3 @@
 #include "script_component.hpp"
 
-AUX_95th_Arsenal_Whitelisted_Helmets = ["Test"];
+AUX_95th_Arsenal_Whitelisted_Names = [];
