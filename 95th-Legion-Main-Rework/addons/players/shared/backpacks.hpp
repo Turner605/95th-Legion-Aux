@@ -11,7 +11,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\belt\light.paa) 
         };
@@ -30,7 +30,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_hasLRradio=0;
@@ -48,7 +48,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\belt\light.paa) 
         };
@@ -72,7 +72,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
@@ -97,7 +97,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\rucksack\light.paa) 
         };
@@ -116,7 +116,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_hasLRradio=0;
@@ -134,7 +134,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\rucksack\light.paa) 
         };
@@ -158,7 +158,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
@@ -183,7 +183,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=300;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\rucksack\heavy.paa) 
         };
@@ -202,7 +202,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=300;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_hasLRradio=0;
@@ -220,7 +220,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=300;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\rucksack\heavy.paa) 
         };
@@ -244,7 +244,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=300;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
@@ -269,7 +269,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=400;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\rucksack\medic.paa) 
         };
@@ -288,7 +288,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=400;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_hasLRradio=0;
@@ -306,7 +306,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=400;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\rucksack\medic.paa) 
         };
@@ -330,7 +330,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=400;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
@@ -355,7 +355,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=400;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\rucksack\ordnance.paa) 
         };
@@ -374,7 +374,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=400;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_hasLRradio=0;
@@ -392,7 +392,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=400;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\rucksack\ordnance.paa) 
         };
@@ -416,7 +416,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=400;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
@@ -441,7 +441,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=250;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\mini\light.paa) 
         };
@@ -460,7 +460,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=250;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_hasLRradio=0;
@@ -478,7 +478,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=250;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\mini\light.paa) 
         };
@@ -502,7 +502,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=250;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
@@ -527,7 +527,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=250;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\micro\light.paa) 
         };
@@ -546,7 +546,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=250;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_hasLRradio=0;
@@ -564,7 +564,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=250;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\micro\light.paa) 
         };
@@ -588,7 +588,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=250;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         model="\a3\weapons_f\empty.p3d";
         hiddenSelectionsTextures[]={""};
         tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
@@ -613,7 +613,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\jt12\light.paa) 
         };
@@ -646,7 +646,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\jt12\light.paa) 
         };
@@ -686,7 +686,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=400;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\jt12\medic.paa) 
         };
@@ -719,7 +719,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=400;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\jt12\medic.paa) 
         };
@@ -759,7 +759,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\jt14\light.paa) 
         };
@@ -792,7 +792,7 @@ class JLTS_Clone_jumppack_mc;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\jt14\light.paa) 
         };

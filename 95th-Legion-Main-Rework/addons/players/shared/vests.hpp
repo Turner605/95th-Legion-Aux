@@ -22,7 +22,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\rifleman.paa) 
         };
@@ -50,7 +50,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\pilot.paa) 
         };
@@ -78,7 +78,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\jet.paa) 
         };
@@ -106,7 +106,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\grenadier.paa) 
         };
@@ -134,7 +134,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             "",
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\medic.paa) 
@@ -163,7 +163,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             "",
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\at.paa) 
@@ -192,7 +192,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             "",
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\heavy.paa) 
@@ -221,7 +221,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\marksman.paa) 
         };
@@ -249,7 +249,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\riot.paa) 
         };
@@ -277,7 +277,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\flame.paa) 
         };
@@ -305,7 +305,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\stealth.paa) 
         };
@@ -333,7 +333,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\support.paa) 
         };
@@ -361,7 +361,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\tech.paa) 
         };
@@ -389,7 +389,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\engineer.paa) 
         };
@@ -417,7 +417,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\crewman.paa) 
         };
@@ -447,7 +447,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\arc.paa) 
         };
@@ -476,7 +476,7 @@ class ItemInfo;
 	class AUX_95th_Vest_Commando_Engineer_##PLAYER_NAME## : 3AS_V_Katarn_Vest_Demo { 
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\commando\engineer.paa) 
         };
@@ -492,7 +492,7 @@ class ItemInfo;
 	class AUX_95th_Vest_Commando_Tech_##PLAYER_NAME## : 3AS_V_Katarn_Vest_Tech { 
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\commando\tech.paa) 
         };
@@ -508,7 +508,7 @@ class ItemInfo;
 	class AUX_95th_Vest_Commando_Marksman_##PLAYER_NAME## : 3AS_Katarn_Vest_Sniper { 
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\commando\marksman.paa) 
         };
@@ -524,7 +524,7 @@ class ItemInfo;
 	class AUX_95th_Vest_Commando_Support_##PLAYER_NAME## : 3AS_Katarn_Vest_Team_Leader { 
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\commando\support.paa) 
         };
@@ -543,7 +543,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\officer\officer.paa), 
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\officer\sergeant_top.paa) 
@@ -572,7 +572,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\officer\officer.paa)
         };
@@ -600,7 +600,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\officer\officer.paa)
         };
@@ -628,7 +628,7 @@ class ItemInfo;
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\officer\officer.paa)
         };

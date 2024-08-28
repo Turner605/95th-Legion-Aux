@@ -7,7 +7,7 @@ class 3AS_U_Rep_Katarn_Armor;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
         class ItemInfo: UniformItem {
             uniformClass=QUOTE(AUX_95th_Unit_P1_Basic_##PLAYER_NAME##);
@@ -29,7 +29,7 @@ class 3AS_U_Rep_Katarn_Armor;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
         class ItemInfo: UniformItem {
             uniformClass=QUOTE(AUX_95th_Unit_P1_MC_##PLAYER_NAME##);
@@ -51,7 +51,7 @@ class 3AS_U_Rep_Katarn_Armor;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
         class ItemInfo: UniformItem {
             uniformClass=QUOTE(AUX_95th_Unit_P1_Cold_Assault_##PLAYER_NAME##);
@@ -73,7 +73,7 @@ class 3AS_U_Rep_Katarn_Armor;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
         class ItemInfo: UniformItem {
             uniformClass=QUOTE(AUX_95th_Unit_Commando_##PLAYER_NAME##);

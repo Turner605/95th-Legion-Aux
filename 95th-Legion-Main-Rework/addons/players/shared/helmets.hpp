@@ -5,7 +5,7 @@ class SEA_Helmet_P1_Base;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
         hiddenSelections[]={"Camo1","Visor"};
         hiddenSelectionsTextures[]={
@@ -28,7 +28,7 @@ class SEA_Helmet_Engineer_Base;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
         hiddenSelections[]={"Camo1","Visor"};
         hiddenSelectionsTextures[]={
@@ -51,7 +51,7 @@ class SEA_Helmet_ARF_base;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
         hiddenSelections[]={"Camo1","Camo2","Visor"};
         hiddenSelectionsTextures[]={
@@ -75,7 +75,7 @@ class LSEA_Helmet_Pilot_P1_Base;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
         hiddenSelections[]= { "Camo1", "camo2", "Visor" };
         hiddenSelectionsTextures[]={
@@ -99,7 +99,7 @@ class SEA_Helmet_SpecOps_SR_Base;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1_specops\Helmet.paa), 
@@ -122,7 +122,7 @@ class SEA_Helmet_Hazard_Base;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1_hazard\Helmet.paa), 
@@ -145,7 +145,7 @@ class 3AS_H_ColdAssault_Helmet;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p1_cold_assault\Helmet.paa), 
@@ -168,7 +168,7 @@ class 3AS_H_Katarn_Helmet;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
         hiddenSelections[]={"Camo1","Visor"};
         hiddenSelectionsTextures[]={
@@ -191,7 +191,7 @@ class lsd_gar_airborne_new;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\AUX_95th_Helmets\Data\Insignias\##SQUAD_KEY##.paa);
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         displayName=QUOTE([95th] ##SQUAD_NAME## Helmets); 
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\helmets\p2_airborne\Helmet.paa), 
