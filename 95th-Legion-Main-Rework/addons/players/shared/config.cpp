@@ -361,6 +361,14 @@ class CfgVehicles {
 		tf_hasLRradio=1;
 		tf_range=16000;
 		tf_subtype="digital_lr";
+        class XtdGearInfo {
+            model = "AUX_95th_Backpacks_Squad_Basic";
+            Type = "Flamer";
+            Role = "Light";
+            Visibility = "Shown";
+            Radio = "Enabled";
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
+        };
 	};
 };
 

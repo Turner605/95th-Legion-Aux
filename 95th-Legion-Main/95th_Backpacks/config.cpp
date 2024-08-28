@@ -152,6 +152,16 @@ class CfgVehicles {
 	class JLTS_Clone_jumppack_mc;
 	class 3AS_B_Katarn_Backpack;
 
+    class AUX_95th_Backpack_Depricated : JLTS_Clone_backpack {
+		scope=0;
+        author="95th Aux Team";
+        displayName="DEPRICATED"; 
+	    maximumLoad=500;
+        hiddenSelectionsTextures[]={
+            "\z\AUX_95th\addons\players\shared\data\MissingTexture.paa"
+        };
+    };
+
 	//###############################Backpacks###############################
 
 	NEW_95TH_BAG_BACKPACK_VISIBLE(Trooper,95th_Backpacks,"95th Backpack",150)};
@@ -212,5 +222,6 @@ class CfgVehicles {
 	NEW_95TH_JETPACK_MC(Turner,95th_Custom_Jetpacks,"95th Custom Jetpacks",400)};
 
 
-
+	//###############################Depricated###############################
+	class 95th_Katarn_Backpack: AUX_95th_Backpack_Depricated {};
 };
