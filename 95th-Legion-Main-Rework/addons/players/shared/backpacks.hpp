@@ -5,6 +5,7 @@ class JLTS_Clone_RTO_pack;
 class JLTS_Clone_LR_attachment;
 class JLTS_Clone_jumppack_JT12;
 class JLTS_Clone_jumppack_mc;
+class 3AS_B_Katarn_Backpack;
 
 #if BACKPACK_BELT_LIGHT == 1
     class AUX_95th_Backpack_Belt_Light_Shown_##PLAYER_NAME## : JLTS_Clone_belt_bag {
@@ -827,15 +828,28 @@ class JLTS_Clone_jumppack_mc;
     };
 #endif
 
-
-
-
-
-
-
-
-
-
-
-
-
+#if BACKPACK_COMMANDO_HEAVY == 1
+    class AUX_95th_Backpack_Commando_Heavy_RTO_Shown_##PLAYER_NAME## : 3AS_B_Katarn_Backpack {
+        author="95th Aux Team";
+        displayName=QUOTE([95th] ##SQUAD_NAME## Backpacks); 
+	    maximumLoad=400;
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
+        hiddenSelectionsTextures[]={
+            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\backpacks\commando\light.paa) 
+        };
+        tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
+        tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode="tf_west_radio_code";
+        tf_hasLRradio=1;
+        tf_range=16000;
+        tf_subtype="digital_lr";
+        class XtdGearInfo {
+            model = QUOTE(AUX_95th_Backpacks_Squad_##SQUAD_KEY##);
+            Type = "Commando";
+            Role = "Heavy";
+            Visibility = "Shown";
+            Radio = "Enabled";
+            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
+        };
+    };
+#endif

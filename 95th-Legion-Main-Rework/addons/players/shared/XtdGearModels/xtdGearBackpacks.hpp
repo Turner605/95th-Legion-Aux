@@ -4,13 +4,14 @@ options[] = {"Player", "Type", "Role", "Visibility", "Radio"};
 class Type {
 	labels = "Type";
 	alwaysSelectable = 1;
-	values[] = {"Belt", "Rucksack", "Mini", "Micro", "JT12", "JT14"};
+	values[] = {"Belt", "Rucksack", "Mini", "Micro", "JT12", "JT14", "Commando"};
 	class Belt { label = "Belt"; description = "Belt Bag"; };
 	class Rucksack { label = "Backpack"; description = "Rucksack"; };
 	class Mini { label = "Mini"; description = "Mini Backpack"; };
 	class Micro { label = "Micro"; description = "Micro Backpack"; };
 	class JT12 { label = "JT12"; description = "JT12 Jetpack"; };
 	class JT14 { label = "JT14"; description = "JT14 Jetpack"; };
+	class Commando { label = "Commando"; description = "Commando Backpack"; };
 };
 
 class Role {
