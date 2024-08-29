@@ -1,7 +1,7 @@
-#define COMPONENT players_bretek
-#define COMPONENT_BEAUTIFIED Players_Bretek
-#define PLAYER_NAME bretek
-#define PLAYER_NAME_BEAUTIFIED Bretek
+#define COMPONENT players_galvin
+#define COMPONENT_BEAUTIFIED Players_Galvin
+#define PLAYER_NAME galvin
+#define PLAYER_NAME_BEAUTIFIED Galvin
 
 //OPTIONS: Unassigned, Basic, Fallen, Zeus, PLATOON_SQUAD (EG One_Seven)
 #define SQUAD_KEY One_Four
@@ -10,7 +10,7 @@
 #define SQUAD_NAME Sarlacc
 
 // HELMET OPTIONS 0 (False), 1 (True)
-#define HELMET_P1_BASIC 1
+#define HELMET_P1_BASIC 0
 #define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
