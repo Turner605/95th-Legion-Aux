@@ -1,6 +1,0 @@
-NEW_AUX_95TH_ARF_HELMET(Trooper,Basic,Basic)
-NEW_AUX_95TH_ARF_HELMET(Osprey,One,1-1)
-NEW_AUX_95TH_ARF_HELMET(Sythe,Fallen,Fallen)
-NEW_AUX_95TH_ARF_HELMET(Cheezy,Fallen,Fallen)
-NEW_AUX_95TH_ARF_HELMET(Mobius,Zero,1-0)
-NEW_AUX_95TH_ARF_HELMET(Styx,Zero,1-0)

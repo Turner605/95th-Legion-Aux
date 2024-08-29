@@ -1,1 +1,0 @@
-NEW_AUX_95TH_COLD_ASSAULT_HELMET(Trooper,Basic,Basic)

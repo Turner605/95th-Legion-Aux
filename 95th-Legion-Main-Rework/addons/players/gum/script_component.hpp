@@ -1,21 +1,21 @@
-#define COMPONENT players_som
-#define COMPONENT_BEAUTIFIED Players_Som
-#define PLAYER_NAME som
-#define PLAYER_NAME_BEAUTIFIED Som
+#define COMPONENT players_gum
+#define COMPONENT_BEAUTIFIED Players_Gum
+#define PLAYER_NAME gum
+#define PLAYER_NAME_BEAUTIFIED Gum
 
 //OPTIONS: Unassigned, Basic, Fallen, Zeus, PLATOON_SQUAD (EG One_Seven)
-#define SQUAD_KEY Fallen
+#define SQUAD_KEY One_Four
 
 //OPTIONS: Unassigned, Basic, Fallen, Zeus, Ackley, Reek, .....
-#define SQUAD_NAME Fallen
+#define SQUAD_NAME Sarlacc
 
 // HELMET OPTIONS 0 (False), 1 (True)
-#define HELMET_P1_BASIC 1
-#define HELMET_P1_ENGINEER 1
+#define HELMET_P1_BASIC 0
+#define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
 #define HELMET_P1_SPECOPS 0
-#define HELMET_P1_HAZARD 0
+#define HELMET_P1_HAZARD 1
 #define HELMET_P1_COLD_ASSAULT 0
 #define HELMET_P1_COMMANDO 0
 #define HELMET_P2_AIRBORNE 0

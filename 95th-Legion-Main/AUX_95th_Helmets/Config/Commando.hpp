@@ -1,1 +1,0 @@
-NEW_AUX_95TH_COMMANDO_HELMET(Trooper,Basic,Basic)

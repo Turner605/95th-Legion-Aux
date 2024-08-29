@@ -1,19 +1,19 @@
-#define COMPONENT players_som
-#define COMPONENT_BEAUTIFIED Players_Som
-#define PLAYER_NAME som
-#define PLAYER_NAME_BEAUTIFIED Som
+#define COMPONENT players_neron
+#define COMPONENT_BEAUTIFIED Players_Neron
+#define PLAYER_NAME neron
+#define PLAYER_NAME_BEAUTIFIED Neron
 
 //OPTIONS: Unassigned, Basic, Fallen, Zeus, PLATOON_SQUAD (EG One_Seven)
-#define SQUAD_KEY Fallen
+#define SQUAD_KEY Six_Zero
 
 //OPTIONS: Unassigned, Basic, Fallen, Zeus, Ackley, Reek, .....
-#define SQUAD_NAME Fallen
+#define SQUAD_NAME Mynock
 
 // HELMET OPTIONS 0 (False), 1 (True)
-#define HELMET_P1_BASIC 1
-#define HELMET_P1_ENGINEER 1
+#define HELMET_P1_BASIC 0
+#define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 0
-#define HELMET_P1_PILOT 0
+#define HELMET_P1_PILOT 1
 #define HELMET_P1_SPECOPS 0
 #define HELMET_P1_HAZARD 0
 #define HELMET_P1_COLD_ASSAULT 0
