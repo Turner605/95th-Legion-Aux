@@ -1,8 +1,9 @@
 class Player {
     alwaysSelectable = 0;
     labels = "Player";
-    values[] = {"Hypo", "Dilanza", "Axe"};
-    class Hypo { label = "Hypo"; description = "Hypo`s Helmet"; };
-    class Dilanza { label = "Dilanza"; description = "Dilanza`s Helmet"; };
-    class Axe { label = "Axe"; description = "Axe`s Helmet"; };
+    values[] = {"Hypo", "Dilanza", "Axe", "Pendragon"};
+    class Hypo { label = "Hypo"; description = "Hypo`s"; };
+    class Dilanza { label = "Dilanza"; description = "Dilanza`s"; };
+    class Axe { label = "Axe"; description = "Axe`s"; };
+    class Pendragon { label = "Pendragon"; description = "Pendragon`s"; };
 };
