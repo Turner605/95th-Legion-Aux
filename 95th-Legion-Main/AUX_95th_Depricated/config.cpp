@@ -1,5 +1,8 @@
 #include "Macros\Backpacks.hpp"
 #include "Macros\Officers.hpp"
+#include "Macros\Basic Vests.hpp"
+#include "Macros\Officer Vests.hpp"
+#include "Macros\Special Vests.hpp"
 
 class CfgPatches {
 	class AUX_95th_Depricated {
@@ -129,4 +132,25 @@ class CfgWeapons {
 	NEW_AUX_95TH_OFFICER_VEST_SET(Sand)
 	NEW_AUX_95TH_OFFICER_VEST_SET(Smokery)
 	NEW_AUX_95TH_OFFICER_VEST_SET(Splash)
+
+	NEW_95TH_VEST_HOLSTER_TYPE(Rifleman)};
+	NEW_95TH_VEST_HOLSTER_TYPE(Pilot)};
+	NEW_95TH_VEST_HOLSTER_TYPE(Grenadier)};
+	NEW_95TH_VEST_HOLSTER_TYPE(Jet)};
+
+	NEW_95TH_VEST_AIRBORNE_TYPE(Medic)};
+	NEW_95TH_VEST_AIRBORNE_TYPE(AT)};
+	NEW_95TH_VEST_AIRBORNE_TYPE(Heavy)};
+
+	NEW_95TH_VEST_RECON_TYPE(Marksman)};
+	NEW_95TH_VEST_RECON_TYPE(Riot)};
+	NEW_95TH_VEST_RECON_TYPE(Flame)};
+	NEW_95TH_VEST_RECON_TYPE(Stealth)};
+	NEW_95TH_VEST_RECON_TYPE(Tech)};
+	NEW_95TH_VEST_RECON_TYPE(Support)};
+
+	NEW_95TH_VEST_SUSPENDER_TYPE(Engineer)};
+	NEW_95TH_VEST_SUSPENDER_TYPE(Crewman)};
+
+	NEW_95TH_VEST_ARC_TYPE(Trooper)};
 };
