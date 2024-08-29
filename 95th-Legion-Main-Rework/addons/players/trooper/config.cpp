@@ -3,7 +3,13 @@
 class CfgPatches {
     class DOUBLES(PREFIX,COMPONENT) {
         name = COMPONENT_NAME;
-        units[] = {};
+        units[] = {
+            QUOTE(AUX_95th_Unit_P1_Basic_##PLAYER_NAME##),
+            QUOTE(AUX_95th_Unit_P1_MC_##PLAYER_NAME##),
+            QUOTE(AUX_95th_Unit_P1_Cold_Assault_##PLAYER_NAME##),
+            QUOTE(AUX_95th_Unit_Commando_##PLAYER_NAME##),
+            QUOTE(AUX_95th_Unit_P1_Basic_##PLAYER_NAME##)
+        };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"AUX_95th_main", "AUX_95th_players_shared"};
