@@ -1,2 +1,0 @@
-// Name, Squad
-NEW_AUX_95TH_UNIFORM_P1_COLD_ASSAULT(Trooper,Basic,Basic)

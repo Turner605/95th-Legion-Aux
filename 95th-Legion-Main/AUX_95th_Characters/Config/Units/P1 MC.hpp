@@ -1,3 +1,0 @@
-// Name, Helmet, Vest, Squad
-NEW_AUX_95TH_UNIT_P1_MC(Trooper,AUX_95th_Helmet_P1_Basic_Trooper,AUX_95th_Vest_CIO_Trooper,Basic)
-NEW_AUX_95TH_UNIT_P1_MC(Turner,AUX_95th_Helmet_P1_Basic_Turner,AUX_95th_Vest_CIO_Turner,Zeus)

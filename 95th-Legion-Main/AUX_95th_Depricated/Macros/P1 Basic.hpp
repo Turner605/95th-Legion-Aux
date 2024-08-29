@@ -41,8 +41,8 @@
 	linkedItems[]={##helmet##,##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={##helmet##,##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]={\
-		\AUX_95th_Characters\Data\P1 Basic\##name##\Uniform_Upper.paa,\
-		\AUX_95th_Characters\Data\P1 Basic\##name##\Uniform_Lower.paa\
+		\z\AUX_95th\addons\players\shared\data\MissingTexture.paa,\
+		\z\AUX_95th\addons\players\shared\data\MissingTexture.paa\
 	};\
 };
 
@@ -70,7 +70,7 @@
 	linkedItems[]={##helmet##,##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={##helmet##,##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]={\
-		\AUX_95th_Characters\Data\P1 Basic\Trooper\Uniform_Upper.paa,\
-		\AUX_95th_Characters\Data\P1 Basic\Trooper\Uniform_Lower.paa\
+		\z\AUX_95th\addons\players\shared\data\MissingTexture.paa,\
+		\z\AUX_95th\addons\players\shared\data\MissingTexture.paa\
 	};\
 };

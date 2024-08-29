@@ -28,7 +28,7 @@
 	linkedItems[]={##helmet##,##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	respawnLinkedItems[]={##helmet##,##vest##,ItemMap,JLTS_clone_comlink,ItemCompass,ItemWatch};\
 	hiddenSelectionsTextures[]={\
-		\AUX_95th_Characters\Data\Commando\##name##\Uniform.paa,\
-		\3AS\3AS_Characters\Commando\data\Katarn_Undersuit_CO.paa\
+		\z\AUX_95th\addons\players\shared\data\MissingTexture.paa,\
+		\z\AUX_95th\addons\players\shared\data\MissingTexture.paa\
 	};\
 };

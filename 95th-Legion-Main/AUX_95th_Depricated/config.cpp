@@ -4,6 +4,11 @@
 #include "Macros\Officer Vests.hpp"
 #include "Macros\Special Vests.hpp"
 
+#include "Macros\P1 Basic.hpp"
+#include "Macros\P1 MC.hpp"
+#include "Macros\P1 Cold Assault.hpp"
+#include "Macros\Commando.hpp"
+
 class CfgPatches {
 	class AUX_95th_Depricated {
         author="95th Aux Team";
@@ -15,6 +20,27 @@ class CfgPatches {
 		};
 		units[] = {};
 	};
+};
+
+class CfgGroups {
+    class West {
+		name="$STR_A3_CfgGroups_West0"; side=1;
+        class AUX_95th_Legion_Faction_Clones {
+            name = "[95th] Clones";
+            class AUX_95th_Legion_Characters_Category_Squad_Generic {
+            	name = "Infantry";
+				class AUX_95th_FireTeam {
+					side = 1;
+					faction = "AUX_95th_Legion_Faction_Clones";
+					name="Fire Team";
+					class Unit0 {side = 1; vehicle = "AUX_95th_Unit_P1_Basic_Sergeant"; rank = "SERGEANT"; position[] = {0,0,0};};
+					class Unit1 {side = 1; vehicle = "AUX_95th_Unit_P1_Basic_Medic"; rank = "PRIVATE"; position[] = {5,-5,0};};
+					class Unit2{side = 1; vehicle = "AUX_95th_Unit_P1_Basic_Trooper"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit3{side = 1; vehicle = "AUX_95th_Unit_P1_Basic_Trooper"; rank = "PRIVATE"; position[] = {10,-10,0};};
+				};
+            };
+        };
+    };
 };
 
 class CfgVehicles {
@@ -92,6 +118,60 @@ class CfgVehicles {
 
 	//###############################Depricated###############################
 	class 95th_Katarn_Backpack: AUX_95th_Backpack_Depricated {};
+
+	class JLTS_Clone_P2_DC15A;
+	class 3AS_Rep_ColdAssault_base_F;
+	class 3AS_Rep_Commando_F;
+
+	NEW_AUX_95TH_UNIT_COMMANDO(Trooper,AUX_95th_Helmet_Commando_Trooper,95th_Basic_Vest_Rifleman,Basic)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Trooper,AUX_95th_Helmet_P1_Basic_Trooper,95th_Basic_Vest_Rifleman,Basic)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Shiny,AUX_95th_Helmet_P1_Basic_Shiny,95th_Basic_Vest_Rifleman,Basic)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Medic,AUX_95th_Helmet_P1_Basic_Medic,95th_Basic_Vest_Rifleman,Basic)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Senior,AUX_95th_Helmet_P1_Basic_Senior,95th_Basic_Vest_Rifleman,Basic)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Veteran,AUX_95th_Helmet_P1_Basic_Veteran,AUX_95th_Vest_Kama_Trooper,Basic)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Sergeant,AUX_95th_Helmet_P1_Basic_Veteran,AUX_95th_Vest_Sergeant_Trooper,Basic)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Lieutenant,AUX_95th_Helmet_P1_Basic_Veteran,AUX_95th_Vest_Lieutenant_Trooper,Basic)
+
+	NEW_AUX_95TH_UNIT_P1_BASIC(Volt,AUX_95th_Helmet_P1_Basic_Volt,AUX_95th_Vest_Sergeant_Trooper,One)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Jinter,AUX_95th_Helmet_P1_Pilot_Jinter,95th_Basic_Vest_Rifleman,Fallen)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Bretek,AUX_95th_Helmet_P1_Basic_Bretek,AUX_95th_Vest_Sergeant_Trooper,Four)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Commie,AUX_95th_Helmet_P1_Basic_Commie,95th_ARC_Vest_Trooper,Zeus)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Smaug,AUX_95th_Helmet_P1_Basic_Smaug,95th_Basic_Vest_Rifleman,Two)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Smokery,AUX_95th_Helmet_P1_Basic_Smokery,AUX_95th_Vest_CIO_Trooper,Two)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Manila,AUX_95th_Helmet_P1_Basic_Manila,95th_ARC_Vest_Trooper,One)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Havoc,AUX_95th_Helmet_P1_Basic_Havoc,AUX_95th_Vest_Lieutenant_Trooper,Unassigned)
+	NEW_AUX_95TH_UNIT_P1_BASIC(MadHatter,AUX_95th_Helmet_P1_Basic_MadHatter,95th_Basic_Vest_Rifleman,Fallen)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Cheezy,AUX_95th_Helmet_ARF_Cheezy,95th_Basic_Vest_Rifleman,Fallen)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Revan,AUX_95th_Helmet_Engineer_Revan,95th_Basic_Vest_Rifleman,Five)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Sand,AUX_95th_Helmet_P1_Basic_Sand,AUX_95th_Vest_Sergeant_Trooper,One)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Kev,AUX_95th_Helmet_Engineer_Kev,95th_Basic_Vest_Rifleman,Two)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Sythe,AUX_95th_Helmet_ARF_Sythe,AUX_95th_Vest_Sergeant_Trooper,Fallen)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Splash,AUX_95th_Helmet_P1_Basic_Splash,AUX_95th_Vest_CIO_Trooper,Zeus)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Solvest,AUX_95th_Helmet_P1_Basic_Solvest,AUX_95th_Vest_CIO_Trooper,Zeus)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Dilanza,AUX_95th_Helmet_SpecOps_Dilanza,AUX_95th_Vest_Sergeant_Trooper,Seven)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Hypo,AUX_95th_Helmet_P1_Basic_Hypo,AUX_95th_Vest_Sergeant_Trooper,Seven)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Foley,AUX_95th_Helmet_P1_Basic_Foley,AUX_95th_Vest_Sergeant_Trooper,Fallen)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Stitch,AUX_95th_Helmet_P1_Basic_Stitch,AUX_95th_Vest_Sergeant_Trooper,Zero)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Prophet,AUX_95th_Helmet_P1_Basic_Prophet,AUX_95th_Vest_Sergeant_Trooper,Fallen)
+	NEW_AUX_95TH_UNIT_P1_BASIC(King,AUX_95th_Helmet_P1_Basic_King,AUX_95th_Basic_Vest_Rifleman,One)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Titan,AUX_95th_Helmet_P1_Basic_Titan,95th_Basic_Vest_Rifleman,Two)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Dracus,AUX_95th_Helmet_P1_Basic_Dracus,95th_Basic_Vest_AT,One)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Pendragon,AUX_95th_Helmet_P1_Basic_Pendragon,95th_Basic_Vest_Rifleman,Two)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Edge,AUX_95th_Helmet_P1_Pilot_Edge,95th_Basic_Vest_Rifleman,Six)
+	NEW_AUX_95TH_UNIT_P1_BASIC(Chimera,AUX_95th_Helmet_P1_Basic_Chimera,95th_Basic_Vest_Rifleman,One)
+
+	NEW_AUX_95TH_GENERIC_UNIT_P1_BASIC(Rifleman,AUX_95th_Helmet_P1_Basic_Trooper,95th_Basic_Vest_Rifleman)
+	NEW_AUX_95TH_GENERIC_UNIT_P1_BASIC(Pilot,AUX_95th_Helmet_P1_Pilot_Trooper,95th_Basic_Vest_Rifleman)
+	NEW_AUX_95TH_GENERIC_UNIT_P1_BASIC(ARF,AUX_95th_Helmet_ARF_Trooper,95th_Basic_Vest_Rifleman)
+	NEW_AUX_95TH_GENERIC_UNIT_P1_BASIC(Airborne,AUX_95th_Helmet_Airborne_Trooper,95th_Basic_Vest_Rifleman)
+	NEW_AUX_95TH_GENERIC_UNIT_P1_BASIC(SpecOps,AUX_95th_Helmet_SpecOps_Trooper,95th_Basic_Vest_Rifleman)
+	NEW_AUX_95TH_GENERIC_UNIT_P1_BASIC(Engineer,AUX_95th_Helmet_Engineer_Trooper,95th_Basic_Vest_Rifleman)
+	NEW_AUX_95TH_GENERIC_UNIT_P1_BASIC(Hazard,AUX_95th_Helmet_Hazard_Trooper,95th_Basic_Vest_Rifleman)
+
+	NEW_AUX_95TH_UNIT_P1_MC(Trooper,AUX_95th_Helmet_P1_Basic_Trooper,AUX_95th_Vest_CIO_Trooper,Basic)
+	NEW_AUX_95TH_UNIT_P1_MC(Turner,AUX_95th_Helmet_P1_Basic_Turner,AUX_95th_Vest_CIO_Turner,Zeus)
+
+	NEW_AUX_95TH_UNIT_P1_COLD_ASSAULT(Trooper,AUX_95th_Helmet_Cold_Assault_Trooper,95th_Basic_Vest_Rifleman,Basic)
 };
 
 class CfgWeapons {
@@ -153,4 +233,56 @@ class CfgWeapons {
 	NEW_95TH_VEST_SUSPENDER_TYPE(Crewman)};
 
 	NEW_95TH_VEST_ARC_TYPE(Trooper)};
+
+	class InventoryItem_Base_F;
+    class ItemCore;
+    class UniformItem;
+    class Uniform_Base: ItemCore { class ItemInfo; };
+    class U_I_CombatUniform;
+	class 3AS_U_Rep_ColdAssault_Armor;
+	class 3AS_U_Rep_Katarn_Armor;
+
+	NEW_AUX_95TH_UNIFORM_P1_COMMANDO(Trooper,Basic,Basic)
+
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Trooper,Basic,Basic)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Shiny,Basic,Basic)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Medic,Basic,Basic)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Senior,Basic,Basic)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Veteran,Basic,Basic)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Sergeant,Basic,Basic)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Lieutenant,Basic,Basic)
+
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Volt,One,1-1)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Jinter,Fallen,Fallen)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Bretek,Four,1-4)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Commie,Zeus,Zeus)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Smaug,Two,1-2)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Smokery,Two,1-2)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Manila,One,1-1)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Havoc,Fallen,Fallen)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(MadHatter,Fallen,Fallen)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Cheezy,Fallen,Fallen)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Revan,Five,5-0)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Sand,One,1-1)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Kev,Two,1-2)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Sythe,Fallen,Fallen)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Splash,Zeus,Zeus)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Solvest,Zeus,Zeus)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Dilanza,Seven,7-0)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Hypo,Seven,7-0)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Foley,Three,1-3)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Stitch,Zero,1-0)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Prophet,Fallen,Fallen)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(King,One,1-1)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Titan,Two,1-2)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Dracus,One,1-1)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Pendragon,Two,1-2)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Edge,Six,6-0)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Chimera,One,1-1)
+	NEW_AUX_95TH_UNIFORM_P1_BASIC(Styx,Zero,1-0)
+
+	NEW_AUX_95TH_UNIFORM_P1_COLD_ASSAULT(Trooper,Basic,Basic)
+
+	NEW_AUX_95TH_UNIFORM_P1_MC(Trooper,Basic,Basic)
+	NEW_AUX_95TH_UNIFORM_P1_MC(Turner,Zeus,Zeus)
 };
