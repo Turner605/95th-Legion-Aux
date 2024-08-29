@@ -10,7 +10,7 @@ class Phase {
 };
 
 class Type {
-	alwaysSelectable = 0;
+	alwaysSelectable = 1;
 	labels = "Type";
 	values[] = {"P1_Basic", "P1_ARF", "P1_Engineer", "P1_Pilot", "P1_SpecOps", "P1_Hazard", "P1_Cold_Assault", "P1_Commando", "P2_Airborne"};
 	class P1_Basic { label = "P1 Basic"; description = "Basic P1 Helmet"; };

@@ -10,7 +10,7 @@ class Phase {
 };
 
 class Type {
-	alwaysSelectable = 0;
+	alwaysSelectable = 1;
 	labels = "Type";
 	values[] = {"Basic", "MC", "ColdAssault", "Commando"};
 	class Basic { label = "P1 Basic"; description = "Basic Uniform"; };

@@ -7,5 +7,5 @@ class Player {
     class Ratler { label = "Ratler"; description = "Ratler`s"; };
     class York { label = "York"; description = "York`s"; };
     class Night { label = "Night"; description = "Night`s"; };
-    class Kaz { label = "Night"; description = "Kaz`s"; };
+    class Kaz { label = "Kaz"; description = "Kaz`s"; };
 };
