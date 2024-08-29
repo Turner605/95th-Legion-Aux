@@ -1,16 +1,16 @@
-#define COMPONENT players_stitch
-#define COMPONENT_BEAUTIFIED Players_Stitch
-#define PLAYER_NAME stitch
-#define PLAYER_NAME_BEAUTIFIED Stitch
+#define COMPONENT players_blue
+#define COMPONENT_BEAUTIFIED Players_Blue
+#define PLAYER_NAME blue
+#define PLAYER_NAME_BEAUTIFIED Blue
 
 //OPTIONS: Unassigned, Basic, Fallen, Zeus, PLATOON_SQUAD (EG One_Seven)
-#define SQUAD_KEY One_Zero
+#define SQUAD_KEY One_Two
 
 //OPTIONS: Unassigned, Basic, Fallen, Zeus, Ackley, Reek, .....
-#define SQUAD_NAME Anooba
+#define SQUAD_NAME Reek
 
 // HELMET OPTIONS 0 (False), 1 (True)
-#define HELMET_P1_BASIC 1
+#define HELMET_P1_BASIC 0
 #define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
@@ -34,15 +34,15 @@
 #define BACKPACK_RUCKSACK_HEAVY 1
 #define BACKPACK_RUCKSACK_MEDIC 1
 #define BACKPACK_RUCKSACK_ORDNANCE 1
-#define JETPACK_JT12_LIGHT 1
-#define JETPACK_JT12_MEDIC 1
+#define JETPACK_JT12_LIGHT 0
+#define JETPACK_JT12_MEDIC 0
 #define JETPACK_JT14_LIGHT 0
 #define BACKPACK_COMMANDO_HEAVY 0
 
 // VEST OPTIONS 0 (False), 1 (True)
 #define VEST_STANDARD_SET 0
 #define VEST_ARC_SET 0
-#define VEST_OFFICER_SET 1
+#define VEST_OFFICER_SET 0
 #define VEST_COMMANDO_SET 0
 
 // DO NOT EDIT
