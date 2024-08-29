@@ -144,16 +144,10 @@ class XtdGearModels {
 };
 
 class CfgVehicles {
-	class JLTS_Clone_belt_bag;
 	class JLTS_Clone_backpack;
-	class JLTS_Clone_backpack_RTO;
-	class JLTS_Clone_RTO_pack;
-	class JLTS_Clone_jumppack_JT12;
-	class JLTS_Clone_jumppack_mc;
-	class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Depricated : JLTS_Clone_backpack {
-		scope=0;
+		scope=2;
         author="95th Aux Team";
         displayName="DEPRICATED"; 
 	    maximumLoad=500;
