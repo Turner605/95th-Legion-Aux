@@ -1,4 +1,5 @@
 #include "Macros\Backpacks.hpp"
+#include "Macros\Officers.hpp"
 
 class CfgPatches {
 	class AUX_95th_Depricated {
@@ -88,4 +89,44 @@ class CfgVehicles {
 
 	//###############################Depricated###############################
 	class 95th_Katarn_Backpack: AUX_95th_Backpack_Depricated {};
+};
+
+class CfgWeapons {
+	class JLTS_CloneVestHolster;
+	class JLTS_CloneVestAirborne;
+	class JLTS_CloneVestRecon;
+	class JLTS_CloneVestSuspender;
+	class JLTS_CloneVestReconOfficer;
+	class JLTS_CloneVestOfficer;
+	class JLTS_CloneVestOfficer2;
+	class JLTS_CloneVestARC;
+	class JLTS_CloneVestKama;
+
+	class VestItem;
+	class ItemInfo;
+
+	class AUX_95th_Vest_Depricated : JLTS_CloneVestKama {
+		scope=2;
+        author="95th Aux Team";
+        displayName="DEPRICATED"; 
+	    maximumLoad=500;
+        hiddenSelectionsTextures[]={
+            "\z\AUX_95th\addons\players\shared\data\MissingTexture.paa"
+        };
+    };
+
+	NEW_AUX_95TH_OFFICER_VEST_SET(Trooper)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Turner)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Outcast)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Havoc)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Hypo)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Bretek)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Taun)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Volt)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Stitch)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Lisek)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Styx)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Sand)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Smokery)
+	NEW_AUX_95TH_OFFICER_VEST_SET(Splash)
 };
