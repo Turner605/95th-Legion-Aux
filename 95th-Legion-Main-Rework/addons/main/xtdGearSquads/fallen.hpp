@@ -1,12 +1,13 @@
 class Player {
     alwaysSelectable = 0;
     labels = "Player";
-    values[] = {"Ghost", "Som", "Jinter", "MadHatter", "Sythe", "Prophet", "Cheezy"};
-    class Ghost { label = "Ghost"; description = "Ghost`s Helmet"; };
-    class Som { label = "Som"; description = "Som`s Helmet"; };
-    class Jinter { label = "Jinter"; description = "Jinter`s Helmet"; };
-    class MadHatter { label = "Mad Hatter"; description = "Mad Hatter`s Helmet"; };
-    class Sythe { label = "Sythe"; description = "Sythe`s Helmet"; };
-    class Prophet { label = "Prophet"; description = "Prophet`s Helmet"; };
-    class Cheezy { label = "Cheezy"; description = "Cheezy`s Helmet"; };
+    values[] = {"Ghost", "Som", "Jinter", "MadHatter", "Sythe", "Prophet", "Cheezy", "Foley"};
+    class Ghost { label = "Ghost"; description = "Ghost`s"; };
+    class Som { label = "Som"; description = "Som`s"; };
+    class Jinter { label = "Jinter"; description = "Jinter`s"; };
+    class MadHatter { label = "Mad Hatter"; description = "Mad Hatter`s"; };
+    class Sythe { label = "Sythe"; description = "Sythe`s"; };
+    class Prophet { label = "Prophet"; description = "Prophet`s"; };
+    class Cheezy { label = "Cheezy"; description = "Cheezy`s"; };
+    class Foley { label = "Foley"; description = "Foley`s"; };
 };
