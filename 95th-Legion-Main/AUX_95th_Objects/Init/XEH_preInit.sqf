@@ -46,7 +46,8 @@ private _arsenalVests = [];
 
 
 //-----------------------------# Backpacks #-----------------------------------
-private _arsenalBackpacks = [];
+private _arsenalBackpacks = ["AUX_95th_BX42_Backpack"];
+
 {_arsenalBackpacks pushBack "AUX_95th_Backpack_Belt_Light_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {_arsenalBackpacks pushBack "AUX_95th_Backpack_Belt_Light_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {_arsenalBackpacks pushBack "AUX_95th_Backpack_Belt_Light_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
