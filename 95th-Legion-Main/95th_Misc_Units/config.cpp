@@ -7,7 +7,7 @@ class CfgPatches  {
         requiredAddons[] = {
 			"A3_Characters_F", 
 			"JLTS_characters_CloneArmor",
-			"AUX_95th_Characters"
+			"AUX_95th_players_shared"
 		};
 		units[] = {
 			"AUX_95th_Jedi_Dave",
