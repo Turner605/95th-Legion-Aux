@@ -228,10 +228,10 @@ class CfgVehicles {
 		};
 		headgearList[] = {
 			"AUX_95th_Helmet_P1_Basic_Trooper", 0.9,
-			"AUX_95th_Helmet_Airborne_Trooper", 0,
-			"AUX_95th_Helmet_ARF_Trooper", 0.6,
-			"AUX_95th_Helmet_Engineer_Trooper", 0.6,
-			"AUX_95th_Helmet_SpecOps_Trooper", 0.6
+			"AUX_95th_Helmet_P2_Airborne_Trooper", 0,
+			"AUX_95th_Helmet_P1_ARF_Trooper", 0.6,
+			"AUX_95th_Helmet_P1_Engineer_Trooper", 0.6,
+			"AUX_95th_Helmet_P1_SpecOps_Trooper", 0.6
 		};
 		class EventHandlers {
 			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};

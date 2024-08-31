@@ -1,88 +1,87 @@
-//-----------------------------# Customs List #-----------------------------------
-private _customHelmetList = [
-	"Trooper","Shiny", "Medic", "Senior", "Veteran", "Turner","Splash",
-	"Medic", "Senior", "Veteran", "Havoc","Sythe", "Cheezy", "Volt", "Sand", "Smaug", "Manila",
-	"Osprey", "Chimera", "Hypo", "Neary", "Smokery", "Foley", "Prophet", "Mobius", "Taylor",
-	"Stitch", "Bretek", "Dilanza", "Third", "MadHatter", "Ratler", "Kong", "Revan", "Hazard",
-	"Outcast", "Jinter", "Biedronka", "Som", "Ghost", "Solvest", "Commie", "Lieutenant", "Captain",
-	"Sergeant", "Kev", "Titan", "Taun", "Edge", "King", "York", "Styx", "Pendragon", "Lisek", "Mermaid",
-	"Night", "Neron", "Dracus", "Axe", "Boom", "Galvin", "Gear", "Kaz", "Gum"
-];
-
-private _customUniformList = [
-	"Trooper", "Shiny", "Medic", "Senior", "Veteran", "Senior", "Sergeant", "Lieutenant",
-	"Turner", "Splash", "Commie", "Solvest", "Smokery", "Kev", "Smaug", "Revan", "Volt",
-	"Sand", "Manila", "Jinter", "Havoc", "Sythe", "Cheezy", "Bretek", "MadHatter", "Dilanza",
-	"Hypo", "Foley", "Stitch", "Prophet", "King", "Titan", "Dracus", "Pendragon", "Edge", "Styx"
-];
-
 //-----------------------------# Helmets #-----------------------------------
 private _arsenalHelmets = [];
-{_arsenalHelmets pushBack "AUX_95th_Helmet_Airborne_"+_x; } forEach _customHelmetList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_ARF_"+_x; } forEach _customHelmetList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_Cold_Assault_"+_x; } forEach _customHelmetList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_Commando_"+_x; } forEach _customHelmetList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_Engineer_"+_x; } forEach _customHelmetList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_Hazard_"+_x; } forEach _customHelmetList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Basic_"+_x; } forEach _customHelmetList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Pilot_"+_x; } forEach _customHelmetList;
-{_arsenalHelmets pushBack "AUX_95th_Helmet_SpecOps_"+_x; } forEach _customHelmetList;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P2_Airborne_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_ARF_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Cold_Assault_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Commando_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Engineer_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Hazard_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Basic_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_Pilot_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalHelmets pushBack "AUX_95th_Helmet_P1_SpecOps_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 
 //-----------------------------# Uniforms #-----------------------------------
 private _arsenalUniforms = [];
-{_arsenalUniforms pushBack "AUX_95th_Uniform_P1_Basic_"+_x; } forEach _customUniformList;
-{_arsenalUniforms pushBack "AUX_95th_Uniform_P1_Cold_Assault_"+_x; } forEach _customUniformList;
-{_arsenalUniforms pushBack "AUX_95th_Uniform_P1_MC_"+_x; } forEach _customUniformList;
-{_arsenalUniforms pushBack "AUX_95th_Uniform_Commando_"+_x; } forEach _customUniformList;
+{_arsenalUniforms pushBack "AUX_95th_Uniform_P1_Basic_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalUniforms pushBack "AUX_95th_Uniform_P1_Cold_Assault_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalUniforms pushBack "AUX_95th_Uniform_P1_MC_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalUniforms pushBack "AUX_95th_Uniform_P1_Commando_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 
 //-----------------------------# Vests #-----------------------------------
-private _arsenalVests = [
-	"95th_Katarn_Vest_Demo","95th_Katarn_Vest_Tech",
+private _arsenalVests = [];
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Rifleman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Pilot_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Jet_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Grenadier_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Medic_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_AT_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Heavy_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Marksman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Riot_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Flame_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Stealth_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Support_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Tech_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Engineer_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Crewman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_ARC_Rifleman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Commando_Engineer_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Commando_Tech_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Commando_Marksman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Commando_Support_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Sergeant_Rifleman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Lieutenant_Rifleman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_CIO_Rifleman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Kama_Rifleman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 
-	"95th_Basic_Vest_Rifleman","95th_Basic_Vest_Crewman","95th_Basic_Vest_Engineer","95th_Basic_Vest_Tech","95th_Basic_Vest_Support","95th_Basic_Vest_Stealth",
-	"95th_Basic_Vest_Flame","95th_Basic_Vest_Riot","95th_Basic_Vest_Marksman","95th_Basic_Vest_Heavy","95th_Basic_Vest_AT",
-	"95th_Basic_Vest_Medic","95th_Basic_Vest_Jet","95th_Basic_Vest_Grenadier","95th_Basic_Vest_Pilot","95th_ARC_Vest_Trooper",
-
-	"AUX_95th_Vest_Sergeant_Trooper", "AUX_95th_Vest_Lieutenant_Trooper", "AUX_95th_Vest_CIO_Trooper", "AUX_95th_Vest_Kama_Trooper",
-	"AUX_95th_Vest_Sergeant_Hypo", "AUX_95th_Vest_Lieutenant_Hypo", "AUX_95th_Vest_CIO_Hypo", "AUX_95th_Vest_Kama_Hypo",
-	"AUX_95th_Vest_Sergeant_Volt", "AUX_95th_Vest_Lieutenant_Volt", "AUX_95th_Vest_CIO_Volt", "AUX_95th_Vest_Kama_Volt",
-	"AUX_95th_Vest_Sergeant_Bretek", "AUX_95th_Vest_Lieutenant_Bretek", "AUX_95th_Vest_CIO_Bretek", "AUX_95th_Vest_Kama_Bretek",
-	"AUX_95th_Vest_Sergeant_Havoc", "AUX_95th_Vest_Lieutenant_Havoc", "AUX_95th_Vest_CIO_Havoc", "AUX_95th_Vest_Kama_Havoc",
-	"AUX_95th_Vest_Sergeant_Outcast", "AUX_95th_Vest_Lieutenant_Outcast", "AUX_95th_Vest_CIO_Outcast", "AUX_95th_Vest_Kama_Outcast",
-	"AUX_95th_Vest_Sergeant_Turner", "AUX_95th_Vest_Lieutenant_Turner", "AUX_95th_Vest_CIO_Turner", "AUX_95th_Vest_Kama_Turner",
-	"AUX_95th_Vest_Kama_Taun",
-	"AUX_95th_Vest_Kama_Sand", "AUX_95th_Vest_Sergeant_Sand",
-	"AUX_95th_Vest_Kama_Lisek",
-	"AUX_95th_Vest_Kama_Stitch", "AUX_95th_Vest_Sergeant_Stitch",
-	"AUX_95th_Vest_Kama_Styx",
-	"AUX_95th_Vest_Kama_Smokery", "AUX_95th_Vest_Sergeant_Smokery",
-	"AUX_95th_Vest_Kama_Splash"
-];
 
 //-----------------------------# Backpacks #-----------------------------------
-private _arsenalBackpacks = [
-	"AUX_95th_Bag_Backpack_Visible_Trooper", "AUX_95th_Bag_Backpack_Invisible_Trooper",
- 	"AUX_95th_Backpack_Visible_Heavy", "AUX_95th_Backpack_Invisible_Heavy",
-	"AUX_95th_Backpack_Visible_Medic", "AUX_95th_Backpack_Invisible_Medic",
-	"AUX_95th_Backpack_Visible_Ordnance", "AUX_95th_Backpack_Invisible_Ordnance",
-	"AUX_95th_RTO_Backpack_Visible_Medic", "AUX_95th_RTO_Backpack_Invisible_Medic",
-	"AUX_95th_RTO_Backpack_Visible_RTO", "AUX_95th_RTO_Backpack_Invisible_RTO",
-	"AUX_95th_RTO_Backpack_Visible_Mini_RTO", "AUX_95th_RTO_Backpack_Visible_Mini_Turner",
-	"AUX_95th_JT12_Jetpack_Trooper", "AUX_95th_JT12_Jetpack_Medic",
-	"AUX_95th_MC_Jetpack_Trooper", "AUX_95th_MC_Jetpack_Turner",
-	"95th_Katarn_Backpack","AUX_95th_BX42_Backpack",
-	"3AS_Republic_HR_Bag","3AS_Republic_HR_Shield_Bag","JLTS_UST_turret_GAR_backpack","JLTS_portable_shield_gar_backpack", "ACE_TacticalLadder_Pack",
-	"AUX_95th_Backpack_Visible_Stitch", "AUX_95th_RTO_Backpack_Visible_Stitch", "AUX_95th_JT12_Jetpack_Stitch",
-	"AUX_95th_Backpack_Visible_Gridlock", "AUX_95th_RTO_Backpack_Visible_Gridlock",
-	"AUX_95th_Backpack_Visible_Pendragon", "AUX_95th_RTO_Backpack_Visible_Pendragon",
-	"AUX_95th_Backpack_Visible_Titan", "AUX_95th_RTO_Backpack_Visible_Titan",
-	"AUX_95th_Backpack_Visible_Bretek", "AUX_95th_RTO_Backpack_Visible_Bretek",
-	"AUX_95th_Backpack_Visible_Smaug", "AUX_95th_RTO_Backpack_Visible_Smaug",
-	"AUX_95th_Backpack_Visible_Gear", "AUX_95th_RTO_Backpack_Visible_Gear",
-	"AUX_95th_Backpack_Visible_Galvin", "AUX_95th_RTO_Backpack_Visible_Galvin",
-	"AUX_95th_Backpack_Visible_Kev", "AUX_95th_RTO_Backpack_Visible_Kev",
-	"AUX_95th_Backpack_Visible_Blue", "AUX_95th_RTO_Backpack_Visible_Blue"
-];
+private _arsenalBackpacks = [];
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Belt_Light_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Belt_Light_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Belt_Light_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Belt_Light_RTO_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Light_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Light_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Light_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Light_RTO_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Heavy_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Heavy_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Heavy_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Heavy_RTO_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Medic_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Medic_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Medic_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Medic_RTO_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Ordnance_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Ordnance_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Ordnance_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Rucksack_Ordnance_RTO_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Mini_Light_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Mini_Light_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Mini_Light_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Mini_Light_RTO_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Micro_Light_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Micro_Light_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Micro_Light_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Micro_Light_RTO_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_JT12_Light_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_JT12_Light_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_JT12_Medic_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_JT12_Medic_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_JT14_Light_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_JT14_Light_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalBackpacks pushBack "AUX_95th_Backpack_Commando_Heavy_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 
 //-----------------------------# Weapons #-----------------------------------
 private _arsenalWeapons = [

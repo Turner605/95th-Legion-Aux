@@ -69,7 +69,7 @@ class 3AS_U_Rep_Katarn_Armor;
 #endif
 
 #if UNIFORM_P1_COMMANDO == 1
-    class AUX_95th_Uniform_Commando_##PLAYER_NAME## : 3AS_U_Rep_Katarn_Armor {
+    class AUX_95th_Uniform_P1_Commando_##PLAYER_NAME## : 3AS_U_Rep_Katarn_Armor {
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
