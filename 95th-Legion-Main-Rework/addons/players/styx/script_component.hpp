@@ -10,7 +10,7 @@
 #define SQUAD_NAME Anooba
 
 // HELMET OPTIONS 0 (False), 1 (True)
-#define HELMET_P1_BASIC 0
+#define HELMET_P1_BASIC 1
 #define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
@@ -51,4 +51,4 @@
 #include "\z\AUX_95th\addons\main\script_macros.hpp"
 
 //TODO:
-// Vests need replacing really 
+// Vests need replacing really
