@@ -7,19 +7,19 @@ class 3AS_U_Rep_Katarn_Armor;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
-        displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        displayName=QUOTE([95th] SQUAD_NAME Uniforms); 
         class ItemInfo: UniformItem {
-            uniformClass=QUOTE(AUX_95th_Unit_P1_Basic_##PLAYER_NAME);
+            uniformClass=QUOTE(DOUBLES(AUX_95th_Unit_P1_Basic,PLAYER_NAME));
             uniformModel="-";
             containerClass="Supply150";
             mass=40;
         };
         class XtdGearInfo {
-            model = QUOTE(AUX_95th_Uniform_Squad_##SQUAD_KEY##);
+            model = QUOTE(DOUBLES(AUX_95th_Uniform_Squad,SQUAD_KEY));
             Phase = "P1";
             Type = QUOTE(Basic);
-            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
         };
     };
 #endif
@@ -29,19 +29,19 @@ class 3AS_U_Rep_Katarn_Armor;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
-        displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        displayName=QUOTE([95th] SQUAD_NAME Uniforms); 
         class ItemInfo: UniformItem {
-            uniformClass=QUOTE(AUX_95th_Unit_P1_MC_##PLAYER_NAME);
+            uniformClass=QUOTE(DOUBLES(AUX_95th_Unit_P1_MC,PLAYER_NAME));
             uniformModel="-";
             containerClass="Supply150";
             mass=40;
         };
         class XtdGearInfo {
-            model = QUOTE(AUX_95th_Uniform_Squad_##SQUAD_KEY##);
+            model = QUOTE(DOUBLES(AUX_95th_Uniform_Squad,SQUAD_KEY));
             Phase = "P1";
             Type = QUOTE(MC);
-            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
         };
     };
 #endif
@@ -51,19 +51,19 @@ class 3AS_U_Rep_Katarn_Armor;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
-        displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        displayName=QUOTE([95th] SQUAD_NAME Uniforms); 
         class ItemInfo: UniformItem {
-            uniformClass=QUOTE(AUX_95th_Unit_P1_Cold_Assault_##PLAYER_NAME);
+            uniformClass=QUOTE(DOUBLES(AUX_95th_Unit_P1_Cold_Assault,PLAYER_NAME));
             uniformModel="-";
             containerClass="Supply150";
             mass=40;
         };
         class XtdGearInfo {
-            model = QUOTE(AUX_95th_Uniform_Squad_##SQUAD_KEY##);
+            model = QUOTE(DOUBLES(AUX_95th_Uniform_Squad,SQUAD_KEY));
             Phase = "P1";
             Type = QUOTE(ColdAssault);
-            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
         };
     };
 #endif
@@ -73,19 +73,19 @@ class 3AS_U_Rep_Katarn_Armor;
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
-        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
-        displayName=QUOTE([95th] ##SQUAD_NAME## Uniforms); 
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        displayName=QUOTE([95th] SQUAD_NAME Uniforms); 
         class ItemInfo: UniformItem {
-            uniformClass=QUOTE(AUX_95th_Unit_Commando_##PLAYER_NAME);
+            uniformClass=QUOTE(DOUBLES(AUX_95th_Unit_Commando,PLAYER_NAME));
             uniformModel="-";
             containerClass="Supply150";
             mass=40;
         };
         class XtdGearInfo {
-            model = QUOTE(AUX_95th_Uniform_Squad_##SQUAD_KEY##);
+            model = QUOTE(DOUBLES(AUX_95th_Uniform_Squad,SQUAD_KEY));
             Phase = "P1";
             Type = QUOTE(Commando);
-            Player = QUOTE(##PLAYER_NAME_BEAUTIFIED##);
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
         };
     };
 #endif
