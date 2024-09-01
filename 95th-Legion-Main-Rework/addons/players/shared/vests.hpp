@@ -18,13 +18,13 @@ class VestItem;
 class ItemInfo;
 
 #if VEST_STANDARD_SET == 1
-    class AUX_95th_Vest_Standard_Rifleman_##PLAYER_NAME## : JLTS_CloneVestHolster {
+    class AUX_95th_Vest_Standard_Rifleman_##PLAYER_NAME : JLTS_CloneVestHolster {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\rifleman.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\rifleman.paa) 
         };
         class ItemInfo: VestItem {
             uniformModel="\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
@@ -46,13 +46,13 @@ class ItemInfo;
         };
     };
 
-    class AUX_95th_Vest_Standard_Pilot_##PLAYER_NAME## : JLTS_CloneVestHolster {
+    class AUX_95th_Vest_Standard_Pilot_##PLAYER_NAME : JLTS_CloneVestHolster {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\pilot.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\pilot.paa) 
         };
         class ItemInfo: VestItem {
             uniformModel="\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
@@ -74,13 +74,13 @@ class ItemInfo;
         };
     };
 
-    class AUX_95th_Vest_Standard_Jet_##PLAYER_NAME## : JLTS_CloneVestHolster {
+    class AUX_95th_Vest_Standard_Jet_##PLAYER_NAME : JLTS_CloneVestHolster {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\jet.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\jet.paa) 
         };
         class ItemInfo: VestItem {
             uniformModel="\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
@@ -102,13 +102,13 @@ class ItemInfo;
         };
     };
 
-    class AUX_95th_Vest_Standard_Grenadier_##PLAYER_NAME## : JLTS_CloneVestHolster {
+    class AUX_95th_Vest_Standard_Grenadier_##PLAYER_NAME : JLTS_CloneVestHolster {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\grenadier.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\grenadier.paa) 
         };
         class ItemInfo: VestItem {
             uniformModel="\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
@@ -130,14 +130,14 @@ class ItemInfo;
         };
     };
 
-    class AUX_95th_Vest_Standard_Medic_##PLAYER_NAME## : JLTS_CloneVestAirborne {
+    class AUX_95th_Vest_Standard_Medic_##PLAYER_NAME : JLTS_CloneVestAirborne {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             "",
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\medic.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\medic.paa) 
         };
         class ItemInfo: VestItem {
             uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
@@ -159,14 +159,14 @@ class ItemInfo;
         };
     };
 
-    class AUX_95th_Vest_Standard_AT_##PLAYER_NAME## : JLTS_CloneVestAirborne {
+    class AUX_95th_Vest_Standard_AT_##PLAYER_NAME : JLTS_CloneVestAirborne {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             "",
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\at.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\at.paa) 
         };
         class ItemInfo: VestItem {
             uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
@@ -188,14 +188,14 @@ class ItemInfo;
         };
     };
     
-    class AUX_95th_Vest_Standard_Heavy_##PLAYER_NAME## : JLTS_CloneVestAirborne {
+    class AUX_95th_Vest_Standard_Heavy_##PLAYER_NAME : JLTS_CloneVestAirborne {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
             "",
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\heavy.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\heavy.paa) 
         };
         class ItemInfo: VestItem {
             uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
@@ -217,13 +217,13 @@ class ItemInfo;
         };
     };
     
-    class AUX_95th_Vest_Standard_Marksman_##PLAYER_NAME## : JLTS_CloneVestRecon {
+    class AUX_95th_Vest_Standard_Marksman_##PLAYER_NAME : JLTS_CloneVestRecon {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\marksman.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\marksman.paa) 
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
@@ -245,13 +245,13 @@ class ItemInfo;
         };
     };
     
-    class AUX_95th_Vest_Standard_Riot_##PLAYER_NAME## : JLTS_CloneVestRecon {
+    class AUX_95th_Vest_Standard_Riot_##PLAYER_NAME : JLTS_CloneVestRecon {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\riot.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\riot.paa) 
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
@@ -273,13 +273,13 @@ class ItemInfo;
         };
     };
     
-    class AUX_95th_Vest_Standard_Flame_##PLAYER_NAME## : JLTS_CloneVestRecon {
+    class AUX_95th_Vest_Standard_Flame_##PLAYER_NAME : JLTS_CloneVestRecon {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\flame.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\flame.paa) 
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
@@ -301,13 +301,13 @@ class ItemInfo;
         };
     };
     
-    class AUX_95th_Vest_Standard_Stealth_##PLAYER_NAME## : JLTS_CloneVestRecon {
+    class AUX_95th_Vest_Standard_Stealth_##PLAYER_NAME : JLTS_CloneVestRecon {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\stealth.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\stealth.paa) 
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
@@ -329,13 +329,13 @@ class ItemInfo;
         };
     };
     
-    class AUX_95th_Vest_Standard_Support_##PLAYER_NAME## : JLTS_CloneVestRecon {
+    class AUX_95th_Vest_Standard_Support_##PLAYER_NAME : JLTS_CloneVestRecon {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\support.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\support.paa) 
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
@@ -357,13 +357,13 @@ class ItemInfo;
         };
     };
 
-    class AUX_95th_Vest_Standard_Tech_##PLAYER_NAME## : JLTS_CloneVestRecon {
+    class AUX_95th_Vest_Standard_Tech_##PLAYER_NAME : JLTS_CloneVestRecon {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\tech.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\tech.paa) 
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
@@ -385,13 +385,13 @@ class ItemInfo;
         };
     };
     
-    class AUX_95th_Vest_Standard_Engineer_##PLAYER_NAME## : JLTS_CloneVestSuspender {
+    class AUX_95th_Vest_Standard_Engineer_##PLAYER_NAME : JLTS_CloneVestSuspender {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\engineer.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\engineer.paa) 
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestSuspender.p3d";
@@ -413,13 +413,13 @@ class ItemInfo;
         };
     };
     
-    class AUX_95th_Vest_Standard_Crewman_##PLAYER_NAME## : JLTS_CloneVestSuspender {
+    class AUX_95th_Vest_Standard_Crewman_##PLAYER_NAME : JLTS_CloneVestSuspender {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\standard\crewman.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\crewman.paa) 
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestSuspender.p3d";
@@ -443,13 +443,13 @@ class ItemInfo;
 #endif
 
 #if VEST_ARC_SET == 1
-    class AUX_95th_Vest_ARC_Rifleman_##PLAYER_NAME## : JLTS_CloneVestARC {
+    class AUX_95th_Vest_ARC_Rifleman_##PLAYER_NAME : JLTS_CloneVestARC {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\arc.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\arc.paa) 
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
@@ -473,12 +473,12 @@ class ItemInfo;
 #endif
 
 #if VEST_COMMANDO_SET == 1
-	class AUX_95th_Vest_Commando_Engineer_##PLAYER_NAME## : 3AS_V_Katarn_Vest_Demo { 
+	class AUX_95th_Vest_Commando_Engineer_##PLAYER_NAME : 3AS_V_Katarn_Vest_Demo { 
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\commando\engineer.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\commando\engineer.paa) 
         };
         class XtdGearInfo {
             model = QUOTE(AUX_95th_Vests_Squad_##SQUAD_KEY##);
@@ -489,12 +489,12 @@ class ItemInfo;
         };
 	};
 
-	class AUX_95th_Vest_Commando_Tech_##PLAYER_NAME## : 3AS_V_Katarn_Vest_Tech { 
+	class AUX_95th_Vest_Commando_Tech_##PLAYER_NAME : 3AS_V_Katarn_Vest_Tech { 
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\commando\tech.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\commando\tech.paa) 
         };
         class XtdGearInfo {
             model = QUOTE(AUX_95th_Vests_Squad_##SQUAD_KEY##);
@@ -505,12 +505,12 @@ class ItemInfo;
         };
 	};
 
-	class AUX_95th_Vest_Commando_Marksman_##PLAYER_NAME## : 3AS_Katarn_Vest_Sniper { 
+	class AUX_95th_Vest_Commando_Marksman_##PLAYER_NAME : 3AS_Katarn_Vest_Sniper { 
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\commando\marksman.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\commando\marksman.paa) 
         };
         class XtdGearInfo {
             model = QUOTE(AUX_95th_Vests_Squad_##SQUAD_KEY##);
@@ -521,12 +521,12 @@ class ItemInfo;
         };
 	};
 
-	class AUX_95th_Vest_Commando_Support_##PLAYER_NAME## : 3AS_Katarn_Vest_Team_Leader { 
+	class AUX_95th_Vest_Commando_Support_##PLAYER_NAME : 3AS_Katarn_Vest_Team_Leader { 
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\commando\support.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\commando\support.paa) 
         };
         class XtdGearInfo {
             model = QUOTE(AUX_95th_Vests_Squad_##SQUAD_KEY##);
@@ -539,14 +539,14 @@ class ItemInfo;
 #endif
 
 #if VEST_OFFICER_SET == 1
-    class AUX_95th_Vest_Sergeant_Rifleman_##PLAYER_NAME## : JLTS_CloneVestReconOfficer {
+    class AUX_95th_Vest_Sergeant_Rifleman_##PLAYER_NAME : JLTS_CloneVestReconOfficer {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\officer\officer.paa), 
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\officer\sergeant_top.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\officer\officer.paa), 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\officer\sergeant_top.paa) 
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
@@ -568,13 +568,13 @@ class ItemInfo;
         };
     };
 
-    class AUX_95th_Vest_Lieutenant_Rifleman_##PLAYER_NAME## : JLTS_CloneVestOfficer {
+    class AUX_95th_Vest_Lieutenant_Rifleman_##PLAYER_NAME : JLTS_CloneVestOfficer {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\officer\officer.paa)
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\officer\officer.paa)
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
@@ -596,13 +596,13 @@ class ItemInfo;
         };
     };
 
-    class AUX_95th_Vest_CIO_Rifleman_##PLAYER_NAME## : JLTS_CloneVestOfficer2 {
+    class AUX_95th_Vest_CIO_Rifleman_##PLAYER_NAME : JLTS_CloneVestOfficer2 {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\officer\officer.paa)
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\officer\officer.paa)
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
@@ -624,13 +624,13 @@ class ItemInfo;
         };
     };
 
-    class AUX_95th_Vest_Kama_Rifleman_##PLAYER_NAME## : JLTS_CloneVestKama {
+    class AUX_95th_Vest_Kama_Rifleman_##PLAYER_NAME : JLTS_CloneVestKama {
         author="95th Aux Team";
         displayName=QUOTE([95th] ##SQUAD_NAME## Vests); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\##SQUAD_KEY##.paa);
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\##PLAYER_NAME##\data\vests\officer\officer.paa)
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\officer\officer.paa)
         };
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
