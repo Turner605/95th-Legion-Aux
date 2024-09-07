@@ -1,12 +1,15 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Vehicles_YWing {
-		author = "95th Legion";
-		name = "AUX 95th Vehicles Y-Wing";
-		requiredAddons[] = {"3AS_BTLB_Bomber", "AUX_95th_Vehicles_Shared"};
-		weapons[] = {};
-		units[] = {"AUX_95th_YWing"};
-		magazines[] = {};
-	};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {"AUX_95th_YWing"};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_vehicles_shared", "3AS_BTLB_Bomber"};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class SensorTemplatePassiveRadar;
@@ -84,8 +87,8 @@ class CfgVehicles {
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Air_Fighters";
 		displayName = "BTL-Y Wing";
 		hiddenselectionstextures[] = {
-			"\AUX_95th_Vehicles_YWing\Data\Default\Chasis.paa",
-			"\AUX_95th_Vehicles_YWing\Data\Default\Detail.paa",
+			"\z\AUX_95th\addons\vehicles\ywing\data\Default\Chasis.paa",
+			"\z\AUX_95th\addons\vehicles\ywing\data\Default\Detail.paa",
 			"3as\3AS_btlb\data\interior_co.paa"
 		};
 		availableForSupportTypes[] = {"CAS_Bombing"};
@@ -93,7 +96,7 @@ class CfgVehicles {
 			class Default {
 				displayName = "Default";
 				author = "95th Aux Team";
-				textures[] = {"\AUX_95th_Vehicles_YWing\Data\Default\Chasis.paa","\AUX_95th_Vehicles_YWing\Data\Default\Detail.paa","3as\3AS_btlb\data\interior_co.paa"};
+				textures[] = {"\z\AUX_95th\addons\vehicles\ywing\data\Default\Chasis.paa","\z\AUX_95th\addons\vehicles\ywing\data\Default\Detail.paa","3as\3AS_btlb\data\interior_co.paa"};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
 		};
@@ -103,3 +106,6 @@ class CfgVehicles {
 class Extended_init_EventHandlers {
 	class AUX_95th_YWing {class AUX_95th_YWing_Init {init = "(_this) spawn AUX_95th_fnc_handleAirVehicleInit;";};};
 };
+
+
+#include "CfgEventHandlers.hpp"
