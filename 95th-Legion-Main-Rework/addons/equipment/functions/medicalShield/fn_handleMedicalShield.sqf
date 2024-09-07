@@ -17,7 +17,7 @@ playSound3D ["3AS\3AS_Shield\shield_grenade\enable.ogg", _shieldGenDep, false, g
 // Maybe kick off the different treatment options here?
 // So that bandages can be applied and then the list updated on seperate loops
 
-[_shieldGenDep, _unit] spawn NFA_fnc_handleMedicalShieldBandages;
+[_shieldGenDep, _unit] spawn AUX_95th_fnc_handleMedicalShieldBandages;
 
 while {alive _shieldGenDep} do {
 	private _playersToTreat = [];

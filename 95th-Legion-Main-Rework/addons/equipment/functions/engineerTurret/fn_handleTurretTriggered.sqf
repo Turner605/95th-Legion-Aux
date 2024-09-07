@@ -7,7 +7,7 @@ params ["_unit"];
 //TODO:
 // - Replace with cooldown timer variable
 
-if(!([_unit] call NFA_fnc_hasTurretItem)) exitWith {};
+if(!([_unit] call AUX_95th_fnc_hasTurretItem)) exitWith {};
 
 if(_unit getVariable "NFL_Turret_Is_In_Progress") exitWith {
 	hint "Recalling Turret";
@@ -31,7 +31,7 @@ private _turretName = (_unit getVariable "NFL_Turret_Selected");
 _unit setVariable ["NFL_Turret_Is_In_Progress", true, true];
 
 switch (_turretName) do {
-	case "Normal": {[_unit] call NFA_fnc_deployNormalTurret};
-	case "Auto": {[_unit] call NFA_fnc_deployAutoTurret};
+	case "Normal": {[_unit] call AUX_95th_fnc_deployNormalTurret};
+	case "Auto": {[_unit] call AUX_95th_fnc_deployAutoTurret};
 	default {hint "No Option Selected";};
 };

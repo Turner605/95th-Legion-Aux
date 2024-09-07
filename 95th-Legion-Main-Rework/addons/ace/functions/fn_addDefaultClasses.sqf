@@ -83,7 +83,7 @@ private _roleArray = [
 	[
 		"[95th] 03 - Heavy (Z6)",
 		_z6, [], _dc17s,
-		_riflemanUniform, _baseUniformContent + [["NFL_Disc_Shield",1]],
+		_riflemanUniform, _baseUniformContent + [["AUX_95th_Disc_Shield",1]],
 		"AUX_95th_Vest_Standard_Heavy_Trooper", _z6_Ammo,
 		_heavyBackpack, _baseBackpackContent + [["ACE_Tripod",1]],
 		"AUX_95th_Helmet_P1_Basic_Trooper"
@@ -93,13 +93,13 @@ private _roleArray = [
 		_dc15a, [], _dc17s,
 		_riflemanUniform, _baseUniformContent + [["ACE_Fortify",1],["ACE_DefusalKit",1],["ACE_wirecutter",1],["ACE_Clacker",1]],
 		"AUX_95th_Vest_Standard_Engineer_Trooper", _dc15a_Ammo,
-		_ordnanceBackpack, _baseBackpackContent + [["SWLW_DetPack_remote_mag",6,1], ["NFL_Turret_Deployer",1]],
+		_ordnanceBackpack, _baseBackpackContent + [["SWLW_DetPack_remote_mag",6,1], ["AUX_95th_Turret_Deployer",1]],
 		"AUX_95th_Helmet_P1_Engineer_Trooper"
 	],
 	[
 		"[95th] 05 - Medic (DC15A)",
 		_dc15a, [], _dc17s,
-		_riflemanUniform, _baseUniformContent + [["NFL_Magazine_Grenade_Medical_Shield",1,1]],
+		_riflemanUniform, _baseUniformContent + [["AUX_95th_Magazine_Grenade_Medical_Shield",1,1]],
 		"AUX_95th_Vest_Standard_Medic_Trooper", _dc15a_Ammo,
 		_medicBackpack, _medicBackpackContent,
 		"AUX_95th_Helmet_P1_Basic_Medic"
@@ -139,7 +139,7 @@ private _roleArray = [
 	[
 		"[95th] 10 - Flame (DC15S)",
 		_bx42, [], _dc17s,
-		_riflemanUniform, _baseUniformContent + [["NFL_Disc_Shield",1]],
+		_riflemanUniform, _baseUniformContent + [["AUX_95th_Disc_Shield",1]],
 		"AUX_95th_Vest_Standard_Flame_Trooper", _bx42_Ammo,
 		"AUX_95th_BX42_Backpack", _baseBackpackContent,
 		"AUX_95th_Helmet_P1_Hazard_Trooper"
@@ -187,7 +187,7 @@ private _roleArray = [
 	[
 		"[95th] 16 - Airborne (DC15S)",
 		_dc15s, [], _dc17s,
-		_riflemanUniform, _baseUniformContent + [["NFL_Disc_Shield",1]],
+		_riflemanUniform, _baseUniformContent + [["AUX_95th_Disc_Shield",1]],
 		"AUX_95th_Vest_Kama_Rifleman_Trooper", _dc15s_Ammo,
 		_jetBackpack, _medicBackpackContent,
 		"AUX_95th_Helmet_P2_Airborne_Trooper"

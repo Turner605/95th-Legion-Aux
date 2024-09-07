@@ -185,7 +185,7 @@ private _arsenalGrenades = [
     "OPTRE_M8_Flare","OPTRE_M8_Flare_White","OPTRE_M8_Flare_Yellow","B_IR_Grenade","ls_mag_glowrod_hiBlue","ls_mag_glowrod_hiGreen","ls_mag_glowrod_hiOrange",
     "ls_mag_glowrod_hiRed","ls_mag_glowrod_hiWhite","ls_mag_glowrod_hiYellow","JLTS_grenade_emp_mag","DSS_Grenade_Magazine_Thermal_C1","DSS_Magazine_Grenade_Sonar",
     "DSS_Magazine_Grenade_Hacker","DSS_Magazine_Grenade_Flashbang","SquadShieldMagazine","ShieldGrenade_Mag","3AS_SmokeYellow","3AS_SmokeWhite","3AS_SmokeRed",
-    "3AS_SmokePurple","3AS_SmokeOrange","3AS_SmokeGreen","3AS_SmokeBlue", "NFL_Magazine_Grenade_Medical_Shield"
+    "3AS_SmokePurple","3AS_SmokeOrange","3AS_SmokeGreen","3AS_SmokeBlue", "AUX_95th_Magazine_Grenade_Medical_Shield"
 ];
 
 //-----------------------------# Equipment #-----------------------------------
@@ -195,7 +195,7 @@ private _arsenalEquipment = [
 	"JLTS_riot_shield_item","WBK_HeadLampItem","ACE_IR_Strobe_Item","ACE_M26_Clacker","ACE_Clacker","ACE_Flashlight_XL50","ACE_MapTools",
 	"ace_marker_flags_black","ace_marker_flags_blue","ace_marker_flags_green","ace_marker_flags_orange","ace_marker_flags_purple","ace_marker_flags_red",
 	"ace_marker_flags_white","ace_marker_flags_yellow","ACE_microDAGR","MineDetector","ACE_HuntIR_monitor","ACE_RangeTable_82mm","DSS_Hacking_Device",
-	"DSS_Cloaking_Device","NFL_Disc_Shield","DSS_Support_Device","rw_canistra","ACE_RangeCard","NFL_Turret_Deployer"
+	"DSS_Cloaking_Device","AUX_95th_Disc_Shield","DSS_Support_Device","rw_canistra","ACE_RangeCard","AUX_95th_Turret_Deployer"
 ];
 
 Arsenal_All_Items_95th = (_arsenalWeapons + _arsenalAmmo + _arsenalAttachments + _arsenalHelmets + _arsenalUniforms + _arsenalVests + _arsenalBackpacks + _arsenalGear + _arsenalMedical + _arsenalExplosives + _arsenalGrenades + _arsenalEquipment);
