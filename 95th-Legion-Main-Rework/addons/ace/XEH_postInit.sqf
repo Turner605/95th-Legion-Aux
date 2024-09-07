@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 ["acex_fortify_objectPlaced", {
     params ["_unit", "_side", "_objectPlaced"];
 

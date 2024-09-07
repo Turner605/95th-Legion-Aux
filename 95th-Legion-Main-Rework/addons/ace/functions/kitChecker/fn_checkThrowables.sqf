@@ -17,4 +17,4 @@ private _removedThrowablesString = "";
 
 if((count _removedThrowables) > 0) then {
     systemChat ("Incorrect throwable(s) removed: " + _removedThrowablesString);
-}
+};

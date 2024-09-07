@@ -1,3 +1,10 @@
+#include "script_component.hpp"
+ADDON = false;
+
+PREP_RECOMPILE_START;
+#include "XEH_PREP.hpp"
+PREP_RECOMPILE_END;
+
 [
     "AUX_95th_Enable_Kit_Checker", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
     "CHECKBOX", // setting type
@@ -96,3 +103,5 @@ AUX_95th_Arsenal_Whitelisted_Magazines = [
 	"3AS_6Rnd_HE_Grenade_shell","3AS_40Rnd_EM40_Mag","3AS_200Rnd_EM40_Mag","OPTRE_1Rnd_MasterKey_Pellets","OPTRE_1Rnd_MasterKey_Slugs","OPTRE_signalSmokeR",
 	"OPTRE_signalSmokeO","OPTRE_signalSmokeY","OPTRE_signalSmokeG","OPTRE_signalSmokeB","OPTRE_signalSmokeP","OPTRE_3Rnd_MasterKey_Pellets","OPTRE_3Rnd_MasterKey_Slugs"
 ];
+
+ADDON = true;
