@@ -1,20 +1,23 @@
+#include "script_component.hpp"
 #include "Macros\ATTE Texture.hpp"
 
 class CfgPatches {
-	class AUX_95th_Vehicles_ATTE {
-		author = "95th Legion";
-		name = "AUX 95th Vehicles AT-TE";
-		requiredAddons[] = {
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {"AUX_95th_ATTE"};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {
+            "AUX_95th_main", 
+            "AUX_95th_vehicles_shared",
             "A3_Armor_F_Beta",
 			"A3_Data_F",
 			"A3_Weapons_F_Gamma",
-            "CCS_HV_Tank", 
-			"AUX_95th_Vehicles_Shared"
+            "CCS_HV_Tank"
         };
-		weapons[] = {};
-		units[] = {"AUX_95th_ATTE"};
-		magazines[] = {};
-	};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class CfgVehicles {
@@ -115,12 +118,12 @@ class CfgVehicles {
 		class ACE_Cargo {class Cargo {class track {type = "ACE_Track"; amount = 2;};};}; 
 		ace_cargo_space = 26;
 		hiddenSelectionsTextures[]={
-			"\AUX_95th_Vehicles_ATTE\Data\Default\Shell.paa", 
-			"\AUX_95th_Vehicles_ATTE\Data\Default\Cockpit.paa", 
-			"\AUX_95th_Vehicles_ATTE\Data\Default\Detail.paa", 
-			"\AUX_95th_Vehicles_ATTE\Data\Default\Legs.paa", 
-			"\AUX_95th_Vehicles_ATTE\Data\Default\Glass.paa", 
-			"\AUX_95th_Vehicles_ATTE\Data\Default\Armor.paa"
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Shell.paa", 
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Cockpit.paa", 
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Detail.paa", 
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Legs.paa", 
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Glass.paa", 
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Armor.paa"
 		};
 		class TextureSources {
 			textureList[] = {"Default",1,"AUX_95th_76561198065789267",0};
@@ -209,4 +212,4 @@ class CfgVehicles {
 	};
 };
 
-
+#include "CfgEventHandlers.hpp"
