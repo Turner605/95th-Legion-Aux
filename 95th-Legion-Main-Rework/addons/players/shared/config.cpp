@@ -372,4 +372,63 @@ class CfgVehicles {
 	};
 };
 
+class CfgUnitInsignia {
+	class AUX_95th_Insignia_Logo {
+		displayName = "95th Logo";
+		author="95th Aux Team";
+		texture="\z\AUX_95th\addons\players\shared\insignias\Logo.paa";
+		textureVehicle="";
+	};
+
+	class AUX_95th_Insignia_One_Zero : AUX_95th_Insignia_Logo {
+		displayName = "1-0 Anooba";
+		texture="\z\AUX_95th\addons\players\shared\insignias\One_Zero.paa";
+	};
+
+	class AUX_95th_Insignia_Seven_Zero : AUX_95th_Insignia_Logo {
+		displayName = "7-0 Banshee";
+		texture="\z\AUX_95th\addons\players\shared\insignias\Seven_Zero.paa";
+	};
+
+	class AUX_95th_Insignia_One_One : AUX_95th_Insignia_Logo {
+		displayName = "1-1 Acklay";
+		texture="\z\AUX_95th\addons\players\shared\insignias\One_One.paa";
+	};
+
+	class AUX_95th_Insignia_One_Two : AUX_95th_Insignia_Logo {
+		displayName = "1-2 Reek";
+		texture="\z\AUX_95th\addons\players\shared\insignias\One_Two.paa";
+	};
+
+	class AUX_95th_Insignia_One_Three : AUX_95th_Insignia_Logo {
+		displayName = "1-3 Krayt";
+		texture="\z\AUX_95th\addons\players\shared\insignias\One_Three.paa";
+	};
+
+	class AUX_95th_Insignia_One_Four : AUX_95th_Insignia_Logo {
+		displayName = "1-4 Sarlacc";
+		texture="\z\AUX_95th\addons\players\shared\insignias\One_Four.paa";
+	};
+
+	class AUX_95th_Insignia_Six_Zero : AUX_95th_Insignia_Logo {
+		displayName = "6-0 Mynock";
+		texture="\z\AUX_95th\addons\players\shared\insignias\Six_Zero.paa";
+	};
+
+	class AUX_95th_Insignia_Five_Zero : AUX_95th_Insignia_Logo {
+		displayName = "5-0 Zillo";
+		texture="\z\AUX_95th\addons\players\shared\insignias\Five_Zero.paa";
+	};
+
+	class AUX_95th_Insignia_MedicalChimken : AUX_95th_Insignia_Logo {
+		displayName = "Medical Chimken";
+		texture="\z\AUX_95th\addons\players\shared\insignias\MedicalChimken.paa";
+	};
+
+	class AUX_95th_Insignia_RevanBong : AUX_95th_Insignia_Logo {
+		displayName = "Revan Bong Hit";
+		texture="\z\AUX_95th\addons\players\shared\insignias\RevanBong.paa";
+	};
+};
+
 #include "CfgEventHandlers.hpp"
