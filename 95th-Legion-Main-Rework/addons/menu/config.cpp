@@ -1,17 +1,23 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Server {
-        author="95th Aux Team";
-        name="95th Legion Server";
-		requiredAddons[]= {
-			"A3_Data_F",
+    class ADDON {
+        name = COMPONENT_NAME;
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {
+            "AUX_95th_main",
+            "A3_Data_F",
 			"A3_UI_F",
 			"A3_Ui_F_Oldman",
 			"A3_UI_F_AOW",
 			"3AS_Main",
 			"3AS_Main_Intro"
-		};
-		units[] = {};
-	};
+        };
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class RscPicture;
@@ -69,7 +75,7 @@ class RscDisplayLoading {
 			class controls {
 				class LoadingPic: RscPicture {
 					idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-					text = "\AUX_95th_Server\data\backgroundOne.paa"; 
+					text = "\z\AUX_95th\addons\menu\data\backgroundOne.paa"; 
 				};
 			};
 		};
@@ -78,7 +84,7 @@ class RscDisplayLoading {
 			class controls {
 				class LoadingPic {
 					idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-					text = "\AUX_95th_Server\data\backgroundTwo.paa"; 
+					text = "\z\AUX_95th\addons\menu\data\backgroundTwo.paa"; 
 				};
 			};
 		};
@@ -87,7 +93,7 @@ class RscDisplayLoading {
 			class controls {
 				class LoadingPic {
 					idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-					text = "\AUX_95th_Server\data\backgroundThree.paa"; 
+					text = "\z\AUX_95th\addons\menu\data\backgroundThree.paa"; 
 				};
 			};
 		};
@@ -96,7 +102,7 @@ class RscDisplayLoading {
 			class controls {
 				class LoadingPic {
 					idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-					text = "\AUX_95th_Server\data\backgroundOne.paa"; 
+					text = "\z\AUX_95th\addons\menu\data\backgroundOne.paa"; 
 				};
 			};
 		};
@@ -105,7 +111,7 @@ class RscDisplayLoading {
 			class controls {
 				class LoadingPic {
 					idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-					text = "\AUX_95th_Server\data\backgroundTwo.paa"; 
+					text = "\z\AUX_95th\addons\menu\data\backgroundTwo.paa"; 
 				};
 			};
 		};
@@ -116,7 +122,7 @@ class RscDisplayLoadCustom: RscStandardDisplay {
 	class controlsBackground {
 		class LoadingPic: RscPicture {
 			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-			text = "\AUX_95th_Server\data\backgroundThree.paa"; 
+			text = "\z\AUX_95th\addons\menu\data\backgroundThree.paa"; 
 		};
 	};
 };
@@ -125,7 +131,7 @@ class RscDisplayLoadMission: RscStandardDisplay {
 	class controlsBackground {
 		class LoadingPic: RscPicture {
 			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-			text = "\AUX_95th_Server\data\backgroundTwo.paa"; 
+			text = "\z\AUX_95th\addons\menu\data\backgroundTwo.paa"; 
 		};
 	};
 };
@@ -134,7 +140,7 @@ class RscDisplayStart: RscStandardDisplay {
 	class controls {
 		class LoadingPic: RscPicture {
 			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-			text = "\AUX_95th_Server\data\backgroundOne.paa"; 
+			text = "\z\AUX_95th\addons\menu\data\backgroundOne.paa"; 
 		};
 	};
 };
@@ -143,7 +149,7 @@ class RscDisplayMPPlayers;
 class RscDisplayClientWait: RscDisplayMPPlayers {
 	class LoadingPic: RscPicture {
 		idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-		text = "\AUX_95th_Server\data\backgroundThree.paa"; 
+		text = "\z\AUX_95th\addons\menu\data\backgroundThree.paa"; 
 	};
 };
 
@@ -151,18 +157,18 @@ class RscDisplayClient: RscStandardDisplay {
 	class controlsBackground {
 		class LoadingPic: RscPicture {
 			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-			text = "\AUX_95th_Server\data\backgroundTwo.paa"; 
+			text = "\z\AUX_95th\addons\menu\data\backgroundTwo.paa"; 
 		};
 	};
 };
 
 class RscDisplayMain: RscStandardDisplay {
 	enableDisplay = 1;
-	text = "\AUX_95th_Server\data\backgroundOne.paa"; 
+	text = "\z\AUX_95th\addons\menu\data\backgroundOne.paa"; 
 	class controlsBackground {
 		class LoadingPic: RscPicture {
 			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-			text = "\AUX_95th_Server\data\backgroundFour.paa"; 
+			text = "\z\AUX_95th\addons\menu\data\backgroundFour.paa"; 
 		};
 	};
 
@@ -175,9 +181,9 @@ class RscDisplayMain: RscStandardDisplay {
         // class Spotlight3:RscMainMenuSpotlight {idc=1022; show=0; onload="";};
         // class SpotlightPrev:RscActivepictureKeepAspect {idc=1060; show=0; onload="";};
         // class SpotlightNext:SpotlightPrev {show=0; onload="";};
-        class logo:RscActivepicture {text="\AUX_95th_Server\data\MainScreenBanner.paa"; url=""; tooltip="95th Legion"; onButtonClick=""; onload="";};
+        class logo:RscActivepicture {text="\z\AUX_95th\addons\menu\data\MainScreenBanner.paa"; url=""; tooltip="95th Legion"; onButtonClick=""; onload="";};
         class logoApex:logo {show=0; onload=""; text="";};
-        class infomods:RscControlsgroupNoHScrollbars {show=0;};
+        class infomods:RscControlsGroupNoHScrollbars {show=0;};
         class infoDLCsOwned:infomods {show=1;};
         class infoDLCs:infoDLCsOwned {show=1;};
         class infoNews:infomods {show=1;};
@@ -329,14 +335,4 @@ class RscDisplayMain: RscStandardDisplay {
 
 class RscMainMenuSpotlight: RscControlsGroupNoScrollbars {show = 0; onLoad = "";};
 
-class Extended_PreInit_EventHandlers {
-	class 95th_Server_PreInit {
-		init="call compile preprocessFileLineNumbers '\AUX_95th_Server\Init\XEH_preInit.sqf'";
-	};
-};
-
-class Extended_PostInit_EventHandlers {
-	class 95th_Server_PostInit {
-		init="call compile preprocessFileLineNumbers '\AUX_95th_Server\Init\XEH_postInit.sqf'";
-	};
-};
+#include "CfgEventHandlers.hpp"
