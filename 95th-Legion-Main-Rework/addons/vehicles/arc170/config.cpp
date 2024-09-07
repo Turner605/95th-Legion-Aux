@@ -1,12 +1,15 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Vehicles_ARC170 {
-		author = "95th Legion";
-		name = "AUX 95th Vehicles ARC-170";
-		requiredAddons[] = {"3AS_ARC_170", "AUX_95th_Vehicles_Shared"};
-		weapons[] = {};
-		units[] = {"AUX_95th_ARC170"};
-		magazines[] = {};
-	};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {"AUX_95th_ARC170"};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_vehicles_shared", "3AS_ARC_170"};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class SensorTemplatePassiveRadar;
@@ -142,18 +145,18 @@ class CfgVehicles {
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Air_Fighters";
 		editorPreview = "";
 		hiddenselectionstextures[] = {
-			"\AUX_95th_Vehicles_ARC170\Data\Default\Main_Frame.paa",
-			"\AUX_95th_Vehicles_ARC170\Data\Default\Wings_Engines.paa",
-			"\AUX_95th_Vehicles_ARC170\Data\Default\Guns.paa"
+			"\z\AUX_95th\addons\vehicles\arc170\data\Default\Main_Frame.paa",
+			"\z\AUX_95th\addons\vehicles\arc170\data\Default\Wings_Engines.paa",
+			"\z\AUX_95th\addons\vehicles\arc170\data\Default\Guns.paa"
 		};
 		class TextureSources {
 			class Default {
 				displayName = "Default";
 				author = "95th Aux Team";
 				textures[] = {
-					"\AUX_95th_Vehicles_ARC170\Data\Default\Main_Frame.paa",
-					"\AUX_95th_Vehicles_ARC170\Data\Default\Wings_Engines.paa",
-					"\AUX_95th_Vehicles_ARC170\Data\Default\Guns.paa"
+					"\z\AUX_95th\addons\vehicles\arc170\data\Default\Main_Frame.paa",
+					"\z\AUX_95th\addons\vehicles\arc170\data\Default\Wings_Engines.paa",
+					"\z\AUX_95th\addons\vehicles\arc170\data\Default\Guns.paa"
 				};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
@@ -164,3 +167,5 @@ class CfgVehicles {
 class Extended_init_EventHandlers {
 	class AUX_95th_ARC170 {class AUX_95th_ARC170_Init {init = "(_this) spawn AUX_95th_fnc_handleAirVehicleInit;";};};
 };
+
+#include "CfgEventHandlers.hpp"
