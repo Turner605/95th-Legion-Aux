@@ -1,12 +1,15 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Vehicles_V19 {
-		author = "95th Legion";
-		name = "AUX 95th Vehicles V-19";
-		requiredAddons[] = {"3as_V19_Torrent", "AUX_95th_Vehicles_Shared"};
-		weapons[] = {};
-		units[] = {"AUX_95th_V19"};
-		magazines[] = {};
-	};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {"AUX_95th_V19"};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_vehicles_shared", "3as_V19_Torrent"};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class SensorTemplatePassiveRadar;
@@ -69,11 +72,11 @@ class CfgVehicles {
 		hiddenselections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
 		hiddenselectionstextures[] = {
 			"3as\3as_v19\textures\wings_co.paa",
-			"\AUX_95th_Vehicles_V19\Data\Default\Wing_Plates.paa",
-			"\AUX_95th_Vehicles_V19\Data\Default\Hull.paa",
-			"\AUX_95th_Vehicles_V19\Data\Default\Gun_Gear.paa",
+			"\z\AUX_95th\addons\vehicles\v19\data\Default\Wing_Plates.paa",
+			"\z\AUX_95th\addons\vehicles\v19\data\Default\Hull.paa",
+			"\z\AUX_95th\addons\vehicles\v19\data\Default\Gun_Gear.paa",
 			"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
-			"\AUX_95th_Vehicles_V19\Data\Default\Pizzlepit.paa",
+			"\z\AUX_95th\addons\vehicles\v19\data\Default\Pizzlepit.paa",
 		};
 		class TextureSources {
 			class Default {
@@ -81,11 +84,11 @@ class CfgVehicles {
 				author = "95th Aux Team";
 				textures[] = {
 					"3as\3as_v19\textures\wings_co.paa",
-					"\AUX_95th_Vehicles_V19\Data\Default\Wing_Plates.paa",
-					"\AUX_95th_Vehicles_V19\Data\Default\Hull.paa",
-					"\AUX_95th_Vehicles_V19\Data\Default\Gun_Gear.paa",
+					"\z\AUX_95th\addons\vehicles\v19\data\Default\Wing_Plates.paa",
+					"\z\AUX_95th\addons\vehicles\v19\data\Default\Hull.paa",
+					"\z\AUX_95th\addons\vehicles\v19\data\Default\Gun_Gear.paa",
 					"a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
-					"\AUX_95th_Vehicles_V19\Data\Default\Pizzlepit.paa",
+					"\z\AUX_95th\addons\vehicles\v19\data\Default\Pizzlepit.paa",
 				};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
@@ -96,3 +99,6 @@ class CfgVehicles {
 class Extended_init_EventHandlers {
 	class AUX_95th_V19 {class AUX_95th_V19_Init {init = "(_this) spawn AUX_95th_fnc_handleAirVehicleInit;";};};
 };
+
+
+#include "CfgEventHandlers.hpp"
