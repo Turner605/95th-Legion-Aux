@@ -27,8 +27,8 @@ class CfgEditorSubcategories {
 
 class CfgFunctions {
     class AUX_95th {
-        class players_shared {
-			file = "\z\AUX_95th\addons\players\shared\functions";
+        class players_vehicles {
+			file = "\z\AUX_95th\addons\vehicles\shared\functions";
             class handleRhoCrateInit {};
             class handleAirVehicleInit {};
         };

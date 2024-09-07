@@ -153,8 +153,8 @@ class CfgVehicles {
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Air_Fighters";
 		hiddenselectionstextures[] = {
-			"\z\AUX_95th\addons\z95\Data\Default\Body.paa",
-			"\z\AUX_95th\addons\z95\Data\Default\Cockpit.paa",
+			"\z\AUX_95th\addons\vehicles\z95\data\Default\Body.paa",
+			"\z\AUX_95th\addons\vehicles\z95\data\Default\Cockpit.paa",
 			"3AS\3AS_Z95\data\glass\glass_ca"
 		};
 		availableForSupportTypes[] = {"CAS_Bombing"};
@@ -162,7 +162,7 @@ class CfgVehicles {
 			class Default {
 				displayName = "Default";
 				author = "95th Aux Team";
-				textures[] = {"\z\AUX_95th\addons\z95\Data\Default\Body.paa","\z\AUX_95th\addons\z95\Data\Default\Cockpit.paa"};
+				textures[] = {"\z\AUX_95th\addons\vehicles\z95\data\Default\Body.paa","\z\AUX_95th\addons\vehicles\z95\data\Default\Cockpit.paa"};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
 		};
