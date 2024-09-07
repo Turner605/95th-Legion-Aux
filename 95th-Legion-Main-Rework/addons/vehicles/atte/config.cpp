@@ -74,7 +74,7 @@ class CfgVehicles {
 
 	class 3AS_ATTE_Base: APC_Wheeled_01_base_F {
 		class Turrets : Turrets {
-			class MainTurretTop: Mainturret {
+			class MainTurretTop: MainTurret {
 				class OpticsIn {
 					class Wide;
 					class Narrow : Wide{};
@@ -114,7 +114,7 @@ class CfgVehicles {
 		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman"; 
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Heavy";
-		#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
+		#include "\z\AUX_95th\addons\vehicles\shared\sharedInventory.hpp"
 		class ACE_Cargo {class Cargo {class track {type = "ACE_Track"; amount = 2;};};}; 
 		ace_cargo_space = 26;
 		hiddenSelectionsTextures[]={
@@ -127,8 +127,8 @@ class CfgVehicles {
 		};
 		class TextureSources {
 			textureList[] = {"Default",1,"AUX_95th_76561198065789267",0};
-			NEW_95TH_ATTE_TEXTURE(Default)};
-			NEW_95TH_ATTE_TEXTURE(AUX_95th_76561198065789267)};
+			NEW_95TH_ATTE_TEXTURE(Default)
+			NEW_95TH_ATTE_TEXTURE(AUX_95th_76561198065789267)
 		};
 		class HitPoints: HitPoints {
 			class HitHull: HitHull {
@@ -208,7 +208,7 @@ class CfgVehicles {
 		crewExplosionProtection = 0.9995;
 		crewCrashProtection = 0.0001;
 		damageResistance = 0.00719;
-		crewVulnerable = true
+		crewVulnerable = 1;
 	};
 };
 

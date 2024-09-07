@@ -129,7 +129,7 @@ class CfgVehicles {
 		};
 	};
 
-	class AUX_95th_ARC170: 3AS_ARC_170_base {
+	class AUX_95th_ARC170: 3AS_ARC_170_Base {
 		displayName = "ARC-170";
 		tas_can_impulse=0;
 		ls_hasImpulse = 1;

@@ -1,13 +1,17 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Vehicles_Bantha {
-		author = "95th Legion";
-		name = "AUX 95th Vehicles Bantha";
-		requiredAddons[] = {"QS_Bantha_F", "AUX_95th_Vehicles_Shared"};
-		weapons[] = {};
-		units[] = {"AUX_95th_Bantha", "AUX_95th_Bantha_UAV_Test"};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {"AUX_95th_Bantha", "AUX_95th_Bantha_UAV_Test"};
+        weapons[] = {};
 		magazines[] = {"AUX_95th_Bantha_Rocket_Magazine"};
 		ammo[] = {"AUX_95th_Bantha_Rocket_Ammo"};
-	};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_vehicles_shared", "QS_Bantha_F"};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class CfgAmmo {
@@ -109,7 +113,7 @@ class CfgVehicles {
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorCategory="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Light";
-		#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
+		#include "\z\AUX_95th\addons\vehicles\shared\sharedInventory.hpp"
 
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {
@@ -287,19 +291,19 @@ class CfgVehicles {
 
 		hiddenSelections[] = {"main","side","turret","transmission","wheels","inter"};
 		hiddenSelectionsTextures[] = {
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Main_CO.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Side_CO.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Turret_CO.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Transmission_CO.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Wheels_CO.paa",
-			"\AUX_95th_Vehicles_Bantha\Data\Default\Internal_CO.paa"
+			"\z\AUX_95th\addons\vehicles\bantha\data\Default\Main_CO.paa",
+			"\z\AUX_95th\addons\vehicles\bantha\data\Default\Side_CO.paa",
+			"\z\AUX_95th\addons\vehicles\bantha\data\Default\Turret_CO.paa",
+			"\z\AUX_95th\addons\vehicles\bantha\data\Default\Transmission_CO.paa",
+			"\z\AUX_95th\addons\vehicles\bantha\data\Default\Wheels_CO.paa",
+			"\z\AUX_95th\addons\vehicles\bantha\data\Default\Internal_CO.paa"
 		};
 		hiddenSelectionsMaterials[] = {
-			"\AUX_95th_Vehicles_Bantha\Main.rvmat",
-			"\AUX_95th_Vehicles_Bantha\Side.rvmat",
-			"\AUX_95th_Vehicles_Bantha\Turret.rvmat",
+			"\z\AUX_95th\addons\vehicles\bantha\Main.rvmat",
+			"\z\AUX_95th\addons\vehicles\bantha\Side.rvmat",
+			"\z\AUX_95th\addons\vehicles\bantha\Turret.rvmat",
 			"",
-			"\AUX_95th_Vehicles_Bantha\Wheels.rvmat"
+			"\z\AUX_95th\addons\vehicles\bantha\Wheels.rvmat"
 		};
 
 
@@ -308,20 +312,20 @@ class CfgVehicles {
 				displayName = "Default";
 				author = "95th Aux Team";
 				textures[] = {
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Main_CO.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Side_CO.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Turret_CO.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Transmission_CO.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Wheels_CO.paa",
-					"\AUX_95th_Vehicles_Bantha\Data\Default\Internal_CO.paa"
+					"\z\AUX_95th\addons\vehicles\bantha\data\Default\Main_CO.paa",
+					"\z\AUX_95th\addons\vehicles\bantha\data\Default\Side_CO.paa",
+					"\z\AUX_95th\addons\vehicles\bantha\data\Default\Turret_CO.paa",
+					"\z\AUX_95th\addons\vehicles\bantha\data\Default\Transmission_CO.paa",
+					"\z\AUX_95th\addons\vehicles\bantha\data\Default\Wheels_CO.paa",
+					"\z\AUX_95th\addons\vehicles\bantha\data\Default\Internal_CO.paa"
 				};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 				material[] = {
-					"\AUX_95th_Vehicles_Bantha\Main.rvmat",
-					"\AUX_95th_Vehicles_Bantha\Side.rvmat",
-					"\AUX_95th_Vehicles_Bantha\Turret.rvmat",
+					"\z\AUX_95th\addons\vehicles\bantha\Main.rvmat",
+					"\z\AUX_95th\addons\vehicles\bantha\Side.rvmat",
+					"\z\AUX_95th\addons\vehicles\bantha\Turret.rvmat",
 					"",
-					"\AUX_95th_Vehicles_Bantha\Wheels.rvmat"
+					"\z\AUX_95th\addons\vehicles\bantha\Wheels.rvmat"
 				};
 			};
 		};
@@ -559,3 +563,5 @@ class CfgVehicles {
 		};
 	};
 };
+
+#include "CfgEventHandlers.hpp"
