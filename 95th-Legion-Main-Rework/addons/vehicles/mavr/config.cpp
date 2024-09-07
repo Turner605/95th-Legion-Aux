@@ -1,12 +1,15 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Vehicles_MAVr {
-		author = "95th Legion";
-		name = "AUX 95th Vehicles MAVr";
-		requiredAddons[] = {"QS_Mavr_F", "AUX_95th_Vehicles_Shared"};
-		weapons[] = {};
-		units[] = {"AUX_95th_MAVr"};
-		magazines[] = {};
-	};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {"AUX_95th_MAVr"};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_vehicles_shared", "QS_Mavr_F"};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class DefaultEventhandlers;
@@ -127,17 +130,17 @@ class CfgVehicles
 		displayName = "MAVr";
 		hiddenSelections[] = {"base","turret","elements","inter","wires"};
 		hiddenSelectionsTextures[] = {
-			"\AUX_95th_Vehicles_MAVr\Data\Default\Base_CO.paa",
-			"\AUX_95th_Vehicles_MAVr\Data\Default\Turret_CO.paa",
-			"\AUX_95th_Vehicles_MAVr\Data\Default\Elements_CO.paa",
-			"\AUX_95th_Vehicles_MAVr\Data\Default\Internal_CO.paa",
-			"\AUX_95th_Vehicles_MAVr\Data\Default\Wires_CO.paa"
+			"\z\AUX_95th\addons\vehicles\mavr\data\Default\Base_CO.paa",
+			"\z\AUX_95th\addons\vehicles\mavr\data\Default\Turret_CO.paa",
+			"\z\AUX_95th\addons\vehicles\mavr\data\Default\Elements_CO.paa",
+			"\z\AUX_95th\addons\vehicles\mavr\data\Default\Internal_CO.paa",
+			"\z\AUX_95th\addons\vehicles\mavr\data\Default\Wires_CO.paa"
 		};
 
 		hiddenSelectionsMaterials[] = {
-			"\AUX_95th_Vehicles_MAVr\Base.rvmat",
-			"\AUX_95th_Vehicles_MAVr\Turret.rvmat",
-			"\AUX_95th_Vehicles_MAVr\Elements.rvmat"
+			"\z\AUX_95th\addons\vehicles\mavr\Base.rvmat",
+			"\z\AUX_95th\addons\vehicles\mavr\Turret.rvmat",
+			"\z\AUX_95th\addons\vehicles\mavr\Elements.rvmat"
 		};
 
 		class HitPoints: HitPoints {
@@ -204,11 +207,11 @@ class CfgVehicles
 				displayName = "Default";
 				author = "95th Aux Team";
 				textures[] = {
-					"\AUX_95th_Vehicles_MAVr\Data\Default\Base_CO.paa",
-					"\AUX_95th_Vehicles_MAVr\Data\Default\Turret_CO.paa",
-					"\AUX_95th_Vehicles_MAVr\Data\Default\Elements_CO.paa",
-					"\AUX_95th_Vehicles_MAVr\Data\Default\Internal_CO.paa",
-					"\AUX_95th_Vehicles_MAVr\Data\Default\Wires_CO.paa"
+					"\z\AUX_95th\addons\vehicles\mavr\data\Default\Base_CO.paa",
+					"\z\AUX_95th\addons\vehicles\mavr\data\Default\Turret_CO.paa",
+					"\z\AUX_95th\addons\vehicles\mavr\data\Default\Elements_CO.paa",
+					"\z\AUX_95th\addons\vehicles\mavr\data\Default\Internal_CO.paa",
+					"\z\AUX_95th\addons\vehicles\mavr\data\Default\Wires_CO.paa"
 				};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
@@ -220,3 +223,5 @@ class CfgVehicles
 // private _nearest = nearestObject [_this#1, "AUX_95th_MAVr"]; 
 // _this#1 attachTo [_nearest, [0, 8, 0], "usti hlavne", true];
 // _this#1 setVectorDirAndUp [[1,0,0],[0,0,1]]; 
+
+#include "CfgEventHandlers.hpp"
