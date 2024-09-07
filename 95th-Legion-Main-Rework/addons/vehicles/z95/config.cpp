@@ -1,12 +1,15 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Vehicles_Z95 {
-		author = "95th Legion";
-		name = "AUX 95th Vehicles Z-95";
-		requiredAddons[] = {"3AS_Z95_base", "AUX_95th_Vehicles_Shared"};
-		weapons[] = {};
-		units[] = {"AUX_95th_Z95"};
-		magazines[] = {};
-	};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {"AUX_95th_Z95"};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_vehicles_shared", "3AS_Z95_base"};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class SensorTemplatePassiveRadar;
@@ -169,3 +172,5 @@ class CfgVehicles {
 class Extended_init_EventHandlers {
 	class AUX_95th_Z95 {class AUX_95th_Z95_Init {init = "(_this) spawn AUX_95th_fnc_handleAirVehicleInit;";};};
 };
+
+#include "CfgEventHandlers.hpp"
