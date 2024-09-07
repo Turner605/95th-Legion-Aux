@@ -121,7 +121,7 @@ class CfgVehicles
 		author = "95th Aux Team";
 		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
 		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
-		#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
+		#include "\z\AUX_95th\addons\vehicles\shared\sharedInventory.hpp"
 		tas_canBlift=1;
 		tas_liftVars = "[[[[0,-4,-4]]], [0.1], [-0.5]]";
 		faction="AUX_95th_Legion_Faction_Vehicles";
