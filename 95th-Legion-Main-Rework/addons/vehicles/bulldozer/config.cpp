@@ -25,7 +25,7 @@ class CfgVehicles {
 
 class CfgFunctions {
     class AUX_95th {
-        class Vehicles {
+        class Vehicles_Bulldozer {
 			file = "\z\AUX_95th\addons\vehicles\bulldozer\functions";
             class handleBulldozerInit {};
         };

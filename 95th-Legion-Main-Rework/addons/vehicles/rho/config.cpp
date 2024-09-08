@@ -1,21 +1,23 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Vehicles_Rho {
-		author = "95th Legion";
-		name = "AUX 95th Vehicles Rho";
-		requiredAddons[] = {"3AS_Republic_Heli_Rho", "AUX_95th_Vehicles_Shared"};
-		weapons[] = {};
-		units[] = {
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {
 			"AUX_95th_Rho", 
 			"AUX_95th_Rho_Crate_Transport", 
 			"AUX_95th_Rho_Crate_Ground_Deployment",
 			"AUX_95th_Rho_Crate_Air_Deployment",
 			"AUX_95th_Rho_Crate_Defence_Deployment",
 			"AUX_95th_Rho_Crate_Utility_Deployment"
-		};
-		magazines[] = {};
-	};
+        };
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_vehicles_shared", "3AS_Republic_Heli_Rho"};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
-
 
 class SensorTemplatePassiveRadar;
 class SensorTemplateAntiRadiation;
@@ -114,26 +116,26 @@ class CfgVehicles {
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Air_Logistics";
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		hiddenSelectionsTextures[]={
-			"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Hull.paa",
-			"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Hull_Front.paa",
-			"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Wings.paa",
-			"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Cockpit.paa",
-			"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Cockpit_Interfaces.paa",
-			"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Interior.paa",
-			"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Interior_Optional.paa"
+			"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Hull.paa",
+			"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Hull_Front.paa",
+			"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Wings.paa",
+			"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Cockpit.paa",
+			"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Cockpit_Interfaces.paa",
+			"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Interior.paa",
+			"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Interior_Optional.paa"
 		};
 		class TextureSources {
 			class Default {
 				displayName = "Default";
 				author = "95th Aux Team";
 				textures[] = {
-					"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Hull.paa",
-					"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Hull_Front.paa",
-					"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Wings.paa",
-					"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Cockpit.paa",
-					"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Cockpit_Interfaces.paa",
-					"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Interior.paa",
-					"\AUX_95th_Vehicles_Rho\Data\Shuttle\Default\Interior_Optional.paa"
+					"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Hull.paa",
+					"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Hull_Front.paa",
+					"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Wings.paa",
+					"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Cockpit.paa",
+					"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Cockpit_Interfaces.paa",
+					"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Interior.paa",
+					"\z\AUX_95th\addons\vehicles\rho\data\Shuttle\Default\Interior_Optional.paa"
 				};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
@@ -149,22 +151,22 @@ class CfgVehicles {
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Static";
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		hiddenSelectionsTextures[]={
-			"\AUX_95th_Vehicles_Rho\Data\Crates\Default\Crate_Ext.paa",
-			"\AUX_95th_Vehicles_Rho\Data\Crates\Default\Crate_Int.paa",
-			"\AUX_95th_Vehicles_Rho\Data\Crates\Default\Barracks.paa",
-			"\AUX_95th_Vehicles_Rho\Data\Crates\Default\Clone_Bed.paa",
-			"\AUX_95th_Vehicles_Rho\Data\Crates\Default\Interior.paa"
+			"\z\AUX_95th\addons\vehicles\rho\data\Crates\Default\Crate_Ext.paa",
+			"\z\AUX_95th\addons\vehicles\rho\data\Crates\Default\Crate_Int.paa",
+			"\z\AUX_95th\addons\vehicles\rho\data\Crates\Default\Barracks.paa",
+			"\z\AUX_95th\addons\vehicles\rho\data\Crates\Default\Clone_Bed.paa",
+			"\z\AUX_95th\addons\vehicles\rho\data\Crates\Default\Interior.paa"
 		};
 		class TextureSources {
 			class Default {
 				displayName = "Default";
 				author = "95th Aux Team";
 				textures[] = {
-					"\AUX_95th_Vehicles_Rho\Data\Crates\Default\Crate_Ext.paa",
-					"\AUX_95th_Vehicles_Rho\Data\Crates\Default\Crate_Int.paa",
-					"\AUX_95th_Vehicles_Rho\Data\Crates\Default\Barracks.paa",
-					"\AUX_95th_Vehicles_Rho\Data\Crates\Default\Clone_Bed.paa",
-					"\AUX_95th_Vehicles_Rho\Data\Crates\Default\Interior.paa"
+					"\z\AUX_95th\addons\vehicles\rho\data\Crates\Default\Crate_Ext.paa",
+					"\z\AUX_95th\addons\vehicles\rho\data\Crates\Default\Crate_Int.paa",
+					"\z\AUX_95th\addons\vehicles\rho\data\Crates\Default\Barracks.paa",
+					"\z\AUX_95th\addons\vehicles\rho\data\Crates\Default\Clone_Bed.paa",
+					"\z\AUX_95th\addons\vehicles\rho\data\Crates\Default\Interior.paa"
 				};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
@@ -198,3 +200,5 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Rho_Crate_Defence_Deployment {class AUX_95th_Rho_Crate_Defence_Deployment_Init {serverInit="[_this select 0, 'DefenceDeployment'] call AUX_95th_fnc_handleRhoCrateInit;";};};
 	class AUX_95th_Rho_Crate_Utility_Deployment {class AUX_95th_Rho_Crate_Utility_Deployment_Init {serverInit="[_this select 0, 'UtilityDeployment'] call AUX_95th_fnc_handleRhoCrateInit;";};};
 };
+
+#include "CfgEventHandlers.hpp"

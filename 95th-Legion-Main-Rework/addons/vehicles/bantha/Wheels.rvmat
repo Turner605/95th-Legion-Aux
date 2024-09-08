@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="AUX_95th_Vehicles_Bantha\Data\Default\Wheels_NOHQ.paa";
+	texture="\z\AUX_95th\addons\vehicles\bantha\data\Default\Wheels_NOHQ.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="AUX_95th_Vehicles_Bantha\Data\Default\Wheels_AS.paa";
+	texture="\z\AUX_95th\addons\vehicles\bantha\data\Default\Wheels_AS.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="AUX_95th_Vehicles_Bantha\Data\Default\Wheels_SMDI.paa";
+	texture="\z\AUX_95th\addons\vehicles\bantha\data\Default\Wheels_SMDI.paa";
 	uvSource="tex";
 	class uvTransform
 	{
