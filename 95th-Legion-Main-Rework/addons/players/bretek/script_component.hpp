@@ -41,7 +41,7 @@
 
 // VEST OPTIONS 0 (False), 1 (True)
 #define VEST_STANDARD_SET 0
-#define VEST_ARC_SET 0
+#define VEST_ARC_SET 1
 #define VEST_OFFICER_SET 1
 #define VEST_COMMANDO_SET 0
 
@@ -51,4 +51,4 @@
 #include "\z\AUX_95th\addons\main\script_macros.hpp"
 
 //TODO:
-// Vests need replacing really 
+// Vests need replacing really
