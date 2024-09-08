@@ -6,7 +6,7 @@ private _budget = -1;
 
 private _config = missionConfigFile >> "ACEX_Fortify_Presets" >> _preset;
 
-if (!isClass _config) then {_config = configfile >> "ACEX_Fortify_Presets" >> _preset;};
+if (!isClass _config) then {_config = configFile >> "ACEX_Fortify_Presets" >> _preset;};
 
 private _objects = getArray (_config >> "objects");
 
