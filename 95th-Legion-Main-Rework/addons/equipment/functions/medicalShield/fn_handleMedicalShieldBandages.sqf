@@ -7,9 +7,9 @@ while {alive _shieldGenDep} do {
 
 		{if ([_medic, _patient, _x, "FieldDressing"] call ace_medical_treatment_fnc_canbandage) then {
 				_woundsToTreat pushBackUnique _x;
-		}} foreach ["head", "body", "leftarm", "rightarm", "leftleg", "rightleg"];
+		}} forEach ["head", "body", "leftarm", "rightarm", "leftleg", "rightleg"];
 
-		{[_medic, _patient, _x, "FieldDressing"] call ace_medical_treatment_fnc_bandage} foreach _woundsToTreat;
+		{[_medic, _patient, _x, "FieldDressing"] call ace_medical_treatment_fnc_bandage} forEach _woundsToTreat;
 
 	} forEach (_shieldGenDep getVariable "PlayersToTreat");
 
