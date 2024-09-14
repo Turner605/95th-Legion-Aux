@@ -3,11 +3,8 @@
 #define PLAYER_NAME senior
 #define PLAYER_NAME_BEAUTIFIED Senior
 
-//OPTIONS: Unassigned, Basic, Fallen, Zeus, PLATOON_SQUAD (EG One_Seven)
+//OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
 #define SQUAD_KEY Basic
-
-//OPTIONS: Unassigned, Basic, Fallen, Zeus, Ackley, Reek, .....
-#define SQUAD_NAME Basic
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1

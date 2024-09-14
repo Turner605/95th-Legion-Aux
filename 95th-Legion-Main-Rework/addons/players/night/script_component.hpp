@@ -3,11 +3,8 @@
 #define PLAYER_NAME night
 #define PLAYER_NAME_BEAUTIFIED Night
 
-//OPTIONS: Unassigned, Basic, Fallen, Zeus, PLATOON_SQUAD (EG One_Seven)
+//OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
 #define SQUAD_KEY One_Four
-
-//OPTIONS: Unassigned, Basic, Fallen, Zeus, Ackley, Reek, .....
-#define SQUAD_NAME Sarlacc
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 0
