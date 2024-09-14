@@ -323,7 +323,7 @@ class XtdGearModels {
 };
 
 class CfgFactionClasses {
-    class AUX_95th_Legion_Faction_Clones {displayName = "[95th] Clones";  priority = 1; side = 1;};
+    class AUX_95th_Legion_Faction_Clones {displayName = "[95th] Clones"; priority = 1; side = 1; scope=2; scopecurator=2;};
 };
 
 class CfgEditorSubcategories {
