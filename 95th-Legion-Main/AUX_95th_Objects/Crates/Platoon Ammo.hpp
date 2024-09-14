@@ -16,7 +16,7 @@ class AUX_95th_Crate_Platoon_Ammo : 3AS_Supply_Large_Ammo_Prop {
 	ace_dragging_canCarry = 1;
 	ace_dragging_ignoreWeightCarry = 1;
 
-	#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
+	#include "\AUX_95th_Vehicles_Depricated\Shared\Inventory Shared.hpp"
 
 	//class TransportItems {}; //TODO
 };

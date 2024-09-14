@@ -18,7 +18,7 @@ class CfgPatches {
 		units[] = {"AUX_95th_Firehawke"};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Armor_F_Beta", "AUX_95th_Vehicles"};
+		requiredAddons[] = {"A3_Armor_F_Beta", "AUX_95th_Vehicles_Depricated"};
 		author = "JMax";
 	};
 };
@@ -82,13 +82,13 @@ class CfgVehicles {
 	class 95th_Firehawke_Base: Tank_F {
 		author = "JMax";
 		mapSize = 6.57;
-		model = "\AUX_95th_Vehicles\Ground Vehicles\Firehawke\S1_firehawke.p3d";
+		model = "\AUX_95th_Vehicles_Depricated\Ground Vehicles\Firehawke\S1_firehawke.p3d";
 		picture = "";
 		Icon = "";
 		displayName = "S1";
 		_generalMacro = "95th_Firehawke_Base";
 		hiddenSelections[] = {"Camo1"};
-		hiddenSelectionsTextures[] = {"\AUX_95th_Vehicles\Ground Vehicles\Firehawke\data\firehawke_grey_co.paa"};
+		hiddenSelectionsTextures[] = {"\AUX_95th_Vehicles_Depricated\Ground Vehicles\Firehawke\data\firehawke_grey_co.paa"};
 		simulation = "tankX";
 		fuelCapacity = 25;
 		brakeIdleSpeed = 1.78;
@@ -354,10 +354,10 @@ class CfgVehicles {
 		soundGetIn[] = {"A3\Sounds_F_EPC\Truck_03\int\getin",0.56234133,1};
 		soundGetOut[] = {"A3\Sounds_F_EPC\Truck_03\int\getout",0.56234133,1,20};
 		soundDammage[] = {"",0.56234133,1};
-		soundEngineOnInt[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine_on.ogg","db-1",1.0};
-		soundEngineOnExt[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine_on.ogg","db3",1.0,500};
-		soundEngineOffInt[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine_on.ogg","db-1",1.0};
-		soundEngineOffExt[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine_on.ogg","db3",1.0,500};
+		soundEngineOnInt[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine_on.ogg","db-1",1.0};
+		soundEngineOnExt[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine_on.ogg","db3",1.0,500};
+		soundEngineOffInt[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine_on.ogg","db-1",1.0};
+		soundEngineOffExt[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine_on.ogg","db3",1.0,500};
 		buildCrash0[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_1",1,1,200};
 		buildCrash1[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_2",1,1,200};
 		buildCrash2[] = {"A3\Sounds_F\vehicles\crashes\cars\cars_coll_big_default_ext_3",1,1,200};
@@ -388,37 +388,37 @@ class CfgVehicles {
 			};
 			class Engine
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.56234133,1,250};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.56234133,1,250};
 				frequency = "0.8 + ((rpm/ 3000) factor[(610/ 3000),(1100/ 3000)])*0.2";
 				volume = "engineOn*camPos*(((rpm/ 3000) factor[(620/ 3000),(820/ 3000)]) * ((rpm/ 3000) factor[(1200/ 3000),(1000/ 3000)]))";
 			};
 			class Engine1_ext
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.63095737,1,280};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.63095737,1,280};
 				frequency = "0.8 + ((rpm/ 3000) factor[(900/ 3000),(1500/ 3000)])*0.2";
 				volume = "engineOn*camPos*(((rpm/ 3000) factor[(900/ 3000),(1100/ 3000)]) * ((rpm/ 3000) factor[(1500/ 3000),(1150/ 3000)]))";
 			};
 			class Engine2_ext
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.63095737,1,320};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.63095737,1,320};
 				frequency = "0.8 + ((rpm/ 3000) factor[(1150/ 3000),(1850/ 3000)])*0.2";
 				volume = "engineOn*camPos*(((rpm/ 3000) factor[(1170/ 3000),(1500/ 3000)]) * ((rpm/ 3000) factor[(1900/ 3000),(1650/ 3000)]))";
 			};
 			class Engine3_ext
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.70794576,1,340};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.70794576,1,340};
 				frequency = "0.8 + ((rpm/ 3000) factor[(1600/ 3000),(2300/ 3000)])*0.1";
 				volume = "engineOn*camPos*(((rpm/ 3000) factor[(1600/ 3000),(1850/ 3000)]) * ((rpm/ 3000) factor[(2300/ 3000),(2050/ 3000)]))";
 			};
 			class Engine4_ext
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.70794576,1,360};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.70794576,1,360};
 				frequency = "0.8 + ((rpm/ 3000) factor[(2050/ 3000),(2700/ 3000)])*0.1";
 				volume = "engineOn*camPos*(((rpm/ 3000) factor[(2000/ 3000),(2300/ 3000)]) * ((rpm/ 3000) factor[(2700/ 3000),(2450/ 3000)]))";
 			};
 			class Engine5_ext
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.7943282,1,400};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.7943282,1,400};
 				frequency = "0.8 + ((rpm/ 3000) factor[(2450/ 3000),(3000/ 3000)])*0.1";
 				volume = "engineOn*camPos*((rpm/ 3000) factor[(2400/ 3000),(2700/ 3000)])";
 			};
@@ -472,37 +472,37 @@ class CfgVehicles {
 			};
 			class Engine_int
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.31622776,1};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.31622776,1};
 				frequency = "0.8 + ((rpm/ 3000) factor[(610/ 3000),(1100/ 3000)])*0.2";
 				volume = "engineOn*(1-camPos)*(((rpm/ 3000) factor[(620/ 3000),(820/ 3000)]) * ((rpm/ 3000) factor[(1200/ 3000),(1000/ 3000)]))";
 			};
 			class Engine1_int
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.31622776,1};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.31622776,1};
 				frequency = "0.8 + ((rpm/ 3000) factor[(900/ 3000),(1500/ 3000)])*0.2";
 				volume = "engineOn*(1-camPos)*(((rpm/ 3000) factor[(900/ 3000),(1100/ 3000)]) * ((rpm/ 3000) factor[(1500/ 3000),(1150/ 3000)]))";
 			};
 			class Engine2_int
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.31622776,1};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.31622776,1};
 				frequency = "0.8 + ((rpm/ 3000) factor[(1150/ 3000),(1850/ 3000)])*0.2";
 				volume = "engineOn*(1-camPos)*(((rpm/ 3000) factor[(1170/ 3000),(1500/ 3000)]) * ((rpm/ 3000) factor[(1900/ 3000),(1650/ 3000)]))";
 			};
 			class Engine3_int
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.3548134,1};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.3548134,1};
 				frequency = "0.8 + ((rpm/ 3000) factor[(1600/ 3000),(2300/ 3000)])*0.1";
 				volume = "engineOn*(1-camPos)*(((rpm/ 3000) factor[(1600/ 3000),(1850/ 3000)]) * ((rpm/ 3000) factor[(2300/ 3000),(2050/ 3000)]))";
 			};
 			class Engine4_int
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.39810717,1};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.39810717,1};
 				frequency = "0.8 + ((rpm/ 3000) factor[(2050/ 3000),(2700/ 3000)])*0.1";
 				volume = "engineOn*(1-camPos)*(((rpm/ 3000) factor[(2000/ 3000),(2300/ 3000)]) * ((rpm/ 3000) factor[(2700/ 3000),(2450/ 3000)]))";
 			};
 			class Engine5_int
 			{
-				sound[] = {"AUX_95th_Vehicles\Firehawke\sounds\s1_engine.ogg",0.4466836,1};
+				sound[] = {"AUX_95th_Vehicles_Depricated\Firehawke\sounds\s1_engine.ogg",0.4466836,1};
 				frequency = "0.8 + ((rpm/ 3000) factor[(2450/ 3000),(3000/ 3000)])*0.1";
 				volume = "engineOn*(1-camPos)*((rpm/ 3000) factor[(2400/ 3000),(2700/ 3000)])";
 			};
@@ -963,7 +963,7 @@ class CfgVehicles {
 								minFov = "(24 / 120)";
 								maxFov = "(24 / 120)";
 								visionMode[] = {"Normal","NVG","TI"};
-								gunnerOpticsModel = "\AUX_95th_Vehicles\Ground Vehicles\Firehawke\data\optics_gunner_s1_m_f.p3d";
+								gunnerOpticsModel = "\AUX_95th_Vehicles_Depricated\Ground Vehicles\Firehawke\data\optics_gunner_s1_m_f.p3d";
 								opticsPPEffects[] = {};
 							};
 							class Narrow: Wide
@@ -971,7 +971,7 @@ class CfgVehicles {
 								initFov = "(120 * 0.05625 / 120)";
 								minFov = "(120 * 0.05625 / 120)";
 								maxFov = "(120 * 0.05625 / 120)";
-								gunnerOpticsModel = "\AUX_95th_Vehicles\Ground Vehicles\Firehawke\data\optics_gunner_s1_n_f.p3d";
+								gunnerOpticsModel = "\AUX_95th_Vehicles_Depricated\Ground Vehicles\Firehawke\data\optics_gunner_s1_n_f.p3d";
 							};
 						};
 						viewGunnerShadowAmb = 0.5;
@@ -1216,10 +1216,10 @@ class CfgVehicles {
 						minFov = "(24 / 120)";
 						maxFov = "(24 / 120)";
 						visionMode[] = {"Normal","NVG","TI"};
-						gunnerOpticsModel = "\AUX_95th_Vehicles\Ground Vehicles\Firehawke\data\optics_gunner_s1_m_f.p3d";
+						gunnerOpticsModel = "\AUX_95th_Vehicles_Depricated\Ground Vehicles\Firehawke\data\optics_gunner_s1_m_f.p3d";
 						opticsPPEffects[] = {};
 					};
-					class Narrow: Wide { initFov = "(120 * 0.05625 / 120)"; minFov = "(120 * 0.05625 / 120)"; maxFov = "(120 * 0.05625 / 120)"; gunnerOpticsModel = "\AUX_95th_Vehicles\Ground Vehicles\Firehawke\data\optics_gunner_s1_n_f.p3d"; };
+					class Narrow: Wide { initFov = "(120 * 0.05625 / 120)"; minFov = "(120 * 0.05625 / 120)"; maxFov = "(120 * 0.05625 / 120)"; gunnerOpticsModel = "\AUX_95th_Vehicles_Depricated\Ground Vehicles\Firehawke\data\optics_gunner_s1_n_f.p3d"; };
 				};
 
 				class ViewOptics: ViewOptics { initFov = 0.11; minFov = 0.11; maxFov = 0.11; };
@@ -1243,7 +1243,7 @@ class CfgVehicles {
 		};
 		class Damage {
 			tex[] = {};
-			mat[] = {"AUX_95th_Vehicles\Firehawke\firehawke.rvmat","AUX_95th_Vehicles\Firehawke\firehawke_damage.rvmat","AUX_95th_Vehicles\Firehawke\destruct.rvmat"};
+			mat[] = {"AUX_95th_Vehicles_Depricated\Firehawke\firehawke.rvmat","AUX_95th_Vehicles_Depricated\Firehawke\firehawke_damage.rvmat","AUX_95th_Vehicles_Depricated\Firehawke\destruct.rvmat"};
 		};
 		class AnimationSources: AnimationSources {
 			class recoil_source { source = "reload"; weapon = "3AS_Sabre_MG"; };
@@ -1263,7 +1263,7 @@ class CfgVehicles {
 			class Tex_S1_grey {
 				displayName = "Base grey";
 				author = "JMax";
-				textures[] = {"\AUX_95th_Vehicles\Ground Vehicles\Firehawke\data\firehawke_grey_co.paa"};
+				textures[] = {"\AUX_95th_Vehicles_Depricated\Ground Vehicles\Firehawke\data\firehawke_grey_co.paa"};
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
 		};
@@ -1276,8 +1276,8 @@ class CfgVehicles {
 		scopeCurator = 2;
 		_generalMacro = "AUX_95th_Firehawke";
 		displayName = "FireHawke";
-		picture = "\AUX_95th_Vehicles\Ground Vehicles\Firehawke\data\pic_s1.paa";
-		Icon = "\AUX_95th_Vehicles\Ground Vehicles\Firehawke\data\ico_s1.paa";
+		picture = "\AUX_95th_Vehicles_Depricated\Ground Vehicles\Firehawke\data\pic_s1.paa";
+		Icon = "\AUX_95th_Vehicles_Depricated\Ground Vehicles\Firehawke\data\ico_s1.paa";
 		side = 1;
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Heavy";
@@ -1296,7 +1296,7 @@ class CfgVehicles {
 				};
 			};
 		};
-		#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
+		#include "\AUX_95th_Vehicles_Depricated\Shared\Inventory Shared.hpp"
 	};
 };
 

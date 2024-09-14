@@ -1,5 +1,5 @@
 class CfgPatches {
-	class AUX_95th_Vehicles {
+	class AUX_95th_Vehicles_Depricated {
         author="95th Aux Team";
         name="AUX 95th Vehicles";
 		requiredAddons[]={"3AS_Prop_Crates", "3AS_SaberTank", "3AS_LAAT", "CCS_Manta"};
@@ -54,19 +54,19 @@ class CfgEditorSubcategories {
 #include "CfgWeapons.hpp"
 
 class CfgFunctions { class AUX_95th { class Vehicles {
-	class handleCommandOutpostInit {file = "\AUX_95th_Vehicles\Init\handleCommandOutpostInit.sqf";};
-	class handleLAATInit {file = "\AUX_95th_Vehicles\Init\handleLAATInit.sqf";};
-	class handleTXShieldInit {file = "\AUX_95th_Vehicles\Init\handleTXShieldInit.sqf";};
-	class handleATRTInit {file = "\AUX_95th_Vehicles\Init\handleATRTInit.sqf";};
+	class handleCommandOutpostInit {file = "\AUX_95th_Vehicles_Depricated\Init\handleCommandOutpostInit.sqf";};
+	class handleLAATInit {file = "\AUX_95th_Vehicles_Depricated\Init\handleLAATInit.sqf";};
+	class handleTXShieldInit {file = "\AUX_95th_Vehicles_Depricated\Init\handleTXShieldInit.sqf";};
+	class handleATRTInit {file = "\AUX_95th_Vehicles_Depricated\Init\handleATRTInit.sqf";};
 
-	class handleToggleTXShield {file = "\AUX_95th_Vehicles\Scripts\TXShield\handleToggleTXShield.sqf";};
-	class handleTXRemoved {file = "\AUX_95th_Vehicles\Scripts\TXShield\handleTXRemoved.sqf";};
-	class handleTXShieldDamage {file = "\AUX_95th_Vehicles\Scripts\TXShield\handleTXShieldDamage.sqf";};
-	class TXShieldOffAnimation {file = "\AUX_95th_Vehicles\Scripts\TXShield\TXShieldOffAnimation.sqf";};
+	class handleToggleTXShield {file = "\AUX_95th_Vehicles_Depricated\Scripts\TXShield\handleToggleTXShield.sqf";};
+	class handleTXRemoved {file = "\AUX_95th_Vehicles_Depricated\Scripts\TXShield\handleTXRemoved.sqf";};
+	class handleTXShieldDamage {file = "\AUX_95th_Vehicles_Depricated\Scripts\TXShield\handleTXShieldDamage.sqf";};
+	class TXShieldOffAnimation {file = "\AUX_95th_Vehicles_Depricated\Scripts\TXShield\TXShieldOffAnimation.sqf";};
 
-	class handleLoadResupplyBomb {file = "\AUX_95th_Vehicles\Scripts\Resupply Bomb\handleLoadResupplyBomb.sqf";};
-	class handleResupplyBombDetonated {file = "\AUX_95th_Vehicles\Scripts\Resupply Bomb\handleResupplyBombDetonated.sqf";};
-	class checkIsNearResupplyPad {file = "\AUX_95th_Vehicles\Scripts\Resupply Bomb\checkIsNearResupplyPad.sqf";};
+	class handleLoadResupplyBomb {file = "\AUX_95th_Vehicles_Depricated\Scripts\Resupply Bomb\handleLoadResupplyBomb.sqf";};
+	class handleResupplyBombDetonated {file = "\AUX_95th_Vehicles_Depricated\Scripts\Resupply Bomb\handleResupplyBombDetonated.sqf";};
+	class checkIsNearResupplyPad {file = "\AUX_95th_Vehicles_Depricated\Scripts\Resupply Bomb\checkIsNearResupplyPad.sqf";};
 };};};
 
 class Extended_InitPost_EventHandlers {	

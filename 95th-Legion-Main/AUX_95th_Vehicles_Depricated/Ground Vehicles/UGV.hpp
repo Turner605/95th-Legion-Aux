@@ -7,7 +7,7 @@ class AUX_95th_UGV: CCS_Manta_Base {
 	editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Light";
 	side = 1;
 	textureList[] = {"Clone",1};
-	hiddenSelectionsTextures[] = {"\AUX_95th_Vehicles\Data\UGV\UGV.paa"};
+	hiddenSelectionsTextures[] = {"\AUX_95th_Vehicles_Depricated\Data\UGV\UGV.paa"};
 	class Turrets: Turrets {
 		class MainTurret: NewTurret {
 			class HitPoints {

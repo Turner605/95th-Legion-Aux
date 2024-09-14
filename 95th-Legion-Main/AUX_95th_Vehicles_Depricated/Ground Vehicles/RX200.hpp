@@ -9,7 +9,7 @@ class AUX_95th_RX200 : 3AS_RX200_Base {
 	ace_cargo_space = 26;
 	tas_canBlift=1;
 	tas_liftVars="[[[[0, -4, -8]]], [0.1], [-0.5]]";
-	hiddenSelectionsTextures[]={"\AUX_95th_Vehicles\Data\RX200\RX200.paa"};
+	hiddenSelectionsTextures[]={"\AUX_95th_Vehicles_Depricated\Data\RX200\RX200.paa"};
 	class ACE_Cargo {
 		class Cargo {
 			class track {
@@ -61,5 +61,5 @@ class AUX_95th_RX200 : 3AS_RX200_Base {
 			};
 		};
 	};
-	#include "\AUX_95th_Vehicles\Shared\Inventory Shared.hpp"
+	#include "\AUX_95th_Vehicles_Depricated\Shared\Inventory Shared.hpp"
 };
