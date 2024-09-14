@@ -111,8 +111,8 @@ class CfgVehicles {
 		ls_impulsor_boostSpeed_2 = 800;
 		author = "95th Aux Team";
 		displayname="Rho Shuttle";
-		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
-		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
+		crew = "AUX_95th_Unit_P1_Basic_Trooper";
+		typicalCargo[] = {"AUX_95th_Unit_P1_Basic_Trooper"};
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Air_Logistics";
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		hiddenSelectionsTextures[]={
@@ -146,8 +146,8 @@ class CfgVehicles {
 		author = "95th Aux Team";
 		scope = 2;
 		displayname="Transport Crate";
-		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
-		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
+		crew = "AUX_95th_Unit_P1_Basic_Trooper";
+		typicalCargo[] = {"AUX_95th_Unit_P1_Basic_Trooper"};
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Static";
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		hiddenSelectionsTextures[]={

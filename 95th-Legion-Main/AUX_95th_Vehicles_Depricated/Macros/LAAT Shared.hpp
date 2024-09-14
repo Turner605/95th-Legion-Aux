@@ -9,7 +9,7 @@
 		editorSubcategory=AUX_95th_Legion_Vehicles_Category_Air_Gunships;\
 		ace_cargo_space = 26;\
 		ace_cargo_hasCargo = 1;\
-        crew = AUX_95th_Generic_Unit_P1_Basic_Pilot;\
+        crew = AUX_95th_Unit_P1_Basic_Trooper;\
 		weapons[]={95th_LAAT_Light_Cannon,95th_LAAT_Heavy_Cannon,95th_LAAT_Hydras,3as_LAAT_Missile_AA,CMFlareLauncher};\
 		magazines[]={\
 			3as_PylonMissile_LAAT_8Rnd_Missile_AA,\
