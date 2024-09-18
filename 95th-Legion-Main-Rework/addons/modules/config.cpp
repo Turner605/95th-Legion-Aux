@@ -17,6 +17,7 @@ class CfgFunctions {
         class Modules {
 			file = "\z\AUX_95th\addons\modules\functions";
             class jetDroidInsertion {};
+            class droidPodInsertion {};
             class isCloseToGround {};
         };
     };
