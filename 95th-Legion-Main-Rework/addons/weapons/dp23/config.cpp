@@ -1,12 +1,22 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Weapons_DP23 {
-		author = "95th Legion";
-		name = "AUX 95th Weapons DP23";
-		requiredAddons[] = {"A3_data_F","A3_anims_F","A3_weapons_F","A3_characters_F"};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {};
 		weapons[] = {"AUX_95th_DP23","AUX_95th_DP23_fried","AUX_95th_DP23_shield","AUX_95th_DP23_shield_fried"};
-		units[] = {};
-		magazines[] = {};
-	};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {
+            "AUX_95th_main",
+            "AUX_95th_weapons_shared",
+            "A3_data_F",
+            "A3_anims_F",
+            "A3_weapons_F",
+            "A3_characters_F"
+        };
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class CfgMagazines {
@@ -18,7 +28,7 @@ class CfgMagazines {
 		author = "95th Legion";
 		modelSpecial = "";
 		modelSpecialIsProxy = 0;
-		picture = "\AUX_95th_Weapons_DP23\Data\ui\DP23_mag_ui_ca.paa";
+		picture = "\z\AUX_95th\addons\weapons\dp23\data\ui\DP23_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
 		count = 20;
 		displayName = "$STR_JLTS_names_DP23_mag";
@@ -68,17 +78,17 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] DP23";
 		descriptionShort = "$STR_JLTS_descs_BlasterScatter";
-		picture = "AUX_95th_Weapons_DP23\Data\ui\DP23_ui_ca.paa";
+		picture = "z\AUX_95th\addons\weapons\dp23\data\ui\DP23_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DP23\DP23.p3d";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"AUX_95th_Weapons_DP23\Data\DP23_co.paa"};
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_DP23\Anims\DP23_handanim.rtm"};
+		hiddenSelectionsTextures[] = {"z\AUX_95th\addons\weapons\dp23\data\DP23_co.paa"};
+		handAnim[] = {"OFP2_ManSkeleton","\z\AUX_95th\addons\weapons\dp23\anims\DP23_handanim.rtm"};
 		magazines[] = {"AUX_95th_Universal_Shotgun_Mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		recoil = "AUX_95th_recoil_DP23";
 		fireLightDiffuse[] = {0,0,1};
-		drySound[] = {"AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",5,1,10};
+		drySound[] = {"z\AUX_95th\addons\weapons\shared\sounds\weapon_dry.wss",5,1,10};
 		muzzles[] = {"this","Stun"};
 		class Stun: AUX_95th_Stun_Muzzle_Rifle{};
 		class Single: Mode_SemiAuto {
@@ -91,7 +101,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"\AUX_95th_Weapons_DP23\Sounds\dp23_fire.wss",1,1,1800};
+				begin1[] = {"\z\AUX_95th\addons\weapons\dp23\sounds\dp23_fire.wss",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.3;
@@ -113,7 +123,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"\AUX_95th_Weapons_DP23\Sounds\dp23_fire.wss",1,1,1800};
+				begin1[] = {"\z\AUX_95th\addons\weapons\dp23\sounds\dp23_fire.wss",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.096;
@@ -136,7 +146,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"\AUX_95th_Weapons_DP23\Sounds\dp23_fire.wss",1,1,1800};
+				begin1[] = {"\z\AUX_95th\addons\weapons\dp23\sounds\dp23_fire.wss",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			dispersion = 0.00073;
@@ -162,7 +172,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"\AUX_95th_Weapons_DP23\Sounds\dp23_fire.wss",1,1,1800};
+				begin1[] = {"\z\AUX_95th\addons\weapons\dp23\sounds\dp23_fire.wss",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			dispersion = 0.00073;
@@ -186,7 +196,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"\AUX_95th_Weapons_DP23\Sounds\dp23_fire.wss",1,1,1800};
+				begin1[] = {"\z\AUX_95th\addons\weapons\dp23\sounds\dp23_fire.wss",1,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			dispersion = 0.00073;
@@ -231,7 +241,7 @@ class CfgWeapons {
 		displayName = "$STR_JLTS_names_DP23Fried";
 		descriptionShort = "$STR_JLTS_descs_BlasterFried";
 		scope = 1;
-		picture = "AUX_95th_Weapons_DP23\Data\ui\DP23_fried_ui_ca.paa";
+		picture = "z\AUX_95th\addons\weapons\dp23\data\ui\DP23_fried_ui_ca.paa";
 		muzzles[] = {"this"};
 		magazines[] = {};
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
@@ -251,8 +261,8 @@ class CfgWeapons {
 		JLTS_friedItem = "AUX_95th_DP23_shield_fried";
 		model = "\MRC\JLTS\weapons\DP23\DP23_shielded.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"AUX_95th_Weapons_DP23\Data\DP23_co.paa","\MRC\JLTS\weapons\Shield\data\shield_co.paa"};
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_DP23\Anims\DP23_shielded_handanim.rtm"};
+		hiddenSelectionsTextures[] = {"z\AUX_95th\addons\weapons\dp23\data\DP23_co.paa","\MRC\JLTS\weapons\Shield\data\shield_co.paa"};
+		handAnim[] = {"OFP2_ManSkeleton","\z\AUX_95th\addons\weapons\dp23\anims\DP23_shielded_handanim.rtm"};
 		inertia = 0.8;
 		recoil = "recoil_pdw";
 		class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -269,7 +279,7 @@ class CfgWeapons {
 		displayName = "$STR_JLTS_names_DP23ShieldFried";
 		descriptionShort = "$STR_JLTS_descs_BlasterFried";
 		scope = 1;
-		picture = "AUX_95th_Weapons_DP23\Data\ui\DP23_fried_ui_ca.paa";
+		picture = "z\AUX_95th\addons\weapons\dp23\data\ui\DP23_fried_ui_ca.paa";
 		magazines[] = {};
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
 		class Stun: Stun {
@@ -279,3 +289,5 @@ class CfgWeapons {
 		};
 	};
 };
+
+#include "CfgEventHandlers.hpp"
