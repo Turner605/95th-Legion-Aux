@@ -14,7 +14,7 @@ if (!hasInterface) exitWith {};
     params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
 
     ["Summon Jet Droids", [
-        ["SIDES", ["Side", "The side the dropped unit will be as. (ONLY ONE!)"], east],
+        ["SIDES", ["Side", "The side the dropped unit will be."], east],
         ["SLIDER", ["Unit Count", "The amount of Jet droids to insert."], [1, 24, 8, 0]],
         ["CHECKBOX",["Include AT Droids","Add additional AT droids at a 1:4 ratio"],[true]],
         ["TOOLBOX", "Mode", [0, 1, 4, ["Hold", "Seek", "Garrison", "Garrison (Force)"]]],
