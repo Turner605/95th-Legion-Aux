@@ -1,12 +1,15 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Weapons_DC15L {
-		author = "95th Legion";
-		name = "AUX 95th Weapons DC15L";
-		requiredAddons[] = {"A3_data_F","A3_anims_F","A3_weapons_F","A3_characters_F"};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {};
 		weapons[] = {"AUX_95th_DC15L","3AS_Bipod_DC15L_f"};
-		units[] = {};
-		magazines[] = {};
-	};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_weapons_shared"};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class CfgRecoils {
@@ -101,7 +104,7 @@ class CfgWeapons {
 		distanceZoomMin = 400;
 		distanceZoomMax = 400;
 		descriptionShort = "DC-15L, 3rd Army Studios";
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_DC15L\Anim\DC15L_handanim.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\z\AUX_95th\addons\weapons\dc15l\anim\DC15L_handanim.rtm"};
 		selectionFireAnim = "zasleh";
 		fireLightDiffuse[] = {7,110,176};
 		fireLightIntensity = 0.02;
@@ -134,7 +137,7 @@ class CfgWeapons {
 		aiDispersionCoefX = 4;
 		caseless[] = {"",1,1,1};
 		soundBullet[] = {"caseless",1};
-		drySound[] = {"\AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",2,1,20};
+		drySound[] = {"\z\AUX_95th\addons\weapons\shared\sounds\weapon_dry.wss",2,1,20};
 		reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",1,1,30};
 	};
 
@@ -143,7 +146,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] DC-15L Rifle";
 		model = "3AS\3AS_Weapons\DC15L\3AS_DC15L_f.p3d";
-		picture = "\AUX_95th_Weapons_DC15L\Data\UI\3as_dc15l.paa";
+		picture = "\z\AUX_95th\addons\weapons\dc15l\data\UI\3as_dc15l.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		class OpticsModes {
 			class Ironsights {
@@ -202,3 +205,5 @@ class CfgWeapons {
 		inertia = 0.2;
 	};
 };
+
+#include "CfgEventHandlers.hpp"
