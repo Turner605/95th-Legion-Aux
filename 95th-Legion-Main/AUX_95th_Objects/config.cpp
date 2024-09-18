@@ -150,10 +150,10 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Misc_Reinsert_Requester {class AUX_95th_Misc_Reinsert_Requester_Init {init = "[_this select 0] call AUX_95th_fnc_reinsertRequesterInit;";};};
 	class AUX_95th_Misc_Radio_Extender {class AUX_95th_Misc_Radio_Extender_Init {init = "[_this select 0,50000] call tfar_antennas_fnc_initRadioTower";};};
 	class AUX_95th_Crate_Full_Arsenal {class AUX_95th_Crate_Full_Arsenal_Init {init = "[_this select 0, true] call ace_arsenal_fnc_initBox;";};};
-	class AUX_95th_Crate_Restricted_Arsenal {class AUX_95th_Crate_Restricted_Arsenal_Init {init = "[_this select 0, Arsenal_All_Items_95th] call ace_arsenal_fnc_initBox;";};};
+	class AUX_95th_Crate_Restricted_Arsenal {class AUX_95th_Crate_Restricted_Arsenal_Init {init = "[_this select 0, AUX_95th_Arsenal_Whitelisted_All] call ace_arsenal_fnc_initBox;";};};
 	class AUX_95th_Crate_Inverted_Arsenal {class AUX_95th_Crate_Inverted_Arsenal_Init {init = "[_this select 0] call AUX_95th_fnc_invertedArsenalInit;";};};
 	class AUX_95th_Misc_Arsenal_Full {class AUX_95th_Misc_Arsenal_Full_Init {init = "[_this select 0, true] call ace_arsenal_fnc_initBox;";};};
-	class AUX_95th_Misc_Arsenal_Restricted {class AUX_95th_Misc_Arsenal_Restricted_Init {init = "[_this select 0, Arsenal_All_Items_95th] call ace_arsenal_fnc_initBox;";};};
+	class AUX_95th_Misc_Arsenal_Restricted {class AUX_95th_Misc_Arsenal_Restricted_Init {init = "[_this select 0, AUX_95th_Arsenal_Whitelisted_All] call ace_arsenal_fnc_initBox;";};};
 	class AUX_95th_Droid_Factory_Terminal {class AUX_95th_Droid_Factory_Terminal_Init {init = "[_this select 0] call AUX_95th_fnc_droidFactoryTerminalInit;";};};
 	class AUX_95th_Ground_Factory {class AUX_95th_Ground_Factory_Init {init = "[_this select 0] call AUX_95th_fnc_droidFactoryInit;";};};
 	class AUX_95th_Flak_Factory {class AUX_95th_Flak_Factory_Init {init = "[_this select 0] call AUX_95th_fnc_droidFlakFactoryInit;";};};

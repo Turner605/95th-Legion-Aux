@@ -56,6 +56,7 @@ class CfgFunctions {
             class checkKit {};
             class checkThrowables {};
             class checkWeapons {};
+            class checkCerts {};
         };
     };
 };

@@ -95,7 +95,7 @@ private _outpostName = "Outpost: " + (str _outpostNumber);
 }, 5, [_vehicle, _objNetId, _outpostName]] call CBA_fnc_addPerFrameHandler;
 
 //#################################### Arsenal ####################################
-[_vehicle, Arsenal_All_Items_95th] call ace_arsenal_fnc_initBox;
+[_vehicle, AUX_95th_Arsenal_Whitelisted_All] call ace_arsenal_fnc_initBox;
 
 //#################################### Respawn ####################################
 [west, _vehicle, _outpostName] call BIS_fnc_addRespawnPosition;
