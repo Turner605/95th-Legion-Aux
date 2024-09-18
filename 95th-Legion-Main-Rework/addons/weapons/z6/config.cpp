@@ -65,6 +65,7 @@ class CfgWeapons {
 	class UGL_F;
 	class AUX_95th_Z6: LMG_Mk200_F {
 		DSS_DamageSystem_Power=15;
+		WBK_UseHeavyWeaponFramework = "true";
 		JLTS_hasElectronics = 1;
 		JLTS_hasEMPProtection = 0;
 		JLTS_friedItem = "AUX_95th_Z6_fried";

@@ -146,6 +146,7 @@ class CfgWeapons {
 
 	class AUX_95th_BX42: 41_Flammenwerfer_02_F {
 		displayName="[95th] BX-42 Flamethrower";
+		// WBK_UseHeavyWeaponFramework = "true";
 		author="95th Aux Team";
 		WBK_BurnEm_IsFlamethrower = "True";
 		WBK_BurnEm_RequiredBackpack = "AUX_95th_BX42_Backpack";
