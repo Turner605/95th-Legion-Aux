@@ -87,7 +87,8 @@ class CfgWeapons {
 		fireLightIntensity = 0.02;
 		flash = "gunfire";
 		flashSize = 0.1;
-		muzzles[] = {"this","Stun"};
+		// muzzles[] = {"this","Stun"};
+		muzzles[] = {"this"};
 		modes[] = {"Single","FullAuto"};
 		class Stun: AUX_95th_Stun_Muzzle_Rifle{};
 		class Single: Mode_SemiAuto {

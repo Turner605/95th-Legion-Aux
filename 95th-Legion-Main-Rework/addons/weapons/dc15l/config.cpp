@@ -111,7 +111,8 @@ class CfgWeapons {
 		flash = "gunfire";
 		flashSize = 0.1;
 		modes[] = {"FullAuto"};
-		muzzles[] = {"this","Stun"};
+		// muzzles[] = {"this","Stun"};
+		muzzles[] = {"this"};
 		class Stun: AUX_95th_Stun_Muzzle_Rifle{};
 		class FullAuto: Mode_FullAuto {
 			reloadTime = 0.1;

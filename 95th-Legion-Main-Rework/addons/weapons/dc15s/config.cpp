@@ -70,7 +70,8 @@ class CfgWeapons {
 		magazineWell[] = {};
 		fireLightDiffuse[] = {0,0,1};
 		drySound[] = {"z\AUX_95th\addons\weapons\dc15s\sounds\weapon_dry.wss",5,1,10};
-		muzzles[] = {"this","Stun"};
+		// muzzles[] = {"this","Stun"};
+		muzzles[] = {"this"};
 		class Stun: AUX_95th_Stun_Muzzle_Rifle{};
 		class Single: Mode_SemiAuto {
 			sounds[] = {"StandardSound"};
