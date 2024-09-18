@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 private _hasZen = isClass (configFile >> "CfgPatches" >> "zen_custom_modules");
 
 if !(_hasZen) exitWith {
@@ -20,7 +22,7 @@ if (!hasInterface) exitWith {};
 
         [_position, _unitCount] call AUX_95th_fnc_jetDroidInsertion;
     }, {}, [_pos]] call zen_dialog_fnc_create;
-}, "\AUX_95th_Modules\Data\Droid.paa"] call zen_custom_modules_fnc_register;
+}, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
 
 // // Droid Pod Insertion
 // ["[95th] Supports", "Droid Pod Insertion", {
@@ -35,8 +37,8 @@ if (!hasInterface) exitWith {};
 // // ls_ground_droidDispenser
 //         [_position, _unitCount] call AUX_95th_fnc_jetDroidInsertion;
 //     }, {}, [_pos]] call zen_dialog_fnc_create;
-// }, "\AUX_95th_Modules\Data\Droid.paa"] call zen_custom_modules_fnc_register;
+// }, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
 
-
-
-
+// Add option for AT droids
+// Add option to seek nearest player
+// LAMBS support to make them rush?
