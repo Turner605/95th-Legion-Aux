@@ -29,7 +29,7 @@ class CfgMagazines {
 		author = "95th Legion";
 		modelSpecial = "";
 		modelSpecialIsProxy = 0;
-		picture = "\AUX_95th_Weapons_Shared\Data\ui\Pistol_Mag.paa";
+		picture = "\z\AUX_95th\addons\weapons\shared\data\ui\Pistol_Mag.paa";
 		model = "\MRC\JLTS\weapons\DC17SA\DC17SA_mag.p3d";
 		count = 50;
 		displayName = "Dual DC17SA Mag";
@@ -60,7 +60,7 @@ class CfgWeapons {
 	class AUX_95th_DC17SA_Base_F: Pistol_Base_F {
 		author = "95th Legion";
 		magazines[] = {"AUX_95th_Universal_Pistol_Mag"};
-		drySound[] = {"AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",0.39810717,1,20};
+		drySound[] = {"z\AUX_95th\addons\weapons\shared\sounds\weapon_dry.wss",0.39810717,1,20};
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
 		modes[] = {"Single"};
 		class Single: Mode_SemiAuto {
@@ -122,7 +122,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] Dual DC-17S Sidearm";
 		model = "3AS\3AS_Weapons\DC17S\3AS_DC17S_Dual_F.p3d";
-		picture = "\AUX_95th_Weapons_DC17SA_Dual\Data\ui\3as_dc17s_d.paa";
+		picture = "\z\AUX_95th\addons\weapons\dc17sa_dual\data\ui\3as_dc17s_d.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		reloadAction = "AUX_95th_GestureReloadDualDC17S";
 		recoil = "AUX_95th_Recoil_Pistol_Dual";
@@ -130,7 +130,7 @@ class CfgWeapons {
 		cursorAim = "gl";
 		swayModifier = 0.1;
 		swayDecaySpeed = 2;
-		handAnim[] = {"OFP2_ManSkeleton","AUX_95th_Weapons_DC17SA_Dual\Anims\attempt1.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","z\AUX_95th\addons\weapons\dc17sa_dual\anims\attempt1.rtm"};
 		magazines[] = {"AUX_95th_Universal_Pistol_Mag", "AUX_95th_DC17SA_Dual_Mag"};
 		magazineWell[] = {};
 		class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -160,7 +160,7 @@ class CfgGesturesMale {
 	class Default;
 	class States {
 		class AUX_95th_GestureReloadDualDC17S: Default {
-			file = "AUX_95th_Weapons_DC17SA_Dual\Anims\reloadanim.rtm";
+			file = "z\AUX_95th\addons\weapons\dc17sa_dual\anims\reloadanim.rtm";
 			looped = 0;
 			speed = 0.8;
 			mask = "handsWeapon_pst";
