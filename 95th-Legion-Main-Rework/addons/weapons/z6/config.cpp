@@ -1,12 +1,21 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_weapons_Z6 {
-		author = "95th Legion";
-		name = "AUX 95th Weapons Z6";
-		requiredAddons[] = {"A3_data_F","A3_anims_F","A3_weapons_F","A3_characters_F"};
-		weapons[] = {"AUX_95th_Z6","AUX_95th_Z6_fried"};
-		units[] = {};
-		magazines[] = {};
-	};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {};
+        weapons[] = {"AUX_95th_Z6","AUX_95th_Z6_fried"};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {
+            "AUX_95th_main",
+            "AUX_95th_weapons_shared",
+            "A3_data_F","A3_anims_F",
+            "A3_weapons_F",
+            "A3_characters_F"
+        };
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class CfgRecoils {
@@ -26,7 +35,7 @@ class CfgMagazines {
 		author = "95th Legion";
 		modelSpecial = "";
 		modelSpecialIsProxy = 0;
-		picture = "\AUX_95th_Weapons_Z6\Data\ui\z6_mag_ui_ca.paa";
+		picture = "\z\AUX_95th\addons\weapons\z6\data\ui\z6_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\z6\z6_mag.p3d";
 		count = 300;
 		displayName = "$STR_JLTS_names_Z6_mag";
@@ -65,17 +74,17 @@ class CfgWeapons {
 		baseWeapon = "AUX_95th_Z6";
 		displayName = "[95th] Z6";
 		descriptionShort = "$STR_JLTS_descs_BlasterRotaryCannon";
-		picture = "\AUX_95th_Weapons_Z6\Data\ui\Z6_ui_ca.paa";
+		picture = "\z\AUX_95th\addons\weapons\z6\data\ui\Z6_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\Z6\Z6.p3d";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"\AUX_95th_Weapons_Z6\Data\Z6_1_co.paa","\AUX_95th_Weapons_Z6\Data\Z6_2_co.paa"};
+		hiddenSelectionsTextures[] = {"\z\AUX_95th\addons\weapons\z6\data\Z6_1_co.paa","\z\AUX_95th\addons\weapons\z6\data\Z6_2_co.paa"};
 		recoil = "AUX_95th_recoil_Z6";
 		maxZeroing = 1200;
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_Z6\Anims\Z6_handanim.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\z\AUX_95th\addons\weapons\z6\anims\Z6_handanim.rtm"};
 		magazines[] = {"AUX_95th_Universal_Heavy_Mag"};
 		magazineWell[] = {};
 		fireLightDiffuse[] = {0,0,1};
-		drySound[] = {"AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",5,1,10};
+		drySound[] = {"\z\AUX_95th\addons\weapons\shared\Sounds\weapon_dry.wss",5,1,10};
 		modes[] = {"manual","close","short","medium","far_optic1","far_optic2"};
 		class manual: Mode_FullAuto {
 			sounds[] = {"StandardSound","SilencedSound"};
@@ -193,10 +202,12 @@ class CfgWeapons {
 		displayName = "$STR_JLTS_names_Z6Fried";
 		descriptionShort = "$STR_JLTS_descs_BlasterFried";
 		scope = 1;
-		picture = "\AUX_95th_Weapons_Z6\Data\ui\Z6_fried_ui_ca.paa";
+		picture = "\z\AUX_95th\addons\weapons\z6\data\ui\Z6_fried_ui_ca.paa";
 		muzzles[] = {"this"};
 		magazines[] = {};
 		JLTS_isFried = 1;
 		drySound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\dry_Mx",0.562341,1,10};
 	};
 };
+
+#include "CfgEventHandlers.hpp"
