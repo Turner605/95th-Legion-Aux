@@ -225,6 +225,14 @@ class CfgWeapons {
 				positionName = "Usti hlavne";
 			};
 		};
+
+        class XtdGearInfo {
+            model = "AUX_95th_Weapons_Primary_DC15A";
+            Role = "Basic";
+            Weapon = "DC15A";
+            Variant = "Standalone";
+            Texture = "Wooden";
+        };
 	};
 
 	class AUX_95th_DC15A_ugl: AUX_95th_DC15A {
@@ -270,6 +278,14 @@ class CfgWeapons {
 				compatibleItems[] = {};
 			};
 		};
+
+        class XtdGearInfo {
+            model = "AUX_95th_Weapons_Primary_DC15A";
+            Role = "Basic";
+            Weapon = "DC15A";
+            Variant = "UGL";
+            Texture = "Wooden";
+        };
 	};
 
 	class AUX_95th_DC15A_plastic: AUX_95th_DC15A {
@@ -278,6 +294,14 @@ class CfgWeapons {
 		picture = "z\AUX_95th\addons\weapons\dc15a\data\ui\DC15A_plastic_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_plastic.p3d";
 		hiddenSelectionsTextures[] = {"z\AUX_95th\addons\weapons\dc15a\data\DC15A_plastic_co.paa"};
+
+        class XtdGearInfo {
+            model = "AUX_95th_Weapons_Primary_DC15A";
+            Role = "Basic";
+            Weapon = "DC15A";
+            Variant = "Standalone";
+            Texture = "Metal";
+        };
 	};
 
 	class AUX_95th_DC15A_ugl_plastic: AUX_95th_DC15A_ugl {
@@ -286,6 +310,14 @@ class CfgWeapons {
 		picture = "z\AUX_95th\addons\weapons\dc15a\data\ui\DC15A_ugl_plastic_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl_plastic.p3d";
 		hiddenSelectionsTextures[] = {"z\AUX_95th\addons\weapons\dc15a\data\DC15A_plastic_co.paa","z\AUX_95th\addons\weapons\dc15a\data\DC15A_ugl_co.paa"};
+
+        class XtdGearInfo {
+            model = "AUX_95th_Weapons_Primary_DC15A";
+            Role = "Basic";
+            Weapon = "DC15A";
+            Variant = "UGL";
+            Texture = "Metal";
+        };
 	};
 
 	class AUX_95th_DC15A_fried: AUX_95th_DC15A {

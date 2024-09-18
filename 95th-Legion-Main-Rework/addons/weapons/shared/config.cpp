@@ -925,4 +925,6 @@ class CfgSoundSets {
 	};
 };
 
+#include "XtdGearModels.hpp"
+
 #include "CfgEventHandlers.hpp"

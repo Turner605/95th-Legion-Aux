@@ -216,6 +216,14 @@ class CfgWeapons {
 		class WeaponSlotsInfo: WeaponSlotsInfo {
 			mass = 60;
 		};
+
+        class XtdGearInfo {
+            model = "AUX_95th_Weapons_Primary_DC15C";
+            Role = "NCO";
+            Weapon = "DC15C";
+            Variant = "Standalone";
+            Texture = "Metal";
+        };
 	};
 
 	class AUX_95th_DC15C_GL: AUX_95th_DC15C_Base_F {
@@ -262,6 +270,14 @@ class CfgWeapons {
 		class WeaponSlotsInfo: WeaponSlotsInfo {
 			mass = 60;
 		};
+
+        class XtdGearInfo {
+            model = "AUX_95th_Weapons_Primary_DC15C";
+            Role = "NCO";
+            Weapon = "DC15C";
+            Variant = "UGL";
+            Texture = "Metal";
+        };
 	};
 
 	class ItemCore;
