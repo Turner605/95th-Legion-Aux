@@ -13,7 +13,9 @@ class CfgPatches {
             "A3_weapons_F",
             "A3_characters_F",
             "JLTS_weapons_Reloads",
-            "ace_arsenal"
+            "ace_arsenal",
+			"JLTS_weapons_Core",
+			"3AS_Weapons"
 		};
         authors[] = {"Turner"};
         VERSION_CONFIG;

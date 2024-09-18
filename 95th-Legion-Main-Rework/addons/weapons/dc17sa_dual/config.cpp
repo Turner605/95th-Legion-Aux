@@ -1,12 +1,15 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Weapons_DC17SA_Dual {
-		author = "95th Legion";
-		name = "AUX 95th Weapons DC17SA Dual";
-		requiredAddons[] = {"A3_data_F","A3_weapons_F","A3_characters_F","JLTS_weapons_Core","3AS_Weapons"};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {};
 		weapons[] = {"AUX_95th_DC17SA_Dual"};
-		units[] = {};
-		magazines[] = {};
-	};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_weapons_shared"};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class CfgRecoils {
@@ -169,3 +172,5 @@ class CfgGesturesMale {
 		};
 	};
 };
+
+#include "CfgEventHandlers.hpp"
