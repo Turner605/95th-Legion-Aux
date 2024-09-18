@@ -97,3 +97,8 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _position, [], 0, "NO
 }, [_position, _unitSide, _warning, _squadType, _mode, _singleUse, _shielded, _smokescreen, _warningSmoke], _delayTime] call CBA_fnc_waitAndExecute;
 
 // maybe an override string for custom spawns?
+
+//TODO:
+// - explosion effect + crater if on terrain
+// - Shield
+// - Smoke screen
