@@ -4,7 +4,7 @@ private _delayTime = 1;
 
 if(_warning) then {_delayTime = 10};
 
-private _smoke = createVehicle ["SmokeShellOrange", _position, [], 0, "NONE"]; 
+private _warningSmoke = createVehicle ["SmokeShellOrange", _position, [], 0, "NONE"]; 
 
 [{
     params["_position", "_unitSide", "_warning", "_squadType", "_mode", "_singleUse", "_shielded", "_smokescreen", "_warningSmoke"];
