@@ -3,15 +3,12 @@
 #define PLAYER_NAME blue
 #define PLAYER_NAME_BEAUTIFIED Blue
 
-//OPTIONS: Unassigned, Basic, Fallen, Zeus, PLATOON_SQUAD (EG One_Seven)
+//OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
 #define SQUAD_KEY One_Two
-
-//OPTIONS: Unassigned, Basic, Fallen, Zeus, Ackley, Reek, .....
-#define SQUAD_NAME Reek
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 0
-#define HELMET_P1_ENGINEER 0
+#define HELMET_P1_ENGINEER 1
 #define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
 #define HELMET_P1_SPECOPS 0

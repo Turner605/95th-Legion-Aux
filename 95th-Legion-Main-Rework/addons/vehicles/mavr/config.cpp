@@ -119,8 +119,8 @@ class CfgVehicles
 
 	class AUX_95th_MAVr: QS_Mavr {
 		author = "95th Aux Team";
-		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
-		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
+		crew = "AUX_95th_Unit_P1_Basic_Trooper";
+		typicalCargo[] = {"AUX_95th_Unit_P1_Basic_Trooper"};
 		#include "\z\AUX_95th\addons\vehicles\shared\sharedInventory.hpp"
 		tas_canBlift=1;
 		tas_liftVars = "[[[[0,-4,-4]]], [0.1], [-0.5]]";

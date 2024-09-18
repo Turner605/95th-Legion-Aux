@@ -3,11 +3,8 @@
 #define PLAYER_NAME mermaid
 #define PLAYER_NAME_BEAUTIFIED Mermaid
 
-//OPTIONS: Unassigned, Basic, Fallen, Zeus, PLATOON_SQUAD (EG One_Seven)
+//OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
 #define SQUAD_KEY One_One
-
-//OPTIONS: Unassigned, Basic, Fallen, Zeus, Ackley, Reek, .....
-#define SQUAD_NAME Ackley
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
@@ -21,7 +18,7 @@
 #define HELMET_P2_AIRBORNE 0
 
 // UNIFORM OPTIONS 0 (False), 1 (True)
-#define UNIFORM_P1_BASIC 0
+#define UNIFORM_P1_BASIC 1
 #define UNIFORM_P1_MC 0
 #define UNIFORM_P1_COLDASSAULT 0
 #define UNIFORM_P1_COMMANDO 0

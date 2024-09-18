@@ -323,7 +323,7 @@ class XtdGearModels {
 };
 
 class CfgFactionClasses {
-    class AUX_95th_Legion_Faction_Clones {displayName = "[95th] Clones";  priority = 1; side = 1;};
+    class AUX_95th_Legion_Faction_Clones {displayName = "[95th] Clones"; priority = 1; side = 1; scope=2; scopecurator=2;};
 };
 
 class CfgEditorSubcategories {
@@ -347,7 +347,7 @@ class CfgVehicles {
 	class ReammoBox;
 	class Bag_Base: ReammoBox{};
 	class AUX_95th_BX42_Backpack: Bag_Base {
-		displayName="[95th] BX-42 Flamethrower Pack";
+		displayName="[95th] 0-0 Basic Backpacks";
 		author="95th Aux Team";
 		WBK_BurnEm_FlamethrowerBaloons = "true";
 		scope=2; maximumLoad=250; mass=80;

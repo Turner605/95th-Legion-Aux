@@ -1,1 +1,1 @@
-#include "\z\AUX_95th\addons\players\shared\script_component.hpp"
+#include "\z\AUX_95th\addons\vehicles\shared\script_component.hpp"

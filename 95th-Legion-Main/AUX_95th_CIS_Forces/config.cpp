@@ -201,7 +201,7 @@ class CfgVehicles {
 	NEW_95TH_INDEPENDENT_B1_BACKPACK(Police);
 
 	//############################################################### Commando Units ###############################################################
-	class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Generic_Unit_P1_Basic_Rifleman {
+	class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Unit_P1_Basic_Trooper {
 		displayName="[95th] Disguised BX Trooper";
 		author="95th Aux Team";
 		DSS_Is_Disguised_As_Bluefor=1;\

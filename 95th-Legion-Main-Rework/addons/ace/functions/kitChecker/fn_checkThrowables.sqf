@@ -18,3 +18,6 @@
 // if((count _removedThrowables) > 0) then {
 //     systemChat ("Incorrect throwable(s) removed: " + _removedThrowablesString);
 // };
+
+
+// Want to check an overall count of each and tell them they should not be carrying that many but dont remove them?

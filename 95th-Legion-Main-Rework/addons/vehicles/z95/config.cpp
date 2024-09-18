@@ -148,8 +148,8 @@ class CfgVehicles {
 		ls_impulsor_boostSpeed_1 = 400;
 		ls_impulsor_boostSpeed_2 = 800;
 		displayName = "Z-95 HeadHunter";
-		crew = "AUX_95th_Generic_Unit_P1_Basic_Rifleman";
-		typicalCargo[] = {"AUX_95th_Generic_Unit_P1_Basic_Rifleman"};
+		crew = "AUX_95th_Unit_P1_Basic_Trooper";
+		typicalCargo[] = {"AUX_95th_Unit_P1_Basic_Trooper"};
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Air_Fighters";
 		hiddenselectionstextures[] = {

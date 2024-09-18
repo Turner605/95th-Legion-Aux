@@ -1,3 +1,4 @@
+#include "\z\AUX_95th\addons\players\shared\script_squad_defines.hpp"
 class SEA_Helmet_P1_Base;
 
 #if HELMET_P1_BASIC == 1
@@ -6,7 +7,7 @@ class SEA_Helmet_P1_Base;
         scopeArsenal = 2;
         author="95th Aux Team";
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
-        displayName=QUOTE([95th] SQUAD_NAME Helmets); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
         hiddenSelections[]={"Camo1","Visor"};
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p1_basic\Helmet.paa), 
@@ -29,7 +30,7 @@ class SEA_Helmet_Engineer_Base;
         scopeArsenal = 2;
         author="95th Aux Team";
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
-        displayName=QUOTE([95th] SQUAD_NAME Helmets); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
         hiddenSelections[]={"Camo1","Visor"};
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p1_engineer\Helmet.paa), 
@@ -52,7 +53,7 @@ class SEA_Helmet_ARF_base;
         scopeArsenal = 2;
         author="95th Aux Team";
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
-        displayName=QUOTE([95th] SQUAD_NAME Helmets); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
         hiddenSelections[]={"Camo1","Camo2","Visor"};
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p1_arf\Helmet.paa), 
@@ -76,7 +77,7 @@ class LSEA_Helmet_Pilot_P1_Base;
         scopeArsenal = 2;
         author="95th Aux Team";
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
-        displayName=QUOTE([95th] SQUAD_NAME Helmets); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
         hiddenSelections[]= { "Camo1", "camo2", "Visor" };
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p1_pilot\Helmet.paa), 
@@ -100,7 +101,7 @@ class SEA_Helmet_SpecOps_SR_Base;
         scopeArsenal = 2;
         author="95th Aux Team";
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
-        displayName=QUOTE([95th] SQUAD_NAME Helmets); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p1_specops\Helmet.paa), 
             QUOTE(\JLTS_AE\Data\BaseTextures\SpecOps\Antennas\SR_Antenna_co.paa), 
@@ -123,7 +124,7 @@ class SEA_Helmet_Hazard_Base;
         scopeArsenal = 2;
         author="95th Aux Team";
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
-        displayName=QUOTE([95th] SQUAD_NAME Helmets); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p1_hazard\Helmet.paa), 
             QUOTE(\JLTS_AE\Data\BaseTextures\Hazard\Necc_CO.paa), 
@@ -146,7 +147,7 @@ class 3AS_H_ColdAssault_Helmet;
         scopeArsenal = 2;
         author="95th Aux Team";
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
-        displayName=QUOTE([95th] SQUAD_NAME Helmets); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p1_cold_assault\Helmet.paa), 
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p1_cold_assault\Helmet.paa), 
@@ -169,7 +170,7 @@ class 3AS_H_Katarn_Helmet;
         scopeArsenal = 2;
         author="95th Aux Team";
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
-        displayName=QUOTE([95th] SQUAD_NAME Helmets); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
         hiddenSelections[]={"Camo1","Visor"};
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p1_commando\Helmet.paa), 
@@ -192,7 +193,7 @@ class lsd_gar_airborne_new;
         scopeArsenal = 2;
         author="95th Aux Team";
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
-        displayName=QUOTE([95th] SQUAD_NAME Helmets); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_airborne\Helmet.paa), 
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_airborne\Helmet.paa)

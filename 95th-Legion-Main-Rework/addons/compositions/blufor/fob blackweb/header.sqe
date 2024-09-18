@@ -1,0 +1,42 @@
+version=54;
+name="[95th] [GAR] Ground FOB";
+author="MotherFucking Catshark";
+category="OPTRE_EditorSubcategory_Objects_Military";
+requiredAddons[]=
+{
+	"AUX_95th_Objects",
+	"3as_prop_kamino",
+	"A3_Characters_F_Common",
+	"3AS_Structures2_GenericFOB",
+	"3AS_Prop_Terminals",
+	"JMSLLTE_props_computers",
+	"A3_Structures_F_Bootcamp_VR_Helpers",
+	"3AS_Structures_City",
+	"3AS_Imperial",
+	"3AS_Prop_Platforms",
+	"OPTRE_UNSC_Structure_Military",
+	"3AS_Structures_Lights",
+	"A3_Modules_F",
+	"3AS_Prop_Interiors",
+	"Bacta",
+	"3AS_Prop_Barricades",
+	"3AS_Prop_pipes",
+	"lsb_fob",
+	"lsb_walkways",
+	"3AS_Prop_Crates",
+	"A3_Misc_F_Helpers",
+	"3AS_Structures_FOB",
+	"A3_Structures_F_Furniture",
+	"lsd_armor_bluefor",
+	"ls_armor_bluefor",
+	"JLTS_weapons_DC15A",
+	"JLTS_weapons_DC15S",
+	"JLTS_weapons_DC15X",
+	"JMS_st_objectsFont",
+	"A3_Structures_F_Mark_VR_Shapes",
+	"A3_Props_F_AoW_Civilian_Gallery",
+	"3as_ModularPlatforms",
+	"3AS_Static_Venator_Cannon",
+	"3AS_Structures2_StairsLadderElevator",
+	"OPTRE_Buildings_Camp"
+};

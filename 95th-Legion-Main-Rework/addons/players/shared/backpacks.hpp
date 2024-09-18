@@ -10,7 +10,7 @@ class 3AS_B_Katarn_Backpack;
 #if BACKPACK_BELT_LIGHT == 1
     class AUX_95th_Backpack_Belt_Light_Shown_##PLAYER_NAME : JLTS_Clone_belt_bag {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -29,7 +29,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Belt_Light_Hidden_##PLAYER_NAME : JLTS_Clone_belt_bag {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -47,7 +47,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Belt_Light_RTO_Shown_##PLAYER_NAME : JLTS_Clone_belt_bag {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -71,7 +71,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Belt_Light_RTO_Hidden_##PLAYER_NAME : JLTS_Clone_belt_bag {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -96,7 +96,7 @@ class 3AS_B_Katarn_Backpack;
 #if BACKPACK_RUCKSACK_LIGHT == 1
     class AUX_95th_Backpack_Rucksack_Light_Shown_##PLAYER_NAME : JLTS_Clone_backpack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -115,7 +115,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Light_Hidden_##PLAYER_NAME : JLTS_Clone_backpack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -133,7 +133,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Light_RTO_Shown_##PLAYER_NAME : JLTS_Clone_backpack_RTO {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -157,7 +157,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Light_RTO_Hidden_##PLAYER_NAME : JLTS_Clone_backpack_RTO {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -182,7 +182,7 @@ class 3AS_B_Katarn_Backpack;
 #if BACKPACK_RUCKSACK_HEAVY == 1
     class AUX_95th_Backpack_Rucksack_Heavy_Shown_##PLAYER_NAME : JLTS_Clone_backpack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=300;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -201,7 +201,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Heavy_Hidden_##PLAYER_NAME : JLTS_Clone_backpack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=300;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -219,7 +219,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Heavy_RTO_Shown_##PLAYER_NAME : JLTS_Clone_backpack_RTO {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=300;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -243,7 +243,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Heavy_RTO_Hidden_##PLAYER_NAME : JLTS_Clone_backpack_RTO {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=300;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -268,7 +268,7 @@ class 3AS_B_Katarn_Backpack;
 #if BACKPACK_RUCKSACK_MEDIC == 1
     class AUX_95th_Backpack_Rucksack_Medic_Shown_##PLAYER_NAME : JLTS_Clone_backpack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -287,7 +287,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Medic_Hidden_##PLAYER_NAME : JLTS_Clone_backpack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -305,7 +305,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Medic_RTO_Shown_##PLAYER_NAME : JLTS_Clone_backpack_RTO {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -329,7 +329,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Medic_RTO_Hidden_##PLAYER_NAME : JLTS_Clone_backpack_RTO {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -354,7 +354,7 @@ class 3AS_B_Katarn_Backpack;
 #if BACKPACK_RUCKSACK_ORDNANCE == 1
     class AUX_95th_Backpack_Rucksack_Ordnance_Shown_##PLAYER_NAME : JLTS_Clone_backpack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -373,7 +373,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Ordnance_Hidden_##PLAYER_NAME : JLTS_Clone_backpack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -391,7 +391,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Ordnance_RTO_Shown_##PLAYER_NAME : JLTS_Clone_backpack_RTO {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -415,7 +415,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Rucksack_Ordnance_RTO_Hidden_##PLAYER_NAME : JLTS_Clone_backpack_RTO {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -440,7 +440,7 @@ class 3AS_B_Katarn_Backpack;
 #if BACKPACK_MINI_LIGHT == 1
     class AUX_95th_Backpack_Mini_Light_Shown_##PLAYER_NAME : JLTS_Clone_RTO_pack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=250;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -459,7 +459,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Mini_Light_Hidden_##PLAYER_NAME : JLTS_Clone_RTO_pack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=250;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -477,7 +477,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Mini_Light_RTO_Shown_##PLAYER_NAME : JLTS_Clone_RTO_pack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=250;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -501,7 +501,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Mini_Light_RTO_Hidden_##PLAYER_NAME : JLTS_Clone_RTO_pack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=250;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -526,7 +526,7 @@ class 3AS_B_Katarn_Backpack;
 #if BACKPACK_MICRO_LIGHT == 1
     class AUX_95th_Backpack_Micro_Light_Shown_##PLAYER_NAME : JLTS_Clone_LR_attachment {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=250;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -545,7 +545,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Micro_Light_Hidden_##PLAYER_NAME : JLTS_Clone_LR_attachment {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=250;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -563,7 +563,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Micro_Light_RTO_Shown_##PLAYER_NAME : JLTS_Clone_LR_attachment {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=250;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -587,7 +587,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_Micro_Light_RTO_Hidden_##PLAYER_NAME : JLTS_Clone_LR_attachment {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=250;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         model="\a3\weapons_f\empty.p3d";
@@ -612,7 +612,7 @@ class 3AS_B_Katarn_Backpack;
 #if JETPACK_JT12_LIGHT == 1
     class AUX_95th_Backpack_JT12_Light_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_JT12 {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -645,7 +645,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_JT12_Light_RTO_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_JT12 {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -685,7 +685,7 @@ class 3AS_B_Katarn_Backpack;
 #if JETPACK_JT12_MEDIC == 1
     class AUX_95th_Backpack_JT12_Medic_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_JT12 {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -718,7 +718,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_JT12_Medic_RTO_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_JT12 {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -758,7 +758,7 @@ class 3AS_B_Katarn_Backpack;
 #if JETPACK_JT14_LIGHT == 1
     class AUX_95th_Backpack_JT14_Light_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_mc {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -791,7 +791,7 @@ class 3AS_B_Katarn_Backpack;
 
     class AUX_95th_Backpack_JT14_Light_RTO_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_mc {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
@@ -831,7 +831,7 @@ class 3AS_B_Katarn_Backpack;
 #if BACKPACK_COMMANDO_HEAVY == 1
     class AUX_95th_Backpack_Commando_Heavy_RTO_Shown_##PLAYER_NAME : 3AS_B_Katarn_Backpack {
         author="95th Aux Team";
-        displayName=QUOTE([95th] SQUAD_NAME Backpacks); 
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=400;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
