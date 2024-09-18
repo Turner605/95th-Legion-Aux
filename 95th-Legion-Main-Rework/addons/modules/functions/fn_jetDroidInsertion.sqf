@@ -1,11 +1,15 @@
-params ["_pos", "_unitCount"];
+params ["_pos", "_unitSide", "_unitCount", "_includeAT", "_mode", "_unitSpread"];
 
 private _spawnArray = [];
+private _atDroidCount = 0;
 
-for "_i" from 0 to _unitCount do {_spawnArray pushBack "AUX_95th_Droid_B1_Rocket_Unit_Rifleman";};
+if(_includeAT) then {_atDroidCount = round(_unitCount/4);};
+
+for "_i" from 0 to (_unitCount-_atDroidCount) do {_spawnArray pushBack "AUX_95th_Droid_B1_Rocket_Unit_Rifleman";};
+for "_i" from 0 to _atDroidCount do {_spawnArray pushBack "AUX_95th_Droid_B1_Rocket_Unit_AT";};
 
 // Spawn group and move to target
-_group = [[0,0,0], east, _spawnArray ,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
+_group = [[0,0,0], _unitSide, _spawnArray ,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
 
 private _spawnedUnits = units _group;
 
@@ -14,7 +18,7 @@ private _spawnedUnits = units _group;
     _x setUnitFreefallHeight 10000;
     _x setVariable ["AUX_95th_Insertion_Is_In_Progress", true, true];
 
-    private _distanceMulti = (2*_unitCount);
+    private _distanceMulti = (_unitSpread*_unitCount);
 
     _dropPos = [
         (_pos select 0) + (random _distanceMulti) - (random _distanceMulti),
@@ -26,7 +30,7 @@ private _spawnedUnits = units _group;
 
     // Remove drop handler when they touch the ground
     [{isTouchingGround (_this select 0) || !alive (_this select 0)}, {
-        params["_unit"];
+        params["_unit", "_mode"];
 
         private _frameHandler = (_unit getVariable "AUX_95th_Insertion_Handler");
 
@@ -37,7 +41,13 @@ private _spawnedUnits = units _group;
             _unit setVariable ["AUX_95th_Insertion_Is_In_Progress", false, true];
         }, [_unit], 1] call CBA_fnc_waitAndExecute;
 
-    }, [_x]] call CBA_fnc_waitUntilAndExecute;
+        switch (_mode) do {
+            case 1: {[_unit, 500] spawn lambs_wp_fnc_taskRush;};
+            case 2: {[getPos _unit, nil, [_unit], 100, 2, false, false] call ace_ai_fnc_garrison;};
+            case 3: {[getPos _unit, nil, [_unit], 100, 2, false, true] call ace_ai_fnc_garrison;};
+        };
+
+    }, [_x, _mode]] call CBA_fnc_waitUntilAndExecute;
 
     // Wait until theyre close to the ground then handle the slow down
     [{([80, (_this select 0)] call AUX_95th_fnc_isCloseToGround) == 1}, {
