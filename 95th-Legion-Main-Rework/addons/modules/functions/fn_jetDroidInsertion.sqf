@@ -11,14 +11,14 @@ private _spawnedUnits = units _group;
 
 {
     // Send them into the sky
-    _x setunitFreefallHeight 10000;
+    _x setUnitFreefallHeight 10000;
     _x setVariable ["AUX_95th_Insertion_Is_In_Progress", true, true];
 
     private _distanceMulti = (2*_unitCount);
 
     _dropPos = [
-        (_pos select 0) + (Random _distanceMulti) - (Random _distanceMulti), 
-        (_pos select 1) + (Random _distanceMulti) - (Random _distanceMulti), 
+        (_pos select 0) + (random _distanceMulti) - (random _distanceMulti),
+        (_pos select 1) + (random _distanceMulti) - (random _distanceMulti),
         300
     ];
 
@@ -46,13 +46,13 @@ private _spawnedUnits = units _group;
         _insertionHandler = [{
 		    (_this select 0) params ["_unit"];
 
-            _pack = backpackContainer _unit; 
+            _pack = backpackContainer _unit;
 
-            playsound3d ["3AS\3AS_Weapons\X42\SFX\flamer.ogg", _unit, false, getposASL _unit, 0.5];
+            playSound3D ["3AS\3AS_Weapons\X42\SFX\flamer.ogg", _unit, false, getPosASL _unit, 0.5];
 
             [[_unit],{
                 params ["_unit"];
-                
+
                 _pack = backpackContainer _unit;
 
                 private _jetfirecentre = "#particlesource" createVehicleLocal (getPosATL _pack);
@@ -61,10 +61,10 @@ private _spawnedUnits = units _group;
                 _jetfirecentre attachTo [_unit, [0,0,0], "Spine3"];
                 _jetsmokecentre setParticleClass "AvionicsSmoke";
                 _jetfirecentre setParticleClass "Flare2";
-                _jetfirecentre setDropInterval 0.01; 
-                
+                _jetfirecentre setDropInterval 0.01;
+
                 [{
-                    {deletevehicle _x;} foreach _this;
+                    {deleteVehicle _x;} forEach _this;
                 }, [_jetsmokecentre,_jetfirecentre], 1] call CBA_fnc_waitAndExecute;
 
                 private _playerVelocity = velocity _unit;
@@ -80,7 +80,7 @@ private _spawnedUnits = units _group;
 
                 _unit setVelocity [_newVelocityX, _newVelocityY, _newVelocityZ];
 
-            }] remoteexec ["call"];
+            }] remoteExec ["call"];
         }, 1, [_unit]] call CBA_fnc_addPerFrameHandler;
 
         _unit setVariable ["AUX_95th_Insertion_Handler", _insertionHandler, true];
