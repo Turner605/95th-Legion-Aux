@@ -1,12 +1,22 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Weapons_DW32S {
-		author = "95th Legion";
-		name = "AUX 95th Weapons DW32S";
-		requiredAddons[] = {"A3_data_F","A3_anims_F","A3_weapons_F","A3_characters_F"};
-		weapons[] = {"AUX_95th_DW32S"};
-		units[] = {};
-		magazines[] = {};
-	};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {};
+        weapons[] = {"AUX_95th_DW32S"};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {
+            "AUX_95th_main",
+            "AUX_95th_weapons_shared",
+            "A3_data_F",
+            "A3_anims_F",
+            "A3_weapons_F",
+            "A3_characters_F"
+        };
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class CfgMagazines {
@@ -17,7 +27,7 @@ class CfgMagazines {
 		author = "95th Legion";
 		modelSpecial = "";
 		modelSpecialIsProxy = 0;
-		picture = "\AUX_95th_Weapons_DW32S\Data\ui\DW32S_mag_ui_ca.paa";
+		picture = "\z\AUX_95th\addons\weapons\dw32s\data\ui\DW32S_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DW32S\DW32S_mag.p3d";
 		count = 20;
 		displayName = "$STR_JLTS_names_DW32S_mag";
@@ -53,16 +63,16 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] DW32S";
 		descriptionShort = "$STR_JLTS_descs_BlasterRifleScoped";
-		picture = "\AUX_95th_Weapons_DW32S\Data\ui\DW32S_ui_ca.paa";
+		picture = "\z\AUX_95th\addons\weapons\dw32s\data\ui\DW32S_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\DW32S\DW32S.p3d";
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"\AUX_95th_Weapons_DW32S\Data\DW32S_co.paa"};
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_DW32S\Anims\DW32S_handanim.rtm"};
+		hiddenSelectionsTextures[] = {"\z\AUX_95th\addons\weapons\dw32s\data\DW32S_co.paa"};
+		handAnim[] = {"OFP2_ManSkeleton","\z\AUX_95th\addons\weapons\dw32s\anims\DW32S_handanim.rtm"};
 		magazines[] = {"AUX_95th_Universal_Sniper_Mag"};
 		magazineWell[] = {};
 		modes[] = {"Single"};
 		fireLightDiffuse[] = {0,0,1};
-		drySound[] = {"AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",5,1,10};
+		drySound[] = {"z\AUX_95th\addons\weapons\shared\sounds\weapon_dry.wss",5,1,10};
 		muzzles[] = {"this","Stun"};
 		class Stun: AUX_95th_Stun_Muzzle_Rifle{};
 		distanceZoomMin = 400;
@@ -77,7 +87,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_Weapons_DW32S\Sounds\dw32s_fire",1,1.1,1800};
+				begin1[] = {"z\AUX_95th\addons\weapons\dw32s\sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.1;
@@ -101,7 +111,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_Weapons_DW32S\Sounds\dw32s_fire",1,1.1,1800};
+				begin1[] = {"z\AUX_95th\addons\weapons\dw32s\sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			reloadTime = 0.096;
@@ -126,7 +136,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_Weapons_DW32S\Sounds\dw32s_fire",1,1.1,1800};
+				begin1[] = {"z\AUX_95th\addons\weapons\dw32s\sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			showToPlayer = 0;
@@ -151,7 +161,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_Weapons_DW32S\Sounds\dw32s_fire",1,1.1,1800};
+				begin1[] = {"z\AUX_95th\addons\weapons\dw32s\sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			requiredOpticType = 1;
@@ -175,7 +185,7 @@ class CfgWeapons {
 			};
 			class StandardSound: BaseSoundModeType {
 				weaponSoundEffect = "";
-				begin1[] = {"AUX_95th_Weapons_DW32S\Sounds\dw32s_fire",1,1.1,1800};
+				begin1[] = {"z\AUX_95th\addons\weapons\dw32s\sounds\dw32s_fire",1,1.1,1800};
 				soundBegin[] = {"begin1",1};
 			};
 			requiredOpticType = 2;
@@ -249,3 +259,5 @@ class CfgWeapons {
 		};
 	};
 };
+
+#include "CfgEventHandlers.hpp"
