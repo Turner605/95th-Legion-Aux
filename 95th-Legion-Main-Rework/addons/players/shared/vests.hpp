@@ -137,12 +137,12 @@ class ItemInfo;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         hiddenSelectionsTextures[]={
             "",
-            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\medic.paa) 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\medic.paa)
         };
         class ItemInfo: VestItem {
             uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
             containerClass = "Supply190";
-            hiddenSelections[]= { "camo1" };
+            hiddenSelections[] = {"camo1","camo2"};
             mass=80;
             class HitpointsProtectionInfo {
                 class Chest { HitpointName="HitChest"; armor=6; PassThrough=0.30000001; };
@@ -171,7 +171,7 @@ class ItemInfo;
         class ItemInfo: VestItem {
             uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
             containerClass = "Supply190";
-            hiddenSelections[]= { "camo1" };
+            hiddenSelections[] = {"camo1","camo2"};
             mass=80;
             class HitpointsProtectionInfo {
                 class Chest { HitpointName="HitChest"; armor=6; PassThrough=0.30000001; };
@@ -200,7 +200,7 @@ class ItemInfo;
         class ItemInfo: VestItem {
             uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
             containerClass = "Supply190";
-            hiddenSelections[]= { "camo1" };
+            hiddenSelections[] = {"camo1","camo2"};
             mass=80;
             class HitpointsProtectionInfo {
                 class Chest { HitpointName="HitChest"; armor=6; PassThrough=0.30000001; };
@@ -228,7 +228,7 @@ class ItemInfo;
         class ItemInfo: VestItem {
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
             containerClass = "Supply190";
-            hiddenSelections[]= { "camo1" };
+            hiddenSelections[] = {"camo1","camo2"};
             mass=80;
             class HitpointsProtectionInfo {
                 class Chest { HitpointName="HitChest"; armor=6; PassThrough=0.30000001; };
