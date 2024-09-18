@@ -1,11 +1,15 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Weapons_Westar_M5 {
-		author = "95th Legion";
-		name = "AUX 95th Weapons Westar M5";
-		requiredAddons[] = {"3AS_Weapons"};
-		units[] = {};
-		weapons[] = {"AUX_95th_WestarM5","AUX_95th_WestarM5_GL","AUX_95th_Optic_Scope_WestarM5"};
-	};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {};
+        weapons[] = {"AUX_95th_WestarM5","AUX_95th_WestarM5_GL","AUX_95th_Optic_Scope_WestarM5"};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_weapons_shared", "3AS_Weapons"};
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class CfgRecoils {
@@ -77,7 +81,7 @@ class CfgWeapons {
 		distanceZoomMin = 400;
 		distanceZoomMax = 400;
 		descriptionShort = "Westar-M5, 3rd Army Studios";
-		handAnim[] = {"OFP2_ManSkeleton","\AUX_95th_Weapons_Westar_M5\Anim\WestarM5_handanim.rtm"};
+		handAnim[] = {"OFP2_ManSkeleton","\z\AUX_95th\addons\weapons\westar_m5\anim\WestarM5_handanim.rtm"};
 		selectionFireAnim = "zasleh";
 		fireLightDiffuse[] = {7,110,176};
 		fireLightIntensity = 0.02;
@@ -196,7 +200,7 @@ class CfgWeapons {
 		aiDispersionCoefX = 4;
 		caseless[] = {"",1,1,1};
 		soundBullet[] = {"caseless",1};
-		drySound[] = {"\AUX_95th_Weapons_Shared\Sounds\weapon_dry.wss",2,1,20};
+		drySound[] = {"\z\AUX_95th\addons\weapons\shared\sounds\weapon_dry.wss",2,1,20};
 		reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss",1,1,30};
 	};
 
@@ -205,7 +209,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] Westar-M5 Rifle";
 		model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_F.p3d";
-		picture = "\AUX_95th_Weapons_Westar_M5\Data\ui\3as_westar.paa";
+		picture = "\z\AUX_95th\addons\weapons\westar_m5\data\ui\3as_westar.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
 		class OpticsModes {
@@ -253,7 +257,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "[95th] Westar-M5 GL Rifle";
 		model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";
-		picture = "\AUX_95th_Weapons_Westar_M5\Data\ui\3as_westargl.paa";
+		picture = "\z\AUX_95th\addons\weapons\westar_m5\data\ui\3as_westargl.paa";
 		weaponInfoType = "RscWeaponZeroing";
 		modelOptics = "3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
 		muzzles[] = {"this","AUX_95th_WestarM5_GL_F"};
@@ -304,7 +308,7 @@ class CfgWeapons {
 	class AUX_95th_Optic_Scope_WestarM5: ItemCore {
 		scope = 2;
 		displayName = "3AS Long Optic";
-		picture = "\AUX_95th_Weapons_Westar_M5\Data\ui\Westar_Scope.paa";
+		picture = "\z\AUX_95th\addons\weapons\westar_m5\data\ui\Westar_Scope.paa";
 		model = "\3AS\3AS_Weapons\WestarM5\3AS_Westar_Scope_F.p3d";
 		weaponInfoType = "RscWeaponZeroing";
 		class ItemInfo: InventoryOpticsItem_Base_F {
@@ -348,3 +352,5 @@ class CfgWeapons {
 		};
 	};
 };
+
+#include "CfgEventHandlers.hpp"
