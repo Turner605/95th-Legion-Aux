@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 flameIncindieryUGLEH = {
 	_grenadeObj = _this select 0;
 	_spsObj = "#particlesource" createVehicle position _grenadeObj;

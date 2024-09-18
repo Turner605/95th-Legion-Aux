@@ -1,12 +1,19 @@
+#include "script_component.hpp"
+
 class CfgPatches {
-	class AUX_95th_Weapons_BTX42 {
-		author = "95th Legion";
-		name = "AUX 95th Weapons BTX42";
-		requiredAddons[] = {"WBK_PhoenixTreal_FlamethrowerMOD", "JLTS_weapons_Core"};
+    class DOUBLES(PREFIX,COMPONENT) {
+        name = COMPONENT_NAME;
+        units[] = {};
 		weapons[] = {"AUX_95th_BX42"};
-		units[] = {};
-		magazines[] = {};
-	};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {
+            "AUX_95th_main",
+            "AUX_95th_weapons_shared",
+            "WBK_PhoenixTreal_FlamethrowerMOD"
+        };
+        authors[] = {"Turner"};
+        VERSION_CONFIG;
+    };
 };
 
 class CfgAmmo {
@@ -108,7 +115,7 @@ class CfgWeapons {
 		fireSpreadAngle = 0.95;
 		magazines[] = {"AUX_95th_BX42_Rocket_HE"};
 		magazineWell[] = {};
-		requiredOpticType = 2
+		requiredOpticType = 2;
 		maxZeroing = 50;
 		reloadAction = "GestureReloadMX";
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10}; //TODO
@@ -142,8 +149,8 @@ class CfgWeapons {
 		author="95th Aux Team";
 		WBK_BurnEm_IsFlamethrower = "True";
 		WBK_BurnEm_RequiredBackpack = "AUX_95th_BX42_Backpack";
-		WBK_BurnEm_FlamethrowerSoundArray = ['flamewerfer_start','flamewerfer_looping',4.8,'flamewerfer_end'];
-		WBK_BurnEm_FlamethrowerParticlePos = [[-0.73,0.35,-0.3],'leftHand'];
+		WBK_BurnEm_FlamethrowerSoundArray = "['flamewerfer_start','flamewerfer_looping',4.8,'flamewerfer_end']";
+		WBK_BurnEm_FlamethrowerParticlePos = "[[-0.73,0.35,-0.3],'leftHand']";
 		WBK_BurnEm_FlamethrowerDistance = 18.5;
 		scope=2;
 		model="\3AS\3AS_Weapons\X42\BX42.p3d";
@@ -158,14 +165,4 @@ class CfgWeapons {
 	};
 };
 
-class Extended_PreInit_EventHandlers {
-	class AUX_95th_Weapons_BTX42_PreInit {
-		init="call compile preprocessFileLineNumbers '\AUX_95th_Weapons_BTX42\Init\XEH_preInit.sqf'";
-	};
-};
-
-class Extended_PostInit_EventHandlers {
-	class AUX_95th_Weapons_BTX42_PostInit {
-		init="call compile preprocessFileLineNumbers '\AUX_95th_Weapons_BTX42\Init\XEH_postInit.sqf'";
-	};
-};
+#include "CfgEventHandlers.hpp"
