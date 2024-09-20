@@ -103,22 +103,30 @@ AUX_95th_Arsenal_Whitelisted_Gear = [
 	"JLTS_CloneBinocular","JLTS_CloneBinocular_black","ItemMap","ItemCompass","JLTS_clone_comlink","TFAR_microdagr","ItemWatch","ACE_Altimeter",
 	"ItemGPS","B_UavTerminal",
 
-	"95th_P1_Nightvision_Invisible",
+	"AUX_95th_P1_NVG_Invisible", "AUX_95th_P1_NVG_Invisible_Overlay",
 
-	"NVG_Rangefinder_Gray_95th", "NVG_Rangefinder_White_95th", "NVG_Rangefinder_Brown_95th", "NVG_Rangefinder_Biege_95th",
-	"NVG_Rangefinder_Overlay_Gray_95th", "NVG_Rangefinder_Overlay_White_95th", "NVG_Rangefinder_Overlay_Brown_95th", "NVG_Rangefinder_Overlay_Biege_95th",
+    "AUX_95th_P1_NVG_Rangefinder_White", "AUX_95th_P1_NVG_Rangefinder_White_Overlay",
+    "AUX_95th_P1_NVG_Rangefinder_Gray", "AUX_95th_P1_NVG_Rangefinder_Gray_Overlay",
+    "AUX_95th_P1_NVG_Rangefinder_Brown", "AUX_95th_P1_NVG_Rangefinder_Brown_Overlay",
+    "AUX_95th_P1_NVG_Rangefinder_Biege", "AUX_95th_P1_NVG_Rangefinder_Biege_Overlay",
 
-	"NVG_Visor_Gray_95th", "NVG_Visor_White_95th", "NVG_Visor_Brown_95th", "NVG_Visor_Biege_95th",
-	"NVG_Visor_Overlay_Gray_95th", "NVG_Visor_Overlay_White_95th", "NVG_Visor_Overlay_Brown_95th", "NVG_Visor_Overlay_Biege_95th",
+    "AUX_95th_P1_NVG_Visor_White", "AUX_95th_P1_NVG_Visor_White_Overlay",
+    "AUX_95th_P1_NVG_Visor_Gray", "AUX_95th_P1_NVG_Visor_Gray_Overlay",
+    "AUX_95th_P1_NVG_Visor_Brown", "AUX_95th_P1_NVG_Visor_Brown_Overlay",
 
-	"NVG_Sergeant_Gray_95th", "NVG_Sergeant_White_95th", "NVG_Sergeant_Brown_95th", "NVG_Sergeant_Biege_95th",
-	"NVG_Sergeant_Overlay_Gray_95th", "NVG_Sergeant_Overlay_White_95th", "NVG_Sergeant_Overlay_Brown_95th", "NVG_Sergeant_Overlay_Biege_95th",
+    "AUX_95th_P1_NVG_Sergeant_White", "AUX_95th_P1_NVG_Sergeant_White_Overlay",
+    "AUX_95th_P1_NVG_Sergeant_Gray", "AUX_95th_P1_NVG_Sergeant_Gray_Overlay",
+    "AUX_95th_P1_NVG_Sergeant_Brown", "AUX_95th_P1_NVG_Sergeant_Brown_Overlay",
+    "AUX_95th_P1_NVG_Sergeant_Biege", "AUX_95th_P1_NVG_Sergeant_Biege_Overlay",
 
-	"NVG_Lieutenant_Gray_95th", "NVG_Lieutenant_White_95th", "NVG_Lieutenant_Brown_95th", "NVG_Lieutenant_Biege_95th",
-	"NVG_Lieutenant_Overlay_Gray_95th", "NVG_Lieutenant_Overlay_White_95th", "NVG_Lieutenant_Overlay_Brown_95th", "NVG_Lieutenant_Overlay_Biege_95th",
+    "AUX_95th_P1_NVG_Lieutenant_White", "AUX_95th_P1_NVG_Lieutenant_White_Overlay",
+    "AUX_95th_P1_NVG_Lieutenant_Gray", "AUX_95th_P1_NVG_Lieutenant_Gray_Overlay",
+    "AUX_95th_P1_NVG_Lieutenant_Brown", "AUX_95th_P1_NVG_Lieutenant_Brown_Overlay",
+    "AUX_95th_P1_NVG_Lieutenant_Biege", "AUX_95th_P1_NVG_Lieutenant_Biege_Overlay",
 
-	"NVG_Medical_Gray_95th", "NVG_Medical_White_95th", "NVG_Medical_Brown_95th", "NVG_Medical_Biege_95th",
-	"NVG_Medical_Overlay_Gray_95th", "NVG_Medical_Overlay_White_95th", "NVG_Medical_Overlay_Brown_95th", "NVG_Medical_Overlay_Biege_95th",
+    "AUX_95th_P1_NVG_Medical_White", "AUX_95th_P1_NVG_Medical_White_Overlay",
+    "AUX_95th_P1_NVG_Medical_Gray", "AUX_95th_P1_NVG_Medical_Gray_Overlay",
+    "AUX_95th_P1_NVG_Medical_Brown", "AUX_95th_P1_NVG_Medical_Brown_Overlay",
 
 	"Facewear_HUD_ARFAntenna_95th", "Facewear_HUD_Headlamps_95th", "Facewear_HUD_Headlamp_95th",
 	"Facewear_Empty_ARFAntenna_95th", "Facewear_Empty_Headlamps_95th", "Facewear_Empty_Headlamp_95th",
