@@ -1,31 +1,21 @@
-# 95th Legion Aux
+# 95th Aux Mod
+The aux mod for the 95th Legion.
 
-## Adding new helmets:
-To add new helmets you need to do the following:
+## Credits:
+- [HEMTT Template](https://github.com/TACHarsis/hemtt-mod-template)
+- [HTTP DLL](https://github.com/dedmen/DAA_Mod)
+- [File System DLL](https://github.com/Vindicta-Team/FileXT/wiki)
 
-- 95th-Legion-Main\AUX_95th_Helmets\Config\\(Name Of File).hpp
-    - Add a new one line macro of the helmet type
-- 95th-Legion-Main\AUX_95th_Helmets\config.cpp
-    - Add to XtdGearModels with the helmets you want to display
-- 95th-Legion-Main\AUX_95th_Objects\Init\XEH_preInit.sqf
-    - Add name to the "_customHelmetList" if not already in there
+## Internal Developers Setup Guide
+Follow the following to allow building with HEMTT
 
-## Adding new vests:
+- [INSTALL HEMTT](https://brettmayson.github.io/HEMTT/installation.html)
 
-To add new vests you need to do the following:
-- 95th-Legion-Main\AUX_95th_Vests\Config\Officers.hpp
-    - Add a new one line macro
-- 95th-Legion-Main\AUX_95th_Vests\config.cpp
-    - Add new changes in the XtdGearModels specifically only for the vests you want to show in the arsenal
-- 95th-Legion-Main\AUX_95th_Objects\Init\XEH_preInit.sqf
-    - Add the following lines with the name of your vest in the vests category
-        - "AUX_95th_Vest_Sergeant_##name##"
-        - "AUX_95th_Vest_Lieutenant_##name##"
-        - "AUX_95th_Vest_CIO_##name##"
-        - "AUX_95th_Vest_Kama_##name##"
-- 95th-Legion-Aux\95th-Legion-Main\AUX_95th_Vests\Data\Officers\
-    - Add the texture files in the correct path with the correct names, have a look at existing if unsure
+# Creating new player gear TODO
+Follow the following to create new player gear.
 
-## Credit Links:
-- https://github.com/dedmen/DAA_Mod
-- https://github.com/Vindicta-Team/FileXT/wiki
+Step 1: Copy the player template from "95th-Legion-Main-Rework\addons\players\ExamplePlayer" to "95th-Legion-Main-Rework\addons\players"
+Step 2: Rename the ExamplePlayer properties in "ExamplePlayer\script_component.hpp"
+Step 3: Modify the marked values in "ExamplePlayer\script_component.hpp" to enable (1) or disable (0) them.
+Step 4: (If needed) Modify the relevant squad in "95th-Legion-Main-Rework\addons\main\xtdGearSquads".
+Step 5: Tidy up by deleting any .paa files that you are not using.
