@@ -6,6 +6,9 @@ The aux mod for the 95th Legion.
 - [HTTP DLL](https://github.com/dedmen/DAA_Mod)
 - [File System DLL](https://github.com/Vindicta-Team/FileXT/wiki)
 
+## Links:
+- [Trello](https://trello.com/b/kO1jeBKw/95th-legion)
+
 ## Internal Developers Setup Guide
 To begin working on the aux mod, do the following.
 
