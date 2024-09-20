@@ -9,7 +9,10 @@ class CfgPatches {
         requiredAddons[] = {
 			"AUX_95th_main",
 			"JLTS_characters_CloneArmor",
-			"3as_Backpacks"
+			"3as_Backpacks",
+			"3as_JLTS_Uniforms",
+			"SEA_JLTS_ExtendedArsenal",
+			"PhoenixCore"
 		};
         authors[] = {"Turner"};
         VERSION_CONFIG;
@@ -244,6 +247,39 @@ class XtdGearModels {
 			#include "\z\AUX_95th\addons\players\shared\XtdGearModels\xtdGearVests.hpp"
 			#include "\z\AUX_95th\addons\main\xtdGearSquads\unassigned.hpp"
 		};
+
+		class AUX_95th_NVG_P1 {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type", "Colour", "Overlay"};
+
+			class Type {
+				labels = "Type";
+				values[] = {"Invisible", "Rangefinder", "Visor", "Sergeant", "Lieutenant", "Medical"};
+				class Invisible { label = "Invisible"; description = "Invisible"; };
+				class Rangefinder { label = "Rangefinder"; description = "Rangefinder"; };
+				class Visor { label = "Visor"; description = "Visor"; };
+				class Sergeant { label = "Sergeant"; description = "Sergeant"; };
+				class Lieutenant { label = "Lieutenant"; description = "Lieutenant"; };
+				class Medical { label = "Medical"; description = "Medical"; };
+			};
+
+			class Colour {
+				labels = "Colour";
+				values[] = {"White", "Gray", "Brown", "Biege"};
+				class White { label = "White"; description = "White"; };
+				class Gray { label = "Gray"; description = "Gray"; };
+				class Brown { label = "Brown"; description = "Brown"; };
+				class Biege { label = "Biege"; description = "Biege"; };
+			};
+
+			class Overlay {
+				labels = "Overlay";
+				values[] = {"Enabled", "Disabled"};
+				class Enabled { label = "Enabled"; description = "Enabled"; };
+				class Disabled { label = "Disabled"; description = "Disabled"; };
+			};
+		};
 	};
 
 	class CfgVehicles {
@@ -429,6 +465,88 @@ class CfgUnitInsignia {
 		displayName = "Revan Bong Hit";
 		texture="\z\AUX_95th\addons\players\shared\insignias\RevanBong.paa";
 	};
+};
+
+class CfgWeapons {
+	class SEA_CloneNVG_TI;
+	class SEA_P1_Rangefinder;
+	class PhoenixCore_NVG_CloneNVG;
+	class JLTS_PA_Core_P1_CloneCC;
+	class JLTS_PA_Core_P1_CloneMC;
+	class lsd_gar_medicalScanner_nvg;
+	class ItemInfo;
+
+	// ------------------------------------------------------------------------ Invisible ------------------------------------------------------------------------
+	class AUX_95th_P1_NVG_Invisible: SEA_CloneNVG_TI {
+		displayName="[95th] NVG";
+		author="95th Aux Team";
+		model="";
+		hiddenSelectionsTextures[]={""};
+		visionMode[]={"Normal", "NVG", "TI"};
+		thermalMode[]={0,1};
+		class XtdGearInfo {
+			model = "AUX_95th_NVG_P1";
+			Type = "Invisible";
+			Colour = "White";
+			Overlay = "Disabled";
+		};
+	};
+
+	class AUX_95th_P1_NVG_Invisible_Overlay: AUX_95th_P1_NVG_Invisible {
+		DSS_HUD_Overlay_Enabled = 1;
+		class XtdGearInfo {
+			model = "AUX_95th_NVG_P1";
+			Type = "Invisible";
+			Colour = "White";
+			Overlay = "Enabled";
+		};
+	};
+
+	// ------------------------------------------------------------------------ Rangefinder ------------------------------------------------------------------------
+	NEW_95th_NIGHTVISION_RANGEFINDER(White);
+	NEW_95th_NIGHTVISION_RANGEFINDER_OVERLAY(White);
+	NEW_95th_NIGHTVISION_RANGEFINDER(Gray);
+	NEW_95th_NIGHTVISION_RANGEFINDER_OVERLAY(Gray);
+	NEW_95th_NIGHTVISION_RANGEFINDER(Brown);
+	NEW_95th_NIGHTVISION_RANGEFINDER_OVERLAY(Brown);
+	NEW_95th_NIGHTVISION_RANGEFINDER(Biege);
+	NEW_95th_NIGHTVISION_RANGEFINDER_OVERLAY(Biege);
+
+	// ------------------------------------------------------------------------ Visor ------------------------------------------------------------------------
+	NEW_95th_NIGHTVISION_VISOR(White);
+	NEW_95th_NIGHTVISION_VISOR_OVERLAY(White);
+	NEW_95th_NIGHTVISION_VISOR(Gray);
+	NEW_95th_NIGHTVISION_VISOR_OVERLAY(Gray);
+	NEW_95th_NIGHTVISION_VISOR(Brown);
+	NEW_95th_NIGHTVISION_VISOR_OVERLAY(Brown);
+
+	// ------------------------------------------------------------------------ Sergeant ------------------------------------------------------------------------
+	NEW_95th_NIGHTVISION_SERGEANT(White);
+	NEW_95th_NIGHTVISION_SERGEANT_OVERLAY(White);
+	NEW_95th_NIGHTVISION_SERGEANT(Gray);
+	NEW_95th_NIGHTVISION_SERGEANT_OVERLAY(Gray);
+	NEW_95th_NIGHTVISION_SERGEANT(Brown);
+	NEW_95th_NIGHTVISION_SERGEANT_OVERLAY(Brown);
+	NEW_95th_NIGHTVISION_SERGEANT(Biege);
+	NEW_95th_NIGHTVISION_SERGEANT_OVERLAY(Biege);
+
+	// ------------------------------------------------------------------------ Lieutenant ------------------------------------------------------------------------
+	NEW_95th_NIGHTVISION_LIEUTENANT(White);
+	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(White);
+	NEW_95th_NIGHTVISION_LIEUTENANT(Gray);
+	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(Gray);
+	NEW_95th_NIGHTVISION_LIEUTENANT(Brown);
+	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(Brown);
+	NEW_95th_NIGHTVISION_LIEUTENANT(Biege);
+	NEW_95th_NIGHTVISION_LIEUTENANT_OVERLAY(Biege);
+
+	// ------------------------------------------------------------------------ Medical ------------------------------------------------------------------------
+	NEW_95th_NIGHTVISION_MEDICAL(White);
+	NEW_95th_NIGHTVISION_MEDICAL_OVERLAY(White);
+	NEW_95th_NIGHTVISION_MEDICAL(Gray);
+	NEW_95th_NIGHTVISION_MEDICAL_OVERLAY(Gray);
+	NEW_95th_NIGHTVISION_MEDICAL(Brown);
+	NEW_95th_NIGHTVISION_MEDICAL_OVERLAY(Brown);
 };
 
 #include "CfgEventHandlers.hpp"
