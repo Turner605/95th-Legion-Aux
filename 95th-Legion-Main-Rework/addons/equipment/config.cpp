@@ -4,7 +4,7 @@ class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
         units[] = {};
-        weapons[] = {"AUX_95th_Disc_Shield","AUX_95th_Turret_Deployer","AUX_95th_MFD_Item"};
+        weapons[] = {"AUX_95th_Disc_Shield","AUX_95th_Turret_Deployer","AUX_95th_Drone_Deployer","AUX_95th_MFD_Item"};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"AUX_95th_main", "ls_weapons"};
         authors[] = {"Turner"};
@@ -35,6 +35,21 @@ class CfgVehicles {
 					// icon = "";
 					condition = "true";
 					statement = "[_player, 'Auto'] call AUX_95th_fnc_setupTurretOption";
+				};
+			};
+
+            class AUX_95th_Drone_Actions {
+                displayName = "Engineer Drone Actions";
+                // icon = "";
+                condition = "[_player] call AUX_95th_fnc_hasDroneItem";
+                exceptions[] = {};
+                statement = "";
+
+				class AUX_95th_Drone_Action_Spotter {
+					displayName = "Spotter Drone";
+					// icon = "";
+					condition = "true";
+					statement = "[_player, 'Spotter'] call AUX_95th_fnc_setupDroneOption";
 				};
 			};
 		};
@@ -111,12 +126,26 @@ class CfgWeapons {
         };
     };
 
+	class AUX_95th_Drone_Deployer: CBA_MiscItem {
+		AUX_95th_IsDroneDevice = 1;
+        author="95th Aux";
+		displayName = "[95th] Drone Deployer";
+		descriptionShort = "Drone Deployer";
+		model = "\a3\structures_f_heli\items\electronics\tablet_01_f.p3d";
+		picture = ""; //todo
+		scope = 2;
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 44;
+        };
+    };
+
     class AUX_95th_MFD_Item: CBA_MiscItem {
 		DSS_IsCloakingDevice = 1;
 		DSS_IsHackingDevice = 1;
 		DSS_IsSupportDevice = 1;
 		AUX_95th_IsDiscShieldDevice = 1;
 		AUX_95th_IsTurretDevice = 1;
+		AUX_95th_IsDroneDevice = 1;
         author="95th Aux";
 		displayName = "[95th] MFD";
 		descriptionShort = "Multi Functional Device";
@@ -156,6 +185,14 @@ class CfgFunctions {
             class deployNormalTurret {};
             class deployAutoTurret {};
         };
+
+        class Drone {
+			file = "\z\AUX_95th\addons\equipment\functions\drone";
+            class handleDroneTriggered {};
+            class hasDroneItem {};
+            class setupDroneOption {};
+            class deploySpotterDrone {};
+        };
     };
 };
 
@@ -173,6 +210,14 @@ class CfgUserActions {
 		onActivate = "[player] call AUX_95th_fnc_handleTurretTriggered";
 		modifierBlocking = 1;
 	};
+
+	class AUX_95th_Drone_Deployer {
+		displayName = "Deploy Drone";
+		tooltip = "Bind to deploy the selected drone";
+		onActivate = "[player] call AUX_95th_fnc_handleDroneTriggered";
+		modifierBlocking = 1;
+	};
+	// 3as_uas2 - small drone
 };
 
 class CfgDefaultKeysPresets {
@@ -180,6 +225,7 @@ class CfgDefaultKeysPresets {
 		class Mappings {
 			AUX_95th_Disc_Shield[] = {0x25};
 			AUX_95th_Turret_Deployer[] = {0x25};
+			AUX_95th_Drone_Deployer[] = {0x25};
 		};
 	};
 };
@@ -188,7 +234,7 @@ class UserActionGroups {
 	class NFL_Equipment {
 		name = "95th - Equipment";
 		isAddon = 1;
-		group[] = {"AUX_95th_Disc_Shield","AUX_95th_Turret_Deployer"};
+		group[] = {"AUX_95th_Disc_Shield","AUX_95th_Turret_Deployer","AUX_95th_Drone_Deployer"};
 	};
 };
 

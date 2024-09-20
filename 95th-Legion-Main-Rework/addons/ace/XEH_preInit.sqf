@@ -145,7 +145,7 @@ AUX_95th_Arsenal_Whitelisted_Equipment = [
 	"JLTS_riot_shield_item","WBK_HeadLampItem","ACE_IR_Strobe_Item","ACE_M26_Clacker","ACE_Clacker","ACE_Flashlight_XL50","ACE_MapTools",
 	"ace_marker_flags_black","ace_marker_flags_blue","ace_marker_flags_green","ace_marker_flags_orange","ace_marker_flags_purple","ace_marker_flags_red",
 	"ace_marker_flags_white","ace_marker_flags_yellow","ACE_microDAGR","MineDetector","ACE_HuntIR_monitor","ACE_RangeTable_82mm","DSS_Hacking_Device",
-	"DSS_Cloaking_Device","AUX_95th_Disc_Shield","DSS_Support_Device","rw_canistra","ACE_RangeCard","AUX_95th_Turret_Deployer"
+	"DSS_Cloaking_Device","AUX_95th_Disc_Shield","DSS_Support_Device","rw_canistra","ACE_RangeCard","AUX_95th_Turret_Deployer", "AUX_95th_Drone_Deployer"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
@@ -184,6 +184,7 @@ AUX_95th_Arsenal_Whitelisted_Vests = [];
 {_arsenalVests pushBack "AUX_95th_Vest_Standard_Tech_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {_arsenalVests pushBack "AUX_95th_Vest_Standard_Engineer_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {_arsenalVests pushBack "AUX_95th_Vest_Standard_Crewman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{_arsenalVests pushBack "AUX_95th_Vest_Standard_Drone_Operator_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {_arsenalVests pushBack "AUX_95th_Vest_ARC_Rifleman_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {_arsenalVests pushBack "AUX_95th_Vest_Commando_Engineer_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {_arsenalVests pushBack "AUX_95th_Vest_Commando_Tech_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;

@@ -22,7 +22,7 @@ class Rank {
 
 class Role {
 	labels = "Role";
-	values[] = {"Rifleman" ,"Pilot", "Grenadier", "Jet", "Medic", "AT", "Heavy", "Marksman", "Riot", "Flame", "Stealth", "Tech", "Support", "Engineer", "Crewman"};
+	values[] = {"Rifleman" ,"Pilot", "Grenadier", "Jet", "Medic", "AT", "Heavy", "Marksman", "Riot", "Flame", "Stealth", "Tech", "Support", "Engineer", "Crewman", "Drone_Operator"};
 	class Rifleman { label = "Rifleman"; description = "Rifleman Vest"; };
 	class Grenadier { label = "Grenadier"; description = "Grenadier Vest"; };
 	class Jet { label = "Jet"; description = "Jet Trooper Vest"; };
@@ -37,4 +37,5 @@ class Role {
 	class Engineer { label = "Engineer"; description = "Engineer Trooper Vest"; };
 	class Pilot { label = "Pilot"; description = "Pilot Vest"; };
 	class Crewman { label = "Crewman"; description = "Crewman Vest"; };
+	class Drone_Operator { label = "Drone"; description = "Drone Operator Trooper Vest"; };
 };

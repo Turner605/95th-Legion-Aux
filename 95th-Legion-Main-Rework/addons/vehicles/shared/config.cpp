@@ -18,11 +18,20 @@ class CfgPatches {
 
 class CfgEditorCategories{
 	class AUX_95th_Civi_Faction_Vehicles{displayName = "[95th] Vehicles";};
+	class AUX_95th_Legion_Faction_Vehicles{displayName = "[95th] Vehicles";};
 };
 
 class CfgEditorSubcategories {
 	class AUX_95th_Civi_Vehicles_Category_Industrial{displayName="Industrial";};
 	class AUX_95th_CIS_Air_Category_Transport { displayName="Air (Transport)"; };
+
+	class AUX_95th_Legion_Vehicles_Category_Static{displayName="Static";};
+	class AUX_95th_Legion_Vehicles_Category_Ground_Light{displayName="Ground (Light)";};
+	class AUX_95th_Legion_Vehicles_Category_Ground_Heavy{displayName="Ground (Heavy)";};
+	class AUX_95th_Legion_Vehicles_Category_Air_Gunships{displayName="Air (Gunships)";};
+	class AUX_95th_Legion_Vehicles_Category_Air_Fighters{displayName="Air (Fighters)";};
+	class AUX_95th_Legion_Vehicles_Category_Air_Logistics{displayName="Air (Logistics)";};
+	class AUX_95th_Legion_Vehicles_Category_Air_Drones { displayName="Air (Drones)"; };
 };
 
 class CfgFunctions {

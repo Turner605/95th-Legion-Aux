@@ -23,9 +23,15 @@ player addEventHandler["Respawn", {
 
 	// Reset misc
     deleteVehicle (_unit getVariable "NFL_Turret");
+    deleteVehicle (_unit getVariable "NFL_Drone");
 
 	_unit setVariable ["NFL_Turret_Selected", 'Normal'];
     _unit setVariable ["NFL_Turret", objNull, true];
 	_unit setVariable ["NFL_Turret_Is_In_Progress", false, true];
 	_unit setVariable ["NFL_Turret_Is_On_Cooldown", false, true];
+
+	_unit setVariable ["NFL_Drone_Selected", 'Normal'];
+    _unit setVariable ["NFL_Drone", objNull, true];
+	_unit setVariable ["NFL_Drone_Is_In_Progress", false, true];
+	_unit setVariable ["NFL_Drone_Is_On_Cooldown", false, true];
 }];

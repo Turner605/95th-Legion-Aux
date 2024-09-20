@@ -440,6 +440,34 @@ class ItemInfo;
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
         };
     };
+
+    class AUX_95th_Vest_Standard_Drone_Operator_##PLAYER_NAME : JLTS_CloneVestSuspender {
+        author="95th Aux Team";
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Vests); 
+	    maximumLoad=150;
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        hiddenSelectionsTextures[]={
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\drone_operator.paa) 
+        };
+        class ItemInfo: VestItem {
+		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestSuspender.p3d";
+            containerClass = "Supply190";
+            hiddenSelections[]= { "camo1" };
+            mass=80;
+            class HitpointsProtectionInfo {
+                class Chest { HitpointName="HitChest"; armor=6; PassThrough=0.30000001; };
+                class Legs { hitpointName="HitLegs"; armor=6; passThrough=0.30000001; };
+                class Arms { hitpointName="HitArms"; armor=4; passThrough=0.30000001; };
+            };
+        };
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Vests_Squad,SQUAD_KEY));
+            Type = "Standard";
+            Rank = "CT";
+            Role = "Drone_Operator";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
 #endif
 
 #if VEST_ARC_SET == 1

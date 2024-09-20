@@ -16,6 +16,8 @@
 // 13 - Stealth
 // 14 - Tech
 // 15 - Support
+// 16 - Airborne
+// 17 - Drone Operator
 
 if (!isServer) exitWith {};
 
@@ -191,6 +193,14 @@ private _roleArray = [
 		"AUX_95th_Vest_Kama_Rifleman_Trooper", _dc15s_Ammo,
 		_jetBackpack, _medicBackpackContent,
 		"AUX_95th_Helmet_P2_Airborne_Trooper"
+	],
+	[
+		"[95th] 17 - Drone Operator (DC15S)",
+		_dc15s, [], _dc17s,
+		_riflemanUniform, _baseUniformContent + [["AUX_95th_Turret_Deployer",1]],
+		"AUX_95th_Vest_Standard_Drone_Operator_Trooper", _dc15s_Ammo,
+		_jetBackpack, _medicBackpackContent,
+		"AUX_95th_Helmet_P1_ARF_Trooper"
 	]
 ];
 
