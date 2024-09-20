@@ -282,6 +282,63 @@ class XtdGearModels {
 		};
 	};
 
+
+
+	class CfgGlasses {
+		class AUX_95th_Facewear_P1 {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Type", "Colour"};
+
+			class Type {
+				labels = "Type";
+    			alwaysSelectable = 1;
+				values[] = {"Antenna", "Headlamps", "Headlamp"};
+				class Antenna { label = "Antenna"; description = "Antenna"; };
+				class Headlamps { label = "Headlamps"; description = "Headlamps"; };
+				class Headlamp { label = "Headlamp"; description = "Headlamp"; };
+			};
+
+			class Colour {
+				labels = "Colour";
+				values[] = {"White", "Gray", "Brown", "Biege"};
+				class White { label = "White"; description = "White"; };
+				class Gray { label = "Gray"; description = "Gray"; };
+				class Brown { label = "Brown"; description = "Brown"; };
+				class Biege { label = "Biege"; description = "Biege"; };
+			};
+		};
+
+		class AUX_95th_Facewear_Scarfs {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Colour"};
+
+			class Colour {
+				labels = "Colour";
+				values[] = {"White", "Gray", "Brown", "Biege"};
+				class White { label = "White"; description = "White"; };
+				class Gray { label = "Gray"; description = "Gray"; };
+				class Brown { label = "Brown"; description = "Brown"; };
+				class Biege { label = "Biege"; description = "Biege"; };
+			};
+		};
+
+		class AUX_95th_Facewear_Ponchos {
+			label = "";
+			author = "95th Aux Team";
+			options[] = {"Colour"};
+
+			class Colour {
+				labels = "Colour";
+				values[] = {"Green"};
+				class Green { label = "Green"; description = "Green"; };
+			};
+		};
+	};
+
+
+
 	class CfgVehicles {
 		class AUX_95th_Backpacks_Squad_Basic {
 			label = "Basic Backpacks";
@@ -548,5 +605,38 @@ class CfgWeapons {
 	NEW_95th_NIGHTVISION_MEDICAL(Brown);
 	NEW_95th_NIGHTVISION_MEDICAL_OVERLAY(Brown);
 };
+
+class CfgGlasses {
+	class ls_combatGoggles_base;
+	class SWLB_CEE_Clone_Scarf;
+	class PhoenixCore_Poncho;
+
+	class AUX_95th_Facewear_Base: ls_combatGoggles_base {
+		displayName = "[95th] Facewear Baseclass";
+		author="95th Aux Team";
+		model = "\A3\Weapons_f\DummyNVG";
+		picture = "\SWLB_equipment\facewears\data\ui\icon_SWLB_clone_P1_HUD_ca.paa";
+		hiddenSelections[] = {}; hiddenSelectionsTextures[] = {};
+		ACE_Overlay = "";
+		ACE_OverlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
+		ACE_OverlayCracked = "";
+		ACE_DustPath = "\z\ace\addons\goggles\textures\fx\dust\%1.paa";
+		ACE_Resistance = 1;
+		ACE_Protection = 0;
+		ACE_TintAmount = 0;
+		identityTypes[]={};
+	};
+
+	NEW_95TH_ANTENNA(White);
+	NEW_95TH_HEADLAMP(White);
+	NEW_95TH_HEADLAMPS(Gray);
+
+	NEW_95TH_SCARF(Black);
+	NEW_95TH_SCARF(White);
+	NEW_95TH_SCARF(Brown);
+
+	NEW_95TH_PONCHO(Green);
+};
+
 
 #include "CfgEventHandlers.hpp"
