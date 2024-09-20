@@ -16,6 +16,16 @@ class CfgPatches {
     };
 };
 
+class CfgFactionClasses { 
+    class AUX_95th_Legion_Faction_Vehicles { 
+        displayName = "[95th] Vehicles"; 
+		scope=2; 
+		scopecurator=2;
+        priority = 1;
+        side = 1;
+    };  
+};
+
 class CfgEditorCategories{
 	class AUX_95th_Civi_Faction_Vehicles{displayName = "[95th] Vehicles";};
 	class AUX_95th_Legion_Faction_Vehicles{displayName = "[95th] Vehicles";};

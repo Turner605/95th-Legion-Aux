@@ -21,16 +21,6 @@ class CfgPatches {
 	};
 };
 
-class CfgFactionClasses { 
-    class AUX_95th_Legion_Faction_Vehicles { 
-        displayName = "[95th] Vehicles"; 
-		scope=2; 
-		scopecurator=2;
-        priority = 1;
-        side = 1;
-    };  
-};
-
 #include "Definitions.hpp"
 
 #include "CfgVehicles.hpp"
