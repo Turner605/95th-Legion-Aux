@@ -34,7 +34,7 @@
     };\
 }
 
-#define NEW_95TH_SCARF(COLOUR) class AUX_95th_P1_Facewear_Scarf_##COLOUR : SWLB_CEE_Clone_Scarf {\
+#define NEW_95TH_SCARF(COLOUR) class AUX_95th_Facewear_Scarf_##COLOUR : SWLB_CEE_Clone_Scarf {\
     displayName=QUOTE([95th] P1 Scarfs);\
 	author = QUOTE(95th Aux Team);\
 	scope=2;\
@@ -45,7 +45,7 @@
     };\
 }
 
-#define NEW_95TH_PONCHO(COLOUR) class AUX_95th_P1_Facewear_Poncho_##COLOUR : PhoenixCore_Poncho {\
+#define NEW_95TH_PONCHO(COLOUR) class AUX_95th_Facewear_Poncho_##COLOUR : PhoenixCore_Poncho {\
     displayName=QUOTE([95th] P1 Ponchos);\
 	author = QUOTE(95th Aux Team);\
 	scope=2;\

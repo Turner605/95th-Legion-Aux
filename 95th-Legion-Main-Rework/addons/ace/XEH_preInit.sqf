@@ -128,10 +128,11 @@ AUX_95th_Arsenal_Whitelisted_Gear = [
     "AUX_95th_P1_NVG_Medical_Gray", "AUX_95th_P1_NVG_Medical_Gray_Overlay",
     "AUX_95th_P1_NVG_Medical_Brown", "AUX_95th_P1_NVG_Medical_Brown_Overlay",
 
-	"Facewear_HUD_ARFAntenna_95th", "Facewear_HUD_Headlamps_95th", "Facewear_HUD_Headlamp_95th",
-	"Facewear_Empty_ARFAntenna_95th", "Facewear_Empty_Headlamps_95th", "Facewear_Empty_Headlamp_95th",
-	"Facewear_Scarf_Empty_Black_95th", "Facewear_Scarf_Empty_White_95th", "Facewear_Scarf_Empty_Brown_95th",
-	"Facewear_Poncho_Empty_Green_95th"
+    "AUX_95th_P1_Facewear_Antenna_White",
+    "AUX_95th_P1_Facewear_Headlamp_White",
+    "AUX_95th_P1_Facewear_Headlamps_Gray",
+    "AUX_95th_Facewear_Scarf_Gray", "AUX_95th_Facewear_Scarf_White", "AUX_95th_Facewear_Scarf_Brown",
+    "AUX_95th_Facewear_Poncho_Green"
 ];
 
 AUX_95th_Arsenal_Whitelisted_Medical = [

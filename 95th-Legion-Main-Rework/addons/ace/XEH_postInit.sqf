@@ -59,6 +59,29 @@ player addEventHandler ["AnimChanged", {
             if(_playerId == "76561198065789267") then {
                 if("salute" in (animationState _unit)) then {
                     systemChat "No Saluting";
+
+                    // private ["_camera"];
+                    // _camera = "Camera" camCreate [10,10,10];
+                    // _camera cameraEffect ["INTERNAL", "BACK"];
+
+                    // _camera camPreparePos [10,10,10];
+                    // _camera camPrepareTarget [10,10,1000];
+                    // _camera camPrepareFOV 0.7;
+                    // _camera camCommitPrepared 0;
+
+                    // sleep 0.1;
+
+                    // private ["_video"];
+
+                    // _video = ["z\AUX_95th\addons\ace\data\nuh_uh.ogv"] spawn BIS_fnc_playVideo;
+
+                    // waitUntil {scriptDone _video};
+
+                    // sleep 0.1;
+
+                    // _camera cameraEffect ["TERMINATE", "BACK"];
+                    // camDestroy _camera;
+
                     _unit setDamage 1;
                 };
             };

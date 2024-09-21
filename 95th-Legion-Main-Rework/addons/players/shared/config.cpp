@@ -631,7 +631,7 @@ class CfgGlasses {
 	NEW_95TH_HEADLAMP(White);
 	NEW_95TH_HEADLAMPS(Gray);
 
-	NEW_95TH_SCARF(Black);
+	NEW_95TH_SCARF(Gray);
 	NEW_95TH_SCARF(White);
 	NEW_95TH_SCARF(Brown);
 
