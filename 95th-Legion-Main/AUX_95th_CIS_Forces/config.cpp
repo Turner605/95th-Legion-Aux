@@ -13,7 +13,7 @@ class CfgPatches {
 	class AUX_95th_CIS_Forces {
         author="95th Aux Team";
         name="AUX 95th Droid Units";
-		requiredAddons[]={"A3_Characters_F", "JLTS_characters_DroidUnits"};
+		requiredAddons[]={"A3_Characters_F", "JLTS_characters_DroidUnits", "AUX_95th_voicelines"};
 		units[]={
 			"AUX_95th_Air_Unit_Vulture",
 			"AUX_95th_Air_Unit_Vulture_AA",

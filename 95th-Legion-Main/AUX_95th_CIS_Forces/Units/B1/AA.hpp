@@ -1,4 +1,5 @@
 class AUX_95th_Droid_B1_Unit_AA : JLTS_Droid_B1_AT {
+	identityTypes[] = {"Aux_95th_Identity_B1"};
 	DSS_DamageSystem_Active=1;
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
@@ -9,11 +10,11 @@ class AUX_95th_Droid_B1_Unit_AA : JLTS_Droid_B1_AT {
 	weapons[]={"JLTS_E5", "SWLW_E60R_AA", "Throw", "Put"};
 	respawnWeapons[]={"JLTS_E5", "SWLW_E60R_AA", "Throw", "Put"};
 	magazines[]={
-		"SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag",
-		"JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5"
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag"
 	};
 	respawnMagazines[]={
-		"SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag",
-		"JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5"
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag"
 	};
 };

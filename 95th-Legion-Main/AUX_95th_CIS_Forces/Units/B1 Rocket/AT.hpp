@@ -1,4 +1,5 @@
 class AUX_95th_Droid_B1_Rocket_Unit_AT : JLTS_Droid_B1_Rocket {
+	identityTypes[] = {"Aux_95th_Identity_B1"};
 	DSS_DamageSystem_Active=1;
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
@@ -10,11 +11,11 @@ class AUX_95th_Droid_B1_Rocket_Unit_AT : JLTS_Droid_B1_Rocket {
 	weapons[]={"JLTS_E5", "JLTS_RPS6", "Throw", "Put"};
 	respawnWeapons[]={"JLTS_E5", "JLTS_RPS6", "Throw", "Put"};
 	magazines[]={
-		"JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5",
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
 		"JLTS_RPS6_mag", "JLTS_RPS6_mag", "JLTS_RPS6_mag"
 	};
 	respawnMagazines[]={
-		"JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5", "JLTS_E5",
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
 		"JLTS_RPS6_mag", "JLTS_RPS6_mag", "JLTS_RPS6_mag"
 	};
 };
