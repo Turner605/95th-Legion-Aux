@@ -52,26 +52,17 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _position, [], 0, "NO
             _attachPoint = "Land_HelipadEmpty_F" createVehicleLocal _spawnerPos;
             [_spawnedVehicle, _attachPoint] call BIS_fnc_attachToRelative;
 
-            // explosion effect + crater if on terrain
+            _explosion = createVehicle ["R_MRAAWS_HE_F", _spawnerPos, [], 0, "NONE"];
+            _explosion setDamage 1;
+
+            // TODO: crater if on terrain
 
             [{
-                params["_spawnedVehicle"];
+                params["_unitSide", "_mode", "_singleUse", "_shielded", "_smokescreen", "_warningSmoke", "_spawnArray", "_spawnedVehicle", "_attachPoint", "_spawnerPos"];
+
                 _spawnedVehicle allowDamage true;
-            }, [_spawnedVehicle], 1] call CBA_fnc_waitAndExecute;
 
-            if(_singleUse) then {
-                _group = [_spawnerPos, _unitSide, _spawnArray ,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
-                private _spawnedUnits = units _group;
-
-                switch (_mode) do {
-                    case 1: {[_group, 500] spawn lambs_wp_fnc_taskRush;};
-                    case 2: {[_spawnerPos, nil, _spawnedUnits, 100, 2, false, false] call ace_ai_fnc_garrison;};
-                    case 3: {[_spawnerPos, nil, _spawnedUnits, 100, 2, false, true] call ace_ai_fnc_garrison;};
-                };
-            } else {
-                private _frameHandler = [{
-                    (_this select 0) params ["_unitSide", "_mode", "_spawnArray", "_spawnerPos"];
-
+                if(_singleUse) then {
                     _group = [_spawnerPos, _unitSide, _spawnArray ,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
                     private _spawnedUnits = units _group;
 
@@ -80,25 +71,37 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _position, [], 0, "NO
                         case 2: {[_spawnerPos, nil, _spawnedUnits, 100, 2, false, false] call ace_ai_fnc_garrison;};
                         case 3: {[_spawnerPos, nil, _spawnedUnits, 100, 2, false, true] call ace_ai_fnc_garrison;};
                     };
-                }, 45, [_unitSide, _mode, _spawnArray, _spawnerPos]] call CBA_fnc_addPerFrameHandler;
+                } else {
+                    private _frameHandler = [{
+                        (_this select 0) params ["_unitSide", "_mode", "_spawnArray", "_spawnerPos"];
 
-                [{!alive (_this select 0)}, {
-                    params["_spawnedVehicle", "_frameHandler", "_warningSmoke", "_attachPoint"];
-                    [_frameHandler] call CBA_fnc_removePerFrameHandler;
-                    deleteVehicle _warningSmoke;
-                    detach _spawnedVehicle;
-                    deleteVehicle _attachPoint;
-                }, [_spawnedVehicle, _frameHandler, _warningSmoke, _attachPoint]] call CBA_fnc_waitUntilAndExecute;
-            };
+                        _group = [_spawnerPos, _unitSide, _spawnArray ,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
+                        private _spawnedUnits = units _group;
 
+                        switch (_mode) do {
+                            case 1: {[_group, 500] spawn lambs_wp_fnc_taskRush;};
+                            case 2: {[_spawnerPos, nil, _spawnedUnits, 100, 2, false, false] call ace_ai_fnc_garrison;};
+                            case 3: {[_spawnerPos, nil, _spawnedUnits, 100, 2, false, true] call ace_ai_fnc_garrison;};
+                        };
+                    }, 45, [_unitSide, _mode, _spawnArray, _spawnerPos]] call CBA_fnc_addPerFrameHandler;
+
+                    [{!alive (_this select 0)}, {
+                        params["_spawnedVehicle", "_frameHandler", "_warningSmoke", "_attachPoint"];
+                        [_frameHandler] call CBA_fnc_removePerFrameHandler;
+                        deleteVehicle _warningSmoke;
+                        detach _spawnedVehicle;
+                        deleteVehicle _attachPoint;
+                    }, [_spawnedVehicle, _frameHandler, _warningSmoke, _attachPoint]] call CBA_fnc_waitUntilAndExecute;
+                };
+
+            }, [_unitSide, _mode, _singleUse, _shielded, _smokescreen, _warningSmoke, _spawnArray, _spawnedVehicle, _attachPoint, _spawnerPos], 1] call CBA_fnc_waitAndExecute;
         }, [_position, _unitSide, _warning, _squadType, _mode, _singleUse, _shielded, _smokescreen, _warningSmoke, _spawnArray, _spawnedVehicle]] call CBA_fnc_waitUntilAndExecute;
     }, [_position, _unitSide, _warning, _squadType, _mode, _singleUse, _shielded, _smokescreen, _warningSmoke, _spawnArray, _spawnedVehicle], 3] call CBA_fnc_waitAndExecute;
-
 }, [_position, _unitSide, _warning, _squadType, _mode, _singleUse, _shielded, _smokescreen, _warningSmoke], _delayTime] call CBA_fnc_waitAndExecute;
 
 // maybe an override string for custom spawns?
 
 //TODO:
-// - explosion effect + crater if on terrain
+// - crater if on terrain
 // - Shield
 // - Smoke screen
