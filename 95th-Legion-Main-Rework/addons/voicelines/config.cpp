@@ -17,15 +17,24 @@ class CfgIdentities {
 	class Aux_95th_Identity_B1: Male01ENG {
 		name = "B1 Battledroid";
 		glasses = "None";
-		face = "AUX_95th_B1_Face";
+		face = "";
 		nameSound = "";
 		speaker = "Aux_95th_Voice_B1";
+		pitch = 1;
+	};
+
+	class Aux_95th_Identity_BX: Male01ENG {
+		name = "BX Battledroid";
+		glasses = "None";
+		face = "";
+		nameSound = "";
+		speaker = "Aux_95th_Voice_BX";
 		pitch = 1;
 	};
 };
 
 class CfgVoice {
-	voices[] += {"Aux_95th_Voice_B1"};
+	voices[] += {"Aux_95th_Voice_B1", "Aux_95th_Voice_BX"};
 
 	class Base;
 	class Aux_95th_Voice_B1: Base {
@@ -37,6 +46,18 @@ class CfgVoice {
 		directories[] = {
             "\z\AUX_95th\addons\voicelines\B1\",
             "\z\AUX_95th\addons\voicelines\B1\"
+		};
+	};
+
+	class Aux_95th_Voice_BX: Base {
+		displayName = "BX Battledroid";
+		protocol = "RadioProtocolENG";
+		identityTypes[] = {"Aux_95th_Identity_BX"};
+        icon = "";
+		scope = 2;
+		directories[] = {
+            "\z\AUX_95th\addons\voicelines\BX\",
+            "\z\AUX_95th\addons\voicelines\BX\"
 		};
 	};
 };

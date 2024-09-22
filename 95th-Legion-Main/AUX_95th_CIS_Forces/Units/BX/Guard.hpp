@@ -7,7 +7,7 @@ class AUX_95th_Droid_BX_Unit_Guard : lsd_cis_bxdroid_specops {
 	editorSubcategory="AUX_95th_CIS_Forces_Droids_BX";
 	faction="AUX_95th_CIS";
 	facewear="";
-	identityTypes[]={"LanguageENG_F","Head_LSD_BX"};
+	identityTypes[]={"Head_LSD_BX","Aux_95th_Identity_BX"};
 	AUX_95th_Has_Commando_Jump=1;
 	items[]={"ls_cis_bxCommando_vest","SWLB_comlink_droid","JLTS_NVG_droid_chip_2","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
 	linkedItems[]={"ls_cis_bxCommando_vest","SWLB_comlink_droid","JLTS_NVG_droid_chip_2","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
