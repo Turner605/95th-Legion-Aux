@@ -6,7 +6,8 @@ mainprefix = "z"
 [files]
 include = [
     "mod.cpp",
-    "*.paa"
+    "*.paa",
+    "*.dll"
 ]
 
 exclude = [

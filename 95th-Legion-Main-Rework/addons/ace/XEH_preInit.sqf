@@ -54,7 +54,7 @@ AUX_95th_Arsenal_Whitelisted_Weapons = [
     "Shovel_Russian","Shovel_Russian_Rotated","UNSC_Knife","UNSC_Knife_reversed","SW_clone_knife","WBK_SciFi_Sword_1","IMS_HL_StunBaton",
     "AUX_95th_DC17SA_Dual","3AS_RepublicDatapadPistol","Knife_kukri",
 
-    "3AS_PLX1_F","3AS_RPS6_F","3AS_RPS6_HP","3AS_RPS6_G"
+    "3AS_PLX1_F","3AS_RPS6_F","3AS_RPS6_Base","3AS_RPS6_HP","3AS_RPS6_G"
 ];
 
 AUX_95th_Arsenal_Whitelisted_Throwables = [

@@ -49,7 +49,7 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _position, [], 0, "NO
 
             private _spawnerPos = getPosATL _spawnedVehicle;
 
-            _attachPoint = "Land_HelipadEmpty_F" createVehicleLocal _spawnerPos;
+            _attachPoint = createVehicle ["Land_HelipadEmpty_F", _spawnerPos, [], 0, "CAN_COLLIDE"];
             [_spawnedVehicle, _attachPoint] call BIS_fnc_attachToRelative;
 
             _explosion = createVehicle ["R_MRAAWS_HE_F", _spawnerPos, [], 0, "NONE"];
