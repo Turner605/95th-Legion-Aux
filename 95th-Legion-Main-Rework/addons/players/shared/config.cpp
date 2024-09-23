@@ -522,6 +522,11 @@ class CfgUnitInsignia {
 		displayName = "Revan Bong Hit";
 		texture="\z\AUX_95th\addons\players\shared\insignias\RevanBong.paa";
 	};
+
+	class AUX_95th_Insignia_BillyBullsquid : AUX_95th_Insignia_Logo {
+		displayName = "Billy Bullsquid";
+		texture="\z\AUX_95th\addons\players\shared\insignias\BillyBullsquid.paa";
+	};
 };
 
 class CfgWeapons {
