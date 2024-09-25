@@ -20,8 +20,13 @@ git_hash = 0 # Disabled
 
 [hemtt.launch.default]
 workshop = [
-#    "450814997", # CBA_A3's Workshop ID
-#    "463939057", # ACE3
+    "450814997", # CBA_A3's Workshop ID
+    "463939057", # ACE3
+    "1940589429", # JLTS
+    "2058554822", # 3AS
+    "2917437034", # JLTS EA
+    "2967119323", # Phoenix Core
+    "3125077789"
 ]
 
 dlc = [
