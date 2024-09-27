@@ -331,14 +331,30 @@ class CfgVehicles {
 		};
 	};
 
-	class AUX_95th_Bantha_UAV_Test: AUX_95th_Bantha {
-		displayName = "Bantha (UAV TEST)";
+	// class UGV_01_rcws_base_F;
+	// class AUX_95th_UGV_Test: UGV_01_rcws_base_F {
+	// 	scope=2;
+	// 	displayName = "UGV (TEST)";
+	// 	editorCategory="AUX_95th_Legion_Faction_Vehicles";
+	// 	editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Light";
 
+    //     class Turrets: Turrets {
+    //         class MainTurret: MainTurret {
+    //             dontCreateAI = 1;
+    //             gunnerForceOptics = 0;
+    //             hideWeaponsGunner = 0;
+    //         };
+    //         class CargoTurret_01: CargoTurret_01 {};
+    //     };
+    // };
+
+	class AUX_95th_Bantha_UAV_Test: AUX_95th_Bantha {
+		displayName = "Bantha (UGV TEST)";
 		isUav = 1;
 		vehicleClass = "Autonomous";
 		crew = "B_UAV_AI";
 		typicalCargo[] = {"B_UAV_AI"};
-		cargoIsCodriver[] = {1,1,0};
+		// cargoIsCodriver[] = {0,1,0};
 		unitInfoType = "RscOptics_AV_pilot";
 		unitInfoTypeRTD = "RscOptics_AV_pilot";
 		uavCameraDriverPos = "driverview";
@@ -355,28 +371,103 @@ class CfgVehicles {
 			// 	gunnerForceOptics = 1;
 			// };
 
-			class CargoTurret_01: CargoTurret {
-				gunnerAction = "commander_apcwheeled1_out";
-				gunnerCompartments = "Compartment8";
-				memoryPointsGetInGunner = "pos driver";
-				memoryPointsGetInGunnerDir = "pos driver dir";
-				gunnerName = "Driver";
-				proxyIndex = 1;
-				maxElev = 15;
-				minElev = -87;
-				maxTurn = 105;
-				minTurn = -60;
-				isPersonTurret = 1;
-				ejectDeadGunner = 0;
-				enabledByAnimationSource = "";
-				isCopilot = 1;
-			};
+			// class CargoTurret_01: CargoTurret {
+			// 	gunnerAction = "commander_apcwheeled1_out";
+			// 	gunnerCompartments = "Compartment8";
+			// 	memoryPointsGetInGunner = "pos driver";
+			// 	memoryPointsGetInGunnerDir = "pos driver dir";
+			// 	gunnerName = "Driver";
+			// 	dontCreateAI = 1;
+			// 	proxyIndex = 1;
+			// 	maxElev = 15;
+			// 	minElev = -87;
+			// 	maxTurn = 105;
+			// 	minTurn = -60;
+			// 	isPersonTurret = 1;
+			// 	ejectDeadGunner = 0;
+			// 	enabledByAnimationSource = "";
+			// 	isCopilot = 1;
+			// };
 
 			class MainTurret: MainTurret {
+				weapons[] = {"QS_APC_40mm_G","AUX_95th_Bantha_Rocket"};
+				magazines[] = {"QS_50_200rnd_HE_blue_M","QS_50_200rnd_HE_blue_M","QS_50_200rnd_HE_blue_M","AUX_95th_Bantha_Rocket_Magazine","AUX_95th_Bantha_Rocket_Magazine"};
+				memoryPointGun[] = {"z_gunL_muzzle","z_gunR_muzzle"};
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner",0.56234133,1,30};
+				soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner_vertical",0.56234133,1,30};
+
+				body = "mainTurret";
+				gun = "mainGun";
+				commanding = 1;
+				minElev = -8;
+				initElev = 0;
+				maxElev = 60;
+				minCamElev = -90;
+				maxCamElev = 90;
+				gunnerAction = "mbt1_slot2_out";
+				gunnerInAction = "mbt1_slot2_in";
+				getInAction = "GetInHigh";
+				getOutAction = "GetOutHigh";
+				viewGunnerInExternal = 1;
+				castGunnerShadow = 1;
+				stabilizedInAxes = 3;
+				startEngine = 0;
+				gunnerForceOptics = 1;
+				inGunnerMayFire = 1;
+				outGunnerMayFire = 0;
+				gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
+				discreteDistanceInitIndex = 2;
+				memoryPointGunnerOptics = "gunnerview";
+				selectionFireAnim = "zasleh2";
+				personTurretAction = "vehicle_turnout_0";
+				minOutElev = -30;
+				maxOutElev = 60;
+				initOutElev = 0;
+				minOutTurn = -160;
+				maxOutTurn = 160;
+				initOutTurn = 0;
+				dontCreateAI = 1;
+
+				class ViewOptics: RCWSOptics {
+					visionMode[] = {"Normal","TI"};
+				};
+				class OpticsIn: Optics_Gunner_APC_01 {
+					class Wide: Wide{};
+					class Medium: Medium{};
+					class Narrow: Narrow{};
+				};
+				turretInfoType = "RscOptics_APC_Wheeled_01_gunner";
+				showCrewAim = 2;
+				class HitPoints {
+					class HitTurret {
+						armor = 1.2;
+						material = -1;
+						name = "hit_main_turret_point";
+						visual = "hit_main_turret_point";
+						passThrough = 0;
+						minimalHit = 0.1;
+						explosionShielding = 0.2;
+						radius = 0.25;
+						isTurret = 1;
+					};
+					class HitGun {
+						armor = 0.90000004;
+						material = -1;
+						name = "hit_main_gun_point";
+						visual = "hit_main_gun_point";
+						passThrough = 0;
+						minimalHit = 0.1;
+						explosionShielding = 0.4;
+						radius = 0.25;
+						isTurret = 1;
+					};
+				};
+
 				class ViewGunner;
 				class Turrets: Turrets {
 					class CommanderOptics: CommanderOptics {
-						isCopilot = 1;
+						dontCreateAI = 1;
 						memoryPointGunnerOutOptics = "commanderview";
 						memoryPointGunnerOptics = "commanderview";
 						gunBeg = "Usti hlavne3";
@@ -400,7 +491,6 @@ class CfgVehicles {
 						outGunnerMayFire = 0;
 						viewGunnerInExternal = 1;
 						viewGunnerShadow = 1;
-						isPersonTurret = 2;
 						forceHideGunner = 1;
 						gunnerOutForceOptics = 0;
 						gunnerOutOpticsShowCursor = 0;
@@ -483,80 +573,6 @@ class CfgVehicles {
 						maxHorizontalRotSpeed = 1.8;
 						maxVerticalRotSpeed = 1.8;
 						gunnerHasFlares = 1;
-					};
-				};
-				body = "mainTurret";
-				gun = "mainGun";
-				weapons[] = {};
-				magazines[] = {};
-				soundServo[] = {"A3\sounds_f\dummysound",0.01,1,30};
-				commanding = 1;
-				minElev = -8;
-				initElev = 0;
-				maxElev = 60;
-				minCamElev = -90;
-				maxCamElev = 90;
-				gunnerAction = "mbt1_slot2_out";
-				gunnerInAction = "mbt1_slot2_in";
-				getInAction = "GetInHigh";
-				getOutAction = "GetOutHigh";
-				viewGunnerInExternal = 1;
-				castGunnerShadow = 1;
-				stabilizedInAxes = 3;
-				startEngine = 0;
-				gunnerForceOptics = 1;
-				inGunnerMayFire = 1;
-				outGunnerMayFire = 0;
-				gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
-				discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
-				discreteDistanceInitIndex = 2;
-				memoryPointGunnerOptics = "gunnerview";
-				selectionFireAnim = "zasleh2";
-				isPersonTurret = 0;
-				personTurretAction = "vehicle_turnout_0";
-				minOutElev = -30;
-				maxOutElev = 60;
-				initOutElev = 0;
-				minOutTurn = -160;
-				maxOutTurn = 160;
-				initOutTurn = 0;
-				class ViewOptics: RCWSOptics
-				{
-					visionMode[] = {"Normal","TI"};
-				};
-				class OpticsIn: Optics_Gunner_APC_01
-				{
-					class Wide: Wide{};
-					class Medium: Medium{};
-					class Narrow: Narrow{};
-				};
-				turretInfoType = "RscOptics_APC_Wheeled_01_gunner";
-				showCrewAim = 2;
-				class HitPoints
-				{
-					class HitTurret
-					{
-						armor = 1.2;
-						material = -1;
-						name = "hit_main_turret_point";
-						visual = "hit_main_turret_point";
-						passThrough = 0;
-						minimalHit = 0.1;
-						explosionShielding = 0.2;
-						radius = 0.25;
-						isTurret = 1;
-					};
-					class HitGun
-					{
-						armor = 0.90000004;
-						material = -1;
-						name = "hit_main_gun_point";
-						visual = "hit_main_gun_point";
-						passThrough = 0;
-						minimalHit = 0.1;
-						explosionShielding = 0.4;
-						radius = 0.25;
-						isTurret = 1;
 					};
 				};
 			};
