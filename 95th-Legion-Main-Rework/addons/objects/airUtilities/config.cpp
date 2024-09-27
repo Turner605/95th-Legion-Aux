@@ -3,7 +3,12 @@
 class CfgPatches {
     class DOUBLES(PREFIX,COMPONENT) {
         name = COMPONENT_NAME;
-        units[] = {};
+        units[] = {
+            "AUX_95th_AirUtil_Pad",
+            "AUX_95th_AirUtil_Service",
+            "AUX_95th_AirUtil_Fighter",
+            "AUX_95th_AirUtil_Transport"
+        };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"AUX_95th_main", "AUX_95th_objects_shared"};
@@ -20,14 +25,14 @@ class CfgVehicles {
 
     class AUX_95th_AirUtil_Pad : 3AS_Pad_Square_Prop {
         displayName="Landing Pad";
-        editorCategory="AUX_95th_Objects";
-        editorSubcategory="AUX_95th_Air_Utilities";
+        editorCategory="AUX_95th_Objects_GAR";
+        editorSubcategory="AUX_95th_Objects_GAR_Air";
     };
 
     class AUX_95th_AirUtil_Service : 3AS_workbench_r1 {
         displayName="Air Service Terminal";
-        editorCategory="AUX_95th_Objects";
-        editorSubcategory="AUX_95th_Air_Utilities";
+        editorCategory="AUX_95th_Objects_GAR";
+        editorSubcategory="AUX_95th_Objects_GAR_Air";
         class UserActions {
             class ServiceAirVehicle {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
@@ -44,8 +49,8 @@ class CfgVehicles {
 
     class AUX_95th_AirUtil_Fighter : 3AS_Small_Terminal_Black_Prop {
         displayName="Fighter Terminal";
-        editorCategory="AUX_95th_Objects";
-        editorSubcategory="AUX_95th_Air_Utilities";
+        editorCategory="AUX_95th_Objects_GAR";
+        editorSubcategory="AUX_95th_Objects_GAR_Air";
         class UserActions {
             class SpawnZ95 {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
@@ -77,8 +82,8 @@ class CfgVehicles {
 
     class AUX_95th_AirUtil_Transport : 3AS_TERMINAL_2_PROP {
         displayName="Air Transport Terminal";
-        editorCategory="AUX_95th_Objects";
-        editorSubcategory="AUX_95th_Air_Utilities";
+        editorCategory="AUX_95th_Objects_GAR";
+        editorSubcategory="AUX_95th_Objects_GAR_Air";
         class UserActions {
             class SpawnMrk1LAAT {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";

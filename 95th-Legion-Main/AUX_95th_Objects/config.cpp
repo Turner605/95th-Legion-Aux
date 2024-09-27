@@ -4,9 +4,7 @@ class CfgPatches {
         name="AUX 95th Objects";
 		requiredAddons[]={"3AS_Prop_Crates","AUX_95th_Ace"};
 		units[]={
-			"AUX_95th_AirUtil_Pad", "AUX_95th_AirUtil_Transport", "AUX_95th_AirUtil_Fighter", "AUX_95th_AirUtil_Service",
 			"AUX_95th_Ground_Factory", "AUX_95th_Droid_Factory_Terminal", "AUX_95th_Factory_Proxy", "AUX_95th_Flak_Factory",
-			"AUX_95th_GroundUtil_Vehicles_Support", "AUX_95th_GroundUtil_Vehicles_Light", "AUX_95th_GroundUtil_Vehicles_Heavy", "AUX_95th_GroundUtil_Pad", "AUX_95th_GroundUtil_Vehicles", "AUX_95th_GroundUtil_Service", "AUX_95th_GroundUtil_Refit",
 			"AUX_95th_Misc_Motion_Sensor", "AUX_95th_Misc_Radio_Extender", "AUX_95th_Misc_Shield_Generator", "AUX_95th_Misc_Reinsert_Requester",
 			"AUX_95th_Crate_Platoon_Ammo", "AUX_95th_Crate_Platoon_Medical", "AUX_95th_Crate_Platoon_Explosives", "AUX_95th_Crate_Vehicle_Ammo", "AUX_95th_Crate_Vehicle_Fuel",
 			"AUX_95th_Crate_Full_Arsenal", "AUX_95th_Crate_Restricted_Arsenal", "AUX_95th_Crate_Inverted_Arsenal",
@@ -66,15 +64,6 @@ class CfgVehicles {
 	#include "Fortify\Ramp.hpp"
 	#include "Fortify\Turret.hpp"
 	#include "Fortify\Wall.hpp"
-
-	// Ground Util
-	#include "GroundUtil\Heavy.hpp"
-	#include "GroundUtil\Light.hpp"
-	#include "GroundUtil\Pad.hpp"
-	#include "GroundUtil\Refit.hpp"
-	#include "GroundUtil\Service.hpp"
-	#include "GroundUtil\Support.hpp"
-	#include "GroundUtil\Vehicles.hpp"
 
 	// Misc
 	#include "Misc\Arsenal Full.hpp"

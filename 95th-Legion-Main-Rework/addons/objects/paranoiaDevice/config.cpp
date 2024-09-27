@@ -19,8 +19,8 @@ class CfgVehicles {
 
     class Aux_95th_Paranoia_Device: Land_3AS_Generator_Imp {
         displayName="Paranoia Device";
-        editorCategory="AUX_95th_CIS_Objects";
-        editorSubcategory="AUX_95th_CIS_Statics";
+        editorCategory="AUX_95th_Objects_CIS";
+        editorSubcategory="AUX_95th_Objects_CIS_Statics";
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
