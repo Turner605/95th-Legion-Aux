@@ -85,6 +85,11 @@ class CfgVehicles {
                 displayName = "Spawn [95th] Bantha";
                 statement = "[this, player, 'AUX_95th_Bantha'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
             };
+            class SpawnBanthaUgv {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Spawn [95th] Bantha (UGV)";
+                statement = "[this, player, 'AUX_95th_Bantha_UAV_Test'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
+            };
             class SpawnMAVr {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
                 displayName = "Spawn [95th] MAVr";
