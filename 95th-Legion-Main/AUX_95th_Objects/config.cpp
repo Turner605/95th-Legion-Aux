@@ -50,12 +50,6 @@ class CfgVehicles {
 	#include "Droid Factories\Factory Proxy.hpp"
 	#include "Droid Factories\Flak Factory.hpp"
 
-	// Air Util
-	#include "AirUtil\Fighter.hpp"
-	#include "AirUtil\Pad.hpp"
-	#include "AirUtil\Service.hpp"
-	#include "AirUtil\Transport.hpp"
-
 	// Resupply Crates
 	#include "Crates\Full Arsenal.hpp"
 	#include "Crates\Inverted Arsenal.hpp"
@@ -117,23 +111,6 @@ class CfgFunctions { class AUX_95th { class Objects {
 	class droidFactoryTerminalInit {file = "\AUX_95th_Objects\Init\droidFactoryTerminalInit.sqf";};
 	class droidFactoryInit {file = "\AUX_95th_Objects\Init\droidFactoryInit.sqf";};
 	class droidFlakFactoryInit {file = "\AUX_95th_Objects\Init\droidFlakFactoryInit.sqf";};
-	
-	class handleCrateSpawned {file = "\AUX_95th_Objects\Scripts\handleCrateSpawned.sqf";};
-	class checkPlayerInBriefing {file = "\AUX_95th_Objects\Scripts\checkPlayerInBriefing.sqf";};
-
-	class handleGroundSpawned {file = "\AUX_95th_Objects\Scripts\GroundUtil\handleGroundSpawned.sqf";};
-	class handleGroundVehicleServiced {file = "\AUX_95th_Objects\Scripts\GroundUtil\handleGroundVehicleServiced.sqf";};
-	class handleLoadATRT {file = "\AUX_95th_Objects\Scripts\GroundUtil\handleLoadATRT.sqf";};
-
-	class handleAirSpawned {file = "\AUX_95th_Objects\Scripts\AirUtil\handleAirSpawned.sqf";};
-	class handleAirVehicleServiced {file = "\AUX_95th_Objects\Scripts\AirUtil\handleAirVehicleServiced.sqf";};
-	class handlePylonEdit {file = "\AUX_95th_Objects\Scripts\AirUtil\handlePylonEdit.sqf";};
-	class handleSkinSelection {file = "\AUX_95th_Objects\Scripts\handleSkinSelection.sqf";};
-
-	class handleFactoryTerminalOptions {file = "\AUX_95th_Objects\Scripts\Droid Factories\handleFactoryTerminalOptions.sqf";};
-
-	class handleParadrop {file = "\AUX_95th_Objects\Scripts\Airborne Insert\paradrop.sqf";};
-	class becomeAirborne {file = "\AUX_95th_Objects\Scripts\Airborne Insert\becomeAirborne.sqf";};
 };};};
 
 class Extended_PostInit_EventHandlers {

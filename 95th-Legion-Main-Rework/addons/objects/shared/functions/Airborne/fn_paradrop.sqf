@@ -1,4 +1,4 @@
-Params ["_unit"];
+params ["_unit"];
 
 if(!((leader _unit) == _unit)) exitWith {
     systemChat "You must be the group leader.";
@@ -31,14 +31,14 @@ _unit onMapSingleClick {_this setVariable ["AUX_95th_Insertion_Location", _pos, 
 
                     private _priorFreefall = (getUnitFreefallInfo _unit) select 2;
                     _unit setVariable ["AUX_95th_Prior_Freefall_Height", _priorFreefall, true];
-                    _unit setunitFreefallHeight 10000;
+                    _unit setUnitFreefallHeight 10000;
 
                     [{isTouchingGround (_this select 0) || !alive (_this select 0)}, {
                         params["_unit"];
-                        _unit setunitFreefallHeight (_unit getVariable "AUX_95th_Prior_Freefall_Height");
+                        _unit setUnitFreefallHeight (_unit getVariable "AUX_95th_Prior_Freefall_Height");
                     }, [_unit]] call CBA_fnc_waitUntilAndExecute;
 
-                    _pos = [(_dropPos select 0) - (Random 10) + (Random 10), (_dropPos select 1) - (Random 10) + (Random 10), (800 - (Random 20))];
+                    _pos = [(_dropPos select 0) - (random 10) + (random 10), (_dropPos select 1) - (random 10) + (random 10), (800 - (random 20))];
                     _unit setPosATL _pos;
 
                 }, [_unit, _dropPos], 1] call CBA_fnc_waitAndExecute;
