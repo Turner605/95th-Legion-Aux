@@ -1,5 +1,5 @@
 class CfgPatches {
-	class AUX_95th_Objects {
+	class AUX_95th_Objects_Depricated {
         author="95th Aux Team";
         name="AUX 95th Objects";
 		requiredAddons[]={"3AS_Prop_Crates","AUX_95th_Ace"};
@@ -93,21 +93,21 @@ class CfgVehicles {
 };
 
 class CfgFunctions { class AUX_95th { class Objects {
-	class motionSensorInit {file = "\AUX_95th_Objects\Init\motionSensorInit.sqf";};
-	class ShieldGeneratorInit {file = "\AUX_95th_Objects\Init\shieldGeneratorInit.sqf";};
-	class reinsertRequesterInit {file = "\AUX_95th_Objects\Init\reinsertRequesterInit.sqf";};
-	class invertedArsenalInit {file = "\AUX_95th_Objects\Init\invertedArsenalInit.sqf";};
-	class droidFactoryTerminalInit {file = "\AUX_95th_Objects\Init\droidFactoryTerminalInit.sqf";};
-	class droidFactoryInit {file = "\AUX_95th_Objects\Init\droidFactoryInit.sqf";};
-	class droidFlakFactoryInit {file = "\AUX_95th_Objects\Init\droidFlakFactoryInit.sqf";};
+	class motionSensorInit {file = "\AUX_95th_Objects_Depricated\Init\motionSensorInit.sqf";};
+	class ShieldGeneratorInit {file = "\AUX_95th_Objects_Depricated\Init\shieldGeneratorInit.sqf";};
+	class reinsertRequesterInit {file = "\AUX_95th_Objects_Depricated\Init\reinsertRequesterInit.sqf";};
+	class invertedArsenalInit {file = "\AUX_95th_Objects_Depricated\Init\invertedArsenalInit.sqf";};
+	class droidFactoryTerminalInit {file = "\AUX_95th_Objects_Depricated\Init\droidFactoryTerminalInit.sqf";};
+	class droidFactoryInit {file = "\AUX_95th_Objects_Depricated\Init\droidFactoryInit.sqf";};
+	class droidFlakFactoryInit {file = "\AUX_95th_Objects_Depricated\Init\droidFlakFactoryInit.sqf";};
 };};};
 
 class Extended_PostInit_EventHandlers {
-	class AUX_95th_Objects_PostInit {init="call compile preprocessFileLineNumbers '\AUX_95th_Objects\Init\XEH_postInit.sqf'";};
+	class AUX_95th_Objects_Depricated_PostInit {init="call compile preprocessFileLineNumbers '\AUX_95th_Objects_Depricated\Init\XEH_postInit.sqf'";};
 };
 
 class Extended_PreInit_EventHandlers {
-	class AUX_95th_Objects_PreInit {init="call compile preprocessFileLineNumbers '\AUX_95th_Objects\Init\XEH_preInit.sqf'";};
+	class AUX_95th_Objects_Depricated_PreInit {init="call compile preprocessFileLineNumbers '\AUX_95th_Objects_Depricated\Init\XEH_preInit.sqf'";};
 };
 
 class Extended_InitPost_EventHandlers {

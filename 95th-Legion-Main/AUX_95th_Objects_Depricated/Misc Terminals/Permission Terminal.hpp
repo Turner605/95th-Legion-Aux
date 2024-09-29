@@ -5,7 +5,7 @@ class AUX_95th_Misc_Permission_Terminal : DSS_Permissions_Droid {
 	editorSubcategory="AUX_95th_Misc_Terminals";
 	hiddenSelections[] = {"Screens","Lightbar"};
 	hiddenSelectionsTextures[] = {
-		"\AUX_95th_Objects\Data\Terminals\Permissions.paa", 
+		"\AUX_95th_Objects_Depricated\Data\Terminals\Permissions.paa", 
 		"#(argb,8,8,3)color(1,0,0,1.0,co)"
 	};
 };
