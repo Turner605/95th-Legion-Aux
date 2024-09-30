@@ -8,6 +8,7 @@ class TransportMagazines {
 	class _xx_UGL_FlareRed_F{magazine="UGL_FlareRed_F"; count=20;};
 	class _xx_UGL_FlareWhite_F{magazine="UGL_FlareWhite_F"; count=20;};
 	class _xx_3AS_6Rnd_HE_Grenade_shell{magazine="3AS_6Rnd_HE_Grenade_shell"; count=20;};
+	class _xx_AUX_95th_BX42_Rocket_HE{magazine="AUX_95th_BX42_Rocket_HE"; count=20;};
 
 	class _xx_3AS_JLTS_MK43_AT{magazine="3AS_JLTS_MK43_AT"; count=5;};
 	class _xx_3AS_JLTS_MK39_AA{magazine="3AS_JLTS_MK39_AA"; count=5;};
@@ -29,6 +30,10 @@ class TransportMagazines {
 	class _xx_DSS_Magazine_Grenade_Hacker{magazine="DSS_Magazine_Grenade_Hacker"; count=10;};
 	class _xx_DSS_Magazine_Grenade_Sonar{magazine="DSS_Magazine_Grenade_Sonar"; count=10;};
 	class _xx_DSS_Grenade_Magazine_Thermal_C1{magazine="DSS_Grenade_Magazine_Thermal_C1"; count=10;};
+	class _xx_AUX_95th_Magazine_Grenade_Medical_Shield{magazine="AUX_95th_Magazine_Grenade_Medical_Shield"; count=4;};
+	class _xx_3AS_SmokeWhite{magazine="3AS_SmokeWhite"; count=10;};
+	class _xx_3AS_SmokeYellow{magazine="3AS_SmokeYellow"; count=5;};
+	class _xx_3AS_SmokeGreen{magazine="3AS_SmokeGreen"; count=5;};
 
 	class _xx_DSS_1Rnd_HE_Grenade_shell{magazine="1Rnd_HE_Grenade_shell"; count=10;};
 	class _xx_DSS_1Rnd_Smoke_Grenade_shell{magazine="1Rnd_Smoke_Grenade_shell"; count=10;};
@@ -46,24 +51,28 @@ class TransportWeapons {
 	class _xx_AUX_95th_DC15L{weapon="AUX_95th_DC15L"; count=2;};
 	class _xx_AUX_95th_DW32S{weapon="AUX_95th_DW32S"; count=2;};
 	class _xx_AUX_95th_WestarM5{weapon="AUX_95th_WestarM5"; count=2;};
-	class _xx_AUX_95th_DC15C{weapon="AUX_95th_DC15C"; count=5;};
-	class _xx_AUX_95th_DC15C_GL{weapon="AUX_95th_DC15C_GL"; count=5;};
+	class _xx_AUX_95th_DC15C{weapon="AUX_95th_DC15C"; count=2;};
+	class _xx_AUX_95th_DC15C_GL{weapon="AUX_95th_DC15C_GL"; count=2;};
 	class _xx_3AS_RPS6_F{weapon="3AS_RPS6_F"; count=10;};
 	class _xx_3AS_RPS6_HP{weapon="3AS_RPS6_HP"; count=4;};
 	class _xx_ACE_VMH3{weapon="ACE_VMH3"; count=2;};
 };
 
 class TransportItems {
-	class _xx_ACE_packingBandage{name="ACE_packingBandage"; count=60;};
-	class _xx_ACE_elasticBandage{name="ACE_elasticBandage"; count=60;};
-	class _xx_ACE_morphine{name="ACE_morphine"; count=5;};
-	class _xx_ACE_adenosine{name="ACE_adenosine"; count=5;};
-	class _xx_ACE_epinephrine{name="ACE_epinephrine"; count=5;};
-	class _xx_kat_Painkiller{name="kat_Painkiller"; count=5;};
+	class _xx_ACE_packingBandage{name="ACE_packingBandage"; count=90;};
+	class _xx_ACE_elasticBandage{name="ACE_elasticBandage"; count=90;};
+	class _xx_ACE_morphine{name="ACE_morphine"; count=10;};
+	class _xx_ACE_adenosine{name="ACE_adenosine"; count=10;};
+	class _xx_ACE_epinephrine{name="ACE_epinephrine"; count=10;};
+	class _xx_kat_Painkiller{name="kat_Painkiller"; count=20;};
 	class _xx_kat_guedel{name="kat_guedel"; count=5;};
-	class _xx_kat_larynx{name="kat_larynx"; count=5;};
-	class _xx_ACE_salineIV{name="ACE_salineIV"; count=10;};
+	class _xx_kat_larynx{name="kat_larynx"; count=15;};
+	class _xx_ACE_salineIV{name="ACE_salineIV"; count=20;};
 	class _xx_ACE_tourniquet{name="ACE_tourniquet"; count=10;};
 	class _xx_ACE_splint{name="ACE_splint"; count=5;};
-	class _xx_kat_chestSeal{name="kat_chestSeal"; count=5;};
+	class _xx_kat_chestSeal{name="kat_chestSeal"; count=25;};
+	class _xx_kat_x_aed{name="kat_x_aed"; count=2;};
+	class _xx_kat_accuvac{name="kat_accuvac"; count=2;};
+	class _xx_kat_carbonate{name="kat_carbonate"; count=8;};
+	class _xx_kat_txa{name="kat_txa"; count=20;};
 };
