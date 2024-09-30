@@ -129,7 +129,7 @@ class CfgWeapons {
 			reloadTime = 0.5;
 			recoil = "recoil_single_mx";
 			recoilProne = "recoil_single_prone_mx";
-			dispersion = 0.00073;
+			dispersion = 0.00025;
 			minRange = 2;
 			minRangeProbab = 0.5;
 			midRange = 250;
@@ -153,7 +153,7 @@ class CfgWeapons {
 			reloadTime = 0.096;
 			recoil = "recoil_auto_mx";
 			recoilProne = "recoil_auto_prone_mx";
-			dispersion = 0.00073;
+			dispersion = 0.00053;
 			minRange = 0;
 			minRangeProbab = 0.9;
 			midRange = 15;
@@ -175,7 +175,7 @@ class CfgWeapons {
 				begin1[] = {"z\AUX_95th\addons\weapons\dc15x\sounds\dc15x_fire",2.5,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
-			dispersion = 0.00073;
+			dispersion = 0.00052;
 			showToPlayer = 0;
 			burst = 3;
 			aiBurstTerminable = 1;
@@ -201,7 +201,7 @@ class CfgWeapons {
 				begin1[] = {"z\AUX_95th\addons\weapons\dc15x\sounds\dc15x_fire",2.5,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
-			dispersion = 0.00073;
+			dispersion = 0.00023;
 			requiredOpticType = 1;
 			minRange = 2;
 			minRangeProbab = 0.2;
@@ -225,7 +225,7 @@ class CfgWeapons {
 				begin1[] = {"z\AUX_95th\addons\weapons\dc15x\sounds\dc15x_fire",2.5,1,1800};
 				soundBegin[] = {"begin1",1};
 			};
-			dispersion = 0.00073;
+			dispersion = 0.00020;
 			requiredOpticType = 2;
 			minRange = 100;
 			minRangeProbab = 0.2;
