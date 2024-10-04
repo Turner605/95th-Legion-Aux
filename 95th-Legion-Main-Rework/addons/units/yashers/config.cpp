@@ -9,7 +9,8 @@ class CfgPatches {
             "AUX_95th_Yasher_Sniper",
             "AUX_95th_Yasher_Heavy",
             "AUX_95th_Yasher_AT",
-            "AUX_95th_Yasher_AA"
+            "AUX_95th_Yasher_AA",
+            "AUX_95th_Yasher_Devastator"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

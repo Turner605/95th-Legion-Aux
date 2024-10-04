@@ -50,8 +50,42 @@ class CfgFunctions {
 			file = "\z\AUX_95th\addons\vehicles\shared\functions";
             class handleRhoCrateInit {};
             class handleAirVehicleInit {};
+            class handleVehicleStrafe {};
         };
     };
+};
+
+class CfgUserActions {
+	class AUX_95th_Vehicle_Strafe_Left {
+		displayName = "Strafe Left"; 
+        tooltip = "Strafe left when in a supported vehicle";
+		onActivate = "[player, 'Left'] spawn AUX_95th_fnc_handleVehicleStrafe";
+		onDeactivate = "player setVariable ['AUX_95th_Strafing_Active', false, true]; [AUX_95th_Vehicle_Strafe_Handler] call CBA_fnc_removePerFrameHandler;";
+	};
+
+    class AUX_95th_Vehicle_Strafe_Right {
+		displayName = "Strafe Right"; 
+        tooltip = "Strafe right when in a supported vehicle";
+		onActivate = "[player, 'Right'] spawn AUX_95th_fnc_handleVehicleStrafe";
+		onDeactivate = "player setVariable ['AUX_95th_Strafing_Active', false, true]; [AUX_95th_Vehicle_Strafe_Handler] call CBA_fnc_removePerFrameHandler;";
+	};
+};
+
+class CfgDefaultKeysPresets {
+	class Arma2 {
+		class Mappings {
+			AUX_95th_Vehicle_Strafe_Left[] = {0x10};
+			AUX_95th_Vehicle_Strafe_Right[] = {0x12};
+		};
+	};
+};
+
+class UserActionGroups {
+	class AUX_95th_Vehicle_Binds {
+		name = "95th - Vehicles";
+		isAddon = 1;
+		group[] = {"AUX_95th_Vehicle_Strafe_Left", "AUX_95th_Vehicle_Strafe_Right"};
+	};
 };
 
 #include "CfgEventHandlers.hpp"
