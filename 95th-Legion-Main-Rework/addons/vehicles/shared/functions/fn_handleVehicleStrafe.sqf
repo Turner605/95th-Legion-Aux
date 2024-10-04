@@ -32,7 +32,16 @@ AUX_95th_Vehicle_Strafe_Handler = [{
         case "Left": {_dirSpeed = -90};
     };
 
-    _vel = [ (_vel select 0) + (sin (_dir + _dirSpeed) * _speed), (_vel select 1) + (cos (_dir + _dirSpeed) * _speed), (_vel select 2)];
+    private _velAddY = (_vel select 1) + (cos (_dir + _dirSpeed) * _speed);
+
+    if(_velAddY < -10) then {_velAddY = -10};
+    if(_velAddY > 10) then {_velAddY = 10};
+
+    _vel = [ 
+        (_vel select 0) + (sin (_dir + _dirSpeed) * _speed), 
+        _velAddY, 
+        (_vel select 2)
+    ];
 
     if (isTouchingGround _vehicle) then {
         private _airResistance = _vel vectorMultiply (-0.1 * diag_deltaTime * _strafeResistance);
