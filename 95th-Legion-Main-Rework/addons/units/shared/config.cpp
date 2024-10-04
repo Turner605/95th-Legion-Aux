@@ -10,11 +10,8 @@ class CfgPatches {
 			"AUX_95th_main"
 		};
         authors[] = {"Turner"};
-        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
     };
 };
-
-
 
 #include "CfgEventHandlers.hpp"
