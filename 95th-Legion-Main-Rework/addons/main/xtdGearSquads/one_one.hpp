@@ -1,7 +1,7 @@
 class Player {
     alwaysSelectable = 0;
     labels = "Player";
-    values[] = {"Volt","Sand", "Manila", "Chimera", "King", "Lisek", "Mermaid", "Dracus"};
+    values[] = {"Volt","Sand", "Manila", "Chimera", "King", "Lisek", "Mermaid", "Dracus", "Triage"};
     class Volt { label = "Volt"; description = "Volt`s Helmet"; };
     class Sand { label = "Sand"; description = "Sand`s Helmet"; };
     class Manila { label = "Manila"; description = "Manila`s Helmet"; };
@@ -10,4 +10,5 @@ class Player {
     class Lisek { label = "Lisek"; description = "Lisek`s Helmet"; };
     class Mermaid { label = "Mermaid"; description = "Mermaid`s Helmet"; };
     class Dracus { label = "Dracus"; description = "Dracus`s Helmet"; };
+    class Triage { label = "Triage"; description = "Triage`s Helmet"; };
 };
