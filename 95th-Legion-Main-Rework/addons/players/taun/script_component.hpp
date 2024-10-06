@@ -48,4 +48,4 @@
 #include "\z\AUX_95th\addons\main\script_macros.hpp"
 
 //TODO:
-// Vests need replacing really 
+// Vests need replacing really
