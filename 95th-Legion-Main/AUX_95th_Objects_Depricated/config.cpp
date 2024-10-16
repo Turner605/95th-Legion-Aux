@@ -9,7 +9,7 @@ class CfgPatches {
 			"AUX_95th_Crate_Platoon_Ammo", "AUX_95th_Crate_Platoon_Medical", "AUX_95th_Crate_Platoon_Explosives", "AUX_95th_Crate_Vehicle_Ammo", "AUX_95th_Crate_Vehicle_Fuel",
 			"AUX_95th_Crate_Full_Arsenal", "AUX_95th_Crate_Restricted_Arsenal", "AUX_95th_Crate_Inverted_Arsenal",
 			"AUX_95th_Misc_Crate_Pad", "AUX_95th_Misc_Medical_Terminal", "AUX_95th_Misc_Permission_Terminal",
-			"AUX_95th_Venator_Briefing_Room", "AUX_95th_Medical_Shield", "AUX_95th_Shield_Small", "AUX_95th_Acclimator_Hollow",
+			"AUX_95th_Venator_Briefing_Room", "AUX_95th_Medical_Shield", "AUX_95th_Shield_Small", "AUX_95th_Shield_Test", "AUX_95th_Acclimator_Hollow",
 			"AUX_95th_Fortify_Ramp", "AUX_95th_Fortify_Barricade", "AUX_95th_Fortify_Wall", "AUX_95th_Fortify_Bunker", "AUX_95th_Fortify_Turret",
 			"AUX_95th_Misc_Arsenal_Full", "AUX_95th_Misc_Arsenal_Restricted", "AUX_95th_Venator_Briefing_Room",
 			"AUX_95th_WBK_Combine_WalhammerShield_actual", "AUX_95th_Misc_Airborne_Terminal", "AUX_95th_Misc_2DFCK"
