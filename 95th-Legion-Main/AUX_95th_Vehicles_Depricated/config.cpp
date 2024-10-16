@@ -2,7 +2,7 @@ class CfgPatches {
 	class AUX_95th_Vehicles_Depricated {
         author="95th Aux Team";
         name="AUX 95th Vehicles";
-		requiredAddons[]={"3AS_Prop_Crates", "3AS_SaberTank", "3AS_LAAT", "CCS_Manta"};
+		requiredAddons[]={"3AS_Prop_Crates", "3AS_SaberTank", "3AS_LAAT"};
 		units[] = {
 			"AUX_95th_Command_Outpost",
 			"AUX_95th_Swamp_Speeder",
@@ -13,7 +13,6 @@ class CfgPatches {
 			"AUX_95th_TX_130",
 			"AUX_95th_TX_130_Shield",
 			"AUX_95th_RX200",
-			"AUX_95th_UGV",
 			"AUX_95th_ATTE",
 			"AUX_95th_LAAT_C",
 			"AUX_95th_ATRT"

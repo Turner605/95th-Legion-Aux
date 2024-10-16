@@ -9,7 +9,6 @@ class CfgVehicles {
 	class 3AS_ISP_Transport;
 	class 3as_saber_m1;
 	class 3as_saber_m1Recon;
-	class I_UGV_01_rcws_F;
 
 	// Air Stuff
 	class Air;
@@ -82,27 +81,6 @@ class CfgVehicles {
 		class Reflectors {class Left; class Right: Left {}; class Right2: Right {}; class Left2: Left {};};
 	};
 
-	class CCS_Manta_Base: I_UGV_01_rcws_F {
-		class ViewOptics;
-		class HitPoints {
-			class HitLFWheel;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-			class HitRF2Wheel;
-		};
-		class NewTurret;
-		class Turrets {
-			class MainTurret: NewTurret {
-				class ViewOptics;
-			};
-		};
-		class AnimationSources;
-	};
-
 	class 3AS_ATRT;
 
 	// Static Vehicles
@@ -114,7 +92,6 @@ class CfgVehicles {
 	#include "Ground Vehicles\Swamp Speeder (Transport).hpp"
 	#include "Ground Vehicles\TX-130.hpp"
 	#include "Ground Vehicles\TX-130 (Shield).hpp"
-	#include "Ground Vehicles\UGV.hpp"
 	#include "Ground Vehicles\ATRT.hpp"
 
 	// Air Vehicles
