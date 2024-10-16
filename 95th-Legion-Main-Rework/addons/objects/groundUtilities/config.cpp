@@ -37,11 +37,6 @@ class CfgVehicles {
                 displayName = "Spawn [95th] RX-200";
                 statement = "[this, player, 'AUX_95th_RX200'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
             };
-            class SpawnFirehawke {
-                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
-                displayName = "Spawn [95th] Firehawke";
-                statement = "[this, player, 'AUX_95th_Firehawke'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
-            };
             class SpawnTX130 {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
                 displayName = "Spawn [95th] TX-130";
