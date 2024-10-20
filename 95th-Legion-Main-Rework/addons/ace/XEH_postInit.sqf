@@ -88,3 +88,5 @@ player addEventHandler ["AnimChanged", {
         };
     };
 }];
+
+[] call AUX_95th_checkVersion;

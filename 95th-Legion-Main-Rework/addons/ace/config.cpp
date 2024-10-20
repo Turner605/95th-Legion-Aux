@@ -49,6 +49,7 @@ class CfgFunctions {
             class addDefaultClasses {};
             class setupFortify {};
             class sosBeacon {};
+            class checkVersion {};
         };
 
         class KitChecker {
