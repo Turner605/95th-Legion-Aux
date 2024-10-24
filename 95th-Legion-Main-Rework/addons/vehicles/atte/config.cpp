@@ -12,8 +12,7 @@ class CfgPatches {
             "AUX_95th_vehicles_shared",
             "A3_Armor_F_Beta",
 			"A3_Data_F",
-			"A3_Weapons_F_Gamma",
-            "CCS_HV_Tank"
+			"A3_Weapons_F_Gamma"
         };
         authors[] = {"Turner"};
         VERSION_CONFIG;
