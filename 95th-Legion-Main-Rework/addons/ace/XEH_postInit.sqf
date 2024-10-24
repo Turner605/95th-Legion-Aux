@@ -38,16 +38,6 @@ if(AUX_95th_Fortify_Forceload_Enabled) then {
     [] call AUX_95th_fnc_setupFortify;
 };
 
-if(AUX_95th_Default_Kits_Enabled) then {
-    [] call AUX_95th_fnc_addDefaultClasses;
-};
-
-["ace_arsenal_displayClosed", {
-    if(AUX_95th_Enable_Kit_Checker) then {
-        [player] call AUX_95th_fnc_checkKit;
-    };
-}] call CBA_fnc_addEventHandler;
-
 // ATSS (Anti Turner Salute System)
 player addEventHandler ["AnimChanged", {
     params ["_unit", "_anim"];

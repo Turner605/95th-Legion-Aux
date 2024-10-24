@@ -46,18 +46,9 @@ class CfgFunctions {
     class AUX_95th {
         class Ace {
 			file = "\z\AUX_95th\addons\ace\functions";
-            class addDefaultClasses {};
             class setupFortify {};
             class sosBeacon {};
             class checkVersion {};
-        };
-
-        class KitChecker {
-			file = "\z\AUX_95th\addons\ace\functions\kitChecker";
-            class checkKit {};
-            class checkThrowables {};
-            class checkWeapons {};
-            class checkCerts {};
         };
     };
 };

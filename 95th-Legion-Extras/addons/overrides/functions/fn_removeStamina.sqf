@@ -1,4 +1,4 @@
-waitUntil {(!isNull Player) and (alive Player)};
+waitUntil {(!isNull player) and (alive player)};
 
 while {true} do 
 {
