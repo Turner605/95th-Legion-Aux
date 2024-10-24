@@ -1,2 +1,0 @@
-1||1||21||27||notice||`Player` does not match the wiki's case||non-standard command case||/addons/overrides/functions/fn_removeStamina.sqf
-1||1||40||46||notice||`Player` does not match the wiki's case||non-standard command case||/addons/overrides/functions/fn_removeStamina.sqf
