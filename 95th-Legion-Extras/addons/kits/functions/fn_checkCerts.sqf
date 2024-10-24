@@ -23,7 +23,7 @@ private _otherClassItems = "";
         if(!(_x == _class)) then {
             if((_itemToCheck in _y) && !(_itemToCheck in _classItems)) then {
                 _hasOtherClassItems = true;
-                _otherClassItems = _otherClassItems + ", " + getText(configFile >> "CfgWeapons" >> _itemToCheck >> "displayName");
+                _otherClassItems = _otherClassItems + getText(configFile >> "CfgWeapons" >> _itemToCheck >> "displayName") + ", ";
             };
         }
     } forEach AUX_95th_Arsenal_Class_Items;

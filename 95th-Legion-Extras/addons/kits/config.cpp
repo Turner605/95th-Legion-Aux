@@ -28,8 +28,6 @@ class CfgFunctions {
 class CfgWeapons {
     class ItemCompass;
 
-
-
     class AUX_95th_Class_Designator_Zeus: ItemCompass {
 		displayName = "[95th] Class - Zeus"; 
 		// picture = "z\AUX_95th_Extras\addons\kits\data\rifleman.paa";

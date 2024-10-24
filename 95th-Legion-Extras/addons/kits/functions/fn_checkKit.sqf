@@ -15,5 +15,5 @@ if(_class == "FunOp" || _class == "Zeus")exitWith{_unit setVariable ["AUX_95th_I
 _unit setVariable ["AUX_95th_Is_Bypassing_Cert", false, true];
 
 [_unit] call AUX_95th_Extras_fnc_checkWeapons;
-// [_unit, _class] call AUX_95th_Extras_fnc_checkThrowables; // Cannot use until 2.18: Check version here: https://dev.arma3.com/
+[_unit, _class] call AUX_95th_Extras_fnc_checkThrowables;
 [_unit, _class] call AUX_95th_Extras_fnc_checkCerts;

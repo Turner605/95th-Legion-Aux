@@ -10,7 +10,7 @@ private _removedThrowablesString = "";
     if(!(_throwableMagazine in AUX_95th_Arsenal_Whitelisted_Throwables)) then {
         _unit removeItems _throwableMagazine;
         _removedThrowables pushBack _throwableMagazine;
-        _removedThrowablesString = _removedThrowablesString + ", " + (getText(configFile >> "CfgWeapons" >> _primary >> "displayName"));
+        _removedThrowablesString = _removedThrowablesString + (getText(configFile >> "CfgMagazines" >> _throwableMagazine >> "displayName")) + ", ";
     };
 
 } forEach _throwables;

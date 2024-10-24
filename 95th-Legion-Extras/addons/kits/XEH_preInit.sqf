@@ -80,8 +80,29 @@ AUX_95th_Arsenal_Whitelisted_Attachments = [
 ];
 
 AUX_95th_Arsenal_Whitelisted_Gear = [
-	"JLTS_CloneBinocular","JLTS_CloneBinocular_black","ItemMap","ItemCompass","JLTS_clone_comlink","TFAR_microdagr","ItemWatch","ACE_Altimeter",
+	"JLTS_CloneBinocular","JLTS_CloneBinocular_black","ItemMap","JLTS_clone_comlink","TFAR_microdagr","ItemWatch","ACE_Altimeter",
 	"ItemGPS","B_UavTerminal",
+
+    "AUX_95th_Class_Designator_Zeus",
+    "AUX_95th_Class_Designator_FunOP",
+    "AUX_95th_Class_Designator_Rifleman",
+    "AUX_95th_Class_Designator_Marksman",
+    "AUX_95th_Class_Designator_Riot",
+    "AUX_95th_Class_Designator_Heavy",
+    "AUX_95th_Class_Designator_Engineer",
+    "AUX_95th_Class_Designator_Medic",
+    "AUX_95th_Class_Designator_AT",
+    "AUX_95th_Class_Designator_Crewman",
+    "AUX_95th_Class_Designator_Pilot",
+    "AUX_95th_Class_Designator_NCO",
+    "AUX_95th_Class_Designator_Flame",
+    "AUX_95th_Class_Designator_Jet",
+    "AUX_95th_Class_Designator_Grenadier",
+    "AUX_95th_Class_Designator_Stealth",
+    "AUX_95th_Class_Designator_Tech",
+    "AUX_95th_Class_Designator_Support",
+    "AUX_95th_Class_Designator_Airborne",
+    "AUX_95th_Class_Designator_DroneOperator",
 
 	"AUX_95th_P1_NVG_Invisible", "AUX_95th_P1_NVG_Invisible_Overlay",
 
