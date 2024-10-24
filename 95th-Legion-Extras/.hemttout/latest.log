@@ -1,0 +1,149 @@
+2024-10-24T13:48:23.401755Z  INFO ThreadId(01) HEMTT 1.13.3 is available, please update
+2024-10-24T13:48:23.401871Z TRACE ThreadId(01) HEMTT is installed at: C:\Users\rhys_\AppData\Local\Microsoft\WinGet\Packages\BrettMayson.HEMTT_Microsoft.Winget.Source_8wekyb3d8bbwe\hemtt.exe
+2024-10-24T13:48:23.401884Z TRACE ThreadId(01) version: 1.13.0
+2024-10-24T13:48:23.401888Z TRACE ThreadId(01) platform: windows
+2024-10-24T13:48:23.401895Z TRACE ThreadId(01) args: [
+    "hemtt.exe",
+    "build",
+]
+2024-10-24T13:48:23.404593Z TRACE ThreadId(01) using temporary folder: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras"
+2024-10-24T13:48:23.404606Z TRACE ThreadId(01) using project folder: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras"
+2024-10-24T13:48:23.404611Z TRACE ThreadId(01) using out folder: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout"
+2024-10-24T13:48:23.404895Z TRACE ThreadId(01) using build folder: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build"
+2024-10-24T13:48:23.412428Z TRACE ThreadId(01) Prefix: VfsPath { path: "/template/addon_template/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.413896Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/template/addon_template/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.417229Z TRACE ThreadId(01) Prefix: VfsPath { path: "/include/x/cba/addons/xeh/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.418432Z TRACE ThreadId(01) Prefix: VfsPath { path: "/include/x/cba/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.419981Z TRACE ThreadId(01) Prefix: VfsPath { path: "/include/a3/ui_f/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.424293Z TRACE ThreadId(01) Prefix: VfsPath { path: "/a3/ui_f/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.427417Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/main/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.428022Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.429178Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/versioning/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.430139Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/versioning/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.432307Z TRACE ThreadId(01) config.cpp: VfsPath { path: "/addons/overrides/config.cpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.432663Z TRACE ThreadId(01) Prefix: VfsPath { path: "/addons/overrides/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.443019Z TRACE ThreadId(01) Prefix: VfsPath { path: "/x/cba/addons/xeh/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.443862Z TRACE ThreadId(01) Prefix: VfsPath { path: "/x/cba/addons/main/$PBOPREFIX$", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.444291Z TRACE ThreadId(01) checking for version macro in VfsPath { path: "/addons/main/script_version.hpp", fs: VFS { fs: OverlayFS { layers: [VfsPath { path: "", fs: VFS { fs: In Memory File System } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\output" } } } } } }, VfsPath { path: "", fs: VFS { fs: AltrootFS { root: VfsPath { path: "", fs: VFS { fs: PhysicalFS { root: "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras" } } } } } }] } } }
+2024-10-24T13:48:23.444865Z  INFO ThreadId(01) Config loaded for 95th Legion Extras 0.1.0.0
+2024-10-24T13:48:23.444960Z TRACE ThreadId(01) Scanning C:\Repositories\95th-Legion-Aux\95th-Legion-Extras\addons for addons
+2024-10-24T13:48:23.445835Z  INFO ThreadId(01) Creating `build` version
+2024-10-24T13:48:23.445851Z TRACE ThreadId(01) phase: init (Hooks) (start)
+2024-10-24T13:48:23.445902Z TRACE ThreadId(01) no hooks folder
+2024-10-24T13:48:23.445913Z TRACE ThreadId(01) phase: init (Hooks) (done)
+2024-10-24T13:48:23.445917Z TRACE ThreadId(01) phase: init (Rapifier) (start)
+2024-10-24T13:48:23.445921Z TRACE ThreadId(01) phase: init (Rapifier) (done)
+2024-10-24T13:48:23.445925Z TRACE ThreadId(01) phase: init (SQF) (start)
+2024-10-24T13:48:23.960181Z TRACE ThreadId(01) phase: init (SQF) (done)
+2024-10-24T13:48:23.960197Z TRACE ThreadId(01) phase: init (Binarize) (start)
+2024-10-24T13:48:23.960205Z TRACE ThreadId(01) Using Binarize path from registry
+2024-10-24T13:48:23.960290Z TRACE ThreadId(01) phase: init (Binarize) (done)
+2024-10-24T13:48:23.960296Z TRACE ThreadId(01) phase: init (Files) (start)
+2024-10-24T13:48:23.960300Z TRACE ThreadId(01) phase: init (Files) (done)
+2024-10-24T13:48:23.960305Z TRACE ThreadId(01) phase: check (Hooks) (start)
+2024-10-24T13:48:23.960309Z TRACE ThreadId(01) phase: check (Hooks) (done)
+2024-10-24T13:48:23.960313Z TRACE ThreadId(01) phase: check (Rapifier) (start)
+2024-10-24T13:48:23.960354Z TRACE ThreadId(01) phase: check (Rapifier) (done)
+2024-10-24T13:48:23.960359Z TRACE ThreadId(01) phase: check (SQF) (start)
+2024-10-24T13:48:23.960389Z TRACE ThreadId(01) phase: check (SQF) (done)
+2024-10-24T13:48:23.960393Z TRACE ThreadId(01) phase: check (Binarize) (start)
+2024-10-24T13:48:23.970167Z  INFO ThreadId(01) Validated 0 files for binarization
+2024-10-24T13:48:23.970189Z TRACE ThreadId(01) phase: check (Binarize) (done)
+2024-10-24T13:48:23.970194Z TRACE ThreadId(01) phase: check (Files) (start)
+2024-10-24T13:48:23.970198Z TRACE ThreadId(01) phase: check (Files) (done)
+2024-10-24T13:48:23.970203Z TRACE ThreadId(01) phase: pre_build (Hooks) (start)
+2024-10-24T13:48:23.970213Z TRACE ThreadId(01) phase: pre_build (Hooks) (done)
+2024-10-24T13:48:23.970217Z TRACE ThreadId(01) phase: pre_build (Rapifier) (start)
+2024-10-24T13:48:24.019152Z  INFO ThreadId(01) Rapified 3 addon configs
+2024-10-24T13:48:24.019181Z TRACE ThreadId(01) phase: pre_build (Rapifier) (done)
+2024-10-24T13:48:24.019186Z TRACE ThreadId(01) phase: pre_build (SQF) (start)
+2024-10-24T13:48:24.033159Z TRACE ThreadId(02) sqf compiling /addons/overrides/XEH_postInit_client.sqf
+2024-10-24T13:48:24.033159Z TRACE ThreadId(04) sqf compiling /addons/overrides/XEH_preInit_server.sqf
+2024-10-24T13:48:24.033175Z TRACE ThreadId(06) sqf compiling /addons/versioning/XEH_preInit.sqf
+2024-10-24T13:48:24.033184Z TRACE ThreadId(03) sqf compiling /addons/versioning/XEH_preStart.sqf
+2024-10-24T13:48:24.033168Z TRACE ThreadId(07) sqf compiling /addons/versioning/XEH_postInit.sqf
+2024-10-24T13:48:24.033202Z TRACE ThreadId(08) sqf compiling /addons/overrides/XEH_postInit.sqf
+2024-10-24T13:48:24.033199Z TRACE ThreadId(16) sqf compiling /addons/overrides/functions/fn_removeStamina.sqf
+2024-10-24T13:48:24.033194Z TRACE ThreadId(11) sqf compiling /addons/versioning/XEH_postInit_client.sqf
+2024-10-24T13:48:24.033203Z TRACE ThreadId(10) sqf compiling /addons/versioning/XEH_preInit_server.sqf
+2024-10-24T13:48:24.033179Z TRACE ThreadId(09) sqf compiling /addons/overrides/XEH_preInit.sqf
+2024-10-24T13:48:24.033165Z TRACE ThreadId(05) sqf compiling /addons/overrides/XEH_preStart.sqf
+2024-10-24T13:48:24.033204Z TRACE ThreadId(13) sqf compiling /addons/versioning/functions/fn_checkVersion.sqf
+2024-10-24T13:48:24.072134Z  INFO ThreadId(01) Compiled 12 sqf files
+2024-10-24T13:48:24.072176Z TRACE ThreadId(01) phase: pre_build (SQF) (done)
+2024-10-24T13:48:24.072182Z TRACE ThreadId(01) phase: pre_build (Binarize) (start)
+2024-10-24T13:48:24.073389Z TRACE ThreadId(01) junction link "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\source\\z\\AUX_95th_Extras\\addons\\main" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\addons\\main"
+2024-10-24T13:48:24.103099Z TRACE ThreadId(01) junction link "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\source\\z\\AUX_95th_Extras\\addons\\overrides" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\addons\\overrides"
+2024-10-24T13:48:24.131696Z TRACE ThreadId(01) junction link "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\source\\z\\AUX_95th_Extras\\addons\\versioning" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\addons\\versioning"
+2024-10-24T13:48:24.159557Z TRACE ThreadId(01) junction link "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\source\\a3\\ui_f" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include\\a3\\ui_f"
+2024-10-24T13:48:24.187941Z TRACE ThreadId(01) junction link "C:\\Users\\rhys_\\AppData\\Local\\Temp\\hemtt\\Repositories_95th-Legion-Aux_95th-Legion-Extras\\source\\x\\cba" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\include\\x\\cba"
+2024-10-24T13:48:24.214180Z  INFO ThreadId(01) Binarized 0 files
+2024-10-24T13:48:24.214198Z TRACE ThreadId(01) phase: pre_build (Binarize) (done)
+2024-10-24T13:48:24.214203Z TRACE ThreadId(01) phase: pre_build (Files) (start)
+2024-10-24T13:48:24.214208Z TRACE ThreadId(01) phase: pre_build (Files) (done)
+2024-10-24T13:48:24.214213Z TRACE ThreadId(01) phase: build (start)
+2024-10-24T13:48:24.220833Z DEBUG ThreadId(01) creating "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\addons"
+2024-10-24T13:48:24.221011Z DEBUG ThreadId(01) building "addons/main" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\addons\\AUX_95th_Extras_main.pbo"
+2024-10-24T13:48:24.222034Z TRACE ThreadId(01) adding file "config.bin"
+2024-10-24T13:48:24.222198Z TRACE ThreadId(01) adding file "script_version.hpp"
+2024-10-24T13:48:24.223071Z TRACE ThreadId(01) adding file "script_component.hpp"
+2024-10-24T13:48:24.223346Z TRACE ThreadId(01) adding file "script_macros.hpp"
+2024-10-24T13:48:24.223607Z TRACE ThreadId(01) adding file "script_mod.hpp"
+2024-10-24T13:48:24.224335Z DEBUG ThreadId(01) "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\addons" already exists
+2024-10-24T13:48:24.224345Z DEBUG ThreadId(01) building "addons/overrides" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\addons\\AUX_95th_Extras_overrides.pbo"
+2024-10-24T13:48:24.226830Z TRACE ThreadId(01) adding file "XEH_preStart.sqf"
+2024-10-24T13:48:24.227113Z TRACE ThreadId(01) adding file "XEH_postInit.sqf"
+2024-10-24T13:48:24.227382Z TRACE ThreadId(01) adding file "XEH_preInit.sqf"
+2024-10-24T13:48:24.227642Z TRACE ThreadId(01) adding file "script_component.hpp"
+2024-10-24T13:48:24.227907Z TRACE ThreadId(01) adding file "CfgEventHandlers.hpp"
+2024-10-24T13:48:24.228041Z TRACE ThreadId(01) adding file "XEH_postInit_client.sqfc"
+2024-10-24T13:48:24.228621Z TRACE ThreadId(01) adding file "XEH_PREP.hpp"
+2024-10-24T13:48:24.228881Z TRACE ThreadId(01) adding file "XEH_postInit_client.sqf"
+2024-10-24T13:48:24.229020Z TRACE ThreadId(01) adding file "XEH_preStart.sqfc"
+2024-10-24T13:48:24.229166Z TRACE ThreadId(01) adding file "XEH_preInit_server.sqf"
+2024-10-24T13:48:24.229306Z TRACE ThreadId(01) adding file "XEH_preInit_server.sqfc"
+2024-10-24T13:48:24.229331Z TRACE ThreadId(01) adding file "XEH_preInit.sqfc"
+2024-10-24T13:48:24.229344Z TRACE ThreadId(01) adding file "config.bin"
+2024-10-24T13:48:24.229354Z TRACE ThreadId(01) adding file "XEH_postInit.sqfc"
+2024-10-24T13:48:24.229365Z TRACE ThreadId(01) adding file "functions\\fn_removeStamina.sqfc"
+2024-10-24T13:48:24.229529Z TRACE ThreadId(01) adding file "functions\\fn_removeStamina.sqf"
+2024-10-24T13:48:24.229794Z TRACE ThreadId(01) adding file "functions\\script_component.hpp"
+2024-10-24T13:48:24.235645Z DEBUG ThreadId(01) "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\addons" already exists
+2024-10-24T13:48:24.235665Z DEBUG ThreadId(01) building "addons/versioning" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\addons\\AUX_95th_Extras_versioning.pbo"
+2024-10-24T13:48:24.238460Z TRACE ThreadId(01) adding file "XEH_postInit.sqfc"
+2024-10-24T13:48:24.238613Z TRACE ThreadId(01) adding file "script_component.hpp"
+2024-10-24T13:48:24.238912Z TRACE ThreadId(01) adding file "XEH_postInit_client.sqf"
+2024-10-24T13:48:24.239098Z TRACE ThreadId(01) adding file "config.bin"
+2024-10-24T13:48:24.239448Z TRACE ThreadId(01) adding file "XEH_preInit_server.sqf"
+2024-10-24T13:48:24.239734Z TRACE ThreadId(01) adding file "XEH_PREP.hpp"
+2024-10-24T13:48:24.240028Z TRACE ThreadId(01) adding file "CfgEventHandlers.hpp"
+2024-10-24T13:48:24.240172Z TRACE ThreadId(01) adding file "XEH_postInit_client.sqfc"
+2024-10-24T13:48:24.240474Z TRACE ThreadId(01) adding file "XEH_preInit.sqf"
+2024-10-24T13:48:24.241440Z TRACE ThreadId(01) adding file "XEH_preStart.sqfc"
+2024-10-24T13:48:24.241471Z TRACE ThreadId(01) adding file "XEH_preInit_server.sqfc"
+2024-10-24T13:48:24.241488Z TRACE ThreadId(01) adding file "XEH_preInit.sqfc"
+2024-10-24T13:48:24.241705Z TRACE ThreadId(01) adding file "XEH_preStart.sqf"
+2024-10-24T13:48:24.242072Z TRACE ThreadId(01) adding file "XEH_postInit.sqf"
+2024-10-24T13:48:24.242261Z TRACE ThreadId(01) adding file "functions\\fn_checkVersion.sqfc"
+2024-10-24T13:48:24.242475Z TRACE ThreadId(01) adding file "functions\\script_component.hpp"
+2024-10-24T13:48:24.242756Z TRACE ThreadId(01) adding file "functions\\fn_checkVersion.sqf"
+2024-10-24T13:48:24.244145Z  INFO ThreadId(01) Built 3 PBOs
+2024-10-24T13:48:24.244160Z TRACE ThreadId(01) phase: build (done)
+2024-10-24T13:48:24.244167Z TRACE ThreadId(01) phase: post_build (Hooks) (start)
+2024-10-24T13:48:24.244172Z TRACE ThreadId(01) phase: post_build (Hooks) (done)
+2024-10-24T13:48:24.244176Z TRACE ThreadId(01) phase: post_build (Rapifier) (start)
+2024-10-24T13:48:24.244180Z TRACE ThreadId(01) phase: post_build (Rapifier) (done)
+2024-10-24T13:48:24.244184Z TRACE ThreadId(01) phase: post_build (SQF) (start)
+2024-10-24T13:48:24.244191Z TRACE ThreadId(01) phase: post_build (SQF) (done)
+2024-10-24T13:48:24.244195Z TRACE ThreadId(01) phase: post_build (Binarize) (start)
+2024-10-24T13:48:24.244200Z TRACE ThreadId(01) phase: post_build (Binarize) (done)
+2024-10-24T13:48:24.244204Z TRACE ThreadId(01) phase: post_build (Files) (start)
+2024-10-24T13:48:24.268384Z DEBUG ThreadId(01) copying "/icon_128_highlight_ca.paa" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\icon_128_highlight_ca.paa"
+2024-10-24T13:48:24.270056Z DEBUG ThreadId(01) copying "/icon_128_ca.paa" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\icon_128_ca.paa"
+2024-10-24T13:48:24.272211Z DEBUG ThreadId(01) copying "/title_co.paa" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\title_co.paa"
+2024-10-24T13:48:24.273316Z DEBUG ThreadId(01) copying "/icon_64_ca.paa" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\icon_64_ca.paa"
+2024-10-24T13:48:24.275066Z DEBUG ThreadId(01) copying "/mod.cpp" => "C:\\Repositories\\95th-Legion-Aux\\95th-Legion-Extras\\.hemttout\\build\\mod.cpp"
+2024-10-24T13:48:24.293268Z  INFO ThreadId(01) Copied 5 files
+2024-10-24T13:48:24.293303Z TRACE ThreadId(01) phase: post_build (Files) (done)
+2024-10-24T13:48:24.300895Z TRACE ThreadId(01) writing ci annotations to .hemttout/ci_annotations.txt
+2024-10-24T13:48:24.301420Z TRACE ThreadId(01) wrote 2 ci annotations to .hemttout/ci_annotations.txt

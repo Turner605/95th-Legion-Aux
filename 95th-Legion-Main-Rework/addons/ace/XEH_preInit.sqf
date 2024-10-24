@@ -258,22 +258,24 @@ AUX_95th_Arsenal_Whitelisted_All = (
     AUX_95th_Arsenal_Whitelisted_Backpacks
 );
 
-// AUX_95th_Arsenal_Class_Items = [
-// 	["AUX_95th_DC15X","JLTS_DW32S"], // 0 - Marksman
-// 	["JLTS_riot_shield_item"], // 1 - Riot
-// 	["AUX_95th_Disc_Shield","3AS_DC15L_F","JLTS_Z6"], // 2 - Heavy
-// 	["95th_Backpack_EOD"], // 3 - Engineer
-// 	["95th_Backpack_Medic"], // 4 - Medic
-// 	["3AS_PLX1_F","3AS_RPS6_HP"], // 5 - AT
-// 	[], // 6 - Crewman
-// 	[], // 7 - Pilot
-// 	["3AS_DC15C_F","3AS_DC15C_GL"], // 8 - NCO
-// 	["AUX_95th_BX42"], // 9 - Flame
-// 	["95th_JumpPack"], // 10 - Jet
-// 	["DSS_Cloaking_Device"], // 11 - Stealth
-// 	["JLTS_DC15A_ugl_plastic","JLTS_DC15A_ugl","3AS_WestarM5_GL"], // 12 - Grenadier
-// 	["DSS_Hacking_Device"], // 13 - Tech
-// 	["DSS_Support_Device"] // 14 - Support
-// ];
+AUX_95th_Arsenal_Class_Items = [
+    ["Rifleman"],
+    ["Marksman", "AUX_95th_DC15X","AUX_95th_DW32S"],
+    ["Riot", "JLTS_riot_shield_item"],
+    ["Heavy", "AUX_95th_Disc_Shield","AUX_95th_DC15L","AUX_95th_Z6"],
+    ["Medic"],
+    ["AT", "3AS_PLX1_F","3AS_RPS6_HP"],
+    ["Crewman"],
+    ["Pilot"],
+    ["NCO", "3AS_DC15C_F","3AS_DC15C_GL"],
+    ["Flame", "AUX_95th_BX42"],
+    ["Jet"],
+    ["Grenadier", "AUX_95th_DC15A_ugl_plastic","AUX_95th_DC15A_ugl","AUX_95th_WestarM5_GL"],
+    ["Stealth", "DSS_Cloaking_Device"],
+    ["Tech", "DSS_Hacking_Device"],
+    ["Support", "DSS_Support_Device"],
+    ["Airborne"],
+    ["Drone Operator"]
+]:
 
 ADDON = true;
