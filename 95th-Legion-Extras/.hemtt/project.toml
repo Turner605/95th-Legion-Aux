@@ -1,0 +1,49 @@
+name = "95th Legion Extras"
+prefix = "AUX_95th_Extras"
+author = "95th Aux Team"
+mainprefix = "z"
+
+[files]
+include = [
+    "mod.cpp",
+    "*.paa",
+    "*.dll"
+]
+
+exclude = [
+    "*.png" # explicitly excluding image source files from build, but not repository
+]
+
+[version]
+git_hash = 0 # Disabled
+
+
+[hemtt.launch.default]
+workshop = [
+    "450814997", # CBA_A3's Workshop ID
+    "463939057", # ACE3
+    "1940589429", # JLTS
+    "2058554822", # 3AS
+    "2215872933", # 3AS Terrains
+    "2917437034", # JLTS EA
+    "2967119323", # Phoenix Core
+    "3125077789", # 95th Dependants
+    "894678801" # TFAR
+]
+
+dlc = [
+]
+
+optionals = [
+]
+
+parameters = [
+    "-skipIntro",           # These parameters are passed to the Arma 3 executable
+    "-noSplash",            # They do not need to be added to your list
+    "-showScriptErrors",    # You can add additional parameters here
+    "-debug",
+    "-filePatching",
+    "-window",
+]
+
+executable = "arma3_x64"        # Default: "arma3_x64"

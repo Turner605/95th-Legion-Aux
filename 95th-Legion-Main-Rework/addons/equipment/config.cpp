@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {"AUX_95th_Disc_Shield","AUX_95th_Turret_Deployer","AUX_95th_Drone_Deployer","AUX_95th_MFD_Item"};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"AUX_95th_main", "ls_weapons"};
+        requiredAddons[] = {"AUX_95th_main", "ls_weapons", "WBK_PhoenixTreal_FlamethrowerMOD"};
         authors[] = {"Turner"};
         VERSION_CONFIG;
     };
@@ -63,6 +63,11 @@ class CfgAmmo {
 		model="3AS\3AS_Shield\SquadShield_Throwable.p3d";
 		simulation="shotShell";
 	};
+
+	class ATLAS3_st_grenade_inc;
+	class 95th_Pyro_Ammo: ATLAS3_st_grenade_inc {
+		model="3as\3AS_Equipment\model\3AS_Thermaldet.p3d";  
+	};
 };
 
 class cfgMagazines {
@@ -75,6 +80,17 @@ class cfgMagazines {
 		mass=60; value=1; count=1;
 		initSpeed=18; maxLeadSpeed=7; type=256;
 		model="3as\3as_shield\SquadShield_Throwable.p3d";
+	};
+
+	class GrenadeInsiendPSENG;
+	class 95th_Pyro_Grenade: GrenadeInsiendPSENG {
+		author="95th Aux Team";
+		model="3as\3AS_Equipment\model\3AS_Thermaldet.p3d";  
+		displayName="Pyro Grenade";
+		displayNameShort="Pyro";
+		descriptionShort="Type: Offensive Flame Grenade<br />Rounds: 1<br />Used in: Hand";
+		picture="\z\AUX_95th\addons\equipment\data\Grenades\PyroGrenade.paa";
+		ammo = "95th_Pyro_Ammo";
 	};
 };
 
@@ -91,10 +107,17 @@ class CfgWeapons {
 		class ThrowMuzzle;
 
 		muzzles[]+={
-			"AUX_95th_Muzzle_Grenade_Medical_Shield"
+			"AUX_95th_Muzzle_Grenade_Medical_Shield",
+			"95th_Pyro_Muzzle"
 		};
 
 		class AUX_95th_Muzzle_Grenade_Medical_Shield: ThrowMuzzle { magazines[] = {"AUX_95th_Magazine_Grenade_Medical_Shield"}; };
+
+		//---------------------------------------------------------------------------------------------------------------------------
+		//---------------------------------------------------Pyro Muzzles-------------------------------------------------------
+		//---------------------------------------------------------------------------------------------------------------------------
+
+		class 95th_Pyro_Muzzle: ThrowMuzzle { magazines[]= {"95th_Pyro_Grenade"}; };
 	};
 
 	class CBA_MiscItem;
