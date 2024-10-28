@@ -1,16 +1,16 @@
-#define COMPONENT players_styx
-#define COMPONENT_BEAUTIFIED Players_Styx
-#define PLAYER_NAME styx
-#define PLAYER_NAME_BEAUTIFIED Styx
+#define COMPONENT players_death
+#define COMPONENT_BEAUTIFIED Players_Death
+#define PLAYER_NAME death
+#define PLAYER_NAME_BEAUTIFIED Death
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY Unassigned
+#define SQUAD_KEY One_Three
 
 // HELMET OPTIONS 0 (False), 1 (True)
-#define HELMET_P1_BASIC 1
+#define HELMET_P1_BASIC 0
 #define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 1
-#define HELMET_P1_PILOT 1
+#define HELMET_P1_PILOT 0
 #define HELMET_P1_SPECOPS 0
 #define HELMET_P1_HAZARD 0
 #define HELMET_P1_COLD_ASSAULT 0
@@ -18,7 +18,7 @@
 #define HELMET_P2_AIRBORNE 0
 
 // UNIFORM OPTIONS 0 (False), 1 (True)
-#define UNIFORM_P1_BASIC 1
+#define UNIFORM_P1_BASIC 0
 #define UNIFORM_P1_MC 0
 #define UNIFORM_P1_COLDASSAULT 0
 #define UNIFORM_P1_COMMANDO 0
@@ -39,7 +39,7 @@
 // VEST OPTIONS 0 (False), 1 (True)
 #define VEST_STANDARD_SET 0
 #define VEST_ARC_SET 0
-#define VEST_OFFICER_SET 1
+#define VEST_OFFICER_SET 0
 #define VEST_COMMANDO_SET 0
 
 // DO NOT EDIT
@@ -48,4 +48,4 @@
 #include "\z\AUX_95th\addons\main\script_macros.hpp"
 
 //TODO:
-// Vests need replacing really
+// Vests need replacing really 
