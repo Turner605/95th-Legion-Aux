@@ -16,16 +16,19 @@ _unitItems pushBack (assignedItems _unit select {_x call BIS_fnc_itemType select
 private _hasOtherClassItems = false;
 private _otherClassItems = "";
 
+private _hasEngineerPermissions = (_unit getUnitTrait "Engineer");
+private _hasMedicPermissions = (_unit getUnitTrait "Medic");
+
 {
     private _itemToCheck = _x;
 
-    { 
+    {
         if(!(_x == _class)) then {
             if((_itemToCheck in _y) && !(_itemToCheck in _classItems)) then {
                 _hasOtherClassItems = true;
                 _otherClassItems = _otherClassItems + getText(configFile >> "CfgWeapons" >> _itemToCheck >> "displayName") + ", ";
             };
-        }
+        };
     } forEach AUX_95th_Arsenal_Class_Items;
 } forEach _unitItems;
 
