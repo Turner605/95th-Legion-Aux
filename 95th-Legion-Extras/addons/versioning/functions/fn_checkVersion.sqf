@@ -1,46 +1,22 @@
-#include "script_component.hpp"
+if (!isMultiplayer) exitWith {};
 
-if (isMultiplayer) then {
-    private _version = getText (configFile >> "CfgPatches" >> "AUX_95th_main" >> "versionStr");
+private _version = getText (configFile >> "CfgPatches" >> "AUX_95th_main" >> "versionStr");
 
-    // don't check optional addons
-    // _addons = _addons select {getNumber (configFile >> "CfgPatches" >> _x >> "ACE_isOptional") != 1};
+if (isServer) then {
+	AUX_95th_Extras_Version = _version;
+    publicVariable "AUX_95th_Extras_Version";
+} else {
+    [{!isNil {AUX_95th_Extras_Version}}, {
+        params ["_version"];
 
-    if (isServer) then {
-        // send servers version of ACE to all clients
-        GVAR(ServerVersion) = _version;
-        // GVAR(ServerAddons) = _addons;
-        publicVariable QGVAR(ServerVersion);
-        // publicVariable QGVAR(ServerAddons);
-    } else {
-        // clients have to wait for the variables
-        [{
-            if (isNil QGVAR(ServerVersion)) exitWith {}; //  || isNil QGVAR(ServerAddons)
+        private _serverVersion = AUX_95th_Extras_Version;
 
-            (_this select 0) params ["_version", "_addons"];
+        if(!(_serverVersion == _version)) then {
+            private _errorMsg = format ["Client/Server Version Mismatch. Server: %1, Client: %2.", _serverVersion, _version];
 
-            if (_version != GVAR(ServerVersion)) then {
-                private _errorMsg = format ["Client/Server Version Mismatch. Server: %1, Client: %2.", GVAR(ServerVersion), _version];
-
-                ERROR(_errorMsg);
-
-                if (hasInterface) then {
-                    ["[95th] ERROR", _errorMsg, {findDisplay 46 closeDisplay 0}] call FUNC(errorMessage);
-                };
+            if (hasInterface) then {
+                ["[95th] ERROR", _errorMsg, {findDisplay 46 closeDisplay 0}] call ace_common_fnc_errorMessage;
             };
-
-            // _addons = _addons - GVAR(ServerAddons);
-            // if (_addons isNotEqualTo []) then {
-            //     private _errorMsg = format ["Client/Server Addon Mismatch. Client has extra addons: %1.",_addons];
-
-            //     ERROR(_errorMsg);
-
-            //     if (hasInterface) then {
-            //         ["[ACE] ERROR", _errorMsg, {findDisplay 46 closeDisplay 0}] call FUNC(errorMessage);
-            //     };
-            // };
-
-            [_this select 1] call CBA_fnc_removePerFrameHandler;
-        }, 1, [_version,_addons]] call CBA_fnc_addPerFrameHandler;
-    };
+        };
+    }, [_version]] call CBA_fnc_waitUntilAndExecute;
 };
