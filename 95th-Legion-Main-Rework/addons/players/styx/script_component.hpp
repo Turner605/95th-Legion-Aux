@@ -4,7 +4,7 @@
 #define PLAYER_NAME_BEAUTIFIED Styx
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY Unassigned
+#define SQUAD_KEY Six_Zero
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
@@ -37,7 +37,7 @@
 #define BACKPACK_COMMANDO_HEAVY 0
 
 // VEST OPTIONS 0 (False), 1 (True)
-#define VEST_STANDARD_SET 0
+#define VEST_STANDARD_SET 1
 #define VEST_ARC_SET 0
 #define VEST_OFFICER_SET 1
 #define VEST_COMMANDO_SET 0
