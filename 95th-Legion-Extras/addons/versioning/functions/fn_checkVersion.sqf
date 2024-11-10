@@ -12,7 +12,7 @@ if (isServer) then {
         private _serverVersion = AUX_95th_Extras_Version;
 
         if(!(_serverVersion == _version)) then {
-            private _errorMsg = format ["Client/Server Version Mismatch. Server: %1, Client: %2.", _serverVersion, _version];
+            private _errorMsg = format ["Client/Server Version Mismatch. Server: %1, Client: %2. Please update 95th Extras.", _serverVersion, _version];
 
             if (hasInterface) then {
                 ["[95th] ERROR", _errorMsg, {findDisplay 46 closeDisplay 0}] call ace_common_fnc_errorMessage;

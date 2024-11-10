@@ -1,8 +1,8 @@
-params ["_this", "_player", "_vehicleClass"];
+params ["_pad", "_player", "_vehicleClass"];
 
 if(_player getVariable "IsOnAirRespawnCooldown") exitWith {"You are on a vehicle cooldown." remoteExec ["hint", _player];};
 
-private _nearestObjects = nearestObjects[_this, [], 20];
+private _nearestObjects = nearestObjects[_pad, [], 20];
 private _targetPad = 0;
 
 {

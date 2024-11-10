@@ -1,6 +1,6 @@
-params ["_this"];
+params ["_pad"];
 
-private _nearestObjects = nearestObjects[_this, [], 50];
+private _nearestObjects = nearestObjects[_pad, [], 50];
 private _targetPad = 0;
 
 {

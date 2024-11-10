@@ -1,4 +1,4 @@
-params ["_this", "_crateClass"];
+params ["_pad", "_crateClass"];
 
 private _targetPad = nearestObject [player, "AUX_95th_Misc_Crate_Pad"];
 
