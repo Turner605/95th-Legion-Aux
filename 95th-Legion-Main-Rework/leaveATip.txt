@@ -1,0 +1,13 @@
++-----------------------------------------+
+|          LEAVE A TIP!                   |
+|                                         |
+|   Your support is greatly appreciated!  |
+|   Every little bit helps.               |
+|                                         |
+|      [ ] $1   [ ] $5   [ ] $10          |
+|      [ ] $20  [ ] Custom Amount         |
+|                                         |
+|    Thank you for your generosity!       |
++----------------------------------------+|
+| Type the amount and press Enter.       ||
++----------------------------------------+|
