@@ -6,8 +6,8 @@ private _daytime = [dayTime] call BIS_fnc_timeToString;
 deleteMarker _playerID;
 
 createMarker [_playerID, _unit];
-_playerID setMarkerType "hd_flag";
-_playerID setMarkerText "SOS Beacon: " + _daytime;
+_playerID setMarkerTypeLocal "hd_flag";
+_playerID setMarkerTextLocal "SOS Beacon: " + _daytime;
 _playerID setMarkerColor "ColorBlack";
 
 [[_playerID], {

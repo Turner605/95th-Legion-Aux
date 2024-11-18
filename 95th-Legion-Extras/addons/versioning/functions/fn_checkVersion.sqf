@@ -1,6 +1,6 @@
 if (!isMultiplayer) exitWith {};
 
-private _version = getText (configFile >> "CfgPatches" >> "AUX_95th_main" >> "versionStr");
+private _version = getText (configFile >> "CfgPatches" >> "AUX_95th_Extras_main" >> "versionStr");
 
 if (isServer) then {
 	AUX_95th_Extras_Version = _version;

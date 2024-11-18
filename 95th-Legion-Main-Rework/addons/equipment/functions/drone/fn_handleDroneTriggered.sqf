@@ -20,10 +20,10 @@ if(_unit getVariable "NFL_Drone_Is_On_Cooldown") exitWith {hint "Drone Deploymen
 private _oldDrone = (_unit getVariable "NFL_Drone");
 if(!isNull _oldDrone) exitWith {deleteVehicle _oldDrone};
 
-private _DroneName = (_unit getVariable "NFL_Drone_Selected");
+private _droneName = (_unit getVariable "NFL_Drone_Selected");
 _unit setVariable ["NFL_Drone_Is_In_Progress", true, true];
 
-switch (_DroneName) do {
+switch (_droneName) do {
 	case "Spotter": {[_unit] call AUX_95th_fnc_deploySpotterDrone};
 	default {hint "No Option Selected";};
 };

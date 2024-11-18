@@ -30,7 +30,7 @@ player addEventHandler["Respawn", {
 	_unit setVariable ["NFL_Turret_Is_In_Progress", false, true];
 	_unit setVariable ["NFL_Turret_Is_On_Cooldown", false, true];
 
-	_unit setVariable ["NFL_Drone_Selected", 'Normal'];
+	_unit setVariable ["NFL_Drone_Selected", 'Spotter'];
     _unit setVariable ["NFL_Drone", objNull, true];
 	_unit setVariable ["NFL_Drone_Is_In_Progress", false, true];
 	_unit setVariable ["NFL_Drone_Is_On_Cooldown", false, true];

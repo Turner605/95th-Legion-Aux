@@ -1,9 +1,7 @@
 #include "script_component.hpp"
 ADDON = false;
 
-PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
-PREP_RECOMPILE_END;
 
 [
     "AUX_95th_Spectator_Enabled", // Internal setting name, should always contain a tag! This will be the global variable which takes the value of the setting.
