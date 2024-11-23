@@ -27,10 +27,10 @@
 #define BACKPACK_BELT_LIGHT 0
 #define BACKPACK_MINI_LIGHT 0
 #define BACKPACK_MICRO_LIGHT 0
-#define BACKPACK_RUCKSACK_LIGHT 0
-#define BACKPACK_RUCKSACK_HEAVY 0
-#define BACKPACK_RUCKSACK_MEDIC 0
-#define BACKPACK_RUCKSACK_ORDNANCE 0
+#define BACKPACK_RUCKSACK_LIGHT 1
+#define BACKPACK_RUCKSACK_HEAVY 1
+#define BACKPACK_RUCKSACK_MEDIC 1
+#define BACKPACK_RUCKSACK_ORDNANCE 1
 #define JETPACK_JT12_LIGHT 0
 #define JETPACK_JT12_MEDIC 0
 #define JETPACK_JT14_LIGHT 0
@@ -48,4 +48,4 @@
 #include "\z\AUX_95th\addons\main\script_macros.hpp"
 
 //TODO:
-// Vests need replacing really 
+// Vests need replacing really
