@@ -465,6 +465,98 @@ class CfgVehicles {
 	};
 };
 
+class CfgMarkers {
+	class b_unknown;
+
+	class AUX_95th_Marker_Logo : b_unknown {
+		name = "95th Logo";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\Logo.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+
+	class AUX_95th_Marker_One_Zero : b_unknown {
+		name = "1-0 Anooba";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\One_Zero.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+
+	class AUX_95th_Marker_Seven_Zero : b_unknown {
+		name = "7-0 Banshee";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\Seven_Zero.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+
+	class AUX_95th_Marker_One_One : b_unknown {
+		name = "1-1 Acklay";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\One_One.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+
+	class AUX_95th_Marker_One_Two : b_unknown {
+		name = "1-2 Reek";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\One_Two.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+
+	class AUX_95th_Marker_One_Three : b_unknown {
+		name = "1-3 Krayt";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\One_Three.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+
+	class AUX_95th_Marker_One_Four : b_unknown {
+		name = "1-4 Sarlacc";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\One_Four.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+
+	class AUX_95th_Marker_Six_Zero : b_unknown {
+		name = "6-0 Mynock";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\Six_Zero.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+
+	class AUX_95th_Marker_MedicalChimken : b_unknown {
+		name = "Medical Chimken";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\MedicalChimken.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+
+	class AUX_95th_Marker_RevanBong : b_unknown {
+		name = "Revan Bong Hit";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\RevanBong.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+
+	class AUX_95th_Marker_BillyBullsquid : b_unknown {
+		name = "Billy Bullsquid";
+		icon = "\z\AUX_95th\addons\players\shared\insignias\BillyBullsquid.paa";
+		shadow = "true";
+		scope = 2;
+		color[] = {1, 1, 1, 1};
+	};
+};
+
 class CfgUnitInsignia {
 	class AUX_95th_Insignia_Logo {
 		displayName = "95th Logo";

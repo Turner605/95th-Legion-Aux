@@ -72,7 +72,8 @@ player addEventHandler ["AnimChanged", {
                     // _camera cameraEffect ["TERMINATE", "BACK"];
                     // camDestroy _camera;
 
-                    _unit setDamage 1;
+                    // _unit setDamage 1;
+                    _unit remoteExec ["Flame_Death_container", _unit];
                 };
             };
         };
