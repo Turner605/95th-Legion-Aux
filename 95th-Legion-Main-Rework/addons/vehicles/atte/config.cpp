@@ -8,7 +8,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "AUX_95th_main", 
+            "AUX_95th_main",
             "AUX_95th_vehicles_shared",
             "A3_Armor_F_Beta",
 			"A3_Data_F",
@@ -68,7 +68,7 @@ class CfgVehicles {
 					class CommanderOptics: CommanderOptics{};
 				};
 			};
-		};	
+		};
 	};
 
 	class 3AS_ATTE_Base: APC_Wheeled_01_base_F {
@@ -82,7 +82,7 @@ class CfgVehicles {
 					class HitTurrettop;
 					class HitGuntop;
 				};
-				class ViewGunner: ViewGunner{};	
+				class ViewGunner: ViewGunner{};
 				class Turrets{};
 			};
 			class MainTurretFront: MainTurretTop {
@@ -94,7 +94,7 @@ class CfgVehicles {
 					class HitTurretFront;
 					class HitGunFront;
 				};
-				class ViewGunner: ViewGunner{};	
+				class ViewGunner: ViewGunner{};
 				class Turrets{};
 			};
 			class MainTurretBack : MainTurretFront {
@@ -110,22 +110,22 @@ class CfgVehicles {
 	class AUX_95th_ATTE : 3AS_ATTE_Base {
 		displayname = "AT-TE";
 		author = "95th Aux Team";
-		crew = "AUX_95th_Unit_P1_Basic_Trooper"; 
+		crew = "AUX_95th_Unit_P1_Basic_Trooper";
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Heavy";
 		#include "\z\AUX_95th\addons\vehicles\shared\sharedInventory.hpp"
-		class ACE_Cargo {class Cargo {class track {type = "ACE_Track"; amount = 2;};};}; 
+		class ACE_Cargo {class Cargo {class track {type = "ACE_Track"; amount = 2;};};};
 		ace_cargo_space = 26;
 		hiddenSelectionsTextures[]={
-			"\z\AUX_95th\addons\vehicles\atte\data\Default\Shell.paa", 
-			"\z\AUX_95th\addons\vehicles\atte\data\Default\Cockpit.paa", 
-			"\z\AUX_95th\addons\vehicles\atte\data\Default\Detail.paa", 
-			"\z\AUX_95th\addons\vehicles\atte\data\Default\Legs.paa", 
-			"\z\AUX_95th\addons\vehicles\atte\data\Default\Glass.paa", 
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Shell.paa",
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Cockpit.paa",
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Detail.paa",
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Legs.paa",
+			"\z\AUX_95th\addons\vehicles\atte\data\Default\Glass.paa",
 			"\z\AUX_95th\addons\vehicles\atte\data\Default\Armor.paa"
 		};
 		class TextureSources {
-			textureList[] = {"Default",1,"AUX_95th_76561198065789267",0, "AUX_95th_76561198048015341",0};
+			textureList[] = {"Default",1,"AUX_95th_76561198065789267",0, "AUX_95th_76561198048015341",1};
 			NEW_95TH_ATTE_TEXTURE(Default)
 			NEW_95TH_ATTE_TEXTURE(AUX_95th_76561198065789267)
 			NEW_95TH_ATTE_TEXTURE(AUX_95th_76561198048015341)
