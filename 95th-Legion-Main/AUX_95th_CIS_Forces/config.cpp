@@ -74,11 +74,7 @@ class CfgPatches {
 			"AUX_95th_Independent_B1_Unit_Diplomat", 
 			"AUX_95th_Independent_B1_Unit_Firefighter", 
 			"AUX_95th_Independent_B1_Unit_Medic", 
-			"AUX_95th_Independent_B1_Unit_Police",
-			"AUX_95th_Droid_Commando_Unit_Normal", 
-			"AUX_95th_Droid_Commando_Unit_Captain", 
-			"AUX_95th_Droid_Commando_Unit_Citadel", 
-			"AUX_95th_Droid_Commando_Unit_Diplomat" 
+			"AUX_95th_Independent_B1_Unit_Police"
 		};
 	};
 };

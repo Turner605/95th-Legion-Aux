@@ -1,4 +1,5 @@
 class AUX_95th_Droid_B1_Rocket_Unit_AT : JLTS_Droid_B1_Rocket {
+	scope=2;
 	identityTypes[] = {"Aux_95th_Identity_B1"};
 	DSS_DamageSystem_Active=1;
 	DSS_DamageSystem_Resistance=0.25;

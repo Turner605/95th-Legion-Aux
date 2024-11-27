@@ -216,6 +216,11 @@ class CfgFunctions {
             class setupDroneOption {};
             class deploySpotterDrone {};
         };
+
+        class Riot {
+			file = "\z\AUX_95th\addons\equipment\functions\riot";
+            class handleRiotFlash {};
+        };
     };
 };
 
@@ -240,6 +245,13 @@ class CfgUserActions {
 		onActivate = "[player] call AUX_95th_fnc_handleDroneTriggered";
 		modifierBlocking = 1;
 	};
+
+	class AUX_95th_Riot_Flash {
+		displayName = "Riot Shield Flash";
+		tooltip = "Bind to trigger the flashbang on the riot shield";
+		onActivate = "[player] call AUX_95th_fnc_handleRiotFlash";
+		modifierBlocking = 1;
+	};
 	// 3as_uas2 - small drone
 };
 
@@ -249,6 +261,7 @@ class CfgDefaultKeysPresets {
 			AUX_95th_Disc_Shield[] = {0x25};
 			AUX_95th_Turret_Deployer[] = {0x25};
 			AUX_95th_Drone_Deployer[] = {0x25};
+			AUX_95th_Riot_Flash[] = {0x25};
 		};
 	};
 };
@@ -257,7 +270,7 @@ class UserActionGroups {
 	class NFL_Equipment {
 		name = "95th - Equipment";
 		isAddon = 1;
-		group[] = {"AUX_95th_Disc_Shield","AUX_95th_Turret_Deployer","AUX_95th_Drone_Deployer"};
+		group[] = {"AUX_95th_Disc_Shield","AUX_95th_Turret_Deployer","AUX_95th_Drone_Deployer","AUX_95th_Riot_Flash"};
 	};
 };
 

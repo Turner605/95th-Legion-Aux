@@ -1,4 +1,5 @@
 class AUX_95th_Human_Unit_Riot: 3AS_U_CIS_Heavy {
+	scope=2;
 	DSS_DamageSystem_Active=1;
 	DSS_DamageSystem_Resistance=0.15;
 	DSS_DamageSystem_Headshot_Multiplier=4;

@@ -1,4 +1,5 @@
 class AUX_95th_Tank_Unit_MTT: 3AS_MTT {
+	scope=2;
 	displayName="MTT";
 	editorCategory="AUX_95th_CIS_Forces";
 	editorSubcategory="AUX_95th_CIS_Forces_Tanks";

@@ -1,4 +1,5 @@
 class AUX_95th_Droid_BX_Unit_Rifleman : lsd_cis_bxdroid_specops {
+	scope=2;
 	DSS_DamageSystem_Active=1;
 	DSS_DamageSystem_Resistance=0.5;
 	DSS_DamageSystem_Headshot_Multiplier=2;
