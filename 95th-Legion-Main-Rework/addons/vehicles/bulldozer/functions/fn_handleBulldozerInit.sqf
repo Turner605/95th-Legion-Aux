@@ -30,13 +30,13 @@ _vehicle addAction ["<t color='#00fb21'>Clear Foliage</t>", {
 	private _size = 20;
 
 
-	{ _hideTObjs pushBack _x } foreach (nearestTerrainObjects [_pos,["TREE", "SMALL TREE", "BUSH"],_size]);
+	{ _hideTObjs pushBack _x } forEach (nearestTerrainObjects [_pos,["TREE", "SMALL TREE", "BUSH"],_size]);
 
 	{ if ((str(_x) find "fallen" >= 0) || 
 	(str(_x) find "stump" >= 0) || 
 	(str(_x) find "stone" >= 0)) then 
-	{ _hideTObjs pushBack _x } else {}; } foreach (nearestTerrainObjects [_pos,[],_size]);
+	{ _hideTObjs pushBack _x } else {}; } forEach (nearestTerrainObjects [_pos,[],_size]);
 
-	{ _x hideObjectGlobal true } foreach _hideTObjs;
+	{ _x hideObjectGlobal true } forEach _hideTObjs;
 
 },[], 1.5, true, true, ""];

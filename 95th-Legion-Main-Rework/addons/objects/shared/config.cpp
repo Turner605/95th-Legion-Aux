@@ -24,6 +24,7 @@ class CfgEditorSubcategories{
 	class AUX_95th_Objects_CIS_Statics{displayName="Statics";};
 	class AUX_95th_Objects_GAR_Air{displayName="Air Utilities";};
 	class AUX_95th_Objects_GAR_Ground{displayName="Ground Utilities";};
+	class AUX_95th_Objects_GAR_Crates{displayName="Crates";};
 };
 
 class CfgFunctions {
