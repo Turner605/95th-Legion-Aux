@@ -54,7 +54,7 @@ class CfgVehicles {
         respawnLinkedItems[] = {"JLTS_clone_comlink","SFA_Kama_STND","SWLB_CEE_Clone_Scarf_White","ItemMap","ItemCompass","ItemWatch","ItemRadio"}; 
 		weapons[]={"LST_Lightsaber_Thagoron_Dual","Throw","Put"};
 		respawnWeapons[]={"LST_Lightsaber_Thagoron_Dual","Throw","Put"};
-		identityTypes[]={"OPTRE_Jackal_02"};
+		identityTypes[]={"Head_DurosBlue"};
 		magazines[]={"WBK_Cybercrystal","WBK_Cybercrystal","WBK_Cybercrystal"};
 		respawnMagazines[]={"WBK_Cybercrystal","WBK_Cybercrystal","WBK_Cybercrystal"};
         faction="AUX_95th_Faction_Jedi";
