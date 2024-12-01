@@ -101,6 +101,10 @@ class CfgVehicles {
 	class 3AS_Patrol_LAAT_Base: Heli_Attack_01_base_F {};
 
 	class AUX_95th_LAAT_LE: 3AS_Patrol_LAAT_Base {
+		tas_can_impulse=0;
+		ls_hasImpulse = 1;
+		ls_impulsor_boostSpeed_1 = 400;
+		ls_impulsor_boostSpeed_2 = 800;
 		author = "95th Legion";
 		crew = "AUX_95th_Unit_P1_Basic_Trooper";
 		displayname = "LAAT/LE";
@@ -118,6 +122,10 @@ class CfgVehicles {
 			NEW_95TH_LAATLE_TEXTURE(Default)
 		};
 	};
+};
+
+class Extended_init_EventHandlers {
+	class AUX_95th_LAAT_LE {class AUX_95th_LAAT_LE_Init {init = "(_this) spawn AUX_95th_fnc_handleAirVehicleInit;";};};
 };
 
 #include "CfgEventHandlers.hpp"

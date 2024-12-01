@@ -108,7 +108,7 @@ class CfgVehicles {
             class SpawnLAATLE {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
                 displayName = "Spawn [3AS] LAAT/LE";
-                statement = "[this, player, '3AS_Patrol_LAAT_Republic'] spawn AUX_95th_fnc_handleAirSpawned;"; 
+                statement = "[this, player, 'AUX_95th_LAAT_LE'] spawn AUX_95th_fnc_handleAirSpawned;"; 
             };
             class SpawnRho {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";

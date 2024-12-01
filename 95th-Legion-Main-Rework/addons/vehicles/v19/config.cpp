@@ -71,7 +71,7 @@ class CfgVehicles {
 		displayName = "V19 Torrent";
 		hiddenselections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
 		hiddenselectionstextures[] = {
-			"3as\3as_v19\textures\wings_co.paa",
+			"\z\AUX_95th\addons\vehicles\v19\data\Default\Wings.paa",
 			"\z\AUX_95th\addons\vehicles\v19\data\Default\Wing_Plates.paa",
 			"\z\AUX_95th\addons\vehicles\v19\data\Default\Hull.paa",
 			"\z\AUX_95th\addons\vehicles\v19\data\Default\Gun_Gear.paa",
@@ -83,7 +83,7 @@ class CfgVehicles {
 				displayName = "Default";
 				author = "95th Aux Team";
 				textures[] = {
-					"3as\3as_v19\textures\wings_co.paa",
+					"\z\AUX_95th\addons\vehicles\v19\data\Default\Wings.paa",
 					"\z\AUX_95th\addons\vehicles\v19\data\Default\Wing_Plates.paa",
 					"\z\AUX_95th\addons\vehicles\v19\data\Default\Hull.paa",
 					"\z\AUX_95th\addons\vehicles\v19\data\Default\Gun_Gear.paa",
