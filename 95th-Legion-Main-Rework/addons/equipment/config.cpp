@@ -12,6 +12,18 @@ class CfgPatches {
     };
 };
 
+class DarkswordHackingAbilities {
+	class Decoys {
+		displayName = "Holo Decoys";
+		condition = "true";
+		action = "[ace_player] spawn AUX_95th_fnc_triggerHoloDecoys";
+		icon = "";
+		cooldown = 60;
+		activationSound = "";
+		activationGesture = "";
+	};
+};
+
 class CfgVehicles {
     class Man;
     class CAManBase: Man {
@@ -39,7 +51,7 @@ class CfgVehicles {
 			};
 
             class AUX_95th_Drone_Actions {
-                displayName = "Engineer Drone Actions";
+                displayName = "Drone Actions";
                 // icon = "";
                 condition = "[_player] call AUX_95th_fnc_hasDroneItem";
                 exceptions[] = {};
@@ -220,6 +232,11 @@ class CfgFunctions {
         class Riot {
 			file = "\z\AUX_95th\addons\equipment\functions\riot";
             class handleRiotFlash {};
+        };
+
+        class Hacker {
+			file = "\z\AUX_95th\addons\equipment\functions\hacker";
+            class triggerHoloDecoys {};
         };
     };
 };
