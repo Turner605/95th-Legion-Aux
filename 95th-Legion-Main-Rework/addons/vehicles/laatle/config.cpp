@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "Macros\laatle texture.hpp"
 
 class CfgPatches {
     class DOUBLES(PREFIX,COMPONENT) {
@@ -107,9 +108,15 @@ class CfgVehicles {
         editorSubcategory="AUX_95th_Legion_Vehicles_Category_Air_Gunships";
 		typicalcargo[] = {"AUX_95th_Unit_P1_Basic_Trooper"};
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"3AS\3as_LAAT\LAAT_LE\data\republicpatrol01_CO.paa"};
+		hiddenSelectionsTextures[] = {"\z\AUX_95th\addons\vehicles\laatle\data\Default.paa"};
         scope = 2;
 		side = 1;
+		class TextureSources {
+			textureList[] = {
+				"Default",1
+			};
+			NEW_95TH_LAATLE_TEXTURE(Default)
+		};
 	};
 };
 
