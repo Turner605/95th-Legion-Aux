@@ -90,6 +90,11 @@ class CfgVehicles {
                 displayName = "Spawn [95th] MAVr";
                 statement = "[this, player, 'AUX_95th_MAVr'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
             };
+            class PX10Repair {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Spawn [95th] PX-10 (Repair)";
+                statement = "[this, player, 'AUX_95th_PX10_Repair'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
+            };
         };
     };
 
