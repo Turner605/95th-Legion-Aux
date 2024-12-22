@@ -1,6 +1,5 @@
 params ["_vehicle"];
 
-if (!isServer) exitWith {};
 if (!isNull ZEN_placement_helper) exitWith {};
 
 //#################################### Clear Foliage ####################################
@@ -53,6 +52,8 @@ _vehicle addAction ["<t color='#fb0026'>Clear Mines</t>", {
 },[], 1.5, true, true, ""];
 
 //#################################### Building ####################################
+
+if (!isServer) exitWith {};
 
 [
 	_vehicle, 
