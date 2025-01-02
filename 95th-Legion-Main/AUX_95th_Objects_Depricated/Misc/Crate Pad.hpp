@@ -30,5 +30,10 @@ class AUX_95th_Misc_Crate_Pad : 3as_FOB_turret_base_prop {
 			displayName = "Spawn Vehicle Fuel Crate";
 			statement = "[this, 'AUX_95th_Crate_Vehicle_Fuel'] spawn AUX_95th_fnc_handleCrateSpawned;"; 
 		};
+		class SpawnArsenalCrate {
+			priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+			displayName = "Spawn Arsenal Crate";
+			statement = "[this, 'AUX_95th_Crate_Restricted_Arsenal'] spawn AUX_95th_fnc_handleCrateSpawned;"; 
+		};
 	};
 };
