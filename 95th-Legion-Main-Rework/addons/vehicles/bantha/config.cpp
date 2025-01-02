@@ -113,7 +113,7 @@ class CfgVehicles {
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorCategory="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Light";
-		#include "\z\AUX_95th\addons\vehicles\shared\sharedInventory.hpp"
+		#include "\z\AUX_95th\addons\main\inventories\vehicleInventory.hpp"
 
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {

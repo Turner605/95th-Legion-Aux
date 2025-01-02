@@ -1,4 +1,5 @@
 class TransportMagazines {
+	class _xx_AUX_95th_Universal_Pistol_Mag{magazine="AUX_95th_Universal_Pistol_Mag"; count=5;};
 	class _xx_AUX_95th_Universal_Rifle_Mag{magazine="AUX_95th_Universal_Rifle_Mag"; count=10;};
 	class _xx_AUX_95th_Universal_Heavy_Mag{magazine="AUX_95th_Universal_Heavy_Mag"; count=2;};
 	class _xx_AUX_95th_Universal_Sniper_Mag{magazine="AUX_95th_Universal_Sniper_Mag"; count=2;};

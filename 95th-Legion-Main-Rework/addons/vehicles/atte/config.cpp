@@ -113,7 +113,7 @@ class CfgVehicles {
 		crew = "AUX_95th_Unit_P1_Basic_Trooper";
 		faction="AUX_95th_Legion_Faction_Vehicles";
 		editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Heavy";
-		#include "\z\AUX_95th\addons\vehicles\shared\sharedInventory.hpp"
+		#include "\z\AUX_95th\addons\main\inventories\vehicleInventory.hpp"
 		class ACE_Cargo {class Cargo {class track {type = "ACE_Track"; amount = 2;};};};
 		ace_cargo_space = 26;
 		hiddenSelectionsTextures[]={

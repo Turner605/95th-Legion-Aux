@@ -77,7 +77,7 @@ class CfgVehicles {
         ace_dragging_canCarry = 1;
         ace_dragging_ignoreWeightCarry = 1;
 
-        #include "\z\AUX_95th\addons\vehicles\shared\sharedInventory.hpp"
+		#include "\z\AUX_95th\addons\main\inventories\weaponInventory.hpp"
     };
 
     class AUX_95th_Crate_Platoon_Explosives : 3AS_Supply_Large_Black_Prop {
@@ -117,32 +117,7 @@ class CfgVehicles {
         ace_dragging_canCarry = 1;
         ace_dragging_ignoreWeightCarry = 1;
 
-        class TransportItems {
-            class _xx_ACE_packingBandage{name="ACE_packingBandage"; count=50;};
-            class _xx_ACE_elasticBandage{name="ACE_elasticBandage"; count=50;};
-            class _xx_ACE_fieldDressing{name="ACE_fieldDressing"; count=50;};
-            class _xx_ACE_quikclot{name="ACE_quikclot"; count=25;};
-            class _xx_kat_accuvac{name="kat_accuvac"; count=15;};
-            class _xx_ACE_adenosine{name="ACE_adenosine"; count=30;};
-            class _xx_ACE_salineIV{name="ACE_salineIV"; count=10;};
-            class _xx_ACE_salineIV_500{name="ACE_salineIV_500"; count=15;};
-            class _xx_ACE_salineIV_250{name="ACE_salineIV_250"; count=20;};
-            class _xx_kat_X_AED{name="kat_X_AED"; count=5;};
-            class _xx_kat_Pulseoximeter{name="kat_Pulseoximeter"; count=5;};
-            class _xx_ACE_tourniquet{name="ACE_tourniquet"; count=30;};
-            class _xx_ACE_surgicalKit{name="ACE_surgicalKit"; count=5;};
-            class _xx_ACE_splint{name="ACE_splint"; count=20;};
-            class _xx_ACE_morphine{name="ACE_morphine"; count=30;};
-            class _xx_kat_larynx{name="kat_larynx"; count=20;};
-            class _xx_kat_guedel{name="kat_guedel"; count=20;};
-            class _xx_kat_IO_FAST{name="kat_IO_FAST"; count=10;};
-            class _xx_ACE_epinephrine{name="ACE_epinephrine"; count=30;};
-            class _xx_kat_chestSeal{name="kat_chestSeal"; count=15;};
-            class _xx_ACE_bodyBag{name="ACE_bodyBag"; count=20;};
-            class _xx_kat_aatKit{name="kat_aatKit"; count=15;};
-            class _xx_kat_IV_16{name="kat_IV_16"; count=15;};
-            class _xx_kat_Painkiller{name="kat_Painkiller"; count=30;};
-        };
+		#include "\z\AUX_95th\addons\main\inventories\medicalInventory.hpp"
     };
 
     class AUX_95th_Crate_Restricted_Arsenal: 3AS_Supply_Large_Prop {
