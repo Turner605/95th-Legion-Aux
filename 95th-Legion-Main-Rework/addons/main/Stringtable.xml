@@ -2,7 +2,7 @@
 <Project name="95th Legion">
   <Package name="Display Names">
     <Container name="Authors">
-      <Key ID="STR_DSS_Joint_Author">
+      <Key ID="STR_AUX_95th_Joint_Author">
         <Original>95th Aux Team</Original>
         <English>95th Aux Team</English>
         <French>95th Aux Team</French>
@@ -11,7 +11,7 @@
         <Russian>95th Aux Team</Russian>
         <German>95th Aux Team</German>
       </Key>
-      <Key ID="STR_DSS_Mod_Name">
+      <Key ID="STR_AUX_95th_Mod_Name">
         <Original>95th Legion Aux</Original>
         <English>95th Legion Aux</English>
         <French>95th Legion Aux</French>

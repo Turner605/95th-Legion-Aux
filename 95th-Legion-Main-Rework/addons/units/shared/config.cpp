@@ -18,6 +18,14 @@ class CfgPatches {
     };
 };
 
+class CfgFactionClasses { 
+    class AUX_95th_Faction_Misc {displayName = "[95th] Misc"; scope=2; scopecurator=2; priority = 1; side = 1;};  
+};
+
+class CfgEditorCategories{
+	class AUX_95th_Faction_Misc {displayName = "[95th] Misc";};
+};
+
 class CfgEditorSubcategories{
 	class AUX_95th_Holograms{displayName="Holograms";};
 };
@@ -27,7 +35,7 @@ class CfgVehicles {
 
 	class AUX_95th_Clone_Decoy_Hologram: SWLB_clone_holo_P2 {
 		displayName="Decoy Hologram";
-		faction="AUX_95th_Legion_Faction_Misc";
+		faction="AUX_95th_Faction_Misc";
 		editorSubcategory="AUX_95th_Holograms";
 		scope=2; 
 		scopecurator=2;
