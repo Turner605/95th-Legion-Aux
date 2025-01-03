@@ -4,7 +4,7 @@ if(!alive _this) exitWith {};
 
 private _shield = "AUX_95th_Shield_Small" createVehicle getPos _this;
 _shield attachTo [_this, [0, 0, 1]];
-_shield setdir 0;
+_shield setDir 0;
 
 // Land_3AS_ShieldGenerator, 0.05 scale,
 [_shield, true] remoteExec ["hideObjectGlobal", 2];

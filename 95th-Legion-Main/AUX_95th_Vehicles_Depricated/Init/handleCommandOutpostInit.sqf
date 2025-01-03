@@ -59,8 +59,8 @@ private _outpostName = "Outpost: " + (str _outpostNumber);
 
 	deleteMarker (_objNetId+"zone");
 	_zoneMarker = createMarker [(_objNetId+"zone"), position _vehicle];
-	_zoneMarker setMarkerShape "ELLIPSE";
-	_zoneMarker setMarkerColor "colorWEST";
+	_zoneMarker setMarkerShapeLocal "ELLIPSE";
+	_zoneMarker setMarkerColorLocal "colorWEST";
 	_zoneMarker setMarkerSize [150, 150];
 
 	private _allUnitsInRange = []; 

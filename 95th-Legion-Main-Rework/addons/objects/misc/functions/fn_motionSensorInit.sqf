@@ -31,20 +31,20 @@ private _sensorName = "Sensor: " + (str _sensorNumber);
 
 	deleteMarker _objNetId;
 	_marker = createMarker [_objNetId, position _sensor];
-	_marker setMarkerType "JLTS_GAR_hq";
+	_marker setMarkerTypeLocal "JLTS_GAR_hq";
 	_marker setMarkerText _sensorName;
 
 	deleteMarker (_objNetId+"zone");
 	_zoneMarker = createMarker [(_objNetId+"zone"), position _sensor];
-	_zoneMarker setMarkerShape "ELLIPSE";
-	_zoneMarker setMarkerColor "colorWEST";
+	_zoneMarker setMarkerShapeLocal "ELLIPSE";
+	_zoneMarker setMarkerColorLocal "colorWEST";
 	_zoneMarker setMarkerSize [100, 100];
 
 	private _allUnitsInRange = []; 
 
 	{
 		if (!((vehicle _x) in _allUnitsInRange) and (alive (vehicle _x))) then {
-			if (((_x distance (getposASL _sensor)) < 100)) then {
+			if (((_x distance (getPosASL _sensor)) < 100)) then {
 				_veh = vehicle _x; 
 				_allUnitsInRange pushBack _veh; 
 			}; 

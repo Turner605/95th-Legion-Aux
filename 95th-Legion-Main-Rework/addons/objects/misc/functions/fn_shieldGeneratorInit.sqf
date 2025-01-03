@@ -8,7 +8,7 @@ if(_generator getVariable "zen_placement_object") exitWith {};
 private _shield = "AUX_95th_Shield_Small" createVehicle getPos _generator;
 
 _shield attachTo [_generator, [0, 0, 1]];
-_shield setdir 0;
+_shield setDir 0;
 [_shield, 0.05] remoteExec ["setObjectScale"];
 [_shield, true] remoteExec ["hideObjectGlobal", 2];
 
@@ -46,7 +46,7 @@ _generator setVariable ["AUX_95th_Shield_Animating", false, true];
 				[_this select 1] call CBA_fnc_removePerFrameHandler;
 			};
 
-			[_shield, (_scale + 0.05)] RemoteExec ["setObjectScale"];
+			[_shield, (_scale + 0.05)] remoteExec ["setObjectScale"];
 		}, 0, [_generator, _shield]] call CBA_fnc_addPerFrameHandler;
 
 	},[_shield], 1.5, true, true, "", "alive _originalTarget && !(_originalTarget getVariable ""AUX_95th_Shield_Active"")"];
@@ -75,7 +75,7 @@ _generator setVariable ["AUX_95th_Shield_Animating", false, true];
 				[_this select 1] call CBA_fnc_removePerFrameHandler;
 			};
 
-			[_shield, (_scale - 0.05)] RemoteExec ["setObjectScale"];
+			[_shield, (_scale - 0.05)] remoteExec ["setObjectScale"];
 		}, 0, [_generator, _shield]] call CBA_fnc_addPerFrameHandler;
 
 	},[_shield], 1.5, true, true, "", "alive _originalTarget && (_originalTarget getVariable ""AUX_95th_Shield_Active"")"];
@@ -113,7 +113,7 @@ _generator setVariable ["AUX_95th_Shield_Animating", false, true];
 				[_this select 1] call CBA_fnc_removePerFrameHandler;
 			};
 
-			[_shield, (_scale - 0.05)] RemoteExec ["setObjectScale"];
+			[_shield, (_scale - 0.05)] remoteExec ["setObjectScale"];
 		}, 0, [_generator, _target]] call CBA_fnc_addPerFrameHandler;
 
         [{
