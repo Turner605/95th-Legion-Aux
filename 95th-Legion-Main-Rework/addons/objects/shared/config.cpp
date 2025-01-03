@@ -29,6 +29,7 @@ class CfgEditorSubcategories{
 	class AUX_95th_Objects_Ships{displayName="Ships";};
 	class AUX_95th_Objects_Shields{displayName="Shields";};
 	class AUX_95th_Objects_Terminals{displayName="Terminals";};
+	class AUX_95th_Objects_Factories{displayName="Factories";};
 };
 
 class CfgFunctions {

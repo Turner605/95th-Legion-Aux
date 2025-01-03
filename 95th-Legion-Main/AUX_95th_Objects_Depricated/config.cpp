@@ -4,7 +4,6 @@ class CfgPatches {
         name="AUX 95th Objects";
 		requiredAddons[]={"3AS_Prop_Crates","AUX_95th_Ace"};
 		units[]={
-			"AUX_95th_Ground_Factory", "AUX_95th_Droid_Factory_Terminal", "AUX_95th_Factory_Proxy", "AUX_95th_Flak_Factory",
 			"AUX_95th_Misc_Motion_Sensor", "AUX_95th_Misc_Radio_Extender", "AUX_95th_Misc_Shield_Generator", "AUX_95th_Misc_Reinsert_Requester",
 			"AUX_95th_Misc_Crate_Pad",
 			"AUX_95th_Venator_Briefing_Room",
@@ -29,21 +28,12 @@ class CfgEditorSubcategories{
 	class AUX_95th_Misc_Terminals{displayName="Misc Terminals";};
 	class AUX_95th_Shields{displayName="Shields";};
 	class AUX_95th_Fortify{displayName="Fortify";};
-
-	class AUX_95th_Ground_Factories{displayName="Ground Factories";};
-	class AUX_95th_Shared_Factories{displayName="Shared";};
 };
 
 class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 	#include "Definitions.hpp"
-
-	// Droid Factories
-	#include "Droid Factories\Ground Factory.hpp"
-	#include "Droid Factories\Factory Terminal.hpp"
-	#include "Droid Factories\Factory Proxy.hpp"
-	#include "Droid Factories\Flak Factory.hpp"
 
 	// Fortify
 	#include "Fortify\Barricade.hpp"
@@ -68,9 +58,6 @@ class CfgFunctions { class AUX_95th { class Objects {
 	class ShieldGeneratorInit {file = "\AUX_95th_Objects_Depricated\Init\shieldGeneratorInit.sqf";};
 	class reinsertRequesterInit {file = "\AUX_95th_Objects_Depricated\Init\reinsertRequesterInit.sqf";};
 	class invertedArsenalInit {file = "\AUX_95th_Objects_Depricated\Init\invertedArsenalInit.sqf";};
-	class droidFactoryTerminalInit {file = "\AUX_95th_Objects_Depricated\Init\droidFactoryTerminalInit.sqf";};
-	class droidFactoryInit {file = "\AUX_95th_Objects_Depricated\Init\droidFactoryInit.sqf";};
-	class droidFlakFactoryInit {file = "\AUX_95th_Objects_Depricated\Init\droidFlakFactoryInit.sqf";};
 };};};
 
 class Extended_PostInit_EventHandlers {
@@ -86,9 +73,6 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Misc_Shield_Generator {class AUX_95th_Misc_Shield_Generator_Init {init = "[_this select 0] call AUX_95th_fnc_shieldGeneratorInit;";};};
 	class AUX_95th_Misc_Reinsert_Requester {class AUX_95th_Misc_Reinsert_Requester_Init {init = "[_this select 0] call AUX_95th_fnc_reinsertRequesterInit;";};};
 	class AUX_95th_Misc_Radio_Extender {class AUX_95th_Misc_Radio_Extender_Init {init = "[_this select 0,50000] call tfar_antennas_fnc_initRadioTower";};};
-	class AUX_95th_Droid_Factory_Terminal {class AUX_95th_Droid_Factory_Terminal_Init {init = "[_this select 0] call AUX_95th_fnc_droidFactoryTerminalInit;";};};
-	class AUX_95th_Ground_Factory {class AUX_95th_Ground_Factory_Init {init = "[_this select 0] call AUX_95th_fnc_droidFactoryInit;";};};
-	class AUX_95th_Flak_Factory {class AUX_95th_Flak_Factory_Init {init = "[_this select 0] call AUX_95th_fnc_droidFlakFactoryInit;";};};
 };
 
 class Extended_Deleted_EventHandlers {
