@@ -204,7 +204,7 @@ class CfgVehicles {
 
 class CfgFunctions {
     class AUX_95th {
-        class Objects_Shared {
+        class Objects_Crates {
 			file = "\z\AUX_95th\addons\objects\crates\functions";
             class invertedArsenalInit {};
         };

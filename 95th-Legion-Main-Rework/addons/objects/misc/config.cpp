@@ -77,8 +77,8 @@ class CfgVehicles {
 
 class CfgFunctions {
     class AUX_95th {
-        class Objects_Shared {
-			file = "\z\AUX_95th\addons\objects\shared\misc";
+        class Objects_Misc {
+			file = "\z\AUX_95th\addons\objects\misc\functions";
             class motionSensorInit {};
             class ShieldGeneratorInit {};
             class reinsertRequesterInit {};
