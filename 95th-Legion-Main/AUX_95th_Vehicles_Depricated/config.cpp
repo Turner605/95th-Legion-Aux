@@ -2,19 +2,15 @@ class CfgPatches {
 	class AUX_95th_Vehicles_Depricated {
         author="95th Aux Team";
         name="AUX 95th Vehicles";
-		requiredAddons[]={"3AS_Prop_Crates", "3AS_SaberTank", "3AS_LAAT"};
+		requiredAddons[]={"3AS_Prop_Crates", "3AS_SaberTank"};
 		units[] = {
 			"AUX_95th_Command_Outpost",
 			"AUX_95th_Swamp_Speeder",
 			"AUX_95th_Swamp_Speeder_Transport",
-			"AUX_95th_LAAT_Mrk1",
-			"AUX_95th_LAAT_Mrk2",
-			"AUX_95th_LAAT_Mrk2_Lights",
 			"AUX_95th_TX_130",
 			"AUX_95th_TX_130_Shield",
 			"AUX_95th_RX200",
 			"AUX_95th_ATTE",
-			"AUX_95th_LAAT_C",
 			"AUX_95th_ATRT"
 		};
 	};
@@ -51,10 +47,6 @@ class Extended_InitPost_EventHandlers {
 };
 
 class Extended_init_EventHandlers {
-	class AUX_95th_LAAT_Mrk1 {class AUX_95th_LAAT_Mrk1_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
-	class AUX_95th_LAAT_Mrk2 {class AUX_95th_LAAT_Mrk2_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
-	class AUX_95th_LAAT_Mrk2_Lights {class AUX_95th_LAAT_Mrk2_Lights_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
-	class AUX_95th_LAAT_C {class AUX_95th_LAAT_C_Init {init = "(_this) spawn AUX_95th_fnc_handleLAATInit;";};};
 	class AUX_95th_ATRT {class AUX_95th_ATRT_Init {init = "(_this) spawn AUX_95th_fnc_handleATRTInit;";};};
 };
 

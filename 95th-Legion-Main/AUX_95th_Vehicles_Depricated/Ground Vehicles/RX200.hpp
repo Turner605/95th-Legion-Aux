@@ -62,5 +62,5 @@ class AUX_95th_RX200 : 3AS_RX200_Base {
 			};
 		};
 	};
-	#include "\AUX_95th_Vehicles_Depricated\Shared\Inventory Shared.hpp"
+	#include "\z\AUX_95th\addons\main\inventories\vehicleInventory.hpp"
 };
