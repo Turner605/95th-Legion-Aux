@@ -51,6 +51,7 @@ class CfgFunctions {
             class handleRhoCrateInit {};
             class handleAirVehicleInit {};
             class handleVehicleStrafe {};
+            class handleLAATInit {};
         };
     };
 };

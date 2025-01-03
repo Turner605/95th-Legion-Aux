@@ -19,15 +19,9 @@ class CfgPatches {
 #include "Definitions.hpp"
 
 #include "CfgVehicles.hpp"
-#include "CfgLights.hpp"
-#include "CfgCloudlets.hpp"
-#include "CfgAmmo.hpp"
-#include "CfgMagazines.hpp"
-#include "CfgWeapons.hpp"
 
 class CfgFunctions { class AUX_95th { class Vehicles {
 	class handleCommandOutpostInit {file = "\AUX_95th_Vehicles_Depricated\Init\handleCommandOutpostInit.sqf";};
-	class handleLAATInit {file = "\AUX_95th_Vehicles_Depricated\Init\handleLAATInit.sqf";};
 	class handleTXShieldInit {file = "\AUX_95th_Vehicles_Depricated\Init\handleTXShieldInit.sqf";};
 	class handleATRTInit {file = "\AUX_95th_Vehicles_Depricated\Init\handleATRTInit.sqf";};
 
