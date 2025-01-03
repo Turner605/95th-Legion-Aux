@@ -3,7 +3,10 @@
 class CfgPatches {
     class AUX_95th_objects_shared {
         name = COMPONENT_NAME;
-        units[] = {};
+        units[] = {
+            "AUX_95th_Fortify_Ramp", "AUX_95th_Fortify_Barricade", "AUX_95th_Fortify_Wall",
+			"AUX_95th_Fortify_Bunker", "AUX_95th_Fortify_Turret"
+        };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
@@ -30,6 +33,8 @@ class CfgEditorSubcategories{
 	class AUX_95th_Objects_Shields{displayName="Shields";};
 	class AUX_95th_Objects_Terminals{displayName="Terminals";};
 	class AUX_95th_Objects_Factories{displayName="Factories";};
+	class AUX_95th_Objects_Misc{displayName="Misc";};
+	class AUX_95th_Objects_Fortify{displayName="Fortify";};
 };
 
 class CfgFunctions {

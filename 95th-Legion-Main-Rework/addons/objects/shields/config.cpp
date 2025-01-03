@@ -31,7 +31,7 @@ class CfgVehicles {
     };
 
     class AUX_95th_WBK_Combine_WalhammerShield_actual: WBK_Combine_WalhammerShield_actual {
-        hiddenSelectionsTextures[]= {"\AUX_95th_Objects_Depricated\Data\Personal Shield\PersonalShieldRed.paa"};
+        hiddenSelectionsTextures[]= {"\z\AUX_95th\addons\objects\shields\data\PersonalShieldRed.paa"};
     };
 
     class AUX_95th_Shield_Small : 3as_planetaryshield_501w {
