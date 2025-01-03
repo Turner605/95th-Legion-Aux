@@ -30,7 +30,7 @@ class CfgVehicles {
     class AUX_95th_GroundUtil_Vehicles_Heavy : 3AS_Small_Terminal_Black_Prop {
         displayName="Heavy Vehicle Terminal";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Ground";
+        editorSubcategory="AUX_95th_Objects_Ground";
         class UserActions {
             class Spawn95thRX200 {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
@@ -63,7 +63,7 @@ class CfgVehicles {
     class AUX_95th_GroundUtil_Vehicles_Light : 3AS_Terminal_2_Prop {
         displayName="Light Vehicle Terminal";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Ground";
+        editorSubcategory="AUX_95th_Objects_Ground";
         class UserActions {
             class SpawnSwampSpeeder {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
@@ -101,19 +101,19 @@ class CfgVehicles {
     class AUX_95th_GroundUtil_Pad : 3AS_Pad_GAR_Prop {
         displayName="Ground Pad";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Ground";
+        editorSubcategory="AUX_95th_Objects_Ground";
     };
 
     class AUX_95th_GroundUtil_Refit : 3AS_workbench_s {
         displayName="Ground Refit Terminal";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Ground";
+        editorSubcategory="AUX_95th_Objects_Ground";
     };
 
     class AUX_95th_GroundUtil_Service : 3AS_workbench_r1 {
         displayName="Ground Service Terminal";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Ground";
+        editorSubcategory="AUX_95th_Objects_Ground";
         class UserActions {
             class ServiceGroundVehicle {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
@@ -131,7 +131,7 @@ class CfgVehicles {
     class AUX_95th_GroundUtil_Vehicles_Support : 3AS_Terminal_1_Prop {
         displayName="Support Vehicle Terminal";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Ground";
+        editorSubcategory="AUX_95th_Objects_Ground";
         class UserActions {
             class SpawnCommandOutpost {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";

@@ -5,7 +5,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         units[] = {
             "AUX_95th_Crate_Platoon_Ammo", "AUX_95th_Crate_Platoon_Medical", "AUX_95th_Crate_Platoon_Explosives", "AUX_95th_Crate_Vehicle_Ammo",
-            "AUX_95th_Crate_Vehicle_Fuel", "AUX_95th_Crate_Full_Arsenal", "AUX_95th_Crate_Restricted_Arsenal", "AUX_95th_Crate_Inverted_Arsenal"
+            "AUX_95th_Crate_Vehicle_Fuel", "AUX_95th_Crate_Full_Arsenal", "AUX_95th_Crate_Restricted_Arsenal", "AUX_95th_Crate_Inverted_Arsenal",
+            "AUX_95th_Misc_Arsenal_Full", "AUX_95th_Misc_Arsenal_Restricted"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -22,11 +23,12 @@ class CfgVehicles {
     class 3AS_Supply_Large_Blue_Prop;
     class 3AS_Supply_Large_Red_Prop;
     class 3AS_Supply_Large_Prop;
+    class OPTRE_Furniture_Locker;
 
     class AUX_95th_Crate_Full_Arsenal: 3AS_Supply_Large_Prop {
-        displayName="Arsenal (Full)";
+        displayName="Arsenal Crate  (Full)";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Crates";
+        editorSubcategory="AUX_95th_Objects_Crates";
         maximumLoad=2000;
 
         ace_cargo_size = 4;
@@ -42,9 +44,9 @@ class CfgVehicles {
     };
 
     class AUX_95th_Crate_Inverted_Arsenal: 3AS_Supply_Large_Prop {
-        displayName="Arsenal (Inverted)";
+        displayName="Arsenal Crate  (Inverted)";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Crates";
+        editorSubcategory="AUX_95th_Objects_Crates";
         maximumLoad=2000;
 
         ace_cargo_size = 4;
@@ -63,7 +65,7 @@ class CfgVehicles {
         displayName="[95th] Platoon Ammo Crate";
         author="95th Aux Team";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Crates";
+        editorSubcategory="AUX_95th_Objects_Crates";
         maximumLoad=2000;
 
         ace_cargo_size = 4;
@@ -84,7 +86,7 @@ class CfgVehicles {
         displayName="[95th] Platoon Explosives Crate";
         author="95th Aux Team";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Crates";
+        editorSubcategory="AUX_95th_Objects_Crates";
         maximumLoad=2000;
 
         ace_cargo_size = 4;
@@ -103,7 +105,7 @@ class CfgVehicles {
         displayName="[95th] Platoon Medical Crate";
         author="95th Aux Team";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Crates";
+        editorSubcategory="AUX_95th_Objects_Crates";
         maximumLoad=2000;
 
         ace_cargo_size = 4;
@@ -121,9 +123,9 @@ class CfgVehicles {
     };
 
     class AUX_95th_Crate_Restricted_Arsenal: 3AS_Supply_Large_Prop {
-        displayName="Arsenal (Restricted)";
+        displayName="Arsenal Crate (Restricted)";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Crates";
+        editorSubcategory="AUX_95th_Objects_Crates";
         maximumLoad=2000;
 
         ace_cargo_size = 4;
@@ -142,7 +144,7 @@ class CfgVehicles {
         displayName="[95th] Vehicle Ammo Crate";
         author="95th Aux Team";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Crates";
+        editorSubcategory="AUX_95th_Objects_Crates";
         ace_rearm_defaultSupply = 1200;
         maximumLoad=0;
 
@@ -162,7 +164,7 @@ class CfgVehicles {
         displayName="[95th] Vehicle Fuel Crate";
         author="95th Aux Team";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Crates";
+        editorSubcategory="AUX_95th_Objects_Crates";
         ace_refuel_fuelCargo = 3000;
         ace_refuel_hooks[] = {{0,0,0},{0,0,0}};
         maximumLoad=0;
@@ -178,12 +180,34 @@ class CfgVehicles {
         ace_dragging_canCarry = 1;
         ace_dragging_ignoreWeightCarry = 1;
     };
+
+    class AUX_95th_Misc_Arsenal_Full: OPTRE_Furniture_Locker {
+        displayName="Arsenal (Full)";
+        editorCategory="AUX_95th_Objects_GAR";
+        editorSubcategory="AUX_95th_Objects_Crates";
+        maximumLoad=2000;
+        ace_dragging_canDrag = 0; ace_dragging_canCarry = 0;
+        ace_cargo_size = 0; ace_cargo_canLoad = 0; ace_cargo_noRename = 1;
+        ace_cargo_blockUnloadCarry = 1;
+    };
+
+    class AUX_95th_Misc_Arsenal_Restricted: OPTRE_Furniture_Locker {
+        displayName="Arsenal (Restricted)";
+        editorCategory="AUX_95th_Objects_GAR";
+        editorSubcategory="AUX_95th_Objects_Crates";
+        maximumLoad=2000;
+        ace_dragging_canDrag = 0; ace_dragging_canCarry = 0;
+        ace_cargo_size = 0; ace_cargo_canLoad = 0; ace_cargo_noRename = 1;
+        ace_cargo_blockUnloadCarry = 1;
+    };
 };
 
 class Extended_InitPost_EventHandlers {
 	class AUX_95th_Crate_Full_Arsenal {class AUX_95th_Crate_Full_Arsenal_Init {init = "[_this select 0, true] call ace_arsenal_fnc_initBox;";};};
 	class AUX_95th_Crate_Restricted_Arsenal {class AUX_95th_Crate_Restricted_Arsenal_Init {init = "[_this select 0, AUX_95th_Arsenal_Whitelisted_All] call ace_arsenal_fnc_initBox;";};};
 	class AUX_95th_Crate_Inverted_Arsenal {class AUX_95th_Crate_Inverted_Arsenal_Init {init = "[_this select 0] call AUX_95th_fnc_invertedArsenalInit;";};};
+    class AUX_95th_Misc_Arsenal_Full {class AUX_95th_Misc_Arsenal_Full_Init {init = "[_this select 0, true] call ace_arsenal_fnc_initBox;";};};
+	class AUX_95th_Misc_Arsenal_Restricted {class AUX_95th_Misc_Arsenal_Restricted_Init {init = "[_this select 0, AUX_95th_Arsenal_Whitelisted_All] call ace_arsenal_fnc_initBox;";};};
 };
 
 #include "CfgEventHandlers.hpp"

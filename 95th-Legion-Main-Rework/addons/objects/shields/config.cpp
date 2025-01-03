@@ -26,7 +26,7 @@ class CfgVehicles {
         scope=1;
         scopecurator=1;
         editorCategory="AUX_95th_Objects_Generic";
-        editorSubcategory="AUX_95th_Objects_GAR_Shields";
+        editorSubcategory="AUX_95th_Objects_Shields";
         sound="Shield";
     };
 
@@ -37,7 +37,7 @@ class CfgVehicles {
     class AUX_95th_Shield_Small : 3as_planetaryshield_501w {
         displayName="Shield (Small)";
         editorCategory="AUX_95th_Objects_Generic";
-        editorSubcategory="AUX_95th_Objects_GAR_Shields";
+        editorSubcategory="AUX_95th_Objects_Shields";
     };
 };
 

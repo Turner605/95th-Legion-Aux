@@ -26,13 +26,13 @@ class CfgVehicles {
     class AUX_95th_AirUtil_Pad : 3AS_Pad_Square_Prop {
         displayName="Landing Pad";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Air";
+        editorSubcategory="AUX_95th_Objects_Air";
     };
 
     class AUX_95th_AirUtil_Service : 3AS_workbench_r1 {
         displayName="Air Service Terminal";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Air";
+        editorSubcategory="AUX_95th_Objects_Air";
         class UserActions {
             class ServiceAirVehicle {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
@@ -50,7 +50,7 @@ class CfgVehicles {
     class AUX_95th_AirUtil_Fighter : 3AS_Small_Terminal_Black_Prop {
         displayName="Fighter Terminal";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Air";
+        editorSubcategory="AUX_95th_Objects_Air";
         class UserActions {
             class SpawnZ95 {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
@@ -83,7 +83,7 @@ class CfgVehicles {
     class AUX_95th_AirUtil_Transport : 3AS_TERMINAL_2_PROP {
         displayName="Air Transport Terminal";
         editorCategory="AUX_95th_Objects_GAR";
-        editorSubcategory="AUX_95th_Objects_GAR_Air";
+        editorSubcategory="AUX_95th_Objects_Air";
         class UserActions {
             class SpawnMrk1LAAT {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";

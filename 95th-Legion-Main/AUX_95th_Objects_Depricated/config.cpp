@@ -6,11 +6,11 @@ class CfgPatches {
 		units[]={
 			"AUX_95th_Ground_Factory", "AUX_95th_Droid_Factory_Terminal", "AUX_95th_Factory_Proxy", "AUX_95th_Flak_Factory",
 			"AUX_95th_Misc_Motion_Sensor", "AUX_95th_Misc_Radio_Extender", "AUX_95th_Misc_Shield_Generator", "AUX_95th_Misc_Reinsert_Requester",
-			"AUX_95th_Misc_Crate_Pad", "AUX_95th_Misc_Medical_Terminal", "AUX_95th_Misc_Permission_Terminal",
+			"AUX_95th_Misc_Crate_Pad",
 			"AUX_95th_Venator_Briefing_Room",
 			"AUX_95th_Fortify_Ramp", "AUX_95th_Fortify_Barricade", "AUX_95th_Fortify_Wall", "AUX_95th_Fortify_Bunker", "AUX_95th_Fortify_Turret",
-			"AUX_95th_Misc_Arsenal_Full", "AUX_95th_Misc_Arsenal_Restricted", "AUX_95th_Venator_Briefing_Room",
-			"AUX_95th_Misc_Airborne_Terminal", "AUX_95th_Misc_2DFCK"
+			"AUX_95th_Venator_Briefing_Room",
+			"AUX_95th_Misc_2DFCK"
 		};
 	};
 };
@@ -53,24 +53,11 @@ class CfgVehicles {
 	#include "Fortify\Wall.hpp"
 
 	// Misc
-	#include "Misc\Arsenal Full.hpp"
-	#include "Misc\Arsenal Restricted.hpp"
-	#include "Misc\Crate Pad.hpp"
 	#include "Misc\Motion Sensor.hpp"
 	#include "Misc\Radio Extender.hpp"
 	#include "Misc\Reinsert Requester.hpp"
 	#include "Misc\Shield Generator.hpp"
 	#include "Misc\2D Field Commander Kit.hpp"
-
-	// Misc Terminals
-	#include "Misc Terminals\Medical Terminal.hpp"
-	#include "Misc Terminals\Permission Terminal.hpp"
-	#include "Misc Terminals\Airborne Terminal.hpp"
-
-	// Shield
-	#include "Shields\Medical Shield.hpp"
-	#include "Shields\Planetary Shield Small.hpp"
-	#include "Shields\Personal Shield.hpp"
 
 	// Venator
 	#include "Venator\Briefing Room.hpp"
@@ -99,8 +86,6 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Misc_Shield_Generator {class AUX_95th_Misc_Shield_Generator_Init {init = "[_this select 0] call AUX_95th_fnc_shieldGeneratorInit;";};};
 	class AUX_95th_Misc_Reinsert_Requester {class AUX_95th_Misc_Reinsert_Requester_Init {init = "[_this select 0] call AUX_95th_fnc_reinsertRequesterInit;";};};
 	class AUX_95th_Misc_Radio_Extender {class AUX_95th_Misc_Radio_Extender_Init {init = "[_this select 0,50000] call tfar_antennas_fnc_initRadioTower";};};
-	class AUX_95th_Misc_Arsenal_Full {class AUX_95th_Misc_Arsenal_Full_Init {init = "[_this select 0, true] call ace_arsenal_fnc_initBox;";};};
-	class AUX_95th_Misc_Arsenal_Restricted {class AUX_95th_Misc_Arsenal_Restricted_Init {init = "[_this select 0, AUX_95th_Arsenal_Whitelisted_All] call ace_arsenal_fnc_initBox;";};};
 	class AUX_95th_Droid_Factory_Terminal {class AUX_95th_Droid_Factory_Terminal_Init {init = "[_this select 0] call AUX_95th_fnc_droidFactoryTerminalInit;";};};
 	class AUX_95th_Ground_Factory {class AUX_95th_Ground_Factory_Init {init = "[_this select 0] call AUX_95th_fnc_droidFactoryInit;";};};
 	class AUX_95th_Flak_Factory {class AUX_95th_Flak_Factory_Init {init = "[_this select 0] call AUX_95th_fnc_droidFlakFactoryInit;";};};

@@ -22,12 +22,13 @@ class CfgEditorCategories{
 };
 
 class CfgEditorSubcategories{
-	class AUX_95th_Objects_CIS_Statics{displayName="Statics";};
-	class AUX_95th_Objects_GAR_Air{displayName="Air Utilities";};
-	class AUX_95th_Objects_GAR_Ground{displayName="Ground Utilities";};
-	class AUX_95th_Objects_GAR_Crates{displayName="Crates";};
-	class AUX_95th_Objects_GAR_Ships{displayName="Ships";};
-	class AUX_95th_Objects_GAR_Shields{displayName="Shields";};
+	class AUX_95th_Objects_Statics{displayName="Statics";};
+	class AUX_95th_Objects_Air{displayName="Air Utilities";};
+	class AUX_95th_Objects_Ground{displayName="Ground Utilities";};
+	class AUX_95th_Objects_Crates{displayName="Crates";};
+	class AUX_95th_Objects_Ships{displayName="Ships";};
+	class AUX_95th_Objects_Shields{displayName="Shields";};
+	class AUX_95th_Objects_Terminals{displayName="Terminals";};
 };
 
 class CfgFunctions {
