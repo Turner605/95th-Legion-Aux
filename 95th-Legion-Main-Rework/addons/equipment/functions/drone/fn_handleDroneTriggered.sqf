@@ -1,6 +1,7 @@
 params ["_unit"];
 
 if(!([_unit] call AUX_95th_fnc_hasDroneItem)) exitWith {};
+if(!([_unit] call DSS_fnc_checkCanUseEquipment)) exitWith {};
 
 if(_unit getVariable "NFL_Drone_Is_In_Progress") exitWith {
 	hint "Recalling Drone";

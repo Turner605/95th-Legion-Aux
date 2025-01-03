@@ -2,6 +2,7 @@ private _hasDiscShieldDevice = 0;
 
 if(AUX_95th_Disc_Shield_Active == 1) exitWith {hint "Shield already active";};
 if(AUX_95th_Disc_Shield_On_Cooldown == 1) exitWith {hint "Shield is on cooldown.";};
+if(!([_unit] call DSS_fnc_checkCanUseEquipment)) exitWith {};
 
 {
 	if (getNumber(configFile >> "CfgWeapons" >> _x >> "AUX_95th_IsDiscShieldDevice") == 1) then {
