@@ -15,7 +15,6 @@ class DSS_Permissions_Droid;
 class 3AS_Venator_Room_Medium_Prop;
 class 3as_planetaryshield_501w;
 class SquadShield;
-class ls_acclamator_4;
 class Land_lsb_fob_hBarrier_ramp;
 class 3AS_Barricade_2_C_prop;
 class Land_lsb_fob_hBarrier_wall;

@@ -1,1 +1,0 @@
-#define NEW_95TH_VEST_ARC_TYPE(name) class 95th_ARC_Vest_##name## : AUX_95th_Vest_Depricated {

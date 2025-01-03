@@ -3,6 +3,6 @@
 #define OBJECT_NAME groundUtilities
 #define OBJECT_NAME_BEAUTIFIED GroundUtilities
 
-#define PARENTCOMPONENT shared
+#define PARENTCOMPONENT objects
 #include "\z\AUX_95th\addons\main\script_mod.hpp"
 #include "\z\AUX_95th\addons\main\script_macros.hpp"

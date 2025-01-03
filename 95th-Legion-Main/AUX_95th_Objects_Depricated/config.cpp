@@ -28,7 +28,6 @@ class CfgEditorSubcategories{
 	class AUX_95th_Venator{displayName="Misc Objects";};
 	class AUX_95th_Misc_Terminals{displayName="Misc Terminals";};
 	class AUX_95th_Shields{displayName="Shields";};
-	class AUX_95th_Ships{displayName="Ships";};
 	class AUX_95th_Fortify{displayName="Fortify";};
 
 	class AUX_95th_Ground_Factories{displayName="Ground Factories";};
@@ -72,9 +71,6 @@ class CfgVehicles {
 	#include "Shields\Medical Shield.hpp"
 	#include "Shields\Planetary Shield Small.hpp"
 	#include "Shields\Personal Shield.hpp"
-
-	// Ships
-	#include "Ships\Acclimator Hollow.hpp"
 
 	// Venator
 	#include "Venator\Briefing Room.hpp"
