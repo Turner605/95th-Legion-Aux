@@ -3,7 +3,7 @@
 class CfgPatches {
     class DOUBLES(PREFIX,COMPONENT) {
         name = COMPONENT_NAME;
-        units[] = {};
+        units[] = {"AUX_95th_Acclimator_Hollow"};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"AUX_95th_main", "AUX_95th_objects_shared"};

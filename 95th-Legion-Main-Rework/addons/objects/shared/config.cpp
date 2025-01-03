@@ -18,6 +18,7 @@ class CfgPatches {
 class CfgEditorCategories{
 	class AUX_95th_Objects_CIS{displayName = "[95th] CIS";};
 	class AUX_95th_Objects_GAR{displayName = "[95th] GAR";};
+	class AUX_95th_Objects_Generic{displayName = "[95th] Generic";};
 };
 
 class CfgEditorSubcategories{
@@ -26,6 +27,7 @@ class CfgEditorSubcategories{
 	class AUX_95th_Objects_GAR_Ground{displayName="Ground Utilities";};
 	class AUX_95th_Objects_GAR_Crates{displayName="Crates";};
 	class AUX_95th_Objects_GAR_Ships{displayName="Ships";};
+	class AUX_95th_Objects_GAR_Shields{displayName="Shields";};
 };
 
 class CfgFunctions {
