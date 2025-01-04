@@ -12,6 +12,13 @@ class CfgPatches {
     };
 };
 
-
+class CfgFunctions {
+    class AUX_95th_Server {
+        class Attendance {
+			file = "\z\AUX_95th_Server\addons\attendance\functions";
+            class sendAuditLog {};
+        };
+    };
+};
 
 #include "CfgEventHandlers.hpp"
