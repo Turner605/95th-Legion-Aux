@@ -1,1 +1,1 @@
-#include "\z\AUX_95th_Server\addons\AddonName\script_component.hpp"
+#include "\z\AUX_95th_Server\addons\attendance\script_component.hpp"
