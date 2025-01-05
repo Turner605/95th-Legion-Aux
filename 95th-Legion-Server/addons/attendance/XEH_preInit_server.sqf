@@ -10,7 +10,6 @@ addMissionEventHandler ["ExtensionCallback", {
 
   if (_function == "AuditLogging") exitWith { 
     diag_log _data; 
-    _data remoteExec ["systemChat", -2];
   }; 
 }]; 
  
