@@ -7,6 +7,11 @@ addMissionEventHandler ["ExtensionCallback", {
   if (_function == "AttendanceTracking") exitWith { 
     diag_log _data; 
   }; 
+
+  if (_function == "AuditLogging") exitWith { 
+    diag_log _data; 
+    _data remoteExec ["systemChat", -2];
+  }; 
 }]; 
  
 "daa" callExtension "callbackReady"; 

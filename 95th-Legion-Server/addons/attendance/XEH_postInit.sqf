@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+// needs checks for headless clients
 if (!isServer) exitWith {};
 
 private _timeJoinedMap = createHashMapFromArray [["BOOTTIME", serverTime]];
@@ -50,7 +51,7 @@ addMissionEventHandler ["MPEnded", {
 
     private _contentString = '{"content": "' + _dateString + ' Attendance: ' + '[' +_mappedResult + ']' + '"}';
 
-    if(_playerCount > 2) then {
+    if(_playerCount > 4) then {
         "daa" callExtension ["post", [
             "AttendanceTracking", 
             "https://discord.com/api/webhooks/1256603032230035536/HQ61S0B-bWmXMWf_vxbsLGMhSdq1cc-IuZJQI8ghGXPmM_nLeey73yM8i4_znnuWiQZC", //Temp until I can move it into files (hope no one finds it lol)
