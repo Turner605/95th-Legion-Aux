@@ -16,6 +16,7 @@ class CfgFunctions {
     class AUX_95th {
         class Modules {
 			file = "\z\AUX_95th\addons\modules\functions";
+            class cisQuickGarrison {};
             class jetDroidInsertion {};
             class droidPodInsertion {};
             class isCloseToGround {};

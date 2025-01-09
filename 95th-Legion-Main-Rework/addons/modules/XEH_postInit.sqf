@@ -10,7 +10,7 @@ if !(_hasZen) exitWith {
 if (!hasInterface) exitWith {};
 
 // Jet Droid Insertion
-["[95th] Supports", "Jet Droid Insertion", {
+["[95th] Modules", "Jet Droid Insertion", {
     params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
 
     ["Summon Jet Droids", [
@@ -35,7 +35,7 @@ if (!hasInterface) exitWith {};
 }, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
 
 // Droid Pod Insertion
-["[95th] Supports", "Droid Pod Insertion", {
+["[95th] Modules", "Droid Pod Insertion", {
     params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
 
     ["Summon Droid Pod", [
@@ -62,5 +62,33 @@ if (!hasInterface) exitWith {};
     }, {}, [_pos]] call zen_dialog_fnc_create;
 }, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
 
+// Droid Pod Insertion
+["[95th] Modules", "CIS Quick Garrison", {
+    params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
+
+    ["CIS Quick Garrison", [
+        ["SIDES", ["Side", "The side the dropped unit will be."], east],
+        ["SLIDER:RADIUS",["Radius","Radius of garrison"],[1,200,50,0,(ASLToATL _pos),[255,255,0,75]]],
+        ["SLIDER:PERCENT",["Garrison Percentage","Percentage of garrisonable spots to fill"],[0,1,1,0]],
+
+        ["TOOLBOX", "B1 Type", [0, 1, 3, ["Normal", "Rocket", "Security"]]],
+        ["CHECKBOX",["Include B2's","Should 10% of the units be B2's"],[true]]
+    ], {
+        params["_values", "_args"];
+        _unitSide = _values#0;
+        _radius = _values#1;
+        _garrisonPercentage = _values#2;
+        _b1Type = _values#3;
+        _includeB2 = _values#4;
+
+        _position = _args select 0;
+
+        [_position, _unitSide, _radius, _garrisonPercentage, _b1Type, _includeB2] call AUX_95th_fnc_cisQuickGarrison;
+    }, {}, [_pos]] call zen_dialog_fnc_create;
+}, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
+
 
 // module to drop droid turrets/vics?
+
+// Docs:
+// https://github.com/zen-mod/ZEN/blob/master/docs/frameworks/dynamic_dialog.md
