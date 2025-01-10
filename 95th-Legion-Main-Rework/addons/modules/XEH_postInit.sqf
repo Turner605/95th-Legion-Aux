@@ -69,7 +69,7 @@ if (!hasInterface) exitWith {};
     ["CIS Quick Garrison", [
         ["SIDES", ["Side", "The side the dropped unit will be."], east],
         ["SLIDER:RADIUS",["Radius","Radius of garrison"],[1,200,50,0,(ASLToATL _pos),[255,255,0,75]]],
-        ["SLIDER:PERCENT",["Garrison Percentage","Percentage of garrisonable spots to fill"],[0,1,1,0]],
+        ["SLIDER:PERCENT",["Garrison Percentage","Percentage of garrisonable spots to fill"],[0,1,0.8,0]],
 
         ["TOOLBOX", "B1 Type", [0, 1, 3, ["Normal", "Rocket", "Security"]]],
         ["CHECKBOX",["Include B2's","Should 10% of the units be B2's"],[true]]

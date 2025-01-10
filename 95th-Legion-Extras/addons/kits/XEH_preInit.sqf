@@ -150,10 +150,12 @@ AUX_95th_Arsenal_Whitelisted_Medical = [
 AUX_95th_Arsenal_Whitelisted_Equipment = [
 	"ACE_wirecutter","ToolKit","ACE_Tripod","ACE_SpraypaintRed","ACE_SpraypaintGreen","ACE_SpraypaintBlue","ACE_SpraypaintBlack","ACE_SpottingScope",
 	"ACE_CableTie","ACE_Chemlight_Shield","ACE_DeadManSwitch","ACE_DefusalKit","ACE_DAGR","ACE_EntrenchingTool","ACE_Fortify","ACE_Flashlight_MX991",
-	"JLTS_riot_shield_item","WBK_HeadLampItem","ACE_IR_Strobe_Item","ACE_M26_Clacker","ACE_Clacker","ACE_Flashlight_XL50","ACE_MapTools",
+	"JLTS_riot_shield_item","ACE_IR_Strobe_Item","ACE_M26_Clacker","ACE_Clacker","ACE_Flashlight_XL50","ACE_MapTools",
 	"ace_marker_flags_black","ace_marker_flags_blue","ace_marker_flags_green","ace_marker_flags_orange","ace_marker_flags_purple","ace_marker_flags_red",
 	"ace_marker_flags_white","ace_marker_flags_yellow","ACE_microDAGR","MineDetector","ACE_HuntIR_monitor","ACE_RangeTable_82mm","DSS_Hacking_Device",
-	"DSS_Cloaking_Device","AUX_95th_Disc_Shield","DSS_Support_Device","rw_canistra","ACE_RangeCard","AUX_95th_Turret_Deployer", "AUX_95th_Drone_Deployer"
+	"DSS_Cloaking_Device","AUX_95th_Disc_Shield","DSS_Support_Device","rw_canistra","ACE_RangeCard","AUX_95th_Turret_Deployer", "AUX_95th_Drone_Deployer",
+    "WBK_HeadLampItem_Double", "WBK_HeadLampItem_Narrow", "WBK_HeadLampItem_Long", "WBK_HeadLampItem", "WBK_ShoulderLampItem_Regular", "WBK_ShoulderLampItem_Strong",
+    "WBK_ShoulderLampItem_Weak"
 ];
 
 //-----------------------------# Helmets #-----------------------------------
