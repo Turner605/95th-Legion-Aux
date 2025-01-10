@@ -32,7 +32,7 @@ AUX_95th_Arsenal_Whitelisted_Weapons = [
     "Shovel_Russian","Shovel_Russian_Rotated","UNSC_Knife","UNSC_Knife_reversed","SW_clone_knife","WBK_SciFi_Sword_1","IMS_HL_StunBaton",
     "AUX_95th_DC17SA_Dual","3AS_RepublicDatapadPistol","Knife_kukri",
 
-    "3AS_PLX1_F","3AS_RPS6_F","3AS_RPS6_Base","3AS_RPS6_HP","3AS_RPS6_G"
+    "3AS_PLX1_F","AUX_95th_RPS6_F","AUX_95th_RPS6_Base","AUX_95th_RPS6_HP"
 ];
 
 AUX_95th_Arsenal_Whitelisted_Throwables = [
@@ -62,7 +62,7 @@ AUX_95th_Arsenal_Whitelisted_Magazines = [
 	
 	"ACE_HuntIR_M203","ACE_40mm_Flare_white",
 	
-	"JLTS_RPS6_mag","JLTS_RPS6_HE_mag","ls_mag_at_plx","ls_mag_ap_plx","ls_mag_aa_plx","3AS_JLTS_MK43_AT","3AS_JLTS_MK44_HE","3AS_JLTS_MK39_AA","3AS_MK41_AT","3AS_MK42_HE",
+	"JLTS_RPS6_mag","JLTS_RPS6_HE_mag","ls_mag_at_plx","ls_mag_ap_plx","ls_mag_aa_plx","3AS_JLTS_MK43_AT","3AS_JLTS_MK44_HE","3AS_JLTS_MK39_AA","AUX_95th_MK41_AT","AUX_95th_MK42_HE",
 	
 	"Laserbatteries","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell",
 	"3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell",
