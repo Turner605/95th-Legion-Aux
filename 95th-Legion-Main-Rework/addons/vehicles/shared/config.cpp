@@ -42,6 +42,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_Legion_Vehicles_Category_Air_Fighters{displayName="Air (Fighters)";};
 	class AUX_95th_Legion_Vehicles_Category_Air_Logistics{displayName="Air (Logistics)";};
 	class AUX_95th_Legion_Vehicles_Category_Air_Drones { displayName="Air (Drones)"; };
+	class AUX_95th_Legion_Vehicles_Category_Ground_Drones { displayName="Ground (Drones)"; };
 };
 
 class CfgFunctions {
