@@ -62,7 +62,7 @@ if (!hasInterface) exitWith {};
     }, {}, [_pos]] call zen_dialog_fnc_create;
 }, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
 
-// Droid Pod Insertion
+// CIS Quick Garrison
 ["[95th] Modules", "CIS Quick Garrison", {
     params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
 

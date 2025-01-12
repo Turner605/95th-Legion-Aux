@@ -20,6 +20,8 @@ class CfgFunctions {
             class jetDroidInsertion {};
             class droidPodInsertion {};
             class isCloseToGround {};
+            class broadcastOrder66 {};
+            class reanimateDroid {};
         };
     };
 };

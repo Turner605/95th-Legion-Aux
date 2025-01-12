@@ -9,4 +9,8 @@ class AUX_95th_Droid_B1_Rocket_Unit_Rifleman : JLTS_Droid_B1_Rocket {
 	editorSubcategory="AUX_95th_CIS_Forces_Droids_B1_Rocket";
 	faction="AUX_95th_CIS";
 	AUX_95th_Is_Immune_To_FallDamage = 1;
+	class EventHandlers {
+		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+	};
 };

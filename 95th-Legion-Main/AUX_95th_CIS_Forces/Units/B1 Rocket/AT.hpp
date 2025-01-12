@@ -19,6 +19,10 @@ class AUX_95th_Droid_B1_Rocket_Unit_AT : JLTS_Droid_B1_Rocket {
 		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
 		"JLTS_RPS6_mag", "JLTS_RPS6_mag", "JLTS_RPS6_mag"
 	};
+	class EventHandlers {
+		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+	};
 };
 
 

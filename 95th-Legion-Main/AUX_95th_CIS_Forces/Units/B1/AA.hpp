@@ -18,4 +18,8 @@ class AUX_95th_Droid_B1_Unit_AA : JLTS_Droid_B1_AT {
 		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
 		"SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag"
 	};
+	class EventHandlers {
+		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+	};
 };

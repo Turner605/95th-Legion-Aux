@@ -8,4 +8,8 @@ class AUX_95th_Droid_B1_Unit_AT : JLTS_Droid_B1_AT {
 	editorCategory="AUX_95th_CIS_Forces";
 	editorSubcategory="AUX_95th_CIS_Forces_Droids_B1";
 	faction="AUX_95th_CIS";
+	class EventHandlers {
+		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+	};
 };
