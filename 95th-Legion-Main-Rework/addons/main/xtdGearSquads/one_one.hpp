@@ -11,4 +11,5 @@ class Player {
     class Mermaid { label = "Mermaid"; description = "Mermaid`s Helmet"; };
     class Dracus { label = "Dracus"; description = "Dracus`s Helmet"; };
     class Triage { label = "Triage"; description = "Triage`s Helmet"; };
+    class Wolf { label = "Wolf"; description = "Wolf`s Helmet"; };
 };
