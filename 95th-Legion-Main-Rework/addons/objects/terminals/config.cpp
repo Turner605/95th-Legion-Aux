@@ -59,7 +59,7 @@ class CfgVehicles {
         editorSubcategory="AUX_95th_Objects_Terminals";
         hiddenSelections[] = {"Screens","Lightbar"};
         hiddenSelectionsTextures[] = {
-            "\z\AUX_95th\addons\objects\terminals\Permissions.paa", 
+            "\z\AUX_95th\addons\objects\terminals\data\Permissions.paa", 
             "#(argb,8,8,3)color(1,0,0,1.0,co)"
         };
     };
