@@ -4,6 +4,8 @@ class CfgPatches {
     class DOUBLES(PREFIX,COMPONENT) {
         name = COMPONENT_NAME;
         units[] = {
+            "AUX_95th_Droid_BX_Unit_Rifleman", "AUX_95th_Droid_BX_Unit_Commander", "AUX_95th_Droid_BX_Unit_Guard",
+			"AUX_95th_Droid_BX_Unit_Diplomat", "AUX_95th_Droid_BX_Unit_Shotgun", "AUX_95th_Droid_BX_Unit_Sniper"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -220,9 +222,101 @@ class CfgEditorCategories{
 
 class CfgEditorSubcategories {
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Infantry{displayName="Infantry";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos{displayName="Commandos";};
 };
 
 class CfgVehicles {
+    class lsd_cis_bxdroid_specops;
+
+    class AUX_95th_Droid_BX_Unit_Base: lsd_cis_bxdroid_specops {
+        scope=1;
+        DSS_DamageSystem_Active=1;
+        DSS_DamageSystem_Resistance=0.5;
+        DSS_DamageSystem_Headshot_Multiplier=2;
+        AUX_95th_Has_Commando_Jump=1;
+        faction="AUX_95th_Faction_SeparatistDroids";
+        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos";
+        identityTypes[]={"Head_LSD_BX","Aux_95th_Identity_BX"};
+        facewear="";
+        items[]={"ls_cis_bxCommando_vest","SWLB_comlink_droid","JLTS_NVG_droid_chip_2","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+        linkedItems[]={"ls_cis_bxCommando_vest","SWLB_comlink_droid","JLTS_NVG_droid_chip_2","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+        respawnLinkedItems[]={"ls_cis_bxCommando_vest","SWLB_comlink_droid","JLTS_NVG_droid_chip_2","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+        weapons[]={"JLTS_E5","WBK_Dutch_Vibro","Throw","Put"};
+        respawnWeapons[]={"JLTS_E5","WBK_Dutch_Vibro","Throw","Put"};
+        magazines[]={
+            "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag",
+            "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+        };
+        respawnMagazines[]={
+            "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag",
+            "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+        };
+        uniformClass="lsd_cis_bxDroid_uniform";
+    };
+
+    class AUX_95th_Droid_BX_Unit_Rifleman : AUX_95th_Droid_BX_Unit_Base {
+        scope=2;
+        displayName="BX Rifleman (E-5)";
+    };
+
+    class AUX_95th_Droid_BX_Unit_Shotgun : AUX_95th_Droid_BX_Unit_Base {
+        scope=2;
+        displayName="BX CQB (SB-B3)";
+        weapons[]={"JLTS_SBB3","WBK_Dutch_Vibro","Throw","Put"};
+        respawnWeapons[]={"JLTS_SBB3","WBK_Dutch_Vibro","Throw","Put"};
+        magazines[]={
+            "JLTS_SBB3_mag","JLTS_SBB3_mag","JLTS_SBB3_mag","JLTS_SBB3_mag","JLTS_SBB3_mag","JLTS_SBB3_mag",
+            "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+        };
+        respawnMagazines[]={
+            "JLTS_SBB3_mag","JLTS_SBB3_mag","JLTS_SBB3_mag","JLTS_SBB3_mag","JLTS_SBB3_mag","JLTS_SBB3_mag",
+            "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+        };
+    };
+
+    class AUX_95th_Droid_BX_Unit_Sniper : AUX_95th_Droid_BX_Unit_Base {
+        scope=2;
+        displayName="BX Sniper (E-5S)";
+        weapons[]={"JLTS_E5S","WBK_Dutch_Vibro","Throw","Put"};
+        respawnWeapons[]={"JLTS_E5S","WBK_Dutch_Vibro","Throw","Put"};
+        magazines[]={
+            "JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag",
+            "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+        };
+        respawnMagazines[]={
+            "JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag",
+            "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+        };
+        uniformClass="lsd_cis_bxDroid_uniform";
+    };
+
+    class AUX_95th_Droid_BX_Unit_Diplomat : AUX_95th_Droid_BX_Unit_Base {
+        scope=2;
+        displayName="BX Diplomat (E-5)";
+        uniformClass="lsd_cis_bxDiplomatDroid_uniform";
+    };
+
+    class AUX_95th_Droid_BX_Unit_Guard : AUX_95th_Droid_BX_Unit_Base {
+        scope=2;
+        displayName="BX Guard (E-5)";
+        respawnWeapons[]={"JLTS_E5_shield_attached","Throw","Put"};
+        magazines[]={
+            "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag",
+            "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+        };
+        respawnMagazines[]={
+            "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag",
+            "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+        };
+        uniformClass="lsd_cis_bxSecurityDroid_uniform";
+    };
+
+    class AUX_95th_Droid_BX_Unit_Commander : AUX_95th_Droid_BX_Unit_Base {
+        scope=2;
+        displayName="BX Commander (E-5)";
+        uniformClass="lsd_cis_bxCaptainDroid_uniform";
+    };
 
 };
 

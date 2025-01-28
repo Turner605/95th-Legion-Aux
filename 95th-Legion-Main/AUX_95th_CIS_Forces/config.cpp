@@ -39,13 +39,6 @@ class CfgPatches {
 			"AUX_95th_Droid_B2_Unit_GL",
 			"AUX_95th_Droid_B2_Unit_Shotgun",
 
-			"AUX_95th_Droid_BX_Unit_Rifleman",
-			"AUX_95th_Droid_BX_Unit_Commander",
-			"AUX_95th_Droid_BX_Unit_Guard",
-			"AUX_95th_Droid_BX_Unit_Diplomat",
-			"AUX_95th_Droid_BX_Unit_Shotgun",
-			"AUX_95th_Droid_BX_Unit_Sniper",
-
 			"AUX_95th_Human_Unit_Riot",
 
 			"AUX_95th_Tank_Unit_AAT",
@@ -156,14 +149,6 @@ class CfgVehicles {
 	#include "Units\B2\GL.hpp"
 	#include "Units\B2\Shotgun.hpp"
 
-	// BX Units 
-	#include "Units\BX\Rifleman.hpp"
-	#include "Units\BX\Shotgun.hpp"
-	#include "Units\BX\Sniper.hpp"
-	#include "Units\BX\Commander.hpp"
-	#include "Units\BX\Guard.hpp"
-	#include "Units\BX\Diplomat.hpp"
-
 	// Humans
 	#include "Units\Humans\Riot.hpp"
 
@@ -259,7 +244,6 @@ class CfgFunctions { class AUX_95th { class CIS_Forces {
 
 	class B1Init {file = "\AUX_95th_CIS_Forces\Init\B1Init.sqf";};
 
-	class commandoInit {file = "\AUX_95th_CIS_Forces\Init\commandoInit.sqf";};
 	class handleB1RocketFallDamage {file = "\AUX_95th_CIS_Forces\Scripts\B1\handleB1RocketFallDamage.sqf";};
 
 	class checkCanShield {file = "\AUX_95th_CIS_Forces\Scripts\Personal Shield\checkCanShield.sqf";};
@@ -275,13 +259,6 @@ class Extended_InitPost_EventHandlers {
 	class AUX_95th_Droid_B2_Unit_GL {class AUX_95th_Droid_B2_Unit_GL_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_B2Init;";};};
 	class AUX_95th_Droid_B2_Unit_Shotgun {class AUX_95th_Droid_B2_Unit_Shotgun_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_B2Init;";};};
 
-	class AUX_95th_Droid_BX_Unit_Rifleman {class AUX_95th_Droid_BX_Unit_Rifleman_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Droid_BX_Unit_Shotgun {class AUX_95th_Droid_BX_Unit_Shotgun_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Droid_BX_Unit_Sniper {class AUX_95th_Droid_BX_Unit_Sniper_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Droid_BX_Unit_Commander {class AUX_95th_Droid_BX_Unit_Commander_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Droid_BX_Unit_Guard {class AUX_95th_Droid_BX_Unit_Guard_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	class AUX_95th_Droid_BX_Unit_Diplomat {class AUX_95th_Droid_BX_Unit_Diplomat_Init {onRespawn="true"; serverInit="[_this select 0] call AUX_95th_fnc_commandoInit;";};};
-	
 	class AUX_95th_Droid_Radar_Jammer_Turret {class AUX_95th_Droid_Radar_Jammer_Turret_Init {onRespawn="true"; serverInit="[_this select 0, 6000] call AUX_95th_fnc_radarJammerInit;";};};
 };
 

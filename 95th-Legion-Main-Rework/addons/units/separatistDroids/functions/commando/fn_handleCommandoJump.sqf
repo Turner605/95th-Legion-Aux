@@ -21,7 +21,7 @@ if (
 	(gestureState _unit == "Exo_Gest_Jump_Right_unarmed") or
 	(gestureState _unit == "Exo_Gest_Jump_Front_unarmed") or 
 	!(alive _unit) or 
-	!(_unit == vehicle _unit) or
+	!(isNull objectParent _unit) or
 	(lifeState _unit == "INCAPACITATED") or 
 	(stance _unit == "PRONE") or 
 	!(isTouchingGround _unit) or
