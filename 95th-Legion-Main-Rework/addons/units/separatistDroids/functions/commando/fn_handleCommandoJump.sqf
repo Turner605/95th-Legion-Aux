@@ -70,11 +70,11 @@ sleep 0.5;
 
 if (!(animationState _unit == "Assasin_Jump_MainWeap") and !(animationState _unit == "Assasin_Jump_Unarmed")) exitWith {};
 
-[_unit, selectRandom ["assasin_grenade_01","assasin_grenade_02","assasin_grenade_03","assasin_grenade_04"], 100] call CBA_fnc_GlobalSay3d;
+// [_unit, selectRandom ["assasin_grenade_01","assasin_grenade_02","assasin_grenade_03","assasin_grenade_04"], 100] call CBA_fnc_GlobalSay3d;
 
 [_unit, [0,7,9.6]] remoteExec ["setVelocityModelSpace", _unit];
 
-[_unit, "longfall_land_01", 35, 5] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf"; 
+[_unit, "longfall_land_01", 35] call CBA_fnc_globalSay3d;
 
 _unit spawn {
 	_this setVariable ["canMakeAttack",1]; 
@@ -91,8 +91,9 @@ _unit spawn {
 	waitUntil {!(alive _this) or (isTouchingGround _this)};
 
 	_this setVariable ["WBK_forceShieldS",nil]; 
-	[_this, selectRandom ["assasin_pain_01","assasin_pain_02","assasin_pain_03","assasin_pain_04","assasin_pain_05","assasin_pain_06","assasin_pain_07","assasin_pain_08","assasin_pain_09","assasin_pain_10"], 100] call CBA_fnc_GlobalSay3d;
-	[_this, selectRandom ["longfall_land_03","longfall_land_02"], 35, 5] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf"; 
+	// [_this, selectRandom ["assasin_pain_01","assasin_pain_02","assasin_pain_03","assasin_pain_04","assasin_pain_05","assasin_pain_06","assasin_pain_07","assasin_pain_08","assasin_pain_09","assasin_pain_10"], 100] call CBA_fnc_GlobalSay3d;
+	// [_this, selectRandom ["longfall_land_03","longfall_land_02"], 35, 5] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf"; 
+	[_this, selectRandom ["longfall_land_03","longfall_land_02"], 35] call CBA_fnc_globalSay3d;
 
 	uiSleep 0.05;
 
@@ -131,7 +132,7 @@ _unit spawn {
 		[_this,"AssasinLand_Heavy"] remoteExec ['playMoveNow'];
 		_this playMove "AmovPercMstpSrasWrflDnon";
 	}else{
-		if ((currentWeapon _this == handGunWeapon _this) and !(currentWeapon _this == "")) then {
+		if ((currentWeapon _this == handgunWeapon _this) and !(currentWeapon _this == "")) then {
 			[_this,"AssasinLand_Light_PIST"] remoteExec ['switchMove'];
 			[_this,"AssasinLand_Light_PIST"] remoteExec ['playMoveNow'];
 			_this playMove "AmovPercMstpSrasWpstDnon";
@@ -144,7 +145,7 @@ _unit spawn {
 
 	_electra = "#particlesource" createVehicle position _this; 
 	_electra setParticleClass "HDustVTOL1"; 
-	_electra attachto [_this,[0,0,2]];  
+	_electra attachTo [_this,[0,0,2]];  
 	detach _electra;
 	sleep 0.5;
 	deleteVehicle _electra;

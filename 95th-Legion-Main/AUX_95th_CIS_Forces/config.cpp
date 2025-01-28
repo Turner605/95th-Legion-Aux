@@ -260,10 +260,6 @@ class CfgFunctions { class AUX_95th { class CIS_Forces {
 	class B1Init {file = "\AUX_95th_CIS_Forces\Init\B1Init.sqf";};
 
 	class commandoInit {file = "\AUX_95th_CIS_Forces\Init\commandoInit.sqf";};
-	class checkIsInHouse {file = "\AUX_95th_CIS_Forces\Scripts\Commando\checkIsInHouse.sqf";};
-	class checkCanJump {file = "\AUX_95th_CIS_Forces\Scripts\Commando\checkCanJump.sqf";};
-	class handleCommandoJump {file = "\AUX_95th_CIS_Forces\Scripts\Commando\handleCommandoJump.sqf";};
-	class handleCommandoFallDamage {file = "\AUX_95th_CIS_Forces\Scripts\Commando\handleCommandoFallDamage.sqf";};
 	class handleB1RocketFallDamage {file = "\AUX_95th_CIS_Forces\Scripts\B1\handleB1RocketFallDamage.sqf";};
 
 	class checkCanShield {file = "\AUX_95th_CIS_Forces\Scripts\Personal Shield\checkCanShield.sqf";};
