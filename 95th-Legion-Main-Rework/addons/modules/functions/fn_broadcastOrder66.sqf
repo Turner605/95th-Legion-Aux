@@ -1,25 +1,33 @@
-private _message = "<t color='#82101d' size='2'> Execute Order 66 </t>";
-_itemToRestrict = "WBK_Cybercrystal";
+playMusic ["anakinBetrayal", 15];
 
-private _playersToBroadcast = [];
-private _jediPlayers = [];
+[{
+    _itemToRestrict = "WBK_Cybercrystal";
 
-private _players = allPlayers - entities "HeadlessClient_F";
+    private _playersToBroadcast = [];
+    private _jediPlayers = [];
 
-{
-    _items = (items _x) + (magazines _x);
+    private _players = allPlayers - entities "HeadlessClient_F";
 
-    if(!(_itemToRestrict in _items)) then {
-        _playersToBroadcast pushBack _x;
-    }else{
-        _jediPlayers pushBack _x;
-    }
-} forEach _players;
+    {
+        _items = (items _x) + (magazines _x);
 
-_jediPlayers joinSilent createGroup east;
+        if(!(_itemToRestrict in _items)) then {
+            _playersToBroadcast pushBack _x;
+        }else{
+            _jediPlayers pushBack _x;
+        }
+    } forEach _players;
 
-[[_message], {
-    params ["_message"];
+    _jediPlayers joinSilent createGroup east;
 
-    2 cutText [_message, "PLAIN", 1, true, true];
-}] remoteExec ["call", _playersToBroadcast];
+    {_x addRating -2000;} forEach _jediPlayers;
+
+
+    private _message = "<t color='#82101d' size='2'> Execute Order 66 </t>";
+
+    [[_message], {
+        params ["_message"];
+
+        2 cutText [_message, "PLAIN", 1, true, true];
+    }] remoteExec ["call", _playersToBroadcast];
+}, [], 15] call CBA_fnc_waitAndExecute;
