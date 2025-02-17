@@ -619,6 +619,11 @@ class CfgUnitInsignia {
 		displayName = "Billy Bullsquid";
 		texture="\z\AUX_95th\addons\players\shared\insignias\BillyBullsquid.paa";
 	};
+
+	class AUX_95th_Insignia_DownDaJugg : AUX_95th_Insignia_Logo {
+		displayName = "Down Da Jugg";
+		texture="\z\AUX_95th\addons\players\shared\insignias\DownDaJugg.paa";
+	};
 };
 
 class CfgWeapons {
