@@ -117,7 +117,9 @@ class CfgVehicles {
     class 3AS_MAF_Gunship_F: 3AS_MAF_Base_F { scope = 0; };
     class 3AS_MAF_Transport_F: 3AS_MAF_Base_F { scope = 0; };
 
-
+    class ls_hmp_base;
+    class ls_cis_hmp: ls_hmp_base { scope = 0; };
+    class ls_cis_hmp_transport: ls_hmp_base { scope = 0; };
 
 
 // 3AS_CIS_Vulture_F
