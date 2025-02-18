@@ -108,6 +108,17 @@ class CfgVehicles {
     // class 3AS_CIS_TS_Red: 3AS_CIS_TS_Base { scope = 0; };
     // class 3AS_CIS_TS_TV24: 3AS_CIS_TS_Base { scope = 0; };
 
+    // Air
+    class 3AS_HMP_Base;
+    class 3AS_HMP_Gunship: 3AS_HMP_Base { scope = 0; };
+    class 3AS_HMP_Transport: 3AS_HMP_Base { scope = 0; };
+
+    class 3AS_MAF_Base_F;
+    class 3AS_MAF_Gunship_F: 3AS_MAF_Base_F { scope = 0; };
+    class 3AS_MAF_Transport_F: 3AS_MAF_Base_F { scope = 0; };
+
+
+
 
 // 3AS_CIS_Vulture_F
 // 3AS_CIS_Vulture_AA_F

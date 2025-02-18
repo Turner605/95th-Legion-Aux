@@ -20,8 +20,6 @@ class CfgPatches {
 			"AUX_95th_Air_Unit_Vulture_CAS",
 			"AUX_95th_Air_Unit_Tri_Fighter",
 			"AUX_95th_Air_Unit_Dropship",
-			"AUX_95th_Air_Unit_Gunship",
-			"AUX_95th_Air_Unit_Gunship_Transport",
 
 			"AUX_95th_Droid_B1_Unit_AA",
 			"AUX_95th_Droid_B1_Unit_AT",
@@ -125,7 +123,6 @@ class CfgVehicles {
 	#include "Definitions.hpp"
 
 	// Air Units
-	#include "Units\Air Units\Gunships.hpp"
 	#include "Units\Air Units\Tri Fighter.hpp"
 	#include "Units\Air Units\Vultures.hpp"
 	#include "Units\Air Units\Dropship.hpp"
