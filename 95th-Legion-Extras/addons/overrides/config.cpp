@@ -42,8 +42,14 @@ class CfgVehicles {
     class 3AS_Fliknot_F: 3AS_Fliknot_Base_F { scope = 0; };
     class 3AS_Fliknot_Brown: 3AS_Fliknot_Base_F { scope = 0; };
     
+    class ScavBase;
+    class 3as_CIS_ScavDroid: ScavBase { scope = 0; };
 
+    class JLTS_UAV_prowler_base;
+    class JLTS_UAV_prowler_cis: JLTS_UAV_prowler_base { scope = 0; };
 
+    class lsd_agtRaptor_base;
+    class lsd_ground_agtRaptor: lsd_agtRaptor_base { scope = 0; };
 
 // 3AS_CIS_Vulture_F
 // 3AS_CIS_Vulture_AA_F
