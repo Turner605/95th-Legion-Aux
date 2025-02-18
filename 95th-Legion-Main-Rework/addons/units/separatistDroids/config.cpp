@@ -7,7 +7,8 @@ class CfgPatches {
             "AUX_95th_Droid_BX_Unit_Rifleman", "AUX_95th_Droid_BX_Unit_Commander", "AUX_95th_Droid_BX_Unit_Guard",
 			"AUX_95th_Droid_BX_Unit_Diplomat", "AUX_95th_Droid_BX_Unit_Shotgun", "AUX_95th_Droid_BX_Unit_Sniper",
 			"AUX_95th_CIS_Disguised_Trooper",
-			"AUX_95th_CIS_TS_F", "AUX_95th_CIS_TS_Green", "AUX_95th_CIS_TS_Red"
+			"AUX_95th_CIS_TS_F", "AUX_95th_CIS_TS_Green", "AUX_95th_CIS_TS_Red",
+			"AUX_95th_Droid_B1_Shield"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -211,6 +212,11 @@ class CfgFunctions {
             class handleCommandoFallDamage {};
             class handleCommandoJump {};
         };
+
+		class SeparatistDroidsB1 {
+			file = "\z\AUX_95th\addons\units\separatistDroids\functions\B1";
+            class handleB1ShieldInit {};
+        };
     };
 };
 
@@ -226,6 +232,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Infantry{displayName="Infantry";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos{displayName="Commandos";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries{displayName="T-Series";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids{displayName="B1 Battledroids";};
 };
 
 class CBA_Extended_EventHandlers_base;
@@ -390,6 +397,20 @@ class CfgVehicles {
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries";
+	};
+
+	// B1
+	class JLTS_Droid_B1_Prototype;
+	class AUX_95th_Droid_B1_Shield: JLTS_Droid_B1_Prototype {
+        displayName = "B1 Shield (E-5)";
+		scope = 2;
+        faction="AUX_95th_Faction_SeparatistDroids";
+        editorCategory="AUX_95th_Faction_SeparatistDroids";
+		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
+		identityTypes[] = {"Aux_95th_Identity_B1"};
+		DSS_DamageSystem_Active=1;
+		DSS_DamageSystem_Resistance=0.25;
+		DSS_DamageSystem_Headshot_Multiplier=4;
 	};
 };
 
