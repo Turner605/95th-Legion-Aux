@@ -15,11 +15,7 @@ class CfgPatches {
         name="AUX 95th Droid Units";
 		requiredAddons[]={"A3_Characters_F", "JLTS_characters_DroidUnits", "AUX_95th_voicelines"};
 		units[]={
-			"AUX_95th_Air_Unit_Vulture",
-			"AUX_95th_Air_Unit_Vulture_AA",
-			"AUX_95th_Air_Unit_Vulture_CAS",
 			"AUX_95th_Air_Unit_Tri_Fighter",
-			"AUX_95th_Air_Unit_Dropship",
 
 			"AUX_95th_Droid_B1_Unit_AA",
 			"AUX_95th_Droid_B1_Unit_AT",
@@ -61,7 +57,6 @@ class CfgPatches {
 			"AUX_95th_Droid_Droideka_Turret",
 			"AUX_95th_Droid_Droideka_Sniper_Turret",
 
-			"AUX_95th_CIS_Disguised_Trooper",
 			"AUX_95th_Independent_B1_Unit_Diplomat", 
 			"AUX_95th_Independent_B1_Unit_Firefighter", 
 			"AUX_95th_Independent_B1_Unit_Medic", 
@@ -124,7 +119,6 @@ class CfgVehicles {
 
 	// Air Units
 	#include "Units\Air Units\Tri Fighter.hpp"
-	#include "Units\Air Units\Dropship.hpp"
 
 	// B1 Units
 	#include "Units\B1\AA.hpp"
@@ -177,44 +171,6 @@ class CfgVehicles {
 	NEW_95TH_INDEPENDENT_B1_BACKPACK(Medic);
 	NEW_95TH_INDEPENDENT_B1_BACKPACK(Police);
 
-	//############################################################### Commando Units ###############################################################
-	class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Unit_P1_Basic_Trooper {
-		displayName="[95th] Disguised BX Trooper";
-		author="95th Aux Team";
-		DSS_Is_Disguised_As_Bluefor=1;\
-		faction="AUX_95th_CIS";
-		editorCategory="AUX_95th_CIS_Forces";
-		editorSubcategory="AUX_95th_CIS_Forces_Droids_BX";
-		uniformClass="AUX_95th_Uniform_P1_Basic_Trooper";
-        side = 0;
-		scope=2; 
-		scopecurator=2;
-		editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_AB.jpg"; //todo: change me
-		linkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
-		respawnLinkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
-		nakedUniform = "lsd_cis_bxDroid_uniform";
-		identityTypes[] = {"Head_LSD_BX"};
-		allowedFacewear[] = {
-			"Facewear_Empty_HUD_ARFAntenna_95th", 0.2,
-			"Facewear_Empty_HUD_Headlamps_95th", 1,
-			"Facewear_Empty_Headlamp_95th", 1,
-			"Facewear_Poncho_Empty_Green_95th", 0.1,
-			"Facewear_Scarf_Empty_Brown_95th", 0.1,
-			"Facewear_Scarf_Empty_Black_95th", 0.1,
-			"", 1
-		};
-		headgearList[] = {
-			"AUX_95th_Helmet_P1_Basic_Trooper", 0.9,
-			"AUX_95th_Helmet_P2_Airborne_Trooper", 0,
-			"AUX_95th_Helmet_P1_ARF_Trooper", 0.6,
-			"AUX_95th_Helmet_P1_Engineer_Trooper", 0.6,
-			"AUX_95th_Helmet_P1_SpecOps_Trooper", 0.6
-		};
-		class EventHandlers {
-			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-			init = "if (local (_this select 0)) then { [(_this select 0), [], []] call BIS_fnc_unitHeadgear; };";
-		};
-	};
 };
 
 class CfgGroups {

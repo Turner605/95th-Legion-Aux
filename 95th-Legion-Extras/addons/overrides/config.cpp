@@ -135,7 +135,10 @@ class CfgVehicles {
     class 3AS_CIS_Vulture_CAS_Tan: 3AS_CIS_Vulture_CAS_F { scope = 0; };
     class 3AS_CIS_Vulture_CAS_Brown: 3AS_CIS_Vulture_CAS_F { scope = 0; };
 
-
+    // Air (Misc)
+    class lsd_largeVTOL_base;
+    class lsd_largeVTOL_federationDropship_base: lsd_largeVTOL_base { scope = 0; };
+    class lsd_largeVTOL_cisDropship: lsd_largeVTOL_federationDropship_base { scope = 0; };
 
 
 
