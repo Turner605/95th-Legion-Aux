@@ -5,7 +5,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         units[] = {
             "AUX_95th_Droid_BX_Unit_Rifleman", "AUX_95th_Droid_BX_Unit_Commander", "AUX_95th_Droid_BX_Unit_Guard",
-			"AUX_95th_Droid_BX_Unit_Diplomat", "AUX_95th_Droid_BX_Unit_Shotgun", "AUX_95th_Droid_BX_Unit_Sniper"
+			"AUX_95th_Droid_BX_Unit_Diplomat", "AUX_95th_Droid_BX_Unit_Shotgun", "AUX_95th_Droid_BX_Unit_Sniper",
+			"AUX_95th_CIS_TS_F", "AUX_95th_CIS_TS_Green", "AUX_95th_CIS_TS_Red"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -223,6 +224,7 @@ class CfgEditorCategories{
 class CfgEditorSubcategories {
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Infantry{displayName="Infantry";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos{displayName="Commandos";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries{displayName="T-Series";};
 };
 
 class CfgVehicles {
@@ -318,6 +320,34 @@ class CfgVehicles {
         uniformClass="lsd_cis_bxCaptainDroid_uniform";
     };
 
+	// T-Series
+	class 3AS_CIS_TS_F;
+	class 3AS_CIS_TS_Green;
+	class 3AS_CIS_TS_Red;
+
+    class AUX_95th_CIS_TS_F: 3AS_CIS_TS_F {
+        displayName = "T-Series (Blue)";
+		scope = 2;
+        faction="AUX_95th_Faction_SeparatistDroids";
+        editorCategory="AUX_95th_Faction_SeparatistDroids";
+		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries";
+	};
+
+    class AUX_95th_CIS_TS_Green: 3AS_CIS_TS_Green {
+        displayName = "T-Series (Green)";
+		scope = 2;
+        faction="AUX_95th_Faction_SeparatistDroids";
+        editorCategory="AUX_95th_Faction_SeparatistDroids";
+		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries";
+	};
+
+    class AUX_95th_CIS_TS_Red: 3AS_CIS_TS_Red {
+        displayName = "T-Series (Red)";
+		scope = 2;
+        faction="AUX_95th_Faction_SeparatistDroids";
+        editorCategory="AUX_95th_Faction_SeparatistDroids";
+		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries";
+	};
 };
 
 #include "CfgEventHandlers.hpp"
