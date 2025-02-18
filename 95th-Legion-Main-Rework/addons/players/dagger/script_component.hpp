@@ -1,13 +1,13 @@
-#define COMPONENT players_sparkie
-#define COMPONENT_BEAUTIFIED Players_Sparkie
-#define PLAYER_NAME sparkie
-#define PLAYER_NAME_BEAUTIFIED Sparkie
+#define COMPONENT players_dagger
+#define COMPONENT_BEAUTIFIED Players_Dagger
+#define PLAYER_NAME dagger
+#define PLAYER_NAME_BEAUTIFIED Dagger
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY One_Three
+#define SQUAD_KEY One_Two
 
 // HELMET OPTIONS 0 (False), 1 (True)
-#define HELMET_P1_BASIC 1
+#define HELMET_P1_BASIC 0
 #define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
@@ -31,15 +31,15 @@
 #define BACKPACK_RUCKSACK_HEAVY 0
 #define BACKPACK_RUCKSACK_MEDIC 0
 #define BACKPACK_RUCKSACK_ORDNANCE 0
-#define JETPACK_JT12_LIGHT 0
-#define JETPACK_JT12_MEDIC 0
+#define JETPACK_JT12_LIGHT 1
+#define JETPACK_JT12_MEDIC 1
 #define JETPACK_JT14_LIGHT 0
 #define BACKPACK_COMMANDO_HEAVY 0
 
 // VEST OPTIONS 0 (False), 1 (True)
 #define VEST_STANDARD_SET 0
 #define VEST_ARC_SET 0
-#define VEST_OFFICER_SET 1
+#define VEST_OFFICER_SET 0
 #define VEST_COMMANDO_SET 0
 
 // DO NOT EDIT
@@ -48,4 +48,4 @@
 #include "\z\AUX_95th\addons\main\script_macros.hpp"
 
 //TODO:
-// Vests need replacing really
+// Vests need replacing really 
