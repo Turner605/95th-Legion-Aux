@@ -6,7 +6,11 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"AUX_95th_Extras_main", "3AS_AAT"};
+        requiredAddons[] = {
+            "AUX_95th_Extras_main",
+            "3AS_AAT",
+            "ls_vehicles_ground"
+        };
         authors[] = {"Turner"};
         VERSION_CONFIG;
     };
@@ -22,24 +26,20 @@ class CfgFunctions {
 };
 
 class CfgVehicles {
-    // class Car_F;
-    // class C_Offroad_01_F: Car_F {
-    //     scope = 0;
-    // };
+    class 3AS_CIS_AAT_F;
+    class 3AS_AAT: 3AS_CIS_AAT_F { scope = 0; };
 
-    // 3AS_AAT
-    // 3AS_AAT_Winter
-    // 3AS_AAT_Desert
-    // 3AS_AAT_Arid
-    // 3AS_AAT_Green
-    // 3AS_AAT_Red
-    // class 3AS_CIS_AAT_F;
-    // class 3AS_AAT: 3AS_CIS_AAT_F {
-    //     scope = 0;
-    // };
+    class ls_ground_aat_base;
+    class ls_ground_aat: ls_ground_aat_base { scope = 0; };
+
+    class 3AS_SAC_Base_F;
+    class 3AS_SAC_F: 3AS_SAC_Base_F { scope = 0; };
+
+    class 3AS_PAC_Base_F;
+    class 3AS_PAC_F: 3AS_PAC_Base_F { scope = 0; };
 
 
-    
+
 
 // 3AS_CIS_Vulture_F
 // 3AS_CIS_Vulture_AA_F
