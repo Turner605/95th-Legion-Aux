@@ -50,6 +50,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Drones{displayName="Drones";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Helicopters{displayName="Helicopters";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Planes{displayName="Planes";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets{displayName="Turrets";};
 };
 
 class CfgFunctions {

@@ -140,6 +140,21 @@ class CfgVehicles {
     class lsd_largeVTOL_federationDropship_base: lsd_largeVTOL_base { scope = 0; };
     class lsd_largeVTOL_cisDropship: lsd_largeVTOL_federationDropship_base { scope = 0; };
 
+    // Turrets
+    class 3AS_Deka_Static_Sniper_Base;
+    class 3AS_Deka_Static_Sniper: 3AS_Deka_Static_Sniper_Base { scope = 0; };
+
+    class 3AS_Deka_Static_Base;
+    class 3AS_Deka_Static: 3AS_Deka_Static_Base { scope = 0; };
+
+    class ls_turret_autoturret_base;
+    class ls_turret_pirate_autoturret: ls_turret_autoturret_base { scope = 0; };
+
+    class ls_turret_autoturret_CQC_base;
+    class ls_turret_pirate_autoturretCQC: ls_turret_autoturret_CQC_base { scope = 0; };
+
+    class JLTS_UST_turret_base;
+    class JLTS_UST_turret_CIS: JLTS_UST_turret_base { scope = 0; };
 
 
 

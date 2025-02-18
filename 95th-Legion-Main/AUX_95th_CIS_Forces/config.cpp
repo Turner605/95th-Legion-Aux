@@ -49,14 +49,6 @@ class CfgPatches {
 			"AUX_95th_Tank_Unit_GAT",
 			"AUX_95th_Tank_Unit_GAT_Light",
 
-			"AUX_95th_Droid_Turret_Roof_Turret",
-			"AUX_95th_Droid_Turret_Roof_Turret_Shotgun",
-			"AUX_95th_Droid_Turret_Ball",
-			"AUX_95th_Droid_Radar_Jammer_Turret",
-			"AUX_95th_Droid_Microwave_Emitter_Turret",
-			"AUX_95th_Droid_Droideka_Turret",
-			"AUX_95th_Droid_Droideka_Sniper_Turret",
-
 			"AUX_95th_Independent_B1_Unit_Diplomat", 
 			"AUX_95th_Independent_B1_Unit_Firefighter", 
 			"AUX_95th_Independent_B1_Unit_Medic", 
@@ -149,15 +141,6 @@ class CfgVehicles {
 	#include "Units\Tanks\DSD.hpp"
 	#include "Units\Tanks\Hailfire.hpp"
 	#include "Units\Tanks\GAT.hpp"
-
-	// Turrets
-	#include "Units\Turrets\Roof Turret Blaster.hpp"
-	#include "Units\Turrets\Roof Turret Shotgun.hpp"
-	#include "Units\Turrets\Turret Ball.hpp"
-	#include "Units\Turrets\Radar Jammer.hpp"
-	#include "Units\Turrets\Microwave Emitter.hpp"
-	#include "Units\Turrets\Droideka.hpp"
-	#include "Units\Turrets\Droideka Sniper.hpp"
 
 	//############################################################### B1 Units ###############################################################
 	NEW_95TH_INDEPENDENT_B1_UNIT(Diplomat,Diplomat);
