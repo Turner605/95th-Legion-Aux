@@ -124,7 +124,6 @@ class CfgVehicles {
 
 	// Air Units
 	#include "Units\Air Units\Tri Fighter.hpp"
-	#include "Units\Air Units\Vultures.hpp"
 	#include "Units\Air Units\Dropship.hpp"
 
 	// B1 Units

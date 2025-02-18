@@ -26,9 +26,7 @@ class 3AS_Advanced_DSD;
 class 3AS_MTT;
 class 3AS_N99;
 class 3AS_Tri_Fighter_DynamicLoadout;
-class 3AS_CIS_Vulture_CAS_F;
-class 3AS_CIS_Vulture_AA_F;
-class 3AS_CIS_Vulture_F;
+
 class lsd_largeVTOL_cisDropship;
 class 3AS_DF9_Radar_Grey;
 class lsd_cis_radarDish;

@@ -108,7 +108,7 @@ class CfgVehicles {
     // class 3AS_CIS_TS_Red: 3AS_CIS_TS_Base { scope = 0; };
     // class 3AS_CIS_TS_TV24: 3AS_CIS_TS_Base { scope = 0; };
 
-    // Air
+    // Air (Gunships)
     class 3AS_HMP_Base;
     class 3AS_HMP_Gunship: 3AS_HMP_Base { scope = 0; };
     class 3AS_HMP_Transport: 3AS_HMP_Base { scope = 0; };
@@ -121,14 +121,27 @@ class CfgVehicles {
     class ls_cis_hmp: ls_hmp_base { scope = 0; };
     class ls_cis_hmp_transport: ls_hmp_base { scope = 0; };
 
+    // Air (Vultures)
+    class 3AS_Vulture_Base_F;
+    class 3AS_CIS_Vulture_F: 3AS_Vulture_Base_F { scope = 0; };
+    class 3AS_CIS_Vulture_Brown: 3AS_Vulture_Base_F { scope = 0; };
+    class 3AS_CIS_Vulture_Tan: 3AS_Vulture_Base_F { scope = 0; };
 
-// 3AS_CIS_Vulture_F
-// 3AS_CIS_Vulture_AA_F
-// 3AS_CIS_Vulture_CAS_F
+    class 3AS_CIS_Vulture_AA_F: 3AS_Vulture_Base_F { scope = 0; };
+    class 3AS_CIS_Vulture_AA_Brown: 3AS_CIS_Vulture_AA_F { scope = 0; };
+    class 3AS_CIS_Vulture_AA_Tan: 3AS_CIS_Vulture_AA_F { scope = 0; };
+
+    class 3AS_CIS_Vulture_CAS_F: 3AS_Vulture_Base_F { scope = 0; };
+    class 3AS_CIS_Vulture_CAS_Tan: 3AS_CIS_Vulture_CAS_F { scope = 0; };
+    class 3AS_CIS_Vulture_CAS_Brown: 3AS_CIS_Vulture_CAS_F { scope = 0; };
+
+
+
+
+
+
 // 3AS_Tri_Fighter_DynamicLoadout
 // lsd_largeVTOL_cisDropship
-// ls_cis_hmp
-// ls_cis_hmp_transport
 // JLTS_Droid_B1_AT
 // JLTS_Droid_B1_AR
 // JLTS_Droid_B1_Commander
