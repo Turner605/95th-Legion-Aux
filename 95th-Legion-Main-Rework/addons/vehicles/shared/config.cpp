@@ -46,6 +46,7 @@ class CfgEditorSubcategories {
 
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_APC{displayName="APCs";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Cars{displayName="Cars";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Factories{displayName="Factories";};
 };
 
 class CfgFunctions {
