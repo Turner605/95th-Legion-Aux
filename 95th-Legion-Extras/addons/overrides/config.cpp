@@ -38,6 +38,10 @@ class CfgVehicles {
     class 3AS_PAC_Base_F;
     class 3AS_PAC_F: 3AS_PAC_Base_F { scope = 0; };
 
+    class 3AS_Fliknot_Base_F;
+    class 3AS_Fliknot_F: 3AS_Fliknot_Base_F { scope = 0; };
+    class 3AS_Fliknot_Brown: 3AS_Fliknot_Base_F { scope = 0; };
+    
 
 
 

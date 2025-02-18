@@ -45,7 +45,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_Legion_Vehicles_Category_Ground_Drones { displayName="Ground (Drones)"; };
 
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_APC{displayName="APCs";};
-
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Cars{displayName="Cars";};
 };
 
 class CfgFunctions {
