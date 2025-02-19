@@ -75,6 +75,17 @@ class CfgVehicles {
     class ls_ground_mtt_cisBlue: ls_ground_mtt_base { scope = 0; };
     class ls_ground_mtt_federation: ls_ground_mtt_cisBlue { scope = 0; };
 
+    class 3AS_Hailfire_Base;
+    class 3AS_Hailfire_SAM: 3AS_Hailfire_Base { scope = 0; };
+    class 3AS_Hailfire_AT: 3AS_Hailfire_Base { scope = 0; };
+    class 3AS_Hailfire_Rocket: 3AS_Hailfire_Base { scope = 0; };
+
+    class Tank_F;
+    class ls_ground_bawhag_base;
+    class 3AS_HAGM_Tan: Tank_F { scope = 0; };
+    class 3AS_HAGM_CIS: 3AS_HAGM_Tan { scope = 0; };
+    class ls_ground_bawhag: ls_ground_bawhag_base { scope = 0; };
+
     // 3AS Droids
     class JLTS_Droid_B1_E5;
     class TAS_Droid_B1_E5: JLTS_Droid_B1_E5 { scope = 0; };

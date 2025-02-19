@@ -15,8 +15,6 @@ class CfgPatches {
         name="AUX 95th Droid Units";
 		requiredAddons[]={"A3_Characters_F", "JLTS_characters_DroidUnits", "AUX_95th_voicelines"};
 		units[]={
-			"AUX_95th_Air_Unit_Tri_Fighter",
-
 			"AUX_95th_Droid_B1_Unit_AA",
 			"AUX_95th_Droid_B1_Unit_AT",
 			"AUX_95th_Droid_B1_Unit_AutoRifleman",
@@ -34,15 +32,6 @@ class CfgPatches {
 			"AUX_95th_Droid_B2_Unit_Shotgun",
 
 			"AUX_95th_Human_Unit_Riot",
-
-			"AUX_95th_Tank_Unit_N99",
-			"AUX_95th_Tank_Unit_DSD",
-			"AUX_95th_Tank_Unit_MTT",
-			"AUX_95th_Tank_Unit_Hailfire_AT",
-			"AUX_95th_Tank_Unit_Hailfire_SAM",
-			"AUX_95th_Tank_Unit_Artillery",
-			"AUX_95th_Tank_Unit_GAT",
-			"AUX_95th_Tank_Unit_GAT_Light",
 
 			"AUX_95th_Independent_B1_Unit_Diplomat", 
 			"AUX_95th_Independent_B1_Unit_Firefighter", 
@@ -125,9 +114,6 @@ class CfgVehicles {
 
 	// Humans
 	#include "Units\Humans\Riot.hpp"
-
-	// Tanks
-	#include "Units\Tanks\Hailfire.hpp"
 
 	//############################################################### B1 Units ###############################################################
 	NEW_95TH_INDEPENDENT_B1_UNIT(Diplomat,Diplomat);

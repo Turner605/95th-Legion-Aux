@@ -14,7 +14,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "AUX_95th_main", 
-            "AUX_95th_units_shared"
+            "AUX_95th_units_shared",
+			"JLTS_characters_DroidUnits"
         };
         authors[] = {"Turner"};
         skipWhenMissingDependencies = 1;
