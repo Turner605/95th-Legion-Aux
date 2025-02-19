@@ -86,58 +86,64 @@ class CfgVehicles {
     class 3AS_HAGM_CIS: 3AS_HAGM_Tan { scope = 0; };
     class ls_ground_bawhag: ls_ground_bawhag_base { scope = 0; };
 
-    // 3AS Droids
-    class JLTS_Droid_B1_E5;
-    class TAS_Droid_B1_E5: JLTS_Droid_B1_E5 { scope = 0; };
+    // B1 Droids
+    class O_Soldier_F;
+    class JLTS_Droid_B1_E5: O_Soldier_F { scope = 1; };
+    class JLTS_Droid_B1_SBB3: JLTS_Droid_B1_E5 { scope = 1; };
+    class TAS_Droid_B1_E5: JLTS_Droid_B1_E5 { scope = 1; };
+    class JLTS_Droid_B1_Rocket: JLTS_Droid_B1_E5 { scope = 1; };
+    class JLTS_Droid_B1_Prototype: JLTS_Droid_B1_E5 { scope = 1; };
+    class JLTS_Droid_B1_Security: JLTS_Droid_B1_E5 { scope = 1; };
 
-    class JLTS_Droid_B1_AR;
-    class TAS_Droid_B1_AR: JLTS_Droid_B1_AR { scope = 0; };
+    class O_officer_F;
+    class JLTS_Droid_B1_Commander: O_officer_F { scope = 1; };
+    class JLTS_Droid_B1_OOM9: JLTS_Droid_B1_Commander { scope = 1; };
 
-    class JLTS_Droid_B1_AT;
-    class TAS_Droid_B1_AT: JLTS_Droid_B1_AT { scope = 0; };
+    class JLTS_Droid_B1_UAV_prowler: O_Soldier_F { scope = 1; };
 
-    class JLTS_Droid_B1_Commander;
-    class TAS_Droid_B1_Commander: JLTS_Droid_B1_Commander { scope = 0; };
+    class TAS_Droid_B1_Prototype: JLTS_Droid_B1_Prototype { scope = 1; };
 
-    class JLTS_Droid_B1_Crew;
-    class TAS_Droid_B1_Crew: JLTS_Droid_B1_Crew { scope = 0; };
+    class O_Soldier_LAT_F;
+    class JLTS_Droid_B1_AT: O_Soldier_LAT_F { scope = 1; };
+    class TAS_Droid_B1_AT: JLTS_Droid_B1_AT { scope = 1; };
 
-    class JLTS_Droid_B1_Prototype;
-    class TAS_Droid_B1_Prototype: JLTS_Droid_B1_Prototype { scope = 0; };
+    class O_crew_F;
+    class JLTS_Droid_B1_Crew: O_crew_F { scope = 1; };
+    class TAS_Droid_B1_Crew: JLTS_Droid_B1_Crew { scope = 1; };
 
-    class JLTS_Droid_B1_UAV_prowler;
-    class TAS_Droid_B1_UAV_prowler: JLTS_Droid_B1_UAV_prowler { scope = 0; };
+    class O_sniper_F;
+    class JLTS_Droid_B1_Sniper: O_sniper_F { scope = 1; };
 
-    class JLTS_Droid_B1_Rocket;
-    class TAS_Droid_B1_Rocket: JLTS_Droid_B1_Rocket { scope = 0; };
+    class O_Soldier_AR_F;
+    class JLTS_Droid_B1_AR: O_Soldier_AR_F { scope = 1; };
+    class TAS_Droid_B1_AR: JLTS_Droid_B1_AR { scope = 1; };
 
-    class JLTS_Droid_B1_SBB3;
-    class TAS_Droid_B1_SBB3: JLTS_Droid_B1_SBB3 { scope = 0; };
+    class O_helipilot_F;
+    class JLTS_Droid_B1_Pilot: O_helipilot_F { scope = 1; };
 
-    class JLTS_Droid_B1_Security;
-    class TAS_Droid_B1_Security: JLTS_Droid_B1_Security { scope = 0; };
+    class O_Soldier_AT_F;
+    class JLTS_Droid_B1_Marine: O_Soldier_AT_F { scope = 1; };
 
-    class JLTS_Droid_B1_Sniper;
-    class TAS_Droid_B1_Sniper: JLTS_Droid_B1_Sniper { scope = 0; };
-
+    class TAS_Droid_B1_Commander: JLTS_Droid_B1_Commander { scope = 1; };
+    class TAS_Droid_B1_Rocket: JLTS_Droid_B1_Rocket { scope = 1; };
+    class TAS_Droid_B1_SBB3: JLTS_Droid_B1_SBB3 { scope = 1; };
+    class TAS_Droid_B1_Security: JLTS_Droid_B1_Security { scope = 1; };
+    class TAS_Droid_B1_Sniper: JLTS_Droid_B1_Sniper { scope = 1; };
+    class TAS_Droid_B1_Marine: JLTS_Droid_B1_Marine { scope = 1; };
+    class TAS_Droid_B1_Pilot: JLTS_Droid_B1_Pilot { scope = 1; };
+    class TAS_Droid_B1_UAV_prowler: JLTS_Droid_B1_UAV_prowler { scope = 1; };
+    
     class 3AS_CIS_B2_Base;
-    class 3AS_CIS_B2_F: 3AS_CIS_B2_Base { scope = 0; };
+    class 3AS_CIS_B2_F: 3AS_CIS_B2_Base { scope = 1; };
 
-    class JLTS_Droid_B1_OOM9;
-    class TAS_Droid_B1_OOM9: JLTS_Droid_B1_OOM9 { scope = 0; };
-
-    class JLTS_Droid_B1_Marine;
-    class TAS_Droid_B1_Marine: JLTS_Droid_B1_Marine { scope = 0; };
-
-    class JLTS_Droid_B1_Pilot;
-    class TAS_Droid_B1_Pilot: JLTS_Droid_B1_Pilot { scope = 0; };
+    class TAS_Droid_B1_OOM9: JLTS_Droid_B1_OOM9 { scope = 1; };
 
     // T-Series Theres an issue I cant be arsed figuring out
-    // class 3AS_CIS_TS_Base;
-    // class 3AS_CIS_TS_F: 3AS_CIS_TS_Base { scope = 0; };
-    // class 3AS_CIS_TS_Green: 3AS_CIS_TS_Base { scope = 0; };
-    // class 3AS_CIS_TS_Red: 3AS_CIS_TS_Base { scope = 0; };
-    // class 3AS_CIS_TS_TV24: 3AS_CIS_TS_Base { scope = 0; };
+    class 3AS_CIS_TS_Base;
+    class 3AS_CIS_TS_F: 3AS_CIS_TS_Base { scope = 1; };
+    class 3AS_CIS_TS_Green: 3AS_CIS_TS_Base { scope = 1; };
+    class 3AS_CIS_TS_Red: 3AS_CIS_TS_Base { scope = 1; };
+    class 3AS_CIS_TS_TV24: 3AS_CIS_TS_Base { scope = 1; };
 
     // Air (Gunships)
     class 3AS_HMP_Base;
@@ -190,7 +196,12 @@ class CfgVehicles {
     class JLTS_UST_turret_base;
     class JLTS_UST_turret_CIS: JLTS_UST_turret_base { scope = 0; };
 
-
+    // B2's
+    class lsd_cis_b2Droid_base;
+    class lsd_cis_b2_standard: lsd_cis_b2Droid_base { scope = 0; };
+    class WBK_B2_Mod_Standart: lsd_cis_b2_standard { scope = 0; };
+    class WBK_B2_Mod_GL: WBK_B2_Mod_Standart { scope = 0; };
+    class WBK_B2_Mod_Shotgun: WBK_B2_Mod_Standart { scope = 0; };
 
 // 3AS_Tri_Fighter_DynamicLoadout
 // lsd_largeVTOL_cisDropship

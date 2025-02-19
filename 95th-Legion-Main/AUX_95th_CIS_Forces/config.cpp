@@ -15,13 +15,6 @@ class CfgPatches {
         name="AUX 95th Droid Units";
 		requiredAddons[]={"A3_Characters_F", "JLTS_characters_DroidUnits", "AUX_95th_voicelines"};
 		units[]={
-			"AUX_95th_Droid_B1_Rocket_Unit_Rifleman",
-			"AUX_95th_Droid_B1_Rocket_Unit_AT",
-
-			"AUX_95th_Droid_B2_Unit_Blaster",
-			"AUX_95th_Droid_B2_Unit_GL",
-			"AUX_95th_Droid_B2_Unit_Shotgun",
-
 			"AUX_95th_Human_Unit_Riot",
 
 			"AUX_95th_Independent_B1_Unit_Diplomat", 
@@ -83,15 +76,6 @@ class CfgWeapons {
 
 class CfgVehicles {
 	#include "Definitions.hpp"
-
-	// B1 Rocket Units
-	#include "Units\B1 Rocket\Rifleman.hpp"
-	#include "Units\B1 Rocket\AT.hpp"
-
-	// B2 Units
-	#include "Units\B2\Blaster.hpp"
-	#include "Units\B2\GL.hpp"
-	#include "Units\B2\Shotgun.hpp"
 
 	// Humans
 	#include "Units\Humans\Riot.hpp"

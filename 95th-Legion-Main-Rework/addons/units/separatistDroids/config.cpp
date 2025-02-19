@@ -6,7 +6,11 @@ class CfgPatches {
         units[] = {
 			"AUX_95th_Droid_B1_Unit_AA", "AUX_95th_Droid_B1_Unit_AT", "AUX_95th_Droid_B1_Unit_AutoRifleman",
 			"AUX_95th_Droid_B1_Unit_Commander", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Shotgun",
-			"AUX_95th_Droid_B1_Unit_Sniper", "AUX_95th_Droid_B1_Unit_Crew",
+			"AUX_95th_Droid_B1_Unit_Sniper", "AUX_95th_Droid_B1_Unit_Crew", "AUX_95th_Droid_B1_Unit_Pilot",
+
+			"AUX_95th_Droid_B1_Rocket_Unit_Rifleman", "AUX_95th_Droid_B1_Rocket_Unit_AT",
+
+			"AUX_95th_Droid_B2_Unit_Blaster", "AUX_95th_Droid_B2_Unit_GL", "AUX_95th_Droid_B2_Unit_Shotgun",
 
             "AUX_95th_Droid_BX_Unit_Rifleman", "AUX_95th_Droid_BX_Unit_Commander", "AUX_95th_Droid_BX_Unit_Guard",
 			"AUX_95th_Droid_BX_Unit_Diplomat", "AUX_95th_Droid_BX_Unit_Shotgun", "AUX_95th_Droid_BX_Unit_Sniper",
@@ -238,6 +242,8 @@ class CfgEditorSubcategories {
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos{displayName="Commandos";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries{displayName="T-Series";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids{displayName="B1 Battledroids";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids_Rocket{displayName="B1 Battledroids (Rocket)";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B2_Battledroids{displayName="B2 Battledroids";};
 };
 
 class CBA_Extended_EventHandlers_base;
@@ -252,6 +258,7 @@ class CfgVehicles {
 	class JLTS_Droid_B1_Crew;
 	class JLTS_Droid_B1_Rocket;
 	class JLTS_Droid_B1_Prototype;
+	class JLTS_Droid_B1_Pilot;
 
     class lsd_cis_bxdroid_specops;
 	class AUX_95th_Unit_P1_Basic_Trooper;
@@ -260,9 +267,17 @@ class CfgVehicles {
 	class 3AS_CIS_TS_Green;
 	class 3AS_CIS_TS_Red;
 
+	class WBK_B2_Mod_Standart;
+	class WBK_B2_Mod_GL;
+	class WBK_B2_Mod_Shotgun;
+
 	// B1's
 	#include "Units\standardB1s.hpp"
 	#include "Units\specialB1s.hpp"
+	#include "Units\rocketB1s.hpp"
+
+	// B2's
+	#include "Units\B2s.hpp"
 	
 	// BX's
 	#include "Units\bxs.hpp"
