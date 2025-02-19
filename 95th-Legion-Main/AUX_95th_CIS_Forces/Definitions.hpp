@@ -6,6 +6,8 @@ class JLTS_Droid_B1_SBB3;
 class JLTS_Droid_B1_Sniper;
 class JLTS_Droid_B1_Crew;
 class JLTS_Droid_B1_Rocket;
+class JLTS_Droid_B1_Prototype;
+
 class WBK_B2_Mod_Standart;
 class WBK_B2_Mod_GL;
 class WBK_B2_Mod_Shotgun;
