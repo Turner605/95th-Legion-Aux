@@ -23,6 +23,7 @@ class CfgVehicles {
 
     class AUX_95th_Tank_Unit_Hailfire_AT: 3AS_Hailfire_AT {
         displayName="Hailfire (AT)";
+		scope = 2;
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Tanks";
@@ -31,6 +32,7 @@ class CfgVehicles {
     
     class AUX_95th_Tank_Unit_Hailfire_SAM: 3AS_Hailfire_SAM {
         displayName="Hailfire (AA)";
+		scope = 2;
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Tanks";
@@ -39,6 +41,7 @@ class CfgVehicles {
     
     class AUX_95th_Tank_Unit_Artillery: 3AS_Hailfire_Rocket {
         displayName="Hailfire (Artillery)";
+		scope = 2;
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Tanks";
