@@ -7,7 +7,6 @@
 
 // JLTS_Droid_B1_Prototype ???
 #include "Macros\Commando Units.hpp"
-#include "Macros\B1 Units.hpp"
 
 class CfgPatches {
 	class AUX_95th_CIS_Forces {
@@ -16,11 +15,6 @@ class CfgPatches {
 		requiredAddons[]={"A3_Characters_F", "JLTS_characters_DroidUnits", "AUX_95th_voicelines"};
 		units[]={
 			"AUX_95th_Human_Unit_Riot",
-
-			"AUX_95th_Independent_B1_Unit_Diplomat", 
-			"AUX_95th_Independent_B1_Unit_Firefighter", 
-			"AUX_95th_Independent_B1_Unit_Medic", 
-			"AUX_95th_Independent_B1_Unit_Police"
 		};
 	};
 };
@@ -49,49 +43,11 @@ class CfgEditorSubcategories {
 
 class CBA_Extended_EventHandlers_base;
 
-class CfgWeapons {
-    class ItemCore;
-    class UniformItem;
-    class Uniform_Base: ItemCore { class ItemInfo; };
-
-	class JLTS_DroidB1;
-
-	class JLTS_E5_shield;
-	class JLTS_E5_shield_attached : JLTS_E5_shield {
-		scope = 1;
-		class LinkedItems {
-			class LinkedItemsUnder {
-				slot = "UnderBarrelSlot";
-				item = "JLTS_riot_shield_droid_attachment";
-			};
-		};
-	};
-
-	//############################################################### B1 Uniforms ###############################################################
-	NEW_95TH_INDEPENDENT_B1_UNIFORM(Diplomat);
-	NEW_95TH_INDEPENDENT_B1_UNIFORM(Firefighter);
-	NEW_95TH_INDEPENDENT_B1_UNIFORM(Medic);
-	NEW_95TH_INDEPENDENT_B1_UNIFORM(Police);
-};
-
 class CfgVehicles {
 	#include "Definitions.hpp"
 
 	// Humans
 	#include "Units\Humans\Riot.hpp"
-
-	//############################################################### B1 Units ###############################################################
-	NEW_95TH_INDEPENDENT_B1_UNIT(Diplomat,Diplomat);
-	NEW_95TH_INDEPENDENT_B1_UNIT(Firefighter,Firefighter);
-	NEW_95TH_INDEPENDENT_B1_UNIT(Medic,Medic);
-	NEW_95TH_INDEPENDENT_B1_UNIT(Police,Police);
-
-	//############################################################### B1 Backpacks ###############################################################
-	NEW_95TH_INDEPENDENT_B1_BACKPACK(Diplomat);
-	NEW_95TH_INDEPENDENT_B1_BACKPACK(Firefighter);
-	NEW_95TH_INDEPENDENT_B1_BACKPACK(Medic);
-	NEW_95TH_INDEPENDENT_B1_BACKPACK(Police);
-
 };
 
 class CfgGroups {

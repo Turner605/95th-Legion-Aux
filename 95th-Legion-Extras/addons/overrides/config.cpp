@@ -86,6 +86,9 @@ class CfgVehicles {
     class 3AS_HAGM_CIS: 3AS_HAGM_Tan { scope = 0; };
     class ls_ground_bawhag: ls_ground_bawhag_base { scope = 0; };
 
+    class JLTS_UGV_MSE6;
+    class JLTS_UGV_MSE6_CIS: JLTS_UGV_MSE6 { scope = 0; };
+
     // B1 Droids
     class O_Soldier_F;
     class JLTS_Droid_B1_E5: O_Soldier_F { scope = 1; };
