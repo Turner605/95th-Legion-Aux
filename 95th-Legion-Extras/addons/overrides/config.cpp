@@ -59,15 +59,21 @@ class CfgVehicles {
     class 3AS_N99: 3AS_CIS_N99_F { scope = 0; };
     class 3AS_N99_Canister: 3AS_CIS_N99_F { scope = 0; };
 
+    class 3AS_Advanced_DSD_Base;
+    class 3AS_Advanced_DSD: 3AS_Advanced_DSD_Base { scope = 0; };
 
+    class 3AS_CIS_GAT_base_F;
+    class 3AS_GAT: 3AS_CIS_GAT_base_F { scope = 0; };
 
+    class 3AS_GAT_Light_base_F;
+    class 3AS_GAT_Light: 3AS_GAT_Light_base_F { scope = 0; };
 
-    // 3AS_Advanced_DSD","3AS_Advanced_DSD_Base
-    // 3AS_GAT","3AS_CIS_GAT_base_F
-    // 3AS_GAT_Light","3AS_GAT_Light_base_F
-    // 3AS_MTT","3AS_MTT_01_Base
-    // ls_ground_mtt_cisBlue","ls_ground_mtt_base
-    // ls_ground_mtt_federation","ls_ground_mtt_cisBlue
+    class 3AS_MTT_01_Base;
+    class 3AS_MTT: 3AS_MTT_01_Base { scope = 0; };
+
+    class ls_ground_mtt_base;
+    class ls_ground_mtt_cisBlue: ls_ground_mtt_base { scope = 0; };
+    class ls_ground_mtt_federation: ls_ground_mtt_cisBlue { scope = 0; };
 
     // 3AS Droids
     class JLTS_Droid_B1_E5;

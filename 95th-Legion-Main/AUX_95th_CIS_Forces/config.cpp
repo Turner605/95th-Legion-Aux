@@ -130,7 +130,6 @@ class CfgVehicles {
 	#include "Units\Tanks\MTT.hpp"
 	#include "Units\Tanks\DSD.hpp"
 	#include "Units\Tanks\Hailfire.hpp"
-	#include "Units\Tanks\GAT.hpp"
 
 	//############################################################### B1 Units ###############################################################
 	NEW_95TH_INDEPENDENT_B1_UNIT(Diplomat,Diplomat);
