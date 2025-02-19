@@ -55,6 +55,20 @@ class CfgVehicles {
     class lsd_agtRaptor_base;
     class lsd_ground_agtRaptor: lsd_agtRaptor_base { scope = 0; };
     
+    class 3AS_CIS_N99_F;
+    class 3AS_N99: 3AS_CIS_N99_F { scope = 0; };
+    class 3AS_N99_Canister: 3AS_CIS_N99_F { scope = 0; };
+
+
+
+
+    // 3AS_Advanced_DSD","3AS_Advanced_DSD_Base
+    // 3AS_GAT","3AS_CIS_GAT_base_F
+    // 3AS_GAT_Light","3AS_GAT_Light_base_F
+    // 3AS_MTT","3AS_MTT_01_Base
+    // ls_ground_mtt_cisBlue","ls_ground_mtt_base
+    // ls_ground_mtt_federation","ls_ground_mtt_cisBlue
+
     // 3AS Droids
     class JLTS_Droid_B1_E5;
     class TAS_Droid_B1_E5: JLTS_Droid_B1_E5 { scope = 0; };
@@ -139,6 +153,9 @@ class CfgVehicles {
     class lsd_largeVTOL_base;
     class lsd_largeVTOL_federationDropship_base: lsd_largeVTOL_base { scope = 0; };
     class lsd_largeVTOL_cisDropship: lsd_largeVTOL_federationDropship_base { scope = 0; };
+
+    class 3AS_Tri_Fighter_DynamicLoadout_Base;
+    class 3AS_Tri_Fighter_DynamicLoadout: 3AS_Tri_Fighter_DynamicLoadout_Base { scope = 0; };
 
     // Turrets
     class 3AS_Deka_Static_Sniper_Base;
