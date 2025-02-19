@@ -127,7 +127,6 @@ class CfgVehicles {
 	#include "Units\Humans\Riot.hpp"
 
 	// Tanks
-	#include "Units\Tanks\MTT.hpp"
 	#include "Units\Tanks\DSD.hpp"
 	#include "Units\Tanks\Hailfire.hpp"
 
