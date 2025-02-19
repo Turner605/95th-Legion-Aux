@@ -35,11 +35,6 @@ class CfgPatches {
 
 			"AUX_95th_Human_Unit_Riot",
 
-			"AUX_95th_Tank_Unit_AAT",
-			"AUX_95th_Tank_Unit_AAT_Winter",
-			"AUX_95th_Tank_Unit_AAT_Desert",
-			"AUX_95th_Tank_Unit_AAT_Arid",
-			"AUX_95th_Tank_Unit_AAT_Heavy",
 			"AUX_95th_Tank_Unit_N99",
 			"AUX_95th_Tank_Unit_DSD",
 			"AUX_95th_Tank_Unit_MTT",
@@ -135,7 +130,6 @@ class CfgVehicles {
 	#include "Units\Humans\Riot.hpp"
 
 	// Tanks
-	#include "Units\Tanks\AATs.hpp"
 	#include "Units\Tanks\N99.hpp"
 	#include "Units\Tanks\MTT.hpp"
 	#include "Units\Tanks\DSD.hpp"
