@@ -104,9 +104,6 @@ class CfgWeapons {
 class CfgVehicles {
 	#include "Definitions.hpp"
 
-	// Air Units
-	#include "Units\Air Units\Tri Fighter.hpp"
-
 	// B1 Units
 	#include "Units\B1\AA.hpp"
 	#include "Units\B1\AT.hpp"
