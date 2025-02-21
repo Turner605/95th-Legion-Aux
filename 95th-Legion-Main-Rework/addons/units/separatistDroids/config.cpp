@@ -8,7 +8,9 @@ class CfgPatches {
 			"AUX_95th_Droid_B1_Unit_Commander", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Shotgun",
 			"AUX_95th_Droid_B1_Unit_Sniper", "AUX_95th_Droid_B1_Unit_Crew", "AUX_95th_Droid_B1_Unit_Pilot",
 			"AUX_95th_Droid_B1_Unit_Diplomat", "AUX_95th_Droid_B1_Unit_Firefighter", 
-			"AUX_95th_Droid_B1_Unit_Medic", "AUX_95th_Droid_B1_Unit_Police",
+			"AUX_95th_Droid_B1_Unit_Medic", "AUX_95th_Droid_B1_Unit_Police", 
+			
+			"AUX_95th_Droid_B1_Random", "AUX_95th_Droid_B1_Random_Standard_Launchers", "AUX_95th_Droid_B1_Random_Specialists",
 			
 			"AUX_95th_Droid_B1_Rocket_Unit_Rifleman", "AUX_95th_Droid_B1_Rocket_Unit_AT",
 
@@ -227,6 +229,7 @@ class CfgFunctions {
 		class SeparatistDroidsB1 {
 			file = "\z\AUX_95th\addons\units\separatistDroids\functions\B1";
             class handleB1ShieldInit {};
+            class spawnRandomB1 {};
         };
     };
 };
@@ -246,6 +249,69 @@ class CfgEditorSubcategories {
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids{displayName="B1 Battledroids";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids_Rocket{displayName="B1 Battledroids (Rocket)";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B2_Battledroids{displayName="B2 Battledroids";};
+};
+
+class CfgGroups {
+	class East {
+		class AUX_95th_Faction_SeparatistDroids  {
+			name = "[95th] Separatist Droids";
+			class AUX_95th_Faction_SeparatistDroids_B1 {
+				name = "B1 Battledroids (Standard)";
+
+				class AUX_95th_Groups_Droid_B1_FireTeam {
+					side = 0;
+					faction = "AUX_95th_Faction_SeparatistDroids";
+					name="B1 Fire Team";
+					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "SERGEANT"; position[] = {0,0,0};};
+					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {5,-5,0};};
+					class Unit2 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit3 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AutoRifleman"; rank = "PRIVATE"; position[] = {10,-10,0};};
+				};
+
+				class AUX_95th_Groups_Droid_B1_AssaultTeam_AT {
+					side = 0;
+					faction = "AUX_95th_Faction_SeparatistDroids";
+					name="B1 Assault Team (AT)";
+					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Commander"; rank = "SERGEANT"; position[] = {0,0,0};};
+					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {5,-5,0};};
+					class Unit2 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit3 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AT"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit4 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AutoRifleman"; rank = "PRIVATE"; position[] = {10,-5,0};};
+					class Unit5 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,-10,0};};
+					class Unit6 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,-5,0};};
+					class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {10,10,0};};
+				};
+
+				class AUX_95th_Groups_Droid_B1_AssaultTeam_Random {
+					side = 0;
+					faction = "AUX_95th_Faction_SeparatistDroids";
+					name="Random B1 Assault Team";
+					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Commander"; rank = "SERGEANT"; position[] = {0,0,0};};
+					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {5,-5,0};};
+					class Unit2 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit3 {side = 0; vehicle = "AUX_95th_Droid_B1_Random_Standard_Launchers"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit4 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {10,-5,0};};
+					class Unit5 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-10,-10,0};};
+					class Unit6 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-10,-5,0};};
+					class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {10,10,0};};
+				};
+
+				class AUX_95th_Groups_Droid_B1_Specialist_AssaultTeam_Random {
+					side = 0;
+					faction = "AUX_95th_Faction_SeparatistDroids";
+					name="Random B1 Specialist Assault Team";
+					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Commander"; rank = "SERGEANT"; position[] = {0,0,0};};
+					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {5,-5,0};};
+					class Unit2 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit3 {side = 0; vehicle = "AUX_95th_Droid_B1_Random_Specialists"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit4 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {10,-5,0};};
+					class Unit5 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-10,-10,0};};
+					class Unit6 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-10,-5,0};};
+					class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {10,10,0};};
+				};
+			};
+		};
+	};
 };
 
 class CBA_Extended_EventHandlers_base;

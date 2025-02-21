@@ -54,11 +54,6 @@ class CfgGroups {
 	class East {
 		class AUX_95th_CIS_Forces  {
 			name = "[95th] CIS Forces";
-			class AUX_95th_CIS_Forces_Droids_B1 {
-				name = "B1 Battledroids (Standard)";
-				#include "Groups\B1 Fire Team.hpp"
-				#include "Groups\B1 Assault Teams.hpp"
-			};
 
 			class AUX_95th_CIS_Forces_Droids_B1_Rocket {
 				name = "B1 Battledroids (Rocket)";
