@@ -43,6 +43,16 @@ class CfgEditorSubcategories {
 	class AUX_95th_Legion_Vehicles_Category_Air_Logistics{displayName="Air (Logistics)";};
 	class AUX_95th_Legion_Vehicles_Category_Air_Drones { displayName="Air (Drones)"; };
 	class AUX_95th_Legion_Vehicles_Category_Ground_Drones { displayName="Ground (Drones)"; };
+
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Tanks{displayName="Tanks";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Artillery{displayName="Artillery";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_APC{displayName="APCs";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Cars{displayName="Cars";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Factories{displayName="Factories";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Drones{displayName="Drones";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Helicopters{displayName="Helicopters";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Planes{displayName="Planes";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets{displayName="Turrets";};
 };
 
 class CfgFunctions {

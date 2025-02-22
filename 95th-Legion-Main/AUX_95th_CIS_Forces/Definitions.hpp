@@ -6,6 +6,8 @@ class JLTS_Droid_B1_SBB3;
 class JLTS_Droid_B1_Sniper;
 class JLTS_Droid_B1_Crew;
 class JLTS_Droid_B1_Rocket;
+class JLTS_Droid_B1_Prototype;
+
 class WBK_B2_Mod_Standart;
 class WBK_B2_Mod_GL;
 class WBK_B2_Mod_Shotgun;
@@ -26,11 +28,7 @@ class 3AS_Advanced_DSD;
 class 3AS_MTT;
 class 3AS_N99;
 class 3AS_Tri_Fighter_DynamicLoadout;
-class 3AS_CIS_Vulture_CAS_F;
-class 3AS_CIS_Vulture_AA_F;
-class 3AS_CIS_Vulture_F;
-class ls_cis_hmp;
-class ls_cis_hmp_transport;
+
 class lsd_largeVTOL_cisDropship;
 class 3AS_DF9_Radar_Grey;
 class lsd_cis_radarDish;
