@@ -49,6 +49,7 @@ class AUX_95th_Droid_B1_Shield: JLTS_Droid_B1_Prototype {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
     };
+    DSS_EMP_Protection_Value=0.7;
 };
 
 // Has a turret it should deploy in combat
@@ -66,6 +67,7 @@ class AUX_95th_Droid_B1_Turret: JLTS_Droid_B1_Prototype {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
     };
+    DSS_EMP_Protection_Value=0.7;
 };
 
 // Has a mortar it should deploy in combat
@@ -83,6 +85,7 @@ class AUX_95th_Droid_B1_Mortar: JLTS_Droid_B1_Prototype {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
     };
+    DSS_EMP_Protection_Value=0.7;
 };
 
 class AUX_95th_Droid_B1_Unit_Diplomat : JLTS_Droid_B1_E5 {
@@ -102,6 +105,7 @@ class AUX_95th_Droid_B1_Unit_Diplomat : JLTS_Droid_B1_E5 {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
     };
+    DSS_EMP_Protection_Value=0.7;
 };
 
 class AUX_95th_Droid_B1_Unit_Firefighter : JLTS_Droid_B1_E5 {
@@ -121,6 +125,7 @@ class AUX_95th_Droid_B1_Unit_Firefighter : JLTS_Droid_B1_E5 {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
     };
+    DSS_EMP_Protection_Value=0.7;
 };
 
 // Has a flame thrower
@@ -141,6 +146,7 @@ class AUX_95th_Droid_B1_Unit_FireCauser : JLTS_Droid_B1_E5 {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
     };
+    DSS_EMP_Protection_Value=0.7;
 };
 
 // Ability: Repairs droids around it % chance (use res script)
@@ -161,6 +167,7 @@ class AUX_95th_Droid_B1_Unit_Medic : JLTS_Droid_B1_E5 {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
     };
+    DSS_EMP_Protection_Value=0.7;
 };
 
 class AUX_95th_Droid_B1_Unit_Police : JLTS_Droid_B1_E5 {

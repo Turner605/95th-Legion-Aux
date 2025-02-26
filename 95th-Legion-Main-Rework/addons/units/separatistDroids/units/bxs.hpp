@@ -23,6 +23,7 @@ class AUX_95th_Droid_BX_Unit_Base: lsd_cis_bxdroid_specops {
         "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
     };
     uniformClass="lsd_cis_bxDroid_uniform";
+    DSS_EMP_Protection_Value=1;
 };
 
 class AUX_95th_Droid_BX_Unit_Rifleman : AUX_95th_Droid_BX_Unit_Base {

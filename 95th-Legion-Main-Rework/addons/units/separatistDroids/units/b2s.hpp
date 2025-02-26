@@ -4,6 +4,7 @@ class AUX_95th_Droid_B2_Unit_Blaster : WBK_B2_Mod_Standart {
     faction="AUX_95th_Faction_SeparatistDroids";
     editorCategory="AUX_95th_Faction_SeparatistDroids";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B2_Battledroids";
+    DSS_EMP_Protection_Value=0.95;
 };
 
 class AUX_95th_Droid_B2_Unit_GL : WBK_B2_Mod_GL {
@@ -12,6 +13,7 @@ class AUX_95th_Droid_B2_Unit_GL : WBK_B2_Mod_GL {
     faction="AUX_95th_Faction_SeparatistDroids";
     editorCategory="AUX_95th_Faction_SeparatistDroids";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B2_Battledroids";
+    DSS_EMP_Protection_Value=0.95;
 };
 
 class AUX_95th_Droid_B2_Unit_Shotgun : WBK_B2_Mod_Shotgun {
@@ -20,4 +22,5 @@ class AUX_95th_Droid_B2_Unit_Shotgun : WBK_B2_Mod_Shotgun {
     faction="AUX_95th_Faction_SeparatistDroids";
     editorCategory="AUX_95th_Faction_SeparatistDroids";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B2_Battledroids";
+    DSS_EMP_Protection_Value=0.95;
 };

@@ -22,6 +22,7 @@ class AUX_95th_Droid_B1_Unit_AA : JLTS_Droid_B1_AT {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };
 
 class AUX_95th_Droid_B1_Unit_AT : JLTS_Droid_B1_AT {
@@ -38,6 +39,7 @@ class AUX_95th_Droid_B1_Unit_AT : JLTS_Droid_B1_AT {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };
 
 class AUX_95th_Droid_B1_Unit_AutoRifleman : JLTS_Droid_B1_AR {
@@ -54,6 +56,7 @@ class AUX_95th_Droid_B1_Unit_AutoRifleman : JLTS_Droid_B1_AR {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };
 
 class AUX_95th_Droid_B1_Unit_Commander : JLTS_Droid_B1_Commander {
@@ -70,6 +73,7 @@ class AUX_95th_Droid_B1_Unit_Commander : JLTS_Droid_B1_Commander {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };
 
 class AUX_95th_Droid_B1_Unit_Crew : JLTS_Droid_B1_Crew {
@@ -86,6 +90,7 @@ class AUX_95th_Droid_B1_Unit_Crew : JLTS_Droid_B1_Crew {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };
 
 class AUX_95th_Droid_B1_Unit_Pilot : JLTS_Droid_B1_Pilot {
@@ -102,6 +107,7 @@ class AUX_95th_Droid_B1_Unit_Pilot : JLTS_Droid_B1_Pilot {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };
 
 class AUX_95th_Droid_B1_Unit_Rifleman : JLTS_Droid_B1_E5 {
@@ -118,6 +124,7 @@ class AUX_95th_Droid_B1_Unit_Rifleman : JLTS_Droid_B1_E5 {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };
 
 class AUX_95th_Droid_B1_Unit_Shotgun : JLTS_Droid_B1_SBB3 {
@@ -134,6 +141,7 @@ class AUX_95th_Droid_B1_Unit_Shotgun : JLTS_Droid_B1_SBB3 {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };
 
 class AUX_95th_Droid_B1_Unit_Sniper : JLTS_Droid_B1_Sniper {
@@ -150,4 +158,5 @@ class AUX_95th_Droid_B1_Unit_Sniper : JLTS_Droid_B1_Sniper {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };

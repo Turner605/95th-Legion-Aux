@@ -23,6 +23,7 @@ class AUX_95th_Droid_B1_Rocket_Unit_AT : JLTS_Droid_B1_Rocket {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };
 
 class AUX_95th_Droid_B1_Rocket_Unit_Rifleman : JLTS_Droid_B1_Rocket {
@@ -40,4 +41,5 @@ class AUX_95th_Droid_B1_Rocket_Unit_Rifleman : JLTS_Droid_B1_Rocket {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
 		init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
 	};
+    DSS_EMP_Protection_Value=0.1;
 };
