@@ -20,7 +20,7 @@ class CfgPatches {
 			"AUX_95th_Droid_BX_Unit_Diplomat", "AUX_95th_Droid_BX_Unit_Shotgun", "AUX_95th_Droid_BX_Unit_Sniper",
 			"AUX_95th_CIS_Disguised_Trooper",
 			"AUX_95th_CIS_TS_F", "AUX_95th_CIS_TS_Green", "AUX_95th_CIS_TS_Red",
-			"AUX_95th_Droid_B1_Shield"
+			"AUX_95th_Droid_B1_Shield", "AUX_95th_Droid_B1_Turret"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -229,6 +229,7 @@ class CfgFunctions {
 		class SeparatistDroidsB1 {
 			file = "\z\AUX_95th\addons\units\separatistDroids\functions\B1";
             class handleB1ShieldInit {};
+            class handleB1TurretInit {};
             class spawnRandomB1 {};
         };
     };

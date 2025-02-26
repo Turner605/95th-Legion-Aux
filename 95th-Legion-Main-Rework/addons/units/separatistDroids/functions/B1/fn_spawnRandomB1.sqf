@@ -26,7 +26,8 @@ switch (_type) do {
         _droidOptions = [
             "AUX_95th_Droid_B1_Shield",
             "AUX_95th_Droid_B1_Unit_FireCauser",
-            "AUX_95th_Droid_B1_Unit_Medic"
+            "AUX_95th_Droid_B1_Unit_Medic",
+            "AUX_95th_Droid_B1_Turret"
         ];
     };
 };
