@@ -35,24 +35,20 @@ class CfgMagazines {
 	class 3AS_6Rnd_RocketGrenades_HE;
 	class 3AS_6Rnd_HE_Grenade_shell;
 
-	class AUX_95th_BX42_Pyro: 3AS_6Rnd_HE_Grenade_shell {
-		displayName="[95th] BX-42 Pyro Rounds";
-		displayNameShort = "Pyro Rounds";
+	class AUX_95th_BX42_Pyro_AP: 3AS_6Rnd_HE_Grenade_shell {
+		mass=60;
+		count = 3;
+		displayName="[95th] BX-42 Pyro Rounds (AP)";
+		displayNameShort = "AP Pyro Rounds";
 		deleteIfEmpty = 1;
 	};
 
-	class AUX_95th_BX42_Rocket_HE: 3AS_6Rnd_RocketGrenades_HE {
-		author="95th Aux Team";
-		scope=2;
-		mass=60;
-		displayName="[95th] BX-42 Pyro Rockets";
-		displayNameShort = "[3AS] Grenades propelled by Rockets";
-		descriptionShort = "$STR_A3_CfgMagazines_1Rnd_HE_Grenade_shell1";
-		initSpeed = 100;
-		count = 6;
-		ammo = "3AS_RocketGrenade_HE";
+	class AUX_95th_BX42_Pyro_AT: 3AS_6Rnd_HE_Grenade_shell {
+		mass=40;
+		count = 1;
+		displayName="[95th] BX-42 Pyro Rounds (AT)";
+		displayNameShort = "AT Pyro Rounds";
 		deleteIfEmpty = 1;
-		// ammo="AUX_95th_BX42_Rocket_AT_Ammo";
 	};
 
 	class AUX_95th_BX42_Fuel: M2_Fuel_Tank {
@@ -61,7 +57,7 @@ class CfgMagazines {
 		scope=2;
 		mass=60;
 		displayName="[95th] BX-42 Fuel";
-		picture="\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+		picture = "\3AS\3AS_Weapons\Data\UI\3as_ammo_flamer.paa";
 		ammo="Flamethrower_Fuel";
 	};
 };
@@ -82,13 +78,13 @@ class CfgWeapons {
 		WBK_BurnEm_IsNotFlamethrower = 1;
 		muzzlePos = "Usti hlavne";
 		muzzleEnd = "Konec hlavne";
-		displayName = "Pyro Test";
+		displayName = "Pyro Launcher";
 		descriptionShort = "Pyro Launcher";
 		reloadTime = 2;
 		magazineReloadTime = 2;
 		useModelOptics = 0;
 		useExternalOptic = 0;
-		magazines[] = {"AUX_95th_BX42_Pyro"};
+		magazines[] = {"AUX_95th_BX42_Pyro_AP", "AUX_95th_BX42_Pyro_AT"};
 		magazineWell[] = {};
 		cameraDir = "OP_look";
 		discreteDistance[] = {50,75,100,150,200,250,300,350,400};
@@ -98,71 +94,35 @@ class CfgWeapons {
 		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload",1,1,10};
 	};
 
-	// Fires in a straight line
-	class AUX_95th_BX42_Muzzle: Rifle_Base_F {
-		cursor = "";
-		cursorAim = "gl";
-		WBK_BurnEm_IsNotFlamethrower = 1;
-		// canLock=2
-		aiDispersionCoefX = 2;
-		aiDispersionCoefY = 2;
-		autoFire = 0;
-		ballisticsComputer = 0;
-		discreteDistance[] = {50};
-		discreteDistanceInitIndex = 0;
-		displayName = "Launcher";
-		drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss",5,1,10}; //TODO
-		fireSpreadAngle = 0.95;
-		magazines[] = {"AUX_95th_BX42_Rocket_HE"};
-		magazineWell[] = {};
-		requiredOpticType = 2;
-		maxZeroing = 50;
-		reloadAction = "GestureReloadMX";
-		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\Mx\Reload_Mx",1,1,10}; //TODO
-		modes[] = {"Single"};
-		class Single: Mode_SemiAuto {
-			sounds[] = {"StandardSound"};
-			class BaseSoundModeType {
-				weaponSoundEffect = "";
-				closure1[] = {};
-				closure2[] = {};
-				soundClosure[] = {};
-			};
-			class StandardSound: BaseSoundModeType {
-				weaponSoundEffect = "";
-				begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",5,1.5,1800}; //TODO
-				soundBegin[] = {"begin1",1};
-			};
-			recoil = "recoil_pistol_light";
-			recoilProne = "recoil_prone_pistol_light";
-			reloadTime = 0.5;
-			dispersion = 0.0029;
-			minRange = 5; minRangeProbab = 0.3;
-			midRange = 25; midRangeProbab = 0.6;
-			maxRange = 50; maxRangeProbab = 0.1;
-			aiRateOfFire = 2; aiRateOfFireDistance = 25;
-		};
+	class arifle_MSBS65_UBS_sand_F;
+
+	class arifle_MSBS65_UBS_sand_F_flame : arifle_MSBS65_UBS_sand_F {
+		class UBS_F;
 	};
 
-	class AUX_95th_BX42: 41_Flammenwerfer_02_F {
+	class AUX_95th_BX42: arifle_MSBS65_UBS_sand_F_flame {
+		baseWeapon = "AUX_95th_BX42_Test";
 		displayName="[95th] BX-42 Flamethrower";
-		// WBK_UseHeavyWeaponFramework = "true";
 		author="95th Aux Team";
-		WBK_BurnEm_IsFlamethrower = "True";
-		WBK_BurnEm_RequiredBackpack = "AUX_95th_BX42_Backpack";
-		WBK_BurnEm_FlamethrowerSoundArray = "['flamewerfer_start','flamewerfer_looping',4.8,'flamewerfer_end']";
-		WBK_BurnEm_FlamethrowerParticlePos = "[[-0.73,0.35,-0.3],'leftHand']";
-		WBK_BurnEm_FlamethrowerDistance = 18.5;
-		scope=2;
+		muzzles[] = {"Launcher","UBS_F"};
+		class Launcher: AUX_95th_BX42_GL_Muzzle{};
+		handAnim[]= {"OFP2_ManSkeleton", "3AS\3AS_Weapons\Data\Anim\BX42.rtm" };
 		model="\3AS\3AS_Weapons\X42\BX42.p3d";
 		picture="\3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
-		UiPicture="\A3\Weapons_F\data\UI\icon_regular_CA.paa";
-		weaponInfoType="RscWeaponZeroing";
-		magazines[]={"AUX_95th_BX42_Fuel"};
-		muzzles[]={"this","Launcher"};
-		class Launcher: AUX_95th_BX42_GL_Muzzle{};
-		class WeaponSlotsInfo: WeaponSlotsInfo{mass=40;};
-		handAnim[]= {"OFP2_ManSkeleton", "3AS\3AS_Weapons\Data\Anim\BX42.rtm" };
+		WBK_BurnEm_RequiredBackpack = "AUX_95th_BX42_Backpack";
+
+		class UBS_F: UBS_F {
+			recoil = "recoil_default";
+			recoilProne = "assaultRifleBase";
+			modes[] = {"FullAuto","fullauto_medium"};
+			magazines[] = {"AUX_95th_BX42_Fuel"};
+			magazineWell[] = {};
+			displayName = "Flamethrower";
+			WBK_BurnEm_IsFlamethrower = "True";
+			WBK_BurnEm_FlamethrowerSoundArray="['underbarrelflame_start','underbarrelflame_loop',4.8,'underbarrelflame_stop']";
+			WBK_BurnEm_FlamethrowerParticlePos = "[[-0.73,0.35,-0.3],'leftHand']";
+			WBK_BurnEm_FlamethrowerDistance = 20;
+		};
 	};
 };
 
