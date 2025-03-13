@@ -22,6 +22,15 @@ class CfgPatches {
     };
 };
 
+class CfgFunctions {
+    class AUX_95th {
+        class Weapons_Shared {
+			file = "\z\AUX_95th\addons\weapons\shared\functions";
+            class handleATPyro {};
+        };
+    };
+};
+
 class CfgAmmo {
 	class BulletBase;
 	class B_9x21_Ball: BulletBase {

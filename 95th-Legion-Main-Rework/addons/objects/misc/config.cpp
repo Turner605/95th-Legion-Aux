@@ -19,7 +19,7 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
     class Land_3AS_Small_Sensor;
-    class SatelliteAntenna_01_Sand_F;
+    class Land_3AS_T_Radio;
     class Land_OPTRE_vidphone_terminal;
     class Land_3AS_Generator_Cy_S;
     class DSS_Objects_Misc_Cardboard_Target;
@@ -34,7 +34,7 @@ class CfgVehicles {
         };
     };
 
-    class AUX_95th_Misc_Radio_Extender : SatelliteAntenna_01_Sand_F {
+    class AUX_95th_Misc_Radio_Extender : Land_3AS_T_Radio {
         displayName="Radio Extender";
         editorCategory="AUX_95th_Objects_Generic";
         editorSubcategory="AUX_95th_Objects_Misc";

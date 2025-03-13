@@ -5,7 +5,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         units[] = {
             "AUX_95th_Misc_Airborne_Terminal", "AUX_95th_Misc_Medical_Terminal", "AUX_95th_Misc_Permission_Terminal",
-            "AUX_95th_Misc_Crate_Pad"
+            "AUX_95th_Misc_Crate_Pad", "AUX_95th_Misc_Pod_Terminal"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -20,6 +20,7 @@ class CfgVehicles {
     class 3AS_Terminal_Console_Med_Prop;
     class DSS_Permissions_Droid;
     class 3as_FOB_turret_base_prop;
+    class 3AS_HoloTable_Octagon_Prop;
 
     class AUX_95th_Misc_Airborne_Terminal : 3AS_HoloTable_Rectangle_Prop {
         displayName="Airborne Terminal";
@@ -35,6 +36,24 @@ class CfgVehicles {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
                 displayName = "Become Airborne Group";
                 statement = "[player] call AUX_95th_fnc_becomeAirborne"; 
+            };
+        };
+    };
+
+    class AUX_95th_Misc_Pod_Terminal : 3AS_HoloTable_Octagon_Prop {
+        displayName="Pod Terminal";
+        editorCategory="AUX_95th_Objects_GAR";
+        editorSubcategory="AUX_95th_Objects_Terminals";
+        class UserActions {
+            class SelectSingleInsert {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Select Solo Dropzone";
+                statement = "[player, false] call AUX_95th_fnc_handlePodInsert"; 
+            };
+            class SelectGroupInsert {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Select Group Dropzone";
+                statement = "[player, true] call AUX_95th_fnc_handlePodInsert"; 
             };
         };
     };

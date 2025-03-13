@@ -44,6 +44,7 @@ class CfgFunctions {
             class handleSkinSelection {};
             class handleCrateSpawned {};
             class checkPlayerInBriefing {};
+            class handlePodInsert {};
         };
 
         class Objects_Shared_Air {
