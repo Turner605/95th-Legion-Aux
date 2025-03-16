@@ -29,11 +29,11 @@ class CfgMagazines {
 		modelSpecialIsProxy = 0;
 		picture = "\z\AUX_95th\addons\weapons\z6\data\ui\z6_mag_ui_ca.paa";
 		model = "\MRC\JLTS\weapons\z6\z6_mag.p3d";
-		count = 300;
-		displayName = "$STR_JLTS_names_Z6_mag";
-		displayNameShort = "$STR_JLTS_snames_EnergyCellStandard";
-		descriptionShort = "$STR_JLTS_descs_Z6_mag";
-		ammo = "AUX_95th_Heavy_Blue_Ammo";
+		count = 40;
+		displayName = "T20 Mag";
+		displayNameShort = "T20 Mag";
+		descriptionShort = "T20 Mag";
+		ammo = "AUX_95th_Extra_Heavy_Blue_Ammo";
 		tracersEvery = 1;
 		initSpeed = 920;
 		mass = 9;
@@ -57,7 +57,7 @@ class CfgWeapons {
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[95th] T20";
-		magazines[] = {"AUX_95th_Universal_Heavy_Mag"};
+		magazines[] = {"AUX_95th_T20_mag"};
 		magazineWell[] = {};
 		drySound[] = {"\z\AUX_95th\addons\weapons\shared\Sounds\weapon_dry.wss",5,1,10};
 		canShootInWater = 1;

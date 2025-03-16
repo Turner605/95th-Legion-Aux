@@ -435,6 +435,11 @@ class CfgAmmo {
 		};
 	};
 
+	class AUX_95th_Extra_Heavy_Blue_Ammo: AUX_95th_Heavy_Blue_Ammo {
+		tracerScale = 1.6;
+		flaresize = 10;
+	};
+
 	class AUX_95th_Sniper_Blue_Ammo: B_408_Ball {
 		author = "95th Legion";
 		model = "\3AS\3AS_Weapons\Data\tracer_blue.p3d";

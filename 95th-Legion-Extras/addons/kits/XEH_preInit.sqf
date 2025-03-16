@@ -51,7 +51,7 @@ AUX_95th_Arsenal_Whitelisted_Explosives = [
 
 AUX_95th_Arsenal_Whitelisted_Magazines = [
 	"AUX_95th_Universal_Shotgun_Mag","AUX_95th_Universal_Rifle_Mag","AUX_95th_Universal_Heavy_Mag","AUX_95th_Universal_Sniper_Mag","AUX_95th_Universal_Pistol_Mag",
-	"AUX_95th_Stun_Long_Mag","AUX_95th_Stun_Short_Mag",
+	"AUX_95th_Stun_Long_Mag","AUX_95th_Stun_Short_Mag", "AUX_95th_T20_mag",
 	"AUX_95th_DC17SA_Dual_Mag","AUX_95th_BX42_Fuel", "AUX_95th_BX42_Pyro_AP", "AUX_95th_BX42_Pyro_AT",
 
 	"1Rnd_HE_Grenade_shell",
@@ -263,7 +263,7 @@ AUX_95th_Arsenal_Class_Items = createHashMapFromArray [
     ["Rifleman",[]],
     ["Marksman",["AUX_95th_DC15X","AUX_95th_DW32S"]],
     ["Riot",["JLTS_riot_shield_item"]],
-    ["Heavy",["AUX_95th_Disc_Shield","AUX_95th_DC15L","AUX_95th_Z6"]],
+    ["Heavy",["AUX_95th_Disc_Shield","AUX_95th_DC15L","AUX_95th_Z6", "AUX_95th_T20"]],
     ["Engineer",["ACE_Fortify", "ACE_DefusalKit", "ToolKit"]],
     ["Medic",["kat_accuvac", "kat_AED", "kat_X_AED", "kat_BVM", "AUX_95th_Magazine_Grenade_Medical_Shield"]],
     ["AT",["3AS_PLX1_F","3AS_RPS6_HP"]],
