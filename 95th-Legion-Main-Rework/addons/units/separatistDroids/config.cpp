@@ -233,6 +233,11 @@ class CfgFunctions {
             class handleB1MortarInit {};
             class spawnRandomB1 {};
         };
+
+		class SeparatistDroidsB2 {
+			file = "\z\AUX_95th\addons\units\separatistDroids\functions\B2";
+            class b2Init {};
+        };
     };
 };
 
@@ -331,6 +336,7 @@ class CfgVehicles {
 	class JLTS_Droid_B1_Pilot;
 
     class lsd_cis_bxdroid_specops;
+	class lsd_cis_b2_standard;
 	class AUX_95th_Unit_P1_Basic_Trooper;
 
 	class 3AS_CIS_TS_F;
@@ -375,7 +381,26 @@ class CfgWeapons {
 			};
 		};
 	};
-	
+
+	class U_I_CombatUniform;
+	class ls_redforUniform_base: U_I_CombatUniform {
+		class ItemInfo;
+	};
+
+	class lsd_cis_b2Droid_uniform: ls_redforUniform_base {};
+
+	class AUX_95th_Droid_B2_Uniform: lsd_cis_b2Droid_uniform {
+		JLTS_hasStunProtection=1;
+		scope = 2;
+		displayName = "B2 Droid Chassis";
+		class ItemInfo: ItemInfo {
+			uniformModel = "-";
+			uniformClass = "lsd_cis_b2Droid_base";
+			containerClass = "Supply150";
+			mass = 40;
+		};
+	};
+
 	class AUX_95th_Droid_B1_Uniform_Diplomat: JLTS_DroidB1 {
 		displayName="B1 Diplomat Uniform";
 		faction="AUX_95th_Faction_SeparatistDroids";
