@@ -5,6 +5,9 @@ class AUX_95th_CIS_TS_F: 3AS_CIS_TS_F {
     editorCategory="AUX_95th_Faction_SeparatistDroids";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries";
     DSS_EMP_Protection_Value=1;
+    impactEffectsBlood = "ImpactMetal";
+    impactEffectsNoBlood = "ImpactPlastic";
+    canBleed = 0;
 };
 
 class AUX_95th_CIS_TS_Green: 3AS_CIS_TS_Green {
@@ -14,6 +17,9 @@ class AUX_95th_CIS_TS_Green: 3AS_CIS_TS_Green {
     editorCategory="AUX_95th_Faction_SeparatistDroids";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries";
     DSS_EMP_Protection_Value=1;
+    impactEffectsBlood = "ImpactMetal";
+    impactEffectsNoBlood = "ImpactPlastic";
+    canBleed = 0;
 };
 
 class AUX_95th_CIS_TS_Red: 3AS_CIS_TS_Red {
@@ -23,4 +29,7 @@ class AUX_95th_CIS_TS_Red: 3AS_CIS_TS_Red {
     editorCategory="AUX_95th_Faction_SeparatistDroids";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries";
     DSS_EMP_Protection_Value=1;
+    impactEffectsBlood = "ImpactMetal";
+    impactEffectsNoBlood = "ImpactPlastic";
+    canBleed = 0;
 };

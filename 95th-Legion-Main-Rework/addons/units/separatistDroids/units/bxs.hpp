@@ -24,6 +24,9 @@ class AUX_95th_Droid_BX_Unit_Base: lsd_cis_bxdroid_specops {
     };
     uniformClass="lsd_cis_bxDroid_uniform";
     DSS_EMP_Protection_Value=1;
+    impactEffectsBlood = "ImpactMetal";
+    impactEffectsNoBlood = "ImpactPlastic";
+    canBleed = 0;
 };
 
 class AUX_95th_Droid_BX_Unit_Rifleman : AUX_95th_Droid_BX_Unit_Base {
@@ -125,4 +128,7 @@ class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Unit_P1_Basic_Trooper {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         init = "if (local (_this select 0)) then { [(_this select 0), [], []] call BIS_fnc_unitHeadgear; };";
     };
+    impactEffectsBlood = "ImpactMetal";
+    impactEffectsNoBlood = "ImpactPlastic";
+    canBleed = 0;
 };
