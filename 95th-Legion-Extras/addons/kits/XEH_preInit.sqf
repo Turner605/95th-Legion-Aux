@@ -26,7 +26,7 @@ ADDON = false;
 AUX_95th_Arsenal_Whitelisted_Weapons = [
     "AUX_95th_DC15L","AUX_95th_BX42","AUX_95th_DC15A_plastic","AUX_95th_DC15A","AUX_95th_DC15A_ugl_plastic", "AUX_95th_DC15A_ugl",
     "AUX_95th_DC15S","AUX_95th_DC15X","AUX_95th_DP23","AUX_95th_DW32S","AUX_95th_Z6","AUX_95th_DC15C","AUX_95th_DC15C_GL",
-    "3AS_MPL_F","3AS_RepublicDatapadRifle","3AS_Valken38X_F","AUX_95th_WestarM5_GL","AUX_95th_WestarM5",
+    "3AS_MPL_F","3AS_RepublicDatapadRifle","3AS_Valken38X_F","AUX_95th_WestarM5_GL","AUX_95th_WestarM5", "AUX_95th_T20",
 
     "AUX_95th_DC17SA","ACE_VMH3","ACE_VMM3","ACE_Flashlight_Maglite_ML300L","hgun_esd_01_F","Weap_melee_knife","Knife_m3","Police_Bat",
     "Shovel_Russian","Shovel_Russian_Rotated","UNSC_Knife","UNSC_Knife_reversed","SW_clone_knife","WBK_SciFi_Sword_1","IMS_HL_StunBaton",
@@ -52,7 +52,7 @@ AUX_95th_Arsenal_Whitelisted_Explosives = [
 AUX_95th_Arsenal_Whitelisted_Magazines = [
 	"AUX_95th_Universal_Shotgun_Mag","AUX_95th_Universal_Rifle_Mag","AUX_95th_Universal_Heavy_Mag","AUX_95th_Universal_Sniper_Mag","AUX_95th_Universal_Pistol_Mag",
 	"AUX_95th_Stun_Long_Mag","AUX_95th_Stun_Short_Mag",
-	"AUX_95th_DC17SA_Dual_Mag","AUX_95th_BX42_Fuel", "AUX_95th_BX42_Pyro",
+	"AUX_95th_DC17SA_Dual_Mag","AUX_95th_BX42_Fuel", "AUX_95th_BX42_Pyro_AP", "AUX_95th_BX42_Pyro_AT",
 
 	"1Rnd_HE_Grenade_shell",
 	"UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F", "UGL_FlareYellow_F","UGL_FlareCIR_F","ACE_40mm_Flare_ir",
