@@ -26,4 +26,12 @@ class CfgFunctions {
     };
 };
 
+class CfgSounds {
+	class executeOrder66 {
+		name = "executeOrder66";
+		sound[] = {"\z\AUX_95th\addons\modules\sounds\order66.wav",5,1};
+		titles[] = {};
+	};
+};
+
 #include "CfgEventHandlers.hpp"

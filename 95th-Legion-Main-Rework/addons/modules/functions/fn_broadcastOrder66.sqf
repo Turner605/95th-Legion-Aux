@@ -1,6 +1,12 @@
-playMusic ["anakinBetrayal", 15];
+params ["_warnJedi"];
+
+[[], {
+    playMusic ["anakinBetrayal", 15];
+}] remoteExec ["spawn", 0];
 
 [{
+    params ["_warnJedi"];
+
     _itemToRestrict = "WBK_Cybercrystal";
 
     private _playersToBroadcast = [];
@@ -20,14 +26,19 @@ playMusic ["anakinBetrayal", 15];
 
     _jediPlayers joinSilent createGroup east;
 
-    {_x addRating -2000;} forEach _jediPlayers;
+    {
+        _x addRating -2000;
 
+        if(_warnJedi) then {
+            titleText ["<t align = 'center' shadow = '2' color='#47acff' size='1.5' font='PuristaMedium' >THE FORCE</t><br /><t color='#FFFFFF' size='1.5' font='PuristaMedium' shadow = '2' >You feel a disturbance...</t>", "PLAIN DOWN", -1, true, true];
+        }
+    } forEach _jediPlayers;
 
-    private _message = "<t color='#82101d' size='2'> Execute Order 66 </t>";
+    [[], {
+        playSound "executeOrder66";
+        titleText ["<t align = 'center' shadow = '2' color='#FF474C' size='1.5' font='PuristaMedium' >CHANCELLOR PALPATINE</t><br /><t color='#FFFFFF' size='1.5' font='PuristaMedium' shadow = '2' >The time has come.</t>", "PLAIN DOWN", -1, true, true];
+        sleep 3;
+        titleText ["<t align = 'center' shadow = '2' color='#FF474C' size='1.5' font='PuristaMedium' >CHANCELLOR PALPATINE</t><br /><t color='#FFFFFF' size='1.5' font='PuristaMedium' shadow = '2' >Execute Order 66.</t>", "PLAIN DOWN", -1, true, true];
+    }] remoteExec ["spawn", _playersToBroadcast];
 
-    [[_message], {
-        params ["_message"];
-
-        2 cutText [_message, "PLAIN", 1, true, true];
-    }] remoteExec ["call", _playersToBroadcast];
-}, [], 15] call CBA_fnc_waitAndExecute;
+}, [_warnJedi], 15] call CBA_fnc_waitAndExecute;

@@ -87,6 +87,29 @@ if (!hasInterface) exitWith {};
     }, {}, [_pos]] call zen_dialog_fnc_create;
 }, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
 
+// Orders
+["[95th] Modules", "Execute Order", {
+    params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
+
+    ["CIS Quick Garrison", [
+        ["TOOLBOX", "Order", [0, 2, 3, ["37", "66", "65"]]],
+        ["CHECKBOX",["(66) Warn Jedi","Should the Jedi feel it via the force."],[false]]
+    ], {
+        params["_values", "_args"];
+        _order = _values#0;
+        _jediWarning = _values#1;
+
+        _position = _args select 0;
+
+        switch (_order) do {
+            case 0: {systemChat "Not Yet Added"};
+            case 1: {[_jediWarning] call AUX_95th_fnc_broadcastOrder66;};
+            case 2: {systemChat "Not Yet Added"};
+        };
+
+    }, {}, [_pos]] call zen_dialog_fnc_create;
+}, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
+
 
 // module to drop droid turrets/vics?
 
