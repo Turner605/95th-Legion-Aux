@@ -92,7 +92,7 @@ if (!hasInterface) exitWith {};
     params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
 
     ["CIS Quick Garrison", [
-        ["TOOLBOX", "Order", [0, 2, 3, ["37", "66", "65"]]],
+        ["TOOLBOX", "Order", [1, 1, 3, ["37", "66", "65"]]],
         ["CHECKBOX",["(66) Warn Jedi","Should the Jedi feel it via the force."],[false]]
     ], {
         params["_values", "_args"];
@@ -108,7 +108,7 @@ if (!hasInterface) exitWith {};
         };
 
     }, {}, [_pos]] call zen_dialog_fnc_create;
-}, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
+}, "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa"] call zen_custom_modules_fnc_register;
 
 
 // module to drop droid turrets/vics?
