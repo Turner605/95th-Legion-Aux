@@ -436,8 +436,9 @@ class CfgAmmo {
 	};
 
 	class AUX_95th_Extra_Heavy_Blue_Ammo: AUX_95th_Heavy_Blue_Ammo {
-		tracerScale = 1.6;
-		flaresize = 10;
+		tracerScale = 6;
+		flaresize = 15;
+		hit = 10;
 	};
 
 	class AUX_95th_Sniper_Blue_Ammo: B_408_Ball {

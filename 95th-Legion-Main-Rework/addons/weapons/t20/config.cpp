@@ -42,6 +42,7 @@ class CfgMagazines {
 
 class CowsSlot;
 class Mode_SemiAuto;
+class Mode_FullAuto;
 
 class CfgWeapons {
 	class Rifle_Long_Base_F;
@@ -62,7 +63,29 @@ class CfgWeapons {
 		drySound[] = {"\z\AUX_95th\addons\weapons\shared\Sounds\weapon_dry.wss",5,1,10};
 		canShootInWater = 1;
 		descriptionShort = "Refurbished rifle from the old republic Era";
-		modes[] = {"Single","close","short","medium"};
+		modes[] = {"FullAuto","close","short","medium"};
+		class FullAuto: Mode_FullAuto {
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType {
+				weaponSoundEffect = "";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {};
+			};
+			class StandardSound: BaseSoundModeType {
+				soundSetShot[] = {"T20_Shot_SoundSet"};
+			};
+			reloadTime = 0.3;
+			dispersion = 0.00301;
+			minRange = 5;
+			minRangeProbab = 0.3;
+			midRange = 25;
+			midRangeProbab = 0.6;
+			maxRange = 50;
+			maxRangeProbab = 0.1;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 25;
+		};
 		class Single: Mode_SemiAuto {
 			sounds[] = {"StandardSound"};
 			class BaseSoundModeType {
