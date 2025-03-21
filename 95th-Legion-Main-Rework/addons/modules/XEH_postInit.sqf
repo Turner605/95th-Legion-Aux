@@ -91,7 +91,7 @@ if (!hasInterface) exitWith {};
 ["[95th] Modules", "Execute Order", {
     params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
 
-    ["CIS Quick Garrison", [
+    ["Execute Order", [
         ["TOOLBOX", "Order", [1, 1, 3, ["37", "66", "65"]]],
         ["CHECKBOX",["(66) Warn Jedi","Should the Jedi feel it via the force."],[false]]
     ], {
