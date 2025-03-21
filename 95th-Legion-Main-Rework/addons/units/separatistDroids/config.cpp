@@ -22,7 +22,9 @@ class CfgPatches {
 			"AUX_95th_CIS_TS_F", "AUX_95th_CIS_TS_Green", "AUX_95th_CIS_TS_Red",
 			"AUX_95th_Droid_B1_Shield", "AUX_95th_Droid_B1_Turret", "AUX_95th_Droid_B1_Mortar"
         };
-        weapons[] = {};
+        weapons[] = {
+			"AUX_95th_E5_shield_attached"
+		};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "AUX_95th_main", 
@@ -372,8 +374,8 @@ class CfgWeapons {
 	class JLTS_DroidB1;
 
 	class JLTS_E5_shield;
-	class JLTS_E5_shield_attached : JLTS_E5_shield {
-		scope = 1;
+	class AUX_95th_E5_shield_attached : JLTS_E5_shield {
+		scope = 2;
 		class LinkedItems {
 			class LinkedItemsUnder {
 				slot = "UnderBarrelSlot";

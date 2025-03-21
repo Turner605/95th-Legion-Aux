@@ -74,7 +74,8 @@ class AUX_95th_Droid_BX_Unit_Diplomat : AUX_95th_Droid_BX_Unit_Base {
 class AUX_95th_Droid_BX_Unit_Guard : AUX_95th_Droid_BX_Unit_Base {
     scope=2;
     displayName="BX Guard (E-5)";
-    respawnWeapons[]={"JLTS_E5_shield_attached","Throw","Put"};
+    weapons[]={"AUX_95th_E5_shield_attached","Throw","Put"};
+    respawnWeapons[]={"AUX_95th_E5_shield_attached","Throw","Put"};
     magazines[]={
         "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag",
         "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
