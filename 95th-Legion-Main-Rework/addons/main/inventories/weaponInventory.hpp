@@ -23,8 +23,8 @@ class TransportMagazines {
 	class _xx_AUX_95th_Universal_Shotgun_Mag{magazine="AUX_95th_Universal_Shotgun_Mag"; count=50;};
 	class _xx_AUX_95th_Universal_Pistol_Mag{magazine="AUX_95th_Universal_Pistol_Mag"; count=20;};
 	class _xx_AUX_95th_BX42_Fuel{magazine="AUX_95th_BX42_Fuel"; count=10;};
-	class AUX_95th_BX42_Pyro_AP{magazine="AUX_95th_BX42_Pyro_AP"; count=8;};
-	class AUX_95th_BX42_Pyro_AT{magazine="AUX_95th_BX42_Pyro_AT"; count=8;};
+	class _xx_AUX_95th_BX42_Pyro_AP{magazine="AUX_95th_BX42_Pyro_AP"; count=8;};
+	class _xx_AUX_95th_BX42_Pyro_AT{magazine="AUX_95th_BX42_Pyro_AT"; count=8;};
 	
 	class _xx_DSS_Magazine_Grenade_Droid_Detector{magazine="DSS_Magazine_Grenade_Droid_Detector"; count=10;};
 	class _xx_DSS_Magazine_Grenade_Droid_Popper{magazine="DSS_Magazine_Grenade_Droid_Popper"; count=10;};
@@ -32,7 +32,6 @@ class TransportMagazines {
 	class _xx_DSS_Magazine_Grenade_Hacker{magazine="DSS_Magazine_Grenade_Hacker"; count=10;};
 	class _xx_DSS_Magazine_Grenade_Sonar{magazine="DSS_Magazine_Grenade_Sonar"; count=10;};
 	class _xx_DSS_Grenade_Magazine_Thermal_C1{magazine="DSS_Grenade_Magazine_Thermal_C1"; count=10;};
-	class _xx_AUX_95th_Magazine_Grenade_Medical_Shield{magazine="AUX_95th_Magazine_Grenade_Medical_Shield"; count=4;};
 	class _xx_3AS_SmokeWhite{magazine="3AS_SmokeWhite"; count=10;};
 	class _xx_3AS_SmokeYellow{magazine="3AS_SmokeYellow"; count=5;};
 	class _xx_3AS_SmokeGreen{magazine="3AS_SmokeGreen"; count=5;};

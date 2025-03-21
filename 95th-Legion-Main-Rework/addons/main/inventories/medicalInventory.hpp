@@ -23,4 +23,5 @@ class TransportItems {
 	class _xx_kat_aatKit{name="kat_aatKit"; count=15;};
 	class _xx_kat_IV_16{name="kat_IV_16"; count=15;};
 	class _xx_kat_Painkiller{name="kat_Painkiller"; count=30;};
+	class _xx_AUX_95th_Magazine_Grenade_Medical_Shield{magazine="AUX_95th_Magazine_Grenade_Medical_Shield"; count=6;};
 };
