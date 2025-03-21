@@ -32,7 +32,7 @@ AUX_95th_Arsenal_Whitelisted_Weapons = [
     "Shovel_Russian","Shovel_Russian_Rotated","UNSC_Knife","UNSC_Knife_reversed","SW_clone_knife","WBK_SciFi_Sword_1","IMS_HL_StunBaton",
     "AUX_95th_DC17SA_Dual","3AS_RepublicDatapadPistol","Knife_kukri",
 
-    "3AS_PLX1_F","AUX_95th_RPS6_F","AUX_95th_RPS6_Base","AUX_95th_RPS6_HP"
+    "3AS_PLX1_F","AUX_95th_RPS6_F","AUX_95th_RPS6_Base","AUX_95th_RPS6_HP", "3AS_FusionCutter_F"
 ];
 
 AUX_95th_Arsenal_Whitelisted_Throwables = [
@@ -66,7 +66,8 @@ AUX_95th_Arsenal_Whitelisted_Magazines = [
 	
 	"Laserbatteries","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell",
 	"3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell",
-	"3AS_6Rnd_HE_Grenade_shell"
+	"3AS_6Rnd_HE_Grenade_shell", 
+    "3AS_FusionCutter_Splice_Magazine", "3AS_FusionCutter_Fortification_Magazine", "3AS_FusionCutter_Dewreck_Magazine", "3AS_FusionCutter_Magazine"
 ];
 
 AUX_95th_Arsenal_Whitelisted_Attachments = [
@@ -264,7 +265,7 @@ AUX_95th_Arsenal_Class_Items = createHashMapFromArray [
     ["Marksman",["AUX_95th_DC15X","AUX_95th_DW32S"]],
     ["Riot",["JLTS_riot_shield_item"]],
     ["Heavy",["AUX_95th_Disc_Shield","AUX_95th_DC15L","AUX_95th_Z6", "AUX_95th_T20"]],
-    ["Engineer",["ACE_Fortify", "ACE_DefusalKit", "ToolKit"]],
+    ["Engineer",["ACE_Fortify", "ACE_DefusalKit", "ToolKit", "3AS_FusionCutter_F"]],
     ["Medic",["kat_accuvac", "kat_AED", "kat_X_AED", "kat_BVM", "AUX_95th_Magazine_Grenade_Medical_Shield"]],
     ["AT",["3AS_PLX1_F","3AS_RPS6_HP"]],
     ["Crewman",["ACE_Fortify", "ACE_DefusalKit", "ToolKit"]],
