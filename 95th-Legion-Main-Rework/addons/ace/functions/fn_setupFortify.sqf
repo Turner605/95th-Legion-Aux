@@ -10,4 +10,4 @@ if (!isClass _config) then {_config = configFile >> "ACEX_Fortify_Presets" >> _p
 
 private _objects = getArray (_config >> "objects");
 
-[_side, _budget, _objects] call ace_fortify_fnc_registerObjects;
+[_side, _budget, _objects] call acex_fortify_fnc_registerObjects;
