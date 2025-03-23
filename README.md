@@ -12,7 +12,7 @@ The aux mod for the 95th Legion.
 ## Internal Developers Setup Guide
 To begin working on the aux mod, do the following.
 
-- Step 1: [INSTALL HEMTT](https://brettmayson.github.io/HEMTT/installation.html)
+- Step 1: [INSTALL HEMTT](https://hemtt.dev/installation/index.html)
 - Step 2: Install the preferred git method:
   - [GIT](https://git-scm.com/downloads)
   - [GIT Desktop](https://desktop.github.com/download/)
