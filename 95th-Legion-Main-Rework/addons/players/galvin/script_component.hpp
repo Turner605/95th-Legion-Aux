@@ -7,7 +7,7 @@
 #define SQUAD_KEY One_Four
 
 // HELMET OPTIONS 0 (False), 1 (True)
-#define HELMET_P1_BASIC 0
+#define HELMET_P1_BASIC 1
 #define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
