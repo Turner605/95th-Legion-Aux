@@ -342,7 +342,7 @@ class XtdGearModels {
 	class CfgVehicles {
 		class AUX_95th_Backpacks_Squad_Basic {
 			label = "Basic Backpacks";
-		#include "\z\AUX_95th\addons\players\shared\XtdGearModels\xtdGearBackpacks.hpp"
+			#include "\z\AUX_95th\addons\players\shared\XtdGearModels\xtdGearBackpacks.hpp"
 			#include "\z\AUX_95th\addons\main\xtdGearSquads\basic.hpp"
 		};
 

@@ -28,6 +28,8 @@ class CfgEditorCategories{
 
 class CfgEditorSubcategories{
 	class AUX_95th_Holograms{displayName="Holograms";};
+	class AUX_95th_Faction_Category_Ground_Infantry{displayName="Infantry";};
+	class AUX_95th_Faction_Category_Ground_Tanks{displayName="Tanks";};
 };
 
 class CfgVehicles {     
