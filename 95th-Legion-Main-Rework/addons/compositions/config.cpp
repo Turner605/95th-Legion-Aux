@@ -23,13 +23,9 @@ class CfgEditorCategories {
 };
 
 class CfgEditorSubcategories {
-	class AUX_95th_Legion_Compositions_FOBs {
-		displayName = "FOBs";
-	};
-
-	class AUX_95th_Legion_Compositions_Checkpoints {
-		displayName = "Checkpoints";
-	};
+	class AUX_95th_Legion_Compositions_FOBs {displayName = "FOBs";};
+	class AUX_95th_Legion_Compositions_Checkpoints {displayName = "Checkpoints";};
+	class AUX_95th_Legion_Compositions_AA {displayName = "AA";};
 };
 
 class Cfg3DEN {
@@ -49,7 +45,17 @@ class Cfg3DEN {
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
 			editorCategory = "AUX_95th_Legion_Compositions_CIS";
 			editorSubcategory = "AUX_95th_Legion_Compositions_Checkpoints";
-			displayName = "FOB Blackweb";
+			displayName = "Checkpoint Alpha";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
+
+		class AUX_95th_Opfor_AA_Shielded_A {
+			path = "z\AUX_95th\addons\compositions\cis\aa_shielded_1";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "AUX_95th_Legion_Compositions_AA";
+			displayName = "AA (Shielded) Alpha";
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};
