@@ -23,9 +23,10 @@ class CfgEditorCategories {
 };
 
 class CfgEditorSubcategories {
-	class AUX_95th_Legion_Compositions_FOBs {displayName = "FOBs";};
-	class AUX_95th_Legion_Compositions_Checkpoints {displayName = "Checkpoints";};
-	class AUX_95th_Legion_Compositions_AA {displayName = "AA";};
+	class AUX_95th_Legion_Compositions_FOBs {displayName = "[95th] FOBs";};
+	class AUX_95th_Legion_Compositions_Ships {displayName = "[95th] Ships";};
+	class AUX_95th_Legion_Compositions_Checkpoints {displayName = "[95th] Checkpoints";};
+	class AUX_95th_Legion_Compositions_AA {displayName = "[95th] AA";};
 };
 
 class Cfg3DEN {
@@ -36,6 +37,16 @@ class Cfg3DEN {
 			editorCategory = "AUX_95th_Legion_Compositions_GAR";
 			editorSubcategory = "AUX_95th_Legion_Compositions_FOBs";
 			displayName = "FOB Blackweb";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
+
+		class AUX_95th_Acclamator {
+			path = "z\AUX_95th\addons\compositions\gar\acclamator";
+			side = 1; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_GAR";
+			editorSubcategory = "AUX_95th_Legion_Compositions_Ships";
+			displayName = "Acclamator";
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};
