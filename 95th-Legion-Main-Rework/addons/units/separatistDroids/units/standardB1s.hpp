@@ -146,6 +146,14 @@ class AUX_95th_Droid_B1_Unit_Rifleman : JLTS_Droid_B1_E5 {
 	impactEffectsBlood = "ImpactMetal";
 	impactEffectsNoBlood = "ImpactPlastic";
 	canBleed = 0;
+	magazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell", "DSS_Grenade_Magazine_Thermal_C1"
+	};
+	respawnMagazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell", "DSS_Grenade_Magazine_Thermal_C1"
+	};
 };
 
 class AUX_95th_Droid_B1_Unit_Shotgun : JLTS_Droid_B1_SBB3 {
@@ -166,6 +174,14 @@ class AUX_95th_Droid_B1_Unit_Shotgun : JLTS_Droid_B1_SBB3 {
 	impactEffectsBlood = "ImpactMetal";
 	impactEffectsNoBlood = "ImpactPlastic";
 	canBleed = 0;
+	magazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell", "DSS_Grenade_Magazine_Thermal_C1"
+	};
+	respawnMagazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell", "DSS_Grenade_Magazine_Thermal_C1"
+	};
 };
 
 class AUX_95th_Droid_B1_Unit_Sniper : JLTS_Droid_B1_Sniper {
