@@ -2,58 +2,63 @@ params ["_vehicle"];
 
 if (!isNull ZEN_placement_helper) exitWith {};
 
-//#################################### Clear Foliage ####################################
+if (!isServer) exitWith {};
 
-_vehicle addAction ["<t color='#00fb21'>Clear Foliage</t>", {
+[[_vehicle], {
 	params ["_vehicle"];
 
-	[5, [_vehicle], {
-		params ["_args", "_elapsedTime", "_totalTime"]; 
-		_args params ["_vehicle"];
+	//#################################### Clear Foliage ####################################
 
-		private _hideTObjs = [];
+	_vehicle addAction ["<t color='#00fb21'>Clear Foliage</t>", {
+		params ["_vehicle"];
 
-		private _pos = _vehicle modelToWorld [0,2,0.2];
-		private _size = 20;
+		[5, [_vehicle], {
+			params ["_args", "_elapsedTime", "_totalTime"]; 
+			_args params ["_vehicle"];
 
-		{ _hideTObjs pushBack _x } forEach (nearestTerrainObjects [_pos,["TREE", "SMALL TREE", "BUSH"], _size]);
+			private _hideTObjs = [];
 
-		{ if ((str(_x) find "fallen" >= 0) || 
-		(str(_x) find "stump" >= 0) || 
-		(str(_x) find "stone" >= 0)) then 
-		{ _hideTObjs pushBack _x } else {}; } forEach (nearestTerrainObjects [_pos,[],_size]);
+			private _pos = _vehicle modelToWorld [0,2,0.2];
+			private _size = 20;
 
-		{ _x hideObjectGlobal true } forEach _hideTObjs;
+			{ _hideTObjs pushBack _x } forEach (nearestTerrainObjects [_pos,["TREE", "SMALL TREE", "BUSH"], _size]);
 
-	}, {}, "Clearing Foliage...", {true}, ["isNotInside"]] call ace_common_fnc_progressBar;
+			{ if ((str(_x) find "fallen" >= 0) || 
+			(str(_x) find "stump" >= 0) || 
+			(str(_x) find "stone" >= 0)) then 
+			{ _hideTObjs pushBack _x } else {}; } forEach (nearestTerrainObjects [_pos,[],_size]);
 
-},[], 1.5, true, true, ""];
+			{ _x hideObjectGlobal true } forEach _hideTObjs;
 
-//#################################### Clear Mines ####################################
+		}, {}, "Clearing Foliage...", {true}, ["isNotInside"]] call ace_common_fnc_progressBar;
 
-_vehicle addAction ["<t color='#fb0026'>Clear Mines</t>", {
-	params ["_vehicle"];
+	},[], 1.5, true, true, ""];
 
-	[20, [_vehicle], {
-		params ["_args", "_elapsedTime", "_totalTime"]; 
-		_args params ["_vehicle"];
+	//#################################### Clear Mines ####################################
 
-		private _pos = _vehicle modelToWorld [0,2,0.2];
-		private _size = 20;
+	_vehicle addAction ["<t color='#fb0026'>Clear Mines</t>", {
+		params ["_vehicle"];
 
-		private _allMines = nearestMines [_pos, [], _size];
+		[20, [_vehicle], {
+			params ["_args", "_elapsedTime", "_totalTime"]; 
+			_args params ["_vehicle"];
 
-		systemChat ("Cleared " + (str (count _allMines)) + " mines");
+			private _pos = _vehicle modelToWorld [0,2,0.2];
+			private _size = 20;
 
-		deleteVehicle _allMines;
+			private _allMines = nearestMines [_pos, [], _size];
 
-	}, {}, "Clearing Mines...", {true}, ["isNotInside"]] call ace_common_fnc_progressBar;
+			systemChat ("Cleared " + (str (count _allMines)) + " mines");
 
-},[], 1.5, true, true, ""];
+			deleteVehicle _allMines;
+
+		}, {}, "Clearing Mines...", {true}, ["isNotInside"]] call ace_common_fnc_progressBar;
+
+	},[], 1.5, true, true, ""];
+
+}] remoteExec ["call", 0, true];
 
 //#################################### Building ####################################
-
-if (!isServer) exitWith {};
 
 [
 	_vehicle, 
