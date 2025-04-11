@@ -54,7 +54,7 @@ private _outpostName = "Outpost: " + (str _outpostNumber);
 
 	deleteMarker _objNetId;
 	_marker = createMarker [_objNetId, position _vehicle];
-	_marker setMarkerType "JLTS_GAR_hq";
+	_marker setMarkerTypeLocal "JLTS_GAR_hq";
 	_marker setMarkerText _outpostName;
 
 	deleteMarker (_objNetId+"zone");
@@ -67,7 +67,7 @@ private _outpostName = "Outpost: " + (str _outpostNumber);
 
 	{
 		if (!((vehicle _x) in _allUnitsInRange) and (alive (vehicle _x))) then {
-			if (((_x distance (getposASL _vehicle)) < 150)) then {
+			if (((_x distance (getPosASL _vehicle)) < 150)) then {
 				_veh = vehicle _x; 
 				_allUnitsInRange pushBack _veh; 
 			}; 

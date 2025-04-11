@@ -1,7 +1,6 @@
-params ["_this", "_player"];
+params ["_tank", "_player"];
 
-private _shield = _this getVariable "AUX_95th_Shield_Object";
-private _tank = _this;
+private _shield = _tank getVariable "AUX_95th_Shield_Object";
 
 private _shieldRecharging = _tank getVariable "AUX_95th_Shield_Recharging";
 private _shieldAnimating = _tank getVariable "AUX_95th_Shield_Animating";

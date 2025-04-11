@@ -35,7 +35,6 @@ class CfgVehicles {
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
-        crew="AUX_95th_Droid_B1_Unit_Crew";
         DSS_isDroid=1;
     };
 
@@ -45,7 +44,6 @@ class CfgVehicles {
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
-        crew="AUX_95th_Droid_B1_Unit_Crew";
         DSS_isDroid=1;
     };
 

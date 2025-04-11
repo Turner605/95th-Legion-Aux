@@ -6,8 +6,8 @@ class AUX_95th_TX_130_Shield : 3as_saber_m1Recon {
 	faction="AUX_95th_Legion_Faction_Vehicles";
 	editorSubcategory="AUX_95th_Legion_Vehicles_Category_Ground_Heavy";
 	hiddenSelectionsTextures[]={
-		"\AUX_95th_Vehicles_Depricated\Data\Saber\Hull.paa", 
-		"\AUX_95th_Vehicles_Depricated\Data\Saber\Weapons.paa"
+		"\z\AUX_95th\addons\vehicles\depricated\data\Saber\Hull.paa", 
+		"\z\AUX_95th\addons\vehicles\depricated\data\Saber\Weapons.paa"
 	};
 	class ACE_Cargo {class Cargo {class track {type = "ACE_Track"; amount = 2;};};}; 
 	ace_cargo_space = 26;

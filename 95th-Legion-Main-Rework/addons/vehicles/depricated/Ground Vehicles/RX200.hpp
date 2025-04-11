@@ -10,7 +10,7 @@ class AUX_95th_RX200 : 3AS_RX200_Base {
 	tas_canBlift=1;
 	tas_liftVars="[[[[0, -4, -8]]], [0.1], [-0.5]]";
 	AUX_95th_Strafing_Available=1;
-	hiddenSelectionsTextures[]={"\AUX_95th_Vehicles_Depricated\Data\RX200\RX200.paa"};
+	hiddenSelectionsTextures[]={"\z\AUX_95th\addons\vehicles\depricated\data\RX200\RX200.paa"};
 	class ACE_Cargo {
 		class Cargo {
 			class track {
@@ -49,13 +49,13 @@ class AUX_95th_RX200 : 3AS_RX200_Base {
 			};
 			class Components {
 				class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftGunner {
-					class Components: components {
+					class Components: Components {
 						class SensorDisplay { componentType="SensorsDisplayComponent"; range[]={4000,300,2000,1000}; resource="RscCustomInfoSensors"; };
 					};
 				};
 				class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightGunner {
 					defaultDisplay="SensorDisplay";
-					class Components: components {
+					class Components: Components {
 						class SensorDisplay { componentType="SensorsDisplayComponent"; range[]={4000,300,2000,1000}; resource="RscCustomInfoSensors"; };
 					};
 				};
