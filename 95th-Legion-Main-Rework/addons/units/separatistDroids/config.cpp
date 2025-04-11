@@ -20,7 +20,9 @@ class CfgPatches {
 			"AUX_95th_Droid_BX_Unit_Diplomat", "AUX_95th_Droid_BX_Unit_Shotgun", "AUX_95th_Droid_BX_Unit_Sniper",
 			"AUX_95th_CIS_Disguised_Trooper",
 			"AUX_95th_CIS_TS_F", "AUX_95th_CIS_TS_Green", "AUX_95th_CIS_TS_Red",
-			"AUX_95th_Droid_B1_Shield", "AUX_95th_Droid_B1_Turret", "AUX_95th_Droid_B1_Mortar"
+			"AUX_95th_Droid_B1_Shield", "AUX_95th_Droid_B1_Turret", "AUX_95th_Droid_B1_Mortar",
+
+			"AUX_95th_Human_Unit_Riot"
         };
         weapons[] = {
 			"AUX_95th_E5_shield_attached"
@@ -29,7 +31,8 @@ class CfgPatches {
         requiredAddons[] = {
             "AUX_95th_main", 
             "AUX_95th_units_shared",
-			"JLTS_characters_DroidUnits"
+			"JLTS_characters_DroidUnits",
+			"AUX_95th_voicelines"
         };
         authors[] = {"Turner"};
         skipWhenMissingDependencies = 1;
@@ -220,6 +223,12 @@ class CfgMovesMaleSdr: CfgMovesBasic {
 
 class CfgFunctions {
     class AUX_95th {
+		class Units_SeparatistDroids {
+			file = "\z\AUX_95th\addons\units\separatistDroids\functions\init";
+            class B1Init {};
+            class radarJammerInit {};
+        };
+
         class SeparatistDroidsCommando {
 			file = "\z\AUX_95th\addons\units\separatistDroids\functions\commando";
             class checkCanJump {};
@@ -233,6 +242,7 @@ class CfgFunctions {
             class handleB1ShieldInit {};
             class handleB1TurretInit {};
             class handleB1MortarInit {};
+            class handleB1RocketFallDamage {};
             class spawnRandomB1 {};
         };
 
@@ -256,6 +266,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos{displayName="Commandos";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries{displayName="T-Series";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids{displayName="B1 Battledroids";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Humans{displayName="Humans";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids_Rocket{displayName="B1 Battledroids (Rocket)";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B2_Battledroids{displayName="B2 Battledroids";};
 };
@@ -267,6 +278,16 @@ class CfgGroups {
 			class AUX_95th_Faction_SeparatistDroids_B1 {
 				name = "B1 Battledroids (Standard)";
 
+				class AUX_95th_Groups_Droid_B1_Rocket_FireTeam {
+					side = 0;
+					faction = "AUX_95th_Faction_SeparatistDroids";
+					name="B1 Rocket Fire Team";
+					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Rocket_Unit_Rifleman"; rank = "SERGEANT"; position[] = {0,0,0};};
+					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Rocket_Unit_Rifleman"; rank = "PRIVATE"; position[] = {5,-5,0};};
+					class Unit2{side = 0; vehicle = "AUX_95th_Droid_B1_Rocket_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit3{side = 0; vehicle = "AUX_95th_Droid_B1_Rocket_Unit_Rifleman"; rank = "PRIVATE"; position[] = {10,-10,0};};
+				};
+
 				class AUX_95th_Groups_Droid_B1_FireTeam {
 					side = 0;
 					faction = "AUX_95th_Faction_SeparatistDroids";
@@ -277,47 +298,43 @@ class CfgGroups {
 					class Unit3 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AutoRifleman"; rank = "PRIVATE"; position[] = {10,-10,0};};
 				};
 
+				class AUX_95th_Groups_Droid_B1_SniperTeam {
+					side = 0;
+					faction = "AUX_95th_Faction_SeparatistDroids";
+					name="B1 Sniper Team";
+					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Sniper"; rank = "SERGEANT"; position[] = {0,0,0};};
+					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {5,-5,0};};
+				};
+				
 				class AUX_95th_Groups_Droid_B1_AssaultTeam_AT {
 					side = 0;
 					faction = "AUX_95th_Faction_SeparatistDroids";
-					name="B1 Assault Team (AT)";
+					name="B1 Assault Team (AT/AA)";
 					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Commander"; rank = "SERGEANT"; position[] = {0,0,0};};
-					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {5,-5,0};};
-					class Unit2 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-5,-5,0};};
-					class Unit3 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AT"; rank = "PRIVATE"; position[] = {-5,-5,0};};
-					class Unit4 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AutoRifleman"; rank = "PRIVATE"; position[] = {10,-5,0};};
-					class Unit5 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,-10,0};};
-					class Unit6 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {-10,-5,0};};
-					class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {10,10,0};};
+					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {5,0,0};};
+					class Unit2 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AA"; rank = "PRIVATE"; position[] = {5,5,0};};
+					class Unit3 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AT"; rank = "PRIVATE"; position[] = {0,5,0};};
+					class Unit4 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_AutoRifleman"; rank = "PRIVATE"; position[] = {-5,0,0};};
+					class Unit5 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Shotgun"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+					class Unit6 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Sniper"; rank = "PRIVATE"; position[] = {10,0,0};};
+					class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {10,5,0};};
 				};
 
-				class AUX_95th_Groups_Droid_B1_AssaultTeam_Random {
-					side = 0;
-					faction = "AUX_95th_Faction_SeparatistDroids";
-					name="Random B1 Assault Team";
-					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Commander"; rank = "SERGEANT"; position[] = {0,0,0};};
-					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {5,-5,0};};
-					class Unit2 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-5,-5,0};};
-					class Unit3 {side = 0; vehicle = "AUX_95th_Droid_B1_Random_Standard_Launchers"; rank = "PRIVATE"; position[] = {-5,-5,0};};
-					class Unit4 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {10,-5,0};};
-					class Unit5 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-10,-10,0};};
-					class Unit6 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-10,-5,0};};
-					class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {10,10,0};};
-				};
+				// class AUX_95th_Groups_Droid_B1_Specialist_AssaultTeam_Random {
+				// 	side = 0;
+				// 	faction = "AUX_95th_Faction_SeparatistDroids";
+				// 	name="Random B1 Specialist Assault Team";
+				// 	class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Commander"; rank = "SERGEANT"; position[] = {0,0,0};};
+				// 	class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {5,-5,0};};
+				// 	class Unit2 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+				// 	class Unit3 {side = 0; vehicle = "AUX_95th_Droid_B1_Random_Specialists"; rank = "PRIVATE"; position[] = {-5,-5,0};};
+				// 	class Unit4 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {10,-5,0};};
+				// 	class Unit5 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-10,-10,0};};
+				// 	class Unit6 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-10,-5,0};};
+				// 	class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {10,10,0};};
+				// };
 
-				class AUX_95th_Groups_Droid_B1_Specialist_AssaultTeam_Random {
-					side = 0;
-					faction = "AUX_95th_Faction_SeparatistDroids";
-					name="Random B1 Specialist Assault Team";
-					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Commander"; rank = "SERGEANT"; position[] = {0,0,0};};
-					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {5,-5,0};};
-					class Unit2 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-5,-5,0};};
-					class Unit3 {side = 0; vehicle = "AUX_95th_Droid_B1_Random_Specialists"; rank = "PRIVATE"; position[] = {-5,-5,0};};
-					class Unit4 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {10,-5,0};};
-					class Unit5 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-10,-10,0};};
-					class Unit6 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {-10,-5,0};};
-					class Unit7 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {10,10,0};};
-				};
+
 			};
 		};
 	};
@@ -349,6 +366,8 @@ class CfgVehicles {
 	class WBK_B2_Mod_GL;
 	class WBK_B2_Mod_Shotgun;
 
+	class 3AS_U_CIS_Heavy;
+
 	class JLTS_B1_backpack;
 
 	// B1's
@@ -364,6 +383,19 @@ class CfgVehicles {
 
 	// T-Series's
 	#include "Units\tSeries.hpp"
+
+	// Humans
+	class AUX_95th_Human_Unit_Riot: 3AS_U_CIS_Heavy {
+		scope=2;
+		DSS_DamageSystem_Active=1;
+		DSS_DamageSystem_Resistance=0.15;
+		DSS_DamageSystem_Headshot_Multiplier=4;
+		displayName="Riot (E-5S)";
+		faction="AUX_95th_Faction_SeparatistDroids";
+		editorCategory="AUX_95th_Faction_SeparatistDroids";
+		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Humans";
+		AUX_95th_Can_Use_Shield=1;
+	};
 };
 
 class CfgWeapons {
@@ -453,6 +485,53 @@ class CfgWeapons {
 			containerClass="Supply150";
 			mass=40;
 		};
+	};
+};
+
+class ACE_Medical_Injuries {
+	class damageTypes {
+		class woundHandlers;
+		class falling {
+			class woundHandlers: woundHandlers {
+				AUX_95th_Droid_Unit_Commando_Handler = "{ call AUX_95th_fnc_handleCommandoFallDamage }";
+				AUX_95th_Droid_Unit_B1_Rocket_Handler = "{ call AUX_95th_fnc_handleB1RocketFallDamage }";
+			};
+		};
+
+		class collision {
+			class woundHandlers: woundHandlers {
+				AUX_95th_Droid_Unit_B1_Rocket_Handler = "{ call AUX_95th_fnc_handleB1RocketFallDamage }";
+			};
+		};
+	};
+};
+
+class CfgUserActions {
+	class AUX_95th_Commando_Jump {
+		displayName = "Commando Jump"; tooltip = "Jump with the BX Commandos";
+		onActivate = "[player] spawn AUX_95th_fnc_handleCommandoJump"; modifierBlocking = 1;
+	};
+
+	class AUX_95th_Personal_Shield {
+		displayName = "Personal Shield"; tooltip = "Activate the Personal Shield";
+		onActivate = "[player] spawn AUX_95th_fnc_handlePersonalShield"; modifierBlocking = 1;
+	};
+};
+
+class CfgDefaultKeysPresets {
+	class Arma2 {
+		class Mappings {
+			AUX_95th_Commando_Jump[] = {0x1D130004};
+			AUX_95th_Personal_Shield[] = {0x1D130004};
+		};
+	};
+};
+
+class UserActionGroups {
+	class AUX_95th_CIS_Units {
+		name = "95th - CIS";
+		isAddon = 1;
+		group[] = {"AUX_95th_Commando_Jump", "AUX_95th_Personal_Shield"};
 	};
 };
 

@@ -210,6 +210,7 @@ class CfgFunctions {
         class PersonalShield {
 			file = "\z\AUX_95th\addons\equipment\functions\personalShield";
             class checkCanShield {};
+            class handlePersonalShield {};
         };
 
         class EngineerTurret {

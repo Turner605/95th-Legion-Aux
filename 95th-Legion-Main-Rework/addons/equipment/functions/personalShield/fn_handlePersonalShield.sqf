@@ -135,7 +135,7 @@ _personShield setVariable ["ShieldParent",_unit];
    }]; 
 }] remoteExec ["spawn", 0, true]; 
 
-_smlfirelight = "#lightpoint" createVehicleLocal (getpos _unit);   
+_smlfirelight = "#lightpoint" createVehicleLocal (getPos _unit);   
 _smlfirelight setLightAmbient [0.2, 0, 1];    
 _smlfirelight setLightColor [0.2, 0, 1];  
 _smlfirelight setLightBrightness 0.3;   
