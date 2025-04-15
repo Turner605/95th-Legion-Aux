@@ -1,19 +1,4 @@
-if (!isMultiplayer) exitWith {};
-
-private _permittedDLC = [
-    "1325500",
-    "1021790",
-    "798390",
-    "744950",
-    "571710",
-    "639600",
-    "601670",
-    "395180",
-    "332350",
-    "304380",
-    "288520",
-    "275700"
-];
+// if (!isMultiplayer) exitWith {};
 
 private _serverMods = [
     '1224892496', '1355481562', '1360626473', '1393068220',
@@ -42,14 +27,23 @@ private _permittedClientsides = [
     '772802287' // Atlas Hitmarkers
 ];
 
+private _permittedNames = [
+    "Orzel's Drive Yards"
+];
+
 private _notPermittedMods = [];
 
 {
     _x params ["_modname", "_modDir", "_isDefault", "_isOfficial", "_origin", "_hash", "_hashShort", "_itemID"];
 
-    if(!(_itemID == "0")) then {
-        if(!(_itemID in _serverMods) && !(_itemID in _permittedDLC) && !(_itemID in _permittedClientsides)) then {
-            _notPermittedMods pushBack _modname;
+    if(!_isOfficial) then {
+        if(!(_itemID in _serverMods)) then {
+            if(!(_itemID in _permittedClientsides)) then {
+                if(!(_modname in _permittedNames)) then {
+                    _notPermittedMods pushBack _modname;
+                    systemChat "_modname";
+                };
+            };
         };
     };
 } forEach getLoadedModsInfo;
