@@ -17,6 +17,7 @@ class CfgFunctions {
         class Versioning {
 			file = "\z\AUX_95th_Extras\addons\versioning\functions";
             class checkVersion {};
+            class checkAddons {};
         };
     };
 };
