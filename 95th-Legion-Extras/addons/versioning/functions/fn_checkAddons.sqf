@@ -1,4 +1,4 @@
-// if (!isMultiplayer) exitWith {};
+if (!isMultiplayer) exitWith {};
 
 private _serverMods = [
     '1224892496', '1355481562', '1360626473', '1393068220',
