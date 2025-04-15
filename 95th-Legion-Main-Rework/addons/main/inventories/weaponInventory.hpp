@@ -10,11 +10,11 @@ class TransportMagazines {
 	class _xx_3AS_6Rnd_HE_Grenade_shell{magazine="3AS_6Rnd_HE_Grenade_shell"; count=20;};
 	class _xx_AUX_95th_BX42_Rocket_HE{magazine="AUX_95th_BX42_Rocket_HE"; count=20;};
 
-	class _xx_3AS_JLTS_MK43_AT{magazine="3AS_JLTS_MK43_AT"; count=5;};
-	class _xx_3AS_JLTS_MK39_AA{magazine="3AS_JLTS_MK39_AA"; count=5;};
-	class _xx_3AS_JLTS_MK44_HE{magazine="3AS_JLTS_MK44_HE"; count=5;};
-	class _xx_3AS_MK41_AT{magazine="3AS_MK41_AT"; count=5;};
-	class _xx_3AS_MK42_HE{magazine="3AS_MK42_HE"; count=5;};
+	class _xx_3AS_JLTS_MK43_AT{magazine="3AS_JLTS_MK43_AT"; count=20;};
+	class _xx_3AS_JLTS_MK39_AA{magazine="3AS_JLTS_MK39_AA"; count=20;};
+	class _xx_3AS_JLTS_MK44_HE{magazine="3AS_JLTS_MK44_HE"; count=20;};
+	class _xx_3AS_MK41_AT{magazine="3AS_MK41_AT"; count=20;};
+	class _xx_3AS_MK42_HE{magazine="3AS_MK42_HE"; count=20;};
 
 	class _xx_AUX_95th_Stun_Long_Mag{magazine="AUX_95th_Stun_Long_Mag"; count=64;};
 	class _xx_AUX_95th_Universal_Rifle_Mag{magazine="AUX_95th_Universal_Rifle_Mag"; count=240;};
