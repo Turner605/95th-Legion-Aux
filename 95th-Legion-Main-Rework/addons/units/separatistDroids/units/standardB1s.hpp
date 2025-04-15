@@ -148,11 +148,11 @@ class AUX_95th_Droid_B1_Unit_Rifleman : JLTS_Droid_B1_E5 {
 	canBleed = 0;
 	magazines[]={
 		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
-		"SmokeShell", "SmokeShell", "DSS_Grenade_Magazine_Thermal_C1"
+		"SmokeShell", "SmokeShell"
 	};
 	respawnMagazines[]={
 		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
-		"SmokeShell", "SmokeShell", "DSS_Grenade_Magazine_Thermal_C1"
+		"SmokeShell", "SmokeShell"
 	};
 };
 
