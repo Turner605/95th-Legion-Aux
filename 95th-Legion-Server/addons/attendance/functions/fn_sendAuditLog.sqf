@@ -20,9 +20,11 @@ private _contentString = '{' +
     '}]' +
 '}';
 
+private _auditLoggingWebhook = (["AuditLoggingWebhook"] call AUX_95th_Server_fnc_getServerVariable);
+
 "daa" callExtension ["post", [
     "AuditLogging", 
-    "https://discord.com/api/webhooks/1256603032230035536/HQ61S0B-bWmXMWf_vxbsLGMhSdq1cc-IuZJQI8ghGXPmM_nLeey73yM8i4_znnuWiQZC",
+    _auditLoggingWebhook,
     _contentString,
     "content-type:application/json" 
 ]];

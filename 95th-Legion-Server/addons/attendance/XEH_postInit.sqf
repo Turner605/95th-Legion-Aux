@@ -48,13 +48,13 @@ addMissionEventHandler ["MPEnded", {
 
     private _systemTime = systemTimeUTC;
     private _dateString = ([_systemTime select 2, _systemTime select 1, _systemTime select 0] joinString ".");
-
     private _contentString = '{"content": "' + _dateString + ' Attendance: ' + '[' +_mappedResult + ']' + '"}';
+    private _auditLoggingWebhook = (["AuditLoggingWebhook"] call DSS_fnc_getServerVariable);
 
     if(_playerCount > 4) then {
         "daa" callExtension ["post", [
             "AttendanceTracking", 
-            "https://discord.com/api/webhooks/1256603032230035536/HQ61S0B-bWmXMWf_vxbsLGMhSdq1cc-IuZJQI8ghGXPmM_nLeey73yM8i4_znnuWiQZC", //Temp until I can move it into files (hope no one finds it lol)
+            _auditLoggingWebhook,
             _contentString,
             "content-type:application/json" 
         ]];
