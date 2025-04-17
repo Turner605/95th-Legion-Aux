@@ -58,13 +58,16 @@ if((count _notPermittedMods) > 0) then {
     private _modList = format ["Mods: %1", (str _notPermittedMods)];
     private _errorMsg = "You are running mods that are not permitted, Please remove them or contact Turner for approval " + _modList;
     private _playerName = (name player);
-
+    
+    private _playerNameFormatted = ((_playerName regexReplace ['"/gio', '']) regexReplace ["'/gio", ""]);
+    private _modListFormatted = ((_modList regexReplace ['"/gio', '']) regexReplace ["'/gio", ""]);
+    
     if(AUX_95th_AuditLogging_Unauthorized_Mods) then {
         [
             "Unauthorized Mods Attempt", 
-            _modList,
+            _modListFormatted,
             "16383844",
-            _playerName
+            _playerNameFormatted
         ] spawn AUX_95th_fnc_sendAuditLog;
     } else {
         [[_playerName, _modList], {
