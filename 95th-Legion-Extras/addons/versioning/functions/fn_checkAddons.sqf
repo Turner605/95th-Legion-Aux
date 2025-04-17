@@ -1,4 +1,5 @@
 if (!isMultiplayer) exitWith {};
+if (isServer) exitWith {};
 
 private _serverMods = [
     '1224892496', '1355481562', '1360626473', '1393068220',
@@ -24,7 +25,12 @@ private _permittedClientsides = [
     '2467589125', // Enhanced Map
     '2586652540', // Kill Confirmed
     '2095827925', // Brighter Flares
-    '772802287' // Atlas Hitmarkers
+    '772802287', // Atlas Hitmarkers
+    '825179978', // Enhanced Soundscape
+    '2006076771', // Custom Third Person Camera View
+    '1841047025', // Prone Launchers
+    '2513044572', // Fawks' Enhanced NVGs
+    '2041057379' // A3 Thermal Improvement
 ];
 
 private _permittedNames = [
@@ -41,7 +47,6 @@ private _notPermittedMods = [];
             if(!(_itemID in _permittedClientsides)) then {
                 if(!(_modname in _permittedNames)) then {
                     _notPermittedMods pushBack _modname;
-                    systemChat "_modname";
                 };
             };
         };
@@ -49,7 +54,23 @@ private _notPermittedMods = [];
 } forEach getLoadedModsInfo;
 
 if((count _notPermittedMods) > 0) then {
-    private _errorMsg = format ["You are running mods that are not permitted, Please remove them or contact Turner for approval. Mods: %1", (str _notPermittedMods)];
+    private _modList = format ["Mods: %1", (str _notPermittedMods)];
+    private _errorMsg = "You are running mods that are not permitted, Please remove them or contact Turner for approval " + _modList;
+    private _playerName = (name player);
+
+    if(AUX_95th_AuditLogging_Unauthorized_Mods) then {
+        [
+            "Unauthorized Mods Attempt", 
+            _modList,
+            "16383844",
+            _playerName
+        ] spawn AUX_95th_fnc_sendAuditLog;
+    } else {
+        [[_playerName, _modList], {
+            params ["_playerName", "_modList"];
+            systemChat (_playerName + " Tried to connect with " + _modList);
+        }] remoteExec ["call", allCurators];
+    };
 
     if (hasInterface) then {
         ["[95th] ERROR", _errorMsg, {findDisplay 46 closeDisplay 0}] call ace_common_fnc_errorMessage;
