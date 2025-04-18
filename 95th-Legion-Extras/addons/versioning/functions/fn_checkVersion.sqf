@@ -18,5 +18,10 @@ if (isServer) then {
                 ["[95th] ERROR", _errorMsg, {findDisplay 46 closeDisplay 0}] call ace_common_fnc_errorMessage;
             };
         };
+
+        if(AUX_95th_Enable_Addon_Checker) then {
+            [] call AUX_95th_Extras_fnc_checkAddons;
+        };
+        
     }, [_version]] call CBA_fnc_waitUntilAndExecute;
 };
