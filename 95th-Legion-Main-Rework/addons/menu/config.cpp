@@ -21,32 +21,12 @@ class CfgPatches {
 };
 
 class RscPicture;
-class RscStructuredText;
-class RscControlsGroup;
-class RscActiveText;
-class RscActivepicture;
 class RscText;
-class RscProgress;
-class RscVignette;
+class RscControlsGroupNoHScrollbars;
+class RscActivepicture;
 class RscControlsGroupNoScrollbars;
 class controls;
-class CA_Vignette;
-class RscControlsGroupNoHScrollbars;
 class RscStandardDisplay;
-class RscTitle;
-class RscPictureKeepAspect;
-class RscButtonMenu;
-class RscButton;
-class RscVideo: RscPicture {
-	autoplay = 1;
-	loops = 1;
-};
-class HScrollbar;
-class ScrollBar;
-class Attributes;
-class ctrlStaticPicture;
-class RscActivePictureKeepAspect;
-class RscButtonMenuMain;
 
 class CfgMainMenuSpotlight {
 	class Bootcamp {condition = "false";};
@@ -70,109 +50,60 @@ class CfgMainMenuSpotlight {
 
 class RscDisplayLoading {
 	class Variants {
+
 		class LoadingOne {
 			idd = 250;
-			class controls {
-				class LoadingPic: RscPicture {
-					idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-					text = "\z\AUX_95th\addons\menu\data\backgroundOne.paa"; 
-				};
-			};
+			class controls { class LoadingPic: RscPicture {
+				idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
+				text = "\z\AUX_95th\addons\menu\data\backgroundOne.paa"; 
+			}; };
 		};
 
 		class Loading_West1: LoadingOne {
-			class controls {
-				class LoadingPic {
-					idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-					text = "\z\AUX_95th\addons\menu\data\backgroundTwo.paa"; 
-				};
-			};
+			class controls { class LoadingPic {
+				idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
+				text = "\z\AUX_95th\addons\menu\data\backgroundTwo.paa"; 
+			}; };
 		};
 
 		class Loading_West2: LoadingOne {
-			class controls {
-				class LoadingPic {
-					idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-					text = "\z\AUX_95th\addons\menu\data\backgroundThree.paa"; 
-				};
-			};
+			class controls { class LoadingPic {
+				idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
+				text = "\z\AUX_95th\addons\menu\data\backgroundThree.paa"; 
+			}; };
 		};
 
 		class Loading_East1: LoadingOne {
-			class controls {
-				class LoadingPic {
-					idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-					text = "\z\AUX_95th\addons\menu\data\backgroundOne.paa"; 
-				};
-			};
+			class controls { class LoadingPic {
+				idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
+				text = "\z\AUX_95th\addons\menu\data\backgroundFour.paa"; 
+			}; };
 		};
 
 		class Loading_East2: LoadingOne {
-			class controls {
-				class LoadingPic {
-					idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-					text = "\z\AUX_95th\addons\menu\data\backgroundTwo.paa"; 
-				};
-			};
-		};
-	};
-};
-
-class RscDisplayLoadCustom: RscStandardDisplay {
-	class controlsBackground {
-		class LoadingPic: RscPicture {
-			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-			text = "\z\AUX_95th\addons\menu\data\backgroundThree.paa"; 
-		};
-	};
-};
-
-class RscDisplayLoadMission: RscStandardDisplay {
-	class controlsBackground {
-		class LoadingPic: RscPicture {
-			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-			text = "\z\AUX_95th\addons\menu\data\backgroundTwo.paa"; 
-		};
-	};
-};
-
-class RscDisplayStart: RscStandardDisplay {
-	class controls {
-		class LoadingPic: RscPicture {
-			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-			text = "\z\AUX_95th\addons\menu\data\backgroundOne.paa"; 
-		};
-	};
-};
-
-class RscDisplayMPPlayers;
-class RscDisplayClientWait: RscDisplayMPPlayers {
-	class LoadingPic: RscPicture {
-		idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-		text = "\z\AUX_95th\addons\menu\data\backgroundThree.paa"; 
-	};
-};
-
-class RscDisplayClient: RscStandardDisplay {
-	class controlsBackground {
-		class LoadingPic: RscPicture {
-			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-			text = "\z\AUX_95th\addons\menu\data\backgroundTwo.paa"; 
+			class controls { class LoadingPic {
+				idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
+				text = "\z\AUX_95th\addons\menu\data\backgroundFive.paa"; 
+			}; };
 		};
 	};
 };
 
 class RscDisplayMain: RscStandardDisplay {
 	enableDisplay = 1;
-	text = "\z\AUX_95th\addons\menu\data\backgroundOne.paa"; 
+	text = "\z\AUX_95th\addons\menu\data\backgroundSix.paa"; 
+
+	// Main Menu background
 	class controlsBackground {
 		class LoadingPic: RscPicture {
 			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
-			text = "\z\AUX_95th\addons\menu\data\backgroundFour.paa"; 
+			text = "\z\AUX_95th\addons\menu\data\backgroundMenu.paa"; 
 		};
 	};
 
 	class controls {
+
+		// 95th Server Join Button
 		class GroupSingleplayer: RscControlsGroupNoScrollbars {
             class Controls;
         };
@@ -190,177 +121,72 @@ class RscDisplayMain: RscStandardDisplay {
                     y = "(3 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
                     onbuttonclick = "connectToServer ['135.125.189.7', 2302, '95th']";
                 };
-
-                // class JoinPrivateServer: ServerBrowser {
-                //     idc = -1;
-                //     text = "UAG: Private";
-                //     tooltip = "Connect to the UAG Private (Ops) Server";
-                //     y = "(4 * 	1.5) * 	(pixelH * pixelGrid * 2) + 	(pixelH)";
-                //     onbuttonclick = "connectToServer ['arma.uagpmc.com', 2312, 'lemon']";
-                // };
             };
         };
 
-        // class BackgroundSpotlight:Rscpicture {show=0; onload="";};
-        // class BackgroundSpotlightLeft:BackgroundSpotlight {show=0; onload="";};
-        // class BackgroundSpotlightRight:BackgroundSpotlightLeft {show=0; onload="";};
-        // class Spotlight1:RscMainMenuSpotlight {idc=1021; show=0; onload="";};
-        // class Spotlight2:Rsctext {idc=1020; show=0; onload="";};
-        // class Spotlight3:RscMainMenuSpotlight {idc=1022; show=0; onload="";};
-        // class SpotlightPrev:RscActivepictureKeepAspect {idc=1060; show=0; onload="";};
-        // class SpotlightNext:SpotlightPrev {show=0; onload="";};
+		// 95th Logo
         class logo:RscActivepicture {text="\z\AUX_95th\addons\menu\data\MainScreenBanner.paa"; url=""; tooltip="95th Legion"; onButtonClick=""; onload="";};
         class logoApex:logo {show=0; onload=""; text="";};
         class infomods:RscControlsGroupNoHScrollbars {show=0;};
-        class infoDLCsOwned:infomods {show=1;};
-        class infoDLCs:infoDLCsOwned {show=1;};
-        class infoNews:infomods {show=1;};
+        class infoDLCsOwned:infomods {show=0;};
+        class infoDLCs:infoDLCsOwned {show=0;};
+        class infoNews:infomods {show=0;};
         class infoVersion:infoNews {show=0;};
 
+		// Spotlight removal
 		delete Spotlight1;
+		delete Spotlight2;
 		delete Spotlight3;
+		delete BackgroundSpotlight;
 		delete BackgroundSpotlightRight;
 		delete BackgroundSpotlightLeft;
-		class SpotlightBase: RscControlsGroupNoScrollbars {
-			show = 0;
-			x = "0.5 - (1.5 *  10) *  (pixelW * pixelGridNoUIScale * 2) -  (2 * pixelW)";
-			y = "0.5 - ( 10 / 2) *  (pixelH * pixelGridNoUIScale * 2)";
-			w = "10 *  (pixelW * pixelGridNoUIScale * 2)";
-			h = "10 *  (pixelH * pixelGridNoUIScale * 2)";
-			class Controls {
-				class GroupPicture: RscControlsGroupNoScrollbars {
-					x = 0;
-					y = 0;
-					w = "10 *  (pixelW * pixelGridNoUIScale * 2)";
-					h = "10 *  (pixelH * pixelGridNoUIScale * 2)";
-					class Controls {
-						class Picture: RscPictureKeepAspect {
-							idc = 1023;
-							text = "#(argb,8,8,3)color(1,0,1,1)";
-							x = 0;
-							y = 0;
-							w = "10 *  (pixelW * pixelGridNoUIScale * 2)";
-							h = "10 *  (pixelH * pixelGridNoUIScale * 2)";
-						};
-						class Video: RscVideo {
-							idc = 1024;
-							show = 0;
-							x = 0;
-							y = 0;
-							w = "10 *  (pixelW * pixelGridNoUIScale * 2)";
-							h = "10 *  (pixelH * pixelGridNoUIScale * 2)";
-						};
-					};
-				};
-				class GroupHover: RscControlsGroupNoScrollbars {
-					idc = 1025;
-					fade = 1;
-					x = 0;
-					y = 0;
-					w = "10 *  (pixelW * pixelGridNoUIScale * 2)";
-					h = "10 *  (pixelH * pixelGridNoUIScale * 2)";
-					class Controls {
-						class Overlay: RscPicture {
-							text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\hover_ca.paa";
-							colorText[] = {0,0,0,0.5};
-							x = 0;
-							y = 0;
-							w = "10 *  (pixelW * pixelGridNoUIScale * 2)";
-							h = "10 *  (pixelH * pixelGridNoUIScale * 2)";
-						};
-						class LineLeft: RscText {
-							colorBackground[] = {1,1,1,1};
-							x = 0;
-							y = 0;
-							w = "pixelW";
-							h = "10 *  (pixelH * pixelGridNoUIScale * 2)";
-						};
-						class LineRight: LineLeft {
-							x = "10 *  (pixelW * pixelGridNoUIScale * 2) - pixelW";
-						};
-						class LineTop: LineLeft {
-							idc = 1027;
-							x = 0;
-							y = 0;
-							w = "10 *  (pixelW * pixelGridNoUIScale * 2)";
-							h = "(pixelH * pixelGrid * 2)";
-							colorText[] = {0,0,0,1};
-							shadow = 0;
-							style = 0;
-							sizeEx = "(pixelH * pixelGrid * 2)";
-							font = "PuristaLight";
-							onLoad = "(_this select 0) ctrlsettext toupper ctrltext (_this select 0);";
-						};
-						class LineBottom: LineTop {
-							y = "10 *  (pixelH * pixelGridNoUIScale * 2) - pixelH";
-							h = "pixelH";
-						};
-					};
-				};
-
-				class TextBackground: RscPicture {
-					text = "\a3\Ui_f\data\GUI\Rsc\RscDisplayMain\spotlight_backgroundText_ca.paa";
-					colorText[] = {0,0,0,0.5};
-					x = 0;
-					y = 0;
-					w = "10 *  (pixelW * pixelGridNoUIScale * 2)";
-					h = "10 *  (pixelH * pixelGridNoUIScale * 2)";
-				};
-				class Text: RscStructuredText {
-					idc = 1028;
-					size = "1.00 *  (pixelH * pixelGridNoUIScale * 2)";
-					shadow = 2;
-					x = 0;
-					y = 0;
-					w = "10 *  (pixelW * pixelGridNoUIScale * 2)";
-					h = "10 *  (pixelH * pixelGridNoUIScale * 2)";
-					class Attributes {
-						align = "center";
-						color = "#ffffff";
-						font = "PuristaBold";
-					};
-				};
-				class Button: RscButton {
-					idc = 1026;
-					colorBackground[] = {0,0,0,0};
-					colorBackgroundActive[] = {0,0,0,0};
-					colorFocused[] = {0,0,0,0};
-					x = 0;
-					y = 0;
-					w = "10 *  (pixelW * pixelGridNoUIScale * 2)";
-					h = "10 *  (pixelH * pixelGridNoUIScale * 2)";
-				};
-			};
-		};
-
-		class Spotlight2: SpotlightBase {
-			idc = 1020;
-			show = 1;
-			x = "0.5 - (0.5 *  10) *  (pixelW * pixelGridNoUIScale * 2)";
-			class Controls: Controls {
-				class GroupPicture: GroupPicture {
-					class Controls: Controls {
-						class Picture: Picture{};
-						class Video: Video{};
-					};
-				};
-				class GroupHover: GroupHover {
-					class Controls: Controls {
-						class Overlay: Overlay{};
-						class LineLeft: LineLeft{};
-						class LineRight: LineRight{};
-						class LineTop: LineTop{};
-						class LineBottom: LineBottom{};
-					};
-				};
-				class TextBackground: TextBackground{};
-				class Text: Text{};
-				class Button: Button{};
-			};
-		};
 	};
 };
 
 class RscMainMenuSpotlight: RscControlsGroupNoScrollbars {show = 0; onLoad = "";};
+
+class RscDisplayLoadCustom: RscStandardDisplay {
+	class controlsBackground {
+		class LoadingPic: RscPicture {
+			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
+			text = "\z\AUX_95th\addons\menu\data\backgroundOne.paa"; 
+		};
+	};
+};
+
+class RscDisplayLoadMission: RscStandardDisplay {
+	class controlsBackground {
+		class LoadingPic: RscPicture {
+			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
+			text = "\z\AUX_95th\addons\menu\data\backgroundTwo.paa"; 
+		};
+	};
+};
+
+class RscDisplayStart: RscStandardDisplay {
+	class controls {
+		class LoadingPic: RscPicture {
+			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
+			text = "\z\AUX_95th\addons\menu\data\backgroundThree.paa"; 
+		};
+	};
+};
+
+class RscDisplayMPPlayers;
+class RscDisplayClientWait: RscDisplayMPPlayers {
+	class LoadingPic: RscPicture {
+		idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
+		text = "\z\AUX_95th\addons\menu\data\backgroundFour.paa"; 
+	};
+};
+
+class RscDisplayClient: RscStandardDisplay {
+	class controlsBackground {
+		class LoadingPic: RscPicture {
+			idc = 1; x = "SafeZoneX"; y = "SafeZoneY"; h = "SafeZoneH"; w = "SafeZoneW";
+			text = "\z\AUX_95th\addons\menu\data\backgroundFive.paa"; 
+		};
+	};
+};
 
 #include "CfgEventHandlers.hpp"

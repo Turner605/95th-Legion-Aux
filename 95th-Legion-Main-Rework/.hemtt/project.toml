@@ -12,8 +12,8 @@ include = [
 
 exclude = [
     "*.png", # explicitly excluding image source files from build, but not repository
-    "addons/vehicles/exampleVehicle",
-    "addons/objects/exampleObject"
+    "*.psd", # explicitly excluding psd source files from build, but not repository
+    "addons/*/example*"
 ]
 
 [version]
