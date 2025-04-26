@@ -32,11 +32,19 @@ if ([] call BIS_fnc_admin == 2) exitWith {};
         '2006076771', // Custom Third Person Camera View
         '1841047025', // Prone Launchers
         '2513044572', // Fawks' Enhanced NVGs
-        '2041057379' // A3 Thermal Improvement
+        '2041057379', // A3 Thermal Improvement
+        '2092900437', // Ragdoll On Command
+        '1317053909', // Tactical weapon swap
+        '1911374016', // ACE Vehicle Medical
+        '2041057379', // A3 Thermal Improvement
+        '3212172319', // Turret Enhanced Plus (Marbit Edit)
+        '1799993760' // Customized Thermal - Proof of Concept
     ];
 
     private _permittedNames = [
-        "Orzel's Drive Yards"
+        "Orzel's Drive Yards",
+        "@Custom Third Person Camera View",
+        "@Customized Thermal - Proof of Concept"
     ];
 
     private _notPermittedMods = [];
