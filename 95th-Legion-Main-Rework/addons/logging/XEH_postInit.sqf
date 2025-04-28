@@ -8,8 +8,6 @@
             private _grenadeType = [configFile >> "CfgMagazines" >> _magazine, "displayName", "Unknown"] call BIS_fnc_returnConfigEntry;
             private _playerName = (name _unit) regexReplace ['"/g', ""];
 
-            systemChat "tesssst";
-
             [
                 "Grenade Thrown", 
                 "Grenade Type: "+_grenadeType,
