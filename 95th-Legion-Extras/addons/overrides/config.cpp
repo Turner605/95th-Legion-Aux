@@ -16,7 +16,8 @@ class CfgPatches {
             "3AS_Characters_Droids",
             "3AS_Deka",
             "ls_vehicles_ground",
-            "lsd_units_redfor"
+            "lsd_units_redfor",
+            "WBK_PhoenixTreal_FlamethrowerMOD"
         };
         authors[] = {"Turner"};
         VERSION_CONFIG;
@@ -30,6 +31,26 @@ class CfgFunctions {
             class removeStamina {};
         };
     };
+};
+
+class CfgSounds {
+	sounds[] = {};
+	class burnttodeath1 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class burnttodeath2 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class burnttodeath3 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class burnttodeath4 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class burnttodeath5 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class burnttodeath6 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+    class burnttodeath_distant1 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class burnttodeath_distant2 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class burnttodeath_distant3 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class burnttodeath_distant4 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class burnttodeath_distant5 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class burnttodeath_distant6 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+    class hit_by_flame_1 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class hit_by_flame_2 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class hit_by_flame_3 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
+	class hit_by_flame_4 {sound[] = {"\z\AUX_95th_Extras\addons\overrides\sounds\noSound.ogg",0,0};};
 };
 
 class CfgVehicles {
