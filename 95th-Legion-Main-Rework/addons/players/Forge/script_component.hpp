@@ -1,14 +1,14 @@
-#define COMPONENT players_elusive
-#define COMPONENT_BEAUTIFIED Players_Elusive
-#define PLAYER_NAME elusive
-#define PLAYER_NAME_BEAUTIFIED Elusive
+#define COMPONENT players_forge
+#define COMPONENT_BEAUTIFIED Players_Forge
+#define PLAYER_NAME forge
+#define PLAYER_NAME_BEAUTIFIED Forge
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY One_Three
+#define SQUAD_KEY One_One
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
-#define HELMET_P1_ENGINEER 1
+#define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
 #define HELMET_P1_SPECOPS 0
