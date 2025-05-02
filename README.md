@@ -13,10 +13,10 @@ The aux mod for the 95th Legion.
 To begin working on the aux mod, do the following.
 
 - Step 1: [INSTALL HEMTT](https://hemtt.dev/installation/index.html)
-- Step 2: Install the preferred git method:
+- Step 2: Create a [GITHUB](https://github.com/) account
+- Step 3: Install the git cmd and GUI:
   - [GIT](https://git-scm.com/downloads)
   - [GIT Desktop](https://desktop.github.com/download/)
-  - [GIT Extentions](https://gitextensions.github.io/)
 
 # Creating new player gear
 To create new player gear, do the following.
