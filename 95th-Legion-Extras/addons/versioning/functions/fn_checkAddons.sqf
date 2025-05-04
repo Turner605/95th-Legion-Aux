@@ -38,13 +38,15 @@ if ([] call BIS_fnc_admin == 2) exitWith {};
         '1911374016', // ACE Vehicle Medical
         '2041057379', // A3 Thermal Improvement
         '3212172319', // Turret Enhanced Plus (Marbit Edit)
-        '1799993760' // Customized Thermal - Proof of Concept
+        '1799993760', // Customized Thermal - Proof of Concept
+        '1677267612' // Ace Medical Assistant
     ];
 
     private _permittedNames = [
         "Orzel's Drive Yards",
         "@Custom Third Person Camera View",
-        "@Customized Thermal - Proof of Concept"
+        "@Customized Thermal - Proof of Concept",
+        "White Phosphor"
     ];
 
     private _notPermittedMods = [];
