@@ -49,6 +49,10 @@ if ([] call BIS_fnc_admin == 2) exitWith {};
         "White Phosphor"
     ];
 
+    private _additionalMods = parseSimpleArray AUX_95th_Enable_Addon_Checker_Additional_Mods;
+
+    {_serverMods pushBackUnique _x;} forEach _additionalMods; 
+
     private _notPermittedMods = [];
 
     {
