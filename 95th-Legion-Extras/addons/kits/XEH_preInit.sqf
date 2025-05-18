@@ -71,7 +71,7 @@ AUX_95th_Arsenal_Whitelisted_Magazines = [
 ];
 
 AUX_95th_Arsenal_Whitelisted_Attachments = [
-	"AUX_95th_optic_acog_DC15C","AUX_95th_optic_reflex_DC15C","AUX_95th_DC15X_Scope","3AS_Optic_Scope_WestarM5",
+	"AUX_95th_Optic_DC15C","AUX_95th_DC15X_Scope","3AS_Optic_Scope_WestarM5",
 	"SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Yellow","SEA_Optic_Holo_Two_Green",
 	"SEA_Optic_Holo_One_Blue","SEA_Optic_Holo_One_Green","SEA_Optic_Holo_One_Red","SEA_Optic_Holo_One_Yellow",
 	"acc_flashlight","acc_pointer_IR","ACE_acc_pointer_green","AUX_95th_DC17SA_flashlight","acc_flashlight_pistol","AUX_95th_Bipod_DC15L_f",
