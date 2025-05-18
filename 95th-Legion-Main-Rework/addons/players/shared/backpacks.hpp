@@ -6,6 +6,8 @@ class JLTS_Clone_LR_attachment;
 class JLTS_Clone_jumppack_JT12;
 class JLTS_Clone_jumppack_mc;
 class 3AS_B_Katarn_Backpack;
+class ReammoBox;
+class Bag_Base: ReammoBox{};
 
 #if BACKPACK_BELT_LIGHT == 1
     class AUX_95th_Backpack_Belt_Light_Shown_##PLAYER_NAME : JLTS_Clone_belt_bag {
@@ -805,6 +807,37 @@ class 3AS_B_Katarn_Backpack;
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
             Type = "Commando";
             Role = "Heavy";
+            Visibility = "Shown";
+            Radio = "Enabled";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+#endif
+
+#if BACKPACK_FLAMER == 1
+    class AUX_95th_Backpack_Flamer_Light_RTO_Shown_##PLAYER_NAME : Bag_Base {
+        author="95th Aux Team";
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
+        WBK_BurnEm_FlamethrowerBaloons = "true";
+        scope=2; 
+        maximumLoad=250; 
+        mass=80;
+		model="\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        hiddenSelections[]={"camo1"};
+        hiddenSelectionsTextures[]={
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\backpacks\flamer\light.paa) 
+        };
+        tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
+        tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode="tf_west_radio_code";
+        tf_hasLRradio=1;
+        tf_range=16000;
+        tf_subtype="digital_lr";
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
+            Type = "Flamer";
+            Role = "Light";
             Visibility = "Shown";
             Radio = "Enabled";
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);

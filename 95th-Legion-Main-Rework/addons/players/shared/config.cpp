@@ -440,28 +440,20 @@ class CfgVehicles {
 	class ReammoBox;
 	class Bag_Base: ReammoBox{};
 	class AUX_95th_BX42_Backpack: Bag_Base {
-		displayName="[95th] 0-0 Basic Backpacks";
+		displayName="[95th] DEPRICATED";
 		author="95th Aux Team";
 		WBK_BurnEm_FlamethrowerBaloons = "true";
 		scope=2; maximumLoad=250; mass=80;
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
 		model="\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
 		hiddenSelections[]={"camo1"};
-		hiddenSelectionsTextures[]={"\z\AUX_95th\addons\players\shared\data\Backpack_Flame.paa"};
+		hiddenSelectionsTextures[]={"\z\AUX_95th\addons\players\shared\data\MissingTexture.paa"};
 		tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_encryptionCode="tf_west_radio_code";
 		tf_hasLRradio=1;
 		tf_range=16000;
 		tf_subtype="digital_lr";
-        class XtdGearInfo {
-            model = "AUX_95th_Backpacks_Squad_Basic";
-            Type = "Flamer";
-            Role = "Light";
-            Visibility = "Shown";
-            Radio = "Enabled";
-            Player = "Trooper";
-        };
 	};
 };
 

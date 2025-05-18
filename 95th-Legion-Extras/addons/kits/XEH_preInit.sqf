@@ -208,7 +208,7 @@ AUX_95th_Arsenal_Whitelisted_Vests = [];
 
 
 //-----------------------------# Backpacks #-----------------------------------
-AUX_95th_Arsenal_Whitelisted_Backpacks = ["AUX_95th_BX42_Backpack"];
+AUX_95th_Arsenal_Whitelisted_Backpacks = [];
 {AUX_95th_Arsenal_Whitelisted_Backpacks pushBack "AUX_95th_Backpack_Belt_Light_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {AUX_95th_Arsenal_Whitelisted_Backpacks pushBack "AUX_95th_Backpack_Belt_Light_Hidden_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {AUX_95th_Arsenal_Whitelisted_Backpacks pushBack "AUX_95th_Backpack_Belt_Light_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
@@ -244,6 +244,7 @@ AUX_95th_Arsenal_Whitelisted_Backpacks = ["AUX_95th_BX42_Backpack"];
 {AUX_95th_Arsenal_Whitelisted_Backpacks pushBack "AUX_95th_Backpack_JT14_Light_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {AUX_95th_Arsenal_Whitelisted_Backpacks pushBack "AUX_95th_Backpack_JT14_Light_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 {AUX_95th_Arsenal_Whitelisted_Backpacks pushBack "AUX_95th_Backpack_Commando_Heavy_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
+{AUX_95th_Arsenal_Whitelisted_Backpacks pushBack "AUX_95th_Backpack_Flamer_Light_RTO_Shown_"+_x; } forEach AUX_95th_Arsenal_Whitelisted_Names;
 
 AUX_95th_Arsenal_Whitelisted_All = (
     AUX_95th_Arsenal_Whitelisted_Weapons + 
