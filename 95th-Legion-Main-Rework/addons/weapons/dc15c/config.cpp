@@ -4,9 +4,7 @@ class CfgPatches {
     class DOUBLES(PREFIX,COMPONENT) {
         name = COMPONENT_NAME;
         units[] = {};
-		weapons[] = {"3AS_optic_DC15C_F",
-			
-			"AUX_95th_DC15C","AUX_95th_DC15C_GL","AUX_95th_optic_acog_DC15C","AUX_95th_optic_reflex_DC15C"};
+		weapons[] = {"AUX_95th_DC15C", "AUX_95th_DC15C_GL"};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"AUX_95th_main", "AUX_95th_weapons_shared"};
         authors[] = {"Turner"};
@@ -32,20 +30,6 @@ class Mode_SemiAuto;
 
 class CfgWeapons {
 	class AUX_95th_Stun_Muzzle_Rifle;
-
-	class ItemCore;
-
-	class 3AS_optic_DC15C_F: ItemCore {};
-
-	class AUX_95th_Optic_DC15C: 3AS_optic_DC15C_F {
-		author = "95th Legion";
-	};
-
-	class AUX_95th_CowsSlot_DC15C: 3AS_CowsSlot_DC15C {
-		class compatibleItems {
-			AUX_95th_Optic_DC15C = 1;
-		};
-	};
 
 	class Rifle;
 	class Rifle_Base_F: Rifle {
@@ -92,6 +76,7 @@ class CfgWeapons {
 		displayName = "[95th] DC-15C";
 		author = "95th Legion";
 		magazines[] = {"AUX_95th_Universal_Rifle_Mag"};
+		magazineWell[] = {};
 		recoil = "AUX_95th_recoil_DC15C";
 		drySound[] = {"\z\AUX_95th\addons\weapons\shared\sounds\weapon_dry.wss",2,1,20};
 
@@ -104,7 +89,9 @@ class CfgWeapons {
         };
 
 		class WeaponSlotsInfo: WeaponSlotsInfo {
-			class CowsSlot: AUX_95th_CowsSlot_DC15C {};
+			class CowsSlot: CowsSlot {
+				compatibleItems[] = {"3AS_optic_DC15C_F","SEA_Optic_Holo_Two_Blue","SEA_Optic_Holo_Two_Red","SEA_Optic_Holo_Two_Yellow","SEA_Optic_Holo_Two_Green","SEA_Optic_Holo_One_Blue","SEA_Optic_Holo_One_Green","SEA_Optic_Holo_One_Red","SEA_Optic_Holo_One_Yellow"};
+			};
 		};
 
 		class FullAuto: FullAuto {
