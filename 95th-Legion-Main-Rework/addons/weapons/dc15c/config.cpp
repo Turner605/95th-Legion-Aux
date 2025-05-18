@@ -25,25 +25,6 @@ class CfgRecoils {
 	};
 };
 
-class CfgMagazines {
-	class 30Rnd_65x39_caseless_mag;
-	class AUX_95th_DC15S_mag: 30Rnd_65x39_caseless_mag {
-		JLTS_hasElectronics = 1;
-		JLTS_hasEMPProtection = 0;
-		author = "95th Legion";
-		modelSpecial = "";
-		modelSpecialIsProxy = 0;
-		picture = "z\AUX_95th\addons\weapons\dc15c\data\ui\dc15c_mag.paa";
-		model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
-		count = 80;
-		displayName = "DC15S Mag";
-		displayNameShort = "Standard Energy";
-		descriptionShort = "DC15S Magazine";
-		ammo = "AUX_95th_Rifle_Blue_Ammo";
-		tracersEvery = 1;
-	};
-};
-
 class 3AS_MuzzleSlot_DC15C;
 class 3AS_CowsSlot_DC15C;
 class Mode_FullAuto;
