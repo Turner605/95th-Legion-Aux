@@ -13,7 +13,7 @@ private _count = 0;
     }
 } forEach _buildingPositions;
 
-_count = round (_count * _garrisonPercentage);
+private _newCount = round (_count * _garrisonPercentage);
 
 private _b1TypeArray = [
     ["AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Shotgun", "AUX_95th_Droid_B1_Unit_AutoRifleman", "AUX_95th_Droid_B1_Unit_AT"],
@@ -23,11 +23,11 @@ private _b1TypeArray = [
 
 private _b1TypesToSpawn = (_b1TypeArray select _b1Type);
 
-if(!(_count < 1)) then {
+if(!(_newCount < 1)) then {
 
     private _spawnArray = [];
 
-    for "_i" from 0 to (_count-1) do {
+    for "_i" from 0 to (_newCount-1) do {
         if((_i%10 == 0) && _includeB2) then {
             _spawnArray pushBack "AUX_95th_Droid_B2_Unit_Blaster";
         }else{
