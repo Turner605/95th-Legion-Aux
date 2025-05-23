@@ -5,7 +5,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         units[] = {
             "AUX_95th_Misc_Airborne_Terminal", "AUX_95th_Misc_Medical_Terminal", "AUX_95th_Misc_Permission_Terminal",
-            "AUX_95th_Misc_Crate_Pad", "AUX_95th_Misc_Pod_Terminal"
+            "AUX_95th_Misc_Crate_Pad", "AUX_95th_Misc_Pod_Terminal", 
+            "AUX_95th_Misc_Auto_Airspawn_Controller", "AUX_95th_Misc_Auto_Airspawn_Marker"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -21,6 +22,8 @@ class CfgVehicles {
     class DSS_Permissions_Droid;
     class 3as_FOB_turret_base_prop;
     class 3AS_HoloTable_Octagon_Prop;
+    class Sign_Arrow_Cyan_F;
+    class 3AS_Holotable_GAR;
 
     class AUX_95th_Misc_Airborne_Terminal : 3AS_HoloTable_Rectangle_Prop {
         displayName="Airborne Terminal";
@@ -72,7 +75,7 @@ class CfgVehicles {
     };
 
     class AUX_95th_Misc_Permission_Terminal : DSS_Permissions_Droid {
-        model="optre_bw_buildings\reserchbase\doorconsole\doorconsole.p3d";
+        model="optre_bw_buildings\reserchbase\doorconsole\doorconsole.p3d"; // 3AS_T_Screen
         displayName="Permission Terminal";
         editorCategory="AUX_95th_Objects_GAR";
         editorSubcategory="AUX_95th_Objects_Terminals";
@@ -114,6 +117,38 @@ class CfgVehicles {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
                 displayName = "Spawn Vehicle Fuel Crate";
                 statement = "[this, 'AUX_95th_Crate_Vehicle_Fuel'] spawn AUX_95th_fnc_handleCrateSpawned;"; 
+            };
+        };
+    };
+
+    class AUX_95th_Misc_Auto_Airspawn_Marker : Sign_Arrow_Cyan_F {
+        scope = 2;
+        scopecurator=2;
+        displayName="Auto Air Marker";
+        editorCategory="AUX_95th_Objects_ZEUS";
+        editorSubcategory="AUX_95th_Objects_Factories";
+    };
+
+    class AUX_95th_Misc_Auto_Airspawn_Controller : 3AS_Holotable_GAR {
+        scope = 2;
+        scopecurator=2;
+        displayName="Auto Air Controller";
+        editorCategory="AUX_95th_Objects_ZEUS";
+        editorSubcategory="AUX_95th_Objects_Factories";
+
+        class UserActions {
+            class EnableAirSpawns {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = "";
+                condition = "(alive this) && (!isNull (getAssignedCuratorLogic player)) && (!(this getVariable ['AUX_95th_AutoSpawnAirEnabled', false]));";
+                displayName = "Enable Auto Air Spawns";
+                statement = "this setVariable ['AUX_95th_AutoSpawnAirEnabled', true, true]; [this, true] call AUX_95th_fnc_handleAutoAirSpawns"; 
+            };
+
+            class DisableAirSpawns {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = "";
+                condition = "(alive this) && (!isNull (getAssignedCuratorLogic player)) && ((this getVariable ['AUX_95th_AutoSpawnAirEnabled', false]));";
+                displayName = "Disable Auto Air Spawns";
+                statement = "this setVariable ['AUX_95th_AutoSpawnAirEnabled', false, true]; [this, false] call AUX_95th_fnc_handleAutoAirSpawns"; 
             };
         };
     };

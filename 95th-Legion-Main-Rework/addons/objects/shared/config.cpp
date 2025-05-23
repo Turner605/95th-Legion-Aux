@@ -21,6 +21,7 @@ class CfgPatches {
 class CfgEditorCategories{
 	class AUX_95th_Objects_CIS{displayName = "[95th] CIS";};
 	class AUX_95th_Objects_GAR{displayName = "[95th] GAR";};
+	class AUX_95th_Objects_ZEUS{displayName = "[95th] Zeus";};
 	class AUX_95th_Objects_Generic{displayName = "[95th] Generic";};
 };
 
@@ -64,6 +65,7 @@ class CfgFunctions {
         class Objects_Shared_DroidFactories {
 			file = "\z\AUX_95th\addons\objects\shared\functions\DroidFactories";
             class handleFactoryTerminalOptions {};
+            class handleAutoAirSpawns {};
         };
 
         class Objects_Shared_Airborne {
