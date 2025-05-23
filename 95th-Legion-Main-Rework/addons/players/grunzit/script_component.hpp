@@ -1,15 +1,15 @@
-#define COMPONENT players_death
-#define COMPONENT_BEAUTIFIED Players_Death
-#define PLAYER_NAME death
-#define PLAYER_NAME_BEAUTIFIED Death
+#define COMPONENT players_grunzit
+#define COMPONENT_BEAUTIFIED Players_Grunzit
+#define PLAYER_NAME grunzit
+#define PLAYER_NAME_BEAUTIFIED Grunzit
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY Zeus
+#define SQUAD_KEY One_Three
 
 // HELMET OPTIONS 0 (False), 1 (True)
-#define HELMET_P1_BASIC 0
+#define HELMET_P1_BASIC 1
 #define HELMET_P1_ENGINEER 0
-#define HELMET_P1_ARF 1
+#define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
 #define HELMET_P1_SPECOPS 0
 #define HELMET_P1_HAZARD 0
@@ -18,7 +18,7 @@
 #define HELMET_P2_AIRBORNE 0
 
 // UNIFORM OPTIONS 0 (False), 1 (True)
-#define UNIFORM_P1_BASIC 1
+#define UNIFORM_P1_BASIC 0
 #define UNIFORM_P1_MC 0
 #define UNIFORM_P1_COLDASSAULT 0
 #define UNIFORM_P1_COMMANDO 0
