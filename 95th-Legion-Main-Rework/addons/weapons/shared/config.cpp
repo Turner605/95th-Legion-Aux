@@ -27,8 +27,34 @@ class CfgFunctions {
         class Weapons_Shared {
 			file = "\z\AUX_95th\addons\weapons\shared\functions";
             class handleATPyro {};
+            class handleWeaponmodeSwapped {};
         };
     };
+};
+
+class CfgUserActions {
+	class AUX_95th_Swap_Weaponmode {
+		displayName = "Swap Weapon Mode";
+		tooltip = "Swap Weapon Mode";
+		onActivate = "player call AUX_95th_fnc_handleWeaponmodeSwapped";
+		modifierBlocking = 1;
+	};
+};
+
+class CfgDefaultKeysPresets {
+	class Arma2 {
+		class Mappings {
+			AUX_95th_Swap_Weaponmode[] = {0x1D130021};
+		};
+	};
+};
+
+class UserActionGroups {
+	class AUX_95th_Weapons {
+		name = "95th - Weapons";
+		isAddon = 1;
+		group[] = {"AUX_95th_Swap_Weaponmode"};
+	};
 };
 
 class CfgAmmo {
