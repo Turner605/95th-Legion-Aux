@@ -66,6 +66,29 @@ class CfgVehicles {
         editorCategory="AUX_95th_Objects_Generic";
         editorSubcategory="AUX_95th_Objects_Misc";
         scopecurator=2;
+
+        class UserActions {
+            class GiveRepublicFlag {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; 
+                condition = "alive this;";
+                displayName = "Attach Republic Flag";
+                statement = "[player, 'republicFlag'] call AUX_95th_fnc_attachFlag"; 
+            };
+
+            class GiveRepublicNavyFlag {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; 
+                condition = "alive this;";
+                displayName = "Attach Republic Navy Flag";
+                statement = "[player, 'republicFlag'] call AUX_95th_fnc_attachFlag"; 
+            };
+
+            class RemoveFlag {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; 
+                condition = "alive this;";
+                displayName = "Remove Flag";
+                statement = "[player] call AUX_95th_fnc_removeFlag"; 
+            };
+        };
     };
 
     class AUX_95th_Venator_Briefing_Room : 3AS_Venator_Room_Medium_Prop {
@@ -82,6 +105,8 @@ class CfgFunctions {
             class motionSensorInit {};
             class ShieldGeneratorInit {};
             class reinsertRequesterInit {};
+            class attachFlag {};
+            class removeFlag {};
         };
     };
 };
