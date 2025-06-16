@@ -1,7 +1,7 @@
 #define NEW_95TH_ANTENNA(COLOUR) class AUX_95th_P1_Facewear_Antenna_##COLOUR : AUX_95th_Facewear_Base {\
     displayName=QUOTE([95th] P1 Facewear);\
 	scope=2;\
-	model = QUOTE(\lsd_equipment_bluefor\facewear\gar\arfAntenna\lsd_gar_arfAntenna.p3d);\
+	model = QUOTE(\ls\core\addons\characters_clone_legacy\equipment\arfAntenna\lsd_gar_arfAntenna.p3d);\
     hiddenSelectionsTextures[]={QUOTE(\z\AUX_95th\addons\players\shared\data\facewear\Antenna\COLOUR.paa)};\
     class XtdGearInfo {\
         model = QUOTE(AUX_95th_Facewear_P1);\
@@ -13,7 +13,7 @@
 #define NEW_95TH_HEADLAMP(COLOUR) class AUX_95th_P1_Facewear_Headlamp_##COLOUR : AUX_95th_Facewear_Base {\
     displayName=QUOTE([95th] P1 Facewear);\
 	scope=2;\
-	model = QUOTE(\lsd_equipment_bluefor\facewear\gar\headlampSingle\lsd_gar_p1_lamp.p3d);\
+	model = QUOTE(\ls\core\addons\characters_clone\equipment\headlamps\ls_clone_phase1Headlamp.p3d);\
     hiddenSelectionsTextures[]={QUOTE(\z\AUX_95th\addons\players\shared\data\facewear\Headlamp\COLOUR.paa)};\
     class XtdGearInfo {\
         model = QUOTE(AUX_95th_Facewear_P1);\

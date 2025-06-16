@@ -708,6 +708,7 @@ class CfgGlasses {
 	class AUX_95th_Facewear_Base: G_Combat {
 		displayName = "[95th] Facewear Baseclass";
 		author="95th Aux Team";
+		scope=0;
 		model = "\A3\Weapons_f\DummyNVG";
 		picture = "\SWLB_equipment\facewears\data\ui\icon_SWLB_clone_P1_HUD_ca.paa";
 		hiddenSelections[] = {}; hiddenSelectionsTextures[] = {};
