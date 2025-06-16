@@ -34,7 +34,7 @@
     };\
 }
 
-#define NEW_95TH_SCARF(COLOUR) class AUX_95th_Facewear_Scarf_##COLOUR : SWLB_CEE_Clone_Scarf {\
+#define NEW_95TH_SCARF(COLOUR) class AUX_95th_Facewear_Scarf_##COLOUR : ls_glasses_scarf {\
     displayName=QUOTE([95th] P1 Scarfs);\
 	author = QUOTE(95th Aux Team);\
 	scope=2;\

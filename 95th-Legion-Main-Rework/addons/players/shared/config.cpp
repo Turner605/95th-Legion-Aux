@@ -701,11 +701,11 @@ class CfgWeapons {
 };
 
 class CfgGlasses {
-	class ls_combatGoggles_base;
-	class SWLB_CEE_Clone_Scarf;
+	class G_Combat;
+	class ls_glasses_scarf;
 	class PhoenixCore_Poncho;
 
-	class AUX_95th_Facewear_Base: ls_combatGoggles_base {
+	class AUX_95th_Facewear_Base: G_Combat {
 		displayName = "[95th] Facewear Baseclass";
 		author="95th Aux Team";
 		model = "\A3\Weapons_f\DummyNVG";
