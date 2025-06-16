@@ -68,6 +68,13 @@ class CfgVehicles {
         scopecurator=2;
 
         class UserActions {
+            class Give95thFlag {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; 
+                condition = "alive this;";
+                displayName = "Attach 95th Flag";
+                statement = "[player, 'Flag95th'] call AUX_95th_fnc_attachFlag"; 
+            };
+
             class GiveRepublicFlag {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; 
                 condition = "alive this;";
