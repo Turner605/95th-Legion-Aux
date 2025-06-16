@@ -8,6 +8,7 @@ class CfgPatches {
 			"AUX_95th_Droid_Turret_Roof_Turret_Shotgun",
 			"AUX_95th_Droid_Turret_Ball",
 			"AUX_95th_Droid_Radar_Jammer_Turret",
+			"AUX_95th_Droid_Radar_Jammer_Turret_3K",
 			"AUX_95th_Droid_Microwave_Emitter_Turret",
 			"AUX_95th_Droid_Droideka_Turret",
 			"AUX_95th_Droid_Droideka_Sniper_Turret",
@@ -58,6 +59,15 @@ class CfgVehicles {
     
     class AUX_95th_Droid_Radar_Jammer_Turret: lsd_cis_radarDish{
         displayName="Radar Jammer (6k)";
+		scope = 2;
+        faction="AUX_95th_Faction_SeparatistDroids";
+        editorCategory="AUX_95th_Faction_SeparatistDroids";
+		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
+        crew="AUX_95th_Droid_B1_Unit_Crew";
+    };
+
+    class AUX_95th_Droid_Radar_Jammer_Turret_3K: lsd_cis_radarDish{
+        displayName="Radar Jammer (3k)";
 		scope = 2;
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
