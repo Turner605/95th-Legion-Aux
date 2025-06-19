@@ -1,0 +1,15 @@
+version=54;
+name="[95th] [ModDev] Flak Position";
+author="MotherFucking Catshark";
+category="EdSubcat_Utilities";
+requiredAddons[]=
+{
+	"3AS_Structures_LandingPads",
+	"3AS_Structures_FOB",
+	"JLTS_characters_DroidArmor",
+	"AUX_95th_Extras_overrides",
+	"3AS_Static_FlakCannon",
+	"3AS_Prop_Barricades",
+	"3AS_Structures_Lights",
+	"3AS_Structures2_StairsLadderElevator"
+};

@@ -1,0 +1,18 @@
+version=54;
+name="[95th] Protected Shield Generator";
+author="MotherFucking Catshark";
+category="EdSubcat_Military";
+requiredAddons[]=
+{
+	"3AS_Structures_ShieldGenerator",
+	"3AS_Prop_Platforms",
+	"A3_Modules_F",
+	"3AS_Prop_Terminals",
+	"3AS_Prop_Barricades",
+	"A3_Modules_F_ObjectModifiers",
+	"3AS_Structures_FOB",
+	"3AS_Structures2_FlatShields",
+	"3AS_Structures_Lights",
+	"3as_ModularPlatforms",
+	"3AS_Prop_planetaryshields"
+};
