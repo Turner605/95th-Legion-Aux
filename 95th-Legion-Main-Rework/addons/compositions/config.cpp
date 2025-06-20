@@ -23,11 +23,13 @@ class CfgEditorCategories {
 };
 
 class CfgEditorSubcategories {
-	class AUX_95th_Legion_Compositions_FOBs {displayName = "[95th] FOBs";};
-	class AUX_95th_Legion_Compositions_Ships {displayName = "[95th] Ships";};
-	class AUX_95th_Legion_Compositions_Checkpoints {displayName = "[95th] Checkpoints";};
-	class AUX_95th_Legion_Compositions_AA {displayName = "[95th] AA";};
-	class AUX_95th_Legion_Compositions_Misc {displayName = "[95th] Misc";};
+	class AUX_95th_Legion_Compositions_FOBs {displayName = "FOBs";};
+	class AUX_95th_Legion_Compositions_Ships {displayName = "Ships";};
+	class AUX_95th_Legion_Compositions_Checkpoints {displayName = "Checkpoints";};
+	class AUX_95th_Legion_Compositions_AA {displayName = "AA";};
+	class AUX_95th_Legion_Compositions_Misc {displayName = "Misc";};
+	class AUX_95th_Legion_Compositions_Airbases {displayName = "Airbases";};
+	class AUX_95th_Legion_Compositions_Artillery {displayName = "Artillery";};
 };
 
 class Cfg3DEN {
@@ -78,6 +80,26 @@ class Cfg3DEN {
 			editorCategory = "AUX_95th_Legion_Compositions_CIS";
 			editorSubcategory = "AUX_95th_Legion_Compositions_Misc";
 			displayName = "Protected Shield Generator";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
+
+		class AUX_95th_Opfor_Airbase_1 {
+			path = "z\AUX_95th\addons\compositions\cis\airbase_1";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "AUX_95th_Legion_Compositions_Airbases";
+			displayName = "Tree Pad Airbase";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
+		
+		class AUX_95th_Opfor_Artillery_1 {
+			path = "z\AUX_95th\addons\compositions\cis\artillery_1";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "AUX_95th_Legion_Compositions_Artillery";
+			displayName = "Triple Platform Artillery";
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};

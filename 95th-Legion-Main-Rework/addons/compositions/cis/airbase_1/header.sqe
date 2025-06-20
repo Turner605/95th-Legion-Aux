@@ -1,0 +1,24 @@
+version=54;
+name="[95th] CIS Tree Landing Pad";
+author="MotherFucking CatShark";
+category="OPTRE_EditorSubcategory_Buildings_Military";
+requiredAddons[]=
+{
+	"3AS_Structures_LandingPads",
+	"3AS_Structures_Lights",
+	"3AS_Structures_FOB",
+	"3AS_Prop_Platforms",
+	"3as_ModularPlatforms",
+	"3AS_Structures2_StairsLadderElevator",
+	"3AS_Prop_Crates",
+	"3AS_Prop_pipes",
+	"3AS_Prop_Interiors",
+	"3AS_Prop_Terminals",
+	"ls_props_structures",
+	"3AS_Prop_Generators",
+	"3AS_Prop_Barricades",
+	"A3_Characters_F_Common",
+	"3AS_CIS_Static_Naval_Gun",
+	"3AS_Structure2_MissionTools",
+	"ls_vehicles_j10"
+};

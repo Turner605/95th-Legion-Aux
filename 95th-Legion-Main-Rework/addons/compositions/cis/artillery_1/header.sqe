@@ -1,0 +1,20 @@
+version=54;
+name="CIS Artillery Base";
+author="MotherFucking CatShark";
+category="WBK_Objects_S";
+requiredAddons[]=
+{
+	"3AS_Structures_Lights",
+	"3AS_Imperial",
+	"3AS_Structures_FOB",
+	"3AS_Prop_Platforms",
+	"3AS_Prop_Crates",
+	"3AS_Prop_Barricades",
+	"OPTRE_BW_WarehouseRS",
+	"lsb_structures_deflector",
+	"3AS_Prop_Terminals",
+	"A3_Modules_F",
+	"3AS_Prop_orto_plut_interiors",
+	"AUX_95th_vehicles_hagm",
+	"AUX_95th_units_separatistDroids"
+};
