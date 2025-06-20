@@ -25,7 +25,7 @@ class CfgVehicles {
     class 3AS_Deka_Static_Sniper;
     class 3AS_Deka_Static;
     class 3AS_DF9_Radar_Grey;
-    class lsd_cis_radarDish;
+    class ls_vehicle_radarDish_opfor;
     class ls_turret_pirate_autoturret;
     class ls_turret_pirate_autoturretCQC;
     class JLTS_UST_turret_CIS;
@@ -57,7 +57,7 @@ class CfgVehicles {
         crew="AUX_95th_Droid_B1_Unit_Crew";
     };
     
-    class AUX_95th_Droid_Radar_Jammer_Turret: lsd_cis_radarDish{
+    class AUX_95th_Droid_Radar_Jammer_Turret: ls_vehicle_radarDish_opfor{
         displayName="Radar Jammer (6k)";
 		side = 0;
 		scope = 2;
@@ -67,7 +67,7 @@ class CfgVehicles {
         crew="AUX_95th_Droid_B1_Unit_Crew";
     };
 
-    class AUX_95th_Droid_Radar_Jammer_Turret_3K: lsd_cis_radarDish{
+    class AUX_95th_Droid_Radar_Jammer_Turret_3K: ls_vehicle_radarDish_opfor{
         displayName="Radar Jammer (3k)";
 		side = 0;
 		scope = 2;
