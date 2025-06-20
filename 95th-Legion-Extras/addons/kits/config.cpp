@@ -21,6 +21,7 @@ class CfgFunctions {
             class checkWeapons {};
             class checkCerts {};
             class addDefaultClasses {};
+            class constructRestrictedArsenal {};
         };
     };
 };
