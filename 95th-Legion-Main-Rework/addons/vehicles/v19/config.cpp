@@ -38,6 +38,8 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 	class components;
 };
 
+class ls_impulsor_base;
+
 class CfgVehicles {
 	class thingX;
 	class Motorcycle;
@@ -61,9 +63,13 @@ class CfgVehicles {
 	class AUX_95th_V19: 3as_V19_base {
 		author = "95th Aux Team";
 		tas_can_impulse=0;
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 400;
-		ls_impulsor_boostSpeed_2 = 800;
+		class ls_impulsor: ls_impulsor_base {
+			enabled = 1;
+			speed = 400;
+			fuelDrain = 0.0001;
+			overchargeSpeed = 800;
+			overchargeCooldown = 60;
+        };
 		crew = "AUX_95th_Unit_P1_Basic_Trooper";
 		typicalCargo[] = {"AUX_95th_Unit_P1_Basic_Trooper"};
 		faction="AUX_95th_Legion_Faction_Vehicles";

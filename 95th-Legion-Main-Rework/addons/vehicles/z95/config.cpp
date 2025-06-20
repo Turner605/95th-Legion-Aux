@@ -30,6 +30,8 @@ class DefaultVehicleSystemsDisplayManagerRight {
 	class components;
 };
 
+class ls_impulsor_base;
+
 class CfgVehicles {
 	class Plane;
 	class Plane_Base_F: Plane {
@@ -144,9 +146,13 @@ class CfgVehicles {
 	class AUX_95th_Z95: 3AS_Z95_Republic {
 		author = "95th Aux Team";
 		tas_can_impulse=0;
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 400;
-		ls_impulsor_boostSpeed_2 = 800;
+		class ls_impulsor: ls_impulsor_base {
+			enabled = 1;
+			speed = 400;
+			fuelDrain = 0.0001;
+			overchargeSpeed = 800;
+			overchargeCooldown = 60;
+        };
 		displayName = "Z-95 HeadHunter";
 		crew = "AUX_95th_Unit_P1_Basic_Trooper";
 		typicalCargo[] = {"AUX_95th_Unit_P1_Basic_Trooper"};

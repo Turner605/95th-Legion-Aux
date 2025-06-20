@@ -29,6 +29,8 @@ class SensorTemplateLaser;
 class SensorTemplateNV;
 class SensorTemplateDataLink;
 
+class ls_impulsor_base;
+
 class CfgVehicles {
 
 	// Rho
@@ -106,9 +108,13 @@ class CfgVehicles {
 	// Our Stuff
 	class AUX_95th_Rho: 3AS_Rho_REP_F {
 		tas_can_impulse=0;
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 400;
-		ls_impulsor_boostSpeed_2 = 800;
+		class ls_impulsor: ls_impulsor_base {
+			enabled = 1;
+			speed = 400;
+			fuelDrain = 0.0001;
+			overchargeSpeed = 800;
+			overchargeCooldown = 60;
+        };
 		author = "95th Aux Team";
 		displayname="Rho Shuttle";
 		crew = "AUX_95th_Unit_P1_Basic_Trooper";

@@ -314,6 +314,8 @@ class CfgAmmo {
 	};
 };
 
+class ls_impulsor_base;
+
 class CfgVehicles {
 
     class Air;

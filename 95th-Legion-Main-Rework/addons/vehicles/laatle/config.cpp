@@ -34,6 +34,8 @@ class DefaultVehicleSystemsDisplayManagerRight {
 	};
 };
 
+class ls_impulsor_base;
+
 class CfgVehicles {
 	class Wreck_base_F;
 	class Air;
@@ -102,9 +104,13 @@ class CfgVehicles {
 
 	class AUX_95th_LAAT_LE: 3AS_Patrol_LAAT_Base {
 		tas_can_impulse=0;
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 400;
-		ls_impulsor_boostSpeed_2 = 800;
+		class ls_impulsor: ls_impulsor_base {
+			enabled = 1;
+			speed = 400;
+			fuelDrain = 0.0001;
+			overchargeSpeed = 800;
+			overchargeCooldown = 60;
+        };
 		author = "95th Legion";
 		crew = "AUX_95th_Unit_P1_Basic_Trooper";
 		displayname = "LAAT/LE";

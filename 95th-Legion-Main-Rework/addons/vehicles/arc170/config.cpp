@@ -30,6 +30,8 @@ class DefaultVehicleSystemsDisplayManagerRight {
 	class components;
 };
 
+class ls_impulsor_base;
+
 class CfgVehicles {
 	class Air;
 	class Plane: Air {
@@ -132,9 +134,13 @@ class CfgVehicles {
 	class AUX_95th_ARC170: 3AS_ARC_170_Base {
 		displayName = "ARC-170";
 		tas_can_impulse=0;
-		ls_hasImpulse = 1;
-		ls_impulsor_boostSpeed_1 = 400;
-		ls_impulsor_boostSpeed_2 = 800;
+		class ls_impulsor: ls_impulsor_base {
+			enabled = 1;
+			speed = 400;
+			fuelDrain = 0.0001;
+			overchargeSpeed = 800;
+			overchargeCooldown = 60;
+        };
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
