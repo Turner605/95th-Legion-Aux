@@ -22,18 +22,18 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _position, [], 0, "NO
         case 0: {
             _spawnArray = ["AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Shotgun", "AUX_95th_Droid_B1_Unit_AutoRifleman"];
             if (round (random 1) == 1) then {_spawnArray pushBack "AUX_95th_Droid_B1_Unit_AT"} else {_spawnArray pushBack "AUX_95th_Droid_B1_Unit_AA"};
-            _podType = "ls_ground_droidDispenser";
+            _podType = "ls_droidDispenser";
         };
         
         case 1: {
             _spawnArray = ["AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Shotgun", "AUX_95th_Droid_B2_Unit_Blaster"];
             if (round (random 1) == 1) then {_spawnArray pushBack "AUX_95th_Droid_B1_Unit_AT"} else {_spawnArray pushBack "AUX_95th_Droid_B1_Unit_AA"};
-            _podType = "3as_droid_container";
+            _podType = "3AS_Droid_Dispenser_F";
         };
         
         case 2: {
             _spawnArray = ["AUX_95th_Droid_BX_Unit_Commander", "AUX_95th_Droid_BX_Unit_Rifleman", "AUX_95th_Droid_BX_Unit_Rifleman", "AUX_95th_Droid_BX_Unit_Rifleman"];
-            _podType = "3as_droid_container";
+            _podType = "3AS_Droid_Dispenser_F";
         };
     };
 

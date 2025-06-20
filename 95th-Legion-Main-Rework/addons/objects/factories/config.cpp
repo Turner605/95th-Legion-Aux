@@ -22,7 +22,7 @@ class CBA_Extended_EventHandlers_base;
 class CfgVehicles {
     class Land_HelipadEmpty_F;
     class 3AS_CIS_Console_4_Prop;
-    class 3as_droid_container;
+    class 3AS_Droid_Dispenser_F;
 
     class AUX_95th_Factory_Proxy : Land_HelipadEmpty_F {
         displayName="Factory Proxy";
@@ -41,7 +41,7 @@ class CfgVehicles {
         };
     };
 
-    class AUX_95th_Flak_Factory : 3as_droid_container {
+    class AUX_95th_Flak_Factory : 3AS_Droid_Dispenser_F {
         displayName="Flak Factory";
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
@@ -51,7 +51,7 @@ class CfgVehicles {
         };
     };
 
-    class AUX_95th_Ground_Factory : 3as_droid_container {
+    class AUX_95th_Ground_Factory : 3AS_Droid_Dispenser_F {
         displayName="Ground Factory";
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
