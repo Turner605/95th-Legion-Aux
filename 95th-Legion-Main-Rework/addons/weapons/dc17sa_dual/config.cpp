@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
 		weapons[] = {"AUX_95th_DC17SA_Dual"};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"AUX_95th_main", "AUX_95th_weapons_shared"};
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_weapons_shared", "3AS_Weapons_Republic_DC17S"};
         authors[] = {"Turner"};
         VERSION_CONFIG;
     };
@@ -40,135 +40,78 @@ class CfgMagazines {
 	};
 };
 
+class 3AS_MuzzleSlot_DC17S;
+class 3AS_CowsSlot_DC17S;
 class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class SlotInfo;
-class CowsSlot;
-class MuzzleSlot;
-class PointerSlot;
-class UnderBarrelSlot;
+
 class CfgWeapons {
+	// class AUX_95th_Stun_Muzzle_Pistol;
+
 	class Pistol;
 	class Pistol_Base_F: Pistol {
 		class WeaponSlotsInfo;
-		class GunParticles;
 	};
 
-	class AUX_95th_Stun_Muzzle_Rifle;
-
-	class AUX_95th_DC17SA_Base_F: Pistol_Base_F {
-		author = "95th Legion";
-		magazines[] = {"AUX_95th_Universal_Pistol_Mag"};
-		drySound[] = {"z\AUX_95th\addons\weapons\shared\sounds\weapon_dry.wss",0.39810717,1,20};
-		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
-		modes[] = {"Single"};
+	class 3AS_DC17S_Base_F: Pistol_Base_F {
 		class Single: Mode_SemiAuto {
-			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType;
-			class StandardSound: BaseSoundModeType {
-				soundSetShot[] = {"AUX_95th_Pistol_Shot_SoundSet"};
-			};
-			class SilencedSound: BaseSoundModeType {
-				soundSetShot[] = {"AUX_95th_Pistol_Shot_SoundSet"};
-			};
-			recoil = "recoil_pistol_heavy";
-			recoilProne = "recoil_prone_pistol_heavy";
-			reloadTime = 0.1;
-			dispersion = 0.00399;
-			minRange = 5;
-			minRangeProbab = 0.3;
-			midRange = 25;
-			midRangeProbab = 0.6;
-			maxRange = 50;
-			maxRangeProbab = 0.1;
-			aiRateOfFire = 2;
-			aiRateOfFireDistance = 25;
+			class StandardSound: BaseSoundModeType {};
+			class SilencedSound: BaseSoundModeType {};
+
 		};
-		inertia = 0.3;
-		aimTransitionSpeed = 1.5;
-		dexterity = 1.7;
-		fireLightDiffuse[] = {7,110,176};
-		fireLightIntensity = 0.02;
-		flashSize = 0.1;
-		initSpeed = -1;
-		recoil = "recoil_pistol_4five";
-		maxZeroing = 100;
+
 		class WeaponSlotsInfo: WeaponSlotsInfo {
-			mass = 30;
-			holsterScale = 0.95;
-			class CowsSlot: CowsSlot {
-				compatibleItems[] = {};
-				iconPosition[] = {0.6,0.27};
-				iconScale = 0.15;
-			};
-			class MuzzleSlot: MuzzleSlot {
-				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {};
-				iconPosition[] = {0.24,0.35};
-				iconScale = 0.2;
-			};
-			class PointerSlot: PointerSlot {
-				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] = {"acc_flashlight_pistol"};
-				iconPosition[] = {0.47,0.55};
-				iconScale = 0.3;
-			};
+			class MuzzleSlot: 3AS_MuzzleSlot_DC17S {};
+			class CowsSlot: 3AS_CowsSlot_DC17S {};
 		};
 	};
 
-	class AUX_95th_DC17SA_Dual: AUX_95th_DC17SA_Base_F {
-		DSS_DamageSystem_Power=8;
-		scope = 2;
+	class 3AS_DC17S_F: 3AS_DC17S_Base_F {};
+	class 3AS_DC17S_W: 3AS_DC17S_F {};
+	class 3AS_DC17S_Dual_F: 3AS_DC17S_Base_F {
+		class WeaponSlotsInfo: WeaponSlotsInfo {
+			class MuzzleSlot;
+			class CowsSlot;
+			class PointerSlot;
+		};
+	};
+
+	class 3AS_DC17S_Dual_W: 3AS_DC17S_Dual_F {};
+
+	class AUX_95th_DC17SA_Dual: 3AS_DC17S_Dual_W {
 		displayName = "[95th] Dual DC-17S Sidearm";
-		model = "3AS\3AS_Weapons\DC17S\3AS_DC17S_Dual_F.p3d";
-		picture = "\z\AUX_95th\addons\weapons\dc17sa_dual\data\ui\3as_dc17s_d.paa";
-		weaponInfoType = "RscWeaponZeroing";
-		reloadAction = "AUX_95th_GestureReloadDualDC17S";
-		recoil = "AUX_95th_Recoil_Pistol_Dual";
+		baseWeapon = "AUX_95th_DC17SA_Dual";
+		author = "95th Legion";
+
 		cursor = "";
 		cursorAim = "gl";
 		swayModifier = 0.1;
 		swayDecaySpeed = 2;
-		handAnim[] = {"OFP2_ManSkeleton","z\AUX_95th\addons\weapons\dc17sa_dual\anims\attempt1.rtm"};
+
+		recoil = "AUX_95th_Recoil_Pistol_Dual";
+		drySound[] = {"z\AUX_95th\addons\weapons\shared\sounds\weapon_dry.wss",0.39810717,1,20};
+		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
 		magazines[] = {"AUX_95th_Universal_Pistol_Mag", "AUX_95th_DC17SA_Dual_Mag"};
 		magazineWell[] = {};
-		class WeaponSlotsInfo: WeaponSlotsInfo {
-			mass = 60;
-		};
+		DSS_DamageSystem_Power=8;
+		scope = 2;
 		muzzles[] = {"this","Stun"};
-		class Stun: AUX_95th_Stun_Muzzle_Rifle {
-			reloadAction = "AUX_95th_GestureReloadDualDC17S";
-			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
-		};
-	};
-};
 
-class CfgMovesBasic {
-	class DefaultDie;
-	class ManActions {
-		AUX_95th_GestureReloadDualDC17S = "AUX_95th_GestureReloadDualDC17S";
-	};
-	class Actions {
-		class NoActions: ManActions {
-			AUX_95th_GestureReloadDualDC17S[] = {"AUX_95th_GestureReloadDualDC17S","Gesture"};
-		};
-	};
-};
+		// class Stun: AUX_95th_Stun_Muzzle_Pistol {
+		// 	reloadAction = "AUX_95th_GestureReloadDualDC17S";
+		// 	reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
+		// };
 
-class CfgGesturesMale {
-	class Default;
-	class States {
-		class AUX_95th_GestureReloadDualDC17S: Default {
-			file = "z\AUX_95th\addons\weapons\dc17sa_dual\anims\reloadanim.rtm";
-			looped = 0;
-			speed = 0.8;
-			mask = "handsWeapon_pst";
-			headBobStrength = 0.2;
-			headBobMode = 2;
-			rightHandIKBeg = 1;
-			rightHandIKEnd = 1;
-			leftHandIKCurve[] = {0.012,1,0.041,0,0.941,0,0.982,1};
+		class Single: Single {
+			sounds[] = {"StandardSound","SilencedSound"};
+			class StandardSound: StandardSound {
+				soundSetShot[] = {"AUX_95th_Pistol_Shot_SoundSet"};
+			};
+			class SilencedSound: SilencedSound {
+				soundSetShot[] = {"AUX_95th_Pistol_Shot_SoundSet"};
+			};
+			recoil = "recoil_pistol_heavy";
+			recoilProne = "recoil_prone_pistol_heavy";
 		};
 	};
 };
