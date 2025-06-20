@@ -59,6 +59,7 @@ class CfgVehicles {
     
     class AUX_95th_Droid_Radar_Jammer_Turret: lsd_cis_radarDish{
         displayName="Radar Jammer (6k)";
+		side = 0;
 		scope = 2;
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
@@ -68,6 +69,7 @@ class CfgVehicles {
 
     class AUX_95th_Droid_Radar_Jammer_Turret_3K: lsd_cis_radarDish{
         displayName="Radar Jammer (3k)";
+		side = 0;
 		scope = 2;
         faction="AUX_95th_Faction_SeparatistDroids";
         editorCategory="AUX_95th_Faction_SeparatistDroids";
