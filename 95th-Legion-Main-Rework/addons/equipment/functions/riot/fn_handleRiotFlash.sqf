@@ -8,7 +8,7 @@ if(_unit getVariable "AUX_95th_Riot_Flash_Is_On_Cooldown") exitWith {hint "Flash
 
 playSound3D ['z\DSS\addons\grenades\Sounds\Flashbang\DSS_Flashbang_Detonated.wav', _unit, false, getPosASL _unit, 3, 1, 100];
 
-[(_unit modelToWorld [0,0.1,0.3])] call DSS_fnc_handleFlashDetonate;
+[(_unit modelToWorld [0,0.75,0.5])] call DSS_fnc_handleFlashDetonate;
 
 _unit setVariable ["AUX_95th_Riot_Flash_Is_On_Cooldown", true, true];
 
