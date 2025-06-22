@@ -51,6 +51,7 @@ class Optics_Commander_01: Optics_Armored {
 	class Medium;
 	class Narrow;
 };
+
 class Optics_Gunner_APC_01: Optics_Armored {
 	class Wide;
 	class Medium;
@@ -77,7 +78,7 @@ class CfgVehicles {
 			class HitEngine;
 		};
 	};
-
+	
 	class Wheeled_APC_F: Car_F {
 		class ViewOptics;
 		class ViewCargo;
@@ -87,8 +88,6 @@ class CfgVehicles {
 		};
 		class NewTurret;
 		class Turrets {
-			class CopilotTurret;
-
 			class MainTurret: NewTurret {
 				class ViewOptics;
 				class Turrets {
@@ -96,13 +95,10 @@ class CfgVehicles {
 				};
 			};
 		};
-		class CargoTurret;
 	};
 
-	class QS_Bantha_B: Wheeled_APC_F{};
-
-	class QS_Bantha_F: QS_Bantha_B{};
-
+	class QS_Bantha_B: Wheeled_APC_F {};
+	class QS_Bantha_F: QS_Bantha_B {};
 	class QS_Bantha: QS_Bantha_F {};
 
 	class AUX_95th_Bantha: QS_Bantha {
@@ -117,11 +113,18 @@ class CfgVehicles {
 
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {
-				weapons[] = {"QS_APC_40mm_G","AUX_95th_Bantha_Rocket"};
-				magazines[] = {"QS_50_200rnd_HE_blue_M","QS_50_200rnd_HE_blue_M","QS_50_200rnd_HE_blue_M","AUX_95th_Bantha_Rocket_Magazine","AUX_95th_Bantha_Rocket_Magazine"};
+				weapons[] = {"3AS_ATTE_Turret"};
+				magazines[] = {"3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells","3AS_250Rnd_ATTE_30mm_MP_shells"};
 				memoryPointGun[] = {"z_gunL_muzzle","z_gunR_muzzle"};
 				soundServo[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner",0.56234133,1,30};
 				soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_gunner_vertical",0.56234133,1,30};
+
+				class Turrets: Turrets {
+					class CommanderOptics: CommanderOptics {
+						weapons[] = {"SmokeLauncher","3AS_BARC_SideCar_repeater","Laserdesignator_vehicle"};
+						magazines[] = {"SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag","3AS_BARC_Mag","3AS_BARC_Mag","Laserbatteries"};
+					};
+				};
 			};
 		};
 

@@ -143,6 +143,13 @@ class CfgVehicles
 			"\z\AUX_95th\addons\vehicles\mavr\Elements.rvmat"
 		};
 
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				weapons[] = {"95th_LAAT_Light_Cannon", "missiles_titan_AA"};
+				magazines[] = {"95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","95th_LAAT_Light_Cannon_Magazine","4Rnd_Titan_long_missiles_O","4Rnd_Titan_long_missiles_O","4Rnd_Titan_long_missiles_O","4Rnd_Titan_long_missiles_O","4Rnd_Titan_long_missiles_O"};
+			};
+		};
+
 		class HitPoints: HitPoints {
 			class HitHull: HitHull {
 				armor = 1.5;
