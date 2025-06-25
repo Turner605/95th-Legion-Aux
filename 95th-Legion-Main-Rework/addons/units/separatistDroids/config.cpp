@@ -254,13 +254,13 @@ class CfgFunctions {
 };
 
 class CfgEditorSubcategories {
-	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Infantry{displayName="Infantry";};
-	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos{displayName="Commandos";};
-	class AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries{displayName="T-Series";};
-	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids{displayName="B1 Battledroids";};
-	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Humans{displayName="Humans";};
-	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids_Rocket{displayName="B1 Battledroids (Rocket)";};
-	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B2_Battledroids{displayName="B2 Battledroids";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Infantry{displayName="DEPRICATED";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos{displayName="DEPRICATED";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_TSeries{displayName="DEPRICATED";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids{displayName="DEPRICATED";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Humans{displayName="DEPRICATED";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids_Rocket{displayName="DEPRICATED";};
+	class AUX_95th_Faction_SeparatistDroids_Category_Ground_B2_Battledroids{displayName="DEPRICATED";};
 };
 
 class CfgGroups {
@@ -368,12 +368,6 @@ class CfgVehicles {
 
 	// B2's
 	#include "Units\B2s.hpp"
-	
-	// BX's
-	#include "Units\bxs.hpp"
-
-	// T-Series's
-	#include "Units\tSeries.hpp"
 
 	// Humans
 	class AUX_95th_Human_Unit_Riot: 3AS_U_CIS_Heavy {

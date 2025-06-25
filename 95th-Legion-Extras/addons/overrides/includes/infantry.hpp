@@ -266,6 +266,81 @@ class JLTS_Droid_B1_Training_AT: JLTS_Droid_B1_AT {
 
 
 
+// BX Droids
+class ls_droid_base;
+class ls_droid_bx: ls_droid_base {
+    displayName = "Rifleman";
+    #include "../macros/droidCommando.hpp"
+    
+    weapons[]={"JLTS_E5","WBK_Dutch_Vibro","Throw","Put"};
+    respawnWeapons[]={"JLTS_E5","WBK_Dutch_Vibro","Throw","Put"};
+    magazines[]={
+        "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag",
+        "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+    };
+    respawnMagazines[]={
+        "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag",
+        "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+    };
+};
+
+class ls_droid_bx_captain: ls_droid_bx {
+    displayName = "Captain";
+    #include "../macros/droidCommando.hpp"
+};
+
+class ls_droid_bx_assassain: ls_droid_bx {
+    displayName = "Sniper";
+    #include "../macros/droidCommando.hpp"
+
+    weapons[]={"JLTS_E5S","WBK_Dutch_Vibro","Throw","Put"};
+    respawnWeapons[]={"JLTS_E5S","WBK_Dutch_Vibro","Throw","Put"};
+    magazines[]={
+        "JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag",
+        "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+    };
+    respawnMagazines[]={
+        "JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag","JLTS_E5S_mag",
+        "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+    };
+};
+
+class ls_droid_bx_diplomat: ls_droid_bx {
+    displayName = "Diplomat";
+    #include "../macros/droidCommando.hpp"
+};
+
+class ls_droid_bx_security: ls_droid_bx {
+    displayName = "Security";
+    #include "../macros/droidCommando.hpp"
+
+    weapons[]={"AUX_95th_E5_shield_attached","Throw","Put"};
+    respawnWeapons[]={"AUX_95th_E5_shield_attached","Throw","Put"};
+    magazines[]={
+        "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag",
+        "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+    };
+    respawnMagazines[]={
+        "JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag","JLTS_E5_mag",
+        "DSS_Magazine_Grenade_Flashbang","DSS_Magazine_Grenade_Flashbang"
+    };
+};
+
+class ls_droid_bx_hologram: ls_droid_bx {
+    displayName = "Hologram";
+    #include "../macros/droidCommando.hpp"
+};
+
+class ls_droid_bx_simulation: ls_droid_bx_hologram {
+    displayName = "Simulation";
+    #include "../macros/droidCommando.hpp"
+};
+
+
+
+
+
+
 // Hiding Misc
 class JLTS_Droid_B1_OOM9: JLTS_Droid_B1_Commander { scope = 1; };
 class JLTS_Droid_B1_Prototype: JLTS_Droid_B1_E5 { scope = 1; };
@@ -295,3 +370,25 @@ class lsd_cis_b2_standard: lsd_cis_b2Droid_base { scope = 1; };
 class WBK_B2_Mod_Standart: lsd_cis_b2_standard { scope = 1; };
 class WBK_B2_Mod_GL: WBK_B2_Mod_Standart { scope = 1; };
 class WBK_B2_Mod_Shotgun: WBK_B2_Mod_Standart { scope = 1; };
+class ls_droid_bx_cloneDisguise_phase2: ls_droid_base { scope = 1; };
+class ls_droid_bx_cloneDisguise_phase1: ls_droid_bx_cloneDisguise_phase2 { scope = 1; };
+
+class lsd_cis_bxdroid_specops;
+class WBK_BX_Assasin_1: lsd_cis_bxdroid_specops { scope = 1; };
+class WBK_BX_Assasin_Commander: WBK_BX_Assasin_1 { scope = 1; };
+
+class ls_droid_b1: ls_droid_base { scope = 1; };
+class ls_droid_b1_at: ls_droid_b1 { scope = 1; };
+class ls_droid_b1_grenadier: ls_droid_b1 { scope = 1; };
+class ls_droid_b1_hologram: ls_droid_b1 { scope = 1; };
+class ls_droid_b1_marksman: ls_droid_b1 { scope = 1; };
+class ls_droid_b1_heavyAA: ls_droid_b1 { scope = 1; };
+class ls_droid_b1_shotgun: ls_droid_b1 { scope = 1; };
+class ls_droid_b1_simulation: ls_droid_b1 { scope = 1; };
+class ls_droid_b1_squadLeader: ls_droid_b1 { scope = 1; };
+class ls_droid_b1_officer: ls_droid_b1 { scope = 1; };
+
+class ls_droid_b2: ls_droid_base { scope = 1; };
+class ls_droid_b2_hologram: ls_droid_b2 { scope = 1; };
+class ls_droid_b2_junkyard: ls_droid_b2 { scope = 1; };
+class ls_droid_b2_simulation: ls_droid_b2 { scope = 1; };
