@@ -14,5 +14,5 @@ canBleed = 0;
 
 class EventHandlers {
     class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-    init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+    init = "[(_this select 0)] call AUX_95th_Extras_fnc_B1Init;"; 
 };

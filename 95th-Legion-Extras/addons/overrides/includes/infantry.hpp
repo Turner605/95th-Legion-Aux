@@ -38,11 +38,13 @@ class 3AS_U_CIS_Heavy: 3AS_CIS_Heavy_Base_F {
 class 3AS_Deka_Static_Base;
 class 3AS_Deka_Static: 3AS_Deka_Static_Base {
     #include "../macros/droidAdvanced.hpp"
+    DSS_isDroid=1;
 };
 
 class 3AS_Deka_Static_Sniper_Base;
 class 3AS_Deka_Static_Sniper: 3AS_Deka_Static_Sniper_Base {
     #include "../macros/droidAdvanced.hpp"
+    DSS_isDroid=1;
 };
 
 
@@ -392,7 +394,7 @@ class ls_droid_b2: ls_droid_base {
 
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0)] call AUX_95th_fnc_B2Init;"; 
+        init = "[(_this select 0)] call AUX_95th_Extras_fnc_B2Init;"; 
     };
 };
 

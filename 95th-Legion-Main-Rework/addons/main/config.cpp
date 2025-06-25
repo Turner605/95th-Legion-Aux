@@ -34,7 +34,7 @@ class CfgMods {
 };
 
 class CfgFactionClasses { 
-    class AUX_95th_Separatist_Army {displayName = "[95th] Separatist Army Test"; scope=2; scopecurator=2; priority = 1; side = 1;};  
+    class AUX_95th_Separatist_Army {displayName = "[95th] Separatist Army"; scope=2; scopecurator=2; priority = 1; side = 1;};  
 };
 
 class CfgEditorCategories {

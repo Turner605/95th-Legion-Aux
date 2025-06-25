@@ -4,14 +4,9 @@ class CfgPatches {
     class DOUBLES(PREFIX,COMPONENT) {
         name = COMPONENT_NAME;
         units[] = {
-            "AUX_95th_Droid_Turret_Roof_Turret",
-			"AUX_95th_Droid_Turret_Roof_Turret_Shotgun",
-			"AUX_95th_Droid_Turret_Ball",
 			"AUX_95th_Droid_Radar_Jammer_Turret",
 			"AUX_95th_Droid_Radar_Jammer_Turret_3K",
-			"AUX_95th_Droid_Microwave_Emitter_Turret",
-			"AUX_95th_Droid_Droideka_Turret",
-			"AUX_95th_Droid_Droideka_Sniper_Turret",
+			"AUX_95th_Droid_Microwave_Emitter_Turret"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -29,24 +24,6 @@ class CfgVehicles {
     class ls_turret_pirate_autoturret;
     class ls_turret_pirate_autoturretCQC;
     class JLTS_UST_turret_CIS;
-
-    class AUX_95th_Droid_Droideka_Sniper_Turret: 3AS_Deka_Static_Sniper {
-        displayName = "Droideka Sniper";
-		scope = 2;
-        faction="AUX_95th_Separatist_Army";
-        editorCategory="AUX_95th_Separatist_Army";
-		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
-        DSS_isDroid=1;
-    };
-
-    class AUX_95th_Droid_Droideka_Turret: 3AS_Deka_Static {
-        displayName = "Droideka";
-		scope = 2;
-        faction="AUX_95th_Separatist_Army";
-        editorCategory="AUX_95th_Separatist_Army";
-		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
-        DSS_isDroid=1;
-    };
 
     class AUX_95th_Droid_Microwave_Emitter_Turret: 3AS_DF9_Radar_Grey{
         displayName="Microwave Emitter (TODO)";
@@ -75,30 +52,6 @@ class CfgVehicles {
         editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
         crew="AUX_95th_Droid_B1_Unit_Crew";
-    };
-
-    class AUX_95th_Droid_Turret_Roof_Turret : ls_turret_pirate_autoturret {
-        displayName="Roof Turret";
-		scope = 2;
-        faction="AUX_95th_Separatist_Army";
-        editorCategory="AUX_95th_Separatist_Army";
-		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
-    };
-
-    class AUX_95th_Droid_Turret_Roof_Turret_Shotgun : ls_turret_pirate_autoturretCQC {
-        displayName="Roof Turret (Shotgun)";
-		scope = 2;
-        faction="AUX_95th_Separatist_Army";
-        editorCategory="AUX_95th_Separatist_Army";
-		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
-    };
-
-    class AUX_95th_Droid_Turret_Ball : JLTS_UST_turret_CIS {
-        displayName="Turret (Ball)";
-		scope = 2;
-        faction="AUX_95th_Separatist_Army";
-        editorCategory="AUX_95th_Separatist_Army";
-		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
     };
 };
 

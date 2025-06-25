@@ -1,48 +1,3 @@
-class AUX_95th_Droid_B1_Random: JLTS_Droid_B1_E5 {
-    displayName = "Random (Standard)";
-    scope = 2;
-    faction="AUX_95th_Separatist_Army";
-    editorCategory="AUX_95th_Separatist_Army";
-    editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
-    class EventHandlers {
-        class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0), 'Standard'] call AUX_95th_fnc_spawnRandomB1;"; 
-    };
-    impactEffectsBlood = "ImpactMetal";
-    impactEffectsNoBlood = "ImpactPlastic";
-    canBleed = 0;
-};
-
-class AUX_95th_Droid_B1_Random_Standard_Launchers: JLTS_Droid_B1_E5 {
-    displayName = "Random (Launchers)";
-    scope = 2;
-    faction="AUX_95th_Separatist_Army";
-    editorCategory="AUX_95th_Separatist_Army";
-    editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
-    class EventHandlers {
-        class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0), 'StandardLaunchers'] call AUX_95th_fnc_spawnRandomB1;"; 
-    };
-    impactEffectsBlood = "ImpactMetal";
-    impactEffectsNoBlood = "ImpactPlastic";
-    canBleed = 0;
-};
-
-class AUX_95th_Droid_B1_Random_Specialists: JLTS_Droid_B1_E5 {
-    displayName = "Random (Specialists)";
-    scope = 2;
-    faction="AUX_95th_Separatist_Army";
-    editorCategory="AUX_95th_Separatist_Army";
-    editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
-    class EventHandlers {
-        class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0), 'Specialists'] call AUX_95th_fnc_spawnRandomB1;"; 
-    };
-    impactEffectsBlood = "ImpactMetal";
-    impactEffectsNoBlood = "ImpactPlastic";
-    canBleed = 0;
-};
-
 // Has a bubble shield
 class AUX_95th_Droid_B1_Shield: JLTS_Droid_B1_Prototype {
     displayName = "B1 Shield (E-5)";
@@ -56,7 +11,7 @@ class AUX_95th_Droid_B1_Shield: JLTS_Droid_B1_Prototype {
     DSS_DamageSystem_Headshot_Multiplier=4;
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+        init = "[(_this select 0)] call AUX_95th_Extras_fnc_B1Init;"; 
     };
     DSS_EMP_Protection_Value=0.7;
     impactEffectsBlood = "ImpactMetal";
@@ -77,7 +32,7 @@ class AUX_95th_Droid_B1_Turret: JLTS_Droid_B1_Prototype {
     DSS_DamageSystem_Headshot_Multiplier=4;
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+        init = "[(_this select 0)] call AUX_95th_Extras_fnc_B1Init;"; 
     };
     DSS_EMP_Protection_Value=0.7;
     impactEffectsBlood = "ImpactMetal";
@@ -98,7 +53,7 @@ class AUX_95th_Droid_B1_Mortar: JLTS_Droid_B1_Prototype {
     DSS_DamageSystem_Headshot_Multiplier=4;
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+        init = "[(_this select 0)] call AUX_95th_Extras_fnc_B1Init;"; 
     };
     DSS_EMP_Protection_Value=0.7;
     impactEffectsBlood = "ImpactMetal";
@@ -121,7 +76,7 @@ class AUX_95th_Droid_B1_Unit_Diplomat : JLTS_Droid_B1_E5 {
     DSS_DamageSystem_Headshot_Multiplier=4;
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+        init = "[(_this select 0)] call AUX_95th_Extras_fnc_B1Init;"; 
     };
     DSS_EMP_Protection_Value=0.7;
     impactEffectsBlood = "ImpactMetal";
@@ -144,7 +99,7 @@ class AUX_95th_Droid_B1_Unit_Firefighter : JLTS_Droid_B1_E5 {
     DSS_DamageSystem_Headshot_Multiplier=4;
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+        init = "[(_this select 0)] call AUX_95th_Extras_fnc_B1Init;"; 
     };
     DSS_EMP_Protection_Value=0.7;
     impactEffectsBlood = "ImpactMetal";
@@ -168,7 +123,7 @@ class AUX_95th_Droid_B1_Unit_FireCauser : JLTS_Droid_B1_E5 {
     DSS_DamageSystem_Headshot_Multiplier=4;
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+        init = "[(_this select 0)] call AUX_95th_Extras_fnc_B1Init;"; 
     };
     DSS_EMP_Protection_Value=0.7;
     impactEffectsBlood = "ImpactMetal";
@@ -192,7 +147,7 @@ class AUX_95th_Droid_B1_Unit_Medic : JLTS_Droid_B1_E5 {
     DSS_DamageSystem_Headshot_Multiplier=4;
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+        init = "[(_this select 0)] call AUX_95th_Extras_fnc_B1Init;"; 
     };
     DSS_EMP_Protection_Value=0.7;
     impactEffectsBlood = "ImpactMetal";
@@ -215,7 +170,7 @@ class AUX_95th_Droid_B1_Unit_Police : JLTS_Droid_B1_E5 {
     DSS_DamageSystem_Headshot_Multiplier=4;
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0)] call AUX_95th_fnc_B1Init;"; 
+        init = "[(_this select 0)] call AUX_95th_Extras_fnc_B1Init;"; 
     };
     impactEffectsBlood = "ImpactMetal";
     impactEffectsNoBlood = "ImpactPlastic";
