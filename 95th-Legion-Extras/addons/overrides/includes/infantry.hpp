@@ -48,54 +48,88 @@ class 3AS_Deka_Static_Sniper: 3AS_Deka_Static_Sniper_Base {
 
 
 // // B1 Droids
-// class O_Soldier_F;
-// class JLTS_Droid_B1_E5: O_Soldier_F { scope = 1; };
-// class JLTS_Droid_B1_SBB3: JLTS_Droid_B1_E5 { scope = 1; };
-// class JLTS_Droid_B1_Rocket: JLTS_Droid_B1_E5 { scope = 1; };
-// class JLTS_Droid_B1_Prototype: JLTS_Droid_B1_E5 { scope = 1; };
-// class JLTS_Droid_B1_Security: JLTS_Droid_B1_E5 { scope = 1; };
+class O_Soldier_base_F;
+class JLTS_Droid_B1_E5: O_Soldier_base_F {
+    displayName = "Standard (Rifleman)";
+    #include "../macros/droidB1.hpp"
+};
 
-// class O_officer_F;
-// class JLTS_Droid_B1_Commander: O_officer_F { scope = 1; };
-// class JLTS_Droid_B1_OOM9: JLTS_Droid_B1_Commander { scope = 1; };
+class JLTS_Droid_B1_Security: JLTS_Droid_B1_E5 {
+    displayName = "Standard (Security)";
+    #include "../macros/droidB1.hpp"
+};
 
-// class JLTS_Droid_B1_UAV_prowler: O_Soldier_F { scope = 1; };
+class JLTS_Droid_B1_SBB3: JLTS_Droid_B1_E5 {
+    displayName = "Standard (Breacher)";
+    #include "../macros/droidB1.hpp"
+};
 
-// class O_Soldier_LAT_F;
-// class JLTS_Droid_B1_AT: O_Soldier_LAT_F { scope = 1; };
+class O_crew_F;
+class JLTS_Droid_B1_Crew: O_crew_F {
+    displayName = "Standard (Crew)";
+    #include "../macros/droidB1.hpp"
+};
 
-// class O_crew_F;
-// class JLTS_Droid_B1_Crew: O_crew_F { scope = 1; };
+class O_sniper_F;
+class JLTS_Droid_B1_Sniper: O_sniper_F {
+    displayName = "Standard (Sniper)";
+    #include "../macros/droidB1.hpp"
+};
 
-// class O_sniper_F;
-// class JLTS_Droid_B1_Sniper: O_sniper_F { scope = 1; };
+class O_Soldier_AR_F;
+class JLTS_Droid_B1_AR: O_Soldier_AR_F {
+    displayName = "Standard (Autorifleman)";
+    #include "../macros/droidB1.hpp"
+};
 
-// class O_Soldier_AR_F;
-// class JLTS_Droid_B1_AR: O_Soldier_AR_F { scope = 1; };
+class O_officer_F;
+class JLTS_Droid_B1_Commander: O_officer_F {
+    displayName = "Standard (Commander)";
+    #include "../macros/droidB1.hpp"
+};
 
-// class O_helipilot_F;
-// class JLTS_Droid_B1_Pilot: O_helipilot_F { scope = 1; };
+class O_Soldier_AT_F;
+class JLTS_Droid_B1_Marine: O_Soldier_AT_F {
+    displayName = "Standard (AA)";
+    #include "../macros/droidB1.hpp"
+};
 
-// class O_Soldier_AT_F;
-// class JLTS_Droid_B1_Marine: O_Soldier_AT_F { scope = 1; };
+class O_Soldier_LAT_F;
+class JLTS_Droid_B1_AT: O_Soldier_LAT_F {
+    displayName = "Standard (AT)";
+    #include "../macros/droidB1.hpp"
+};
+
+class O_helipilot_F;
+class JLTS_Droid_B1_Pilot: O_helipilot_F {
+    displayName = "Standard (Pilot)";
+    #include "../macros/droidB1.hpp"
+};
 
 
 
 // Hiding Misc
-class JLTS_Droid_B1_Commander; class TAS_Droid_B1_Commander: JLTS_Droid_B1_Commander { scope = 1; };
-class JLTS_Droid_B1_Rocket; class TAS_Droid_B1_Rocket: JLTS_Droid_B1_Rocket { scope = 1; };
-class JLTS_Droid_B1_SBB3; class TAS_Droid_B1_SBB3: JLTS_Droid_B1_SBB3 { scope = 1; };
-class JLTS_Droid_B1_Security; class TAS_Droid_B1_Security: JLTS_Droid_B1_Security { scope = 1; };
-class JLTS_Droid_B1_Sniper; class TAS_Droid_B1_Sniper: JLTS_Droid_B1_Sniper { scope = 1; };
-class JLTS_Droid_B1_Marine; class TAS_Droid_B1_Marine: JLTS_Droid_B1_Marine { scope = 1; };
-class JLTS_Droid_B1_Pilot; class TAS_Droid_B1_Pilot: JLTS_Droid_B1_Pilot { scope = 1; };
-class JLTS_Droid_B1_AT; class TAS_Droid_B1_AT: JLTS_Droid_B1_AT {scope=1;};
-class JLTS_Droid_B1_AR; class TAS_Droid_B1_AR: JLTS_Droid_B1_AR {scope=1;};
-class JLTS_Droid_B1_E5; class TAS_Droid_B1_E5: JLTS_Droid_B1_E5 {scope=1;};
-class JLTS_Droid_B1_Prototype; class TAS_Droid_B1_Prototype: JLTS_Droid_B1_Prototype {scope=1;};
-class JLTS_Droid_B1_Crew; class TAS_Droid_B1_Crew: JLTS_Droid_B1_Crew {scope=1;};
-class JLTS_Droid_B1_OOM9; class TAS_Droid_B1_OOM9: JLTS_Droid_B1_OOM9 {scope=1;};
-class JLTS_Droid_B1_UAV_prowler; class TAS_Droid_B1_UAV_prowler: JLTS_Droid_B1_UAV_prowler {scope=1;};
+class JLTS_Droid_B1_OOM9: JLTS_Droid_B1_Commander { scope = 1; };
+class JLTS_Droid_B1_Prototype: JLTS_Droid_B1_E5 { scope = 1; };
+class JLTS_Droid_B1_Rocket: JLTS_Droid_B1_E5 { scope = 1; };
+
+class O_Soldier_F;
+class JLTS_Droid_B1_UAV_prowler: O_Soldier_F { scope = 1; };
+
+class TAS_Droid_B1_Commander: JLTS_Droid_B1_Commander { scope = 1; };
+class TAS_Droid_B1_Rocket: JLTS_Droid_B1_Rocket { scope = 1; };
+class TAS_Droid_B1_SBB3: JLTS_Droid_B1_SBB3 { scope = 1; };
+class TAS_Droid_B1_Security: JLTS_Droid_B1_Security { scope = 1; };
+class TAS_Droid_B1_Sniper: JLTS_Droid_B1_Sniper { scope = 1; };
+class TAS_Droid_B1_Marine: JLTS_Droid_B1_Marine { scope = 1; };
+class TAS_Droid_B1_Pilot: JLTS_Droid_B1_Pilot { scope = 1; };
+class TAS_Droid_B1_AT: JLTS_Droid_B1_AT {scope=1;};
+class TAS_Droid_B1_AR: JLTS_Droid_B1_AR {scope=1;};
+class TAS_Droid_B1_E5: JLTS_Droid_B1_E5 {scope=1;};
+class TAS_Droid_B1_Prototype: JLTS_Droid_B1_Prototype {scope=1;};
+class TAS_Droid_B1_Crew: JLTS_Droid_B1_Crew {scope=1;};
+class TAS_Droid_B1_OOM9: JLTS_Droid_B1_OOM9 {scope=1;};
+class TAS_Droid_B1_UAV_prowler: JLTS_Droid_B1_UAV_prowler {scope=1;};
 class 3AS_CIS_B2_Base; class 3AS_CIS_B2_F: 3AS_CIS_B2_Base {scope=1;};
 
 class lsd_cis_b2Droid_base;
