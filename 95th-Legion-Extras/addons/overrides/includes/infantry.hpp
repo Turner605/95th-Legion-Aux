@@ -108,6 +108,72 @@ class JLTS_Droid_B1_Pilot: O_helipilot_F {
 
 
 
+// // B1 Geonosis Droids
+class JLTS_Droid_B1_Geonosis_Commander: JLTS_Droid_B1_Commander {
+    displayName = "Geonosis (Commander)";
+    #include "../macros/droidB1.hpp"
+};
+
+class JLTS_Droid_B1_Geonosis_SBB3: JLTS_Droid_B1_SBB3 {
+    displayName = "Geonosis (Breacher)";
+    #include "../macros/droidB1.hpp"
+};
+
+class JLTS_Droid_B1_Geonosis_AR: JLTS_Droid_B1_AR {
+    displayName = "Geonosis (AutoRifleman)";
+    #include "../macros/droidB1.hpp"
+};
+
+class JLTS_Droid_B1_Geonosis_Sniper: JLTS_Droid_B1_Sniper {
+    displayName = "Geonosis (Sniper)";
+    #include "../macros/droidB1.hpp"
+};
+
+class JLTS_Droid_B1_Geonosis_E5: JLTS_Droid_B1_E5 {
+    displayName = "Geonosis (Rifleman)";
+    #include "../macros/droidB1.hpp"
+};
+
+class JLTS_Droid_B1_Geonosis_AT: JLTS_Droid_B1_AT {
+    displayName = "Geonosis (AT)";
+    #include "../macros/droidB1.hpp"
+};
+
+
+
+// // B1 Training Droids
+class JLTS_Droid_B1_Training_Commander: JLTS_Droid_B1_Commander {
+    displayName = "Training (Commander)";
+    #include "../macros/droidB1.hpp"
+};
+
+class JLTS_Droid_B1_Training_SBB3: JLTS_Droid_B1_SBB3 {
+    displayName = "Training (Breacher)";
+    #include "../macros/droidB1.hpp"
+};
+
+class JLTS_Droid_B1_Training_AR: JLTS_Droid_B1_AR {
+    displayName = "Training (AutoRifleman)";
+    #include "../macros/droidB1.hpp"
+};
+
+class JLTS_Droid_B1_Training_Sniper: JLTS_Droid_B1_Sniper {
+    displayName = "Training (Sniper)";
+    #include "../macros/droidB1.hpp"
+};
+
+class JLTS_Droid_B1_Training_E5: JLTS_Droid_B1_E5 {
+    displayName = "Training (Rifleman)";
+    #include "../macros/droidB1.hpp"
+};
+
+class JLTS_Droid_B1_Training_AT: JLTS_Droid_B1_AT {
+    displayName = "Training (AT)";
+    #include "../macros/droidB1.hpp"
+};
+
+
+
 // Hiding Misc
 class JLTS_Droid_B1_OOM9: JLTS_Droid_B1_Commander { scope = 1; };
 class JLTS_Droid_B1_Prototype: JLTS_Droid_B1_E5 { scope = 1; };
