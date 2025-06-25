@@ -4,8 +4,8 @@ class AUX_95th_Droid_BX_Unit_Base: lsd_cis_bxdroid_specops {
     DSS_DamageSystem_Resistance=0.5;
     DSS_DamageSystem_Headshot_Multiplier=2;
     AUX_95th_Has_Commando_Jump=1;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos";
     identityTypes[]={"Head_LSD_BX","Aux_95th_Identity_BX"};
     facewear="";
@@ -97,8 +97,8 @@ class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Unit_P1_Basic_Trooper {
     displayName="[95th] Disguised BX Trooper";
     author="95th Aux Team";
     DSS_Is_Disguised_As_Bluefor=1;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos";
     uniformClass="AUX_95th_Uniform_P1_Basic_Trooper";
     side = 0;

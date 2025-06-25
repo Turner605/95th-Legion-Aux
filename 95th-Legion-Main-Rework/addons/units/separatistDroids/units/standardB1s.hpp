@@ -5,8 +5,8 @@ class AUX_95th_Droid_B1_Unit_AA : JLTS_Droid_B1_AT {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 AA (E60R)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 	weapons[]={"JLTS_E5", "SWLW_E60R_AA", "Throw", "Put"};
 	respawnWeapons[]={"JLTS_E5", "SWLW_E60R_AA", "Throw", "Put"};
@@ -35,8 +35,8 @@ class AUX_95th_Droid_B1_Unit_AT : JLTS_Droid_B1_AT {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 AT (RPS-6)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 	class EventHandlers {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -63,8 +63,8 @@ class AUX_95th_Droid_B1_Unit_AutoRifleman : JLTS_Droid_B1_AR {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 Auto Rifleman (E-5C)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 	class EventHandlers {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -91,8 +91,8 @@ class AUX_95th_Droid_B1_Unit_Commander : JLTS_Droid_B1_Commander {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 Commander (E-5)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 	class EventHandlers {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -119,8 +119,8 @@ class AUX_95th_Droid_B1_Unit_Crew : JLTS_Droid_B1_Crew {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 Crew (E-5)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 	class EventHandlers {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -147,8 +147,8 @@ class AUX_95th_Droid_B1_Unit_Pilot : JLTS_Droid_B1_Pilot {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 Pilot (E-5)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 	class EventHandlers {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -175,8 +175,8 @@ class AUX_95th_Droid_B1_Unit_Rifleman : JLTS_Droid_B1_E5 {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 Rifleman (E-5)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 	class EventHandlers {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -203,8 +203,8 @@ class AUX_95th_Droid_B1_Unit_Shotgun : JLTS_Droid_B1_SBB3 {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 CQB (SB-B3)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 	class EventHandlers {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -231,8 +231,8 @@ class AUX_95th_Droid_B1_Unit_Sniper : JLTS_Droid_B1_Sniper {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 Sniper (E-5S)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 	class EventHandlers {
 		class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};

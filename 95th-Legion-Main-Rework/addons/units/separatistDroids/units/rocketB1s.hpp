@@ -5,8 +5,8 @@ class AUX_95th_Droid_B1_Rocket_Unit_AT : JLTS_Droid_B1_Rocket {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 AT (E-5)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids_Rocket";
 	AUX_95th_Is_Immune_To_FallDamage = 1;
 	weapons[]={"JLTS_E5", "JLTS_RPS6", "Throw", "Put"};
@@ -36,8 +36,8 @@ class AUX_95th_Droid_B1_Rocket_Unit_Rifleman : JLTS_Droid_B1_Rocket {
 	DSS_DamageSystem_Resistance=0.25;
 	DSS_DamageSystem_Headshot_Multiplier=4;
 	displayName="B1 Rifleman (E-5)";
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids_Rocket";
 	AUX_95th_Is_Immune_To_FallDamage = 1;
 	class EventHandlers {

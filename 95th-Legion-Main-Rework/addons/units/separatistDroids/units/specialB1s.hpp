@@ -1,8 +1,8 @@
 class AUX_95th_Droid_B1_Random: JLTS_Droid_B1_E5 {
     displayName = "Random (Standard)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -16,8 +16,8 @@ class AUX_95th_Droid_B1_Random: JLTS_Droid_B1_E5 {
 class AUX_95th_Droid_B1_Random_Standard_Launchers: JLTS_Droid_B1_E5 {
     displayName = "Random (Launchers)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -31,8 +31,8 @@ class AUX_95th_Droid_B1_Random_Standard_Launchers: JLTS_Droid_B1_E5 {
 class AUX_95th_Droid_B1_Random_Specialists: JLTS_Droid_B1_E5 {
     displayName = "Random (Specialists)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -47,8 +47,8 @@ class AUX_95th_Droid_B1_Random_Specialists: JLTS_Droid_B1_E5 {
 class AUX_95th_Droid_B1_Shield: JLTS_Droid_B1_Prototype {
     displayName = "B1 Shield (E-5)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     identityTypes[] = {"Aux_95th_Identity_B1"};
     DSS_DamageSystem_Active=1;
@@ -68,8 +68,8 @@ class AUX_95th_Droid_B1_Shield: JLTS_Droid_B1_Prototype {
 class AUX_95th_Droid_B1_Turret: JLTS_Droid_B1_Prototype {
     displayName = "B1 Turret (E-5)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     identityTypes[] = {"Aux_95th_Identity_B1"};
     DSS_DamageSystem_Active=1;
@@ -89,8 +89,8 @@ class AUX_95th_Droid_B1_Turret: JLTS_Droid_B1_Prototype {
 class AUX_95th_Droid_B1_Mortar: JLTS_Droid_B1_Prototype {
     displayName = "B1 Mortar (E-5)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     identityTypes[] = {"Aux_95th_Identity_B1"};
     DSS_DamageSystem_Active=1;
@@ -109,8 +109,8 @@ class AUX_95th_Droid_B1_Mortar: JLTS_Droid_B1_Prototype {
 class AUX_95th_Droid_B1_Unit_Diplomat : JLTS_Droid_B1_E5 {
     displayName = "B1 Diplomat (E-5)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     uniformClass = "AUX_95th_Droid_B1_Uniform_Diplomat";
 	backpack = "AUX_95th_Droid_B1_Backpack_Diplomat";
@@ -132,8 +132,8 @@ class AUX_95th_Droid_B1_Unit_Diplomat : JLTS_Droid_B1_E5 {
 class AUX_95th_Droid_B1_Unit_Firefighter : JLTS_Droid_B1_E5 {
     displayName = "B1 Firefighter (E-5)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     uniformClass = "AUX_95th_Droid_B1_Uniform_Firefighter";
 	backpack = "AUX_95th_Droid_B1_Backpack_Firefighter";
@@ -156,8 +156,8 @@ class AUX_95th_Droid_B1_Unit_Firefighter : JLTS_Droid_B1_E5 {
 class AUX_95th_Droid_B1_Unit_FireCauser : JLTS_Droid_B1_E5 {
     displayName = "B1 FireCauser (Flamer)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     uniformClass = "AUX_95th_Droid_B1_Uniform_Firefighter";
 	backpack = "AUX_95th_Droid_B1_Backpack_Firefighter";
@@ -180,8 +180,8 @@ class AUX_95th_Droid_B1_Unit_FireCauser : JLTS_Droid_B1_E5 {
 class AUX_95th_Droid_B1_Unit_Medic : JLTS_Droid_B1_E5 {
     displayName = "B1 Medic (E-5)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     uniformClass = "AUX_95th_Droid_B1_Uniform_Medic";
 	backpack = "AUX_95th_Droid_B1_Backpack_Medic";
@@ -203,8 +203,8 @@ class AUX_95th_Droid_B1_Unit_Medic : JLTS_Droid_B1_E5 {
 class AUX_95th_Droid_B1_Unit_Police : JLTS_Droid_B1_E5 {
     displayName = "B1 Police (E-5)";
     scope = 2;
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
     uniformClass = "AUX_95th_Droid_B1_Uniform_Police";
 	backpack = "AUX_95th_Droid_B1_Backpack_Police";

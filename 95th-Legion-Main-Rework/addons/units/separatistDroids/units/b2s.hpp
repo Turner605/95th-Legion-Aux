@@ -1,6 +1,6 @@
 class AUX_95th_Droid_B2_Unit_Blaster : lsd_cis_b2_standard {
-    faction="AUX_95th_Faction_SeparatistDroids";
-    editorCategory="AUX_95th_Faction_SeparatistDroids";
+    faction="AUX_95th_Separatist_Army";
+    editorCategory="AUX_95th_Separatist_Army";
     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B2_Battledroids";
     uniformClass = "AUX_95th_Droid_B2_Uniform";
     DSS_EMP_Protection_Value=0.95;

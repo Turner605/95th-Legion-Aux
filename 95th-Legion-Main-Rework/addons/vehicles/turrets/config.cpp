@@ -33,8 +33,8 @@ class CfgVehicles {
     class AUX_95th_Droid_Droideka_Sniper_Turret: 3AS_Deka_Static_Sniper {
         displayName = "Droideka Sniper";
 		scope = 2;
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
         DSS_isDroid=1;
     };
@@ -42,8 +42,8 @@ class CfgVehicles {
     class AUX_95th_Droid_Droideka_Turret: 3AS_Deka_Static {
         displayName = "Droideka";
 		scope = 2;
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
         DSS_isDroid=1;
     };
@@ -51,8 +51,8 @@ class CfgVehicles {
     class AUX_95th_Droid_Microwave_Emitter_Turret: 3AS_DF9_Radar_Grey{
         displayName="Microwave Emitter (TODO)";
 		scope = 2;
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
         crew="AUX_95th_Droid_B1_Unit_Crew";
     };
@@ -61,8 +61,8 @@ class CfgVehicles {
         displayName="Radar Jammer (6k)";
 		side = 0;
 		scope = 2;
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
         crew="AUX_95th_Droid_B1_Unit_Crew";
     };
@@ -71,8 +71,8 @@ class CfgVehicles {
         displayName="Radar Jammer (3k)";
 		side = 0;
 		scope = 2;
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
         crew="AUX_95th_Droid_B1_Unit_Crew";
     };
@@ -80,24 +80,24 @@ class CfgVehicles {
     class AUX_95th_Droid_Turret_Roof_Turret : ls_turret_pirate_autoturret {
         displayName="Roof Turret";
 		scope = 2;
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
     };
 
     class AUX_95th_Droid_Turret_Roof_Turret_Shotgun : ls_turret_pirate_autoturretCQC {
         displayName="Roof Turret (Shotgun)";
 		scope = 2;
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
     };
 
     class AUX_95th_Droid_Turret_Ball : JLTS_UST_turret_CIS {
         displayName="Turret (Ball)";
 		scope = 2;
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
     };
 };

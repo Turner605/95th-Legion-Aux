@@ -253,14 +253,6 @@ class CfgFunctions {
     };
 };
 
-class CfgFactionClasses { 
-    class AUX_95th_Faction_SeparatistDroids {displayName = "[95th] Separatist Droids"; scope=2; scopecurator=2; priority = 1; side = 1;};  
-};
-
-class CfgEditorCategories{
-	class AUX_95th_Faction_SeparatistDroids{displayName = "[95th] Separatist Droids";};
-};
-
 class CfgEditorSubcategories {
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Infantry{displayName="Infantry";};
 	class AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos{displayName="Commandos";};
@@ -273,14 +265,14 @@ class CfgEditorSubcategories {
 
 class CfgGroups {
 	class East {
-		class AUX_95th_Faction_SeparatistDroids  {
-			name = "[95th] Separatist Droids";
+		class AUX_95th_Separatist_Army  {
+			name = "[95th] Separatist Army";
 			class AUX_95th_Faction_SeparatistDroids_B1 {
 				name = "B1 Battledroids (Standard)";
 
 				class AUX_95th_Groups_Droid_B1_Rocket_FireTeam {
 					side = 0;
-					faction = "AUX_95th_Faction_SeparatistDroids";
+					faction = "AUX_95th_Separatist_Army";
 					name="B1 Rocket Fire Team";
 					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Rocket_Unit_Rifleman"; rank = "SERGEANT"; position[] = {0,0,0};};
 					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Rocket_Unit_Rifleman"; rank = "PRIVATE"; position[] = {5,-5,0};};
@@ -290,7 +282,7 @@ class CfgGroups {
 
 				class AUX_95th_Groups_Droid_B1_FireTeam {
 					side = 0;
-					faction = "AUX_95th_Faction_SeparatistDroids";
+					faction = "AUX_95th_Separatist_Army";
 					name="B1 Fire Team";
 					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "SERGEANT"; position[] = {0,0,0};};
 					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {5,-5,0};};
@@ -300,7 +292,7 @@ class CfgGroups {
 
 				class AUX_95th_Groups_Droid_B1_SniperTeam {
 					side = 0;
-					faction = "AUX_95th_Faction_SeparatistDroids";
+					faction = "AUX_95th_Separatist_Army";
 					name="B1 Sniper Team";
 					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Sniper"; rank = "SERGEANT"; position[] = {0,0,0};};
 					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {5,-5,0};};
@@ -308,7 +300,7 @@ class CfgGroups {
 				
 				class AUX_95th_Groups_Droid_B1_AssaultTeam_AT {
 					side = 0;
-					faction = "AUX_95th_Faction_SeparatistDroids";
+					faction = "AUX_95th_Separatist_Army";
 					name="B1 Assault Team (AT/AA)";
 					class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Commander"; rank = "SERGEANT"; position[] = {0,0,0};};
 					class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Rifleman"; rank = "PRIVATE"; position[] = {5,0,0};};
@@ -322,7 +314,7 @@ class CfgGroups {
 
 				// class AUX_95th_Groups_Droid_B1_Specialist_AssaultTeam_Random {
 				// 	side = 0;
-				// 	faction = "AUX_95th_Faction_SeparatistDroids";
+				// 	faction = "AUX_95th_Separatist_Army";
 				// 	name="Random B1 Specialist Assault Team";
 				// 	class Unit0 {side = 0; vehicle = "AUX_95th_Droid_B1_Unit_Commander"; rank = "SERGEANT"; position[] = {0,0,0};};
 				// 	class Unit1 {side = 0; vehicle = "AUX_95th_Droid_B1_Random"; rank = "PRIVATE"; position[] = {5,-5,0};};
@@ -391,8 +383,8 @@ class CfgVehicles {
 		DSS_DamageSystem_Resistance=0.15;
 		DSS_DamageSystem_Headshot_Multiplier=4;
 		displayName="Riot (E-5S)";
-		faction="AUX_95th_Faction_SeparatistDroids";
-		editorCategory="AUX_95th_Faction_SeparatistDroids";
+		faction="AUX_95th_Separatist_Army";
+		editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Humans";
 		AUX_95th_Can_Use_Shield=1;
 	};
@@ -437,8 +429,8 @@ class CfgWeapons {
 
 	class AUX_95th_Droid_B1_Uniform_Diplomat: JLTS_DroidB1 {
 		displayName="B1 Diplomat Uniform";
-		faction="AUX_95th_Faction_SeparatistDroids";
-		editorCategory="AUX_95th_Faction_SeparatistDroids";
+		faction="AUX_95th_Separatist_Army";
+		editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 		class ItemInfo: UniformItem {
 			uniformClass="AUX_95th_Droid_B1_Unit_Diplomat";
@@ -450,8 +442,8 @@ class CfgWeapons {
 
 	class AUX_95th_Droid_B1_Uniform_Firefighter: JLTS_DroidB1 {
 		displayName="B1 Firefighter Uniform";
-		faction="AUX_95th_Faction_SeparatistDroids";
-		editorCategory="AUX_95th_Faction_SeparatistDroids";
+		faction="AUX_95th_Separatist_Army";
+		editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 		class ItemInfo: UniformItem {
 			uniformClass="AUX_95th_Droid_B1_Unit_Firefighter";
@@ -463,8 +455,8 @@ class CfgWeapons {
 
 	class AUX_95th_Droid_B1_Uniform_Medic: JLTS_DroidB1 {
 		displayName="B1 Medic Uniform";
-		faction="AUX_95th_Faction_SeparatistDroids";
-		editorCategory="AUX_95th_Faction_SeparatistDroids";
+		faction="AUX_95th_Separatist_Army";
+		editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 		class ItemInfo: UniformItem {
 			uniformClass="AUX_95th_Droid_B1_Unit_Medic";
@@ -476,8 +468,8 @@ class CfgWeapons {
 
 	class AUX_95th_Droid_B1_Uniform_Police: JLTS_DroidB1 {
 		displayName="B1 Police Uniform";
-		faction="AUX_95th_Faction_SeparatistDroids";
-		editorCategory="AUX_95th_Faction_SeparatistDroids";
+		faction="AUX_95th_Separatist_Army";
+		editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
 		class ItemInfo: UniformItem {
 			uniformClass="AUX_95th_Droid_B1_Unit_Police";

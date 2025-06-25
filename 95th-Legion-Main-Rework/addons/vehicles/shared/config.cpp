@@ -16,7 +16,7 @@ class CfgPatches {
     };
 };
 
-class CfgFactionClasses { 
+class CfgFactionClasses {
     class AUX_95th_Legion_Faction_Vehicles { 
         displayName = "[95th] Vehicles"; 
 		scope=2; 

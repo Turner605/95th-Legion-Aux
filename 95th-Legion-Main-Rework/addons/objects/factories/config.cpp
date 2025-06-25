@@ -26,15 +26,15 @@ class CfgVehicles {
 
     class AUX_95th_Factory_Proxy : Land_HelipadEmpty_F {
         displayName="Factory Proxy";
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Factories";
     };
 
     class AUX_95th_Droid_Factory_Terminal : 3AS_CIS_Console_4_Prop {
         displayName="Factory Terminal";
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Factories";
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -43,8 +43,8 @@ class CfgVehicles {
 
     class AUX_95th_Flak_Factory : 3AS_Droid_Dispenser_F {
         displayName="Flak Factory";
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Factories";
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
@@ -53,8 +53,8 @@ class CfgVehicles {
 
     class AUX_95th_Ground_Factory : 3AS_Droid_Dispenser_F {
         displayName="Ground Factory";
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Factories";
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};

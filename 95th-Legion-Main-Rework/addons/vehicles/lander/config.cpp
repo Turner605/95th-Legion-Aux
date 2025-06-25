@@ -18,8 +18,8 @@ class CfgVehicles {
 	class AUX_95th_Vehicles_Lander: 3AS_Aegis_Shuttle_F {
 		displayName = "Lander";
 		author = "95th Aux Team";
-        faction="AUX_95th_Faction_SeparatistDroids";
-        editorCategory="AUX_95th_Faction_SeparatistDroids";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Helicopters";
         crew="AUX_95th_Droid_B1_Unit_Crew";
 		side=0;
