@@ -338,6 +338,75 @@ class ls_droid_bx_simulation: ls_droid_bx_hologram {
 
 
 
+// B2 Droids
+class ls_droid_b2: ls_droid_base {
+    displayName = "B2 (Standard)";
+    #include "../macros/droidAdvanced.hpp"
+    // uniformClass = "AUX_95th_Droid_B2_Uniform";
+
+    DSS_EMP_Protection_Value=0.95;
+    DSS_DamageSystem_Active=1;
+	DSS_DamageSystem_Resistance=4;
+	DSS_DamageSystem_Headshot_Multiplier=4;
+    canBleed = 0;
+
+    weapons[] = {"WBK_B2_NormalMod","Throw","Put"};
+    magazines[] = {"ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73"};
+    items[] = {};
+    
+    class SoundEnvironExt {
+        generic[] = {
+         {"walk", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+         {"walk", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+         {"walk", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
+         {"run", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+         {"run", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+         {"run", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
+         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}
+        };
+    };
+
+    class SoundEquipment {
+        soldier[] = {
+         {"walk", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+         {"walk", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+         {"walk", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
+         {"run", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+         {"run", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+         {"run", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
+         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
+         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
+         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}
+        };
+    };
+
+    class SoundBreath {breath[] = {};};
+    class SoundDrown {breath[] = {};};
+    class SoundInjured {breath[] = {};};
+    class SoundBleeding {breath[] = {};};
+    class SoundBurning {breath[] = {};};
+    class SoundChoke {breath[] = {};};
+    class SoundRecovered {breath[] = {};};
+
+    class EventHandlers {
+        class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+        init = "[(_this select 0)] call AUX_95th_fnc_B2Init;"; 
+    };
+};
+
+class ls_droid_b2_hologram: ls_droid_b2 {
+    displayName = "B2 (Hologram)";
+};
+
+class ls_droid_b2_junkyard: ls_droid_b2 {
+    displayName = "B2 (Damaged)";
+};
+
+class ls_droid_b2_simulation: ls_droid_b2 {
+    displayName = "B2 (Simulation)";
+};
 
 
 
@@ -365,9 +434,7 @@ class TAS_Droid_B1_OOM9: JLTS_Droid_B1_OOM9 {scope=1;};
 class TAS_Droid_B1_UAV_prowler: JLTS_Droid_B1_UAV_prowler {scope=1;};
 class 3AS_CIS_B2_Base; class 3AS_CIS_B2_F: 3AS_CIS_B2_Base {scope=1;};
 
-class lsd_cis_b2Droid_base;
-class lsd_cis_b2_standard: lsd_cis_b2Droid_base { scope = 1; };
-class WBK_B2_Mod_Standart: lsd_cis_b2_standard { scope = 1; };
+class WBK_B2_Mod_Standart: ls_droid_b2 { scope = 1; };
 class WBK_B2_Mod_GL: WBK_B2_Mod_Standart { scope = 1; };
 class WBK_B2_Mod_Shotgun: WBK_B2_Mod_Standart { scope = 1; };
 class ls_droid_bx_cloneDisguise_phase2: ls_droid_base { scope = 1; };
@@ -387,8 +454,3 @@ class ls_droid_b1_shotgun: ls_droid_b1 { scope = 1; };
 class ls_droid_b1_simulation: ls_droid_b1 { scope = 1; };
 class ls_droid_b1_squadLeader: ls_droid_b1 { scope = 1; };
 class ls_droid_b1_officer: ls_droid_b1 { scope = 1; };
-
-class ls_droid_b2: ls_droid_base { scope = 1; };
-class ls_droid_b2_hologram: ls_droid_b2 { scope = 1; };
-class ls_droid_b2_junkyard: ls_droid_b2 { scope = 1; };
-class ls_droid_b2_simulation: ls_droid_b2 { scope = 1; };

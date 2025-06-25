@@ -28,7 +28,17 @@ class CfgVehicles {
 
 
 
-    
+    // 	class AUX_95th_Human_Unit_Riot: 3AS_U_CIS_Heavy {
+	// 	scope=2;
+	// 	DSS_DamageSystem_Active=1;
+	// 	DSS_DamageSystem_Resistance=0.15;
+	// 	DSS_DamageSystem_Headshot_Multiplier=4;
+	// 	displayName="Riot (E-5S)";
+	// 	faction="AUX_95th_Separatist_Army";
+	// 	editorCategory="AUX_95th_Separatist_Army";
+	// 	editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Humans";
+	// 	AUX_95th_Can_Use_Shield=1;
+	// };
 
 // class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Unit_P1_Basic_Trooper {
 //     displayName="[95th] Disguised BX Trooper";

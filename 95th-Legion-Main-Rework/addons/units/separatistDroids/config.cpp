@@ -365,22 +365,6 @@ class CfgVehicles {
 	// B1's
 	#include "Units\specialB1s.hpp"
 	#include "Units\rocketB1s.hpp"
-
-	// B2's
-	#include "Units\B2s.hpp"
-
-	// Humans
-	class AUX_95th_Human_Unit_Riot: 3AS_U_CIS_Heavy {
-		scope=2;
-		DSS_DamageSystem_Active=1;
-		DSS_DamageSystem_Resistance=0.15;
-		DSS_DamageSystem_Headshot_Multiplier=4;
-		displayName="Riot (E-5S)";
-		faction="AUX_95th_Separatist_Army";
-		editorCategory="AUX_95th_Separatist_Army";
-		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Humans";
-		AUX_95th_Can_Use_Shield=1;
-	};
 };
 
 class CfgWeapons {
