@@ -52,58 +52,150 @@ class O_Soldier_base_F;
 class JLTS_Droid_B1_E5: O_Soldier_base_F {
     displayName = "Standard (Rifleman)";
     #include "../macros/droidB1.hpp"
+
+	magazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell"
+	};
+	respawnMagazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell"
+	};
 };
 
 class JLTS_Droid_B1_Security: JLTS_Droid_B1_E5 {
     displayName = "Standard (Security)";
     #include "../macros/droidB1.hpp"
+
+	magazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell"
+	};
+	respawnMagazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell"
+	};
 };
 
 class JLTS_Droid_B1_SBB3: JLTS_Droid_B1_E5 {
     displayName = "Standard (Breacher)";
     #include "../macros/droidB1.hpp"
+
+	magazines[]={
+		"JLTS_SBB3_mag", "JLTS_SBB3_mag", "JLTS_SBB3_mag", "JLTS_SBB3_mag", "JLTS_SBB3_mag",
+		"SmokeShell", "SmokeShell", "DSS_Grenade_Magazine_Thermal_C1"
+	};
+	respawnMagazines[]={
+		"JLTS_SBB3_mag", "JLTS_SBB3_mag", "JLTS_SBB3_mag", "JLTS_SBB3_mag", "JLTS_SBB3_mag",
+		"SmokeShell", "SmokeShell", "DSS_Grenade_Magazine_Thermal_C1"
+	};
 };
 
 class O_crew_F;
 class JLTS_Droid_B1_Crew: O_crew_F {
     displayName = "Standard (Crew)";
     #include "../macros/droidB1.hpp"
+
+	magazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell"
+	};
+	respawnMagazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell"
+	};
 };
 
 class O_sniper_F;
 class JLTS_Droid_B1_Sniper: O_sniper_F {
     displayName = "Standard (Sniper)";
     #include "../macros/droidB1.hpp"
+
+	magazines[]={
+		"JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag",
+		"SmokeShell", "SmokeShell"
+	};
+	respawnMagazines[]={
+		"JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag", "JLTS_E5S_mag",
+		"SmokeShell", "SmokeShell"
+	};
 };
 
 class O_Soldier_AR_F;
 class JLTS_Droid_B1_AR: O_Soldier_AR_F {
     displayName = "Standard (Autorifleman)";
     #include "../macros/droidB1.hpp"
+
+	magazines[]={
+		"JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag",
+		"SmokeShell", "SmokeShell"
+	};
+	respawnMagazines[]={
+		"JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag", "JLTS_E5C_mag",
+		"SmokeShell", "SmokeShell"
+	};
 };
 
 class O_officer_F;
 class JLTS_Droid_B1_Commander: O_officer_F {
     displayName = "Standard (Commander)";
     #include "../macros/droidB1.hpp"
+
+	magazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell"
+	};
+	respawnMagazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell"
+	};
 };
 
 class O_Soldier_AT_F;
 class JLTS_Droid_B1_Marine: O_Soldier_AT_F {
     displayName = "Standard (AA)";
     #include "../macros/droidB1.hpp"
+
+    weapons[]={"JLTS_E5", "SWLW_E60R_AA", "Throw", "Put"};
+	respawnWeapons[]={"JLTS_E5", "SWLW_E60R_AA", "Throw", "Put"};
+	magazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag"
+	};
+	respawnMagazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag"
+	};
 };
 
 class O_Soldier_LAT_F;
 class JLTS_Droid_B1_AT: O_Soldier_LAT_F {
     displayName = "Standard (AT)";
     #include "../macros/droidB1.hpp"
+
+    magazines[]={
+        "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+        "JLTS_RPS6_mag", "JLTS_RPS6_mag", "JLTS_RPS6_mag"
+	};
+	respawnMagazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"JLTS_RPS6_mag", "JLTS_RPS6_mag", "JLTS_RPS6_mag"
+	};
 };
 
 class O_helipilot_F;
 class JLTS_Droid_B1_Pilot: O_helipilot_F {
     displayName = "Standard (Pilot)";
     #include "../macros/droidB1.hpp"
+
+	magazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell"
+	};
+	respawnMagazines[]={
+		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
+		"SmokeShell", "SmokeShell"
+	};
 };
 
 

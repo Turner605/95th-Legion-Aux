@@ -363,7 +363,6 @@ class CfgVehicles {
 	class JLTS_B1_backpack;
 
 	// B1's
-	#include "Units\standardB1s.hpp"
 	#include "Units\specialB1s.hpp"
 	#include "Units\rocketB1s.hpp"
 
