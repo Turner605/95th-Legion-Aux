@@ -10,12 +10,8 @@ class CfgPatches {
 
 			"AUX_95th_CIS_Disguised_Trooper",
 
-
-
 			"AUX_95th_Droid_B1_Unit_Diplomat", "AUX_95th_Droid_B1_Unit_Firefighter", "AUX_95th_Droid_B1_Unit_Medic", 
-            "AUX_95th_Droid_B1_Unit_Police", "AUX_95th_Droid_B1_Shield", "AUX_95th_Droid_B1_Turret", "AUX_95th_Droid_B1_Mortar",
-
-			"AUX_95th_Human_Unit_Riot"
+            "AUX_95th_Droid_B1_Unit_Police", "AUX_95th_Droid_B1_Shield", "AUX_95th_Droid_B1_Turret", "AUX_95th_Droid_B1_Mortar"
         };
         weapons[] = {
 			"AUX_95th_E5_shield_attached"
@@ -160,95 +156,95 @@ class CfgVehicles {
 	// };
 };
 
-// class CfgWeapons {
-//     class ItemCore;
-//     class UniformItem;
-//     class Uniform_Base: ItemCore { class ItemInfo; };
+class CfgWeapons {
+    class ItemCore;
+    class UniformItem;
+    class Uniform_Base: ItemCore { class ItemInfo; };
 
-// 	class JLTS_DroidB1;
+	class JLTS_DroidB1;
 
-// 	class JLTS_E5_shield;
-// 	class AUX_95th_E5_shield_attached : JLTS_E5_shield {
-// 		scope = 2;
-// 		class LinkedItems {
-// 			class LinkedItemsUnder {
-// 				slot = "UnderBarrelSlot";
-// 				item = "JLTS_riot_shield_droid_attachment";
-// 			};
-// 		};
-// 	};
+	class JLTS_E5_shield;
+	class AUX_95th_E5_shield_attached : JLTS_E5_shield {
+		scope = 2;
+		class LinkedItems {
+			class LinkedItemsUnder {
+				slot = "UnderBarrelSlot";
+				item = "JLTS_riot_shield_droid_attachment";
+			};
+		};
+	};
 
-// 	class U_I_CombatUniform;
-// 	class ls_redforUniform_base: U_I_CombatUniform {
-// 		class ItemInfo;
-// 	};
+	class AUX_95th_Droid_B1_Uniform_Diplomat: JLTS_DroidB1 {
+		displayName="B1 Diplomat Uniform";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
+        editorSubcategory="AUX_95th_Category_Droids_B1";
+		class ItemInfo: UniformItem {
+			uniformClass="AUX_95th_Droid_B1_Unit_Diplomat";
+			uniformModel="-";
+			containerClass="Supply150";
+			mass=40;
+		};
+	};
 
-// 	class lsd_cis_b2Droid_uniform: ls_redforUniform_base {};
+	class AUX_95th_Droid_B1_Uniform_Firefighter: JLTS_DroidB1 {
+		displayName="B1 Firefighter Uniform";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
+        editorSubcategory="AUX_95th_Category_Droids_B1";
+		class ItemInfo: UniformItem {
+			uniformClass="AUX_95th_Droid_B1_Unit_Firefighter";
+			uniformModel="-";
+			containerClass="Supply150";
+			mass=40;
+		};
+	};
 
-// 	class AUX_95th_Droid_B2_Uniform: lsd_cis_b2Droid_uniform {
-// 		JLTS_hasStunProtection=1;
-// 		scope = 2;
-// 		displayName = "B2 Droid Chassis";
-// 		class ItemInfo: ItemInfo {
-// 			uniformModel = "-";
-// 			uniformClass = "lsd_cis_b2Droid_base";
-// 			containerClass = "Supply150";
-// 			mass = 40;
-// 		};
-// 	};
+	class AUX_95th_Droid_B1_Uniform_Medic: JLTS_DroidB1 {
+		displayName="B1 Medic Uniform";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
+        editorSubcategory="AUX_95th_Category_Droids_B1";
+		class ItemInfo: UniformItem {
+			uniformClass="AUX_95th_Droid_B1_Unit_Medic";
+			uniformModel="-";
+			containerClass="Supply150";
+			mass=40;
+		};
+	};
 
-// 	class AUX_95th_Droid_B1_Uniform_Diplomat: JLTS_DroidB1 {
-// 		displayName="B1 Diplomat Uniform";
-// 		faction="AUX_95th_Separatist_Army";
-// 		editorCategory="AUX_95th_Separatist_Army";
-// 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
-// 		class ItemInfo: UniformItem {
-// 			uniformClass="AUX_95th_Droid_B1_Unit_Diplomat";
-// 			uniformModel="-";
-// 			containerClass="Supply150";
-// 			mass=40;
-// 		};
-// 	};
+	class AUX_95th_Droid_B1_Uniform_Police: JLTS_DroidB1 {
+		displayName="B1 Police Uniform";
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
+        editorSubcategory="AUX_95th_Category_Droids_B1";
+		class ItemInfo: UniformItem {
+			uniformClass="AUX_95th_Droid_B1_Unit_Police";
+			uniformModel="-";
+			containerClass="Supply150";
+			mass=40;
+		};
+	};
 
-// 	class AUX_95th_Droid_B1_Uniform_Firefighter: JLTS_DroidB1 {
-// 		displayName="B1 Firefighter Uniform";
-// 		faction="AUX_95th_Separatist_Army";
-// 		editorCategory="AUX_95th_Separatist_Army";
-// 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
-// 		class ItemInfo: UniformItem {
-// 			uniformClass="AUX_95th_Droid_B1_Unit_Firefighter";
-// 			uniformModel="-";
-// 			containerClass="Supply150";
-// 			mass=40;
-// 		};
-// 	};
+	// class U_I_CombatUniform;
+	// class ls_redforUniform_base: U_I_CombatUniform {
+	// 	class ItemInfo;
+	// };
 
-// 	class AUX_95th_Droid_B1_Uniform_Medic: JLTS_DroidB1 {
-// 		displayName="B1 Medic Uniform";
-// 		faction="AUX_95th_Separatist_Army";
-// 		editorCategory="AUX_95th_Separatist_Army";
-// 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
-// 		class ItemInfo: UniformItem {
-// 			uniformClass="AUX_95th_Droid_B1_Unit_Medic";
-// 			uniformModel="-";
-// 			containerClass="Supply150";
-// 			mass=40;
-// 		};
-// 	};
+	// class lsd_cis_b2Droid_uniform: ls_redforUniform_base {};
 
-// 	class AUX_95th_Droid_B1_Uniform_Police: JLTS_DroidB1 {
-// 		displayName="B1 Police Uniform";
-// 		faction="AUX_95th_Separatist_Army";
-// 		editorCategory="AUX_95th_Separatist_Army";
-// 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_B1_Battledroids";
-// 		class ItemInfo: UniformItem {
-// 			uniformClass="AUX_95th_Droid_B1_Unit_Police";
-// 			uniformModel="-";
-// 			containerClass="Supply150";
-// 			mass=40;
-// 		};
-// 	};
-// };
+	// class AUX_95th_Droid_B2_Uniform: lsd_cis_b2Droid_uniform {
+	// 	JLTS_hasStunProtection=1;
+	// 	scope = 2;
+	// 	displayName = "B2 Droid Chassis";
+	// 	class ItemInfo: ItemInfo {
+	// 		uniformModel = "-";
+	// 		uniformClass = "lsd_cis_b2Droid_base";
+	// 		containerClass = "Supply150";
+	// 		mass = 40;
+	// 	};
+	// };
+};
 
 class ACE_Medical_Injuries {
 	class damageTypes {

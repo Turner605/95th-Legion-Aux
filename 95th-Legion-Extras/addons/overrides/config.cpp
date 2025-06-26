@@ -19,7 +19,9 @@ class CfgPatches {
             "ls_vehicles_ground",
             "lsd_units_redfor",
             "WBK_PhoenixTreal_FlamethrowerMOD",
-			"AUX_95th_voicelines"
+			"AUX_95th_voicelines",
+            "ls_loadorder",
+            "WBK_DifferentRobotics_1"
         };
         authors[] = {"Turner"};
         VERSION_CONFIG;
