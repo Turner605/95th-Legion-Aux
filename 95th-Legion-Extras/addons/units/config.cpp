@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-// Needs to have the correct required addons
-
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
@@ -10,17 +8,12 @@ class CfgPatches {
             "AUX_95th_Droid_B1_Rocket_AR", "AUX_95th_Droid_B1_Rocket_Commander", "AUX_95th_Droid_B1_Rocket_AA",
             "AUX_95th_Droid_B1_Rocket_AT",
 
-            "AUX_95th_Droid_B1_Unit_AA", "AUX_95th_Droid_B1_Unit_AT", "AUX_95th_Droid_B1_Unit_AutoRifleman",
-			"AUX_95th_Droid_B1_Unit_Commander", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Shotgun",
-			"AUX_95th_Droid_B1_Unit_Sniper", "AUX_95th_Droid_B1_Unit_Crew", "AUX_95th_Droid_B1_Unit_Pilot",
-			"AUX_95th_Droid_B1_Unit_Diplomat", "AUX_95th_Droid_B1_Unit_Firefighter", 
-			"AUX_95th_Droid_B1_Unit_Medic", "AUX_95th_Droid_B1_Unit_Police", 
-
-            "AUX_95th_Droid_BX_Unit_Rifleman", "AUX_95th_Droid_BX_Unit_Commander", "AUX_95th_Droid_BX_Unit_Guard",
-			"AUX_95th_Droid_BX_Unit_Diplomat", "AUX_95th_Droid_BX_Unit_Shotgun", "AUX_95th_Droid_BX_Unit_Sniper",
 			"AUX_95th_CIS_Disguised_Trooper",
-			"AUX_95th_CIS_TS_F", "AUX_95th_CIS_TS_Green", "AUX_95th_CIS_TS_Red",
-			"AUX_95th_Droid_B1_Shield", "AUX_95th_Droid_B1_Turret", "AUX_95th_Droid_B1_Mortar",
+
+
+
+			"AUX_95th_Droid_B1_Unit_Diplomat", "AUX_95th_Droid_B1_Unit_Firefighter", "AUX_95th_Droid_B1_Unit_Medic", 
+            "AUX_95th_Droid_B1_Unit_Police", "AUX_95th_Droid_B1_Shield", "AUX_95th_Droid_B1_Turret", "AUX_95th_Droid_B1_Mortar",
 
 			"AUX_95th_Human_Unit_Riot"
         };
@@ -68,14 +61,15 @@ class CfgFunctions {
     };
 };
 
-// class CfgGroups {
-// 	class East {
-// 		class AUX_95th_Separatist_Army  {
-// 			name = "[95th] Separatist Army";
-//             #include "./groups/placeholder.hpp"
-// 		};
-// 	};
-// };
+class CfgGroups {
+	class East {
+		class AUX_95th_Separatist_Army  {
+			name = "[95th] Separatist Army";
+            #include "./groups/standardB1s.hpp"
+            #include "./groups/rocketB1s.hpp"
+		};
+	};
+};
 
 class CBA_Extended_EventHandlers_base;
 
@@ -90,95 +84,78 @@ class CfgVehicles {
     class JLTS_Droid_B1_Marine;
     class JLTS_Droid_B1_AT;
     class JLTS_Droid_B1_Pilot;
+	// class JLTS_Droid_B1_Rocket;
+	// class JLTS_Droid_B1_Prototype;
+
+	// class JLTS_B1_backpack;
+
+
 
 	// // B1's
 	// #include "Units\specialB1s.hpp"
 	#include "Units\rocketB1s.hpp"
 
+    class AUX_95th_Unit_P1_Basic_Trooper;
+    class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Unit_P1_Basic_Trooper {
+        displayName = "Disguised";
+        side = 0;
+        scope=2; 
+        scopecurator=2;
 
+        faction="AUX_95th_Separatist_Army";
+        editorCategory="AUX_95th_Separatist_Army";
+        editorSubcategory="AUX_95th_Category_Droids_Commando";
 
+        uniformClass="AUX_95th_Uniform_P1_Basic_Trooper";
 
+        DSS_DamageSystem_Active=1;
+        DSS_DamageSystem_Resistance=0.5;
+        DSS_DamageSystem_Headshot_Multiplier=2;
+        DSS_Is_Disguised_As_Bluefor=1;
+        AUX_95th_Has_Commando_Jump=1;
+        DSS_EMP_Protection_Value=1;
+        impactEffectsBlood = "ImpactMetal";
+        impactEffectsNoBlood = "ImpactPlastic";
+        canBleed = 0;
 
+        allowedFacewear[] = {
+            "Facewear_Empty_HUD_ARFAntenna_95th", 0.2,
+            "Facewear_Empty_HUD_Headlamps_95th", 1,
+            "Facewear_Empty_Headlamp_95th", 1,
+            "Facewear_Poncho_Empty_Green_95th", 0.1,
+            "Facewear_Scarf_Empty_Brown_95th", 0.1,
+            "Facewear_Scarf_Empty_Black_95th", 0.1,
+            "", 1
+        };
+        headgearList[] = {
+            "AUX_95th_Helmet_P1_Basic_Trooper", 0.9,
+            "AUX_95th_Helmet_P2_Airborne_Trooper", 0,
+            "AUX_95th_Helmet_P1_ARF_Trooper", 0.6,
+            "AUX_95th_Helmet_P1_Engineer_Trooper", 0.6,
+            "AUX_95th_Helmet_P1_SpecOps_Trooper", 0.6
+        };
 
-	// class JLTS_Droid_B1_E5;
-	// class JLTS_Droid_B1_Commander;
-	// class JLTS_Droid_B1_AR;
-	// class JLTS_Droid_B1_AT;
-	// class JLTS_Droid_B1_SBB3;
-	// class JLTS_Droid_B1_Sniper;
-	// class JLTS_Droid_B1_Crew;
-	// class JLTS_Droid_B1_Rocket;
-	// class JLTS_Droid_B1_Prototype;
-	// class JLTS_Droid_B1_Pilot;
+        class EventHandlers {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+            init = "if (local (_this select 0)) then { [(_this select 0), [], []] call BIS_fnc_unitHeadgear; };";
+        };
 
-    // class lsd_cis_bxdroid_specops;
-	// class lsd_cis_b2_standard;
-	// class AUX_95th_Unit_P1_Basic_Trooper;
-
-	// class WBK_B2_Mod_Standart;
-	// class WBK_B2_Mod_GL;
-	// class WBK_B2_Mod_Shotgun;
+        linkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+        respawnLinkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
+        nakedUniform = "lsd_cis_bxDroid_uniform";
+        identityTypes[] = {"Head_LSD_BX"};
+    };
 
 	// class 3AS_U_CIS_Heavy;
-
-	// class JLTS_B1_backpack;
-
-
-// class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Unit_P1_Basic_Trooper {
-//     displayName="[95th] Disguised BX Trooper";
-//     author="95th Aux Team";
-//     DSS_Is_Disguised_As_Bluefor=1;
-//     faction="AUX_95th_Separatist_Army";
-//     editorCategory="AUX_95th_Separatist_Army";
-//     editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Commandos";
-//     uniformClass="AUX_95th_Uniform_P1_Basic_Trooper";
-//     side = 0;
-//     scope=2; 
-//     scopecurator=2;
-//     editorPreview="\MRC\JLTS\characters\CloneArmor\data\ui\editorPreviews\JLTS_Clone_P2_AB.jpg"; //todo: change me
-//     linkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
-//     respawnLinkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
-//     nakedUniform = "lsd_cis_bxDroid_uniform";
-//     identityTypes[] = {"Head_LSD_BX"};
-//     allowedFacewear[] = {
-//         "Facewear_Empty_HUD_ARFAntenna_95th", 0.2,
-//         "Facewear_Empty_HUD_Headlamps_95th", 1,
-//         "Facewear_Empty_Headlamp_95th", 1,
-//         "Facewear_Poncho_Empty_Green_95th", 0.1,
-//         "Facewear_Scarf_Empty_Brown_95th", 0.1,
-//         "Facewear_Scarf_Empty_Black_95th", 0.1,
-//         "", 1
-//     };
-//     headgearList[] = {
-//         "AUX_95th_Helmet_P1_Basic_Trooper", 0.9,
-//         "AUX_95th_Helmet_P2_Airborne_Trooper", 0,
-//         "AUX_95th_Helmet_P1_ARF_Trooper", 0.6,
-//         "AUX_95th_Helmet_P1_Engineer_Trooper", 0.6,
-//         "AUX_95th_Helmet_P1_SpecOps_Trooper", 0.6
-//     };
-//     class EventHandlers {
-//         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-//         init = "if (local (_this select 0)) then { [(_this select 0), [], []] call BIS_fnc_unitHeadgear; };";
-//     };
-//     impactEffectsBlood = "ImpactMetal";
-//     impactEffectsNoBlood = "ImpactPlastic";
-//     canBleed = 0;
-// };
-
-
-
-
-
-	// // Humans
 	// class AUX_95th_Human_Unit_Riot: 3AS_U_CIS_Heavy {
 	// 	scope=2;
 	// 	DSS_DamageSystem_Active=1;
 	// 	DSS_DamageSystem_Resistance=0.15;
 	// 	DSS_DamageSystem_Headshot_Multiplier=4;
 	// 	displayName="Riot (E-5S)";
-	// 	faction="AUX_95th_Separatist_Army";
-	// 	editorCategory="AUX_95th_Separatist_Army";
-	// 	editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Humans";
+    //     faction="AUX_95th_Separatist_Army";
+    //     editorCategory="AUX_95th_Separatist_Army";
+    //     editorSubcategory="AUX_95th_Category_Humans";
 	// 	AUX_95th_Can_Use_Shield=1;
 	// };
 };

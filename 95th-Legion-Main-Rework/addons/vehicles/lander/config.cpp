@@ -21,7 +21,7 @@ class CfgVehicles {
         faction="AUX_95th_Separatist_Army";
         editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Helicopters";
-        crew="AUX_95th_Droid_B1_Unit_Crew";
+        crew="JLTS_Droid_B1_Crew";
 		side=0;
 	};
 };

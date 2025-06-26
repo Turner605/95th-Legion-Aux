@@ -5079,7 +5079,7 @@ class items
 				{
 				};
 				id=16180;
-				type="AUX_95th_Droid_B1_Unit_Crew";
+				type="JLTS_Droid_B1_Crew";
 				atlOffset=0.40812206;
 			};
 			class Item1
@@ -5096,7 +5096,7 @@ class items
 				{
 				};
 				id=16181;
-				type="AUX_95th_Droid_B1_Unit_Crew";
+				type="JLTS_Droid_B1_Crew";
 				atlOffset=0.40812206;
 			};
 		};
@@ -5175,7 +5175,7 @@ class items
 				{
 				};
 				id=16183;
-				type="AUX_95th_Droid_B1_Unit_Crew";
+				type="JLTS_Droid_B1_Crew";
 				atlOffset=0.40812206;
 			};
 			class Item1
@@ -5192,7 +5192,7 @@ class items
 				{
 				};
 				id=16184;
-				type="AUX_95th_Droid_B1_Unit_Crew";
+				type="JLTS_Droid_B1_Crew";
 				atlOffset=0.40812206;
 			};
 		};
@@ -5271,7 +5271,7 @@ class items
 				{
 				};
 				id=16187;
-				type="AUX_95th_Droid_B1_Unit_Crew";
+				type="JLTS_Droid_B1_Crew";
 				atlOffset=0.40812206;
 			};
 			class Item1
@@ -5288,7 +5288,7 @@ class items
 				{
 				};
 				id=16188;
-				type="AUX_95th_Droid_B1_Unit_Crew";
+				type="JLTS_Droid_B1_Crew";
 				atlOffset=0.40812206;
 			};
 		};

@@ -1,7 +1,6 @@
 faction="AUX_95th_Separatist_Army";
 editorCategory="AUX_95th_Separatist_Army";
 editorSubcategory="AUX_95th_Category_Droids_Commando";
-crew="AUX_95th_Droid_B1_Unit_Crew";
 
 DSS_DamageSystem_Active=1;
 DSS_DamageSystem_Resistance=0.5;
