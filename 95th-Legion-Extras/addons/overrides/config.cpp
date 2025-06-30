@@ -21,7 +21,9 @@ class CfgPatches {
             "WBK_PhoenixTreal_FlamethrowerMOD",
 			"AUX_95th_voicelines",
             "ls_loadorder",
-            "WBK_DifferentRobotics_1"
+            "WBK_DifferentRobotics_1",
+            "A3_Data_F",
+            "A3_Weapons_F"
         };
         authors[] = {"Turner"};
         VERSION_CONFIG;
@@ -35,6 +37,16 @@ class CfgFunctions {
             class removeStamina {};
         };
     };
+};
+
+// Smoke override to make smokes more effective
+class cfgCloudlets {
+	class Default;
+	class SmokeShellWhite : Default {
+		moveVelocity[]={0.2,0.50000001,0.1};
+		size[]={0.36,3.5,12};
+		MoveVelocityVar[]={0.7,0.4,0.7};
+	};
 };
 
 class CfgSounds {
