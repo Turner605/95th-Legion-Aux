@@ -20,19 +20,19 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _position, [], 0, "NO
 
     switch (_squadType) do {
         case 0: {
-            _spawnArray = ["AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Shotgun", "AUX_95th_Droid_B1_Unit_AutoRifleman"];
-            if (round (random 1) == 1) then {_spawnArray pushBack "AUX_95th_Droid_B1_Unit_AT"} else {_spawnArray pushBack "AUX_95th_Droid_B1_Unit_AA"};
+            _spawnArray = ["JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_SBB3", "JLTS_Droid_B1_AR"];
+            if (round (random 1) == 1) then {_spawnArray pushBack "JLTS_Droid_B1_AT"} else {_spawnArray pushBack "JLTS_Droid_B1_Marine"};
             _podType = "ls_droidDispenser";
         };
         
         case 1: {
-            _spawnArray = ["AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Shotgun", "AUX_95th_Droid_B2_Unit_Blaster"];
-            if (round (random 1) == 1) then {_spawnArray pushBack "AUX_95th_Droid_B1_Unit_AT"} else {_spawnArray pushBack "AUX_95th_Droid_B1_Unit_AA"};
+            _spawnArray = ["JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_SBB3", "ls_droid_b2"];
+            if (round (random 1) == 1) then {_spawnArray pushBack "JLTS_Droid_B1_AT"} else {_spawnArray pushBack "JLTS_Droid_B1_Marine"};
             _podType = "3AS_Droid_Dispenser_F";
         };
         
         case 2: {
-            _spawnArray = ["AUX_95th_Droid_BX_Unit_Commander", "AUX_95th_Droid_BX_Unit_Rifleman", "AUX_95th_Droid_BX_Unit_Rifleman", "AUX_95th_Droid_BX_Unit_Rifleman"];
+            _spawnArray = ["ls_droid_bx_captain", "ls_droid_bx", "ls_droid_bx", "ls_droid_bx"];
             _podType = "3AS_Droid_Dispenser_F";
         };
     };
