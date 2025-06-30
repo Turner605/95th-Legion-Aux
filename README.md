@@ -17,6 +17,7 @@ To begin working on the aux mod, do the following.
 - Step 3: Install the git cmd and GUI:
   - [GIT](https://git-scm.com/downloads)
   - [GIT Desktop](https://desktop.github.com/download/)
+- Step 4: Install [Visual Studio Code](https://code.visualstudio.com/)
 
 # Creating new player gear
 To create new player gear, do the following.
