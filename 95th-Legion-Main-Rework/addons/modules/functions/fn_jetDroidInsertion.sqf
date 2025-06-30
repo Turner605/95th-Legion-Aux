@@ -5,8 +5,8 @@ private _atDroidCount = 0;
 
 if(_includeAT) then {_atDroidCount = round(_unitCount/4);};
 
-for "_i" from 0 to (_unitCount-_atDroidCount) do {_spawnArray pushBack "AUX_95th_Droid_B1_Rocket_Unit_Rifleman";};
-for "_i" from 0 to _atDroidCount do {_spawnArray pushBack "AUX_95th_Droid_B1_Rocket_Unit_AT";};
+for "_i" from 0 to (_unitCount-_atDroidCount) do {_spawnArray pushBack "AUX_95th_Droid_B1_Rocket_E5";};
+for "_i" from 0 to _atDroidCount do {_spawnArray pushBack "AUX_95th_Droid_B1_Rocket_AT";};
 
 // Spawn group and move to target
 _group = [[0,0,0], _unitSide, _spawnArray ,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
