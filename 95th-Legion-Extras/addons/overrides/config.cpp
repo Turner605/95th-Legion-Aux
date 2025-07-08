@@ -23,7 +23,8 @@ class CfgPatches {
             "ls_loadorder",
             "WBK_DifferentRobotics_1",
             "A3_Data_F",
-            "A3_Weapons_F"
+            "A3_Weapons_F",
+            "3AS_Prop_Sullust"
         };
         authors[] = {"Turner"};
         VERSION_CONFIG;
@@ -35,6 +36,7 @@ class CfgFunctions {
         class Overrides {
 			file = "\z\AUX_95th_Extras\addons\overrides\functions";
             class removeStamina {};
+            class overrideSullustLava {};
         };
     };
 };
