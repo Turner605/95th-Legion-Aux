@@ -9,7 +9,7 @@ class TransportMagazines {
 
 class TransportWeapons {
 	class _xx_AUX_95th_DC15A_plastic{weapon="AUX_95th_DC15A_plastic"; count=2;};
-	class _xx_3AS_RPS6_F{weapon="3AS_RPS6_F"; count=4;};
+	class _xx_AUX_95th_RPS6_F{weapon="AUX_95th_RPS6_F"; count=4;};
 };
 
 class TransportItems {
