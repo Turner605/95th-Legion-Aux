@@ -126,7 +126,7 @@
     displayName=QUOTE([95th] P1 NVG);\
     author=QUOTE(95th Aux Team);\
     visionMode[]={QUOTE(Normal), QUOTE(NVG), QUOTE(TI)};\
-	hiddenSelections[] = {QUOTE(glow),QUOTE(Camo1)};\
+	hiddenSelections[] = {QUOTE(Camo1),QUOTE(glow)};\
 	hiddenSelectionsTextures[]={\
 		QUOTE(\z\AUX_95th\addons\players\shared\data\nvg\medical\COLOUR.paa),\
 		"#(argb,8,8,3)color(0.501961,1,1,1.0,co)"\
@@ -140,13 +140,13 @@
     };\
 	class ItemInfo: ItemInfo {\
 		type = 616;\
-	    hiddenSelections[] = {QUOTE(glow),QUOTE(Camo1)};\
+	    hiddenSelections[] = {QUOTE(Camo1),QUOTE(glow)};\
 		hiddenSelectionsTextures[]={\
             QUOTE(\z\AUX_95th\addons\players\shared\data\nvg\medical\COLOUR.paa),\
 		    "#(argb,8,8,3)color(0.501961,1,1,1.0,co)"\
 		};\
-		uniformModel = "\lsd_equipment_bluefor\accessories\gar\medicScanner\lsd_gar_medicalScanner_nvg_on";\
-		modelOff = "\lsd_equipment_bluefor\accessories\gar\medicScanner\lsd_gar_medicalScanner_nvg_off";\
+		uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\medicScanner\lsd_gar_medicalScanner_nvg_on.p3d";\
+		modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\medicScanner\lsd_gar_medicalScanner_nvg_off.p3d";\
 		mass = 1;\
 	};\
 }
@@ -155,7 +155,7 @@
     displayName=QUOTE([95th] P1 NVG);\
     author=QUOTE(95th Aux Team);\
     visionMode[]={QUOTE(Normal), QUOTE(NVG), QUOTE(TI)};\
-	hiddenSelections[] = {QUOTE(glow),QUOTE(Camo1)};\
+	hiddenSelections[] = {QUOTE(Camo1),QUOTE(glow)};\
 	hiddenSelectionsTextures[]={\
 		QUOTE(\z\AUX_95th\addons\players\shared\data\nvg\medical\COLOUR.paa),\
 		"#(argb,8,8,3)color(0.501961,1,1,1.0,co)"\
@@ -170,13 +170,13 @@
     };\
 	class ItemInfo: ItemInfo {\
 		type = 616;\
-	    hiddenSelections[] = {QUOTE(glow),QUOTE(Camo1)};\
+	    hiddenSelections[] = {QUOTE(Camo1),QUOTE(glow)};\
 		hiddenSelectionsTextures[]={\
             QUOTE(\z\AUX_95th\addons\players\shared\data\nvg\medical\COLOUR.paa),\
 		    "#(argb,8,8,3)color(0.501961,1,1,1.0,co)"\
 		};\
-		uniformModel = "\lsd_equipment_bluefor\accessories\gar\medicScanner\lsd_gar_medicalScanner_nvg_on";\
-		modelOff = "\lsd_equipment_bluefor\accessories\gar\medicScanner\lsd_gar_medicalScanner_nvg_off";\
+		uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\medicScanner\lsd_gar_medicalScanner_nvg_on.p3d";\
+		modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\medicScanner\lsd_gar_medicalScanner_nvg_off.p3d";\
 		mass = 1;\
 	};\
 }
