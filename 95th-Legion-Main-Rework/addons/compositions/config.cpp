@@ -24,6 +24,7 @@ class CfgEditorCategories {
 
 class CfgEditorSubcategories {
 	class AUX_95th_Legion_Compositions_FOBs {displayName = "FOBs";};
+	class AUX_95th_Legion_Compositions_Outposts {displayName = "Outposts";};
 	class AUX_95th_Legion_Compositions_Ships {displayName = "Ships";};
 	class AUX_95th_Legion_Compositions_Checkpoints {displayName = "Checkpoints";};
 	class AUX_95th_Legion_Compositions_AA {displayName = "AA";};

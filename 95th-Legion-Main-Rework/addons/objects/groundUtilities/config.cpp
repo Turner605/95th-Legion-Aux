@@ -47,11 +47,11 @@ class CfgVehicles {
                 displayName = "Spawn [95th] TX-130 (Shield)";
                 statement = "[this, player, 'AUX_95th_TX_130_Shield'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
             };
-            // class SpawnTX130Strafing {
-            // 	priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
-            // 	displayName = "Spawn [3AS] TX-130 (Strafing)";
-            // 	statement = "[this, player, '3as_saber_m1_strafe'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
-            // };
+            class SpawnTX130Strafing {
+            	priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+            	displayName = "Spawn [3AS] TX-130 (Strafing)";
+            	statement = "[this, player, '3as_saber_m1_strafe'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
+            };
             class Spawn3ASATTE {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
                 displayName = "Spawn [95th] AT-TE";
