@@ -13,8 +13,8 @@ class TransportMagazines {
 	class _xx_3AS_JLTS_MK43_AT{magazine="3AS_JLTS_MK43_AT"; count=20;};
 	class _xx_3AS_JLTS_MK39_AA{magazine="3AS_JLTS_MK39_AA"; count=20;};
 	class _xx_3AS_JLTS_MK44_HE{magazine="3AS_JLTS_MK44_HE"; count=20;};
-	class _xx_3AS_MK41_AT{magazine="3AS_MK41_AT"; count=20;};
-	class _xx_3AS_MK42_HE{magazine="3AS_MK42_HE"; count=20;};
+	class _xx_AUX_95th_MK41_AT{magazine="AUX_95th_MK41_AT"; count=20;};
+	class _xx_AUX_95th_MK42_HE{magazine="AUX_95th_MK42_HE"; count=20;};
 
 	class _xx_AUX_95th_Stun_Long_Mag{magazine="AUX_95th_Stun_Long_Mag"; count=64;};
 	class _xx_AUX_95th_Universal_Rifle_Mag{magazine="AUX_95th_Universal_Rifle_Mag"; count=240;};
@@ -54,8 +54,8 @@ class TransportWeapons {
 	class _xx_AUX_95th_WestarM5{weapon="AUX_95th_WestarM5"; count=2;};
 	class _xx_AUX_95th_DC15C{weapon="AUX_95th_DC15C"; count=2;};
 	class _xx_AUX_95th_DC15C_GL{weapon="AUX_95th_DC15C_GL"; count=2;};
-	class _xx_3AS_RPS6_F{weapon="3AS_RPS6_F"; count=10;};
-	class _xx_3AS_RPS6_HP{weapon="3AS_RPS6_HP"; count=4;};
+	class _xx_AUX_95th_RPS6_F{weapon="AUX_95th_RPS6_F"; count=10;};
+	class _xx_AUX_95th_RPS6_HP{weapon="AUX_95th_RPS6_HP"; count=4;};
 	class _xx_ACE_VMH3{weapon="ACE_VMH3"; count=2;};
 	class _xx_AUX_95th_T20{weapon="AUX_95th_T20"; count=2;};
 };
