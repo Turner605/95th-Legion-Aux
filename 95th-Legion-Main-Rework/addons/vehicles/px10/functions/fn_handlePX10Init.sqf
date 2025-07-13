@@ -19,12 +19,13 @@ if (!isServer) exitWith {};
 			private _hideTObjs = [];
 
 			private _pos = _vehicle modelToWorld [0,2,0.2];
-			private _size = 20;
+			private _size = 30;
 
-			{ _hideTObjs pushBack _x } forEach (nearestTerrainObjects [_pos,["TREE", "SMALL TREE", "BUSH"], _size]);
+			{ _hideTObjs pushBack _x } forEach (nearestTerrainObjects [_pos,["Tree", "Small Tree", "Bush", "Forest"], _size]);
 
 			{ if ((str(_x) find "fallen" >= 0) || 
 			(str(_x) find "stump" >= 0) || 
+			(str(_x) find "tree" >= 0) || 
 			(str(_x) find "stone" >= 0)) then 
 			{ _hideTObjs pushBack _x } else {}; } forEach (nearestTerrainObjects [_pos,[],_size]);
 
