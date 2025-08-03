@@ -53,13 +53,13 @@ class 3AS_PAC_Tan: 3AS_PAC_F {
 };
 
 class 3AS_SAC_Base_F;
-class 3AS_SAC_F: 3AS_PAC_Base_F {
+class 3AS_SAC_F: 3AS_SAC_Base_F {
     #include "../macros/apc.hpp"
 };
-class 3AS_SAC_Brown: 3AS_PAC_F {
+class 3AS_SAC_Brown: 3AS_SAC_F {
     #include "../macros/apc.hpp"
 };
-class 3AS_SAC_Tan: 3AS_PAC_F {
+class 3AS_SAC_Tan: 3AS_SAC_F {
     #include "../macros/apc.hpp"
 };
 
