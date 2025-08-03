@@ -139,7 +139,7 @@ class CfgVehicles {
         linkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
         respawnLinkedItems[]={"AUX_95th_Helmet_P1_Basic_Trooper","95th_Basic_Vest_Rifleman","JLTS_Clone_radio","ItemGPS","ItemMap","ItemWatch","ItemCompass"};
         nakedUniform = "lsd_cis_bxDroid_uniform";
-        identityTypes[] = {"Head_LSD_BX"};
+        identityTypes[] = {"ls_head_bxDroid"};
     };
 
 	// class 3AS_U_CIS_Heavy;
