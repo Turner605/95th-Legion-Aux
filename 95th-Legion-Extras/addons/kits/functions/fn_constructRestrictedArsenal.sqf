@@ -21,7 +21,8 @@ AUX_95th_Arsenal_Whitelisted_Throwables = [
 
 AUX_95th_Arsenal_Whitelisted_Explosives = [
     "IEDUrbanSmall_Remote_Mag","IEDLandSmall_Remote_Mag","JLTS_explosive_emp_20_mag","JLTS_explosive_emp_10_mag","JLTS_explosive_emp_50_mag","APERSMineDispenser_Mag",
-    "IEDLandBig_Remote_Mag","IEDUrbanBig_Remote_Mag","ACE_FlareTripMine_Mag","SWLW_DetPack_remote_mag","APERSTripMine_Wire_Mag"
+    "IEDLandBig_Remote_Mag","IEDUrbanBig_Remote_Mag","ACE_FlareTripMine_Mag","ls_explosive_demoCharge_magazine","APERSTripMine_Wire_Mag",
+    "3AS_DetPack", "EC01_RemoteMagazine", "HX_AT_Mine_Mag", "RTX_RemoteMagazine"
 ];
 
 AUX_95th_Arsenal_Whitelisted_Magazines = [

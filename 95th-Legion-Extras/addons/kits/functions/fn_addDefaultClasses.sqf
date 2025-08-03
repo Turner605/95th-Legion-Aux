@@ -99,7 +99,7 @@ private _roleArray = [
 		_dc15a, [], _dc17s,
 		_riflemanUniform, _baseUniformContent + [["ACE_Fortify",1],["ACE_DefusalKit",1],["ACE_wirecutter",1],["ACE_Clacker",1]],
 		"AUX_95th_Vest_Standard_Engineer_Trooper", _dc15a_Ammo,
-		_ordnanceBackpack, _baseBackpackContent + [["SWLW_DetPack_remote_mag",6,1], ["AUX_95th_Turret_Deployer",1]],
+		_ordnanceBackpack, _baseBackpackContent + [["ls_explosive_demoCharge_magazine",6,1], ["AUX_95th_Turret_Deployer",1]],
 		"AUX_95th_Helmet_P1_Engineer_Trooper",
 		"AUX_95th_Class_Designator_Engineer"
 	],
