@@ -33,16 +33,25 @@ class CfgEditorSubcategories{
 };
 
 class CfgVehicles {     
-	class SWLB_clone_holo_P2;
+	class AUX_95th_Unit_P1_Basic_Trooper;
 
-	class AUX_95th_Clone_Decoy_Hologram: SWLB_clone_holo_P2 {
+	class AUX_95th_Clone_Decoy_Hologram: AUX_95th_Unit_P1_Basic_Trooper {
+		backpack = "";
 		displayName="Decoy Hologram";
+		uniformClass="ls_gar_phase2Hologram_uniform";
 		faction="AUX_95th_Faction_Misc";
 		editorSubcategory="AUX_95th_Holograms";
 		scope=2; 
 		scopecurator=2;
-		magazines[]={};
-		respawnMagazines[]={};
+		allowedFacewear[] = {"", 1};
+        weapons[]={"3AS_DC15S_F", "Throw", "Put"};
+        respawnWeapons[]={"3AS_DC15S_F", "Throw", "Put"};
+        Items[] = {};
+        RespawnItems[] = {};
+        magazines[] = {};
+        respawnMagazines[] = {};
+        linkedItems[] = {"ls_gar_phase1_hologram_helmet"};
+        respawnLinkedItems[] = {"ls_gar_phase1_hologram_helmet"};
 	};
 };
 
