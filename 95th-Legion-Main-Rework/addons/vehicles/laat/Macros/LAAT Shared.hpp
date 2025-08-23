@@ -11,6 +11,7 @@
 		author=QUOTE(95th Aux Team);\
 		faction=QUOTE(AUX_95th_Legion_Faction_Vehicles);\
 		editorSubcategory=QUOTE(AUX_95th_Legion_Vehicles_Category_Air_Gunships);\
+		AUX_95th_Embark_Light_Positions[]={0, 2, 3};\
 		ace_cargo_space = 26;\
 		ace_cargo_hasCargo = 1;\
         crew = QUOTE(AUX_95th_Unit_P1_Basic_Trooper);\

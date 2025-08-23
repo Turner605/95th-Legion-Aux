@@ -1,6 +1,7 @@
 params ["_vehicle"];
 
-[_vehicle] spawn ls_vehicle_fnc_ImpulsorMonitor;
+[_vehicle] spawn AUX_95th_fnc_toggleEmbarkLights;
+[_vehicle] spawn AUX_95th_fnc_toggleEmbarkLights;
 
 if (!isServer) exitWith {};
 
@@ -24,4 +25,16 @@ _vehicle addEventHandler["Fired", {
 
         [_vehicle, _projectile, _magazine] spawn AUX_95th_fnc_handleResupplyBombDetonated;
     };
+}];
+
+_vehicle addEventHandler ["Killed", {
+	params ["_unit", "_killer"];
+    private _lightAttached = _unit getVariable ["AUX_95th_Embark_Light_Attached", Objnull];
+    if(!isNull _lightAttached) then {deleteVehicle _lightAttached;};
+}];
+
+_vehicle addEventHandler ["Deleted", {
+	params ["_entity"];
+    private _lightAttached = _entity getVariable ["AUX_95th_Embark_Light_Attached", Objnull];
+    if(!isNull _lightAttached) then {deleteVehicle _lightAttached;};
 }];

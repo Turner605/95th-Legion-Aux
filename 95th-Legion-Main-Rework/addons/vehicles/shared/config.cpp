@@ -56,6 +56,7 @@ class CfgFunctions {
             class handleAirVehicleInit {};
             class handleVehicleStrafe {};
             class handleLAATInit {};
+            class toggleEmbarkLights {};
         };
     };
 };
@@ -74,6 +75,13 @@ class CfgUserActions {
 		onActivate = "[player, 'Right'] spawn AUX_95th_fnc_handleVehicleStrafe";
 		onDeactivate = "player setVariable ['AUX_95th_Strafing_Active', false, true]; [AUX_95th_Vehicle_Strafe_Handler] call CBA_fnc_removePerFrameHandler;";
 	};
+
+    class AUX_95th_LAAT_Embark_Lights {
+		displayName = "LAAT Embarkation Lights"; 
+        tooltip = "Toggle the LAAT Embarkation lights";
+		onActivate = "[player] spawn AUX_95th_fnc_toggleLaatEmbarkLights";
+		onDeactivate = "";
+	};
 };
 
 class CfgDefaultKeysPresets {
@@ -81,6 +89,7 @@ class CfgDefaultKeysPresets {
 		class Mappings {
 			AUX_95th_Vehicle_Strafe_Left[] = {0x10};
 			AUX_95th_Vehicle_Strafe_Right[] = {0x12};
+			AUX_95th_LAAT_Embark_Lights[] = {0x1D130004};
 		};
 	};
 };
@@ -89,7 +98,7 @@ class UserActionGroups {
 	class AUX_95th_Vehicle_Binds {
 		name = "95th - Vehicles";
 		isAddon = 1;
-		group[] = {"AUX_95th_Vehicle_Strafe_Left", "AUX_95th_Vehicle_Strafe_Right"};
+		group[] = {"AUX_95th_Vehicle_Strafe_Left", "AUX_95th_Vehicle_Strafe_Right","AUX_95th_LAAT_Embark_Lights"};
 	};
 };
 
