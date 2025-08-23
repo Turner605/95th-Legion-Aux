@@ -215,3 +215,26 @@ class lsd_gar_airborne_new;
         };
     };
 #endif
+
+class PLACEHOLDER_CLASSNAME;
+
+#if HELMET_P2_BARC == 1
+    class AUX_95th_Helmet_P2_Barc_##PLAYER_NAME : PLACEHOLDER_CLASSNAME {
+        scope = 2;
+        scopeArsenal = 2;
+        author="95th Aux Team";
+        DSS_HUD_Lowlight_Enabled = 1;
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
+        hiddenSelectionsTextures[]={
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_barc\Helmet.paa), 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_barc\Helmet.paa)
+        };
+        class XtdGearInfo {
+            Phase = "P2";
+            model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
+            Type = QUOTE(P2_Barc);
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+#endif

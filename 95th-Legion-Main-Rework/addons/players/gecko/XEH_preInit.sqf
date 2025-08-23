@@ -12,6 +12,7 @@ private _macroArray = [
     ["AUX_95th_Helmet_P1_Cold_Assault_", HELMET_P1_COLD_ASSAULT],
     ["AUX_95th_Helmet_P1_Commando_", HELMET_P1_COMMANDO],
     ["AUX_95th_Helmet_P2_Airborne_", HELMET_P2_AIRBORNE],
+    ["AUX_95th_Helmet_P2_Barc_", HELMET_P2_BARC],
 
 
 
