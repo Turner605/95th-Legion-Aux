@@ -23,6 +23,7 @@ class SEA_Helmet_P1_Base;
     };
 #endif
 
+
 class SEA_Helmet_Engineer_Base;
 
 #if HELMET_P1_ENGINEER == 1
@@ -193,10 +194,10 @@ class 3AS_H_Katarn_Helmet;
     };
 #endif
 
-class lsd_gar_airborne_new;
+class ls_cloneHelmet_airborne;
 
 #if HELMET_P2_AIRBORNE == 1
-    class AUX_95th_Helmet_P2_Airborne_##PLAYER_NAME : lsd_gar_airborne_new {
+    class AUX_95th_Helmet_P2_Airborne_##PLAYER_NAME : ls_cloneHelmet_airborne {
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
@@ -216,10 +217,10 @@ class lsd_gar_airborne_new;
     };
 #endif
 
-class PLACEHOLDER_CLASSNAME;
+class AUX_95th_Helmet_P2_BARC_base;
 
 #if HELMET_P2_BARC == 1
-    class AUX_95th_Helmet_P2_Barc_##PLAYER_NAME : PLACEHOLDER_CLASSNAME {
+    class AUX_95th_Helmet_P2_Barc_##PLAYER_NAME : AUX_95th_Helmet_P2_BARC_base {
         scope = 2;
         scopeArsenal = 2;
         author="95th Aux Team";
@@ -227,9 +228,20 @@ class PLACEHOLDER_CLASSNAME;
         picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
         displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
         hiddenSelectionsTextures[]={
-            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_barc\Helmet.paa), 
-            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_barc\Helmet.paa)
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_barc\Helmet_base_co.paa), 
+            QUOTE(\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_visor_co.paa)
         };
+        #if HELMET_P2_BARC_CUSTOM_RVMAT == 1
+        hiddenSelectionsMaterials[]={
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_barc\Helmet_base.rvmat),
+            QUOTE(\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_visor.rvmat)
+        };
+        #else
+        hiddenSelectionsMaterials[]={
+            QUOTE(\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_base.rvmat),
+            QUOTE(\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_visor.rvmat)
+        };
+        #endif
         class XtdGearInfo {
             Phase = "P2";
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));

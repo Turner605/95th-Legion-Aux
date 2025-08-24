@@ -191,6 +191,43 @@ class CfgWeapons {
             mass = 44;
         };
     };
+
+	class H_HelmetB;
+	class HeadgearItem;
+    class H_HelmetO_ViperSP_hex_F: H_HelmetB {
+        class ItemInfo: HeadgearItem;
+    };
+
+	class AUX_95th_Helmet_P2_BARC_base: H_HelmetO_ViperSP_hex_F {
+		scope = 2;
+        scopeArsenal = 2;
+        author = "95th Aux Team";
+        DSS_HUD_Lowlight_Enabled = 1;
+        picture = ""; //todo
+        displayName = "[95th] Barc Helmet";
+        model = "\z\AUX_95th\addons\equipment\data\helmets\p2_barc\barc_helmet.p3d";
+        hiddenSelections[] = {"camo1","visor"};
+        hiddenSelectionsTextures[] = {
+            "\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_base_co.paa", 
+            "\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_visor_co.paa"
+        };
+		hiddenSelectionsMaterials[] = {
+            "\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_base.rvmat", 
+            "\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_visor.rvmat"
+        };
+		class ItemInfo: HeadgearItem {
+			hiddenSelections[] = {"camo1","visor"};
+			hiddenSelectionsTextures[] = {
+				"\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_base_co.paa", 
+				"\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_visor_co.paa"
+			};
+			hiddenSelectionsMaterials[] = {
+			    "\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_base.rvmat", 
+            	"\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_visor.rvmat"
+			};
+			uniformModel = "\z\AUX_95th\addons\equipment\data\helmets\p2_barc\barc_helmet.p3d";
+		};
+	};
 };
 
 class CfgFunctions {
