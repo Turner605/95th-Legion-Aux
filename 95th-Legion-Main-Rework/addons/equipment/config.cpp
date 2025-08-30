@@ -193,9 +193,8 @@ class CfgWeapons {
     };
 
 	class H_HelmetB;
-	class HeadgearItem;
     class H_HelmetO_ViperSP_hex_F: H_HelmetB {
-        class ItemInfo: HeadgearItem;
+        class ItemInfo;
     };
 
 	class AUX_95th_Helmet_P2_BARC_base: H_HelmetO_ViperSP_hex_F {
@@ -215,7 +214,7 @@ class CfgWeapons {
             "\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_base.rvmat", 
             "\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_visor.rvmat"
         };
-		class ItemInfo: HeadgearItem {
+		class ItemInfo: ItemInfo {
 			hiddenSelections[] = {"camo1","visor"};
 			hiddenSelectionsTextures[] = {
 				"\z\AUX_95th\addons\equipment\data\helmets\p2_barc\Helmet_base_co.paa", 
