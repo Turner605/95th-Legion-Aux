@@ -20,7 +20,7 @@ class CfgVehicles {
 		author = "95th Aux Team";
         faction="AUX_95th_Separatist_Army";
         editorCategory="AUX_95th_Separatist_Army";
-		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Helicopters";
+        editorSubcategory="AUX_95th_Category_Gunships";
         crew="JLTS_Droid_B1_Crew";
 		side=0;
 	};
