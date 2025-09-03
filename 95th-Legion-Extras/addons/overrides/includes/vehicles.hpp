@@ -1,6 +1,9 @@
 // AATs
-class 3AS_AAT;
+class 3AS_CIS_AAT_F;
 
+class 3AS_AAT: 3AS_CIS_AAT_F {
+    #include "../macros/mediumTank.hpp"
+};
 class 3AS_AAT_CIS: 3AS_AAT {
     #include "../macros/mediumTank.hpp"
 };
