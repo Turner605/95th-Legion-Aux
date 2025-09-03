@@ -271,7 +271,7 @@ class JLTS_Droid_B1_Training_AT: JLTS_Droid_B1_AT {
 // BX Droids
 class ls_droid_base;
 class ls_droid_bx: ls_droid_base {
-    displayName = "Rifleman";
+    displayName = "BX (Rifleman)";
     #include "../macros/droidCommando.hpp"
     
     weapons[]={"JLTS_E5","WBK_Dutch_Vibro","Throw","Put"};
@@ -287,12 +287,12 @@ class ls_droid_bx: ls_droid_base {
 };
 
 class ls_droid_bx_captain: ls_droid_bx {
-    displayName = "Captain";
+    displayName = "BX (Captain)";
     #include "../macros/droidCommando.hpp"
 };
 
 class ls_droid_bx_assassain: ls_droid_bx {
-    displayName = "Sniper";
+    displayName = "BX (Sniper)";
     #include "../macros/droidCommando.hpp"
 
     weapons[]={"JLTS_E5S","WBK_Dutch_Vibro","Throw","Put"};
@@ -308,12 +308,12 @@ class ls_droid_bx_assassain: ls_droid_bx {
 };
 
 class ls_droid_bx_diplomat: ls_droid_bx {
-    displayName = "Diplomat";
+    displayName = "BX (Diplomat)";
     #include "../macros/droidCommando.hpp"
 };
 
 class ls_droid_bx_security: ls_droid_bx {
-    displayName = "Security";
+    displayName = "BX (Security)";
     #include "../macros/droidCommando.hpp"
 
     weapons[]={"AUX_95th_E5_shield_attached","Throw","Put"};
@@ -329,12 +329,12 @@ class ls_droid_bx_security: ls_droid_bx {
 };
 
 class ls_droid_bx_hologram: ls_droid_bx {
-    displayName = "Hologram";
+    displayName = "BX (Hologram)";
     #include "../macros/droidCommando.hpp"
 };
 
 class ls_droid_bx_simulation: ls_droid_bx_hologram {
-    displayName = "Simulation";
+    displayName = "BX (Simulation)";
     #include "../macros/droidCommando.hpp"
 };
 
@@ -351,6 +351,8 @@ class ls_droid_b2: ls_droid_base {
 	DSS_DamageSystem_Resistance=4;
 	DSS_DamageSystem_Headshot_Multiplier=4;
     canBleed = 0;
+    impactEffectsBlood = "ImpactMetal";
+    impactEffectsNoBlood = "ImpactPlastic";
 
     weapons[] = {"WBK_B2_NormalMod","Throw","Put"};
     magazines[] = {"ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73"};
@@ -410,7 +412,7 @@ class ls_droid_b2_simulation: ls_droid_b2 {
     displayName = "B2 (Simulation)";
 };
 
-
+class lsd_cis_b2_standard: ls_droid_b2 {};
 
 // Hiding Misc
 class JLTS_Droid_B1_OOM9: JLTS_Droid_B1_Commander { scope = 1; };
@@ -434,25 +436,27 @@ class TAS_Droid_B1_Prototype: JLTS_Droid_B1_Prototype {scope=1;};
 class TAS_Droid_B1_Crew: JLTS_Droid_B1_Crew {scope=1;};
 class TAS_Droid_B1_OOM9: JLTS_Droid_B1_OOM9 {scope=1;};
 class TAS_Droid_B1_UAV_prowler: JLTS_Droid_B1_UAV_prowler {scope=1;};
-class 3AS_CIS_B2_Base; class 3AS_CIS_B2_F: 3AS_CIS_B2_Base {scope=1;};
 
-class WBK_B2_Mod_Standart: ls_droid_b2 { scope = 1; };
-class WBK_B2_Mod_GL: WBK_B2_Mod_Standart { scope = 1; };
-class WBK_B2_Mod_Shotgun: WBK_B2_Mod_Standart { scope = 1; };
-class ls_droid_bx_cloneDisguise_phase2: ls_droid_base { scope = 1; };
-class ls_droid_bx_cloneDisguise_phase1: ls_droid_bx_cloneDisguise_phase2 { scope = 1; };
+class 3AS_CIS_B2_Base; 
+class 3AS_CIS_B2_F: 3AS_CIS_B2_Base {scope=1;};
+
+class WBK_B2_Mod_Standart: lsd_cis_b2_standard { scope = 1; scopeCurator = 1; };
+class WBK_B2_Mod_GL: WBK_B2_Mod_Standart { scope = 1; scopeCurator = 1; };
+class WBK_B2_Mod_Shotgun: WBK_B2_Mod_Standart { scope = 1; scopeCurator = 1; };
+class ls_droid_bx_cloneDisguise_phase2: ls_droid_base { scope = 1; scopeCurator = 1; };
+class ls_droid_bx_cloneDisguise_phase1: ls_droid_bx_cloneDisguise_phase2 { scope = 1; scopeCurator = 1; };
 
 class lsd_cis_bxdroid_specops;
-class WBK_BX_Assasin_1: lsd_cis_bxdroid_specops { scope = 1; };
-class WBK_BX_Assasin_Commander: WBK_BX_Assasin_1 { scope = 1; };
+class WBK_BX_Assasin_1: lsd_cis_bxdroid_specops { scope = 1; scopeCurator = 1; };
+class WBK_BX_Assasin_Commander: WBK_BX_Assasin_1 { scope = 1; scopeCurator = 1; };
 
-class ls_droid_b1: ls_droid_base { scope = 1; };
-class ls_droid_b1_at: ls_droid_b1 { scope = 1; };
-class ls_droid_b1_grenadier: ls_droid_b1 { scope = 1; };
-class ls_droid_b1_hologram: ls_droid_b1 { scope = 1; };
-class ls_droid_b1_marksman: ls_droid_b1 { scope = 1; };
-class ls_droid_b1_heavyAA: ls_droid_b1 { scope = 1; };
-class ls_droid_b1_shotgun: ls_droid_b1 { scope = 1; };
-class ls_droid_b1_simulation: ls_droid_b1 { scope = 1; };
-class ls_droid_b1_squadLeader: ls_droid_b1 { scope = 1; };
-class ls_droid_b1_officer: ls_droid_b1 { scope = 1; };
+class ls_droid_b1: ls_droid_base { scope = 1; scopeCurator = 1; };
+class ls_droid_b1_at: ls_droid_b1 { scope = 1; scopeCurator = 1; };
+class ls_droid_b1_grenadier: ls_droid_b1 { scope = 1; scopeCurator = 1; };
+class ls_droid_b1_hologram: ls_droid_b1 { scope = 1; scopeCurator = 1; };
+class ls_droid_b1_marksman: ls_droid_b1 { scope = 1; scopeCurator = 1; };
+class ls_droid_b1_heavyAA: ls_droid_b1 { scope = 1; scopeCurator = 1; };
+class ls_droid_b1_shotgun: ls_droid_b1 { scope = 1; scopeCurator = 1; };
+class ls_droid_b1_simulation: ls_droid_b1 { scope = 1; scopeCurator = 1; };
+class ls_droid_b1_squadLeader: ls_droid_b1 { scope = 1; scopeCurator = 1; };
+class ls_droid_b1_officer: ls_droid_b1 { scope = 1; scopeCurator = 1; };

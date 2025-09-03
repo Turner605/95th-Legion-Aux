@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-// Needs to have the correct required addons
-
 class CfgPatches {
     class ADDON {
         name = COMPONENT_NAME;
@@ -24,7 +22,9 @@ class CfgPatches {
             "WBK_DifferentRobotics_1",
             "A3_Data_F",
             "A3_Weapons_F",
-            "3AS_Prop_Sullust"
+            "3AS_Prop_Sullust",
+            "ls_compat_wbk_droids",
+            "ls_characters_droid"
         };
         authors[] = {"Turner"};
         VERSION_CONFIG;
