@@ -1,33 +1,37 @@
 params ["_position", "_unitSide", "_radius", "_garrisonPercentage", "_b1Type", "_includeB2"];
 
-private _buildingPositions = [];
-{_buildingPositions append ([_x] call CBA_fnc_buildingPositions)} forEach (nearestObjects [_position,["Building"],_radius,true]);
-
-private _count = 0;
-
-{
-    _xPos = _buildingPositions select (floor random (count _buildingPositions));
-
-    if((_xPos nearEntities ["CAManBase",2]) isEqualTo []) then {
-        _count = _count + 1;
-    }
-} forEach _buildingPositions;
-
-private _newCount = round (_count * _garrisonPercentage);
-
 private _b1TypeArray = [
-    ["AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Rifleman", "AUX_95th_Droid_B1_Unit_Shotgun", "AUX_95th_Droid_B1_Unit_AutoRifleman", "AUX_95th_Droid_B1_Unit_AT"],
-    ["AUX_95th_Droid_B1_Rocket_Unit_Rifleman", "AUX_95th_Droid_B1_Rocket_Unit_Rifleman", "AUX_95th_Droid_B1_Rocket_Unit_Rifleman", "AUX_95th_Droid_B1_Rocket_Unit_AT"],
+    ["JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_SBB3", "JLTS_Droid_B1_AR", "JLTS_Droid_B1_AT"],
+    ["AUX_95th_Droid_B1_Rocket_E5", "AUX_95th_Droid_B1_Rocket_E5", "AUX_95th_Droid_B1_Rocket_E5", "AUX_95th_Droid_B1_Rocket_AT"],
     ["JLTS_Droid_B1_Security"]
 ];
 
 private _b1TypesToSpawn = (_b1TypeArray select _b1Type);
 
-if(!(_newCount < 1)) then {
+private _buildings = nearestObjects [_position, ["House", "Building"], _radius]; 
+private _buildingPositions = []; 
+
+{
+    private _i = 0;
+    while {true} do {
+        private _pos = _x buildingPos _i;
+
+        if (_pos isEqualTo [0,0,0]) exitWith {};
+        if (!((_pos nearEntities ["CAManBase",1]) isEqualTo [])) exitWith {};
+
+        _buildingPositions pushBack _pos;
+        _i = _i + 1;
+    };
+} forEach _buildings;
+
+private _totalToGarrison = ((count _buildingPositions) * _garrisonPercentage);
+private _units = [];
+
+if(!(_totalToGarrison < 1)) then {
 
     private _spawnArray = [];
 
-    for "_i" from 0 to (_newCount-1) do {
+    for "_i" from 0 to (_totalToGarrison-1) do {
         if((_i%10 == 0) && _includeB2) then {
             _spawnArray pushBack "AUX_95th_Droid_B2_Unit_Blaster";
         }else{
@@ -36,7 +40,13 @@ if(!(_newCount < 1)) then {
     };
 
     _group = [_position, _unitSide, _spawnArray ,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
-    private _units = (units _group) select {alive _x};
+    _units = (units _group) select {alive _x};
 
-    [_position, nil, _units, (_radius+10), 1, false, true] call ace_ai_fnc_garrison;
+    [_position, nil, _units, _radius, 1, false, true] call ace_ai_fnc_garrison;
 };
+
+{
+    if (_x checkAIFeature "PATH") then {
+        deleteVehicle _x;
+    };
+} forEach _units;
