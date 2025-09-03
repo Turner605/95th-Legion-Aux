@@ -11,6 +11,7 @@ private _b1TypesToSpawn = (_b1TypeArray select _b1Type);
 private _buildings = nearestObjects [_position, ["House", "Building"], _radius]; 
 private _buildingPositions = []; 
 
+// Find all garrison points
 {
     private _i = 0;
     while {true} do {
@@ -27,13 +28,14 @@ private _buildingPositions = [];
 private _totalToGarrison = ((count _buildingPositions) * _garrisonPercentage);
 private _units = [];
 
+// Spawn and garrison the correct spots
 if(!(_totalToGarrison < 1)) then {
 
     private _spawnArray = [];
 
     for "_i" from 0 to (_totalToGarrison-1) do {
         if((_i%10 == 0) && _includeB2) then {
-            _spawnArray pushBack "AUX_95th_Droid_B2_Unit_Blaster";
+            _spawnArray pushBack "ls_droid_b2";
         }else{
             _spawnArray pushBack (_b1TypesToSpawn select (floor random (count _b1TypesToSpawn)));
         };
@@ -45,6 +47,7 @@ if(!(_totalToGarrison < 1)) then {
     [_position, nil, _units, _radius, 1, false, true] call ace_ai_fnc_garrison;
 };
 
+// Clear up any non garrisoned units
 {
     if (_x checkAIFeature "PATH") then {
         deleteVehicle _x;
