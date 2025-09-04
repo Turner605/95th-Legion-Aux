@@ -41,7 +41,7 @@ _unit addEventHandler ["PathCalculated", {
 _unit addEventHandler ["HandleDamage", {
 	params ["_unit", "_selection", "_damage", "_source"];
 
-	if (!(_unit == _source)) then {
+	if (!(_unit == _source) && (alive _unit)) then {
 		_rndHitAnim = random 100;
 
 		if ((_rndHitAnim >= 85) and !(animationState _unit == "B2_SupperBattleDroid_hit")) then {
