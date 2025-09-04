@@ -3,7 +3,6 @@ params ["_droid"];
 _droid disableAI "SUPPRESSION";
 _droid disableAI "COVER";
 _droid disableAI "AIMINGERROR";
-_droid setBehaviour "CARELESS";
 
 _droid addEventHandler ["Killed", {
 	params ["_unit", "_killer"];
