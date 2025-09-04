@@ -5,36 +5,7 @@ _unit setSpeaker "NoVoice";
 _unit setVariable ["disableUnitSFX",1,true];
 [_unit, "B2_SupperBattleDroid_idle"] remoteExec ["switchMove", 0];
 
-// if (isNil {_unit getVariable "Droid_Health"}) then {
-// 	_unit setVariable ["Droid_Health",WBK_B2_AmountOfDamage,true];
-// };
-
 [_unit] call crowsEW_spectrum_fnc_initDroneSignals;
-
-// _unit addEventHandler ["HandleDamage", {
-//   _objHit = _this select 0;
-//   _hitter = _this select 3;
-//   if (!(_objHit == _hitter)) then {
-// 	if (_objHit getVariable 'Droid_Health' <= 0) exitWith {
-// 	_objHit removeAllEventHandlers "HandleDamage";
-// 	_objHit setDamage 1; 
-// 	};
-//     _health = _objHit getVariable "Droid_Health";
-// 	_health = _health - 1;
-//     _objHit setVariable ["Droid_Health",_health,true];
-// 	_rndHitAnim = random 100;
-// 	if ((_rndHitAnim >= 85) and !(animationState _objHit == "B2_SupperBattleDroid_hit")) then {
-// 	_objHit spawn {
-// 	_this disableAI "ALL";
-// 	[_this, "B2_SupperBattleDroid_hit"] remoteExec ["switchMove", 0];
-// 	sleep 1.21;
-// 	if (!(animationState _this == "B2_SupperBattleDroid_hit")) exitWith {_this enableAI "ALL";};
-// 	[_this, "B2_SupperBattleDroid_idle"] remoteExec ["switchMove", 0];
-// 	_this enableAI "ALL";
-// 	};
-// 	};
-//   };  
-// }];
 
 _unit addEventHandler ["PathCalculated", {
 	_unit = _this select 0;
@@ -67,8 +38,28 @@ _unit addEventHandler ["PathCalculated", {
 	};
 }];
 
-_unit removeAllEventHandlers "Killed";
+// _unit addEventHandler ["HandleDamage", {
+// 	params ["_unit", "_selection", "_damage", "_source"];
 
+// 	if (!(_unit == _source)) then {
+// 		_rndHitAnim = random 100;
+
+// 		if ((_rndHitAnim >= 85) and !(animationState _unit == "B2_SupperBattleDroid_hit")) then {
+// 			_unit spawn {
+// 				_this disableAI "ALL";
+// 				[_this, "B2_SupperBattleDroid_hit"] remoteExec ["switchMove", 0];
+// 				sleep 1.21;
+// 				if (!(animationState _this == "B2_SupperBattleDroid_hit")) exitWith {_this enableAI "ALL";};
+// 				[_this, "B2_SupperBattleDroid_idle"] remoteExec ["switchMove", 0];
+// 				_this enableAI "ALL";
+// 			};
+// 		};
+// 	};
+
+// 	_damage;
+// }];
+
+_unit removeAllEventHandlers "Killed";
 _unit addEventHandler ["Killed", {
 	_unit = _this select 0;
 	_arStart = _unit getVariable "WBK_DT_PathFindingObjects";
@@ -107,6 +98,14 @@ _unit addEventHandler ["Killed", {
 		sleep 0.1;
 		deleteVehicle _particlesSpark;
 	}] remoteExec ["spawn", [0,-2] select isDedicated,false];
+
+    [_unit getVariable "AUX_95th_B2_Frame_Handler"] call CBA_fnc_removePerFrameHandler;
+}];
+
+_unit addEventHandler ["Deleted", {
+	params ["_unit"];
+
+    [_unit getVariable "AUX_95th_B2_Frame_Handler"] call CBA_fnc_removePerFrameHandler;
 }];
 
 _unit addEventHandler ["Fired", {
@@ -156,29 +155,36 @@ WBK_B2_Melee = {
 
 _actFr = [{
     _array = _this select 0;
-    _mutant = _array select 0;
-	_mutant disableAI "MINEDETECTION";
-	_mutant disableAI "SUPPRESSION";
-	_mutant disableAI "COVER";
-	_mutant disableAI "AIMINGERROR";
-	_mutant disableAI "FSM";
-	_mutant setBehaviour "CARELESS";
-	_mutant allowDamage false;
+    _droid = _array select 0;
+	_droid disableAI "MINEDETECTION";
+	_droid disableAI "SUPPRESSION";
+	_droid disableAI "COVER";
+	_droid disableAI "AIMINGERROR";
+	_droid disableAI "FSM";
+	_droid setBehaviour "CARELESS";
+	_droid allowDamage false;
+
 	{
-	 _ifInter = lineIntersects [ getPosASL _mutant, eyePos _x, _mutant, _x];
+		_ifInter = lineIntersects [ getPosASL _droid, eyePos _x, _droid, _x];
+
 		if (!(_ifInter)) then {
-			 _mutant reveal [_x, 4]; 
+			 _droid reveal [_x, 4]; 
 		};
-	} forEach nearestObjects [_mutant, ["Man"], 15]; 
-	_myNearestEnemy = _mutant findNearestEnemy _mutant;
-	if (!(handgunWeapon _myNearestEnemy in IMS_Lightsabers) and (((_myNearestEnemy worldToModel (_mutant modelToWorld [0, 0, 0])) select 1) > 0) and ((_myNearestEnemy distance _mutant) <= 2.5) and (_mutant getVariable "canMakeAttack" == 0) and (alive _mutant) and !(lifeState _mutant == "INCAPACITATED") and !(animationState _mutant == "B2_SupperBattleDroid_melee")) then {
-	_mutant spawn WBK_B2_Melee;
+	} forEach nearestObjects [_droid, ["Man"], 15]; 
+
+	_myNearestEnemy = _droid findNearestEnemy _droid;
+
+	if (
+		!(handgunWeapon _myNearestEnemy in IMS_Lightsabers) and
+		(((_myNearestEnemy worldToModel (_droid modelToWorld [0, 0, 0])) select 1) > 0) and
+		((_myNearestEnemy distance _droid) <= 2.5) and
+		(_droid getVariable "canMakeAttack" == 0) and
+		(alive _droid) and
+		!(lifeState _droid == "INCAPACITATED") and
+		!(animationState _droid == "B2_SupperBattleDroid_melee")
+	) then {
+		_droid spawn WBK_B2_Melee;
 	};
 }, 0.4, [_unit]] call CBA_fnc_addPerFrameHandler;
 
-waitUntil {sleep 0.5; 
-	if (isNull _unit) exitWith { true };
-	(!(alive _unit))
-};
-
-[_actFr] call CBA_fnc_removePerFrameHandler;
+_unit setVariable ["AUX_95th_B2_Frame_Handler", _actFr];

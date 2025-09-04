@@ -19,7 +19,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "AUX_95th_Extras_main",
-            "AUX_95th_Extras_overrides"
+            "AUX_95th_Extras_overrides",
+			"WBK_DifferentRobotics_1"
         };
         authors[] = {"Turner"};
         VERSION_CONFIG;
