@@ -38,26 +38,26 @@ _unit addEventHandler ["PathCalculated", {
 	};
 }];
 
-// _unit addEventHandler ["HandleDamage", {
-// 	params ["_unit", "_selection", "_damage", "_source"];
+_unit addEventHandler ["HandleDamage", {
+	params ["_unit", "_selection", "_damage", "_source"];
 
-// 	if (!(_unit == _source)) then {
-// 		_rndHitAnim = random 100;
+	if (!(_unit == _source)) then {
+		_rndHitAnim = random 100;
 
-// 		if ((_rndHitAnim >= 85) and !(animationState _unit == "B2_SupperBattleDroid_hit")) then {
-// 			_unit spawn {
-// 				_this disableAI "ALL";
-// 				[_this, "B2_SupperBattleDroid_hit"] remoteExec ["switchMove", 0];
-// 				sleep 1.21;
-// 				if (!(animationState _this == "B2_SupperBattleDroid_hit")) exitWith {_this enableAI "ALL";};
-// 				[_this, "B2_SupperBattleDroid_idle"] remoteExec ["switchMove", 0];
-// 				_this enableAI "ALL";
-// 			};
-// 		};
-// 	};
+		if ((_rndHitAnim >= 85) and !(animationState _unit == "B2_SupperBattleDroid_hit")) then {
+			_unit spawn {
+				_this disableAI "ALL";
+				[_this, "B2_SupperBattleDroid_hit"] remoteExec ["switchMove", 0];
+				sleep 1.21;
+				if (!(animationState _this == "B2_SupperBattleDroid_hit")) exitWith {_this enableAI "ALL";};
+				[_this, "B2_SupperBattleDroid_idle"] remoteExec ["switchMove", 0];
+				_this enableAI "ALL";
+			};
+		};
+	};
 
-// 	_damage;
-// }];
+	_damage;
+}];
 
 _unit removeAllEventHandlers "Killed";
 _unit addEventHandler ["Killed", {
@@ -121,7 +121,7 @@ _unit addEventHandler ["Fired", {
 }];
 
 _unit setUnitPos "UP";
-_unit allowDamage false;
+// _unit allowDamage false;
 
 WBK_B2_Melee = {
 	_unitToPlay = _this;
@@ -162,7 +162,7 @@ _actFr = [{
 	_droid disableAI "AIMINGERROR";
 	_droid disableAI "FSM";
 	_droid setBehaviour "CARELESS";
-	_droid allowDamage false;
+	// _droid allowDamage false;
 
 	{
 		_ifInter = lineIntersects [ getPosASL _droid, eyePos _x, _droid, _x];
