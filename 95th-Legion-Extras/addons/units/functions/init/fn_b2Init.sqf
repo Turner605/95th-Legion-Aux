@@ -125,6 +125,7 @@ _unit setUnitPos "UP";
 
 WBK_B2_Melee = {
 	_unitToPlay = _this;
+	if ((isNull _unitToPlay) or !(alive _unitToPlay)) exitWith {};
 	_unitToPlay disableAI "ALL";
 	[_unitToPlay, "B2_SupperBattleDroid_melee"] remoteExec ["switchMove", 0];
 	sleep 0.1;
