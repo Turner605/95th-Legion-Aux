@@ -1,4 +1,4 @@
-params ["_position", "_unitSide", "_radius", "_garrisonPercentage", "_b1Type", "_includeB2"];
+params ["_position", "_unitSide", "_radius", "_garrisonPercentage", "_b1Type", "_includeB2", "_randomizePositions"];
 
 private _b1TypeArray = [
     ["JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_SBB3", "JLTS_Droid_B1_AR", "JLTS_Droid_B1_AT"],
@@ -10,6 +10,8 @@ private _b1TypesToSpawn = (_b1TypeArray select _b1Type);
 
 private _buildings = nearestObjects [_position, ["House", "Building"], _radius]; 
 private _buildingPositions = []; 
+private _randomizeValue = 1;
+if(_randomizePositions) then {_randomizeValue = 2};
 
 // Find all garrison points
 {
@@ -44,7 +46,7 @@ if(!(_totalToGarrison < 1)) then {
     _group = [_position, _unitSide, _spawnArray ,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
     _units = (units _group) select {alive _x};
 
-    [_position, nil, _units, _radius, 2, false, true] call ace_ai_fnc_garrison;
+    [_position, nil, _units, _radius, _randomizeValue, false, true] call ace_ai_fnc_garrison;
 };
 
 // Clear up any non garrisoned units

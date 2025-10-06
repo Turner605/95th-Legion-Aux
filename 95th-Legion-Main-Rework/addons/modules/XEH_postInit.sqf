@@ -69,10 +69,11 @@ if (!hasInterface) exitWith {};
     ["CIS Quick Garrison", [
         ["SIDES", ["Side", "The side the dropped unit will be."], east],
         ["SLIDER:RADIUS",["Radius","Radius of garrison"],[1,200,50,0,(ASLToATL _pos),[255,255,0,75]]],
-        ["SLIDER:PERCENT",["Garrison Percentage","Percentage of garrisonable spots to fill"],[0,1,0.8,0]],
+        ["SLIDER:PERCENT",["Garrison Percentage","Percentage of garrisonable spots to fill"],[0,1,0.6,0]],
 
         ["TOOLBOX", "B1 Type", [0, 1, 3, ["Normal", "Rocket", "Security"]]],
         ["CHECKBOX",["Include B2's","Should 10% of the units be B2's"],[true]]
+        ["CHECKBOX",["Randomize positions","Should units be randomized instead of building by building"],[true]]
     ], {
         params["_values", "_args"];
         _unitSide = _values#0;
@@ -80,10 +81,11 @@ if (!hasInterface) exitWith {};
         _garrisonPercentage = _values#2;
         _b1Type = _values#3;
         _includeB2 = _values#4;
+        _randomizePositions = _values#5;
 
         _position = _args select 0;
 
-        [_position, _unitSide, _radius, _garrisonPercentage, _b1Type, _includeB2] call AUX_95th_fnc_cisQuickGarrison;
+        [_position, _unitSide, _radius, _garrisonPercentage, _b1Type, _includeB2, _randomizePositions] call AUX_95th_fnc_cisQuickGarrison;
     }, {}, [_pos]] call zen_dialog_fnc_create;
 }, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
 
