@@ -44,7 +44,7 @@ if(!(_totalToGarrison < 1)) then {
     _group = [_position, _unitSide, _spawnArray ,[],[],[],[],[],180] call BIS_fnc_spawnGroup;
     _units = (units _group) select {alive _x};
 
-    [_position, nil, _units, _radius, 1, false, true] call ace_ai_fnc_garrison;
+    [_position, nil, _units, _radius, 2, false, true] call ace_ai_fnc_garrison;
 };
 
 // Clear up any non garrisoned units
