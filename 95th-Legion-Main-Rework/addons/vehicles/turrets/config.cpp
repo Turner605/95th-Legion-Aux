@@ -41,7 +41,7 @@ class CfgVehicles {
         faction="AUX_95th_Separatist_Army";
         editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
-        crew="JLTS_Droid_B1_Crew";
+        crew = "B_UAV_AI";
     };
 
     class AUX_95th_Droid_Radar_Jammer_Turret_3K: ls_vehicle_radarDish_opfor{
@@ -51,7 +51,7 @@ class CfgVehicles {
         faction="AUX_95th_Separatist_Army";
         editorCategory="AUX_95th_Separatist_Army";
 		editorSubcategory="AUX_95th_Faction_SeparatistDroids_Category_Ground_Turrets";
-        crew="JLTS_Droid_B1_Crew";
+        crew = "B_UAV_AI";
     };
 };
 
