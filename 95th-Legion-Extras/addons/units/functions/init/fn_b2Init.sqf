@@ -44,7 +44,7 @@ _unit addEventHandler ["HandleDamage", {
 	if (!(_unit == _source) && (alive _unit)) then {
 		_rndHitAnim = random 100;
 
-		if ((_rndHitAnim >= 85) and !(animationState _unit == "B2_SupperBattleDroid_hit")) then {
+		if ((_rndHitAnim >= 95) and !(animationState _unit == "B2_SupperBattleDroid_hit")) then {
 			_unit spawn {
 				_this disableAI "ALL";
 				[_this, "B2_SupperBattleDroid_hit"] remoteExec ["switchMove", 0];
