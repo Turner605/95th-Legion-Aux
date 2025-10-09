@@ -72,7 +72,7 @@ if (!hasInterface) exitWith {};
         ["SLIDER:PERCENT",["Garrison Percentage","Percentage of garrisonable spots to fill"],[0,1,0.6,0]],
 
         ["TOOLBOX", "B1 Type", [0, 1, 3, ["Normal", "Rocket", "Security"]]],
-        ["CHECKBOX",["Include B2's","Should 10% of the units be B2's"],[true]]
+        ["CHECKBOX",["Include B2's","Should 10% of the units be B2's"],[true]],
         ["CHECKBOX",["Randomize positions","Should units be randomized instead of building by building"],[true]]
     ], {
         params["_values", "_args"];
