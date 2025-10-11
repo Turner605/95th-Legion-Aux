@@ -15,6 +15,7 @@ if(!(isNil "_targetPad")) then {
 	
 		_nearestVehicle setFuel 1;
 		_nearestVehicle setDamage 0;
-		_nearestVehicle setVehicleAmmo 1;
+		//_nearestVehicle setVehicleAmmoDef 1;
+		[objNull, _nearestVehicle] call ace_rearm_fnc_rearmEntireVehicleSuccess;
 	};
 };
