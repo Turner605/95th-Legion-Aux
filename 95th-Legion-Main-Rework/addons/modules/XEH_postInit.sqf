@@ -155,7 +155,7 @@ if (!hasInterface) exitWith {};
                 deleteVehicle _stormCloud;
             }, [_stormCloud], (_duration+_warmupDuration)] call CBA_fnc_waitAndExecute;
             
-        }] remoteExec ["call", 0, true];
+        }] remoteExec ["call"];
 
         [{
             params ["_radius", "_frequency", "_duration", "_position"];
