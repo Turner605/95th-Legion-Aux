@@ -69,10 +69,11 @@ if (!hasInterface) exitWith {};
     ["CIS Quick Garrison", [
         ["SIDES", ["Side", "The side the dropped unit will be."], east],
         ["SLIDER:RADIUS",["Radius","Radius of garrison"],[1,200,50,0,(ASLToATL _pos),[255,255,0,75]]],
-        ["SLIDER:PERCENT",["Garrison Percentage","Percentage of garrisonable spots to fill"],[0,1,0.8,0]],
+        ["SLIDER:PERCENT",["Garrison Percentage","Percentage of garrisonable spots to fill"],[0,1,0.6,0]],
 
         ["TOOLBOX", "B1 Type", [0, 1, 3, ["Normal", "Rocket", "Security"]]],
-        ["CHECKBOX",["Include B2's","Should 10% of the units be B2's"],[true]]
+        ["CHECKBOX",["Include B2's","Should 10% of the units be B2's"],[true]],
+        ["CHECKBOX",["Randomize positions","Should units be randomized instead of building by building"],[true]]
     ], {
         params["_values", "_args"];
         _unitSide = _values#0;
@@ -80,10 +81,11 @@ if (!hasInterface) exitWith {};
         _garrisonPercentage = _values#2;
         _b1Type = _values#3;
         _includeB2 = _values#4;
+        _randomizePositions = _values#5;
 
         _position = _args select 0;
 
-        [_position, _unitSide, _radius, _garrisonPercentage, _b1Type, _includeB2] call AUX_95th_fnc_cisQuickGarrison;
+        [_position, _unitSide, _radius, _garrisonPercentage, _b1Type, _includeB2, _randomizePositions] call AUX_95th_fnc_cisQuickGarrison;
     }, {}, [_pos]] call zen_dialog_fnc_create;
 }, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
 
@@ -109,6 +111,61 @@ if (!hasInterface) exitWith {};
 
     }, {}, [_pos]] call zen_dialog_fnc_create;
 }, "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\call_ca.paa"] call zen_custom_modules_fnc_register;
+
+// Ion Storm
+["[95th] Modules", "Ion Storm", {
+    params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
+
+    ["Ion Storm", [
+        ["SLIDER:RADIUS",["Radius","Radius of the storm"],[1,300,100,0,(ASLToATL _pos),[255,255,0,75]]],
+        ["SLIDER", ["Frequency", "How often in seconds should lightning strike"], [0.5, 50, 2, 0]],
+        ["SLIDER", ["Duration", "How long should the storm last"], [1, 240, 30, 0]],
+        ["CHECKBOX",["Warn Nearby Players","Should nearby players receive a warning about the storm"],[true]]
+    ], {
+        params["_values", "_args"];
+
+        _radius = _values#0;
+        _frequency = _values#1;
+        _duration = _values#2;
+        _warnPlayers = _values#3;
+
+        _position = _args select 0;
+
+        _warmupDuration = 10;
+
+        if(_warnPlayers) then {
+            private _warnList = [_position, _radius+100, _radius+100, 0, false] nearEntities [ ["Man"], false, false, true];
+
+            [[], {
+                titleText ["<t align = 'center' shadow = '2' color='#FF474C' size='1.5' font='PuristaMedium' >WARNING</t><br /><t color='#FFFFFF' size='1.5' font='PuristaMedium' shadow = '2' >ION STORM DETECTED</t>", "PLAIN DOWN", -1, true, true];
+            }] remoteExec ["spawn", _warnList];
+        };
+
+        [[_position, _radius, _duration, _warmupDuration], {
+            params ["_position", "_radius", "_duration", "_warmupDuration"];
+
+            private _stormCloud = "#particlesource" createVehicleLocal (_position vectorAdd [0,0,300]);
+            _stormCloud setParticleCircle [(_radius*2), [0, 0, 0]];
+            _stormCloud setParticleRandom [0, [0.25, 0.25, 0], [0.175, 0.175, 0], 0, 0.25, [0, 0, 0, 0.1], 0, 0];
+            _stormCloud setParticleParams [["\A3\data_f\blesk1", 1, 0, 1], "", "SpaceObject", 1, 0.5, [0, 0, 0], [0, 0, 0.1], 0, 10, 7, 0.075, [1, 0.9], [[0.1, 0.1, 0.1, 1], [0.25, 0.25, 0.25, 0.5], [0.5, 0.5, 0.5, 0]], [0.5], 0, 0, "", "", XXXOBJECTXXX, 0, false];
+            _stormCloud setDropInterval 0.02;
+
+            [{
+                params ["_stormCloud"]; 
+                deleteVehicle _stormCloud;
+            }, [_stormCloud], (_duration+_warmupDuration)] call CBA_fnc_waitAndExecute;
+            
+        }] remoteExec ["call", -2];
+
+        [{
+            params ["_radius", "_frequency", "_duration", "_position"];
+
+            [_radius, _frequency, _duration, _position] call AUX_95th_fnc_startIonStorm;
+        }, [_radius, _frequency, _duration, _position], _warmupDuration] call CBA_fnc_waitAndExecute;
+
+
+    }, {}, [_pos]] call zen_dialog_fnc_create;
+}, "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\cas_ca.paa"] call zen_custom_modules_fnc_register;
 
 
 // module to drop droid turrets/vics?

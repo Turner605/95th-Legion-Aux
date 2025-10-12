@@ -1,0 +1,31 @@
+///////////////////////////////////////////////////////////////////////////////
+#                                                                             #
+#                            xcam_taunus version 1.1                          #
+#                                                                             #
+///////////////////////////////////////////////////////////////////////////////
+//                                                                           //
+#     Creative Commons License                                                #
+//                                                                           //
+#     License   https://creativecommons.org/licenses/by-nc-sa/4.0/            #
+#     Title     xcam_taunus                                                   #
+#     By        Silola                                                        #
+//                                                                           //
+#     Is licensed under a Creative Commons                                    #
+#     Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)#
+//                                                                           //
+///////////////////////////////////////////////////////////////////////////////
+
+
+
+// Author:
+Silola
+
+//Release date:
+2016-12-24
+
+// Contact
+silola@freenet.de
+
+// License
+Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+https://creativecommons.org/licenses/by-nc-sa/4.0/

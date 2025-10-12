@@ -376,7 +376,7 @@ class CfgVehicles {
             "\z\AUX_95th\addons\vehicles\laat\data\Default\Interior.paa"
         };
         class TextureSources {
-			textureList[] = {"Default",1,"AUX_95th_76561198051916304",0,"AUX_95th_76561198820607430",0,"AUX_95th_76561198060130630",0};
+			textureList[] = {"Default",1,"AUX_95th_76561198051916304",0,"AUX_95th_76561198820607430",0,"AUX_95th_76561198060130630",0,"AUX_95th_76561197991973965",0};
 			NEW_95TH_LAAT_TEXTURE(Default)
 			NEW_95TH_LAAT_TEXTURE(AUX_95th_76561198051916304)
 			NEW_95TH_LAAT_TEXTURE(AUX_95th_76561198820607430)
@@ -397,7 +397,7 @@ class CfgVehicles {
             "\z\AUX_95th\addons\vehicles\laat\data\Default\Interior.paa"
         };
         class TextureSources {
-			textureList[] = {"Default",1,"AUX_95th_76561198051916304",0,"AUX_95th_76561198820607430",0,"AUX_95th_76561198060130630",0};
+			textureList[] = {"Default",1,"AUX_95th_76561198051916304",0,"AUX_95th_76561198820607430",0,"AUX_95th_76561198060130630",0,"AUX_95th_76561197991973965",0};
 			NEW_95TH_LAAT_TEXTURE(Default)
 			NEW_95TH_LAAT_TEXTURE(AUX_95th_76561198051916304)
 			NEW_95TH_LAAT_TEXTURE(AUX_95th_76561198820607430)
@@ -418,7 +418,7 @@ class CfgVehicles {
             "\z\AUX_95th\addons\vehicles\laat\data\Default\Interior.paa"
         };
         class TextureSources {
-			textureList[] = {"Default",1,"AUX_95th_76561198051916304",0,"AUX_95th_76561198820607430",0,"AUX_95th_76561198060130630",0};
+			textureList[] = {"Default",1,"AUX_95th_76561198051916304",0,"AUX_95th_76561198820607430",0,"AUX_95th_76561198060130630",0,"AUX_95th_76561197991973965",0};
 			NEW_95TH_LAAT_TEXTURE(Default)
 			NEW_95TH_LAAT_TEXTURE(AUX_95th_76561198051916304)
 			NEW_95TH_LAAT_TEXTURE(AUX_95th_76561198820607430)

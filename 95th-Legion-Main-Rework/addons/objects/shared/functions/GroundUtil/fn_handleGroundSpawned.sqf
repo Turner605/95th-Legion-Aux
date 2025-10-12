@@ -19,7 +19,7 @@ if(!(isNil "_targetPad")) then {
 	
 		sleep 0.5;
 
-		private _padPosition = getPosATL _targetPad;
+		private _padPosition = getPosASL _targetPad;
 		private _padX = _padPosition select 0;
 		private _padY = _padPosition select 1;
 		private _padZ = _padPosition select 2;
@@ -27,7 +27,10 @@ if(!(isNil "_targetPad")) then {
 
 		private _direction = getDir _targetPad;
 
-		private _spawnedVehicle = createVehicle[_vehicleClass, _position, [], 0, "CAN_COLLIDE"];
+		//private _spawnedVehicle = createVehicle[_vehicleClass, _position, [], 0, "CAN_COLLIDE"];
+
+		private _spawnedVehicle = createVehicle [_vehicleClass,[0,0,0], [], 0, "CAN_COLLIDE"];
+		_spawnedVehicle setPosASL _position;
 
 		[_spawnedVehicle, _vehicleClass, _player] spawn AUX_95th_fnc_handleSkinSelection;
 

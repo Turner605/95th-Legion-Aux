@@ -22,6 +22,7 @@ class CfgFunctions {
             class isCloseToGround {};
             class broadcastOrder66 {};
             class reanimateDroid {};
+            class startIonStorm {};
         };
     };
 };

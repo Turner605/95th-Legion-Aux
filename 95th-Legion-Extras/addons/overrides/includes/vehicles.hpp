@@ -320,56 +320,68 @@ class 3AS_OG9Turret: StaticMGWeapon {
 class 3as_ParticleCannon_Base;
 class 3as_ParticleCannon: 3as_ParticleCannon_Base {
     #include "../macros/turret.hpp"
+    crew="JLTS_Droid_B1_Crew";
 };
 
 class 3AS_J1_Proton_Cannon_Base;
 class 3AS_J1_Proton_Cannon: 3AS_J1_Proton_Cannon_Base {
     #include "../macros/turret.hpp"
+    crew="JLTS_Droid_B1_Crew";
 };
 class 3AS_J1_Proton_Legged: 3AS_J1_Proton_Cannon_Base {
     #include "../macros/turret.hpp"
+    crew="JLTS_Droid_B1_Crew";
 };
 
 class 3as_FlakCannon_Base;
 class 3as_FlakCannon: 3as_FlakCannon_Base {
     #include "../macros/turret.hpp"
+    crew="JLTS_Droid_B1_Crew";
 };
 
 class 3AS_J10s_Base_F;
 class 3AS_J10s_F: 3AS_J10s_Base_F {
     #include "../macros/turret.hpp"
+    crew="JLTS_Droid_B1_Crew";
 };
 
 class 3AS_Republic_Mortar;
 class 3AS_CIS_Mortar: 3AS_Republic_Mortar {
     #include "../macros/turret.hpp"
+    crew="JLTS_Droid_B1_Crew";
 };
 
 class 3AS_CIS_Naval_Gun: StaticMGWeapon {
     #include "../macros/turret.hpp"
+    crew = "B_UAV_AI";
 };
 class 3AS_CIS_Naval_Gun_180: 3AS_CIS_Naval_Gun {
     #include "../macros/turret.hpp"
+    crew = "B_UAV_AI";
 };
 
 class JLTS_UST_turret_base;
 class JLTS_UST_turret_CIS: JLTS_UST_turret_base {
     #include "../macros/turret.hpp"
+    crew = "B_UAV_AI";
 };
 
 class 3AS_FieldCannon_Base;
 class 3AS_FieldCannon: 3AS_FieldCannon_Base {
     #include "../macros/turret.hpp"
+    crew = "B_UAV_AI";
 };
 
 class ls_turret_autoturret_base;
 class ls_turret_pirate_autoturret: ls_turret_autoturret_base {
     #include "../macros/turret.hpp"
+    crew = "B_UAV_AI";
 };
 
 class ls_turret_autoturret_CQC_base;
 class ls_turret_pirate_autoturretCQC: ls_turret_autoturret_CQC_base {
     #include "../macros/turret.hpp"
+    crew = "B_UAV_AI";
 };
 
 
@@ -378,31 +390,37 @@ class ls_turret_pirate_autoturretCQC: ls_turret_autoturret_CQC_base {
 class 3AS_Republic_FCP;
 class 3AS_CIS_FCP: 3AS_Republic_FCP {
     #include "../macros/static.hpp"
+    crew="JLTS_Droid_B1_Crew";
 };
 
 class 3AS_Droid_Dispenser_Base_F;
 class 3AS_Droid_Dispenser_F: 3AS_Droid_Dispenser_Base_F {
     #include "../macros/static.hpp"
+    crew = "B_UAV_AI";
 };
 
 class ls_droidDispenser_base;
 class ls_droidDispenser: ls_droidDispenser_base {
     #include "../macros/static.hpp"
+    crew = "B_UAV_AI";
 };
 
 class ls_vehicle_radarDish;
 class ls_vehicle_radarDish_opfor: ls_vehicle_radarDish {
     #include "../macros/static.hpp"
+    crew = "B_UAV_AI";
 };
 
 class ls_vehicle_radarDish_woodland;
 class ls_vehicle_radarDish_woodland_opfor: ls_vehicle_radarDish_woodland {
     #include "../macros/static.hpp"
+    crew = "B_UAV_AI";
 };
 
 class ls_vehicle_radarDish_desert;
 class ls_vehicle_radarDish_desert_opfor: ls_vehicle_radarDish_desert {
     #include "../macros/static.hpp"
+    crew = "B_UAV_AI";
 };
 
 

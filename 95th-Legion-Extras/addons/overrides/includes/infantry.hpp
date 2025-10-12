@@ -158,15 +158,15 @@ class JLTS_Droid_B1_Marine: O_Soldier_AT_F {
     displayName = "Standard (AA)";
     #include "../macros/droidB1.hpp"
 
-    weapons[]={"JLTS_E5", "SWLW_E60R_AA", "Throw", "Put"};
-	respawnWeapons[]={"JLTS_E5", "SWLW_E60R_AA", "Throw", "Put"};
+    weapons[]={"JLTS_E5", "ls_weapon_e60r_aa", "Throw", "Put"};
+	respawnWeapons[]={"JLTS_E5", "ls_weapon_e60r_aa", "Throw", "Put"};
 	magazines[]={
 		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
-		"SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag"
+		"ls_magazine_e60r_aa", "ls_magazine_e60r_aa", "ls_magazine_e60r_aa"
 	};
 	respawnMagazines[]={
 		"JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag", "JLTS_E5_mag",
-		"SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag", "SWLW_e60r_aa_mag"
+		"ls_magazine_e60r_aa", "ls_magazine_e60r_aa", "ls_magazine_e60r_aa"
 	};
 };
 
