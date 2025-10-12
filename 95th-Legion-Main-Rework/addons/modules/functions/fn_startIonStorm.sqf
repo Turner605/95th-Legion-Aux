@@ -5,7 +5,7 @@ _ion_storm_handler = [{
 
     // Ground Targets
     private _shouldStrikePlayer = [true, false] selectRandomWeighted [0.1,1];
-    private _targetList = _modulePos nearEntities [ ["Man", "Car", "Motorcycle", "Tank"], _radius];
+    private _targetList = _modulePos nearEntities [ ["StaticWeapon", "Man", "Car", "Motorcycle", "Tank", "Helicopter", "Plane"], _radius];
     private _scanPos = [];
 
     if (_shouldStrikePlayer && ((count _targetList) > 0)) then {

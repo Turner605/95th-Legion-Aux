@@ -141,8 +141,8 @@ if (!hasInterface) exitWith {};
             }] remoteExec ["spawn", _warnList];
         };
 
-        [[_position, _radius, _duration], {
-            params ["_position", "_radius", "_duration"];
+        [[_position, _radius, _duration, _warmupDuration], {
+            params ["_position", "_radius", "_duration", "_warmupDuration"];
 
             private _stormCloud = "#particlesource" createVehicleLocal (_position vectorAdd [0,0,300]);
             _stormCloud setParticleCircle [(_radius*2), [0, 0, 0]];
@@ -155,7 +155,7 @@ if (!hasInterface) exitWith {};
                 deleteVehicle _stormCloud;
             }, [_stormCloud], (_duration+_warmupDuration)] call CBA_fnc_waitAndExecute;
             
-        }] remoteExec ["call"];
+        }] remoteExec ["call", -2];
 
         [{
             params ["_radius", "_frequency", "_duration", "_position"];
