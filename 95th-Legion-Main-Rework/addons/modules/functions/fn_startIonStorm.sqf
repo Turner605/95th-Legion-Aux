@@ -1,4 +1,4 @@
-params ["_radius", "_frequency", "_duration", "_modulePos", "_stormCloud"];
+params ["_radius", "_frequency", "_duration", "_modulePos"];
 
 _ion_storm_handler = [{
 	(_this select 0) params ["_modulePos", "_radius"];
@@ -40,10 +40,9 @@ _ion_storm_handler = [{
 }, _frequency, [_modulePos, _radius]] call CBA_fnc_addPerFrameHandler;
 
 [{
-    params ["_handler", "_stormCloud"]; 
-    deleteVehicle _stormCloud;
+    params ["_handler"]; 
     [_handler] call CBA_fnc_removePerFrameHandler;
-}, [_ion_storm_handler, _stormCloud], _duration] call CBA_fnc_waitAndExecute;
+}, [_ion_storm_handler], _duration] call CBA_fnc_waitAndExecute;
 
 
 

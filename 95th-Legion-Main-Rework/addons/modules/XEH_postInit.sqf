@@ -131,6 +131,8 @@ if (!hasInterface) exitWith {};
 
         _position = _args select 0;
 
+        _warmupDuration = 10;
+
         if(_warnPlayers) then {
             private _warnList = [_position, _radius+100, _radius+100, 0, false] nearEntities [ ["Man"], false, false, true];
 
@@ -139,17 +141,27 @@ if (!hasInterface) exitWith {};
             }] remoteExec ["spawn", _warnList];
         };
 
-        private _stormCloud = "#particlesource" createVehicleLocal (_position vectorAdd [0,0,300]);
-        _stormCloud setParticleCircle [(_radius*2), [0, 0, 0]];
-        _stormCloud setParticleRandom [0, [0.25, 0.25, 0], [0.175, 0.175, 0], 0, 0.25, [0, 0, 0, 0.1], 0, 0];
-        _stormCloud setParticleParams [["\A3\data_f\blesk1", 1, 0, 1], "", "SpaceObject", 1, 0.5, [0, 0, 0], [0, 0, 0.1], 0, 10, 7, 0.075, [1, 0.9], [[0.1, 0.1, 0.1, 1], [0.25, 0.25, 0.25, 0.5], [0.5, 0.5, 0.5, 0]], [0.5], 0, 0, "", "", XXXOBJECTXXX, 0, false];
-        _stormCloud setDropInterval 0.02;
+        [[_position, _radius, _duration], {
+            params ["_position", "_radius", "_duration"];
+
+            private _stormCloud = "#particlesource" createVehicleLocal (_position vectorAdd [0,0,300]);
+            _stormCloud setParticleCircle [(_radius*2), [0, 0, 0]];
+            _stormCloud setParticleRandom [0, [0.25, 0.25, 0], [0.175, 0.175, 0], 0, 0.25, [0, 0, 0, 0.1], 0, 0];
+            _stormCloud setParticleParams [["\A3\data_f\blesk1", 1, 0, 1], "", "SpaceObject", 1, 0.5, [0, 0, 0], [0, 0, 0.1], 0, 10, 7, 0.075, [1, 0.9], [[0.1, 0.1, 0.1, 1], [0.25, 0.25, 0.25, 0.5], [0.5, 0.5, 0.5, 0]], [0.5], 0, 0, "", "", XXXOBJECTXXX, 0, false];
+            _stormCloud setDropInterval 0.02;
+
+            [{
+                params ["_stormCloud"]; 
+                deleteVehicle _stormCloud;
+            }, [_stormCloud], (_duration+_warmupDuration)] call CBA_fnc_waitAndExecute;
+            
+        }] remoteExec ["call", 0, true];
 
         [{
-            params ["_radius", "_frequency", "_duration", "_position", "_stormCloud"];
+            params ["_radius", "_frequency", "_duration", "_position"];
 
-            [_radius, _frequency, _duration, _position, _stormCloud] call AUX_95th_fnc_startIonStorm;
-        }, [_radius, _frequency, _duration, _position, _stormCloud], 10] call CBA_fnc_waitAndExecute;
+            [_radius, _frequency, _duration, _position] call AUX_95th_fnc_startIonStorm;
+        }, [_radius, _frequency, _duration, _position], _warmupDuration] call CBA_fnc_waitAndExecute;
 
 
     }, {}, [_pos]] call zen_dialog_fnc_create;
