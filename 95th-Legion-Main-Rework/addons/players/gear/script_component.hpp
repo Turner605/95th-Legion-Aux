@@ -4,14 +4,14 @@
 #define PLAYER_NAME_BEAUTIFIED Gear
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY One_One
+#define SQUAD_KEY One_Zero
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
 #define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
-#define HELMET_P1_SPECOPS 0
+#define HELMET_P1_SPECOPS 1
 #define HELMET_P1_HAZARD 0
 #define HELMET_P1_COLD_ASSAULT 0
 #define HELMET_P1_COMMANDO 0
