@@ -1,0 +1,87 @@
+v1.1:
+- fixed missing roads
+- added decommissioned Cold War-era biological warfare lab known as Site-78
+- fixed red barn doors so enemy doesn't see through them
+- small fixes
+
+v1.0:
+- further graphics improvements
+- added: Vatra Valley on Central West, Echo Hill, Runtus, severe upgrade of the sector
+- out of beta now, v1.0 final
+- new loading screen with a map preview
+
+v1.0beta9:
+- improved quality of satellite imagery
+- fixed: dark triangle over certain Yulakian soldier LODs
+- added: Ozarian sector
+- many small fixes
+
+v1.0beta8:
+- fixed coordinates on the map to start at 0,0
+- improved forest vegetation in South Yulakia
+- town of Devina improvements, new road to South
+- texture improvements
+
+v1.0beta6:
+- added Zolja Pass (road from NPP nuke plant to Duboak hill base)
+- fixed some roads for FNF Rally event
+- added forest road section from Havenbrook to Volkov
+- fixed a group of floating trees near Tambova
+- removed several rocks and bushes from roads to avoid collisions
+- fixed floor in one of Rabina houses
+
+v1.0beta5:
+- added details to Mazemovo and Martopol
+- added details to the island in the corner of NW
+- replaced several closed up houses with new enterable versions
+- added nine pillars monument in Mazemovo, parliament improvements
+- added dome radar above Mazemovo, road leading to it (tnx galevsky!)
+- added missile crashsite NE of Mazemovo
+- added two characters: president and his fiancee (tnx Jove Chiere!)
+- several bugs fixed (reported by excellent Kerry, so grateful!)
+- fixed map names: Komatin and Valor Vista.
+
+v1.0beta4:
+- unit group bug fix when truck did not appear
+- bunch of object placements fixed (wrong heights, trees interfering with houses)
+- fixed unit preview pics (tnx W0lle)
+- removed old obsolete watch tower in middle of the woods near SE airport
+- added Russian made facilities Pohorovka and Kozlovo on East, some say nuclear silos will be placed there soon...
+
+v1.0beta3:
+- added all 4 airport ILS configurations for AI aircraft
+- new road connecting Central East Yulakia with border pass on the bridge near the Nuclear Plant
+- new variants of metal bunker (camo, sand)
+- added paths to farms and couple of radars
+- 50+ bugs fixed (bugreporters thank you!)
+
+v1.0beta2:
+- hotfix: missing 2d Map data such as icons and buildings now visible again
+- added sound voices for Yulakian Army classes and preview pics (big tnx W0lle!)
+- fixed popup error of a BI's p3d they forgot to make a class for
+
+v1.0beta:
+- resolved popup errors, we had to recompile main file with Addon Builder (tnx EO)
+- massive improvement of valley between Devina and Nuclear Plant
+- Barmanovo town update
+- exit tunnel from the Victorin cave, they usually use BTR to transport tourists back to the parking lot
+- removed bunch of trees on roads and bunkers, SW island near Marlov (tnx Scruffy & -FM-)
+- fixed MYR7_GL Gunname & Igla ammo in the Yulakian Weapon/Ammo crate
+- improvements of satellite and mask
+- fixed heights near the Komunovo Tunnel farm
+- improved some of beach & island areas
+- aligned one nuclear concrete block(tnx Scruffy)
+- aligned river pieces near Marlov (tnx Scruffy)
+- removed large shallow water block (tnx Scruffy & Andersen)
+- factory fixes in Mazemovo (tnx DMZ)
+- fixed floating sandbags in Buty (tnx DMZ)
+- fixed floating objects in central base and fairview pasture (tnx From_the_eye)
+- replaced nuclear reactor texture
+- new concrete pier for water activities (tnx Andersen for the tip)
+- fixed floating trees near Victorin cave (tnx Kerry)
+- bunch of displaced objects fixed in Martopol (tnx Kerry)
+- monument sunflower statue turned to gold
+- dual bench removed at Posh Pines resort (tnx Saghen)
+- numerous placement, clipping fixes (tnx Saghen)
+- brightness of the rusty bunkers increased
+- correct 10beta key added for dedicated servers

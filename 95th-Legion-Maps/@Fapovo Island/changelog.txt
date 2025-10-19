@@ -1,0 +1,149 @@
+***********
+ Changelog
+***********
+1.9R5
+- AI can drive over the bridge to Botana now
+
+1.9R4
+- finally added normal map for increased terrain detail
+- fixed panelak buildings
+- changed SBP HQ logo to the latest 2022 variant
+- altered some vegetation
+- replaced one rock with new textures
+- airport fixes
+- crane moved from Beratna to Biaboj
+
+1.9R3
+- substantial visual upgrade
+- repaved the runways (tnx Bludclot & HorribleGoat for all the support)
+- realistic runway markings
+- helipads renamed as they were interfering with other mods
+- Beratna armybase can now accept cargo and has docks for larger ships (Project RACS request)
+- rock skala3_3 fix so orange A1 Cup rocks are not displayed anymore instead of them
+- bush b_craet  fix so autumn A1 Cup bushes are not displayed anymore instead of them
+- improved road pathing and graphics fixes
+- various small bugfixes
+- fixed incorrect builindgs heights
+- fixed runway lights and rock formations near airport in Botana
+
+1.8
+- completely brand new Dolsko region (rich oil reserves found)
+- added north_fapovo.paa and south_fapovo.paa to ibr\fapovo_c\flags\ folder for separated countries (North is under RACS control, South is dictator-run)
+
+1.75
+- satellite texture improvements
+- bugfixes with roads, misplaced trees and rocks
+- improved vegetation
+- completely remade Isle of Noel
+- a lot of smaller fixes
+
+1.7
+- massive improvements of several areas
+- improved training facility on central West island
+- new highland settlements in remote East region, two new bridges
+- new big town Baratna on East Coast with military/PMC base
+- two prison facilities
+- Botana has sea access now
+
+1.6
+- deepened the river to reach the Lake Hlubosto with the boat
+- additional tweaks to the water colour
+- added villages North of Kruger: Jagobor, Gralin, Suzevac and Vinkov
+- small castle ruins just N of Gralin
+- villa up in the mountains with helipad
+- added touristic isle of Nebo Proboj
+- added creepy cemetery
+- bridge fixes
+- other minor fixes
+
+1.55
+- completely re-modified Jabovo region
+- added: Isla Noel & Isla Tera
+- bugfixes
+
+1.5
+- new water colour and transparency
+- a lot of new vegetation and rock formations (especially North-East)
+- Isla Zora implemented new updates, new research centers, improved farms
+- new camp locations on several NE and E hills
+- tree branch removed from a Zora road that caused AI loosing tyres
+- several tweaks
+
+1.4
+- new sector: Isla Zora
+- replaced problematic bridge
+- various fixes
+
+1.3
+- fixed: correct runway numbers
+- deepened the river crossing south of Zelina
+- fixed LVL3 Lab height due to bugged AI
+- water colors tweaked
+- road slope fix south of Biaboj
+- steep mountains fixed in the desert
+- several compounds added (such as Storage Facilities)
+- skeleton removed from the shallow grave, added a few more shallow graves for random placement (for CoOp Op. Sinister Moth)
+- runway lights fixed: Ivanograd, Jabovo helipad, MOB Mermaid, Botana
+- steep mountains re-done near Sossana
+- new names on the map (such as lakes, labs)
+
+1.2
+- visual upgrade and new lighting
+- additional satellite and texture improvements
+- border crossing shed has correct texture now
+- bases and guard outposts
+- town improvements (added factories, enterable buildings etc.)
+- added border between Botana and Fapovo with old destroyed town that got overgrown
+- improved lake areas and some mountain ranges
+- couple of fixes reported by players
+
+1.1
+- roads completely redone (by SBP Team)
+- many new details added (by SBP Team)
+- added airport configs for AI/ILS autopilots
+- hospital and many new houses added to Biaboj
+- bugfixes
+
+1.0
+- Botana and some other towns updated
+- added details
+
+1.0beta5
+- upgraded towns
+- better parts with satellite image
+- better vegetation
+
+1.0beta4
+- Botana keypoint added
+- added Fapovo Federal Republic flag to use in-game: ibr\fapovo_c\flags\fapovo.paa
+- fixed bugged grass ground texture
+- replaced tent at C25 Emergency Camp with open one
+- improved vegetation
+
+1.0beta3
+- added correct changelog.txt and readme files
+- fixed: duplicated vegetation
+- improved: satellite map quality
+- fixed cannot open object ca\misc_fix\str\a_office01.p3d
+- fixed: chernarus bug with satellite out data missing
+- improved: runways are now longer in order to accomodate larger planes
+- fixed: removed Lingor dependency of hotel and dead tree objects
+- replaced building ruins with new Epoch ones from Livonia
+- added: makeshift landing strip in the desert or long shooting range (whatever you like more)
+- improved coast and sand textures
+- improved: island Laura on South-East
+- replaced ruins with correct castle ruins and road leading to it (wooden bridge)
+- added: C25 Emergency Camp with helipad near flooded village (relief effort)
+- enlarged city: Botana (50% done)
+- replaced: new terrain W of Sossana with a small town Kruger (50%)
+
+
+1.0beta2
+- internal test version, smaller fixes
+
+1.0beta
+Initial release with couple of issues but nothing major:
+- wrong runway numbers
+- ILS not working for AI
+- couple of unfinished mountains and wrong textures
+

@@ -1,0 +1,31 @@
+INSTALLATION NOTES
+==================
+
+Requirements: You need to have Arma 3 and two addons: CUP Terrains Core in order to play this map. Make sure you're using the latest official stable patch.
+Without CUP Terrains Core the Fapovo Island would weight at least few GB. Use them as many other mods and terrains use it, too. They feature all A1/A2 buildings and other assets!
+
+Client (Player)
+===============
+Required addons: CUP Terrains Core
+
+1. Unpack folder @fapovo to your ArmA3 root folder. Be sure to have \addons\ folder structure present after the unpack procedure with all *.pbo's inside.
+
+Then you have two options:
+a) run game and under Expansions menu enable folders:
+- @fapovo (IceBreakr's Fapovo x.xx)
+- @cup_terrains_core 
+Click OK and restart game.
+
+b) or just run game with parameter: -mod=@fapovo;@cup_terrains_core
+ 
+Island will then appear in map list and is ready for use. If you are using more mods, separate them with ; sign.
+
+Dedicated server
+================
+Admins can grab server keys if they are running a signed server. See folder \keys in the archive.
+
+Very IMPORTANT notes:
+=========================
+-> Be sure to delete any previous versions prior to the installation! If the island is not working properly, check other mod folders for duplicate pbos and bisign files.
+
+IMPORTANT: See readme_fapovo.txt for license to use and other/full info!

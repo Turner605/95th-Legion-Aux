@@ -1,0 +1,24 @@
+CUP/Mondkalb: usage of CUP objects
+Sierra: placement
+Venom: placement, templates
+Roman: Bunker composition
+Sahbazz: object assistance
+bjrul: placement, templates
+-FM-: placement, templates, testing
+EO: wildboars, lighting, encoding
+Dim Rutagan: various buildings
+CytechTeam: custom rock formations
+poolpunk: wooden desks for the docks
+Moonie: bunker object
+Sahbazz: bunker object, hayhanger object
+Dame2010: priest objects, primal objects
+N3crowolf, STAVR.88, Roman, Miledino: object compositions
+Vilas: objects
+Bromine: red barns and silos
+DeanosBeanO_DBO, Grahame: cows
+Kerry, Scruffy, HazBo, Daek, galevsky, Andersen, ThomasTKO, Shazam74, HetzerGTV, saghen, Alky Lee, Dimon UA: bugtesters
+Facel: mask for Lartanians
+Jove Chiere: president and fiance characters
+-------
+
+Special thanks: SBP Team & Clan CAP

@@ -1,0 +1,16 @@
+***********
+ Changelog
+***********
+1.1
+- several bugfixes (tnx [EC] Slawek)
+- improved satellite image and pass between eroded land and soil
+- improved vegetation, rocks, dead trees (30,000+)
+- removed road vegetation at couple of places
+- road connection fixes for Antistasi & Liberation
+- various optimizations
+
+1.0
+- initial public release
+
+0.5
+- initial test release for SBP Team
