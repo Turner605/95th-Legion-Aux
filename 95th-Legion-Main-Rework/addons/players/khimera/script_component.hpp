@@ -1,7 +1,7 @@
-#define COMPONENT players_chimera
-#define COMPONENT_BEAUTIFIED Players_Chimera
-#define PLAYER_NAME chimera
-#define PLAYER_NAME_BEAUTIFIED Chimera
+#define COMPONENT players_khimera
+#define COMPONENT_BEAUTIFIED Players_Khimera
+#define PLAYER_NAME khimera
+#define PLAYER_NAME_BEAUTIFIED Khimera
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
 #define SQUAD_KEY One_One
