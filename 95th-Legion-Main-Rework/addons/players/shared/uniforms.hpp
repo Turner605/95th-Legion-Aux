@@ -1,6 +1,7 @@
 class U_I_CombatUniform;
 class 3AS_U_Rep_ColdAssault_Armor;
 class 3AS_U_Rep_Katarn_Armor;
+class SEA_Uniform_GM_Plastic_21;
 
 #if UNIFORM_P1_BASIC == 1
     class AUX_95th_Uniform_P1_Basic_##PLAYER_NAME : U_I_CombatUniform {
@@ -89,3 +90,26 @@ class 3AS_U_Rep_Katarn_Armor;
         };
     };
 #endif
+
+#if UNIFORM_P2_MARINE == 1
+    class AUX_95th_Uniform_P1_Marine_##PLAYER_NAME : SEA_Uniform_GM_Plastic_21 {
+        scope = 2;
+        scopeArsenal = 2;
+        author="95th Aux Team";
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Uniforms); 
+        class ItemInfo: UniformItem {
+            uniformClass=QUOTE(DOUBLES(AUX_95th_Unit_Marine,PLAYER_NAME));
+            uniformModel="-";
+            containerClass="Supply150";
+            mass=40;
+        };
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Uniform_Squad,SQUAD_KEY));
+            Phase = "P2";
+            Type = QUOTE(Marine);
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+#endif
+
