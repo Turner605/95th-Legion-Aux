@@ -8,7 +8,6 @@ class CfgPatches {
             QUOTE(DOUBLES(AUX_95th_Unit_P1_MC,PLAYER_NAME)),
             QUOTE(DOUBLES(AUX_95th_Unit_P1_Cold_Assault,PLAYER_NAME)),
             QUOTE(DOUBLES(AUX_95th_Unit_Commando,PLAYER_NAME)),
-            QUOTE(DOUBLES(AUX_95th_Unit_Marine,PLAYER_NAME)),
             QUOTE(DOUBLES(AUX_95th_Unit_Marine,PLAYER_NAME))
         };
         weapons[] = {};
