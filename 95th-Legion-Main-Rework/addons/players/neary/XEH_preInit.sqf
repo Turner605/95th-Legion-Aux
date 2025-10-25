@@ -13,9 +13,9 @@ private _macroArray = [
     ["AUX_95th_Helmet_P1_Commando_", HELMET_P1_COMMANDO],
     ["AUX_95th_Helmet_P2_Airborne_", HELMET_P2_AIRBORNE],
     ["AUX_95th_Helmet_P2_Barc_", HELMET_P2_BARC],
-    ["AUX_95th_Helmet_P2_Marine_", HELMET_P2_MARINE],
-    ["AUX_95th_Helmet_P2_Marine_Modular_", HELMET_P2_MARINE],
-    ["AUX_95th_Helmet_P2_Marine_RTO_", HELMET_P2_MARINE],
+    ["AUX_95th_Helmet_P2_Marine_", HELMET_P2_MARINE_SET],
+    ["AUX_95th_Helmet_P2_Marine_Modular_", HELMET_P2_MARINE_SET],
+    ["AUX_95th_Helmet_P2_Marine_RTO_", HELMET_P2_MARINE_SET],
 
 
 
