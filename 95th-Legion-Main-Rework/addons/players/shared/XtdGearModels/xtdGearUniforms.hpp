@@ -12,9 +12,10 @@ class Phase {
 class Type {
 	alwaysSelectable = 1;
 	labels = "Type";
-	values[] = {"Basic", "MC", "ColdAssault", "Commando"};
-	class Basic { label = "P1 Basic"; description = "Basic Uniform"; };
+	values[] = {"Basic", "MC", "ColdAssault", "Commando", "Marine"};
+	class Basic { label = "Basic"; description = "Basic Uniform"; };
 	class MC { label = "MC"; description = "Marshal Commander Uniform"; };
 	class ColdAssault { label = "Cold"; description = "Cold Assault Uniform"; };
 	class Commando { label = "Commando"; description = "Commando Uniform"; };
+	class Marine { label = "Marine"; description = "Marine Uniform"; };
 };

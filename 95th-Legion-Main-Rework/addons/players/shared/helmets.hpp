@@ -17,8 +17,9 @@ class SEA_Helmet_P1_Base;
         class XtdGearInfo {
             Phase = "P1";
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
-            Type = QUOTE(P1_Basic);
+            Type = QUOTE(Basic);
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
         };
     };
 #endif
@@ -44,6 +45,7 @@ class SEA_Helmet_Engineer_Base;
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
             Type = QUOTE(P1_Engineer);
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
         };
     };
 #endif
@@ -69,6 +71,7 @@ class SEA_Helmet_ARF_base;
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
             Type = QUOTE(P1_ARF);
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
         };
     };
 #endif
@@ -92,8 +95,9 @@ class LSEA_Helmet_Pilot_P1_Base;
         class XtdGearInfo {
             Phase = "P1";
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
-            Type = QUOTE(P1_Pilot);
+            Type = QUOTE(Pilot);
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
         };
     };
 #endif
@@ -118,6 +122,7 @@ class SEA_Helmet_SpecOps_SR_Base;
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
             Type = QUOTE(P1_SpecOps);
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
         };
     };
 #endif
@@ -142,6 +147,7 @@ class SEA_Helmet_Hazard_Base;
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
             Type = QUOTE(P1_Hazard);
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
         };
     };
 #endif
@@ -166,6 +172,7 @@ class 3AS_H_ColdAssault_Helmet;
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
             Type = QUOTE(P1_Cold_Assault);
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
         };
     };
 #endif
@@ -190,6 +197,7 @@ class 3AS_H_Katarn_Helmet;
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
             Type = QUOTE(P1_Commando);
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
         };
     };
 #endif
@@ -213,6 +221,7 @@ class ls_cloneHelmet_airborne;
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
             Type = QUOTE(P2_Airborne);
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
         };
     };
 #endif
@@ -247,6 +256,73 @@ class AUX_95th_Helmet_P2_BARC_base;
             model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
             Type = QUOTE(P2_Barc);
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
+        };
+    };
+#endif
+
+class SEA_Helmet_GM_21;
+class SEA_Helmet_GM_21_Modular;
+class SEA_Helmet_GM_21_RTO;
+
+#if HELMET_P2_MARINE_SET == 1
+    class AUX_95th_Helmet_P2_Marine_##PLAYER_NAME : SEA_Helmet_GM_21 {
+        scope = 2;
+        scopeArsenal = 2;
+        author="95th Aux Team";
+        DSS_HUD_Lowlight_Enabled = 1;
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
+        hiddenSelectionsTextures[]={
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_marine\base_helmet.paa), 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_marine\base_helmet.paa)
+        };
+        class XtdGearInfo {
+            Phase = "P2";
+            model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
+            Type = QUOTE(Marine);
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Standard";
+        };
+    };
+
+    class AUX_95th_Helmet_P2_Marine_Modular_##PLAYER_NAME : SEA_Helmet_GM_21_Modular {
+        scope = 2;
+        scopeArsenal = 2;
+        author="95th Aux Team";
+        DSS_HUD_Lowlight_Enabled = 1;
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
+        hiddenSelectionsTextures[]={
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_marine\modular_helmet.paa), 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_marine\modular_helmet.paa)
+        };
+        class XtdGearInfo {
+            Phase = "P2";
+            model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
+            Type = QUOTE(Marine);
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "Modular";
+        };
+    };
+
+    class AUX_95th_Helmet_P2_Marine_RTO_##PLAYER_NAME : SEA_Helmet_GM_21_RTO {
+        scope = 2;
+        scopeArsenal = 2;
+        author="95th Aux Team";
+        DSS_HUD_Lowlight_Enabled = 1;
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Helmets); 
+        hiddenSelectionsTextures[]={
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_marine\rto_helmet.paa), 
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\helmets\p2_marine\rto_helmet.paa)
+        };
+        class XtdGearInfo {
+            Phase = "P2";
+            model = QUOTE(DOUBLES(AUX_95th_Helmet_Squad,SQUAD_KEY));
+            Type = QUOTE(Marine);
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+            Variant = "RTO";
         };
     };
 #endif
