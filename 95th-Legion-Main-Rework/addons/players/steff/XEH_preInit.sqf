@@ -100,7 +100,9 @@ private _macroArray = [
     ["AUX_95th_Vest_Commando_Engineer_", VEST_COMMANDO_SET],
     ["AUX_95th_Vest_Commando_Tech_", VEST_COMMANDO_SET],
     ["AUX_95th_Vest_Commando_Marksman_", VEST_COMMANDO_SET],
-    ["AUX_95th_Vest_Commando_Support_", VEST_COMMANDO_SET]
+    ["AUX_95th_Vest_Commando_Support_", VEST_COMMANDO_SET],
+
+    ["AUX_95th_Vest_Marine_Rifleman_", VEST_MARINE_SET]
 
 ];
 

@@ -22,8 +22,7 @@ private _macroArray = [
     ["AUX_95th_Uniform_P1_Basic_", UNIFORM_P1_BASIC],
     ["AUX_95th_Uniform_P1_MC_", UNIFORM_P1_MC],
     ["AUX_95th_Uniform_P1_Cold_Assault_", UNIFORM_P1_COLDASSAULT],
-    ["AUX_95th_Uniform_P1_Commando_", UNIFORM_P1_COMMANDO],
-
+    ["AUX_95th_Uniform_P1_Commando_", UNIFORM_P1_COMMANDO]
     ["AUX_95th_Backpack_Belt_Light_Shown_", BACKPACK_BELT_LIGHT],
     ["AUX_95th_Backpack_Belt_Light_Hidden_", BACKPACK_BELT_LIGHT],
     ["AUX_95th_Backpack_Belt_Light_RTO_Shown_", BACKPACK_BELT_LIGHT],
@@ -100,7 +99,9 @@ private _macroArray = [
     ["AUX_95th_Vest_Commando_Engineer_", VEST_COMMANDO_SET],
     ["AUX_95th_Vest_Commando_Tech_", VEST_COMMANDO_SET],
     ["AUX_95th_Vest_Commando_Marksman_", VEST_COMMANDO_SET],
-    ["AUX_95th_Vest_Commando_Support_", VEST_COMMANDO_SET]
+    ["AUX_95th_Vest_Commando_Support_", VEST_COMMANDO_SET],
+
+    ["AUX_95th_Vest_Marine_Rifleman_", VEST_MARINE_SET]
 
 ];
 
