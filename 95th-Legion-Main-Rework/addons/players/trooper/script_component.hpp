@@ -46,6 +46,7 @@
 #define VEST_ARC_SET 1
 #define VEST_OFFICER_SET 1
 #define VEST_COMMANDO_SET 1
+#define VEST_MARINE_SET 1
 
 // DO NOT EDIT
 #define PARENTCOMPONENT shared

@@ -172,8 +172,8 @@ class JLTS_Clone_P2_DC15A: B_Soldier_f {};
         };
         displayName=QUOTE(PLAYER_NAME_BEAUTIFIED (Marine));
         uniformClass=QUOTE(DOUBLES(AUX_95th_Uniform_P1_Marine,PLAYER_NAME));
-        linkedItems[]={QUOTE(DOUBLES(AUX_95th_Helmet_P1_Marine,PLAYER_NAME)),"95th_Marine_Vest_Trooper","ItemMap","JLTS_clone_comlink","ItemCompass","ItemWatch"};
-        respawnLinkedItems[]={QUOTE(DOUBLES(AUX_95th_Helmet_P1_Marine,PLAYER_NAME)),"95th_Marine_Vest_Trooper","ItemMap","JLTS_clone_comlink","ItemCompass","ItemWatch"};
+        linkedItems[]={QUOTE(DOUBLES(AUX_95th_Helmet_P1_Marine,PLAYER_NAME)),"AUX_95th_Vest_Marine_Rifleman_Trooper","ItemMap","JLTS_clone_comlink","ItemCompass","ItemWatch"};
+        respawnLinkedItems[]={QUOTE(DOUBLES(AUX_95th_Helmet_P1_Marine,PLAYER_NAME)),"AUX_95th_Vest_Marine_Rifleman_Trooper","ItemMap","JLTS_clone_comlink","ItemCompass","ItemWatch"};
         hiddenSelectionsTextures[]={
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\uniforms\p2_marine\upper.paa), 
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\uniforms\p2_marine\lower.paa), 

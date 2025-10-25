@@ -13,6 +13,8 @@ class JLTS_CloneVestOfficer;
 class JLTS_CloneVestOfficer2;
 class JLTS_CloneVestKama;
 
+class SEA_Vest_GM_21;
+
 
 class VestItem;
 class ItemInfo;
@@ -675,6 +677,36 @@ class ItemInfo;
             model = QUOTE(DOUBLES(AUX_95th_Vests_Squad,SQUAD_KEY));
             Type = "Standard";
             Rank = "Kama";
+            Role = "Rifleman";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+#endif
+
+#if VEST_MARINE_SET == 1
+    class AUX_95th_Vest_Marine_Rifleman_##PLAYER_NAME : SEA_Vest_GM_21 {
+        author="95th Aux Team";
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Vests); 
+	    maximumLoad=150;
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        hiddenSelectionsTextures[]={
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\marine\rifleman.paa) 
+        };
+        class ItemInfo: VestItem {
+			uniformModel = "JLTS_AE_GM\SEA_Vest_GM_Base.p3d";
+            containerClass = "Supply190";
+            hiddenSelections[]= { "camo1" };
+            mass=80;
+            class HitpointsProtectionInfo {
+                class Chest { HitpointName="HitChest"; armor=6; PassThrough=0.30000001; };
+                class Legs { hitpointName="HitLegs"; armor=6; passThrough=0.30000001; };
+                class Arms { hitpointName="HitArms"; armor=4; passThrough=0.30000001; };
+            };
+        };
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Vests_Squad,SQUAD_KEY));
+            Type = "Marine";
+            Rank = "CT";
             Role = "Rifleman";
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
         };

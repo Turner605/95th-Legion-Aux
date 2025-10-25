@@ -4,10 +4,11 @@ options[] = {"Player", "Type", "Rank", "Role"};
 class Type {
 	labels = "Type";
 	alwaysSelectable = 1;
-	values[] = {"Standard", "ARC", "Commando"};
+	values[] = {"Standard", "ARC", "Commando", "Marine"};
 	class Standard { label = "Standard"; description = "Standard Vests"; };
 	class ARC { label = "ARC"; description = "ARC Vests"; };
 	class Commando { label = "Commando"; description = "Commando Vests"; };
+	class Marine { label = "Marine"; description = "Marine Vests"; };
 };
 
 class Rank {
