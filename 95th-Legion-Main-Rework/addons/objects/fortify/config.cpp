@@ -18,7 +18,6 @@ class CfgVehicles {
     class 3AS_Barricade_2_C_prop;
     class 3AS_Short_Wall_Bunker;
     class Land_lsb_fob_hBarrier_ramp;
-    class 3AS_HeavyRepeater_Unarmoured;
     class Land_lsb_fob_hBarrier_wall;
 
     class AUX_95th_Fortify_Barricade : 3AS_Barricade_2_C_prop {
@@ -39,16 +38,52 @@ class CfgVehicles {
         editorSubcategory="AUX_95th_Objects_Fortify";
     };
 
-    class AUX_95th_Fortify_Turret: 3AS_HeavyRepeater_Unarmoured {
-        displayName="Heavy Repeater";
-        editorCategory="AUX_95th_Objects_Generic";
-        editorSubcategory="AUX_95th_Objects_Fortify";
-    };
-
     class AUX_95th_Fortify_Wall: Land_lsb_fob_hBarrier_wall {
         displayName="Wall";
         editorCategory="AUX_95th_Objects_Generic";
         editorSubcategory="AUX_95th_Objects_Fortify";
+    };
+
+    class Land;
+	class LandVehicle: Land {};
+
+	class StaticWeapon: LandVehicle {
+		class Turrets {
+			class MainTurret;
+		};
+	};
+
+	class StaticMGWeapon: StaticWeapon {
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				class ViewOptics;
+			};
+		};
+	};
+
+	class 3AS_HeavyRepeater_Base: StaticMGWeapon {
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				class ViewOptics: ViewOptics {};
+			};
+		};
+	};
+
+	class 3AS_HeavyRepeater_Unarmoured: 3AS_HeavyRepeater_Base {
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {};
+		};
+	};
+
+    class AUX_95th_Fortify_Turret: 3AS_HeavyRepeater_Unarmoured {
+        displayName="Heavy Repeater";
+        editorCategory="AUX_95th_Objects_Generic";
+        editorSubcategory="AUX_95th_Objects_Fortify";
+        class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				gunnerOpticsModel = "";
+			};
+		};
     };
 };
 
