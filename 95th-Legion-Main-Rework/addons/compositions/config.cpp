@@ -35,6 +35,8 @@ class CfgEditorSubcategories {
 
 class Cfg3DEN {
 	class Compositions {
+
+		// GAR - FOB's
 		class AUX_95th_FOB_Blackweb {
 			path = "z\AUX_95th\addons\compositions\gar\fob blackweb";
 			side = 1; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
@@ -55,6 +57,7 @@ class Cfg3DEN {
 			useSideColorOnIcon = 1;
 		};
 
+		// CIS - Checkpoints
 		class AUX_95th_Opfor_Checkpoint_1 {
 			path = "z\AUX_95th\addons\compositions\cis\checkpoint_1";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
@@ -65,6 +68,7 @@ class Cfg3DEN {
 			useSideColorOnIcon = 1;
 		};
 
+		// CIS - AA
 		class AUX_95th_Opfor_AA_Shielded_1 {
 			path = "z\AUX_95th\addons\compositions\cis\aa_shielded_1";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
@@ -75,6 +79,7 @@ class Cfg3DEN {
 			useSideColorOnIcon = 1;
 		};
 
+		// CIS - Misc
 		class AUX_95th_Opfor_Protected_Shield_Gen_1 {
 			path = "z\AUX_95th\addons\compositions\cis\protected_shield_generator_1";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
@@ -85,6 +90,7 @@ class Cfg3DEN {
 			useSideColorOnIcon = 1;
 		};
 
+		// CIS - Airbases
 		class AUX_95th_Opfor_Airbase_1 {
 			path = "z\AUX_95th\addons\compositions\cis\airbase_1";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
@@ -95,12 +101,44 @@ class Cfg3DEN {
 			useSideColorOnIcon = 1;
 		};
 		
+		// CIS - Artillery
 		class AUX_95th_Opfor_Artillery_1 {
 			path = "z\AUX_95th\addons\compositions\cis\artillery_1";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
 			editorCategory = "AUX_95th_Legion_Compositions_CIS";
 			editorSubcategory = "AUX_95th_Legion_Compositions_Artillery";
 			displayName = "Triple Platform Artillery";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
+
+		class AUX_95th_Opfor_Artillery_2 {
+			path = "z\AUX_95th\addons\compositions\cis\artillery_2";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "AUX_95th_Legion_Compositions_Artillery";
+			displayName = "Quad Platform Artillery";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
+
+		// CIS - FOB's
+		class AUX_95th_Opfor_FOB_1 {
+			path = "z\AUX_95th\addons\compositions\cis\fob_1";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "AUX_95th_Legion_Compositions_FOBs";
+			displayName = "FOB 1";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
+
+		class AUX_95th_Opfor_FOB_5 {
+			path = "z\AUX_95th\addons\compositions\cis\fob_5";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "AUX_95th_Legion_Compositions_FOBs";
+			displayName = "FOB 5";
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};

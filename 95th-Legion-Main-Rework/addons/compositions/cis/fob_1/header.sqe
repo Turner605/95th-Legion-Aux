@@ -1,0 +1,33 @@
+version=54;
+name="[ModDev] [95th] FOB 1";
+author="MotherFucking Catshark";
+category="WBK_HLALYX_Civil_Structures";
+requiredAddons[]=
+{
+	"3as_GNK_Prop",
+	"3AS_Prop_Barricades",
+	"3AS_Prop_Platforms",
+	"3AS_Prop_Crates",
+	"3AS_Structures_Lights",
+	"3AS_Structures_FOB",
+	"3AS_Prop_Flags",
+	"ls_props",
+	"3AS_Prop_Furniture",
+	"3AS_Deka",
+	"3AS_Structure2_MissionTools",
+	"3AS_Prop_Generators",
+	"3AS_Imperial",
+	"3AS_Prop_Trenches",
+	"OPTRE_BW_ModularBuildings",
+	"lsb_structures",
+	"3AS_Structures_ShieldGenerator",
+	"3AS_Prop_Terminals",
+	"3AS_Assualt",
+	"A3_Modules_F",
+	"3AS_AAT",
+	"AUX_95th_Extras_overrides",
+	"ls_vehicles_agt",
+	"3AS_Structures_City",
+	"3AS_Structures2_FlatShields",
+	"3AS_Prop_Sullust"
+};

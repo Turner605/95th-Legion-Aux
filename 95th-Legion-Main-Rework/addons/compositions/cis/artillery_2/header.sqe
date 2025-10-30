@@ -1,0 +1,39 @@
+version=54;
+name="[95th] [ModDev] Artillery 2";
+author="MotherFucking Catshark";
+category="OPTRE_EditorSubcategory_Objects_Military";
+requiredAddons[]=
+{
+	"3AS_Structures_FOB",
+	"3AS_Prop_Platforms",
+	"OPTRE_BW_WarehouseRS",
+	"3AS_Prop_Terminals",
+	"A3_Modules_F",
+	"3AS_Prop_orto_plut_interiors",
+	"3AS_Structures_City",
+	"3AS_Structures2_StairsLadderElevator",
+	"JLTS_characters_DroidArmor",
+	"AUX_95th_Extras_overrides",
+	"3AS_HAAG",
+	"3AS_Prop_Crates",
+	"3AS_Marketplace",
+	"3AS_VehicleWeapons",
+	"3AS_Ammo",
+	"3AS_Props2_Crates2",
+	"SFA_Structure_Buildings",
+	"3AS_Structures_ShieldGenerator",
+	"3AS_Structure2_MissionTools",
+	"lsb_structures",
+	"3as_GNK_Prop",
+	"ls_props",
+	"3AS_Prop_Furniture",
+	"3AS_Deka",
+	"3AS_Prop_Trenches",
+	"3AS_Prop_Barricades",
+	"3AS_Structures_Lights",
+	"3AS_Imperial",
+	"A3_Characters_F_Common",
+	"ls_vehicles_mrbc",
+	"3as_ModularPlatforms",
+	"3AS_Prop_planetaryshields"
+};
