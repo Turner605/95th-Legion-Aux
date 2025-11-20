@@ -3,10 +3,16 @@
 class CfgPatches {
     class DOUBLES(PREFIX,COMPONENT) {
         name = COMPONENT_NAME;
-        units[] = {"AUX_95th_Medical_Shield", "AUX_95th_WBK_Combine_WalhammerShield_actual", "AUX_95th_Shield_Small", "AUX_95th_Shield_Target_Test"};
+        units[] = {
+            "AUX_95th_Medical_Shield", 
+            "AUX_95th_WBK_Combine_WalhammerShield_actual", 
+            "AUX_95th_Shield_Small", 
+            "AUX_95th_Shield_Target_Test",
+            "AUX_95th_Ward_Shield"
+        };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"AUX_95th_main", "AUX_95th_objects_shared"};
+        requiredAddons[] = {"AUX_95th_main", "AUX_95th_objects_shared", "3as_shieldFunctions"};
         authors[] = {"Turner"};
         VERSION_CONFIG;
     };
@@ -50,6 +56,23 @@ class CfgVehicles {
         sound="Shield";
         scope=2;
         scopecurator=2;
+    };
+
+    class Full_Shield;
+    class AUX_95th_Ward_Shield : CBA_B_InvisibleTarget {
+        displayName="Shield (Ward)";
+        editorCategory="AUX_95th_Objects_Generic";
+        editorSubcategory="AUX_95th_Objects_Shields";
+        model = "3AS\3AS_Shield\Personal_Shield.p3d";
+		armorStructural = 999;
+        armor=999999;
+        sound="Shield";
+        scope=2;
+        scopecurator=2;
+		// simulation = "Fountain";
+        class EventHandlers {
+			init="_this call AUX_95th_fnc_handleWardShieldInit";
+        };
     };
 };
 

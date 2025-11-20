@@ -46,6 +46,7 @@ class CfgFunctions {
             class handleCrateSpawned {};
             class checkPlayerInBriefing {};
             class handlePodInsert {};
+            class handleWardShieldInit {};
         };
 
         class Objects_Shared_Air {

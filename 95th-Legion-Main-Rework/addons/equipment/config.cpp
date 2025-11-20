@@ -18,7 +18,17 @@ class DarkswordHackingAbilities {
 		condition = "true";
 		action = "[ace_player] spawn AUX_95th_fnc_triggerHoloDecoys";
 		icon = "";
-		cooldown = 60;
+		cooldown = 120;
+		activationSound = "";
+		activationGesture = "";
+	};
+
+	class Ward {
+		displayName = "Ward";
+		condition = "true";
+		action = "[ace_player] spawn AUX_95th_fnc_triggerWard";
+		icon = "";
+		cooldown = 240;
 		activationSound = "";
 		activationGesture = "";
 	};
@@ -274,6 +284,7 @@ class CfgFunctions {
         class Hacker {
 			file = "\z\AUX_95th\addons\equipment\functions\hacker";
             class triggerHoloDecoys {};
+            class triggerWard {};
         };
     };
 };
