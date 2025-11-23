@@ -7,9 +7,9 @@ if (!isServer) exitWith {};
 [[_vehicle], {
 	params ["_vehicle"];
 
-	//#################################### Clear Foliage ####################################
+	//#################################### Clear Terrain ####################################
 
-	_vehicle addAction ["<t color='#00fb21'>Clear Foliage</t>", {
+	_vehicle addAction ["<t color='#00fb21'>Clear Terrain</t>", {
 		params ["_vehicle"];
 
 		[5, [_vehicle], {
@@ -29,9 +29,9 @@ if (!isServer) exitWith {};
 			(str(_x) find "stone" >= 0)) then 
 			{ _hideTObjs pushBack _x } else {}; } forEach (nearestTerrainObjects [_pos,[],_size]);
 
-			{ _x hideObjectGlobal true } forEach _hideTObjs;
+			{ [_x, true] remoteExec ["hideObjectGlobal", 2]; } forEach _hideTObjs;
 
-		}, {}, "Clearing Foliage...", {true}, ["isNotInside"]] call ace_common_fnc_progressBar;
+		}, {}, "Clearing Terrain...", {true}, ["isNotInside"]] call ace_common_fnc_progressBar;
 
 	},[], 1.5, true, true, ""];
 
