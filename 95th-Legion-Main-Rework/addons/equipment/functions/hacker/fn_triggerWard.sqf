@@ -21,4 +21,9 @@ private _squadUnits = units _unit;
 
 	_squadMember setVariable ["AUX_95th_Ward_Shield", _shieldObj, true];
 
+    [{
+        params ["_shieldObj"];
+        deleteVehicle _shieldObj;
+    }, [_shieldObj], AUX_95th_Ward_Shield_Duration] call CBA_fnc_waitAndExecute;
+
 } forEach _squadUnits;
