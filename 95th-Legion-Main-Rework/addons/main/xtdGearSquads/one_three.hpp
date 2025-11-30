@@ -1,7 +1,7 @@
 class Player {
     alwaysSelectable = 0;
     labels = "Player";
-    values[] = {"MoonShine", "Sparkie", "Jack", "Charlie", "Grunzit", "Wombat", "Steff", "Coady"};
+    values[] = {"MoonShine", "Sparkie", "Jack", "Charlie", "Grunzit", "Wombat", "Steff", "Coady", "Embers"};
     class MoonShine { label = "MoonShine"; description = "MoonShine`s"; };
     class Sparkie { label = "Sparkie"; description = "Sparkie`s"; };
     class Jack { label = "Jack"; description = "Jack`s"; };
@@ -10,4 +10,5 @@ class Player {
     class Wombat { label = "Wombat"; description = "Wombat`s"; };
     class Steff { label = "Steff"; description = "Steff`s"; };
     class Coady { label = "Coady"; description = "Coady`s"; };
+    class Embers { label = "Embers"; description = "Embers`s"; };
 };

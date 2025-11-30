@@ -1,15 +1,15 @@
-#define COMPONENT players_ranger
-#define COMPONENT_BEAUTIFIED Players_Ranger
-#define PLAYER_NAME ranger
-#define PLAYER_NAME_BEAUTIFIED Ranger
+#define COMPONENT players_embers
+#define COMPONENT_BEAUTIFIED Players_Embers
+#define PLAYER_NAME embers
+#define PLAYER_NAME_BEAUTIFIED Embers
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY One_Two
+#define SQUAD_KEY One_Three
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
 #define HELMET_P1_ENGINEER 0
-#define HELMET_P1_ARF 1
+#define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
 #define HELMET_P1_SPECOPS 0
 #define HELMET_P1_HAZARD 0
@@ -21,7 +21,7 @@
 #define HELMET_P2_MARINE_SET 0
 
 // UNIFORM OPTIONS 0 (False), 1 (True)
-#define UNIFORM_P1_BASIC 1
+#define UNIFORM_P1_BASIC 0
 #define UNIFORM_P1_MC 0
 #define UNIFORM_P1_COLDASSAULT 0
 #define UNIFORM_P1_COMMANDO 0
@@ -44,7 +44,7 @@
 // VEST OPTIONS 0 (False), 1 (True)
 #define VEST_STANDARD_SET 0
 #define VEST_ARC_SET 0
-#define VEST_OFFICER_SET 1
+#define VEST_OFFICER_SET 0
 #define VEST_COMMANDO_SET 0
 #define VEST_MARINE_SET 0
 
@@ -54,4 +54,4 @@
 #include "\z\AUX_95th\addons\main\script_macros.hpp"
 
 //TODO:
-// Vests need replacing really
+// Vests need replacing really 
