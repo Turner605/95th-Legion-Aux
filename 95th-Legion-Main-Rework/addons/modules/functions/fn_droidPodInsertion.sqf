@@ -12,7 +12,7 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _position, [], 0, "NO
     _dropPos = [
         (_position select 0),
         (_position select 1),
-        300
+        (_position select 2)+300
     ];
 
     private _spawnArray = [];
