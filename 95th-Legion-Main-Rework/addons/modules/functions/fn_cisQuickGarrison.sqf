@@ -1,7 +1,13 @@
 params ["_position", "_unitSide", "_radius", "_garrisonPercentage", "_b1Type", "_includeB2", "_randomizePositions"];
 
 private _b1TypeArray = [
-    ["JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_SBB3", "JLTS_Droid_B1_AR", "JLTS_Droid_B1_AT"],
+    [
+        "JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", "JLTS_Droid_B1_E5", 
+        "JLTS_Droid_B1_SBB3", "JLTS_Droid_B1_SBB3", 
+        "JLTS_Droid_B1_AR", "JLTS_Droid_B1_AR", 
+        "JLTS_Droid_B1_AT", 
+        "JLTS_Droid_B1_Marine"
+    ],
     ["AUX_95th_Droid_B1_Rocket_E5", "AUX_95th_Droid_B1_Rocket_E5", "AUX_95th_Droid_B1_Rocket_E5", "AUX_95th_Droid_B1_Rocket_AT"],
     ["JLTS_Droid_B1_Security"]
 ];
