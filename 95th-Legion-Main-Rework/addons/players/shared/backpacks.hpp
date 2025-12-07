@@ -8,6 +8,7 @@ class JLTS_Clone_jumppack_mc;
 class 3AS_B_Katarn_Backpack;
 class ReammoBox;
 class Bag_Base: ReammoBox{};
+class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
 
 #if BACKPACK_BELT_LIGHT == 1
     class AUX_95th_Backpack_Belt_Light_Shown_##PLAYER_NAME : JLTS_Clone_belt_bag {
@@ -837,6 +838,35 @@ class Bag_Base: ReammoBox{};
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
             Type = "Flamer";
+            Role = "Light";
+            Visibility = "Shown";
+            Radio = "Enabled";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+#endif
+
+#if BACKPACK_MORAL == 1
+    class AUX_95th_Backpack_Moral_Light_RTO_Shown_##PLAYER_NAME : 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F {
+        author="95th Aux Team";
+        displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
+        scope=2; 
+        maximumLoad=250; 
+        mass=80;
+        picture=QUOTE(\z\AUX_95th\addons\players\shared\insignias\SQUAD_KEY.paa);
+        hiddenSelectionsTextures[]={
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\backpacks\moral\backpack.paa),
+            QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\backpacks\moral\machine.paa)
+        };
+        tf_dialog="JLTS_clone_lr_programmer_radio_dialog";
+        tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode="tf_west_radio_code";
+        tf_hasLRradio=1;
+        tf_range=16000;
+        tf_subtype="digital_lr";
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
+            Type = "Moral";
             Role = "Light";
             Visibility = "Shown";
             Radio = "Enabled";

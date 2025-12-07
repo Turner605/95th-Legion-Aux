@@ -71,6 +71,7 @@ private _macroArray = [
 
     ["AUX_95th_Backpack_Commando_Heavy_RTO_Shown_", BACKPACK_COMMANDO_HEAVY],
     ["AUX_95th_Backpack_Flamer_Light_RTO_Shown_", BACKPACK_FLAMER],
+    ["AUX_95th_Backpack_Moral_Light_RTO_Shown_", BACKPACK_MORAL],
 
 
 
