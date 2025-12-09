@@ -64,6 +64,7 @@ class CfgGroups {
 			name = "[95th] Separatist Army";
             #include "./groups/standardB1s.hpp"
             #include "./groups/rocketB1s.hpp"
+            #include "./groups/bxs.hpp"
 		};
 	};
 };

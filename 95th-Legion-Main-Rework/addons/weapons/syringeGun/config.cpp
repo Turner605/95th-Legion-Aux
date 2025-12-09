@@ -21,7 +21,8 @@ class CfgAmmo {
 	class AUX_95th_Syringe_Ammo: B_9x21_Ball {
 		author = "95th Aux Team";
 		model = "\MRC\JLTS\contraband\Drugs\stimulant.p3d";
-		effectFly = "3AS_PlasmaBolt_Blue_Fly";
+		maxSpeed = 1;
+		effectFly = ""; // 3AS_PlasmaBolt_Blue_Fly
 		tracerScale = 0.8;
 		cartridge = "";
 		lightcolor[] = {0,0,0};
@@ -34,7 +35,7 @@ class CfgAmmo {
 		airlock = 1;
 		irtarget = 1;
 		brightness = 1000;
-		timetolive = 3;
+		timetolive = 2;
 		airfriction = 0;
 		coefgravity = 0;
 		deflecting = 0;
