@@ -26,6 +26,14 @@ class CfgFunctions {
             class reanimateDroid {};
             class startIonStorm {};
         };
+
+        class Modules_DroidPod {
+			file = "\z\AUX_95th\addons\modules\functions\droidPods";
+            class handleDroidPodModule {};
+            class handleDroidPodDrop {};
+            class handleDroidPodPlace {};
+            class handleDroidPodSpawning {};
+        };
     };
 };
 
