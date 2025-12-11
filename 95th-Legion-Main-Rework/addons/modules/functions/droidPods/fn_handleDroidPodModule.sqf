@@ -20,7 +20,7 @@ if(_warning) then {_delayTime = 10};
 private _warningSmoke = createVehicle ["SmokeShellOrange", _modulePosition, [], 0, "NONE"]; 
 
 [{
-    params["_dropPos", "_unitSide", "_method", "_mode", "_squadType", "_includeRockets", "_includeB2", "_shielded", "_smokescreen"];
+    params["_dropPos", "_unitSide", "_method", "_mode", "_squadType", "_includeRockets", "_includeB2", "_shielded", "_smokescreen", "_warningSmoke"];
 
     private _podType = "ls_droidDispenser";
     if(_squadType == 1) then {_podType = "3AS_Droid_Dispenser_F";};
@@ -33,6 +33,7 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _modulePosition, [], 
     private _attachPoint = createVehicle ["Land_HelipadEmpty_F", _podPos, [], 0, "CAN_COLLIDE"];
 
     private _shield = createVehicle ["AUX_95th_Shield_Small", _podPos, [], 0, "CAN_COLLIDE"];
+    [_shield, _spawnerPod] call BIS_fnc_attachToRelative;
     _shield hideObjectGlobal true;
 
     _spawnerPod setVariable ["AUX_95th_Droid_Pod_WarningSmoke", _warningSmoke, true];
@@ -77,7 +78,7 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _modulePosition, [], 
         [_dropPos, _unitSide, _mode, _squadType, _includeRockets, _includeB2, _shielded, _smokescreen, _spawnerPod] call AUX_95th_fnc_handleDroidPodPlace;
     }
 
-}, [_dropPos, _unitSide, _method, _mode, _squadType, _includeRockets, _includeB2, _shielded, _smokescreen], _delayTime] call CBA_fnc_waitAndExecute;
+}, [_dropPos, _unitSide, _method, _mode, _squadType, _includeRockets, _includeB2, _shielded, _smokescreen, _warningSmoke], _delayTime] call CBA_fnc_waitAndExecute;
 
 //TODO:
 // - crater if on terrain

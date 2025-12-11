@@ -1,7 +1,5 @@
 params ["_dropPos", "_unitSide", "_mode", "_squadType", "_includeRockets", "_includeB2", "_shielded", "_smokescreen", "_spawnerPod"];
 
-systemChat "Spawning";
-
 [{
     params["_dropPos", "_unitSide", "_mode", "_squadType", "_includeRockets", "_includeB2", "_shielded", "_smokescreen", "_spawnerPod"];
 
@@ -12,6 +10,11 @@ systemChat "Spawning";
 
     if(_squadType == 1) then {
         _singleUse = true;
+    };
+
+    if(_shielded) then {
+        private _shield = _spawnerPod getVariable "AUX_95th_Droid_Pod_Shield";
+        _shield hideObjectGlobal false;
     };
 
     if(_singleUse) then {

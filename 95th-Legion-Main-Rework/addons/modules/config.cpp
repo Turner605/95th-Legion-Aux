@@ -20,7 +20,6 @@ class CfgFunctions {
 			file = "\z\AUX_95th\addons\modules\functions";
             class cisQuickGarrison {};
             class jetDroidInsertion {};
-            class droidPodInsertion {};
             class isCloseToGround {};
             class broadcastOrder66 {};
             class reanimateDroid {};
