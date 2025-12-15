@@ -40,7 +40,7 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _modulePosition, [], 
     _spawnerPod setVariable ["AUX_95th_Droid_Pod_AttachPoint", _attachPoint, true];
     _spawnerPod setVariable ["AUX_95th_Droid_Pod_Shield", _shield, true];
 
-    _spawnedPod addEventHandler ["Killed", {
+    _spawnerPod addEventHandler ["Killed", {
         params ["_spawnerPod"];
 
         private _warningSmoke = _spawnerPod getVariable "AUX_95th_Droid_Pod_WarningSmoke";
