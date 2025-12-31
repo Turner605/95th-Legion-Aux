@@ -34,31 +34,56 @@ if (!hasInterface) exitWith {};
     }, {}, [_pos]] call zen_dialog_fnc_create;
 }, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
 
-// Droid Pod Insertion
-["[95th] Modules", "Droid Pod Insertion", {
+// Droid Pod Spawner
+["[95th] Modules", "Droid Pod Spawner", {
     params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
 
     ["Summon Droid Pod", [
         ["SIDES", ["Side", "The side the dropped unit will be."], east],
+        ["TOOLBOX", "Method", [0, 1, 2, ["Drop", "Place"]]],
+        ["TOOLBOX", "Mode", [1, 1, 4, ["Hold", "Seek", "Garrison", "Garrison (Force)"]]],
+        ["TOOLBOX", "Squad Type", [0, 1, 2, ["B1", "BX (Single Use)"]]],
+
+        ["CHECKBOX",["Include AT/AA","Should the pod have a chance to spawn an AA/AT Trooper"],[false]],
+        ["CHECKBOX",["Include B2","Should the pod have a chance to spawn a B2 battledroid"],[false]],
+
         ["CHECKBOX",["Warning","Should an orange smoke be placed beforehand"],[true]],
-        ["TOOLBOX", "Squad Type", [0, 1, 3, ["B1", "B1+B2", "BX"]]],
-        ["TOOLBOX", "Mode", [0, 1, 4, ["Hold", "Seek", "Garrison", "Garrison (Force)"]]],
-        ["CHECKBOX",["Single Use","Should the pod not act as a spawner"],[false]],
         ["CHECKBOX",["Shielded","Should the pod have an attached shield"],[false]],
         ["CHECKBOX",["Smokescreen","Should the pod have a smokescreen"],[false]]
     ], {
         params["_values", "_args"];
+
+        _modulePosition = _args select 0;
+
+        private _startPosASL = [(_modulePosition select 0), (_modulePosition select 1), (_modulePosition select 2)+4000];
+        private _endPosASL = [(_modulePosition select 0), (_modulePosition select 1), 0];
+        private _intersectPos = (lineIntersectsSurfaces [_startPosASL, _endPosASL, objNull, objNull, true, 1, "FIRE", "GEOM"]) select 0 select 0;
+
         _unitSide = _values#0;
-        _warning = _values#1;
-        _squadType = _values#2;
-        _mode = _values#3;
-        _singleUse = _values#4;
-        _shielded = _values#5;
-        _smokescreen = _values#6;
+        _method = _values#1;
+        _mode = _values#2;
+        _squadType = _values#3;
 
-        _position = _args select 0;
+        _includeRockets = _values#4;
+        _includeB2 = _values#5;
 
-        [_position, _unitSide, _warning, _squadType, _mode, _singleUse, _shielded, _smokescreen] call AUX_95th_fnc_droidPodInsertion;
+        _warning = _values#6;
+        _shielded = _values#7;
+        _smokescreen = _values#8;
+
+        [
+            _intersectPos,
+            _unitSide,
+            _method,
+            _mode,
+            _squadType,
+            _includeRockets,
+            _includeB2,
+            _warning,
+            _shielded,
+            _smokescreen
+        ] call AUX_95th_fnc_handleDroidPodModule;
+
     }, {}, [_pos]] call zen_dialog_fnc_create;
 }, "\z\AUX_95th\addons\modules\data\Droid.paa"] call zen_custom_modules_fnc_register;
 

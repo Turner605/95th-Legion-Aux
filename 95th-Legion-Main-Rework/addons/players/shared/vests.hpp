@@ -29,6 +29,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\rifleman.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
             uniformModel="\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -57,6 +58,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\pilot.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
             uniformModel="\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -85,6 +87,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\jet.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
             uniformModel="\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -113,6 +116,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\grenadier.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
             uniformModel="\MRC\JLTS\characters\CloneArmor2\CloneVestHolster.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -142,6 +146,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\medic.paa)
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
             uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
             containerClass = "Supply190";
             hiddenSelections[] = {"camo1","camo2"};
@@ -171,6 +176,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\at.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
             uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
             containerClass = "Supply190";
             hiddenSelections[] = {"camo1","camo2"};
@@ -200,6 +206,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\heavy.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
             uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestAirborne.p3d";
             containerClass = "Supply190";
             hiddenSelections[] = {"camo1","camo2"};
@@ -228,6 +235,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\marksman.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
             containerClass = "Supply190";
             hiddenSelections[] = {"camo1","camo2"};
@@ -256,6 +264,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\riot.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -284,6 +293,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\flame.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -312,6 +322,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\stealth.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -340,6 +351,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\support.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -368,6 +380,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\tech.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestRecon.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -396,6 +409,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\engineer.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestSuspender.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -424,6 +438,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\crewman.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestSuspender.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -452,6 +467,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\standard\drone_operator.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestSuspender.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -482,6 +498,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\arc.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestARC.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -579,6 +596,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\officer\sergeant_top.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestReconOfficer.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1", "camo2" };
@@ -607,6 +625,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\officer\officer.paa)
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestCommander.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -635,6 +654,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\officer\officer.paa)
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestOfficer2.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -663,6 +683,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\officer\officer.paa)
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 		    uniformModel="\MRC\JLTS\characters\CloneArmor\CloneVestKama.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
@@ -693,6 +714,7 @@ class ItemInfo;
             QUOTE(\z\AUX_95th\addons\players\PLAYER_NAME\data\vests\marine\rifleman.paa) 
         };
         class ItemInfo: VestItem {
+            vestType = "rebreather";
 			uniformModel = "JLTS_AE_GM\SEA_Vest_GM_Base.p3d";
             containerClass = "Supply190";
             hiddenSelections[]= { "camo1" };
