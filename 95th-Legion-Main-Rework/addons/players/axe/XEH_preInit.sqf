@@ -60,7 +60,11 @@ private _macroArray = [
     ["AUX_95th_Backpack_Rucksack_Ordnance_RTO_Hidden_", BACKPACK_RUCKSACK_ORDNANCE],
 
     ["AUX_95th_Backpack_JT12_Light_Shown_", JETPACK_JT12_LIGHT],
+    ["AUX_95th_Backpack_JT12_Medium_Shown_", JETPACK_JT12_LIGHT],
+    ["AUX_95th_Backpack_JT12_Heavy_Shown_", JETPACK_JT12_LIGHT],
     ["AUX_95th_Backpack_JT12_Light_RTO_Shown_", JETPACK_JT12_LIGHT],
+    ["AUX_95th_Backpack_JT12_Medium_RTO_Shown_", JETPACK_JT12_LIGHT],
+    ["AUX_95th_Backpack_JT12_Heavy_RTO_Shown_", JETPACK_JT12_LIGHT],
 
     ["AUX_95th_Backpack_JT12_Medic_Shown_", JETPACK_JT12_MEDIC],
     ["AUX_95th_Backpack_JT12_Medic_RTO_Shown_", JETPACK_JT12_MEDIC],
