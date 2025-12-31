@@ -18,8 +18,9 @@ class Type {
 
 class Role {
 	labels = "Type";
-	values[] = {"Light", "Heavy", "Medic", "Ordnance"};
+	values[] = {"Light", "Medium", "Heavy", "Medic", "Ordnance"};
 	class Light { label = "Light"; description = "Light Bag"; };
+	class Medium { label = "Medium"; description = "Medium Backpack"; };
 	class Heavy { label = "Heavy"; description = "Heavy Backpack"; };
 	class Medic { label = "Medic"; description = "Medic Backpack"; };
 	class Ordnance { label = "Ordnance"; description = "Ordnance Backpack"; };

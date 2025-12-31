@@ -613,7 +613,7 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
 #endif
 
 #if JETPACK_JT12_LIGHT == 1
-    class AUX_95th_Backpack_JT12_Light_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_JT12 {
+    class AUX_95th_Backpack_JT12_Medium_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_JT12 {
         author="95th Aux Team";
         displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
@@ -624,22 +624,22 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         tf_hasLRradio=0;
         DSS_Is_Jetpack = 1;
         DSS_Jetpack_Acceleration = 1;
-        DSS_Jetpack_Resistance = 1.5;
-        DSS_Jetpack_Dash_Power_Modifier = 1;
+        DSS_Jetpack_Resistance = 2;
+        DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
-        DSS_Jetpack_Max_Heat = 40;
+        DSS_Jetpack_Max_Heat = 30;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
             Type = "JT12";
-            Role = "Light";
+            Role = "Medium";
             Visibility = "Shown";
             Radio = "Disabled";
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
         };
     };
 
-    class AUX_95th_Backpack_JT12_Light_RTO_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_JT12 {
+    class AUX_95th_Backpack_JT12_Medium_RTO_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_JT12 {
         author="95th Aux Team";
         displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
@@ -655,15 +655,82 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         tf_subtype="digital_lr";
         DSS_Is_Jetpack = 1;
         DSS_Jetpack_Acceleration = 1;
-        DSS_Jetpack_Resistance = 1.5;
-        DSS_Jetpack_Dash_Power_Modifier = 1;
+        DSS_Jetpack_Resistance = 2;
+        DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
-        DSS_Jetpack_Max_Heat = 40;
+        DSS_Jetpack_Max_Heat = 30;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
             Type = "JT12";
+            Role = "Medium";
+            Visibility = "Shown";
+            Radio = "Enabled";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+
+    class AUX_95th_Backpack_JT12_Light_Shown_##PLAYER_NAME : AUX_95th_Backpack_JT12_Medium_Shown_##PLAYER_NAME {
+        DSS_Jetpack_Acceleration = 3;
+        DSS_Jetpack_Resistance = 6;
+        DSS_Jetpack_Dash_Power_Modifier = 2;
+        DSS_Jetpack_Dash_Cost = 3;
+        DSS_Jetpack_Max_Heat = 10;
+
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
+            Type = "JT12";
             Role = "Light";
+            Visibility = "Shown";
+            Radio = "Disabled";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+
+    class AUX_95th_Backpack_JT12_Light_RTO_Shown_##PLAYER_NAME : AUX_95th_Backpack_JT12_Medium_RTO_Shown_##PLAYER_NAME {
+        DSS_Jetpack_Acceleration = 3;
+        DSS_Jetpack_Resistance = 6;
+        DSS_Jetpack_Dash_Power_Modifier = 2;
+        DSS_Jetpack_Dash_Cost = 3;
+        DSS_Jetpack_Max_Heat = 10;
+        
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
+            Type = "JT12";
+            Role = "Light";
+            Visibility = "Shown";
+            Radio = "Enabled";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+
+
+    class AUX_95th_Backpack_JT12_Heavy_Shown_##PLAYER_NAME : AUX_95th_Backpack_JT12_Medium_Shown_##PLAYER_NAME {
+        DSS_Jetpack_Acceleration = 0.7;
+        DSS_Jetpack_Resistance = 2;
+        DSS_Jetpack_Dash_Power_Modifier = 1;
+        DSS_Jetpack_Max_Heat = 60;
+
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
+            Type = "JT12";
+            Role = "Heavy";
+            Visibility = "Shown";
+            Radio = "Disabled";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+
+    class AUX_95th_Backpack_JT12_Heavy_RTO_Shown_##PLAYER_NAME : AUX_95th_Backpack_JT12_Medium_RTO_Shown_##PLAYER_NAME {
+        DSS_Jetpack_Acceleration = 0.7;
+        DSS_Jetpack_Resistance = 2;
+        DSS_Jetpack_Dash_Power_Modifier = 1;
+        DSS_Jetpack_Max_Heat = 60;
+        
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
+            Type = "JT12";
+            Role = "Heavy";
             Visibility = "Shown";
             Radio = "Enabled";
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
@@ -683,10 +750,10 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         tf_hasLRradio=0;
         DSS_Is_Jetpack = 1;
         DSS_Jetpack_Acceleration = 1;
-        DSS_Jetpack_Resistance = 1.5;
-        DSS_Jetpack_Dash_Power_Modifier = 1;
+        DSS_Jetpack_Resistance = 2;
+        DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
-        DSS_Jetpack_Max_Heat = 40;
+        DSS_Jetpack_Max_Heat = 30;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
@@ -714,10 +781,10 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         tf_subtype="digital_lr";
         DSS_Is_Jetpack = 1;
         DSS_Jetpack_Acceleration = 1;
-        DSS_Jetpack_Resistance = 1.5;
-        DSS_Jetpack_Dash_Power_Modifier = 1;
+        DSS_Jetpack_Resistance = 2;
+        DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
-        DSS_Jetpack_Max_Heat = 40;
+        DSS_Jetpack_Max_Heat = 30;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
@@ -731,7 +798,7 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
 #endif
 
 #if JETPACK_JT14_LIGHT == 1
-    class AUX_95th_Backpack_JT14_Light_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_mc {
+    class AUX_95th_Backpack_JT14_Medium_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_mc {
         author="95th Aux Team";
         displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
@@ -742,22 +809,22 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         tf_hasLRradio=0;
         DSS_Is_Jetpack = 1;
         DSS_Jetpack_Acceleration = 1;
-        DSS_Jetpack_Resistance = 1.5;
+        DSS_Jetpack_Resistance = 2;
         DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
-        DSS_Jetpack_Max_Heat = 40;
+        DSS_Jetpack_Max_Heat = 30;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
             Type = "JT14";
-            Role = "Light";
+            Role = "Medium";
             Visibility = "Shown";
             Radio = "Disabled";
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
         };
     };
 
-    class AUX_95th_Backpack_JT14_Light_RTO_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_mc {
+    class AUX_95th_Backpack_JT14_Medium_RTO_Shown_##PLAYER_NAME : JLTS_Clone_jumppack_mc {
         author="95th Aux Team";
         displayName=QUOTE([95th] SQUAD_NUMBER SQUAD_NAME Backpacks); 
 	    maximumLoad=150;
@@ -773,15 +840,78 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         tf_subtype="digital_lr";
         DSS_Is_Jetpack = 1;
         DSS_Jetpack_Acceleration = 1;
-        DSS_Jetpack_Resistance = 1.5;
+        DSS_Jetpack_Resistance = 2;
         DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
-        DSS_Jetpack_Max_Heat = 40;
+        DSS_Jetpack_Max_Heat = 30;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
             Type = "JT14";
+            Role = "Medium";
+            Visibility = "Shown";
+            Radio = "Enabled";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+
+    class AUX_95th_Backpack_JT14_Light_Shown_##PLAYER_NAME : AUX_95th_Backpack_JT14_Medium_Shown_##PLAYER_NAME {
+        DSS_Jetpack_Acceleration = 3;
+        DSS_Jetpack_Resistance = 6;
+        DSS_Jetpack_Dash_Power_Modifier = 2;
+        DSS_Jetpack_Dash_Cost = 3;
+        DSS_Jetpack_Max_Heat = 10;
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
+            Type = "JT14";
             Role = "Light";
+            Visibility = "Shown";
+            Radio = "Disabled";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+
+    class AUX_95th_Backpack_JT14_Light_RTO_Shown_##PLAYER_NAME : AUX_95th_Backpack_JT14_Medium_RTO_Shown_##PLAYER_NAME {
+        DSS_Jetpack_Acceleration = 3;
+        DSS_Jetpack_Resistance = 6;
+        DSS_Jetpack_Dash_Power_Modifier = 2;
+        DSS_Jetpack_Dash_Cost = 3;
+        DSS_Jetpack_Max_Heat = 10;
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
+            Type = "JT14";
+            Role = "Light";
+            Visibility = "Shown";
+            Radio = "Enabled";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+
+
+    class AUX_95th_Backpack_JT14_Heavy_Shown_##PLAYER_NAME : AUX_95th_Backpack_JT14_Medium_Shown_##PLAYER_NAME {
+        DSS_Jetpack_Acceleration = 0.7;
+        DSS_Jetpack_Resistance = 2;
+        DSS_Jetpack_Dash_Power_Modifier = 1;
+        DSS_Jetpack_Max_Heat = 60;
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
+            Type = "JT14";
+            Role = "Heavy";
+            Visibility = "Shown";
+            Radio = "Disabled";
+            Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
+        };
+    };
+
+    class AUX_95th_Backpack_JT14_Heavy_RTO_Shown_##PLAYER_NAME : AUX_95th_Backpack_JT14_Medium_RTO_Shown_##PLAYER_NAME {
+        DSS_Jetpack_Acceleration = 0.7;
+        DSS_Jetpack_Resistance = 2;
+        DSS_Jetpack_Dash_Power_Modifier = 1;
+        DSS_Jetpack_Max_Heat = 60;
+        class XtdGearInfo {
+            model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
+            Type = "JT14";
+            Role = "Heavy";
             Visibility = "Shown";
             Radio = "Enabled";
             Player = QUOTE(PLAYER_NAME_BEAUTIFIED);
