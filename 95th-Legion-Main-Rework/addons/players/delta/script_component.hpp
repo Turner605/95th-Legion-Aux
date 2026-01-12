@@ -1,10 +1,10 @@
-#define COMPONENT players_lucky
-#define COMPONENT_BEAUTIFIED Players_Lucky
-#define PLAYER_NAME lucky
-#define PLAYER_NAME_BEAUTIFIED Lucky
+#define COMPONENT players_delta
+#define COMPONENT_BEAUTIFIED Players_Delta
+#define PLAYER_NAME delta
+#define PLAYER_NAME_BEAUTIFIED Delta
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY One_One
+#define SQUAD_KEY Unassigned
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
