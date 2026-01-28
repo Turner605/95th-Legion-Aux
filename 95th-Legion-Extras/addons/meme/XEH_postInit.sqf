@@ -10,7 +10,7 @@ AUX_95th_Extras_Jumpscare_Video_Chance = 10000;
     if (isGamePaused) exitWith {};
 
     private _random = floor (random (AUX_95th_Extras_Jumpscare_Video_Chance + 1));
-    systemChat str _random;
+
     if (    
         (!AUX_95th_Extras_Jumpscare_Video_Is_Playing) && 
         (_random == AUX_95th_Extras_Jumpscare_Video_Chance) &&
