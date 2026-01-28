@@ -1,0 +1,10 @@
+name = "Chernarus Redux";
+logo = "chr\chernarusredux_c\icon.paa";
+logoOver = "chr\chernarusredux_c\icon.paa";
+overviewPicture = "chr\chernarusredux_c\icon.paa";
+picture = "chr\chernarusredux_c\icon.paa";
+actionName = "website";
+action = "https://chernarusredux.com";
+tooltip = "Chernarus Redux";
+author = "CHR Team";
+overview = "In the post-Soviet country of Chernarus. Several years have passed since the insurgency conflict and viral outbreak. The Russian oriented country is now desolate and overgrown. The few that remain and inhabit the surrounding cities have chosen to bare arms and scavenge the land for supplies which is difficult to come by. Some may choose to believe Chernarus is hopeless, however, there is a growing movement of survivors trying to take back the very cities they lost 26 years ago.";
