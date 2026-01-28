@@ -21,7 +21,7 @@ class AUX_95th_Separatist_Army_B1_Standard {
         class Unit3 {side = 0; vehicle = "JLTS_Droid_B1_AT"; rank = "PRIVATE"; position[] = {10,-10,0};};
     };
 
-    class AUX_95th_Groups_Droid_B1_FireTeam_AT {
+    class AUX_95th_Groups_Droid_B1_FireTeam_AA {
         side = 0;
         faction = "AUX_95th_Separatist_Army";
         name="B1 AA Team";
