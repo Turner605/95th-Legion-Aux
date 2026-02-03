@@ -71,7 +71,7 @@ class CfgWeapons {
 		drySound[] = {"\z\AUX_95th\addons\weapons\shared\sounds\weapon_dry.wss",2,1,20};
 		DSS_DamageSystem_Power=15;
 
-		class FullAuto: Mode_FullAuto {
+		class FullAuto: FullAuto {
 			class StandardSound: StandardSound {
 				soundSetShot[] = {"AUX_95th_Heavy_Shot_SoundSet"};
 			};

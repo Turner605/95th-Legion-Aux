@@ -226,7 +226,7 @@ class CfgWeapons {
 		drySound[] = {"z\AUX_95th\addons\weapons\shared\sounds\weapon_dry.wss",5,1,10};
 		muzzles[] = {"this"};
 
-		class Single: Mode_SemiAuto {
+		class Single: Single {
 			sounds[] = {"StandardSound", "SilencedSound"};
 
 			class StandardSound: StandardSound {
