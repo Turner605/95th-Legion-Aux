@@ -1,0 +1,28 @@
+version=54;
+name="95th CB Spawn Preset";
+author="Too Many Cooks";
+category="ls_edsubcat_cloneTrooper_p1";
+requiredAddons[]=
+{
+	"AUX_95th_players_lieutenant",
+	"AUX_95th_players_sergeant",
+	"JLTS_weapons_DC15A",
+	"SEA_JLTS_EA_Scopes",
+	"JLTS_weapons_DC17SA",
+	"A3_Weapons_F",
+	"JLTS_weapons_Core",
+	"JLTS_radios",
+	"JLTS_characters_CloneArmor",
+	"AUX_95th_players_trooper",
+	"ace_attach",
+	"ace_chemlights",
+	"OPTRE_Hud",
+	"ace_realisticnames",
+	"A3_Weapons_F_Items",
+	"ace_medical_treatment",
+	"AUX_95th_players_shared",
+	"AUX_95th_players_shiny",
+	"AUX_95th_Extras_kits",
+	"A3_Modules_F_Curator_Curator",
+	"ace_fortify"
+};

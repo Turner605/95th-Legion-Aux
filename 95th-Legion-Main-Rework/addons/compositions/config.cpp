@@ -29,12 +29,24 @@ class CfgEditorSubcategories {
 	class AUX_95th_Legion_Compositions_Checkpoints {displayName = "Checkpoints";};
 	class AUX_95th_Legion_Compositions_AA {displayName = "AA";};
 	class AUX_95th_Legion_Compositions_Misc {displayName = "Misc";};
+	class AUX_95th_Legion_Compositions_Utility {displayName = "Utility";};
 	class AUX_95th_Legion_Compositions_Airbases {displayName = "Airbases";};
 	class AUX_95th_Legion_Compositions_Artillery {displayName = "Artillery";};
 };
 
 class Cfg3DEN {
 	class Compositions {
+
+		// GAR - Utility
+		class AUX_95th_Spawn_Preset_GAR {
+			path = "z\AUX_95th\addons\compositions\gar\spawn preset";
+			side = 1; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_GAR";
+			editorSubcategory = "AUX_95th_Legion_Compositions_Utility";
+			displayName = "Spawn Preset";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
 
 		// GAR - FOB's
 		class AUX_95th_FOB_Blackweb {
@@ -97,6 +109,16 @@ class Cfg3DEN {
 			editorCategory = "AUX_95th_Legion_Compositions_CIS";
 			editorSubcategory = "AUX_95th_Legion_Compositions_Airbases";
 			displayName = "Tree Pad Airbase";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
+
+		class AUX_95th_Opfor_Airbase_2 {
+			path = "z\AUX_95th\addons\compositions\cis\airbase_2";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "AUX_95th_Legion_Compositions_Airbases";
+			displayName = "Four Pad Airbase";
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};
