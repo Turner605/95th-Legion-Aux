@@ -23,6 +23,13 @@ class CfgFunctions {
             class addDefaultClasses {};
             class constructRestrictedArsenal {};
         };
+
+        class PointsSystem {
+			file = "\z\AUX_95th_Extras\addons\kits\functions\pointSystem";
+            class checkPointsThrowables {};
+            class displayPointMessage {};
+            class hidePointMessage {};
+        };
     };
 };
 
