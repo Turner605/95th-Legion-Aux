@@ -43,9 +43,9 @@
 #define BACKPACK_MORAL 0
 
 // VEST OPTIONS 0 (False), 1 (True)
-#define VEST_STANDARD_SET 0
+#define VEST_STANDARD_SET 1
 #define VEST_ARC_SET 0
-#define VEST_OFFICER_SET 0
+#define VEST_OFFICER_SET 1
 #define VEST_COMMANDO_SET 0
 #define VEST_MARINE_SET 0
 

@@ -164,6 +164,16 @@ class Cfg3DEN {
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};
+
+				class AUX_95th_Opfor_Firebase_v1_AA {
+			path = "z\AUX_95th\addons\compositions\cis\cis_firebase_v1_aa";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "AUX_95th_Legion_Compositions_AA";
+			displayName = "CIS Firebase v1 AA";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
 	};
 };
 
