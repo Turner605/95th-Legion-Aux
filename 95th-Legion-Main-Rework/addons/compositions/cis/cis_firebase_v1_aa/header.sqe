@@ -1,0 +1,28 @@
+version=54;
+name="[95th] CIS Firebase v1 (AA)";
+author="Too Many Cooks";
+category="AUX_95th_Legion_Characters_Category_Squad_Zeus";
+requiredAddons[]=
+{
+	"3AS_Prop_Barricades",
+	"JLTS_characters_DroidArmor",
+	"AUX_95th_Extras_overrides",
+	"3AS_Static_FlakCannon",
+	"3AS_CIS_Static_J10s",
+	"3AS_Static_ParticleCannon",
+	"JLTS_weapons_Statics_turret",
+	"3AS_Structures_LandingPads",
+	"3AS_Structures_FOB",
+	"3AS_Prop_Crates",
+	"3AS_Prop_Platforms",
+	"3AS_Props2_MiscItems",
+	"3AS_Structures_Lights",
+	"ls_props",
+	"3AS_Prop_Generators",
+	"3AS_Prop_Trenches",
+	"3AS_CIS_Wheeled_PAC",
+	"3AS_Props2_Crates2",
+	"3AS_Props2_ShippingContainer",
+	"3AS_Prop_Terminals",
+	"A3_Characters_F_Common"
+};
