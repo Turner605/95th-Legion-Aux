@@ -1,42 +1,34 @@
 params ["_unit"];
 
-_unit allowFleeing 0;
+if (isPlayer _this) exitWith {};
+
+_unit setSkill 1;
 _unit setSpeaker "NoVoice";
-_unit setVariable ["disableUnitSFX",1,true];
-[_unit, "B2_SupperBattleDroid_idle"] remoteExec ["switchMove", 0];
+_unit allowDamage false;
+_unit playActionNow "WBK_Droids_B2_Idle";
+_unit setUnitPos "UP";
+_unit setAmmo [currentWeapon _unit, 10];
+_unit allowSprint false;
+
+if (isNil {_this getVariable "Droid_Health"}) then {
+	if !(isNil "WBK_LambsPresent") then {
+		(group _this) setVariable ["lambs_danger_disableGroupAI", true];
+		_this setVariable ["lambs_danger_disableAI", true];
+	};
+	_this setVariable ["WBK_Droids_VoiceType","WBK_Droids\sounds\b2\"];
+	_this setVariable ["disableUnitSFX",true];
+	_this setVariable ["WBK_DAH_DisableAnim_Death",true];
+	_this setVariable ["WBK_DAH_DisableAnim_Hit",true];
+	_this setVariable ["WBK_BloodMod_Disable",true];
+	_value = getNumber (configfile >> "CfgMagazines" >> currentMagazine _this >> "count");
+	_this setVariable ["WBK_AmountOfAmmunition",(_value) + 1];
+	_this setVariable ["Droid_Health",parseNumber WBK_Droids_B2_Health,true];
+	if !(isNil "WBK_3ASPresent") then {
+		[_this, primaryWeapon _this] call WBK_3AS_SwapWeapons;
+	};
+};
 
 [_unit] call crowsEW_spectrum_fnc_initDroneSignals;
-
-_unit addEventHandler ["PathCalculated", {
-	_unit = _this select 0;
-	_unit spawn {
-		sleep 0.5;
-		_this playMoveNow "B2_SupperBattleDroid_walk";
-	};
-
-	_pathFindPoses = _this select 1;
-	_arStart = _unit getVariable "WBK_DT_PathFindingObjects";
-
-	if (!(isNil "_arStart")) then {
-		deleteVehicle _arStart;
-	};
-
-	_lastPoint = _pathFindPoses select (count _pathFindPoses - 1);
-	_marker = "Sign_Arrow_Yellow_F" createVehicleLocal _lastPoint; 
-	_marker hideObject true;
-	_unit setVariable ["WBK_DT_PathFindingObjects",_marker];
-
-	[_unit,_marker] spawn {
-		_unit = _this select 0;
-		_marker = _this select 1;
-		waitUntil {
-			sleep 0.2; 
-			if ((isNull _unit) or (isNull _marker) or !(alive _unit)) exitWith { true };
-			((_unit distance _marker) <= 2)
-		};
-		_unit playMoveNow "B2_SupperBattleDroid_idle";
-	};
-}];
 
 _unit addEventHandler ["HandleDamage", {
 	params ["_unit", "_selection", "_damage", "_source"];
@@ -59,133 +51,118 @@ _unit addEventHandler ["HandleDamage", {
 	_damage;
 }];
 
-_unit removeAllEventHandlers "Killed";
-_unit addEventHandler ["Killed", {
-	_unit = _this select 0;
-	_arStart = _unit getVariable "WBK_DT_PathFindingObjects";
+_this addEventHandler ["Suppressed", {
+	params ["_unit", "_distance", "_shooter", "_instigator", "_ammoObject", "_ammoClassName", "_ammoConfig"];
+	if ((_unit == _instigator) || (_distance > 10)) exitWith {};
+	{_x reveal [_shooter,4];} forEach units group _unit;
+}];
 
-	if (!(isNil "_arStart")) then {
-		deleteVehicle _arStart;
+_this removeAllEventHandlers "Killed";
+_this addEventHandler ["Killed", {
+	_killed = _this select 0;
+	removeAllWeapons _killed;
+	_killed removeAllEventHandlers "Killed";
+	_killed removeAllEventHandlers "Fired";
+	_killed removeAllEventHandlers "Suppressed";
+	_killed removeAllEventHandlers "AnimStateChanged";
+	_killer = _this select 1;
+	_killed setDamage 1;
+	[_killed,((_killed getVariable "WBK_Droids_VoiceType") + (selectRandom ["death_1.ogg"])),200] remoteExecCall ["WBK_Droid_VoiceLines",[0,-2] select isDedicated];
+	_killed spawn {
+		uiSleep 0.3;
+		{
+			if ((side _x == side (group _this)) && (alive _x) && (_x != _this) && !(isNil {_x getVariable "Droid_Health"}) && (behaviour _x == "COMBAT")) exitWith {
+				[_x,((_x getVariable "WBK_Droids_VoiceType") + (selectRandom ["friendly_kia_1.ogg","friendly_kia_2.ogg","friendly_kia_3.ogg"]))] remoteExecCall ["WBK_Droid_VoiceLines",[0,-2] select isDedicated];
+			};
+		} forEach nearestObjects [_this,["MAN"],10];
+		waituntil {
+			sleep 0.1;  
+			if (isNull _this) exitWith {true}; 
+			(animationState _this == "deadstate") 
+		}; 
+		if (isNull _this) exitWith {}; 
+		[_this,selectRandom ["WBK_Droids\sounds\b1\bodyfall_1.ogg","WBK_Droids\sounds\b1\bodyfall_2.ogg","WBK_Droids\sounds\b1\bodyfall_3.ogg"],45] remoteExecCall ["WBK_Droid_VoiceLines",[0,-2] select isDedicated];
 	};
-
-	[_unit, "B2_SupperBattleDroid_die"] remoteExec ["switchMove", 0];
-	[_unit, "WBK_b2_dying", 70, 10] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
-	[_unit, {
-		_object = _this;
-		_particlesSpark = "#particlesource" createVehicleLocal (getPosATL _object);                                  
-		_particlesSpark setParticleParams [
-			["\A3\data_f\ParticleEffects\Universal\Universal", 16, 4, 11, 4],  //sprite name
-			"", //animation name
-			"Billboard", //type
-			0.5, 1.4, //timer period and fadeout timer
-			[0, 0, 0], //position
-			[3, 3, 3], //move velocity
-			5, 1, 0.35,  0.80, //rot vel, weight, volume, rubbing
-			[0.08,0.01], //size transform
-			[[1,1,1,0], [0.1,0.1,0.1,-4], [0,0,0,-4],[1,1,1,1]],  //color and transperency
-			[1000], //animation phase speed
-			0.2,   //randomdirection period
-			0.9,  //randomization intensity
-			"", //onTimer
-			"",  //beforeDestroy
-			"",  //object
-			360,  //angle
-			false,  //on the surface
-			0  //bounce         
-		];          
-		_particlesSpark setDropInterval 0.001;         
-		_particlesSpark attachTo [_object,[0.3,0,0.04],"neck"];
-		sleep 0.1;
-		deleteVehicle _particlesSpark;
-	}] remoteExec ["spawn", [0,-2] select isDedicated,false];
-
-    [_unit getVariable "AUX_95th_B2_Frame_Handler"] call CBA_fnc_removePerFrameHandler;
+	switch true do {
+		case (stance _killed == "PRONE"): {_killed addForce [_killer vectorModelToWorld [0,200,50], _killed selectionPosition "head", false];};
+		default {[_killed,["B2_Droid_die", 0, 0.2, false]] remoteExec ["switchMove",0];};
+	};
+	_killed playActionNow "WBK_Droid_Disable_Gesture";
 }];
 
-_unit addEventHandler ["Deleted", {
-	params ["_unit"];
-
-    [_unit getVariable "AUX_95th_B2_Frame_Handler"] call CBA_fnc_removePerFrameHandler;
-}];
-
-_unit addEventHandler ["Fired", {
-	_unit = _this select 0;
-	if (isNil {_unit getVariable "B2Speak"}) then {
-		_unit spawn {
-			_this setVariable ["B2Speak",1];
-			[_this, selectRandom ["WBK_b2_firing_1","WBK_b2_firing_2","WBK_b2_firing_3","WBK_b2_firing_4","WBK_b2_firing_5"], 60] call CBA_fnc_globalSay3d;
-			sleep 7;
-			_this setVariable ["B2Speak",nil];
+_this addEventHandler ["Fired", {
+	_obj = _this select 0; 
+	if (currentWeapon _obj != primaryWeapon _obj) exitWith {};
+	_obj setAmmo [currentWeapon _obj, 10];
+	_obj spawn {
+		_val = _this getVariable "WBK_AmountOfAmmunition";
+		_val = _val - 1;
+		if (_val > 0) then {
+			_en = getAttackTarget _this;
+			_this setVariable ["WBK_AmountOfAmmunition",_val];
+			switch true do {
+				case (isNil {_this getVariable "B1Speak"}): {
+					[_this,((_this getVariable "WBK_Droids_VoiceType") + (selectRandom ["shoot_1.ogg","shoot_2.ogg","shoot_3.ogg","shoot_4.ogg","shoot_5.ogg"]))] remoteExecCall ["WBK_Droid_VoiceLines",[0,-2] select isDedicated];
+					_this setVariable ["B1Speak",false];
+					uisleep (random 25);
+					_this setVariable ["B1Speak",nil];
+				};
+				default {};
+			};
+		}else{
+			_this playActionNow "WBK_Droids_B2_Run";
+			_value = getNumber (configfile >> "CfgMagazines" >> currentMagazine _this >> "count");
+			_this setVariable ["WBK_AmountOfAmmunition",_value];
 		};
 	};
 }];
 
-_unit setUnitPos "UP";
-// _unit allowDamage false;
+// WBK_B2_Melee = {
+// 	_unitToPlay = _this;
+// 	if ((isNull _unitToPlay) or !(alive _unitToPlay)) exitWith {};
+// 	_unitToPlay disableAI "ALL";
+// 	[_unitToPlay, "B2_SupperBattleDroid_melee"] remoteExec ["switchMove", 0];
+// 	sleep 0.1;
+// 	if (!(animationState _unitToPlay == "B2_SupperBattleDroid_melee")) exitWith {_unitToPlay enableAI "ALL";};
+// 	[_unitToPlay, selectRandom ["generis_empty_4","generis_empty_5","generis_empty_2"], 50, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
+// 	sleep 0.1;
+// 	if (!(animationState _unitToPlay == "B2_SupperBattleDroid_melee")) exitWith {_unitToPlay enableAI "ALL";};
+// 	if (isNil {_unitToPlay getVariable "B2Speak"}) then {
+// 		_unitToPlay spawn {
+// 		_this setVariable ["B2Speak",1];
+// 		[_this, selectRandom ["WBK_b2_firing_1","WBK_b2_firing_2","WBK_b2_firing_3","WBK_b2_firing_4","WBK_b2_firing_5"], 60] call CBA_fnc_globalSay3d;
+// 		sleep 3;
+// 		_this setVariable ["B2Speak",nil];
+// 		};
+// 	};
+// 	_myNearestEnemy = _unitToPlay findNearestEnemy _unitToPlay;
+// 	if ((_myNearestEnemy distance _unitToPlay) <= 2.5) then {
+// 		_myNearestEnemy setDamage 1;
+// 		[_myNearestEnemy, "dobi_CriticalHit", 50, 5] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
+// 		[_myNearestEnemy, selectRandom ["lightsaber_death_11","lightsaber_death_20","lightsaber_death_5","lightsaber_death_8"]] remoteExec ["switchMove", 0];
+// 		[_myNearestEnemy, (_myNearestEnemy getDir _unitToPlay)] remoteExec ["setDir", 0];
+// 	};
+// 	sleep 0.9;
+// 	if (!(animationState _unitToPlay == "B2_SupperBattleDroid_melee")) exitWith {_unitToPlay enableAI "ALL";};
+// 	_unitToPlay enableAI "ALL";
+// 	[_unitToPlay, "B2_SupperBattleDroid_idle"] remoteExec ["switchMove", 0];
+// };
 
-WBK_B2_Melee = {
-	_unitToPlay = _this;
-	if ((isNull _unitToPlay) or !(alive _unitToPlay)) exitWith {};
-	_unitToPlay disableAI "ALL";
-	[_unitToPlay, "B2_SupperBattleDroid_melee"] remoteExec ["switchMove", 0];
-	sleep 0.1;
-	if (!(animationState _unitToPlay == "B2_SupperBattleDroid_melee")) exitWith {_unitToPlay enableAI "ALL";};
-	[_unitToPlay, selectRandom ["generis_empty_4","generis_empty_5","generis_empty_2"], 50, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
-	sleep 0.1;
-	if (!(animationState _unitToPlay == "B2_SupperBattleDroid_melee")) exitWith {_unitToPlay enableAI "ALL";};
-	if (isNil {_unitToPlay getVariable "B2Speak"}) then {
-		_unitToPlay spawn {
-		_this setVariable ["B2Speak",1];
-		[_this, selectRandom ["WBK_b2_firing_1","WBK_b2_firing_2","WBK_b2_firing_3","WBK_b2_firing_4","WBK_b2_firing_5"], 60] call CBA_fnc_globalSay3d;
-		sleep 3;
-		_this setVariable ["B2Speak",nil];
-		};
+// _this remoteExecCall ["WBK_Droids_B1_LoadHitHandlers",0,true];
+
+[{((({(getNumber (configfile >> "CfgAmmo" >> typeOf _x >> "hit") > 1) && (isNil {_x getVariable "B1ItsOwnNade"})} count (_this nearObjects ["Grenade", 8])) >= 1) || !(alive _this) || (isNull _this) || !(isNil {_this getVariable "B1CanSayNade"}))}, {
+	if (!(alive _this) || (isNull _this) || !(isNil {_this getVariable "B1CanSayNade"})) exitWith {};
+	_this setVariable ["B1CanSayNade",false];
+	[_this,((_this getVariable "WBK_Droids_VoiceType") + (selectRandom ["inc_grenade_1.ogg","inc_grenade_2.ogg"])),300] remoteExecCall ["WBK_Droid_VoiceLines",[0,-2] select isDedicated];
+}, _this, -1] call CBA_fnc_waitUntilAndExecute;
+while {alive _this} do {
+	if (alive _this != isAwake _this) exitWith {_this setDamage 1;};
+	_this allowDamage false;
+	switch true do {
+		case ((gestureState _this in ["gesturethrowgrenade","gesturethrowgrenadepistol","gesturethrowgrenadeuna","gesturereloadmxugl"]) || !(alive _this) || (animationState _this in ["b2_droid_die_1"]) || !(isNull attachedTo _this) || (currentWeapon _this != primaryWeapon _this) || (gestureState _this == (getText (configfile >> "CfgWeapons" >> currentWeapon _this >> "reloadAction")))): {};
+		case ((((velocity _this) # 0) > 2) || (((velocity _this) # 0) < (-2)) || (((velocity _this) # 1) > 2) || (((velocity _this) # 1) < (-2))): {_this playActionNow "WBK_Droids_B2_Run";};
+		case (!(isNull objectParent _this) || (stance _this == "PRONE") || (getNumber (configfile >> "CfgMovesMaleSdr" >> "States" >> animationState _this >> "weaponLowered") == 1)): {_this playActionNow "WBK_Droid_Disable_Gesture";};
+		default {_this playActionNow "WBK_Droids_B2_Idle";};
 	};
-	_myNearestEnemy = _unitToPlay findNearestEnemy _unitToPlay;
-	if ((_myNearestEnemy distance _unitToPlay) <= 2.5) then {
-		_myNearestEnemy setDamage 1;
-		[_myNearestEnemy, "dobi_CriticalHit", 50, 5] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";
-		[_myNearestEnemy, selectRandom ["lightsaber_death_11","lightsaber_death_20","lightsaber_death_5","lightsaber_death_8"]] remoteExec ["switchMove", 0];
-		[_myNearestEnemy, (_myNearestEnemy getDir _unitToPlay)] remoteExec ["setDir", 0];
-	};
-	sleep 0.9;
-	if (!(animationState _unitToPlay == "B2_SupperBattleDroid_melee")) exitWith {_unitToPlay enableAI "ALL";};
-	_unitToPlay enableAI "ALL";
-	[_unitToPlay, "B2_SupperBattleDroid_idle"] remoteExec ["switchMove", 0];
+	uiSleep 0.2;
 };
-
-_actFr = [{
-    _array = _this select 0;
-    _droid = _array select 0;
-	_droid disableAI "MINEDETECTION";
-	_droid disableAI "SUPPRESSION";
-	_droid disableAI "COVER";
-	_droid disableAI "AIMINGERROR";
-	_droid disableAI "FSM";
-	_droid setBehaviour "CARELESS";
-	// _droid allowDamage false;
-
-	{
-		_ifInter = lineIntersects [ getPosASL _droid, eyePos _x, _droid, _x];
-
-		if (!(_ifInter)) then {
-			 _droid reveal [_x, 4]; 
-		};
-	} forEach nearestObjects [_droid, ["Man"], 15]; 
-
-	_myNearestEnemy = _droid findNearestEnemy _droid;
-
-	if (
-		!(handgunWeapon _myNearestEnemy in IMS_Lightsabers) and
-		(((_myNearestEnemy worldToModel (_droid modelToWorld [0, 0, 0])) select 1) > 0) and
-		((_myNearestEnemy distance _droid) <= 2.5) and
-		(_droid getVariable "canMakeAttack" == 0) and
-		(alive _droid) and
-		!(lifeState _droid == "INCAPACITATED") and
-		!(animationState _droid == "B2_SupperBattleDroid_melee")
-	) then {
-		_droid spawn WBK_B2_Melee;
-	};
-}, 0.4, [_unit]] call CBA_fnc_addPerFrameHandler;
-
-_unit setVariable ["AUX_95th_B2_Frame_Handler", _actFr];

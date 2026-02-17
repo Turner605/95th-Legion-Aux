@@ -345,44 +345,62 @@ class ls_droid_b2: ls_droid_base {
     displayName = "B2 (Standard)";
     #include "../macros/droidAdvanced.hpp"
     // uniformClass = "AUX_95th_Droid_B2_Uniform";
+    // identityTypes[] = {"LanguageENGVR_F","Head_NATO","NoGlasses"};
 
     DSS_EMP_Protection_Value=0.95;
     DSS_DamageSystem_Active=1;
 	DSS_DamageSystem_Resistance=4;
 	DSS_DamageSystem_Headshot_Multiplier=4;
+
     canBleed = 0;
     impactEffectsBlood = "ImpactMetal";
-    impactEffectsNoBlood = "ImpactPlastic";
+    impactEffectsNoBlood = "ImpactMetal";
+    impactEffectsSea = "ImpactMetal";
 
-    weapons[] = {"WBK_B2_NormalMod","Throw","Put"};
-    magazines[] = {"ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73","ls_magazine_zh73"};
+    weapons[] = {"WBK_B2_Weapon","Throw","Put"};
+    magazines[] = {"ls_magazine_e5","ls_magazine_e5","ls_magazine_e5","ls_magazine_e5","ls_magazine_e5","ls_magazine_e5"};
     items[] = {};
+    linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","ls_radios_dcs","ItemGPS"};
     
     class SoundEnvironExt {
         generic[] = {
-         {"walk", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
-         {"walk", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
-         {"walk", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
-         {"run", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
-         {"run", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
-         {"run", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
-         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
-         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
-         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}
+            {"run",{"\WBK_Droids\sounds\b1\dirt1.wav",2,1,30}},
+            {"run",{"\WBK_Droids\sounds\b1\dirt2.wav",2,1,30}},
+            {"run",{"\WBK_Droids\sounds\b1\dirt3.wav",2,1,30}},
+            {"run",{"\WBK_Droids\sounds\b1\dirt4.wav",2,1,30}},
+            {"walk",{"\WBK_Droids\sounds\b1\dirt1.wav",2,1,15}},
+            {"walk",{"\WBK_Droids\sounds\b1\dirt2.wav",2,1,15}},
+            {"walk",{"\WBK_Droids\sounds\b1\dirt3.wav",2,1,15}},
+            {"walk",{"\WBK_Droids\sounds\b1\dirt4.wav",2,1,15}},
+            {"sprint",{"\WBK_Droids\sounds\b1\dirt1.wav",2,1,45}},
+            {"sprint",{"\WBK_Droids\sounds\b1\dirt2.wav",2,1,45}},
+            {"sprint",{"\WBK_Droids\sounds\b1\dirt3.wav",2,1,45}},
+            {"sprint",{"\WBK_Droids\sounds\b1\dirt4.wav",2,1,45}},
+            {"Tactical",{"\WBK_Droids\sounds\b1\dirt1.wav",2,1,15}},
+            {"Tactical",{"\WBK_Droids\sounds\b1\dirt2.wav",2,1,15}},
+            {"Tactical",{"\WBK_Droids\sounds\b1\dirt3.wav",2,1,15}},
+            {"Tactical",{"\WBK_Droids\sounds\b1\dirt4.wav",2,1,15}}
         };
     };
 
     class SoundEquipment {
         soldier[] = {
-         {"walk", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
-         {"walk", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
-         {"walk", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
-         {"run", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
-         {"run", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
-         {"run", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}},
-         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_1.ogg", 2, 1, 30}}, 
-         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_2.ogg", 2, 1, 30}},
-         {"sprint", {"\WebKnightsRobotics\sounds\b2_step_3.ogg", 2, 1, 30}}
+            {"run",{"\WBK_Droids\sounds\b1\dirt1.wav",2,1,30}},
+            {"run",{"\WBK_Droids\sounds\b1\dirt2.wav",2,1,30}},
+            {"run",{"\WBK_Droids\sounds\b1\dirt3.wav",2,1,30}},
+            {"run",{"\WBK_Droids\sounds\b1\dirt4.wav",2,1,30}},
+            {"walk",{"\WBK_Droids\sounds\b1\dirt1.wav",2,1,15}},
+            {"walk",{"\WBK_Droids\sounds\b1\dirt2.wav",2,1,15}},
+            {"walk",{"\WBK_Droids\sounds\b1\dirt3.wav",2,1,15}},
+            {"walk",{"\WBK_Droids\sounds\b1\dirt4.wav",2,1,15}},
+            {"sprint",{"\WBK_Droids\sounds\b1\dirt1.wav",2,1,45}},
+            {"sprint",{"\WBK_Droids\sounds\b1\dirt2.wav",2,1,45}},
+            {"sprint",{"\WBK_Droids\sounds\b1\dirt3.wav",2,1,45}},
+            {"sprint",{"\WBK_Droids\sounds\b1\dirt4.wav",2,1,45}},
+            {"Tactical",{"\WBK_Droids\sounds\b1\dirt1.wav",2,1,15}},
+            {"Tactical",{"\WBK_Droids\sounds\b1\dirt2.wav",2,1,15}},
+            {"Tactical",{"\WBK_Droids\sounds\b1\dirt3.wav",2,1,15}},
+            {"Tactical",{"\WBK_Droids\sounds\b1\dirt4.wav",2,1,15}}
         };
     };
 
@@ -397,6 +415,7 @@ class ls_droid_b2: ls_droid_base {
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         init = "[(_this select 0)] call AUX_95th_Extras_fnc_B2Init;"; 
+        // init = "[(_this select 0)] spawn WBK_Droid_B2_Load;";
     };
 };
 
@@ -460,3 +479,15 @@ class ls_droid_b1_shotgun: ls_droid_b1 { scope = 1; scopeCurator = 1; };
 class ls_droid_b1_simulation: ls_droid_b1 { scope = 1; scopeCurator = 1; };
 class ls_droid_b1_squadLeader: ls_droid_b1 { scope = 1; scopeCurator = 1; };
 class ls_droid_b1_officer: ls_droid_b1 { scope = 1; scopeCurator = 1; };
+
+class WBK_LS_B2_Baseclass;
+class WBK_LS_B2: WBK_LS_B2_Baseclass { scope = 1; scopeCurator = 1; };
+
+class WBK_LS_BX_Baseclass;
+class WBK_LS_BX: WBK_LS_BX_Baseclass { scope = 1; scopeCurator = 1; };
+
+class WBK_LS_B1_Baseclass;
+class WBK_LS_B1: WBK_LS_B1_Baseclass { scope = 1; scopeCurator = 1; };
+
+class WBK_3AS_B1_Baseclass;
+class WBK_3AS_B1: WBK_3AS_B1_Baseclass { scope = 1; scopeCurator = 1; };

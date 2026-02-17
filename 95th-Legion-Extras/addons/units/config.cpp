@@ -20,7 +20,7 @@ class CfgPatches {
         requiredAddons[] = {
             "AUX_95th_Extras_main",
             "AUX_95th_Extras_overrides",
-			"WBK_DifferentRobotics_1"
+			"WBK_DroidsSw"
         };
         authors[] = {"Turner"};
         VERSION_CONFIG;

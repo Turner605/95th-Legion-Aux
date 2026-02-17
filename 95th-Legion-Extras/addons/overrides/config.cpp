@@ -19,11 +19,12 @@ class CfgPatches {
             "WBK_PhoenixTreal_FlamethrowerMOD",
 			"AUX_95th_voicelines",
             "ls_loadorder",
-            "WBK_DifferentRobotics_1",
+            "WBK_DroidsSw",
             "A3_Data_F",
             "A3_Weapons_F",
             "3AS_Prop_Sullust",
-            "ls_compat_wbk_droids",
+            "WBK_Droids_LS",
+            "WBK_Droids_3AS",
             "ls_characters_droid"
         };
         authors[] = {"Turner"};
