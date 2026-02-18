@@ -4,7 +4,7 @@
 #define PLAYER_NAME_BEAUTIFIED Dagger
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY One_Two
+#define SQUAD_KEY Fallen
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
