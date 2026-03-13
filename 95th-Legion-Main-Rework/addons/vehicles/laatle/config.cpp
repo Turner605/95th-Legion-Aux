@@ -1,5 +1,5 @@
 #include "script_component.hpp"
-#include "Macros\laatle texture.hpp"
+#include "macros\laatle texture.hpp"
 
 class CfgPatches {
     class DOUBLES(PREFIX,COMPONENT) {
