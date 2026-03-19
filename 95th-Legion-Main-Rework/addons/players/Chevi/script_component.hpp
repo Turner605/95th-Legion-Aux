@@ -1,17 +1,17 @@
-#define COMPONENT players_scootie
-#define COMPONENT_BEAUTIFIED Players_Scootie
-#define PLAYER_NAME scootie
-#define PLAYER_NAME_BEAUTIFIED Scootie
+#define COMPONENT players_chevi
+#define COMPONENT_BEAUTIFIED Players_Chevi
+#define PLAYER_NAME chevi
+#define PLAYER_NAME_BEAUTIFIED Chevi
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY One_Two
+#define SQUAD_KEY One_Three
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
 #define HELMET_P1_ENGINEER 0
 #define HELMET_P1_ARF 0
 #define HELMET_P1_PILOT 0
-#define HELMET_P1_SPECOPS 1
+#define HELMET_P1_SPECOPS 0
 #define HELMET_P1_HAZARD 0
 #define HELMET_P1_COLD_ASSAULT 0
 #define HELMET_P1_COMMANDO 0
@@ -21,7 +21,7 @@
 #define HELMET_P2_MARINE_SET 0
 
 // UNIFORM OPTIONS 0 (False), 1 (True)
-#define UNIFORM_P1_BASIC 1
+#define UNIFORM_P1_BASIC 0
 #define UNIFORM_P1_MC 0
 #define UNIFORM_P1_COLDASSAULT 0
 #define UNIFORM_P1_COMMANDO 0
@@ -43,9 +43,9 @@
 #define BACKPACK_MORAL 0
 
 // VEST OPTIONS 0 (False), 1 (True)
-#define VEST_STANDARD_SET 1
+#define VEST_STANDARD_SET 0
 #define VEST_ARC_SET 0
-#define VEST_OFFICER_SET 1
+#define VEST_OFFICER_SET 0
 #define VEST_COMMANDO_SET 0
 #define VEST_MARINE_SET 0
 
