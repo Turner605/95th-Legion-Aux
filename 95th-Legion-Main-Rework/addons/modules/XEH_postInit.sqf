@@ -193,6 +193,76 @@ if (!hasInterface) exitWith {};
 }, "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\cas_ca.paa"] call zen_custom_modules_fnc_register;
 
 
+// Gravity Disruption
+["[95th] Modules", "Gravity Disruption", {
+    params [["_pos", [0, 0, 0], [[]], 3], ["_logic", objNull, [objNull]]];
+
+    ["Gravity Disruption", [
+        ["SLIDER:RADIUS",["Radius","Radius of the disruption"],[1,300,100,0,(ASLToATL _pos),[255,255,0,75]]],
+        ["SLIDER", ["Duration", "How long should the disruption last"], [1, 30, 5, 0]],
+        ["CHECKBOX",["Warn Nearby Players","Should nearby players receive a warning about the disruption"],[true]]
+    ], {
+        params["_values", "_args"];
+
+        _radius = _values#0;
+        _duration = _values#1;
+        _warnPlayers = _values#2;
+
+        _position = _args select 0;
+
+        _warmupDuration = 10;
+
+        if(_warnPlayers) then {
+            private _warnList = [_position, _radius+100, _radius+100, 0, false] nearEntities [ ["Man"], false, false, true];
+
+            [[], {
+                titleText ["<t align = 'center' shadow = '2' color='#FF474C' size='1.5' font='PuristaMedium' >WARNING</t><br /><t color='#FFFFFF' size='1.5' font='PuristaMedium' shadow = '2' >GRAVITATIONAL ANOMALY DETECTED</t>", "PLAIN DOWN", -1, true, true];
+            }] remoteExec ["spawn", _warnList];
+        };
+
+        [[_position, _radius, _duration, _warmupDuration], {
+            params ["_position", "_radius", "_duration", "_warmupDuration"];
+
+            private _emitterArray = [];
+            private _emitterCount = (1 * round(_radius/2));
+            private _emitterSize = 5;
+
+            for "_i" from 0 to _emitterCount do {
+                _effectPos = [[[_position, _radius]], []] call BIS_fnc_randomPos;
+
+                _effectPosX = _effectPos select 0;
+                _effectPosY = _effectPos select 1;
+                _effectPosZ = _effectPos select 2;
+
+                private _newEffectPos = [_effectPosX, _effectPosY, _effectPosZ];
+
+                private _distort = "#particlesource" createVehicleLocal _newEffectPos;
+                _distort setParticleParams[["\A3\data_f\ParticleEffects\Universal\Refract.p3d", 1, 0, 1],"","Billboard",1,0.12,[0, 0, 0],[0, 0, 0],17,10,7.9,0,[_emitterSize],[[0,0,0,0.7]],[0.08],1,0,"","",_distort];
+                _distort setParticleRandom [0,[0,0,0],[0,0,0],0,0,[0, 0, 0, 0],1,0];
+                _distort setParticleCircle [0,[0, 0, 0]];
+                _distort setDropInterval 0.04;
+
+                _emitterArray pushBackUnique _distort;
+            };
+
+            [{
+                params ["_emitterArray"]; 
+                {deleteVehicle _x;} forEach _emitterArray;
+            }, [_emitterArray], (_duration+_warmupDuration)] call CBA_fnc_waitAndExecute;
+
+        }] remoteExec ["call", -2];
+
+        [{
+            params ["_radius", "_duration", "_position"];
+
+            [_radius, _duration, _position] call AUX_95th_fnc_startGravityDisruption;
+        }, [_radius, _duration, _position], _warmupDuration] call CBA_fnc_waitAndExecute;
+
+
+    }, {}, [_pos]] call zen_dialog_fnc_create;
+}, "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\cas_ca.paa"] call zen_custom_modules_fnc_register;
+
+
 // module to drop droid turrets/vics?
 
 // Docs:

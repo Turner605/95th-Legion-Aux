@@ -24,6 +24,7 @@ class CfgFunctions {
             class broadcastOrder66 {};
             class reanimateDroid {};
             class startIonStorm {};
+            class startGravityDisruption {};
         };
 
         class Modules_DroidPod {
