@@ -628,7 +628,7 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
         DSS_Jetpack_Max_Heat = 30;
-        DSS_Jetpack_Launcher_Penalty = 4;
+        DSS_Jetpack_Launcher_Penalty = 6;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
@@ -660,7 +660,7 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
         DSS_Jetpack_Max_Heat = 30;
-        DSS_Jetpack_Launcher_Penalty = 4;
+        DSS_Jetpack_Launcher_Penalty = 6;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
@@ -756,7 +756,7 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
         DSS_Jetpack_Max_Heat = 30;
-        DSS_Jetpack_Launcher_Penalty = 4;
+        DSS_Jetpack_Launcher_Penalty = 6;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
@@ -788,7 +788,7 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
         DSS_Jetpack_Max_Heat = 30;
-        DSS_Jetpack_Launcher_Penalty = 4;
+        DSS_Jetpack_Launcher_Penalty = 6;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
@@ -817,7 +817,7 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
         DSS_Jetpack_Max_Heat = 30;
-        DSS_Jetpack_Launcher_Penalty = 4;
+        DSS_Jetpack_Launcher_Penalty = 6;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
@@ -849,7 +849,7 @@ class 3AS_B_Imperial_Stormtrooper_Backpack_Coffee_F;
         DSS_Jetpack_Dash_Power_Modifier = 1.5;
         DSS_Jetpack_Dash_Cost = 5;
         DSS_Jetpack_Max_Heat = 30;
-        DSS_Jetpack_Launcher_Penalty = 4;
+        DSS_Jetpack_Launcher_Penalty = 6;
         JLTS_isJumppack = 0;
         class XtdGearInfo {
             model = QUOTE(DOUBLES(AUX_95th_Backpacks_Squad,SQUAD_KEY));
