@@ -35,10 +35,12 @@ class CfgMods {
 
 class CfgFactionClasses { 
     class AUX_95th_Separatist_Army {displayName = "[95th] Separatist Army"; scope=2; scopecurator=2; priority = 1; side = 1;};  
+    class AUX_95th_Civilian {displayName = "[95th] Civilian"; scope=2; scopecurator=2; priority = 1; side = 3;};  
 };
 
 class CfgEditorCategories {
     class AUX_95th_Separatist_Army {displayName = "[95th] Separatist Army";};  
+    class AUX_95th_Civilian {displayName = "[95th] Civilian";};  
 };
 
 class CfgEditorSubcategories {
@@ -53,6 +55,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_Category_Artillery{displayName="Artillery";};
 	class AUX_95th_Category_Turrets{displayName="Turrets";};
 	class AUX_95th_Category_Statics{displayName="Statics";};
+	class AUX_95th_Category_Ships{displayName="Ships";};
 
 	class AUX_95th_Category_Droids_B1{displayName="Droids (B1)";};
 	class AUX_95th_Category_Droids_Advanced{displayName="Droids (Advanced)";};
