@@ -382,6 +382,7 @@ class CfgVehicles {
 			NEW_95TH_LAAT_TEXTURE(AUX_95th_76561198820607430)
 			NEW_95TH_LAAT_TEXTURE(AUX_95th_76561198060130630)
 			NEW_95TH_LAAT_TEXTURE(AUX_95th_76561197991973965)
+			
 		};
         NEW_SHARED_LAAT_CONFIG()
         #include "\z\AUX_95th\addons\main\inventories\vehicleInventory.hpp"
