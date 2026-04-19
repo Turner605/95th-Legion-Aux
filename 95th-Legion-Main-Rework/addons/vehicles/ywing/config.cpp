@@ -75,7 +75,9 @@ class CfgVehicles {
 
 	class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F {};
 
-	class 3AS_BTLB_Bomber: BTL_Base {};
+	class 3AS_BTLB_Bomber: BTL_Base {
+		class ACE_SelfActions;
+	};
 
 	class AUX_95th_YWing: 3AS_BTLB_Bomber {
 		author = "95th Aux Team";
@@ -106,6 +108,49 @@ class CfgVehicles {
 				factions[] = {"AUX_95th_Legion_Faction_Vehicles"};
 			};
 		};
+
+		class ACE_SelfActions: ACE_SelfActions {
+            class addResupplyBomb {
+				displayName = "Load Resupply Drop";
+				condition = "_target call AUX_95th_fnc_checkIsNearResupplyPad";
+				exceptions[] = {}; statement = ""; icon = "";
+				class addAmmoBomb {
+					displayName = "Load Ammo Drop";
+					condition = "_target call AUX_95th_fnc_checkIsNearResupplyPad";
+					exceptions[] = {};
+					statement = "[_target, _player, 'Ammo'] call AUX_95th_fnc_handleLoadResupplyBomb;";
+				};
+				class addMedicalBomb {
+					displayName = "Load Medical Drop";
+					condition = "_target call AUX_95th_fnc_checkIsNearResupplyPad";
+					exceptions[] = {};
+					statement = "[_target, _player, 'Medical'] call AUX_95th_fnc_handleLoadResupplyBomb;";
+				};
+				class addExplosivesBomb {
+					displayName = "Load Explosives Drop";
+					condition = "_target call AUX_95th_fnc_checkIsNearResupplyPad";
+					exceptions[] = {};
+					statement = "[_target, _player, 'Explosives'] call AUX_95th_fnc_handleLoadResupplyBomb;";
+				};
+				class addVehicleAmmoBomb {
+					displayName = "Load Vehicle Ammo Drop";
+					condition = "_target call AUX_95th_fnc_checkIsNearResupplyPad";
+					exceptions[] = {};
+					statement = "[_target, _player, 'VehicleAmmo'] call AUX_95th_fnc_handleLoadResupplyBomb;";
+				};
+				class addVehicleFuelBomb {
+					displayName = "Load Vehicle Fuel Drop";
+					condition = "_target call AUX_95th_fnc_checkIsNearResupplyPad";
+					exceptions[] = {};
+					statement = "[_target, _player, 'VehicleFuel'] call AUX_95th_fnc_handleLoadResupplyBomb;";
+				};
+			};
+		};
+
+
+
+
+
 	};
 };
 
