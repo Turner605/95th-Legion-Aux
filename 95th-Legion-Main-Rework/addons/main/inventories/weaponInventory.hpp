@@ -26,6 +26,7 @@ class TransportMagazines {
 	class _xx_AUX_95th_BX42_Pyro_AP{magazine="AUX_95th_BX42_Pyro_AP"; count=8;};
 	class _xx_AUX_95th_BX42_Pyro_AT{magazine="AUX_95th_BX42_Pyro_AT"; count=8;};
 	
+	class _xx_SquadShieldMagazine{magazine="SquadShieldMagazine"; count=8;};
 	class _xx_DSS_Magazine_Grenade_Droid_Detector{magazine="DSS_Magazine_Grenade_Droid_Detector"; count=10;};
 	class _xx_DSS_Magazine_Grenade_Droid_Popper{magazine="DSS_Magazine_Grenade_Droid_Popper"; count=10;};
 	class _xx_DSS_Magazine_Grenade_Flashbang{magazine="DSS_Magazine_Grenade_Flashbang"; count=10;};
