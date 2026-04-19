@@ -24,6 +24,7 @@ class TransportItems {
 	class _xx_kat_IV_16{name="kat_IV_16"; count=15;};
 	class _xx_kat_Painkiller{name="kat_Painkiller"; count=30;};
 	class _xx_kat_TXA{name="kat_TXA"; count=60;};
+	class _xx_kat_Carbonate{name="kat_Carbonate"; count=60;};
 };
 
 class TransportMagazines {
