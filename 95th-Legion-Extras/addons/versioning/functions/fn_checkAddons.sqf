@@ -48,7 +48,8 @@ if ([] call BIS_fnc_admin == 2) exitWith {};
         "Orzel's Drive Yards",
         "@Custom Third Person Camera View",
         "@Customized Thermal - Proof of Concept",
-        "White Phosphor"
+        "White Phosphor",
+        "HL2: Echoes of the Resonance Cascade"
     ];
 
     private _additionalMods = parseSimpleArray AUX_95th_Enable_Addon_Checker_Additional_Mods;
@@ -73,7 +74,7 @@ if ([] call BIS_fnc_admin == 2) exitWith {};
 
     if((count _notPermittedMods) > 0) then {
         private _modList = format ["Mods: %1", (str _notPermittedMods)];
-        private _errorMsg = "You are running mods that are not permitted, Please remove them or contact Turner for approval " + _modList;
+        private _errorMsg = "You are running mods that are not permitted, Please remove them or contact Turner for approval. " + _modList;
         private _playerName = (name player);
 
         private _playerNameFormatted = ((_playerName regexReplace ['"/gio', '']) regexReplace ["'/gio", ""]);
