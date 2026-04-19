@@ -28,7 +28,7 @@ if (!hasInterface) exitWith {};
         _mode = _values#3;
         _unitSpread = _values#4;
 
-        _position = _args select 0;
+        _position = (ASLToATL (_args select 0));
 
         [_position, _unitSide, _unitCount, _includeAT, _mode, _unitSpread] call AUX_95th_fnc_jetDroidInsertion;
     }, {}, [_pos]] call zen_dialog_fnc_create;
@@ -53,7 +53,7 @@ if (!hasInterface) exitWith {};
     ], {
         params["_values", "_args"];
 
-        _modulePosition = _args select 0;
+        _modulePosition = (ASLToATL (_args select 0));
 
         private _startPosASL = [(_modulePosition select 0), (_modulePosition select 1), (_modulePosition select 2)+4000];
         private _endPosASL = [(_modulePosition select 0), (_modulePosition select 1), 0];
@@ -108,7 +108,7 @@ if (!hasInterface) exitWith {};
         _includeB2 = _values#4;
         _randomizePositions = _values#5;
 
-        _position = _args select 0;
+        _position = (ASLToATL (_args select 0));
 
         [_position, _unitSide, _radius, _garrisonPercentage, _b1Type, _includeB2, _randomizePositions] call AUX_95th_fnc_cisQuickGarrison;
     }, {}, [_pos]] call zen_dialog_fnc_create;
@@ -126,7 +126,7 @@ if (!hasInterface) exitWith {};
         _order = _values#0;
         _jediWarning = _values#1;
 
-        _position = _args select 0;
+        _position = (ASLToATL (_args select 0));
 
         switch (_order) do {
             case 0: {systemChat "Not Yet Added"};
@@ -154,7 +154,7 @@ if (!hasInterface) exitWith {};
         _duration = _values#2;
         _warnPlayers = _values#3;
 
-        _position = _args select 0;
+        _position = (ASLToATL (_args select 0));
 
         _warmupDuration = 10;
 
@@ -208,7 +208,7 @@ if (!hasInterface) exitWith {};
         _duration = _values#1;
         _warnPlayers = _values#2;
 
-        _position = _args select 0;
+        _position = (ASLToATL (_args select 0));
 
         _warmupDuration = 10;
 
@@ -232,7 +232,7 @@ if (!hasInterface) exitWith {};
 
                 _effectPosX = _effectPos select 0;
                 _effectPosY = _effectPos select 1;
-                _effectPosZ = _effectPos select 2;
+                _effectPosZ = 0;
 
                 private _newEffectPos = [_effectPosX, _effectPosY, _effectPosZ];
 

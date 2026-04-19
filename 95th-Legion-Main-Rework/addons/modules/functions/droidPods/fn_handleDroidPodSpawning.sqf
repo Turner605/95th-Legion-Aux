@@ -14,7 +14,7 @@ params ["_dropPos", "_unitSide", "_mode", "_squadType", "_includeRockets", "_inc
 
     if(_shielded) then {
         private _shield = _spawnerPod getVariable "AUX_95th_Droid_Pod_Shield";
-        _shield hideObjectGlobal false;
+        [_shield, false] remoteExec ["hideObjectGlobal", 2];
     };
 
     if(_singleUse) then {

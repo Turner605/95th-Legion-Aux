@@ -34,7 +34,7 @@ private _warningSmoke = createVehicle ["SmokeShellOrange", _modulePosition, [], 
 
     private _shield = createVehicle ["AUX_95th_Shield_Small", _podPos, [], 0, "CAN_COLLIDE"];
     [_shield, _spawnerPod] call BIS_fnc_attachToRelative;
-    _shield hideObjectGlobal true;
+    [_shield, true] remoteExec ["hideObjectGlobal", 2];
 
     _spawnerPod setVariable ["AUX_95th_Droid_Pod_WarningSmoke", _warningSmoke, true];
     _spawnerPod setVariable ["AUX_95th_Droid_Pod_AttachPoint", _attachPoint, true];
