@@ -4,15 +4,17 @@ author="Too Many Cooks";
 category="ls_edsubcat_cloneTrooper_p1";
 requiredAddons[]=
 {
-	"AUX_95th_players_lieutenant",
+	"A3_Modules_F_Intel",
 	"AUX_95th_players_sergeant",
 	"JLTS_weapons_DC15A",
 	"SEA_JLTS_EA_Scopes",
 	"JLTS_weapons_DC17SA",
+	"JLTS_characters_CloneArmor",
 	"A3_Weapons_F",
+	"AUX_95th_Extras_kits",
 	"JLTS_weapons_Core",
 	"JLTS_radios",
-	"JLTS_characters_CloneArmor",
+	"AUX_95th_players_shared",
 	"AUX_95th_players_trooper",
 	"ace_attach",
 	"ace_chemlights",
@@ -20,9 +22,10 @@ requiredAddons[]=
 	"ace_realisticnames",
 	"A3_Weapons_F_Items",
 	"ace_medical_treatment",
-	"AUX_95th_players_shared",
+	"JLTS_weapons_DC15S",
+	"AUX_95th_players_lieutenant",
 	"AUX_95th_players_shiny",
-	"AUX_95th_Extras_kits",
 	"A3_Modules_F_Curator_Curator",
-	"ace_fortify"
+	"ace_fortify",
+	"M2_Flamethrower_Balloons"
 };
