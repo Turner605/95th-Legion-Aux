@@ -1,0 +1,1883 @@
+version=54;
+center[]={7761.021,-24.274664,3853.2139};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Layer";
+		name="*[95th Comps] Checkpoint";
+		state=1;
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Layer";
+				name="[95th Comps] Checkpoint";
+				class Entities
+				{
+					items=47;
+					class Item0
+					{
+						dataType="Layer";
+						name="LargeRayShieldGate_2";
+						state=1;
+						class Entities
+						{
+							items=1;
+							class Item0
+							{
+								dataType="Logic";
+								class PositionInfo
+								{
+									position[]={-0.0014648438,49.458473,0.6315918};
+								};
+								id=11966;
+								type="Logic";
+								atlOffset=0.99535751;
+							};
+						};
+						id=11961;
+						atlOffset=0.99535751;
+					};
+					class Item1
+					{
+						dataType="Layer";
+						name="Changes";
+						state=1;
+						class Entities
+						{
+							items=26;
+							class Item0
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={7.9985352,25.904747,-19.223877};
+									angles[]={0,4.7123895,-0};
+								};
+								side="Empty";
+								flags=5;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12013;
+								type="3AS_City_Wall_Turn_90_Prop";
+								atlOffset=-29.274496;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.55000001;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=2;
+								};
+							};
+							class Item1
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-8.0014648,25.904747,-19.223877};
+									angles[]={0,3.1415935,-0};
+								};
+								side="Empty";
+								flags=5;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12014;
+								type="3AS_City_Wall_Turn_90_Prop";
+								atlOffset=-29.274496;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.55000001;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=2;
+								};
+							};
+							class Item2
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-8.0009766,25.904747,-43.223633};
+									angles[]={0,1.570797,-0};
+								};
+								side="Empty";
+								flags=5;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12015;
+								type="3AS_City_Wall_Turn_90_Prop";
+								atlOffset=-29.274496;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.55000001;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=2;
+								};
+							};
+							class Item3
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={7.9985352,40.766747,-19.223877};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12016;
+								type="3AS_Prop_Baseplate_10x10_Corner";
+								atlOffset=10.725512;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item4
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-8.0014648,40.766747,-19.223877};
+									angles[]={0,4.7123909,-0};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12017;
+								type="3AS_Prop_Baseplate_10x10_Corner";
+								atlOffset=10.725512;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item5
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={7.9985352,40.766747,-43.223877};
+									angles[]={0,1.5707984,-0};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12018;
+								type="3AS_Prop_Baseplate_10x10_Corner";
+								atlOffset=10.725512;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item6
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-8.0009766,40.766747,-43.223877};
+									angles[]={0,3.1415935,-0};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12019;
+								type="3AS_Prop_Baseplate_10x10_Corner";
+								atlOffset=10.725512;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item7
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={7.9990234,25.904579,20.776123};
+								};
+								side="Empty";
+								flags=5;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12020;
+								type="3AS_City_Wall_Turn_90_Prop";
+								atlOffset=-29.274664;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.55000001;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=2;
+								};
+							};
+							class Item8
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={7.9985352,25.904747,44.776123};
+									angles[]={0,4.7123895,-0};
+								};
+								side="Empty";
+								flags=5;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12021;
+								type="3AS_City_Wall_Turn_90_Prop";
+								atlOffset=-29.274496;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.55000001;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=2;
+								};
+							};
+							class Item9
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-8.0014648,25.904747,44.776123};
+									angles[]={0,3.1415935,-0};
+								};
+								side="Empty";
+								flags=5;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12022;
+								type="3AS_City_Wall_Turn_90_Prop";
+								atlOffset=-29.274496;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.55000001;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=2;
+								};
+							};
+							class Item10
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-8.0009766,25.904579,20.776123};
+									angles[]={0,1.5707964,0};
+								};
+								side="Empty";
+								flags=5;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12023;
+								type="3AS_City_Wall_Turn_90_Prop";
+								atlOffset=-29.274664;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.55000001;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=2;
+								};
+							};
+							class Item11
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={7.9985352,40.766747,44.776123};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12024;
+								type="3AS_Prop_Baseplate_10x10_Corner";
+								atlOffset=10.725512;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item12
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-8.0014648,40.766747,44.776123};
+									angles[]={0,4.7123909,-0};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12025;
+								type="3AS_Prop_Baseplate_10x10_Corner";
+								atlOffset=10.725512;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item13
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={7.9985352,40.766747,20.776123};
+									angles[]={0,1.5707984,-0};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12026;
+								type="3AS_Prop_Baseplate_10x10_Corner";
+								atlOffset=10.725512;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item14
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-8.0009766,40.766747,20.776123};
+									angles[]={0,3.1415935,-0};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12027;
+								type="3AS_Prop_Baseplate_10x10_Corner";
+								atlOffset=10.725512;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item15
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={7.9985352,25.904747,-43.223877};
+								};
+								side="Empty";
+								flags=5;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12028;
+								type="3AS_City_Wall_Turn_90_Prop";
+								atlOffset=-29.274496;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.55000001;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=2;
+								};
+							};
+							class Item16
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-0.0014648438,38.147346,-13.223877};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									disableSimulation=1;
+								};
+								id=12029;
+								type="land_3as_FOBWall1PillarL";
+								atlOffset=6.7255116;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="hideObject";
+										expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=2;
+								};
+							};
+							class Item17
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-0.0014648438,38.147346,14.776123};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									disableSimulation=1;
+								};
+								id=12030;
+								type="land_3as_FOBWall1PillarL";
+								atlOffset=6.7255116;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="allowDamage";
+										expression="_this allowdamage _value;";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									class Attribute1
+									{
+										property="hideObject";
+										expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+										class Value
+										{
+											class data
+											{
+												singleType="BOOL";
+												value=0;
+											};
+										};
+									};
+									nAttributes=2;
+								};
+							};
+							class Item18
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-0.045410156,40.169216,64.204102};
+									angles[]={3.6651914,0,0};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12088;
+								type="3AS_Prop_Baseplate_10x10";
+								atlOffset=10.136576;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.64999998;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item19
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-0.044921875,38.505215,67.084229};
+									angles[]={3.6651914,0,0};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12089;
+								type="3AS_Prop_Baseplate_10x10";
+								atlOffset=8.4725742;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.64999998;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item20
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={0.033691406,40.169212,-62.674072};
+									angles[]={2.6179938,3.1415932,1.3411045e-07};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12100;
+								type="3AS_Prop_Baseplate_10x10";
+								atlOffset=10.136572;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.64999998;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item21
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={0.033203125,38.505215,-65.553955};
+									angles[]={2.6179938,3.1415932,1.3411045e-07};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12101;
+								type="3AS_Prop_Baseplate_10x10";
+								atlOffset=8.4725742;
+								class CustomAttributes
+								{
+									class Attribute0
+									{
+										property="ENH_objectScaling";
+										expression="    if (is3DEN) then    {        _this addEventHandler ['AttributesChanged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];        _this addEventHandler ['Dragged3DEN',        {            params ['_object'];            _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);        }];    };    if (!isMultiplayer && _value != 1) then {[_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}};";
+										class Value
+										{
+											class data
+											{
+												singleType="SCALAR";
+												value=0.64999998;
+											};
+										};
+									};
+									nAttributes=1;
+								};
+							};
+							class Item22
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={2.1210938,32.037922,57.598633};
+									angles[]={4.7124004,2.0943966,4.7306461};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12103;
+								type="3AS_Prop_Baseplate_20x20";
+								atlOffset=2.0052814;
+							};
+							class Item23
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-2.2172852,32.288994,57.516113};
+									angles[]={1.5707959,5.2360072,4.7364621};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12104;
+								type="3AS_Prop_Baseplate_20x20";
+								atlOffset=2.2563529;
+							};
+							class Item24
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={-2.1430664,30.997669,-57.503418};
+									angles[]={1.570784,5.2359905,1.5525393};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12105;
+								type="3AS_Prop_Baseplate_20x20";
+								atlOffset=0.96502876;
+							};
+							class Item25
+							{
+								dataType="Object";
+								class PositionInfo
+								{
+									position[]={2.1953125,31.248741,-57.420898};
+									angles[]={4.712388,2.0944135,1.546721};
+								};
+								side="Empty";
+								flags=1;
+								class Attributes
+								{
+									createAsSimpleObject=1;
+									disableSimulation=1;
+								};
+								id=12106;
+								type="3AS_Prop_Baseplate_20x20";
+								atlOffset=1.2161007;
+							};
+						};
+						id=12012;
+						atlOffset=1.7951193;
+					};
+					class Item2
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0014648438,46.147346,14.776123};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							disableSimulation=1;
+						};
+						id=11959;
+						type="land_3as_FOBWall1PillarL";
+						atlOffset=3.1467838;
+					};
+					class Item3
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0014648438,47.232651,12.362061};
+							angles[]={4.712389,0,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11960;
+						type="3AS_Short_Wall_Long";
+						atlOffset=17.611265;
+					};
+					class Item4
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={3.2485352,50.91304,49.447998};
+							angles[]={0,3.1415927,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							disableSimulation=1;
+						};
+						id=11985;
+						type="3AS_FOB_Banner_CIS_Prop";
+						atlOffset=20.625589;
+					};
+					class Item5
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-3.3608398,50.91304,49.447998};
+							angles[]={0,3.1415927,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							disableSimulation=1;
+						};
+						id=11986;
+						type="3AS_FOB_Banner_CIS_Prop";
+						atlOffset=8.3663254;
+					};
+					class Item6
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-10.597168,44.877586,-31.44458};
+							angles[]={0,1.5710962,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11987;
+						type="land_3AS_CIS_Wall_Med_v2";
+						atlOffset=13.944998;
+					};
+					class Item7
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={10.672363,44.877586,-31.333252};
+							angles[]={0,4.7127142,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11988;
+						type="land_3AS_CIS_Wall_Med_v2";
+						atlOffset=13.944998;
+					};
+					class Item8
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.00048828125,44.877586,-16.302002};
+							angles[]={0,3.1419351,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11989;
+						type="land_3AS_CIS_Wall_Med_v2";
+						atlOffset=13.944998;
+					};
+					class Item9
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0053710938,50.034782,-40.10083};
+							angles[]={0,3.1419351,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+						};
+						id=11990;
+						type="land_3AS_CIS_Wall_Tower_v2";
+						atlOffset=13.955;
+					};
+					class Item10
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-6.8354492,50.228645,-37.171143};
+							angles[]={0,5.6935587,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11991;
+						type="3as_medium_crate_stack_1_prop";
+						atlOffset=19.506912;
+					};
+					class Item11
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={7.7700195,50.238945,-39.442627};
+							angles[]={0,3.1419351,0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11992;
+						type="3as_medium_crate_stack_2_prop";
+						atlOffset=9.5367432e-06;
+					};
+					class Item12
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.0024414063,49.423576,-43.766846};
+							angles[]={0,1.5710962,0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11993;
+						type="3AS_Barricade_cis_Prop";
+						atlOffset=8.7738037e-05;
+					};
+					class Item13
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0014648438,46.80928,-25.557861};
+							angles[]={0,3.1419351,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11994;
+						type="3AS_Catwalk_Mediumplatform";
+						atlOffset=17.534616;
+					};
+					class Item14
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.020019531,46.820137,-33.348877};
+							angles[]={0,3.1419351,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11995;
+						type="3AS_Catwalk_Stair";
+						atlOffset=17.545473;
+					};
+					class Item15
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.014160156,46.147346,-13.229736};
+							angles[]={0,3.1419351,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							disableSimulation=1;
+						};
+						id=11996;
+						type="land_3as_FOBWall1PillarL";
+						atlOffset=3.146616;
+					};
+					class Item16
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0034179688,44.271828,-10.837158};
+							angles[]={1.5707964,3.1417758,6.2828884};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11997;
+						type="3AS_Short_Wall_Long";
+						atlOffset=14.650442;
+					};
+					class Item17
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0034179688,47.232651,-10.837158};
+							angles[]={1.5707964,3.1417758,6.2828884};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11998;
+						type="3AS_Short_Wall_Long";
+						atlOffset=17.611265;
+					};
+					class Item18
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-3.2495117,50.91304,-47.923096};
+							angles[]={0,0.00032487977,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							disableSimulation=1;
+						};
+						id=11999;
+						type="3AS_FOB_Banner_CIS_Prop";
+						atlOffset=20.625589;
+					};
+					class Item19
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={3.3579102,50.91304,-47.917236};
+							angles[]={0,0.00032487977,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							disableSimulation=1;
+						};
+						id=12000;
+						type="3AS_FOB_Banner_CIS_Prop";
+						atlOffset=8.3663254;
+					};
+					class Item20
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={10.594238,44.877586,32.977295};
+							angles[]={0,4.712389,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=12001;
+						type="land_3AS_CIS_Wall_Med_v2";
+						atlOffset=13.944998;
+					};
+					class Item21
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-10.692871,44.877586,32.871826};
+							angles[]={0,1.5707964,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=12002;
+						type="land_3AS_CIS_Wall_Med_v2";
+						atlOffset=13.944998;
+					};
+					class Item22
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0014648438,44.877586,17.83667};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=12003;
+						type="land_3AS_CIS_Wall_Med_v2";
+						atlOffset=13.944998;
+					};
+					class Item23
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0014648438,50.034782,41.641357};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+						};
+						id=12004;
+						type="land_3AS_CIS_Wall_Tower_v2";
+						atlOffset=13.955;
+					};
+					class Item24
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={6.8266602,50.228645,38.697998};
+							angles[]={0,2.5516415,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=12005;
+						type="3as_medium_crate_stack_1_prop";
+						atlOffset=19.506912;
+					};
+					class Item25
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-7.7788086,50.238945,40.973389};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=12006;
+						type="3as_medium_crate_stack_2_prop";
+						atlOffset=9.5367432e-06;
+					};
+					class Item26
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0014648438,49.423576,45.299561};
+							angles[]={0,4.712389,0};
+						};
+						side="Empty";
+						flags=4;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=12007;
+						type="3AS_Barricade_cis_Prop";
+						atlOffset=8.7738037e-05;
+					};
+					class Item27
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0034179688,43.463112,0.64526367};
+						};
+						side="Empty";
+						class Attributes
+						{
+							disableSimulation=1;
+						};
+						id=12008;
+						type="3as_FlatShield_NoE_50x10R";
+						atlOffset=9.188448;
+					};
+					class Item28
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0014648438,44.271828,12.362061};
+							angles[]={4.712389,0,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=12009;
+						type="3AS_Short_Wall_Long";
+						atlOffset=14.650442;
+					};
+					class Item29
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0014648438,46.80928,27.090576};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=12010;
+						type="3AS_Catwalk_Mediumplatform";
+						atlOffset=17.534616;
+					};
+					class Item30
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.026855469,46.820137,34.887451};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=12011;
+						type="3AS_Catwalk_Stair";
+						atlOffset=17.545473;
+					};
+					class Item31
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-5.1772461,48.042648,23.27417};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11975;
+						type="3AS_Prop_Baseplate_10x10";
+						atlOffset=18.010008;
+					};
+					class Item32
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={4.8676758,48.042648,23.27417};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11976;
+						type="3AS_Prop_Baseplate_10x10";
+						atlOffset=18.010008;
+					};
+					class Item33
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={5.1782227,48.042648,-21.747314};
+							angles[]={0,3.1419351,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11983;
+						type="3AS_Prop_Baseplate_10x10";
+						atlOffset=18.010008;
+					};
+					class Item34
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-4.8666992,48.042648,-21.729736};
+							angles[]={0,3.1419351,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11984;
+						type="3AS_Prop_Baseplate_10x10";
+						atlOffset=18.010008;
+					};
+					class Item35
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.026855469,48.042641,37.485107};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11969;
+						type="3AS_Prop_Baseplate_20x20";
+						atlOffset=3.9586773;
+					};
+					class Item36
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.031738281,48.042641,-35.930908};
+							angles[]={0,3.1419351,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11977;
+						type="3AS_Prop_Baseplate_20x20";
+						atlOffset=3.9586773;
+					};
+					class Item37
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={8.1020508,44.877586,45.354248};
+							angles[]={0,4.712389,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11971;
+						type="land_3AS_CIS_Wall_Corner_v2";
+						atlOffset=1.6857414;
+					};
+					class Item38
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-8.0229492,44.877586,45.518311};
+							angles[]={0,3.1415927,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11972;
+						type="land_3AS_CIS_Wall_Corner_v2";
+						atlOffset=1.6857414;
+					};
+					class Item39
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-8.1987305,44.877586,20.490967};
+							angles[]={0,1.5707964,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11973;
+						type="land_3AS_CIS_Wall_Corner_v2";
+						atlOffset=1.6857414;
+					};
+					class Item40
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={7.9321289,44.877586,20.330811};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11974;
+						type="land_3AS_CIS_Wall_Corner_v2";
+						atlOffset=1.6857414;
+					};
+					class Item41
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-8.1225586,44.877586,-43.821533};
+							angles[]={0,1.5710962,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11979;
+						type="land_3AS_CIS_Wall_Corner_v2";
+						atlOffset=1.6857414;
+					};
+					class Item42
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={8.0258789,44.877586,-43.97583};
+							angles[]={0,0.00032487977,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11980;
+						type="land_3AS_CIS_Wall_Corner_v2";
+						atlOffset=1.6857414;
+					};
+					class Item43
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={8.1958008,44.877586,-18.966064};
+							angles[]={0,4.7127142,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11981;
+						type="land_3AS_CIS_Wall_Corner_v2";
+						atlOffset=1.6857414;
+					};
+					class Item44
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-7.9272461,44.877586,-18.78833};
+							angles[]={0,3.1419351,0};
+						};
+						side="Empty";
+						flags=1;
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11982;
+						type="land_3AS_CIS_Wall_Corner_v2";
+						atlOffset=1.6857414;
+					};
+					class Item45
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0014648438,45.511887,55.221436};
+							angles[]={0,1.5707964,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11970;
+						type="3as_ModularPlatform_Ramp_CIS";
+						atlOffset=15.062796;
+					};
+					class Item46
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.0014648438,45.511887,-53.698486};
+							angles[]={0,4.7127142,0};
+						};
+						side="Empty";
+						class Attributes
+						{
+							createAsSimpleObject=1;
+							disableSimulation=1;
+						};
+						id=11978;
+						type="3as_ModularPlatform_Ramp_CIS";
+						atlOffset=15.062796;
+					};
+				};
+				id=11958;
+				atlOffset=14.787296;
+			};
+		};
+		id=12031;
+		atlOffset=14.787296;
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=1;
+	};
+	class Links
+	{
+		items=1;
+		class Item0
+		{
+			linkID=0;
+			item0=11966;
+			item1=12008;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

@@ -27,7 +27,7 @@ class CfgEditorSubcategories {
 	class AUX_95th_Legion_Compositions_Outposts {displayName = "Outposts";};
 	class AUX_95th_Legion_Compositions_Ships {displayName = "Ships";};
 	class AUX_95th_Legion_Compositions_Checkpoints {displayName = "Checkpoints";};
-	class AUX_95th_Legion_Compositions_AA {displayName = "AA";};
+	class AUX_95th_Legion_Compositions_AA {displayName = "Anti-Air Bases";};
 	class AUX_95th_Legion_Compositions_Misc {displayName = "Misc";};
 	class AUX_95th_Legion_Compositions_Utility {displayName = "Utility";};
 	class AUX_95th_Legion_Compositions_Airbases {displayName = "Airbases";};
@@ -47,6 +47,7 @@ class Cfg3DEN {
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};
+		
 
 		// GAR - FOB's
 		class AUX_95th_FOB_Blackweb {
@@ -80,16 +81,36 @@ class Cfg3DEN {
 			useSideColorOnIcon = 1;
 		};
 
-		// CIS - AA
+		class AUX_95th_Opfor_Checkpoint_Sheilded {
+			path = "z\AUX_95th\addons\compositions\cis\%2a[95th%20Comps]%20Checkpoint";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "%2a[95th%20Comps]%20Checkpoint";
+			displayName = "CIS Checkpoint (shielded)";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};	
+
+		// CIS - Anti-Air
 		class AUX_95th_Opfor_AA_Shielded_1 {
 			path = "z\AUX_95th\addons\compositions\cis\aa_shielded_1";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
 			editorCategory = "AUX_95th_Legion_Compositions_CIS";
 			editorSubcategory = "AUX_95th_Legion_Compositions_AA";
-			displayName = "AA (Shielded) 1";
+			displayName = "AA (Shielded) v1";
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};
+
+					class AUX_95th_Opfor_AA_Shielded_2 {
+			path = "z\AUX_95th\addons\compositions\cis\%2aAA%20(Shielded)%201";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "%2aAA%20(Shielded)%201";
+			displayName = "AA (shielded) v2";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};	
 
 		// CIS - Misc
 		class AUX_95th_Opfor_Protected_Shield_Gen_1 {
@@ -129,11 +150,21 @@ class Cfg3DEN {
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
 			editorCategory = "AUX_95th_Legion_Compositions_CIS";
 			editorSubcategory = "AUX_95th_Legion_Compositions_Artillery";
-			displayName = "Triple Platform Artillery";
+			displayName = "Triple Platform Artillery v1";
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};
-
+		
+		class AUX_95th_Opfor_Triple_Platform_Artillery {
+			path = "z\AUX_95th\addons\compositions\cis\%2aTriple%20Platform%20Artillery";
+			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
+			editorCategory = "AUX_95th_Legion_Compositions_CIS";
+			editorSubcategory = "%2aTriple%20Platform%20Artillery";
+			displayName = "Triple Platform Artillery v2";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};	
+				
 		class AUX_95th_Opfor_Artillery_2 {
 			path = "z\AUX_95th\addons\compositions\cis\artillery_2";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
@@ -145,27 +176,27 @@ class Cfg3DEN {
 		};
 
 		// CIS - FOB's
-		class AUX_95th_Opfor_FOB_1 {
+		class AUX_95th_Opfor_FOB_1_Armor {
 			path = "z\AUX_95th\addons\compositions\cis\fob_1";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
 			editorCategory = "AUX_95th_Legion_Compositions_CIS";
 			editorSubcategory = "AUX_95th_Legion_Compositions_FOBs";
-			displayName = "FOB 1";
+			displayName = "Armor Service Base (FOB 1)";
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};
 
-		class AUX_95th_Opfor_FOB_5 {
+		class AUX_95th_Opfor_FOB_5_Comms_Post {
 			path = "z\AUX_95th\addons\compositions\cis\fob_5";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
 			editorCategory = "AUX_95th_Legion_Compositions_CIS";
 			editorSubcategory = "AUX_95th_Legion_Compositions_FOBs";
-			displayName = "FOB 5";
+			displayName = "Communications Post (FOB 5)";
 			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
 			useSideColorOnIcon = 1;
 		};
 
-				class AUX_95th_Opfor_Firebase_v1_AA {
+		class AUX_95th_Opfor_Firebase_v1_AA {
 			path = "z\AUX_95th\addons\compositions\cis\cis_firebase_v1_aa";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
 			editorCategory = "AUX_95th_Legion_Compositions_CIS";

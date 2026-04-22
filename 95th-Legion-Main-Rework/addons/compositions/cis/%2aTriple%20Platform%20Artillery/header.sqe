@@ -1,0 +1,22 @@
+version=54;
+name="*Triple Platform Artillery";
+author="dracus";
+category="EdSubcat_Cars";
+requiredAddons[]=
+{
+	"3AS_Imperial",
+	"3AS_Prop_Platforms",
+	"3AS_Structures_FOB",
+	"OPTRE_BW_WarehouseRS",
+	"3AS_Prop_Crates",
+	"3AS_Prop_Barricades",
+	"lsb_structures_deflector",
+	"3AS_Prop_Terminals",
+	"A3_Modules_F",
+	"3AS_Prop_orto_plut_interiors",
+	"3AS_Structures_City",
+	"3AS_Structure2_MissionTools",
+	"ls_vehicles_radardish",
+	"AUX_95th_Extras_overrides",
+	"3AS_Structures_Lights"
+};
