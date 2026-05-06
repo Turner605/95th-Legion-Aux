@@ -47,6 +47,17 @@ class 3AS_Deka_Static_Sniper: 3AS_Deka_Static_Sniper_Base {
     DSS_isDroid=1;
 };
 
+class ls_droid_droideka_base;
+class ls_droid_droideka: ls_droid_droideka_base {
+    #include "../macros/droidAdvanced.hpp"
+    DSS_isDroid=1;
+};
+
+class ls_droid_droideka_noShield: ls_droid_droideka_base {
+    #include "../macros/droidAdvanced.hpp"
+    DSS_isDroid=1;
+};
+
 
 
 // // B1 Droids
