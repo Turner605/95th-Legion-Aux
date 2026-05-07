@@ -8,6 +8,26 @@ class CfgPatches {
             "AUX_95th_Droid_B1_Rocket_AR", "AUX_95th_Droid_B1_Rocket_Commander", "AUX_95th_Droid_B1_Rocket_AA",
             "AUX_95th_Droid_B1_Rocket_AT",
 
+			"AUX_95th_Droid_B1_Aqua_E5", "AUX_95th_Droid_B1_Aqua_SBB3", "AUX_95th_Droid_B1_Aqua_Sniper",
+            "AUX_95th_Droid_B1_Aqua_AR", "AUX_95th_Droid_B1_Aqua_Commander", "AUX_95th_Droid_B1_Aqua_AA",
+            "AUX_95th_Droid_B1_Aqua_AT",
+
+			"AUX_95th_Droid_B1_Police_E5", "AUX_95th_Droid_B1_Police_SBB3", "AUX_95th_Droid_B1_Police_Sniper",
+            "AUX_95th_Droid_B1_Police_AR", "AUX_95th_Droid_B1_Police_Commander", "AUX_95th_Droid_B1_Police_AA",
+            "AUX_95th_Droid_B1_Police_AT",
+
+			"AUX_95th_Droid_B1_Medic_E5", "AUX_95th_Droid_B1_Medic_SBB3", "AUX_95th_Droid_B1_Medic_Sniper",
+            "AUX_95th_Droid_B1_Medic_AR", "AUX_95th_Droid_B1_Medic_Commander", "AUX_95th_Droid_B1_Medic_AA",
+            "AUX_95th_Droid_B1_Medic_AT",
+
+			"AUX_95th_Droid_B1_Firefighter_E5", "AUX_95th_Droid_B1_Firefighter_SBB3", "AUX_95th_Droid_B1_Firefighter_Sniper",
+            "AUX_95th_Droid_B1_Firefighter_AR", "AUX_95th_Droid_B1_Firefighter_Commander", "AUX_95th_Droid_B1_Firefighter_AA",
+            "AUX_95th_Droid_B1_Firefighter_AT",
+
+			"AUX_95th_Droid_B1_Diplomat_E5", "AUX_95th_Droid_B1_Diplomat_SBB3", "AUX_95th_Droid_B1_Diplomat_Sniper",
+            "AUX_95th_Droid_B1_Diplomat_AR", "AUX_95th_Droid_B1_Diplomat_Commander", "AUX_95th_Droid_B1_Diplomat_AA",
+            "AUX_95th_Droid_B1_Diplomat_AT",
+
 			"AUX_95th_CIS_Disguised_Trooper",
 
 			"AUX_95th_Droid_B1_Unit_Diplomat", "AUX_95th_Droid_B1_Unit_Firefighter", "AUX_95th_Droid_B1_Unit_Medic", 
@@ -69,6 +89,17 @@ class CfgGroups {
 	};
 };
 
+class CfgEditorSubcategories {
+	class AUX_95th_Category_Droids_B1_Aqua{displayName="Droids (B1-Aqua)";};
+	class AUX_95th_Category_Droids_B1_Geonosis{displayName="Droids (B1-Geonosis)";};
+	class AUX_95th_Category_Droids_B1_Training{displayName="Droids (B1-Training)";};
+	class AUX_95th_Category_Droids_B1_Rocket{displayName="Droids (B1-Rocket)";};
+	class AUX_95th_Category_Droids_B1_Police{displayName="Droids (B1-Police)";};
+	class AUX_95th_Category_Droids_B1_Medic{displayName="Droids (B1-Medic)";};
+	class AUX_95th_Category_Droids_B1_Firefighter{displayName="Droids (B1-Firefighter)";};
+	class AUX_95th_Category_Droids_B1_Diplomat{displayName="Droids (B1-Diplomat)";};
+};
+
 class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
@@ -82,16 +113,19 @@ class CfgVehicles {
     class JLTS_Droid_B1_Marine;
     class JLTS_Droid_B1_AT;
     class JLTS_Droid_B1_Pilot;
-	// class JLTS_Droid_B1_Rocket;
-	// class JLTS_Droid_B1_Prototype;
+	class JLTS_B1_backpack;
+	class JLTS_B1_jetpack_Rocket;
 
-	// class JLTS_B1_backpack;
+	// Backpacks
+	#include "Units\backpacks.hpp"
 
-
-
-	// // B1's
-	// #include "Units\specialB1s.hpp"
+	// // B1 Units
 	#include "Units\rocketB1s.hpp"
+	#include "Units\aquaB1s.hpp"
+	#include "Units\policeB1s.hpp"
+	#include "Units\diplomatB1s.hpp"
+	#include "Units\firefighterB1s.hpp"
+	#include "Units\medicB1s.hpp"
 
     class AUX_95th_Unit_P1_Basic_Trooper;
     class AUX_95th_CIS_Disguised_Trooper: AUX_95th_Unit_P1_Basic_Trooper {
@@ -163,7 +197,6 @@ class CfgWeapons {
     class UniformItem;
     class Uniform_Base: ItemCore { class ItemInfo; };
 
-	class JLTS_DroidB1;
 
 	class JLTS_E5_shield;
 	class AUX_95th_E5_shield_attached : JLTS_E5_shield {
@@ -176,57 +209,8 @@ class CfgWeapons {
 		};
 	};
 
-	class AUX_95th_Droid_B1_Uniform_Diplomat: JLTS_DroidB1 {
-		displayName="B1 Diplomat Uniform";
-        faction="AUX_95th_Separatist_Army";
-        editorCategory="AUX_95th_Separatist_Army";
-        editorSubcategory="AUX_95th_Category_Droids_B1";
-		class ItemInfo: UniformItem {
-			uniformClass="AUX_95th_Droid_B1_Unit_Diplomat";
-			uniformModel="-";
-			containerClass="Supply150";
-			mass=40;
-		};
-	};
-
-	class AUX_95th_Droid_B1_Uniform_Firefighter: JLTS_DroidB1 {
-		displayName="B1 Firefighter Uniform";
-        faction="AUX_95th_Separatist_Army";
-        editorCategory="AUX_95th_Separatist_Army";
-        editorSubcategory="AUX_95th_Category_Droids_B1";
-		class ItemInfo: UniformItem {
-			uniformClass="AUX_95th_Droid_B1_Unit_Firefighter";
-			uniformModel="-";
-			containerClass="Supply150";
-			mass=40;
-		};
-	};
-
-	class AUX_95th_Droid_B1_Uniform_Medic: JLTS_DroidB1 {
-		displayName="B1 Medic Uniform";
-        faction="AUX_95th_Separatist_Army";
-        editorCategory="AUX_95th_Separatist_Army";
-        editorSubcategory="AUX_95th_Category_Droids_B1";
-		class ItemInfo: UniformItem {
-			uniformClass="AUX_95th_Droid_B1_Unit_Medic";
-			uniformModel="-";
-			containerClass="Supply150";
-			mass=40;
-		};
-	};
-
-	class AUX_95th_Droid_B1_Uniform_Police: JLTS_DroidB1 {
-		displayName="B1 Police Uniform";
-        faction="AUX_95th_Separatist_Army";
-        editorCategory="AUX_95th_Separatist_Army";
-        editorSubcategory="AUX_95th_Category_Droids_B1";
-		class ItemInfo: UniformItem {
-			uniformClass="AUX_95th_Droid_B1_Unit_Police";
-			uniformModel="-";
-			containerClass="Supply150";
-			mass=40;
-		};
-	};
+	class JLTS_DroidB1;
+	#include "Units\uniforms.hpp"
 
 	// class U_I_CombatUniform;
 	// class ls_redforUniform_base: U_I_CombatUniform {

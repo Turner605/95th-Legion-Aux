@@ -64,6 +64,7 @@ class ls_droid_droideka_noShield: ls_droid_droideka_base {
 class O_Soldier_base_F;
 class JLTS_Droid_B1_E5: O_Soldier_base_F {
     displayName = "Standard (Rifleman)";
+    editorSubcategory="AUX_95th_Category_Droids_B1";
     #include "../macros/droidB1.hpp"
 
 	magazines[]={
@@ -78,6 +79,7 @@ class JLTS_Droid_B1_E5: O_Soldier_base_F {
 
 class JLTS_Droid_B1_Security: JLTS_Droid_B1_E5 {
     displayName = "Standard (Security)";
+    editorSubcategory="AUX_95th_Category_Droids_B1";
     #include "../macros/droidB1.hpp"
 
 	magazines[]={
@@ -92,6 +94,7 @@ class JLTS_Droid_B1_Security: JLTS_Droid_B1_E5 {
 
 class JLTS_Droid_B1_SBB3: JLTS_Droid_B1_E5 {
     displayName = "Standard (Breacher)";
+    editorSubcategory="AUX_95th_Category_Droids_B1";
     #include "../macros/droidB1.hpp"
 
 	magazines[]={
@@ -107,6 +110,7 @@ class JLTS_Droid_B1_SBB3: JLTS_Droid_B1_E5 {
 class O_crew_F;
 class JLTS_Droid_B1_Crew: O_crew_F {
     displayName = "Standard (Crew)";
+    editorSubcategory="AUX_95th_Category_Droids_B1";
     #include "../macros/droidB1.hpp"
 
 	magazines[]={
@@ -122,6 +126,7 @@ class JLTS_Droid_B1_Crew: O_crew_F {
 class O_sniper_F;
 class JLTS_Droid_B1_Sniper: O_sniper_F {
     displayName = "Standard (Sniper)";
+    editorSubcategory="AUX_95th_Category_Droids_B1";
     #include "../macros/droidB1.hpp"
 
 	magazines[]={
@@ -137,6 +142,7 @@ class JLTS_Droid_B1_Sniper: O_sniper_F {
 class O_Soldier_AR_F;
 class JLTS_Droid_B1_AR: O_Soldier_AR_F {
     displayName = "Standard (Autorifleman)";
+    editorSubcategory="AUX_95th_Category_Droids_B1";
     #include "../macros/droidB1.hpp"
 
 	magazines[]={
@@ -152,6 +158,7 @@ class JLTS_Droid_B1_AR: O_Soldier_AR_F {
 class O_officer_F;
 class JLTS_Droid_B1_Commander: O_officer_F {
     displayName = "Standard (Commander)";
+    editorSubcategory="AUX_95th_Category_Droids_B1";
     #include "../macros/droidB1.hpp"
 
 	magazines[]={
@@ -167,6 +174,7 @@ class JLTS_Droid_B1_Commander: O_officer_F {
 class O_Soldier_AT_F;
 class JLTS_Droid_B1_Marine: O_Soldier_AT_F {
     displayName = "Standard (AA)";
+    editorSubcategory="AUX_95th_Category_Droids_B1";
     #include "../macros/droidB1.hpp"
 
     weapons[]={"JLTS_E5", "ls_weapon_e60r_aa", "Throw", "Put"};
@@ -184,6 +192,7 @@ class JLTS_Droid_B1_Marine: O_Soldier_AT_F {
 class O_Soldier_LAT_F;
 class JLTS_Droid_B1_AT: O_Soldier_LAT_F {
     displayName = "Standard (AT)";
+    editorSubcategory="AUX_95th_Category_Droids_B1";
     #include "../macros/droidB1.hpp"
 
     magazines[]={
@@ -199,6 +208,7 @@ class JLTS_Droid_B1_AT: O_Soldier_LAT_F {
 class O_helipilot_F;
 class JLTS_Droid_B1_Pilot: O_helipilot_F {
     displayName = "Standard (Pilot)";
+    editorSubcategory="AUX_95th_Category_Droids_B1";
     #include "../macros/droidB1.hpp"
 
 	magazines[]={
@@ -216,31 +226,37 @@ class JLTS_Droid_B1_Pilot: O_helipilot_F {
 // // B1 Geonosis Droids
 class JLTS_Droid_B1_Geonosis_Commander: JLTS_Droid_B1_Commander {
     displayName = "Geonosis (Commander)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Geonosis";
     #include "../macros/droidB1.hpp"
 };
 
 class JLTS_Droid_B1_Geonosis_SBB3: JLTS_Droid_B1_SBB3 {
     displayName = "Geonosis (Breacher)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Geonosis";
     #include "../macros/droidB1.hpp"
 };
 
 class JLTS_Droid_B1_Geonosis_AR: JLTS_Droid_B1_AR {
     displayName = "Geonosis (AutoRifleman)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Geonosis";
     #include "../macros/droidB1.hpp"
 };
 
 class JLTS_Droid_B1_Geonosis_Sniper: JLTS_Droid_B1_Sniper {
     displayName = "Geonosis (Sniper)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Geonosis";
     #include "../macros/droidB1.hpp"
 };
 
 class JLTS_Droid_B1_Geonosis_E5: JLTS_Droid_B1_E5 {
     displayName = "Geonosis (Rifleman)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Geonosis";
     #include "../macros/droidB1.hpp"
 };
 
 class JLTS_Droid_B1_Geonosis_AT: JLTS_Droid_B1_AT {
     displayName = "Geonosis (AT)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Geonosis";
     #include "../macros/droidB1.hpp"
 };
 
@@ -249,31 +265,37 @@ class JLTS_Droid_B1_Geonosis_AT: JLTS_Droid_B1_AT {
 // // B1 Training Droids
 class JLTS_Droid_B1_Training_Commander: JLTS_Droid_B1_Commander {
     displayName = "Training (Commander)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Training";
     #include "../macros/droidB1.hpp"
 };
 
 class JLTS_Droid_B1_Training_SBB3: JLTS_Droid_B1_SBB3 {
     displayName = "Training (Breacher)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Training";
     #include "../macros/droidB1.hpp"
 };
 
 class JLTS_Droid_B1_Training_AR: JLTS_Droid_B1_AR {
     displayName = "Training (AutoRifleman)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Training";
     #include "../macros/droidB1.hpp"
 };
 
 class JLTS_Droid_B1_Training_Sniper: JLTS_Droid_B1_Sniper {
     displayName = "Training (Sniper)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Training";
     #include "../macros/droidB1.hpp"
 };
 
 class JLTS_Droid_B1_Training_E5: JLTS_Droid_B1_E5 {
     displayName = "Training (Rifleman)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Training";
     #include "../macros/droidB1.hpp"
 };
 
 class JLTS_Droid_B1_Training_AT: JLTS_Droid_B1_AT {
     displayName = "Training (AT)";
+    editorSubcategory="AUX_95th_Category_Droids_B1_Training";
     #include "../macros/droidB1.hpp"
 };
 

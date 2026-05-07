@@ -102,7 +102,7 @@ class Cfg3DEN {
 			useSideColorOnIcon = 1;
 		};
 
-					class AUX_95th_Opfor_AA_Shielded_2 {
+		class AUX_95th_Opfor_AA_Shielded_2 {
 			path = "z\AUX_95th\addons\compositions\cis\%2aAA%20(Shielded)%201";
 			side = 0; // 0 opfor, 1 blufor, 2 indfor, 3 civ, 8 Empty/Props
 			editorCategory = "AUX_95th_Legion_Compositions_CIS";

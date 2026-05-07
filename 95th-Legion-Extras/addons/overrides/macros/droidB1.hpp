@@ -1,6 +1,5 @@
 faction="AUX_95th_Separatist_Army";
 editorCategory="AUX_95th_Separatist_Army";
-editorSubcategory="AUX_95th_Category_Droids_B1";
 
 identityTypes[] = {"Aux_95th_Identity_B1"};
 DSS_DamageSystem_Active=1;
