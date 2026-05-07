@@ -1,10 +1,10 @@
 params ["_deadDroid"];
 
+if ((isPlayer _droid) or !(isNil {_droid getVariable "WBK_AI_ISZombie"}) or !(alive _droid)) exitWith {};
+
 _droid = (createGroup east) createUnit [(typeOf _deadDroid), (getPos _deadDroid), [], 0, "CAN_COLLIDE"];
 
 deleteVehicle _deadDroid;
-
-if ((isPlayer _droid) or !(isNil {_droid getVariable "WBK_AI_ISZombie"}) or !(alive _droid)) exitWith {};
 
 group _droid setSpeedMode "FULL";
 _droid setSpeaker "NoVoice";
