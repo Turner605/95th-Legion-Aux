@@ -1,6 +1,6 @@
 params ["_deadDroid"];
 
-if ((isPlayer _droid) or !(isNil {_droid getVariable "WBK_AI_ISZombie"}) or !(alive _droid)) exitWith {};
+if ((isPlayer _deadDroid) or !(isNil {_deadDroid getVariable "WBK_AI_ISZombie"})) exitWith {};
 
 _droid = (createGroup east) createUnit [(typeOf _deadDroid), (getPos _deadDroid), [], 0, "CAN_COLLIDE"];
 
