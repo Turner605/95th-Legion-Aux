@@ -37,6 +37,7 @@ class 3AS_U_CIS_Heavy: 3AS_CIS_Heavy_Base_F {
 // Droidekas
 class 3AS_Deka_Static_Base;
 class 3AS_Deka_Static: 3AS_Deka_Static_Base {
+    scope=0;
     #include "../macros/droidAdvanced.hpp"
     DSS_isDroid=1;
 };
@@ -58,7 +59,29 @@ class ls_droid_droideka_noShield: ls_droid_droideka_base {
     DSS_isDroid=1;
 };
 
+class ls_droid_droideka_training: ls_droid_droideka {
+    #include "../macros/droidAdvanced.hpp"
+    displayName = "Droideka (Training)";
+    DSS_isDroid=1;
+};
 
+class ls_droid_droideka_noShield_training: ls_droid_droideka_noShield {
+    #include "../macros/droidAdvanced.hpp"
+    displayName = "Droideka (Training, No Shield)";
+    DSS_isDroid=1;
+};
+
+class ls_droid_droideka_imperial: ls_droid_droideka {
+    #include "../macros/droidAdvanced.hpp"
+    displayName = "Droideka (Imperial)";
+    DSS_isDroid=1;
+};
+
+class ls_droid_droideka_noShield_imperial: ls_droid_droideka_noShield {
+    #include "../macros/droidAdvanced.hpp"
+    displayName = "Droideka (Imperial, No Shield)";
+    DSS_isDroid=1;
+};
 
 // // B1 Droids
 class O_Soldier_base_F;
@@ -447,8 +470,8 @@ class ls_droid_b2: ls_droid_base {
 
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        init = "[(_this select 0)] call AUX_95th_Extras_fnc_B2Init;"; 
-        // init = "[(_this select 0)] spawn WBK_Droid_B2_Load;";
+        // init = "[(_this select 0)] call AUX_95th_Extras_fnc_B2Init;"; 
+        init = "[(_this select 0)] spawn WBK_Droid_B2_Load;";
     };
 };
 
