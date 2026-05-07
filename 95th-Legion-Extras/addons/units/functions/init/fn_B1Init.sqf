@@ -5,6 +5,8 @@ _droid disableAI "COVER";
 _droid disableAI "AIMINGERROR";
 _droid setUnitPos "UP";
 
+[group _droid, getPos _droid, "Rush"] spawn lambs_wp_fnc_taskRush;
+
 _droid addEventHandler ["Killed", {
 	params ["_unit", "_killer"];
 
