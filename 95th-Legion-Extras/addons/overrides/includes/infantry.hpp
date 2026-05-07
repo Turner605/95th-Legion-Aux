@@ -471,7 +471,7 @@ class ls_droid_b2: ls_droid_base {
     class EventHandlers {
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         // init = "[(_this select 0)] call AUX_95th_Extras_fnc_B2Init;"; 
-        init = "[(_this select 0)] spawn WBK_Droid_B2_Load;";
+        init = "_unit = _this select 0; if (local _unit) then {_unit spawn WBK_Droid_B2_Load;};";
     };
 };
 
