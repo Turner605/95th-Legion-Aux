@@ -115,6 +115,16 @@ class CfgVehicles {
                 displayName = "Spawn [95th] Rho Shuttle";
                 statement = "[this, player, 'AUX_95th_Rho'] spawn AUX_95th_fnc_handleAirSpawned;"; 
             };
+            class SpawnLas {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Spawn [95th] LAS (Transport)";
+                statement = "[this, player, 'AUX_95th_LAS_F'] spawn AUX_95th_fnc_handleAirSpawned;"; 
+            };
+            class SpawnLasZ6 {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Spawn [95th] LAS (Side Gunners)";
+                statement = "[this, player, 'AUX_95th_LAS_Z6_F'] spawn AUX_95th_fnc_handleAirSpawned;"; 
+            };
         };
     };
 };
