@@ -1,0 +1,2 @@
+str_aux_95th_joint_author - addons/main/Stringtable.xml:5:16
+str_aux_95th_mod_name - addons/main/Stringtable.xml:14:16
