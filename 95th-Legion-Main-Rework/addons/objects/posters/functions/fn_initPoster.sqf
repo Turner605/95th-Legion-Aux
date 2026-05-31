@@ -1,5 +1,7 @@
 params ["_poster", "_type"];
 
+if (!isServer) exitWith {};
+
 private _posterOptions = [];
 
 switch (_type) do {
