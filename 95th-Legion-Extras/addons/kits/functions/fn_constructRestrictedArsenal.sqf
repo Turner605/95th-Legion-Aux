@@ -42,6 +42,10 @@ AUX_95th_Arsenal_Whitelisted_Magazines = [
 	
 	"Laserbatteries","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell",
 	"3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell",
+
+    "3AS_3Rnd_HEAT_Grenade_shell", "3AS_3Rnd_Smoke_Blue_shell", "3AS_3Rnd_Smoke_Green_shell", "3AS_3Rnd_HE_Grenade_shell", "3AS_3Rnd_Flare_White_shell", "3AS_3Rnd_Smoke_Orange_shell",
+    "3AS_3Rnd_Smoke_Purple_shell", "3AS_3Rnd_Smoke_Red_shell", "3AS_3Rnd_Smoke_White_shell", "3AS_3Rnd_Smoke_Yellow_shell",
+
 	"3AS_6Rnd_HE_Grenade_shell", 
     "3AS_FusionCutter_Splice_Magazine", "3AS_FusionCutter_Fortification_Magazine", "3AS_FusionCutter_Dewreck_Magazine", "3AS_FusionCutter_Magazine"
 ];
