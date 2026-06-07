@@ -212,6 +212,17 @@ class CfgWeapons {
 	class JLTS_DroidB1;
 	#include "Units\uniforms.hpp"
 
+	class ls_droidHelmet_b1;
+
+    class AUX_95th_Helmet_B1_Invis: ls_droidHelmet_b1 {
+        scope = 2;
+        scopeArsenal = 2;
+        author="95th Aux Team";
+        DSS_HUD_Lowlight_Enabled = 1;
+        displayName="Invisible B1 Head"; 
+        hiddenSelectionsTextures[]={""};
+    };
+
 	// class U_I_CombatUniform;
 	// class ls_redforUniform_base: U_I_CombatUniform {
 	// 	class ItemInfo;
