@@ -23,3 +23,15 @@ class AUX_95th_Droid_B1_Backpack_Aqua : JLTS_B1_jetpack_Rocket {
 	hiddenSelectionsTextures[]={"\z\AUX_95th_Extras\addons\units\data\b1\backpacks\Jetpack_Aqua.paa"};
 	JLTS_isJumppack = 0;
 };
+
+class AUX_95th_Droid_B1_Backpack_Rocket : JLTS_B1_jetpack_Rocket {
+	displayName="B1 Rocket Backpack";\
+	JLTS_isJumppack = 0;
+	DSS_Is_Jetpack = 1;
+	DSS_Jetpack_Acceleration = 1;
+	DSS_Jetpack_Resistance = 2;
+	DSS_Jetpack_Dash_Power_Modifier = 1.5;
+	DSS_Jetpack_Dash_Cost = 5;
+	DSS_Jetpack_Max_Heat = 30;
+	DSS_Jetpack_Launcher_Penalty = 6;
+};
