@@ -162,12 +162,24 @@ class CfgVehicles {
                 gunnerForceOptics = 0;
                 gunnerOpticsModel = "\A3\weapons_f_gamma\reticle\HMG_01_Optics_Gunner_F";
                 selectionFireAnim = "zasleh";
-                weapons[] = {"HMG_static"};
-                magazines[] = {
-                    "100Rnd_127x99_mag_Tracer_Red",
-                    "100Rnd_127x99_mag_Tracer_Red",
-                    "100Rnd_127x99_mag_Tracer_Red"
+
+                weapons[] = {"JLTS_UST_turret_weapon"};
+				magazines[] = {
+                    "JLTS_UST_turret_magazine_GAR",
+                    "JLTS_UST_turret_magazine_GAR",
+                    "JLTS_UST_turret_magazine_GAR",
+                    "JLTS_UST_turret_magazine_GAR",
+                    "JLTS_UST_turret_magazine_GAR",
+                    "JLTS_UST_turret_magazine_GAR",
+                    "JLTS_UST_turret_magazine_GAR",
+                    "JLTS_UST_turret_magazine_GAR",
+                    "JLTS_UST_turret_magazine_GAR",
+                    "JLTS_UST_turret_magazine_GAR"
                 };
+                uavCameraGunnerPos = "PiP_pos";
+		        uavCameraGunnerDir = "PiP_dir";
+                // gunBeg = "usti hlavne";
+                // gunEnd = "usti hlavne1";
                 memoryPointGunnerOptics = "gunnerview";
                 memoryPointGun[] = {"usti hlavne", "usti hlavne1"};
 
