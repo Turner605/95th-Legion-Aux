@@ -81,7 +81,13 @@ class CfgVehicles {
         editorSubcategory="AUX_95th_Objects_Fortify";
         class Turrets: Turrets {
 			class MainTurret: MainTurret {
-				gunnerOpticsModel = "";
+				gunnerForceOptics = 1;
+				gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				class ViewOptics {
+					initFov = 0.75;
+					minFov = 0.75;
+					maxFov = 0.75;
+				};
 			};
 		};
     };
