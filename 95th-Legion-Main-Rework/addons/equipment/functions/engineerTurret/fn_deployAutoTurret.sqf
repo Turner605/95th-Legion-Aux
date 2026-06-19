@@ -5,8 +5,8 @@ params ["_unit"];
 private _placementPos = _unit modelToWorld [0,2,0.2];
 private _direction = getDir _unit;
 
-private _turret = createVehicle ["3AS_BlasterTurret", _placementPos, [], 0, "CAN_COLLIDE"];
-_turret setDir _direction;
+private _turret = createVehicle ["AUX_95th_Fortify_Blaster_Turret", _placementPos, [], 0, "CAN_COLLIDE"];
+[_unit, _turret] call ace_dragging_fnc_startCarry;
 createVehicleCrew _turret; 
 _unit setVariable ["NFL_Turret", _turret, true];
 _unit setVariable ["NFL_Turret_Is_On_Cooldown", true, true];
