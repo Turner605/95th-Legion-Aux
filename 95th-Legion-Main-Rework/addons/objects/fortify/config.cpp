@@ -91,6 +91,13 @@ class CfgVehicles {
 			};
 		};
     };
+
+    class 3AS_BlasterTurret;
+    class AUX_95th_Fortify_Blaster_Turret: 3AS_BlasterTurret {
+        displayName="Blaster Turret";
+        editorCategory="AUX_95th_Objects_Generic";
+        editorSubcategory="AUX_95th_Objects_Fortify";
+    };
 };
 
 #include "CfgEventHandlers.hpp"
