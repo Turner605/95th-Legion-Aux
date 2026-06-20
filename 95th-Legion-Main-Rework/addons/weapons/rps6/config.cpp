@@ -13,6 +13,19 @@ class CfgPatches {
     };
 };
 
+class CfgAmmo {
+    class 3AS_R_MK41_AT;
+	class 3AS_R_MK40_AT;
+
+    class AUX_95th_MK41_AT_Ammo: 3AS_R_MK41_AT {
+        hit = 80;
+    };
+
+    class AUX_95th_MK40_AT_Ammo: 3AS_R_MK40_AT {
+        hit = 80;
+    };
+};
+
 class CfgMagazines {
     class Default;
 	class CA_Magazine: Default{};
@@ -24,12 +37,14 @@ class CfgMagazines {
     class AUX_95th_MK40_AT: 3AS_MK40_AT {
 		author = "95th Aux Team";
 		displayName = "[95th] MK40 AT Rocket";
+		ammo = "AUX_95th_MK40_AT_Ammo";
 	};
 
     class AUX_95th_MK41_AT: 3AS_MK41_AT {
 		author = "95th Aux Team";
 		displayName = "[95th] MK41 AT Rocket";
 		mass = 30;
+		ammo = "AUX_95th_MK41_AT_Ammo";
 	};
 
 	class AUX_95th_MK42_HE: 3AS_MK42_HE {
