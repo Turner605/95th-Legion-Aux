@@ -104,6 +104,7 @@ class CfgVehicles {
 	class AUX_95th_Bantha: QS_Bantha {
 		displayName = "Bantha";
 		author = "95th Aux Team";
+		crew = "AUX_95th_Unit_P1_Basic_Trooper";
 		tas_canBlift=1;
 		tas_liftVars = "[[[[0,-4,-4]]], [0.1], [-0.5]]";
 		faction="AUX_95th_Legion_Faction_Vehicles";
