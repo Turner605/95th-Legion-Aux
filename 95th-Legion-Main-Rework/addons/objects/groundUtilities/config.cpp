@@ -70,6 +70,26 @@ class CfgVehicles {
                 displayName = "Spawn [95th] Swamp Speeder";
                 statement = "[this, player, 'AUX_95th_Swamp_Speeder'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
             };
+            class SpawnBARCSpeeder {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Spawn [95th] BARC";
+                statement = "[this, player, 'AUX_95th_Barc'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
+            };
+            class SpawnBARCSpeederDouble {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Spawn [95th] BARC Sidecar (Double)";
+                statement = "[this, player, 'AUX_95th_Barc_Sidecar_Double'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
+            };
+            class SpawnBARCSpeederIon {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Spawn [95th] BARC Sidecar (Ion)";
+                statement = "[this, player, 'AUX_95th_Barc_Sidecar_Ion'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
+            };
+            class SpawnBARCSpeederStretcher {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Spawn [95th] BARC Sidecar (Stretcher)";
+                statement = "[this, player, 'AUX_95th_Barc_Stretcher'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
+            };
             class SpawnSwampSpeederTransport {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
                 displayName = "Spawn [95th] Swamp Speeder (Transport)";
@@ -80,20 +100,15 @@ class CfgVehicles {
                 displayName = "Spawn [95th] Bantha";
                 statement = "[this, player, 'AUX_95th_Bantha'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
             };
-            class SpawnBanthaUgv {
-                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
-                displayName = "Spawn [95th] Bantha (UGV)";
-                statement = "[this, player, 'AUX_95th_Bantha_UAV_Test'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
-            };
+            // class SpawnBanthaUgv {
+            //     priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+            //     displayName = "Spawn [95th] Bantha (UGV)";
+            //     statement = "[this, player, 'AUX_95th_Bantha_UAV_Test'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
+            // };
             class SpawnMAVr {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
                 displayName = "Spawn [95th] MAVr";
                 statement = "[this, player, 'AUX_95th_MAVr'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
-            };
-            class PX10Repair {
-                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
-                displayName = "Spawn [95th] PX-10 (Repair)";
-                statement = "[this, player, 'AUX_95th_PX10_Repair'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
             };
         };
     };
@@ -162,6 +177,11 @@ class CfgVehicles {
                 priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
                 displayName = "Load AT-RT Into LAAT";
                 statement = "[this] spawn AUX_95th_fnc_handleLoadATRT;"; 
+            };
+            class PX10Repair {
+                priority = 10; radius = 10; position = "camera"; showWindow = 0; onlyForPlayer = 0; shortcut = ""; condition = "alive this;";
+                displayName = "Spawn [95th] PX-10 (Repair)";
+                statement = "[this, player, 'AUX_95th_PX10_Repair'] spawn AUX_95th_fnc_handleGroundSpawned;"; 
             };
         };
     };
