@@ -1,10 +1,10 @@
-#define COMPONENT players_mate
-#define COMPONENT_BEAUTIFIED Players_Mate
-#define PLAYER_NAME mate
-#define PLAYER_NAME_BEAUTIFIED Mate
+#define COMPONENT players_bjorn
+#define COMPONENT_BEAUTIFIED Players_Bjorn
+#define PLAYER_NAME bjorn
+#define PLAYER_NAME_BEAUTIFIED Bjorn
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY Zeus
+#define SQUAD_KEY One_Two
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
