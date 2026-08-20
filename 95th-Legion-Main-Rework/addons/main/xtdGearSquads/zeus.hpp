@@ -1,7 +1,7 @@
 class Player {
     alwaysSelectable = 0;
     labels = "Player";
-    values[] = {"Turner","Splash", "Commie", "Solvest", "Axe", "Death", "Elusive", "Mate"};
+    values[] = {"Turner","Splash", "Commie", "Solvest", "Axe", "Death", "Elusive"};
     class Turner { label = "Turner"; description = "Turner`s Helmet"; };
     class Splash { label = "Splash"; description = "Splash`s Helmet"; };
     class Commie { label = "Commie"; description = "Commie`s Helmet"; };
@@ -9,5 +9,4 @@ class Player {
     class Axe { label = "Axe"; description = "Axe`s Helmet"; };
     class Death { label = "Death"; description = "Death`s"; };
     class Elusive { label = "Elusive"; description = "Elusive`s"; };
-    class Mate { label = "Mate"; description = "Mate`s"; };
 };

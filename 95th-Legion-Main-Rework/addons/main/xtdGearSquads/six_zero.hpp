@@ -1,7 +1,7 @@
 class Player {
     alwaysSelectable = 0;
     labels = "Player";
-    values[] = {"Talisman", "Token", "Kozi", "Styx", "Charlie" , "Delta"};
+    values[] = {"Talisman", "Token", "Kozi", "Styx", "Charlie", "Delta", "Mate"};
     class Talisman { label = "Talisman"; description = "Talisman`s"; };
     class Token { label = "Token"; description = "Token`s"; };
     class Kozi { label = "Kozi"; description = "Kozi`s"; };
@@ -9,4 +9,5 @@ class Player {
     class Gum { label = "Gum"; description = "Gum`s"; };
     class Charlie { label = "Charlie"; description = "Charlie`s"; };
     class Delta { label = "Delta"; description = "Detla`s"; };
+    class Mate { label = "Mate"; description = "Mate`s"; };
 };
