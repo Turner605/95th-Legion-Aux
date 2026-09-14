@@ -1,10 +1,10 @@
-#define COMPONENT players_galvin
-#define COMPONENT_BEAUTIFIED Players_Galvin
-#define PLAYER_NAME galvin
-#define PLAYER_NAME_BEAUTIFIED Galvin
+#define COMPONENT players_rampage
+#define COMPONENT_BEAUTIFIED Players_Rampage
+#define PLAYER_NAME rampage
+#define PLAYER_NAME_BEAUTIFIED Rampage
 
 //OPTIONS: Zeus, Fallen, Unassigned, Basic, One_Zero, One_One, One_Two, One_Three, One_Four, Five_Zero, Six_Zero, Seven_Zero
-#define SQUAD_KEY Unassigned
+#define SQUAD_KEY One_Two
 
 // HELMET OPTIONS 0 (False), 1 (True)
 #define HELMET_P1_BASIC 1
@@ -21,7 +21,7 @@
 #define HELMET_P2_MARINE_SET 0
 
 // UNIFORM OPTIONS 0 (False), 1 (True)
-#define UNIFORM_P1_BASIC 1
+#define UNIFORM_P1_BASIC 0
 #define UNIFORM_P1_MC 0
 #define UNIFORM_P1_COLDASSAULT 0
 #define UNIFORM_P1_COMMANDO 0
@@ -31,10 +31,10 @@
 #define BACKPACK_BELT_LIGHT 0
 #define BACKPACK_MINI_LIGHT 0
 #define BACKPACK_MICRO_LIGHT 0
-#define BACKPACK_RUCKSACK_LIGHT 1
-#define BACKPACK_RUCKSACK_HEAVY 1
-#define BACKPACK_RUCKSACK_MEDIC 1
-#define BACKPACK_RUCKSACK_ORDNANCE 1
+#define BACKPACK_RUCKSACK_LIGHT 0
+#define BACKPACK_RUCKSACK_HEAVY 0
+#define BACKPACK_RUCKSACK_MEDIC 0
+#define BACKPACK_RUCKSACK_ORDNANCE 0
 #define JETPACK_JT12_LIGHT 0
 #define JETPACK_JT12_MEDIC 0
 #define JETPACK_JT14_LIGHT 0
@@ -45,7 +45,7 @@
 // VEST OPTIONS 0 (False), 1 (True)
 #define VEST_STANDARD_SET 0
 #define VEST_ARC_SET 0
-#define VEST_OFFICER_SET 1
+#define VEST_OFFICER_SET 0
 #define VEST_COMMANDO_SET 0
 #define VEST_MARINE_SET 0
 

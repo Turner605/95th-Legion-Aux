@@ -1,7 +1,7 @@
 class Player {
     alwaysSelectable = 0;
     labels = "Player";
-    values[] = {"Ghost", "Som", "MadHatter", "Sythe", "Prophet", "Cheezy", "Foley", "Mobius", "Ratler", "Edge", "Smaug", "Taun", "Canada", "Dilanza", "Mute", "Revan","Dagger"};
+    values[] = {"Ghost", "Som", "MadHatter", "Sythe", "Prophet", "Cheezy", "Foley", "Mobius", "Ratler", "Edge", "Smaug", "Taun", "Canada", "Dilanza", "Mute", "Revan","Dagger", "Stitch", "Death", "Axe", "Embers", "Gum"};
     class Ghost { label = "Ghost"; description = "Ghost`s"; };
     class Som { label = "Som"; description = "Som`s"; };
     class MadHatter { label = "Mad Hatter"; description = "Mad Hatter`s"; };
@@ -19,4 +19,9 @@ class Player {
     class Mute { label = "Mute"; description = "Mute`s"; };
     class Revan { label = "Revan"; description = "Revan`s Helmet"; };
     class Dagger { label = "Dagger"; description = "Dagger's Gear"; };
+    class Stitch { label = "Stitch"; description = "Stitch`s"; };
+    class Axe { label = "Axe"; description = "Axe`s Helmet"; };
+    class Death { label = "Death"; description = "Death`s"; };
+    class Embers { label = "Embers"; description = "Embers`s"; };
+    class Gum { label = "Gum"; description = "Gum`s"; };
 };
