@@ -13,7 +13,10 @@ class CfgPatches {
 			"A3_Ui_F_Oldman",
 			"A3_UI_F_AOW",
 			"3AS_Main",
-			"3AS_Main_Intro"
+			"3AS_Main_Intro",
+			"ls_loadorder",
+			"ls_compat_tas",
+			"ls_compat_tas_terrains"
         };
         authors[] = {"Turner"};
         VERSION_CONFIG;
@@ -89,6 +92,9 @@ class RscDisplayLoading {
 	};
 };
 
+class RscMainMenuSpotlight: RscControlsGroupNoScrollbars {show = 0; onLoad = "";};
+class RscActivePictureKeepAspect;
+
 class RscDisplayMain: RscStandardDisplay {
 	enableDisplay = 1;
 	text = "\z\AUX_95th\addons\menu\data\backgroundSix.paa"; 
@@ -133,17 +139,17 @@ class RscDisplayMain: RscStandardDisplay {
         class infoNews:infomods {show=0;};
         class infoVersion:infoNews {show=0;};
 
-		// Spotlight removal
-		delete Spotlight1;
-		delete Spotlight2;
-		delete Spotlight3;
-		delete BackgroundSpotlight;
-		delete BackgroundSpotlightRight;
-		delete BackgroundSpotlightLeft;
+		// Spotlight Removal
+        class BackgroundSpotlight: RscPicture  {show = 0;};
+        class BackgroundSpotlightLeft: BackgroundSpotlight {show = 0;};
+        class BackgroundSpotlightRight: BackgroundSpotlightLeft {show = 0;};
+        class Spotlight1: RscMainMenuSpotlight {show = 0;};
+        class Spotlight2: RscText {show = 0;};
+        class Spotlight3: RscMainMenuSpotlight {show = 0;};
+        class SpotLightPrev: RscActivePictureKeepAspect {show = 0;};
+        class SpotlightNext: SpotLightPrev {show = 0;};
 	};
 };
-
-class RscMainMenuSpotlight: RscControlsGroupNoScrollbars {show = 0; onLoad = "";};
 
 class RscDisplayLoadCustom: RscStandardDisplay {
 	class controlsBackground {
