@@ -73,10 +73,20 @@ _object addEventHandler ["Deleted", {
 _object addEventHandler ["Killed", {
     params ["_object", "_killer"];
 
+    private _destroyedSounds = [
+        "Screams1.ogg",
+        "Screams2.ogg",
+        "Screams3.ogg"
+    ];
+
     private _perFrame = _object getVariable "AUX_95th_PerFrame";
     private _soundID = _object getVariable "AUX_95th_SoundID";
     [_perFrame] call CBA_fnc_removePerFrameHandler;
     stopSound _soundID;
+
+    private _randomSound = selectRandom _destroyedSounds;
+    private _soundPath = "\z\AUX_95th\addons\objects\paranoiaDevice\data\audio\" + _randomSound;
+    playSound3D [_soundPath, player, false, getPosASL _object, 0.5, 1, 0];
 
     {
         detach _x;
