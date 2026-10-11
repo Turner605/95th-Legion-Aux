@@ -3,10 +3,20 @@ params ["_object", "_range"];
 if (!isServer) exitWith {};
 if (!isNull ZEN_placement_helper) exitWith {};
 
+private _sounds = [
+    "JoinUs.ogg",
+    "NotYourFriends.ogg",
+    "ReleaseYourself.ogg",
+    "TurnYourWeapon.ogg",
+    "WalkAway.ogg"
+];
+
 private _crystal = "3AS_Crystal_4_Red" createVehicle [0,0,0];
 
 private _AUX_95th_Paranoia_Frame_Handler = [{
-    (_this select 0) params ["_object", "_range"];
+    sleep (random(4)+random(4)+random(4));
+
+    (_this select 0) params ["_object", "_range", "_sounds"];
 
     private _targetUnit = _object getVariable ["AUX_95th_Paranoia_Target", objNull];
     private _targetIsAlive = alive _targetUnit;
@@ -25,8 +35,13 @@ private _AUX_95th_Paranoia_Frame_Handler = [{
         };
     };
 
+    private _randomSound = selectRandom _sounds; 
 
-}, 0.1, [_object, _range]] call CBA_fnc_addPerFrameHandler;
+    systemChat "Playing " + _randomSound;
+
+    remoteExec ["playSoundUI", 0, ["\z\AUX_95th\addons\objects\paranoiaDevice\data\audio\" + _randomSound, 0.3], _targetUnit];
+
+}, 15, [_object, _range, _sounds]] call CBA_fnc_addPerFrameHandler;
 
 
 _crystal attachTo [_object,[-0.5,0.0,-0.5]];
