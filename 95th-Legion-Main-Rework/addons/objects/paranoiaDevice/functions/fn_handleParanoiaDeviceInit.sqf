@@ -35,11 +35,17 @@ private _AUX_95th_Paranoia_Frame_Handler = [{
         };
     };
 
-    private _randomSound = selectRandom _sounds; 
+    if (!isNull _targetUnit) then {
+        private _randomSound = selectRandom _sounds;
 
-    systemChat "Playing " + _randomSound;
-
-    remoteExec ["playSoundUI", 0, ["\z\AUX_95th\addons\objects\paranoiaDevice\data\audio\" + _randomSound, 0.3], _targetUnit];
+        private _soundPath = "\z\AUX_95th\addons\objects\paranoiaDevice\data\audio\" + _randomSound;
+        
+        [[_soundPath, _object], {
+            params ["_soundPath", "_object"];
+            _soundID = playSoundUI [_soundPath, 0.3];
+            _object setVariable ["AUX_95th_SoundID", _soundID, true];
+        }] remoteExec ["call", _targetUnit];
+    };
 
 }, 15, [_object, _range, _sounds]] call CBA_fnc_addPerFrameHandler;
 
@@ -54,7 +60,9 @@ _object addEventHandler ["Deleted", {
 	params ["_object"];
 
     private _perFrame = _object getVariable "AUX_95th_PerFrame";
+    private _soundID = _object getVariable "AUX_95th_SoundID";
     [_perFrame] call CBA_fnc_removePerFrameHandler;
+    stopSound _soundID;
 
     {
         detach _x;
@@ -66,7 +74,9 @@ _object addEventHandler ["Killed", {
     params ["_object", "_killer"];
 
     private _perFrame = _object getVariable "AUX_95th_PerFrame";
+    private _soundID = _object getVariable "AUX_95th_SoundID";
     [_perFrame] call CBA_fnc_removePerFrameHandler;
+    stopSound _soundID;
 
     {
         detach _x;
