@@ -37,7 +37,7 @@ class CfgFunctions {
 };
 
 class Extended_InitPost_EventHandlers {	
-	class Aux_95th_Paranoia_Device {class Aux_95th_Paranoia_Device_Init {init="[_this select 0] call AUX_95th_fnc_handleParanoiaDeviceInit;";};};
+	class Aux_95th_Paranoia_Device {class Aux_95th_Paranoia_Device_Init {init="[_this select 0, 100] call AUX_95th_fnc_handleParanoiaDeviceInit;";};};
 };
 
 #include "CfgEventHandlers.hpp"
