@@ -50,7 +50,8 @@ if ([] call BIS_fnc_admin == 2) exitWith {};
         "@Custom Third Person Camera View",
         "@Customized Thermal - Proof of Concept",
         "White Phosphor",
-        "HL2: Echoes of the Resonance Cascade"
+        "HL2: Echoes of the Resonance Cascade",
+        "CiP Quad Cannon (Alpha 0.0.12)"
     ];
 
     private _additionalMods = parseSimpleArray AUX_95th_Enable_Addon_Checker_Additional_Mods;
