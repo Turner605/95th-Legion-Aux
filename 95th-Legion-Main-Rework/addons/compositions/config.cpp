@@ -70,6 +70,16 @@ class Cfg3DEN {
 			useSideColorOnIcon = 1;
 		};
 
+		class AUX_95th_Dreadnought_GAR {
+			path = "z\AUX_95th\addons\compositions\gar\dreadnought";
+			side = 1;
+			editorCategory = "AUX_95th_Legion_Compositions_GAR";
+			editorSubcategory = "AUX_95th_Legion_Compositions_Ships";
+			displayName = "dreadnought";
+			icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+			useSideColorOnIcon = 1;
+		};
+
 		// CIS - Checkpoints
 		class AUX_95th_Opfor_Checkpoint_1 {
 			path = "z\AUX_95th\addons\compositions\cis\checkpoint_1";
